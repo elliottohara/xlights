@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Networks computer="MacBook-Pro-6">
+  <network ComPort="192.168.254.201" BaudRate="110" NetworkType="E131" MaxChannels="510" NumUniverses="5"/>
+  <network ComPort="192.168.254.201" BaudRate="120" NetworkType="E131" MaxChannels="510" NumUniverses="5"/>
+  <network ComPort="192.168.254.201" BaudRate="130" NetworkType="E131" Description="Playroom Gutters" MaxChannels="510" NumUniverses="5"/>
+  <network ComPort="192.168.254.201" BaudRate="140" NetworkType="E131" Description="Wall Garage Top" MaxChannels="510" NumUniverses="5"/>
+  <network ComPort="192.168.254.201" BaudRate="150" NetworkType="E131" Description="Snowflake - 02" MaxChannels="510" NumUniverses="7"/>
+  <network ComPort="192.168.254.201" BaudRate="160" NetworkType="E131" Description="Not Used" MaxChannels="510" NumUniverses="3"/>
+  <network ComPort="192.168.254.201" BaudRate="170" NetworkType="E131" Description="Window Play Room" MaxChannels="510" NumUniverses="3"/>
+  <network ComPort="192.168.254.201" BaudRate="180" NetworkType="E131" Enabled="No" Description="Not Used" MaxChannels="510" NumUniverses="3"/>
+  <network ComPort="192.168.254.201" BaudRate="190" NetworkType="E131" Description="Roof Garage Ridge" MaxChannels="510" NumUniverses="4"/>
+  <network ComPort="192.168.254.201" BaudRate="200" NetworkType="E131" Description="Roof Middle Ridge Line" MaxChannels="510" NumUniverses="2"/>
+  <network ComPort="192.168.254.201" BaudRate="210" NetworkType="E131" Description="Snowflake - 08" MaxChannels="510" NumUniverses="4"/>
+  <network ComPort="192.168.254.201" BaudRate="220" NetworkType="E131" Description="Top Snowflake - L" MaxChannels="510" NumUniverses="3"/>
+  <network ComPort="192.168.254.201" BaudRate="230" NetworkType="E131" Description="Top Snowflake - FR" MaxChannels="510" NumUniverses="5"/>
+  <network ComPort="192.168.254.201" BaudRate="240" NetworkType="E131" Description="Top Snowflake - FL" MaxChannels="510" NumUniverses="3"/>
+  <network ComPort="192.168.254.201" BaudRate="250" NetworkType="E131" Description="Snowflake - 04" MaxChannels="510" NumUniverses="3"/>
+  <network ComPort="192.168.254.201" BaudRate="260" NetworkType="E131" Description="Snowflake - 01" MaxChannels="510" NumUniverses="3"/>
+  <network ComPort="192.168.254.200" BaudRate="1" NetworkType="E131" Description="DMX Floods" MaxChannels="510"/>
+  <network ComPort="192.168.254.200" BaudRate="310" NetworkType="E131" Description="Singing Bulb L" MaxChannels="510" NumUniverses="2"/>
+  <network ComPort="192.168.254.200" BaudRate="320" NetworkType="E131" Description="Column Left" MaxChannels="510" NumUniverses="2"/>
+  <network ComPort="192.168.254.200" BaudRate="330" NetworkType="E131" Description="Window - Bottom Left" MaxChannels="510" NumUniverses="2"/>
+  <network ComPort="192.168.254.200" BaudRate="350" NetworkType="E131" Description="Garage Door" MaxChannels="510" NumUniverses="2"/>
+  <network ComPort="192.168.254.200" BaudRate="360" NetworkType="E131" Description="Column Center" MaxChannels="510" NumUniverses="2"/>
+  <network ComPort="192.168.254.200" BaudRate="370" NetworkType="E131" Description="F48" MaxChannels="510" NumUniverses="2"/>
+  <network ComPort="192.168.254.200" BaudRate="380" NetworkType="E131" MaxChannels="510" NumUniverses="2"/>
+  <network ComPort="192.168.254.200" BaudRate="390" NetworkType="E131" Description="Column Shrubs" MaxChannels="510" NumUniverses="2"/>
+  <network ComPort="192.168.254.200" BaudRate="400" NetworkType="E131" Description="F48" MaxChannels="510" NumUniverses="2"/>
+  <network ComPort="192.168.254.200" BaudRate="410" NetworkType="E131" Description="F48" MaxChannels="510" NumUniverses="2"/>
+  <network ComPort="192.168.254.200" BaudRate="420" NetworkType="E131" Description="F48" MaxChannels="510" NumUniverses="2"/>
+  <network ComPort="192.168.254.200" BaudRate="470" NetworkType="E131" MaxChannels="510" NumUniverses="4"/>
+  <network ComPort="192.168.254.200" BaudRate="480" NetworkType="E131" MaxChannels="510" NumUniverses="4"/>
+  <network ComPort="192.168.254.200" BaudRate="490" NetworkType="E131" MaxChannels="510" NumUniverses="4"/>
+  <network ComPort="192.168.254.200" BaudRate="900" NetworkType="E131" Description="Matrix - Bedroom" MaxChannels="510"/>
+  <network ComPort="192.168.254.200" BaudRate="901" NetworkType="E131" Description="Matrix - Bedroom" MaxChannels="510"/>
+  <network ComPort="192.168.254.200" BaudRate="902" NetworkType="E131" Description="Matrix - Bedroom" MaxChannels="510"/>
+  <network ComPort="192.168.254.200" BaudRate="903" NetworkType="E131" Description="Matrix - Bedroom" MaxChannels="510"/>
+  <network ComPort="192.168.254.200" BaudRate="904" NetworkType="E131" Description="Matrix - Bedroom" MaxChannels="510"/>
+  <network ComPort="192.168.254.200" BaudRate="905" NetworkType="E131" Description="Matrix - Bedroom" MaxChannels="510"/>
+  <network ComPort="192.168.254.200" BaudRate="906" NetworkType="E131" Description="Matrix - Bedroom" MaxChannels="510"/>
+  <network ComPort="192.168.254.200" BaudRate="907" NetworkType="E131" Description="Matrix - Bedroom" MaxChannels="510"/>
+  <network ComPort="192.168.254.200" BaudRate="908" NetworkType="E131" Description="Matrix - Bedroom" MaxChannels="510"/>
+  <network ComPort="192.168.254.200" BaudRate="1000" NetworkType="E131" Description="Driveway - Right" MaxChannels="510"/>
+  <network ComPort="192.168.254.210" BaudRate="3000" NetworkType="E131" Description="Robbie F48 - Port 47" MaxChannels="36" NumUniverses="2"/>
+  <network ComPort="192.168.254.210" BaudRate="3010" NetworkType="E131" Description="Robbie - F48 Port 48" MaxChannels="510" NumUniverses="3"/>
+  <network ComPort="192.168.254.200" BaudRate="3013" NetworkType="E131" MaxChannels="510"/>
+  <network ComPort="192.168.254.200" BaudRate="3014" NetworkType="E131" MaxChannels="510"/>
+  <network ComPort="192.168.254.202" BaudRate="710" NetworkType="E131" MaxChannels="510" NumUniverses="3"/>
+  <network ComPort="192.168.254.202" BaudRate="720" NetworkType="E131" MaxChannels="510"/>
+  <network ComPort="192.168.254.202" BaudRate="721" NetworkType="E131" MaxChannels="510"/>
+  <network ComPort="192.168.254.202" BaudRate="722" NetworkType="E131" MaxChannels="510" NumUniverses="4"/>
+  <network ComPort="192.168.254.202" BaudRate="750" NetworkType="E131" MaxChannels="510" NumUniverses="3"/>
+  <network ComPort="192.168.254.202" BaudRate="760" NetworkType="E131" MaxChannels="510" NumUniverses="3"/>
+  <network ComPort="192.168.254.202" BaudRate="770" NetworkType="E131" MaxChannels="510" NumUniverses="3"/>
+  <network ComPort="192.168.254.202" BaudRate="780" NetworkType="E131" MaxChannels="510" NumUniverses="3"/>
+  <network ComPort="192.168.254.202" BaudRate="790" NetworkType="E131" MaxChannels="510" NumUniverses="3"/>
+  <network ComPort="192.168.254.202" BaudRate="800" NetworkType="E131" Enabled="No" MaxChannels="510" NumUniverses="3"/>
+  <network ComPort="192.168.254.202" BaudRate="810" NetworkType="E131" MaxChannels="510" NumUniverses="3"/>
+  <network ComPort="192.168.254.202" BaudRate="820" NetworkType="E131" Enabled="No" MaxChannels="510" NumUniverses="3"/>
+  <network ComPort="192.168.254.202" BaudRate="830" NetworkType="E131" MaxChannels="510" NumUniverses="3"/>
+  <network ComPort="192.168.254.202" BaudRate="840" NetworkType="E131" MaxChannels="510" NumUniverses="3"/>
+  <network ComPort="192.168.254.202" BaudRate="850" NetworkType="E131" MaxChannels="510" NumUniverses="3"/>
+  <network ComPort="192.168.254.202" BaudRate="860" NetworkType="E131" MaxChannels="510" NumUniverses="3"/>
+  <network ComPort="192.168.254.152" BaudRate="5000" NetworkType="E131" Description="Virtual Matrix " MaxChannels="510" NumUniverses="100"/>
+  <network ComPort="192.168.254.204" BaudRate="1100" NetworkType="E131" Description="Mega Tree" MaxChannels="510"/>
+  <network ComPort="192.168.254.204" BaudRate="1101" NetworkType="E131" Description="Mega Tree" MaxChannels="510"/>
+  <network ComPort="192.168.254.204" BaudRate="1102" NetworkType="E131" Description="Mega Tree" MaxChannels="510"/>
+  <network ComPort="192.168.254.204" BaudRate="1103" NetworkType="E131" Description="Mega Tree" MaxChannels="510"/>
+  <network ComPort="192.168.254.204" BaudRate="1104" NetworkType="E131" Description="Mega Tree" MaxChannels="510"/>
+  <network ComPort="192.168.254.204" BaudRate="1105" NetworkType="E131" Description="Mega Tree" MaxChannels="510"/>
+  <network ComPort="192.168.254.204" BaudRate="1106" NetworkType="E131" Description="Mega Tree" MaxChannels="510"/>
+  <network ComPort="192.168.254.204" BaudRate="1107" NetworkType="E131" Description="Mega Tree" MaxChannels="510"/>
+  <network ComPort="192.168.254.204" BaudRate="1108" NetworkType="E131" Description="Mega Tree" MaxChannels="510"/>
+  <network ComPort="192.168.254.204" BaudRate="1109" NetworkType="E131" Description="Mega Tree" MaxChannels="510"/>
+  <network ComPort="192.168.254.204" BaudRate="1110" NetworkType="E131" Description="Mega Tree" MaxChannels="510"/>
+  <network ComPort="192.168.254.204" BaudRate="1111" NetworkType="E131" Description="Mega Tree" MaxChannels="510"/>
+  <network ComPort="192.168.254.204" BaudRate="1112" NetworkType="E131" Description="Mega Tree" MaxChannels="510"/>
+  <network ComPort="192.168.254.204" BaudRate="1113" NetworkType="E131" Description="Mega Tree" MaxChannels="510"/>
+  <network ComPort="192.168.254.204" BaudRate="1114" NetworkType="E131" Description="Mega Tree" MaxChannels="510"/>
+  <network ComPort="192.168.254.204" BaudRate="1115" NetworkType="E131" Description="Mega Tree" MaxChannels="510"/>
+  <network ComPort="192.168.254.204" BaudRate="1116" NetworkType="E131" Description="Mega Tree" MaxChannels="510"/>
+  <network ComPort="192.168.254.204" BaudRate="1117" NetworkType="E131" Description="Mega Tree" MaxChannels="510"/>
+</Networks>

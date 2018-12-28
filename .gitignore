@@ -1,0 +1,7 @@
+.idea
+Backup/
+RenderCache/
+*.fseq
+xlights_dbgrpt*
+*.xbkp
+.DS_Store
