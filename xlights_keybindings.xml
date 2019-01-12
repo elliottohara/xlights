@@ -23,7 +23,7 @@
   <keybinding keycode="n" alt="FALSE" control="FALSE" shift="FALSE" type="EFFECT" effect="Snowflakes" xLightsVersion="4.0"></keybinding>
   <keybinding keycode="O" alt="FALSE" control="FALSE" shift="TRUE" type="EFFECT" effect="Off" xLightsVersion="4.0"></keybinding>
   <keybinding keycode="F" alt="FALSE" control="FALSE" shift="TRUE" type="EFFECT" effect="Fan" xLightsVersion="4.0"></keybinding>
-  <keybinding keycode="F11" alt="FALSE" control="FALSE" shift="FALSE" type="ALTERNATE_BACKUP"/>
+  <keybinding keycode="F11" alt="FALSE" control="FALSE" shift="TRUE" type="ALTERNATE_BACKUP"/>
   <keybinding keycode="F10" alt="FALSE" control="FALSE" shift="FALSE" type="BACKUP"/>
   <keybinding keycode="END" alt="FALSE" control="FALSE" shift="FALSE" type="END_OF_SONG"/>
   <keybinding keycode="." alt="FALSE" control="TRUE" shift="FALSE" type="MARK_SPOT"/>
