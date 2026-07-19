@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Networks computer="Elliott-O-Hara-L4540C0VVM" GlobalFPPProxy="" GlobalForceLocalIP="" AutoUpdateFromBase="0" BaseShowDir="" BaseShowDirRelative="">
+	<suppressframes frames="20" />
+	<Controller Id="300" Name="FPP_TUNETO" Description="Tune To Sign" Type="Ethernet" Vendor="FPP" Model="LED Panels" Variant="" AutoSize="0" FromBase="0" FullxLightsControl="TRUE" DefaultBrightnessUnderFullControl="100" DefaultGammaUnderFullControl="1" ActiveState="xLights Only" AutoLayout="1" AutoUpload="0" SuppressDuplicates="0" Monitor="1" IP="192.168.0.245" Protocol="DDP" FPPProxy="" Priority="100" Version="1" Expanded="FALSE" UPS="FALSE" ForceLocalIP="">
+		<network ChannelsPerPacket="1440" KeepChannelNumbers="1" ComPort="192.168.0.245" BaudRate="300" NetworkType="DDP" MaxChannels="36864" />
+	</Controller>
+	<Controller Id="100" Name="FPPPROJECTOR" Description="Elliott Garage Projector" Type="Ethernet" Vendor="FPP" Model="Virtual Matrix" Variant="" AutoSize="0" FromBase="0" DefaultBrightnessUnderFullControl="100" DefaultGammaUnderFullControl="1" ActiveState="xLights Only" AutoLayout="0" AutoUpload="0" SuppressDuplicates="0" Monitor="1" IP="192.168.0.201" Protocol="DDP" FPPProxy="" Priority="100" Version="1" Expanded="FALSE" UPS="FALSE" ForceLocalIP="">
+		<network ChannelsPerPacket="1440" KeepChannelNumbers="1" ComPort="192.168.0.201" BaudRate="100" NetworkType="DDP" MaxChannels="147456" />
+	</Controller>
+	<Controller Id="10" Name="FPP-KULP16-02" Description="FPP Face of house controller" Type="Ethernet" Vendor="KulpLights" Model="K16" Variant="K16A-B" AutoSize="1" FromBase="0" FullxLightsControl="TRUE" DefaultBrightnessUnderFullControl="30" DefaultGammaUnderFullControl="1" ActiveState="xLights Only" AutoLayout="1" AutoUpload="0" SuppressDuplicates="0" Monitor="1" IP="192.168.0.205" Protocol="DDP" FPPProxy="" Priority="100" Version="1" Expanded="FALSE" UPS="FALSE" ForceLocalIP="">
+		<network ChannelsPerPacket="1440" KeepChannelNumbers="1" ComPort="192.168.0.205" BaudRate="10" NetworkType="DDP" MaxChannels="24198" />
+	</Controller>
+	<Controller Id="7" Name="FPP-KULP32-01" Description="Eves controller" Type="Ethernet" Vendor="KulpLights" Model="F32-B" Variant="No Serial" AutoSize="1" FromBase="0" FullxLightsControl="TRUE" DefaultBrightnessUnderFullControl="30" DefaultGammaUnderFullControl="1" ActiveState="xLights Only" AutoLayout="1" AutoUpload="0" SuppressDuplicates="0" Monitor="1" IP="192.168.0.238" Protocol="DDP" FPPProxy="" Priority="100" Version="1" Expanded="FALSE" UPS="FALSE" ForceLocalIP="">
+		<network ChannelsPerPacket="1440" KeepChannelNumbers="1" ComPort="192.168.0.238" BaudRate="7" NetworkType="DDP" MaxChannels="14376" />
+	</Controller>
+	<Controller Id="500" Name="FALCON-16V3-01" Description="Elliott Porch" Type="Ethernet" Vendor="Falcon" Model="F16V3" Variant="One Expansion Board" AutoSize="1" FromBase="0" FullxLightsControl="TRUE" DefaultBrightnessUnderFullControl="30" DefaultGammaUnderFullControl="1" ActiveState="Active" AutoLayout="1" AutoUpload="0" SuppressDuplicates="0" Monitor="1" IP="192.168.0.247" Protocol="DDP" FPPProxy="" Priority="100" Version="1" Expanded="FALSE" UPS="FALSE" ForceLocalIP="">
+		<network ChannelsPerPacket="1440" KeepChannelNumbers="1" ComPort="192.168.0.247" BaudRate="500" NetworkType="DDP" MaxChannels="13224" />
+	</Controller>
+	<Controller Id="6" Name="Falcon-16V4-01" Description="2nd Floor Face of house" Type="Ethernet" Vendor="Falcon" Model="F16V4" Variant="16 + 16 Local Ports" AutoSize="1" FromBase="0" FullxLightsControl="TRUE" DefaultBrightnessUnderFullControl="30" DefaultGammaUnderFullControl="1" ActiveState="Active" AutoLayout="1" AutoUpload="0" SuppressDuplicates="0" Monitor="1" IP="192.168.0.252" Protocol="DDP" FPPProxy="" Priority="100" Version="1" Expanded="FALSE" UPS="FALSE" ForceLocalIP="">
+		<network ChannelsPerPacket="1440" KeepChannelNumbers="1" ComPort="192.168.0.252" BaudRate="6" NetworkType="DDP" MaxChannels="12849" />
+	</Controller>
+	<Controller Id="5" Name="FALON-16V3-02" Description="Front Raised Bed" Type="Ethernet" Vendor="Falcon" Model="F16V3" Variant="One Expansion Board" AutoSize="1" FromBase="0" FullxLightsControl="TRUE" DefaultBrightnessUnderFullControl="30" DefaultGammaUnderFullControl="1" ActiveState="Active" AutoLayout="1" AutoUpload="0" SuppressDuplicates="0" Monitor="1" IP="192.168.0.249" Protocol="DDP" FPPProxy="" Priority="100" Version="1" Expanded="FALSE" UPS="FALSE" ForceLocalIP="">
+		<network ChannelsPerPacket="1440" KeepChannelNumbers="1" ComPort="192.168.0.249" BaudRate="5" NetworkType="DDP" MaxChannels="7482" />
+	</Controller>
+	<Controller Id="4" Name="FPP-KULP08-FrontPorch" Description="" Type="Ethernet" Vendor="KulpLights" Model="K8" Variant="K8-B" AutoSize="1" FromBase="0" FullxLightsControl="TRUE" DefaultBrightnessUnderFullControl="30" DefaultGammaUnderFullControl="1" ActiveState="xLights Only" AutoLayout="1" AutoUpload="0" SuppressDuplicates="0" Monitor="1" IP="192.168.0.250" Protocol="DDP" FPPProxy="" Priority="100" Version="1" Expanded="FALSE" UPS="FALSE" ForceLocalIP="">
+		<network ChannelsPerPacket="1440" KeepChannelNumbers="1" ComPort="192.168.0.250" BaudRate="4" NetworkType="DDP" MaxChannels="6252" />
+	</Controller>
+	<Controller Id="13" Name="FPP-Master" Description="" Type="Ethernet" Vendor="" Model="" Variant="" AutoSize="1" FromBase="0" FullxLightsControl="TRUE" DefaultBrightnessUnderFullControl="100" DefaultGammaUnderFullControl="1" ActiveState="xLights Only" AutoLayout="1" AutoUpload="0" SuppressDuplicates="0" Monitor="1" IP="192.168.0.19" Protocol="DDP" FPPProxy="" Priority="100" Version="1" Expanded="FALSE" UPS="FALSE" ForceLocalIP="">
+		<network ChannelsPerPacket="1440" KeepChannelNumbers="1" ComPort="192.168.0.19" BaudRate="2" NetworkType="DDP" MaxChannels="1" />
+	</Controller>
+	<Controller Id="8" Name="FPP-KULP16-01" Description="" Type="Ethernet" Vendor="KulpLights" Model="K16" Variant="K16A-B" AutoSize="1" FromBase="0" FullxLightsControl="TRUE" DefaultBrightnessUnderFullControl="30" DefaultGammaUnderFullControl="1" ActiveState="xLights Only" AutoLayout="1" AutoUpload="0" SuppressDuplicates="0" Monitor="1" IP="192.168.0.253" Protocol="DDP" FPPProxy="" Priority="100" Version="1" Expanded="FALSE" UPS="FALSE" ForceLocalIP="">
+		<network ChannelsPerPacket="1440" KeepChannelNumbers="1" ComPort="192.168.0.253" BaudRate="8" NetworkType="DDP" MaxChannels="10803" />
+	</Controller>
+	<Controller Id="1" Name="MEGA Tree" Description="" Type="Ethernet" Vendor="KulpLights" Model="K32" Variant="K32A-B" AutoSize="1" FromBase="0" FullxLightsControl="TRUE" DefaultBrightnessUnderFullControl="20" DefaultGammaUnderFullControl="1" ActiveState="xLights Only" AutoLayout="1" AutoUpload="0" SuppressDuplicates="0" Monitor="1" IP="192.168.0.126" Protocol="DDP" FPPProxy="" Priority="100" Version="1" Expanded="FALSE" UPS="FALSE" ForceLocalIP="">
+		<network ChannelsPerPacket="1440" KeepChannelNumbers="1" ComPort="192.168.0.126" BaudRate="1" NetworkType="DDP" MaxChannels="30903" />
+	</Controller>
+	<Controller Id="11" Name="FPP Wings" Description="" Type="Ethernet" Vendor="FPP" Model="Pi Hat" Variant="2 Output DPI" AutoSize="1" FromBase="0" FullxLightsControl="TRUE" DefaultBrightnessUnderFullControl="25" DefaultGammaUnderFullControl="1" ActiveState="xLights Only" AutoLayout="1" AutoUpload="0" SuppressDuplicates="0" Monitor="1" IP="192.168.0.133" Protocol="DDP" FPPProxy="" Priority="100" Version="1" Expanded="FALSE" UPS="FALSE" ForceLocalIP="">
+		<network ChannelsPerPacket="1440" KeepChannelNumbers="1" ComPort="192.168.0.133" BaudRate="11" NetworkType="DDP" MaxChannels="3000" />
+	</Controller>
+	<Controller Id="9" Name="Selfie Station" Description="" Type="Ethernet" Vendor="KulpLights" Model="K8" Variant="K8-B" AutoSize="1" FromBase="0" FullxLightsControl="TRUE" DefaultBrightnessUnderFullControl="30" DefaultGammaUnderFullControl="1" ActiveState="Active" AutoLayout="1" AutoUpload="0" SuppressDuplicates="0" Monitor="1" IP="192.168.0.213" Protocol="DDP" FPPProxy="192.168.0.133" Priority="100" Version="1" Expanded="FALSE" UPS="FALSE" ForceLocalIP="">
+		<network ChannelsPerPacket="1440" KeepChannelNumbers="1" ComPort="192.168.0.213" BaudRate="9" NetworkType="DDP" MaxChannels="819" FPPProxy="192.168.0.133" />
+	</Controller>
+	<Controller Id="3" Name="FPP-TV" Description="" Type="Ethernet" Vendor="FPP" Model="Virtual Matrix" Variant="" AutoSize="1" FromBase="0" FullxLightsControl="TRUE" DefaultBrightnessUnderFullControl="20" DefaultGammaUnderFullControl="1" ActiveState="xLights Only" AutoLayout="1" AutoUpload="0" SuppressDuplicates="0" Monitor="1" IP="192.168.0.232" Protocol="DDP" FPPProxy="" Priority="100" Version="1" Expanded="FALSE" UPS="FALSE" ForceLocalIP="">
+		<network ChannelsPerPacket="1440" KeepChannelNumbers="1" ComPort="192.168.0.232" BaudRate="3" NetworkType="DDP" MaxChannels="1" />
+	</Controller>
+	<testpreset name="Christmas2015" />
+	<testpreset name="2015 house" />
+	<testpreset name="Tree 1">
+		<channelr start="0" end="5399" />
+	</testpreset>
+	<testpreset name="lor tree">
+		<channelr start="10800" end="14399" />
+	</testpreset>
+	<testpreset name="props">
+		<channelr start="349" end="510" />
+		<channelr start="6001" end="6576" />
+		<channelr start="11731" end="12030" />
+		<channelr start="12243" end="12542" />
+	</testpreset>
+	<testpreset name="LOR units">
+		<channelr start="459" end="500" />
+		<channelr start="507" end="521" />
+	</testpreset>
+	<testpreset name="Mega Tree 1600">
+		<channelr start="4656" end="9455" />
+	</testpreset>
+	<testpreset name="Snowman Line">
+		<channelr start="429" end="443" />
+	</testpreset>
+	<testpreset name="Mega Arch">
+		<channelr start="393" end="428" />
+	</testpreset>
+	<testpreset name="Pixel radio sign">
+		<channelr start="3360" end="3491" />
+	</testpreset>
+	<testpreset name="pixel tree">
+		<channelr start="1530" end="1829" />
+	</testpreset>
+	<testpreset name="candy canes">
+		<channelr start="1020" end="1109" />
+	</testpreset>
+	<testpreset name="Pixel star">
+		<channelr start="510" end="689" />
+		<channelr start="1020" end="1109" />
+	</testpreset>
+	<testpreset name="Arches">
+		<channelr start="0" end="59" />
+	</testpreset>
+	<testpreset name="Arch good">
+		<channelr start="0" end="59" />
+	</testpreset>
+	<testpreset name="Star Good">
+		<channelr start="510" end="689" />
+	</testpreset>
+	<testpreset name="test1">
+		<channelr start="1" end="170" />
+	</testpreset>
+	<testpreset name="LOR AND RGB DUMB">
+		<channelr start="1" end="528" />
+	</testpreset>
+	<testpreset name="test all">
+		<channelr start="0" end="10090" />
+	</testpreset>
+	<testpreset name="test">
+		<channelr start="0" end="10090" />
+	</testpreset>
+	<testpreset name="test2" />
+	<testpreset name="LEFT WINDOW Matrix full on test 1">
+		<channelr start="5029" end="6864" />
+	</testpreset>
+	<testpreset name="LEFT WINDOWN (6) STRING TWIN 50">
+		<channelr start="5029" end="7068" />
+	</testpreset>
+	<testpreset name="LEFT WINDOW MATRIX FULL WHITE (6) TEST">
+		<channelr start="5029" end="7068" />
+	</testpreset>
+	<testpreset name="WHITE TEST ON CENTER WINDOW MATRIX">
+		<channelr start="4429" end="9108" />
+	</testpreset>
+	<testpreset name="All Channels On!!!! July 2016">
+		<channelr start="1" end="14208" />
+	</testpreset>
+	<testpreset name="2 pink">
+		<channelr start="1" end="14208" />
+	</testpreset>
+	<testpreset name="CENTER/LEFT WINDOW MATRIX EVEN TEST">
+		<channelr start="4081" end="4590" />
+		<channelr start="5101" end="5610" />
+		<channelr start="6121" end="6630" />
+		<channelr start="7141" end="7650" />
+		<channelr start="8161" end="8670" />
+		<channelr start="9181" end="9690" />
+		<channelr start="12241" end="12750" />
+		<channelr start="13261" end="13770" />
+	</testpreset>
+	<testpreset name="CENTER/LEFT WINDOW MATRIX ODD TEST">
+		<channelr start="3571" end="4080" />
+		<channelr start="4591" end="5100" />
+		<channelr start="5611" end="6120" />
+		<channelr start="6631" end="7140" />
+		<channelr start="7651" end="8160" />
+		<channelr start="8671" end="9180" />
+		<channelr start="11731" end="12240" />
+		<channelr start="12751" end="13260" />
+	</testpreset>
+	<testpreset name="L-Ring all">
+		<channelr start="31663" end="31677" />
+	</testpreset>
+	<testpreset name="Test RGB Columns-Arches">
+		<channelr start="49" end="1038" />
+	</testpreset>
+	<testpreset name="RGB TEST">
+		<channelr start="1" end="16320" />
+	</testpreset>
+	<testpreset name="TEST">
+		<channelr start="1" end="16320" />
+	</testpreset>
+	<testpreset name="EVERYTHING">
+		<channelr start="1" end="307200" />
+	</testpreset>
+	<testpreset name="aaaa">
+		<channelr start="1" end="3072" />
+	</testpreset>
+	<testpreset name="Taylors Right Window">
+		<channelr start="1" end="1536" />
+	</testpreset>
+	<testpreset name="Taylors Left Window">
+		<channelr start="1537" end="3072" />
+	</testpreset>
+	<testpreset name="Balcony Left Window">
+		<channelr start="6145" end="9216" />
+	</testpreset>
+	<testpreset name="Balcony Right Window">
+		<channelr start="3073" end="6144" />
+	</testpreset>
+	<testpreset name="Garage Left Windows">
+		<channelr start="13313" end="16384" />
+	</testpreset>
+	<testpreset name="Garage Right Window">
+		<channelr start="10241" end="13312" />
+	</testpreset>
+	<testpreset name="Braden Left Window">
+		<channelr start="19457" end="22528" />
+	</testpreset>
+	<testpreset name="Braden Right Window">
+		<channelr start="16385" end="19456" />
+	</testpreset>
+	<testpreset name="Pixel Matrix">
+		<channelr start="22529" end="28672" />
+	</testpreset>
+	<testpreset name="Left Arches">
+		<channelr start="30721" end="32768" />
+	</testpreset>
+	<testpreset name="Right Arches">
+		<channelr start="28673" end="30720" />
+	</testpreset>
+	<testpreset name="Test Tree1">
+		<channelr start="2550" end="2849" />
+	</testpreset>
+	<testpreset name="Testall">
+		<channelr start="0" end="14279" />
+	</testpreset>
+	<testpreset name="TestTree1">
+		<channelr start="2838" end="3737" />
+	</testpreset>
+	<testpreset name="Tree1&amp;amp;2">
+		<channelr start="2838" end="3737" />
+		<channelr start="3750" end="4937" />
+	</testpreset>
+	<testpreset name="SingTree123">
+		<channelr start="2838" end="3737" />
+		<channelr start="3750" end="4937" />
+		<channelr start="4950" end="6137" />
+	</testpreset>
+	<testpreset name="SingTree1Test">
+		<channelr start="2550" end="3737" />
+	</testpreset>
+	<testpreset name="Tree8Test">
+		<channelr start="10950" end="12137" />
+	</testpreset>
+	<testpreset name="Tree7">
+		<channelr start="9750" end="10937" />
+	</testpreset>
+	<testpreset name="Tree6">
+		<channelr start="8550" end="9737" />
+	</testpreset>
+	<testpreset name="Tree5">
+		<channelr start="7350" end="8537" />
+	</testpreset>
+	<testpreset name="Tree4">
+		<channelr start="6150" end="7337" />
+	</testpreset>
+	<testpreset name="Tree9">
+		<channelr start="12150" end="13337" />
+	</testpreset>
+	<testpreset name="test97113">
+		<channelr start="48739" end="48741" />
+		<channelr start="48787" end="48789" />
+	</testpreset>
+	<testpreset name="Singing Bulb Outline">
+		<channelr start="4097" end="4297" />
+	</testpreset>
+	<testpreset name="Singing Bulb Right Eye">
+		<channelr start="4361" end="4399" />
+	</testpreset>
+	<testpreset name="spiral tree">
+		<channel id="35" />
+		<channelr start="40" end="47" />
+	</testpreset>
+	<testpreset name="aefbsdfb">
+		<channel id="10390" />
+		<channelr start="10737" end="10752" />
+	</testpreset>
+	<testpreset name="adsgbsdfb">
+		<channel id="10390" />
+		<channelr start="10737" end="10752" />
+	</testpreset>
+	<testpreset name="adsfbasdfbad">
+		<channel id="10390" />
+		<channelr start="10737" end="10752" />
+	</testpreset>
+	<testpreset name="OK Test">
+		<channelr start="1" end="300" />
+	</testpreset>
+	<testpreset name="A">
+		<channelr start="1" end="512" />
+	</testpreset>
+	<testpreset name="middle pumpkin" />
+	<testpreset name="pumpkin left" />
+	<testpreset name="pumpkins right" />
+	<testpreset name="middle" />
+	<testpreset name="right">
+		<channelr start="320" end="327" />
+		<channelr start="329" end="333" />
+	</testpreset>
+	<testpreset name="Column-left">
+		<channelr start="8394" end="8896" />
+	</testpreset>
+	<testpreset name="Column-right">
+		<channelr start="8394" end="8896" />
+		<channelr start="10730" end="11224" />
+	</testpreset>
+	<testpreset name="Bethlehem star">
+		<channelr start="10367" end="10720" />
+	</testpreset>
+	<testpreset name="everything">
+		<channelr start="1" end="48120" />
+	</testpreset>
+	<testpreset name="tree">
+		<channelr start="1" end="9600" />
+	</testpreset>
+	<testpreset name="StringTest">
+		<channelr start="1200" end="1249" />
+	</testpreset>
+	<testpreset name="GE MALTESE">
+		<channelr start="5155" end="5604" />
+	</testpreset>
+	<testpreset name="AlphaPix 16">
+		<channelr start="1" end="2400" />
+	</testpreset>
+	<testpreset name="chase">
+		<channelr start="1" end="3072" />
+	</testpreset>
+	<testpreset name="3panel">
+		<channelr start="0" end="4607" />
+	</testpreset>
+	<testpreset name="bulbs test 1">
+		<channelr start="1" end="510" />
+	</testpreset>
+	<testpreset name="test171819">
+		<channelr start="8161" end="9690" />
+	</testpreset>
+	<testpreset name="2015list">
+		<channelr start="0" end="10199" />
+	</testpreset>
+	<testpreset name="all star lit">
+		<channelr start="0" end="11223" />
+	</testpreset>
+	<testpreset name="3 trees">
+		<channelr start="1" end="24480" />
+	</testpreset>
+	<testpreset name="new">
+		<channelr start="1" end="16" />
+	</testpreset>
+	<testpreset name="test 1">
+		<channelr start="1" end="16" />
+	</testpreset>
+	<testpreset name="Matrix Controller Test">
+		<channelr start="1201" end="4656" />
+	</testpreset>
+	<testpreset name="Test U200 - WS2301 3 strings">
+		<channelr start="0" end="449" />
+	</testpreset>
+	<testpreset name="RGB Mini Trees">
+		<channelr start="2311" end="2760" />
+	</testpreset>
+	<testpreset name="RGB Mini Tree">
+		<channelr start="2311" end="3061" />
+	</testpreset>
+	<testpreset name="RGB Mega Tree">
+		<channelr start="512" end="2311" />
+	</testpreset>
+	<testpreset name="RGB Arch Test">
+		<channelr start="3062" end="3961" />
+	</testpreset>
+	<testpreset name="RBG Tree Base">
+		<channelr start="3962" end="4276" />
+	</testpreset>
+	<testpreset name="test mini tree">
+		<channelr start="1" end="512" />
+	</testpreset>
+	<testpreset name="1234">
+		<channelr start="1" end="8816" />
+	</testpreset>
+	<testpreset name="TEST 1">
+		<channelr start="0" end="1678" />
+	</testpreset>
+	<testpreset name="test on" />
+	<testpreset name="TEST 2">
+		<channelr start="0" end="347" />
+	</testpreset>
+	<testpreset name="1">
+		<channelr start="4591" end="5610" />
+	</testpreset>
+</Networks>

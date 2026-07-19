@@ -1,0 +1,325 @@
+{
+ "V1": {
+  "s": 15275,
+  "e": 39975,
+  "lines": [
+   {
+    "text": "A thousand generations falling down in worship",
+    "s": 15275,
+    "e": 21450
+   },
+   {
+    "text": "To sing the song of ages to the Lamb",
+    "s": 21450,
+    "e": 26250
+   },
+   {
+    "text": "And all who've gone before us and all who will believe",
+    "s": 26250,
+    "e": 34600
+   },
+   {
+    "text": "Will sing the song of ages to the Lamb",
+    "s": 34600,
+    "e": 39975
+   }
+  ]
+ },
+ "PC1": {
+  "s": 40950,
+  "e": 66700,
+  "lines": [
+   {
+    "text": "Your name is the highest",
+    "s": 40950,
+    "e": 44950
+   },
+   {
+    "text": "Your name is the greatest",
+    "s": 45300,
+    "e": 48250
+   },
+   {
+    "text": "Your name stands above them all",
+    "s": 48250,
+    "e": 54075
+   },
+   {
+    "text": "All thrones and dominions",
+    "s": 54075,
+    "e": 58275
+   },
+   {
+    "text": "All powers and positions",
+    "s": 58800,
+    "e": 61450
+   },
+   {
+    "text": "Your name stands above them all",
+    "s": 61450,
+    "e": 66700
+   }
+  ]
+ },
+ "C1": {
+  "s": 66700,
+  "e": 90825,
+  "lines": [
+   {
+    "text": "And the angels cry holy",
+    "s": 66700,
+    "e": 72850
+   },
+   {
+    "text": "All creation cries holy",
+    "s": 72850,
+    "e": 79250
+   },
+   {
+    "text": "You are lifted high holy",
+    "s": 79250,
+    "e": 86275
+   },
+   {
+    "text": "Holy forever",
+    "s": 87250,
+    "e": 90825
+   }
+  ]
+ },
+ "V2": {
+  "s": 94375,
+  "e": 126525,
+  "lines": [
+   {
+    "text": "If you've been forgiven and if you've been redeemed",
+    "s": 94375,
+    "e": 101250
+   },
+   {
+    "text": "Sing the song forever to the Lamb",
+    "s": 102500,
+    "e": 106150
+   },
+   {
+    "text": "If you walk in freedom and if you bear His name",
+    "s": 106150,
+    "e": 114425
+   },
+   {
+    "text": "Sing the song forever to the Lamb",
+    "s": 114850,
+    "e": 120525
+   },
+   {
+    "text": "We'll sing the song forever and amen",
+    "s": 120525,
+    "e": 126525
+   }
+  ]
+ },
+ "C2a": {
+  "s": 126725,
+  "e": 151400,
+  "lines": [
+   {
+    "text": "And the angels cry holy",
+    "s": 126725,
+    "e": 132625
+   },
+   {
+    "text": "All creation cries holy",
+    "s": 132625,
+    "e": 139925
+   },
+   {
+    "text": "You are lifted high holy",
+    "s": 140075,
+    "e": 146150
+   },
+   {
+    "text": "Holy forever",
+    "s": 147300,
+    "e": 151400
+   }
+  ]
+ },
+ "C2b": {
+  "s": 153250,
+  "e": 165750,
+  "lines": [
+   {
+    "text": "Hear your people sing holy",
+    "s": 153250,
+    "e": 159200
+   },
+   {
+    "text": "To the King of kings holy",
+    "s": 159950,
+    "e": 165750
+   }
+  ]
+ },
+ "C2c": {
+  "s": 166850,
+  "e": 178350,
+  "lines": [
+   {
+    "text": "You will always be holy",
+    "s": 166850,
+    "e": 172425
+   },
+   {
+    "text": "Holy forever",
+    "s": 173950,
+    "e": 178350
+   }
+  ]
+ },
+ "PC2a": {
+  "s": 181450,
+  "e": 207775,
+  "lines": [
+   {
+    "text": "Your name is the highest",
+    "s": 181450,
+    "e": 184775
+   },
+   {
+    "text": "Your name is the greatest",
+    "s": 184775,
+    "e": 188150
+   },
+   {
+    "text": "Your name stands above them all",
+    "s": 188150,
+    "e": 194575
+   },
+   {
+    "text": "All thrones and dominions",
+    "s": 194575,
+    "e": 198350
+   },
+   {
+    "text": "All powers and positions",
+    "s": 198350,
+    "e": 201500
+   },
+   {
+    "text": "Your name stands above them all Jesus",
+    "s": 201500,
+    "e": 207775
+   }
+  ]
+ },
+ "PC2b": {
+  "s": 207775,
+  "e": 233350,
+  "lines": [
+   {
+    "text": "Your name is the highest",
+    "s": 207775,
+    "e": 211450
+   },
+   {
+    "text": "Your name is the greatest",
+    "s": 211950,
+    "e": 214925
+   },
+   {
+    "text": "Your name stands above them all",
+    "s": 214925,
+    "e": 220325
+   },
+   {
+    "text": "All thrones and dominions",
+    "s": 221700,
+    "e": 225150
+   },
+   {
+    "text": "All powers and positions",
+    "s": 225550,
+    "e": 228275
+   },
+   {
+    "text": "Your name stands above them all",
+    "s": 228275,
+    "e": 233350
+   }
+  ]
+ },
+ "C3a": {
+  "s": 233350,
+  "e": 256350,
+  "lines": [
+   {
+    "text": "And the angels cry holy",
+    "s": 233350,
+    "e": 239550
+   },
+   {
+    "text": "All creation cries holy",
+    "s": 240425,
+    "e": 245775
+   },
+   {
+    "text": "You are lifted high holy",
+    "s": 246850,
+    "e": 252550
+   },
+   {
+    "text": "Holy forever",
+    "s": 253950,
+    "e": 256350
+   }
+  ]
+ },
+ "C3b": {
+  "s": 259850,
+  "e": 273650,
+  "lines": [
+   {
+    "text": "Hear your people sing holy",
+    "s": 259850,
+    "e": 265825
+   },
+   {
+    "text": "To the King of kings holy",
+    "s": 265825,
+    "e": 273650
+   }
+  ]
+ },
+ "C3c": {
+  "s": 273650,
+  "e": 283550,
+  "lines": [
+   {
+    "text": "You will always be holy",
+    "s": 273650,
+    "e": 279750
+   },
+   {
+    "text": "Holy forever",
+    "s": 280575,
+    "e": 283550
+   }
+  ]
+ },
+ "OUT": {
+  "s": 286700,
+  "e": 296650,
+  "lines": [
+   {
+    "text": "You will always be holy",
+    "s": 286700,
+    "e": 293200
+   },
+   {
+    "text": "Holy forever",
+    "s": 293875,
+    "e": 296650
+   }
+  ]
+ }
+}

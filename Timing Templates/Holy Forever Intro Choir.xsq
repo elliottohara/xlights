@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xsequence BaseChannel="0" ChanCtrlBasic="0" ChanCtrlColor="0" FixedPointTiming="1" ModelBlending="false">
+  <head>
+    <version>2026.12</version>
+    <author />
+    <song>Holy Forever</song>
+    <artist>Chris Tomlin</artist>
+    <sequenceTiming>25 ms</sequenceTiming>
+    <sequenceType>Media</sequenceType>
+    <mediaFile>/Users/elliott.ohara/xlights/Videos/Chris Tomlin - Holy Forever (Lyric Video).mp4</mediaFile>
+    <sequenceDuration>308.314</sequenceDuration>
+  </head>
+  <nextid>1</nextid>
+  <Jukebox />
+  <ColorPalettes />
+  <EffectDB />
+  <DataLayers />
+  <DisplayElements>
+    <Element collapsed="0" type="timing" name="Lyrics Intro Choir" visible="1" views="" active="1" />
+  </DisplayElements>
+  <ElementEffects>
+    <Element type="timing" name="Lyrics Intro Choir">
+      <EffectLayer>
+        <Effect label="" startTime="0" endTime="3900" />
+        <Effect label="Holy" startTime="3900" endTime="6600" />
+        <Effect label="" startTime="6600" endTime="10550" />
+        <Effect label="Holy" startTime="10550" endTime="13550" />
+        <Effect label="" startTime="13550" endTime="308300" />
+      </EffectLayer>
+      <EffectLayer>
+        <Effect label="Holy" startTime="3900" endTime="6600" />
+        <Effect label="Holy" startTime="10550" endTime="13550" />
+      </EffectLayer>
+      <EffectLayer>
+        <Effect label="etc" startTime="3900" endTime="4575" />
+        <Effect label="O" startTime="4575" endTime="5250" />
+        <Effect label="L" startTime="5250" endTime="5925" />
+        <Effect label="E" startTime="5925" endTime="6600" />
+        <Effect label="etc" startTime="10550" endTime="11300" />
+        <Effect label="O" startTime="11300" endTime="12050" />
+        <Effect label="L" startTime="12050" endTime="12800" />
+        <Effect label="E" startTime="12800" endTime="13550" />
+      </EffectLayer>
+    </Element>
+  </ElementEffects>
+  <lastView>0</lastView>
+  <TimingTags />
+</xsequence>

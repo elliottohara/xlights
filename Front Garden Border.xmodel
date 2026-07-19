@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<polylinemodel 
+name="Front Garden Border" parm1="1" parm2="116" parm3="1" StringType="RGB Nodes" Transparency="0" PixelSize="2" ModelBrightness="0" Antialias="1" StartSide="B" Dir="L" StrandNames="" NodeNames="" IndivSegs="" NumPoints="7" Seg1="" Seg2="" Seg3="" Seg4="" Seg5="" Seg6="" Corner1="Neither" Corner2="Neither" Corner3="Neither" Corner4="Neither" Corner5="Neither" Corner6="Neither" Corner7="Neither" PointData="189.588776,0.002525,5.925598,202.447708,0.000000,5.921523,203.542023,0.000000,31.283752,98.520294,0.000000,30.279602,25.862473,0.000000,30.640289,4.295425,0.000000,25.153931,0.000000,0.000000,0.000000" cPointData="4,25.862473,0.000000,30.640289,1.634323,0.000000,27.867371," SourceVersion="2025.10.1"  >
+</polylinemodel>

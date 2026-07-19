@@ -1,0 +1,10 @@
+{
+  "children": [
+    {
+      "children": [],
+      "name": "Favorites",
+      "type": "group"
+    }
+  ],
+  "version": "0007"
+}
