@@ -1,14 +1,13 @@
-"""Holy Forever 2026 — gentle whole-scene snowfall for the ethereal intro.
+"""HISTORICAL — do not run.
 
-Snowflakes on `Whole Scene` L0 from 0 → 15520 (verse 1 pickup), with brightness
-stepping to the two choir "Holy" swells (same windows as the downstairs glowing
-crosses):
-
-  soft pad → abrupt bright on "Holy" → slight darken when the swell ends →
-  abrupt bright on the second "Holy" → slight darken → fade into V1.
-
-Wipe+re-add (safe edit). Does NOT save or render — review in the open editor.
+Superseded by intro_snow_inverse.py (0–41850 inverse-of-cross treatment).
+Running this would replace the baseline Whole Scene snow.
 """
+raise SystemExit(
+    'REFUSED: holy_forever_2026_intro_snow.py is superseded by '
+    'intro_snow_inverse.py and would overwrite the baseline snow. Do not run.'
+)
+
 import sys
 
 sys.path.insert(0, '/Users/elliott.ohara/xlights/Tools')

@@ -1,11 +1,16 @@
 #!/usr/bin/env python3
-"""Build "Holy Forever 2026" through the xLights automation API.
+"""HISTORICAL original full-build script — do not run.
 
-The Chris Tomlin lyric video is both the sequence media and a full-length Video
-effect on the Projector model. Choreography follows the video's royal-blue,
-navy, cyan, charcoal, and warm-white visual language.
+Would wipe/rebuild the sequence from scratch and re-add effects removed from
+the hand-approved 2026-07-19 baseline (marquees, window snow, yard props, etc.).
+Kept only as a reference for effect settings strings.
 """
-from collections import Counter, defaultdict
+raise SystemExit(
+    'REFUSED: holy_forever_2026.py is the original full-build script and would '
+    'overwrite the 2026-07-19 hand-approved baseline. Do not run.'
+)
+
+from collections import Counter, defaultdict  # noqa: E402
 import math
 import sys
 

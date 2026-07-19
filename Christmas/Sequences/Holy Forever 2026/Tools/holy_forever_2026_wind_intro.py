@@ -1,16 +1,13 @@
-"""Holy Forever 2026 - intro 'swaying wind' (180ms -> 15520ms, lyrics start).
+"""HISTORICAL — do not run.
 
-One lean per bar (3333.33ms, 72bpm grid anchored at 180ms), direction flips on
-each downbeat:
-  - Whole Scene: Bars gradient gust flowing Left/Right (integer cycles per lean
-    so the flip is phase-continuous = pendulum turnaround), Max blend over the
-    existing purple wash + shader.
-  - Outline/ground groups: Marquee dash streams (Single Line buffer, the proven
-    settings from this sequence's own verse marquees) with Reverse flipped per bar.
-  - Mega Tree: Spirals swinging movement +1 / -1 per bar.
-
-Does NOT save or render - user reviews in the open editor.
+Wind intro was deleted 2026-07-12. Running this would re-add marquee/bars
+voices onto the empty intro canvas of the 2026-07-19 baseline.
 """
+raise SystemExit(
+    'REFUSED: holy_forever_2026_wind_intro.py would re-add the deleted wind '
+    'intro. Do not run.'
+)
+
 import sys
 
 sys.path.insert(0, '/Users/elliott.ohara/xlights/Tools')

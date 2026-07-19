@@ -1,0 +1,483 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xsequence BaseChannel="0" ChanCtrlBasic="0" ChanCtrlColor="0" FixedPointTiming="1" ModelBlending="false">
+  <head>
+    <version>2026.12</version>
+    <author />
+    <song>Holy Forever</song>
+    <artist>Chris Tomlin</artist>
+    <sequenceTiming>25 ms</sequenceTiming>
+    <sequenceType>Media</sequenceType>
+    <mediaFile>/Users/elliott.ohara/xlights/Christmas/Sequences/Holy Forever 2026/Media/Chris Tomlin - Holy Forever (Lyric Video).mp4</mediaFile>
+    <sequenceDuration>308.314</sequenceDuration>
+  </head>
+  <nextid>1</nextid>
+  <Jukebox />
+  <ColorPalettes />
+  <EffectDB />
+  <DataLayers />
+  <DisplayElements>
+    <Element collapsed="0" type="timing" name="Piano Notes" visible="1" views="" active="1" />
+  </DisplayElements>
+  <ElementEffects>
+    <Element type="timing" name="Piano Notes">
+      <EffectLayer>
+        <Effect label="" startTime="0" endTime="15300" />
+        <Effect label="56 60 63 73" startTime="15300" endTime="15550" />
+        <Effect label="50 55 60 68" startTime="15550" endTime="15900" />
+        <Effect label="" startTime="15900" endTime="18875" />
+        <Effect label="54 57 61 68" startTime="18875" endTime="19225" />
+        <Effect label="" startTime="19225" endTime="19550" />
+        <Effect label="54 61 69 70" startTime="19550" endTime="19900" />
+        <Effect label="" startTime="19900" endTime="22225" />
+        <Effect label="44 52 58 73" startTime="22225" endTime="22575" />
+        <Effect label="" startTime="22575" endTime="22850" />
+        <Effect label="46 53 66 73" startTime="22850" endTime="23200" />
+        <Effect label="" startTime="23200" endTime="23675" />
+        <Effect label="52 56 65 72" startTime="23675" endTime="23900" />
+        <Effect label="44 63 65 73" startTime="23900" endTime="24250" />
+        <Effect label="" startTime="24250" endTime="25550" />
+        <Effect label="49 54 57 68" startTime="25550" endTime="25900" />
+        <Effect label="" startTime="25900" endTime="28875" />
+        <Effect label="48 56 61 63" startTime="28875" endTime="29225" />
+        <Effect label="" startTime="29225" endTime="29550" />
+        <Effect label="44 49 66 91" startTime="29550" endTime="29900" />
+        <Effect label="" startTime="29900" endTime="30350" />
+        <Effect label="52 61 63 68" startTime="30350" endTime="30700" />
+        <Effect label="" startTime="30700" endTime="32200" />
+        <Effect label="56 61 66 75" startTime="32200" endTime="32550" />
+        <Effect label="" startTime="32550" endTime="32600" />
+        <Effect label="57 66 70 86" startTime="32600" endTime="32950" />
+        <Effect label="" startTime="32950" endTime="33475" />
+        <Effect label="54 58 61 68" startTime="33475" endTime="33825" />
+        <Effect label="" startTime="33825" endTime="35275" />
+        <Effect label="54 59 62 69" startTime="35275" endTime="35550" />
+        <Effect label="47 52 63 73" startTime="35550" endTime="35900" />
+        <Effect label="" startTime="35900" endTime="36150" />
+        <Effect label="46 54 57 65" startTime="36150" endTime="36500" />
+        <Effect label="" startTime="36500" endTime="37000" />
+        <Effect label="46 52 61 65" startTime="37000" endTime="37200" />
+        <Effect label="53 56 63 72" startTime="37200" endTime="37550" />
+        <Effect label="" startTime="37550" endTime="38050" />
+        <Effect label="45 56 72 73" startTime="38050" endTime="38400" />
+        <Effect label="" startTime="38400" endTime="38900" />
+        <Effect label="48 55 61 68" startTime="38900" endTime="39250" />
+        <Effect label="" startTime="39250" endTime="41825" />
+        <Effect label="55 58 68" startTime="41825" endTime="42175" />
+        <Effect label="" startTime="42175" endTime="42200" />
+        <Effect label="45 54 58" startTime="42200" endTime="42550" />
+        <Effect label="" startTime="42550" endTime="43675" />
+        <Effect label="57 70 73" startTime="43675" endTime="44025" />
+        <Effect label="" startTime="44025" endTime="45125" />
+        <Effect label="57 61 77" startTime="45125" endTime="45475" />
+        <Effect label="" startTime="45475" endTime="46175" />
+        <Effect label="44 49 77" startTime="46175" endTime="46525" />
+        <Effect label="" startTime="46525" endTime="48475" />
+        <Effect label="56 59 62" startTime="48475" endTime="48825" />
+        <Effect label="" startTime="48825" endTime="48900" />
+        <Effect label="43 52 61" startTime="48900" endTime="49250" />
+        <Effect label="" startTime="49250" endTime="50550" />
+        <Effect label="59 72 73" startTime="50550" endTime="50900" />
+        <Effect label="" startTime="50900" endTime="51225" />
+        <Effect label="60 73 91" startTime="51225" endTime="51575" />
+        <Effect label="" startTime="51575" endTime="52200" />
+        <Effect label="54 58 73" startTime="52200" endTime="52550" />
+        <Effect label="" startTime="52550" endTime="55550" />
+        <Effect label="42 53 58" startTime="55550" endTime="55900" />
+        <Effect label="" startTime="55900" endTime="56825" />
+        <Effect label="54 61 68" startTime="56825" endTime="57175" />
+        <Effect label="" startTime="57175" endTime="58050" />
+        <Effect label="45 54 61" startTime="58050" endTime="58400" />
+        <Effect label="" startTime="58400" endTime="58450" />
+        <Effect label="61 75 77" startTime="58450" endTime="58800" />
+        <Effect label="" startTime="58800" endTime="60325" />
+        <Effect label="60 68 75" startTime="60325" endTime="60675" />
+        <Effect label="" startTime="60675" endTime="61750" />
+        <Effect label="54 57 63" startTime="61750" endTime="62100" />
+        <Effect label="" startTime="62100" endTime="63875" />
+        <Effect label="58 60 73" startTime="63875" endTime="64225" />
+        <Effect label="" startTime="64225" endTime="64500" />
+        <Effect label="60 73 80" startTime="64500" endTime="64850" />
+        <Effect label="" startTime="64850" endTime="65550" />
+        <Effect label="45 52 61" startTime="65550" endTime="65900" />
+        <Effect label="" startTime="65900" endTime="67900" />
+        <Effect label="62 73 95" startTime="67900" endTime="68250" />
+        <Effect label="" startTime="68250" endTime="70575" />
+        <Effect label="44 54 61" startTime="70575" endTime="70925" />
+        <Effect label="" startTime="70925" endTime="71225" />
+        <Effect label="43 73 77" startTime="71225" endTime="71575" />
+        <Effect label="" startTime="71575" endTime="72225" />
+        <Effect label="45 54 73" startTime="72225" endTime="72575" />
+        <Effect label="" startTime="72575" endTime="77250" />
+        <Effect label="62 73 75" startTime="77250" endTime="77600" />
+        <Effect label="" startTime="77600" endTime="78275" />
+        <Effect label="72 75 79" startTime="78275" endTime="78625" />
+        <Effect label="" startTime="78625" endTime="83900" />
+        <Effect label="63 65 67" startTime="83900" endTime="84250" />
+        <Effect label="" startTime="84250" endTime="84725" />
+        <Effect label="77 78 81" startTime="84725" endTime="85075" />
+        <Effect label="" startTime="85075" endTime="85150" />
+        <Effect label="61 77 78" startTime="85150" endTime="85500" />
+        <Effect label="" startTime="85500" endTime="85550" />
+        <Effect label="45 56 77" startTime="85550" endTime="85900" />
+        <Effect label="" startTime="85900" endTime="87225" />
+        <Effect label="44 60 75" startTime="87225" endTime="87575" />
+        <Effect label="" startTime="87575" endTime="88075" />
+        <Effect label="45 65 78" startTime="88075" endTime="88425" />
+        <Effect label="" startTime="88425" endTime="89675" />
+        <Effect label="43 77 80" startTime="89675" endTime="90025" />
+        <Effect label="" startTime="90025" endTime="91800" />
+        <Effect label="73 76 80" startTime="91800" endTime="92150" />
+        <Effect label="" startTime="92150" endTime="92850" />
+        <Effect label="44 49 53" startTime="92850" endTime="93200" />
+        <Effect label="" startTime="93200" endTime="95550" />
+        <Effect label="42 48 80" startTime="95550" endTime="95900" />
+        <Effect label="" startTime="95900" endTime="96175" />
+        <Effect label="49 65 72" startTime="96175" endTime="96525" />
+        <Effect label="" startTime="96525" endTime="97000" />
+        <Effect label="52 65 73" startTime="97000" endTime="97350" />
+        <Effect label="" startTime="97350" endTime="97450" />
+        <Effect label="58 61 68" startTime="97450" endTime="97800" />
+        <Effect label="" startTime="97800" endTime="98050" />
+        <Effect label="50 54 57" startTime="98050" endTime="98400" />
+        <Effect label="" startTime="98400" endTime="98475" />
+        <Effect label="44 61 65" startTime="98475" endTime="98825" />
+        <Effect label="" startTime="98825" endTime="98875" />
+        <Effect label="43 52 65" startTime="98875" endTime="99225" />
+        <Effect label="" startTime="99225" endTime="99525" />
+        <Effect label="50 70 73" startTime="99525" endTime="99875" />
+        <Effect label="" startTime="99875" endTime="100425" />
+        <Effect label="53 61 63" startTime="100425" endTime="100775" />
+        <Effect label="" startTime="100775" endTime="101375" />
+        <Effect label="49 54 57" startTime="101375" endTime="101725" />
+        <Effect label="" startTime="101725" endTime="102200" />
+        <Effect label="43 48 73" startTime="102200" endTime="102550" />
+        <Effect label="" startTime="102550" endTime="102850" />
+        <Effect label="45 54 65" startTime="102850" endTime="103200" />
+        <Effect label="" startTime="103200" endTime="104100" />
+        <Effect label="45 63 73" startTime="104100" endTime="104450" />
+        <Effect label="" startTime="104450" endTime="104700" />
+        <Effect label="43 53 57" startTime="104700" endTime="105050" />
+        <Effect label="" startTime="105050" endTime="107425" />
+        <Effect label="44 49 60" startTime="107425" endTime="107775" />
+        <Effect label="" startTime="107775" endTime="108050" />
+        <Effect label="45 53 62" startTime="108050" endTime="108400" />
+        <Effect label="" startTime="108400" endTime="108875" />
+        <Effect label="42 65 68" startTime="108875" endTime="109225" />
+        <Effect label="" startTime="109225" endTime="109500" />
+        <Effect label="42 61 65" startTime="109500" endTime="109850" />
+        <Effect label="" startTime="109850" endTime="110350" />
+        <Effect label="50 63 73" startTime="110350" endTime="110700" />
+        <Effect label="" startTime="110700" endTime="111375" />
+        <Effect label="43 50 54" startTime="111375" endTime="111725" />
+        <Effect label="" startTime="111725" endTime="112200" />
+        <Effect label="42 48 68" startTime="112200" endTime="112550" />
+        <Effect label="" startTime="112550" endTime="112825" />
+        <Effect label="43 54 70" startTime="112825" endTime="113175" />
+        <Effect label="" startTime="113175" endTime="113675" />
+        <Effect label="42 63 73" startTime="113675" endTime="114025" />
+        <Effect label="" startTime="114025" endTime="114700" />
+        <Effect label="45 53 56" startTime="114700" endTime="115050" />
+        <Effect label="" startTime="115050" endTime="115550" />
+        <Effect label="43 48 65" startTime="115550" endTime="115900" />
+        <Effect label="" startTime="115900" endTime="116175" />
+        <Effect label="45 58 63" startTime="116175" endTime="116525" />
+        <Effect label="" startTime="116525" endTime="118050" />
+        <Effect label="45 50 54" startTime="118050" endTime="118400" />
+        <Effect label="" startTime="118400" endTime="119525" />
+        <Effect label="43 48 61" startTime="119525" endTime="119875" />
+        <Effect label="" startTime="119875" endTime="121375" />
+        <Effect label="42 50 59" startTime="121375" endTime="121725" />
+        <Effect label="" startTime="121725" endTime="122000" />
+        <Effect label="55 61 77" startTime="122000" endTime="122350" />
+        <Effect label="" startTime="122350" endTime="122850" />
+        <Effect label="58 63 77" startTime="122850" endTime="123200" />
+        <Effect label="" startTime="123200" endTime="123650" />
+        <Effect label="72 73 74" startTime="123650" endTime="124000" />
+        <Effect label="" startTime="124000" endTime="124150" />
+        <Effect label="75 77 80" startTime="124150" endTime="124500" />
+        <Effect label="" startTime="124500" endTime="125025" />
+        <Effect label="73 80 95" startTime="125025" endTime="125325" />
+        <Effect label="58 60 80" startTime="125325" endTime="125675" />
+        <Effect label="" startTime="125675" endTime="126200" />
+        <Effect label="73 82 95" startTime="126200" endTime="126550" />
+        <Effect label="" startTime="126550" endTime="127200" />
+        <Effect label="54 63 73" startTime="127200" endTime="127550" />
+        <Effect label="" startTime="127550" endTime="127850" />
+        <Effect label="46 61 77" startTime="127850" endTime="128200" />
+        <Effect label="" startTime="128200" endTime="128475" />
+        <Effect label="47 52 73" startTime="128475" endTime="128825" />
+        <Effect label="" startTime="128825" endTime="129300" />
+        <Effect label="58 77 78" startTime="129300" endTime="129650" />
+        <Effect label="" startTime="129650" endTime="129700" />
+        <Effect label="42 52 73" startTime="129700" endTime="130050" />
+        <Effect label="" startTime="130050" endTime="130525" />
+        <Effect label="42 53 73" startTime="130525" endTime="130875" />
+        <Effect label="" startTime="130875" endTime="133050" />
+        <Effect label="50 54 75" startTime="133050" endTime="133400" />
+        <Effect label="" startTime="133400" endTime="134575" />
+        <Effect label="44 58 63" startTime="134575" endTime="134925" />
+        <Effect label="" startTime="134925" endTime="136375" />
+        <Effect label="48 52 57" startTime="136375" endTime="136725" />
+        <Effect label="" startTime="136725" endTime="137175" />
+        <Effect label="56 73 75" startTime="137175" endTime="137525" />
+        <Effect label="" startTime="137525" endTime="138050" />
+        <Effect label="52 72 74" startTime="138050" endTime="138400" />
+        <Effect label="" startTime="138400" endTime="139625" />
+        <Effect label="45 58 73" startTime="139625" endTime="139975" />
+        <Effect label="" startTime="139975" endTime="141200" />
+        <Effect label="57 61 77" startTime="141200" endTime="141550" />
+        <Effect label="" startTime="141550" endTime="141850" />
+        <Effect label="45 63 82" startTime="141850" endTime="142200" />
+        <Effect label="" startTime="142200" endTime="143050" />
+        <Effect label="50 54 57" startTime="143050" endTime="143400" />
+        <Effect label="" startTime="143400" endTime="143925" />
+        <Effect label="70 75 77" startTime="143925" endTime="144275" />
+        <Effect label="" startTime="144275" endTime="144700" />
+        <Effect label="52 78 81" startTime="144700" endTime="145050" />
+        <Effect label="" startTime="145050" endTime="146375" />
+        <Effect label="53 57 63" startTime="146375" endTime="146725" />
+        <Effect label="" startTime="146725" endTime="148050" />
+        <Effect label="52 56 63" startTime="148050" endTime="148400" />
+        <Effect label="" startTime="148400" endTime="149700" />
+        <Effect label="52 56 77" startTime="149700" endTime="150050" />
+        <Effect label="" startTime="150050" endTime="150375" />
+        <Effect label="48 77 80" startTime="150375" endTime="150725" />
+        <Effect label="" startTime="150725" endTime="151375" />
+        <Effect label="52 56 77" startTime="151375" endTime="151725" />
+        <Effect label="" startTime="151725" endTime="151825" />
+        <Effect label="54 68 73" startTime="151825" endTime="152175" />
+        <Effect label="" startTime="152175" endTime="152400" />
+        <Effect label="65 68 73" startTime="152400" endTime="152750" />
+        <Effect label="" startTime="152750" endTime="153450" />
+        <Effect label="49 59 65" startTime="153450" endTime="153800" />
+        <Effect label="" startTime="153800" endTime="154300" />
+        <Effect label="50 55 65" startTime="154300" endTime="154650" />
+        <Effect label="" startTime="154650" endTime="154775" />
+        <Effect label="48 73 77" startTime="154775" endTime="155125" />
+        <Effect label="" startTime="155125" endTime="156375" />
+        <Effect label="50 54 57" startTime="156375" endTime="156725" />
+        <Effect label="" startTime="156725" endTime="157200" />
+        <Effect label="73 77 78" startTime="157200" endTime="157550" />
+        <Effect label="" startTime="157550" endTime="158000" />
+        <Effect label="54 77 80" startTime="158000" endTime="158350" />
+        <Effect label="" startTime="158350" endTime="158450" />
+        <Effect label="58 73 80" startTime="158450" endTime="158800" />
+        <Effect label="" startTime="158800" endTime="159700" />
+        <Effect label="45 53 56" startTime="159700" endTime="160050" />
+        <Effect label="" startTime="160050" endTime="161375" />
+        <Effect label="71 78 80" startTime="161375" endTime="161725" />
+        <Effect label="" startTime="161725" endTime="162325" />
+        <Effect label="55 65 68" startTime="162325" endTime="162675" />
+        <Effect label="" startTime="162675" endTime="163050" />
+        <Effect label="42 52 56" startTime="163050" endTime="163400" />
+        <Effect label="" startTime="163400" endTime="163925" />
+        <Effect label="66 73 77" startTime="163925" endTime="164275" />
+        <Effect label="" startTime="164275" endTime="165375" />
+        <Effect label="55 65 72" startTime="165375" endTime="165725" />
+        <Effect label="" startTime="165725" endTime="166375" />
+        <Effect label="45 55 70" startTime="166375" endTime="166725" />
+        <Effect label="" startTime="166725" endTime="166800" />
+        <Effect label="45 59 61" startTime="166800" endTime="167150" />
+        <Effect label="" startTime="167150" endTime="167550" />
+        <Effect label="70 77 84" startTime="167550" endTime="167900" />
+        <Effect label="" startTime="167900" endTime="168050" />
+        <Effect label="55 73 77" startTime="168050" endTime="168400" />
+        <Effect label="" startTime="168400" endTime="168500" />
+        <Effect label="43 70 77" startTime="168500" endTime="168850" />
+        <Effect label="" startTime="168850" endTime="169700" />
+        <Effect label="52 56 59" startTime="169700" endTime="170050" />
+        <Effect label="" startTime="170050" endTime="170550" />
+        <Effect label="67 75 80" startTime="170550" endTime="170900" />
+        <Effect label="" startTime="170900" endTime="173050" />
+        <Effect label="44 53 57" startTime="173050" endTime="173400" />
+        <Effect label="" startTime="173400" endTime="173850" />
+        <Effect label="56 60 75" startTime="173850" endTime="174200" />
+        <Effect label="" startTime="174200" endTime="174725" />
+        <Effect label="50 54 60" startTime="174725" endTime="175075" />
+        <Effect label="" startTime="175075" endTime="175350" />
+        <Effect label="56 78 82" startTime="175350" endTime="175700" />
+        <Effect label="" startTime="175700" endTime="176375" />
+        <Effect label="52 61 80" startTime="176375" endTime="176725" />
+        <Effect label="" startTime="176725" endTime="177075" />
+        <Effect label="73 77 80" startTime="177075" endTime="177425" />
+        <Effect label="" startTime="177425" endTime="178050" />
+        <Effect label="54 77 80" startTime="178050" endTime="178400" />
+        <Effect label="" startTime="178400" endTime="178675" />
+        <Effect label="49 77 78" startTime="178675" endTime="179025" />
+        <Effect label="" startTime="179025" endTime="179700" />
+        <Effect label="53 57 73" startTime="179700" endTime="180050" />
+        <Effect label="" startTime="180050" endTime="181375" />
+        <Effect label="48 54 57" startTime="181375" endTime="181725" />
+        <Effect label="" startTime="181725" endTime="182200" />
+        <Effect label="42 48 58" startTime="182200" endTime="182550" />
+        <Effect label="" startTime="182550" endTime="183650" />
+        <Effect label="54 70 73" startTime="183650" endTime="184000" />
+        <Effect label="" startTime="184000" endTime="184700" />
+        <Effect label="47 58 61" startTime="184700" endTime="185050" />
+        <Effect label="" startTime="185050" endTime="188025" />
+        <Effect label="42 48 56" startTime="188025" endTime="188375" />
+        <Effect label="" startTime="188375" endTime="191375" />
+        <Effect label="46 61 72" startTime="191375" endTime="191725" />
+        <Effect label="" startTime="191725" endTime="196775" />
+        <Effect label="58 61 66" startTime="196775" endTime="197125" />
+        <Effect label="" startTime="197125" endTime="198050" />
+        <Effect label="50 54 59" startTime="198050" endTime="198400" />
+        <Effect label="" startTime="198400" endTime="201375" />
+        <Effect label="54 58 75" startTime="201375" endTime="201725" />
+        <Effect label="" startTime="201725" endTime="204700" />
+        <Effect label="54 58 61" startTime="204700" endTime="205050" />
+        <Effect label="" startTime="205050" endTime="207225" />
+        <Effect label="45 50 54" startTime="207225" endTime="207575" />
+        <Effect label="" startTime="207575" endTime="207700" />
+        <Effect label="70 75 80" startTime="207700" endTime="208050" />
+        <Effect label="" startTime="208050" endTime="208450" />
+        <Effect label="45 61 77" startTime="208450" endTime="208800" />
+        <Effect label="" startTime="208800" endTime="211400" />
+        <Effect label="44 53 70" startTime="211400" endTime="211750" />
+        <Effect label="" startTime="211750" endTime="214150" />
+        <Effect label="45 80 84" startTime="214150" endTime="214500" />
+        <Effect label="" startTime="214500" endTime="214700" />
+        <Effect label="49 56 84" startTime="214700" endTime="215050" />
+        <Effect label="" startTime="215050" endTime="217200" />
+        <Effect label="47 57 61" startTime="217200" endTime="217550" />
+        <Effect label="" startTime="217550" endTime="218050" />
+        <Effect label="50 55 72" startTime="218050" endTime="218400" />
+        <Effect label="" startTime="218400" endTime="219500" />
+        <Effect label="48 54 82" startTime="219500" endTime="219850" />
+        <Effect label="" startTime="219850" endTime="221375" />
+        <Effect label="53 56 61" startTime="221375" endTime="221725" />
+        <Effect label="" startTime="221725" endTime="222200" />
+        <Effect label="53 57 60" startTime="222200" endTime="222550" />
+        <Effect label="" startTime="222550" endTime="224700" />
+        <Effect label="54 73 80" startTime="224700" endTime="225050" />
+        <Effect label="" startTime="225050" endTime="225550" />
+        <Effect label="50 54 57" startTime="225550" endTime="225900" />
+        <Effect label="" startTime="225900" endTime="226375" />
+        <Effect label="43 75 80" startTime="226375" endTime="226725" />
+        <Effect label="" startTime="226725" endTime="226975" />
+        <Effect label="56 61 84" startTime="226975" endTime="227325" />
+        <Effect label="" startTime="227325" endTime="228050" />
+        <Effect label="54 73 80" startTime="228050" endTime="228400" />
+        <Effect label="" startTime="228400" endTime="228850" />
+        <Effect label="52 56 65" startTime="228850" endTime="229200" />
+        <Effect label="" startTime="229200" endTime="230550" />
+        <Effect label="46 64 73" startTime="230550" endTime="230900" />
+        <Effect label="" startTime="230900" endTime="231375" />
+        <Effect label="57 62 73" startTime="231375" endTime="231725" />
+        <Effect label="" startTime="231725" endTime="232200" />
+        <Effect label="54 60 73" startTime="232200" endTime="232550" />
+        <Effect label="" startTime="232550" endTime="233875" />
+        <Effect label="53 57" startTime="233875" endTime="234225" />
+        <Effect label="" startTime="234225" endTime="234500" />
+        <Effect label="53 57" startTime="234500" endTime="234850" />
+        <Effect label="" startTime="234850" endTime="235650" />
+        <Effect label="80 82" startTime="235650" endTime="236000" />
+        <Effect label="" startTime="236000" endTime="237200" />
+        <Effect label="73 80" startTime="237200" endTime="237550" />
+        <Effect label="" startTime="237550" endTime="239300" />
+        <Effect label="63 80" startTime="239300" endTime="239650" />
+        <Effect label="" startTime="239650" endTime="240000" />
+        <Effect label="56 73" startTime="240000" endTime="240350" />
+        <Effect label="" startTime="240350" endTime="240750" />
+        <Effect label="74 80" startTime="240750" endTime="241100" />
+        <Effect label="" startTime="241100" endTime="241550" />
+        <Effect label="56 72" startTime="241550" endTime="241900" />
+        <Effect label="" startTime="241900" endTime="242150" />
+        <Effect label="75 80" startTime="242150" endTime="242500" />
+        <Effect label="" startTime="242500" endTime="243050" />
+        <Effect label="50 54" startTime="243050" endTime="243400" />
+        <Effect label="" startTime="243400" endTime="243900" />
+        <Effect label="58 60" startTime="243900" endTime="244250" />
+        <Effect label="" startTime="244250" endTime="246775" />
+        <Effect label="55 58" startTime="246775" endTime="247125" />
+        <Effect label="" startTime="247125" endTime="249700" />
+        <Effect label="53 57" startTime="249700" endTime="250050" />
+        <Effect label="" startTime="250050" endTime="250600" />
+        <Effect label="77 81" startTime="250600" endTime="250950" />
+        <Effect label="" startTime="250950" endTime="252475" />
+        <Effect label="51 80" startTime="252475" endTime="252825" />
+        <Effect label="" startTime="252825" endTime="253050" />
+        <Effect label="54 63" startTime="253050" endTime="253400" />
+        <Effect label="" startTime="253400" endTime="253900" />
+        <Effect label="62 76" startTime="253900" endTime="254250" />
+        <Effect label="" startTime="254250" endTime="254700" />
+        <Effect label="51 55" startTime="254700" endTime="255050" />
+        <Effect label="" startTime="255050" endTime="255325" />
+        <Effect label="78 82" startTime="255325" endTime="255675" />
+        <Effect label="" startTime="255675" endTime="256225" />
+        <Effect label="77 80" startTime="256225" endTime="256575" />
+        <Effect label="" startTime="256575" endTime="257875" />
+        <Effect label="68 77" startTime="257875" endTime="258225" />
+        <Effect label="" startTime="258225" endTime="258550" />
+        <Effect label="73 79" startTime="258550" endTime="258900" />
+        <Effect label="" startTime="258900" endTime="260100" />
+        <Effect label="59 65" startTime="260100" endTime="260450" />
+        <Effect label="" startTime="260450" endTime="261125" />
+        <Effect label="65 75" startTime="261125" endTime="261475" />
+        <Effect label="" startTime="261475" endTime="261800" />
+        <Effect label="43 68" startTime="261800" endTime="262150" />
+        <Effect label="" startTime="262150" endTime="263050" />
+        <Effect label="54 73" startTime="263050" endTime="263400" />
+        <Effect label="" startTime="263400" endTime="263900" />
+        <Effect label="64 80" startTime="263900" endTime="264250" />
+        <Effect label="" startTime="264250" endTime="265350" />
+        <Effect label="74 77" startTime="265350" endTime="265700" />
+        <Effect label="" startTime="265700" endTime="266375" />
+        <Effect label="53 73" startTime="266375" endTime="266725" />
+        <Effect label="" startTime="266725" endTime="268875" />
+        <Effect label="45 68" startTime="268875" endTime="269225" />
+        <Effect label="" startTime="269225" endTime="269700" />
+        <Effect label="53 73" startTime="269700" endTime="270050" />
+        <Effect label="" startTime="270050" endTime="270575" />
+        <Effect label="59 75" startTime="270575" endTime="270925" />
+        <Effect label="" startTime="270925" endTime="271375" />
+        <Effect label="53 76" startTime="271375" endTime="271725" />
+        <Effect label="" startTime="271725" endTime="273050" />
+        <Effect label="53 58" startTime="273050" endTime="273400" />
+        <Effect label="" startTime="273400" endTime="274075" />
+        <Effect label="53 76" startTime="274075" endTime="274425" />
+        <Effect label="" startTime="274425" endTime="274700" />
+        <Effect label="53 73" startTime="274700" endTime="275050" />
+        <Effect label="" startTime="275050" endTime="276375" />
+        <Effect label="50 54" startTime="276375" endTime="276725" />
+        <Effect label="" startTime="276725" endTime="277250" />
+        <Effect label="66 80" startTime="277250" endTime="277600" />
+        <Effect label="" startTime="277600" endTime="279700" />
+        <Effect label="53 56" startTime="279700" endTime="280050" />
+        <Effect label="" startTime="280050" endTime="280550" />
+        <Effect label="60 73" startTime="280550" endTime="280900" />
+        <Effect label="" startTime="280900" endTime="281375" />
+        <Effect label="55 87" startTime="281375" endTime="281725" />
+        <Effect label="" startTime="281725" endTime="282125" />
+        <Effect label="78 82" startTime="282125" endTime="282475" />
+        <Effect label="" startTime="282475" endTime="282800" />
+        <Effect label="76 80" startTime="282800" endTime="283150" />
+        <Effect label="" startTime="283150" endTime="284700" />
+        <Effect label="55 65" startTime="284700" endTime="285050" />
+        <Effect label="" startTime="285050" endTime="286375" />
+        <Effect label="53 57" startTime="286375" endTime="286725" />
+        <Effect label="" startTime="286725" endTime="286800" />
+        <Effect label="58 68 77" startTime="286800" endTime="287150" />
+        <Effect label="" startTime="287150" endTime="287200" />
+        <Effect label="73 75 82" startTime="287200" endTime="287550" />
+        <Effect label="" startTime="287550" endTime="287700" />
+        <Effect label="73 77 80" startTime="287700" endTime="288050" />
+        <Effect label="" startTime="288050" endTime="288525" />
+        <Effect label="65 73 80" startTime="288525" endTime="288875" />
+        <Effect label="" startTime="288875" endTime="289425" />
+        <Effect label="51 66 73" startTime="289425" endTime="289775" />
+        <Effect label="" startTime="289775" endTime="290625" />
+        <Effect label="63 77 79" startTime="290625" endTime="290975" />
+        <Effect label="" startTime="290975" endTime="293875" />
+        <Effect label="56 63 72" startTime="293875" endTime="294225" />
+        <Effect label="" startTime="294225" endTime="294725" />
+        <Effect label="56 76 84" startTime="294725" endTime="295075" />
+        <Effect label="" startTime="295075" endTime="295975" />
+        <Effect label="49 56 75" startTime="295975" endTime="296325" />
+        <Effect label="" startTime="296325" endTime="297200" />
+        <Effect label="56 61 77" startTime="297200" endTime="297550" />
+        <Effect label="" startTime="297550" endTime="308300" />
+      </EffectLayer>
+    </Element>
+  </ElementEffects>
+</xsequence>

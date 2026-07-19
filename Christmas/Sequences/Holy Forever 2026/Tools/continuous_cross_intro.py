@@ -5,9 +5,9 @@ boundary). Brightens with each intro choir "Holy", then holds a soft
 glow through the intimate acoustic verse (Snowman solo) before easing
 out as PC1 begins.
 
-Clears any leftover cross on `Matrix - Downstairs Window` L0
-(L1 "Holy" Text stays). Mega Tree L0 currently holds only this cross
-(verse Spirals were cleared earlier) — safe to House-wipe L0.
+Clears any leftover cross on `Matrix - Downstairs Window` L0 if present
+(downstairs is empty in the 2026-07-19 baseline). Mega Tree L0 holds only
+this cross — safe to House-wipe L0.
 
 Brightness curve:
 
@@ -103,19 +103,17 @@ PALETTE = (
 
 
 def clear_matrix_cross():
-    """Remove intro Pictures from downstairs window L0; keep L1 Holy Text."""
+    """Remove any leftover intro Pictures from downstairs window L0."""
     ids = x.xl('getEffectIDs', model=MATRIX)['effects']
     l0 = ids[0] if ids else []
-    l1 = ids[1] if len(ids) > 1 else []
-    print(f'{MATRIX}: L0={len(l0)} effects, L1={len(l1)} effects')
+    print(f'{MATRIX}: L0={len(l0)} effects across {len(ids)} layers')
     if not l0:
         print(f'  matrix L0 already empty — nothing to clear')
         return
     x.xl('cloneModelEffects', target=MATRIX, source=EMPTY_SOURCE, eraseModel='true')
     left = x.xl('getEffectIDs', model=MATRIX)['effects']
-    assert not left[0], f'matrix L0 still has effects after wipe: {left[0]}'
-    assert left[1], 'L1 Holy text was wiped — abort (House should only clear L0)'
-    print(f'  wiped matrix L0; L1 Holy text intact ({len(left[1])} effects)')
+    assert not left or not left[0], f'matrix L0 still has effects after wipe: {left}'
+    print(f'  wiped matrix L0')
 
 
 def wipe_mega_tree_l0():
