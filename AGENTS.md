@@ -4,6 +4,39 @@ Knowledge gathered while building "Feliz Navidad 2026" and "Holy Forever 2026" (
 
 **Per-sequence notes:** each song lives under `Christmas/Sequences/<Song Name>/` with `AGENT NOTES.md` next to the `.xsq` (e.g. `Christmas/Sequences/Holy Forever 2026/AGENT NOTES.md`). Read it before editing that sequence; keep it updated after significant work. To scaffold a new song folder, use the project skill `.cursor/skills/setup-sequence/`.
 
+## Parallel agent work — use git worktrees
+
+**Do not pile concurrent agent work onto `main` in the primary checkout.** Multiple agents (or agent + human) editing the same working tree collide on branches, dirty files, and saves. For any non-trivial or parallel task, work in a **dedicated git worktree** so `main` stays free.
+
+### Convention
+
+- **Worktree root (sibling of this repo):** `/Users/elliott.ohara/xlights-worktrees/<branch-name>/`
+- **Branch name:** short kebab-case task slug (e.g. `remove-marquees-holy-forever`, `holy-forever-intro-rebuild`).
+- **Primary checkout** (`/Users/elliott.ohara/xlights`) stays on `main` for review, merges, and one-off reads — not for long-running agent edits.
+
+### Create / switch / clean up
+
+```bash
+# From the primary repo
+mkdir -p /Users/elliott.ohara/xlights-worktrees
+git fetch origin   # if tracking remotes
+git worktree add -b <branch-name> /Users/elliott.ohara/xlights-worktrees/<branch-name> main
+
+# List / remove when the branch is merged or abandoned
+git worktree list
+git worktree remove /Users/elliott.ohara/xlights-worktrees/<branch-name>
+# optional: git branch -d <branch-name>
+```
+
+Open the **worktree path** as the Cursor workspace for that agent (not the primary checkout). Record the branch + worktree path in the song's `AGENT NOTES.md` when the work is non-trivial.
+
+### xLights / path caveats in a worktree
+
+- Absolute paths in this file that point at `/Users/elliott.ohara/xlights/...` mean the **primary** tree. In a worktree, prefer paths under that worktree root (or resolve relative to the repo root) for sequence files, scripts, and `saveSequence` targets.
+- Shared on-disk media outside git (e.g. large `ImportedMedia/`, `Audio/`, `Videos/`) may still live under the primary tree — symlink or pass the primary path when the worktree checkout does not contain the file.
+- Only one xLights GUI/API session should own a given show directory at a time. Point `-s` at the worktree's `Christmas/` (or Halloween/) when sequencing from that worktree; do not have two agents drive the same open show folder.
+- When the task finishes: merge/PR into `main`, update `AGENT NOTES.md` if needed, then remove the worktree.
+
 ## Directory layout
 
 - **Show directory (Christmas):** `/Users/elliott.ohara/xlights/Christmas/` — layout only: `xlights_rgbeffects.xml`, `xlights_networks.xml`, faces, shared `ImportedMedia/`. **Do not** dump song files at this root.
