@@ -30,6 +30,20 @@ Saved from the live xLights session after hand edits. Live model effects now:
 
 2026-07-19: Piano Chords + arch SingleStrand; mini-tree piano fills; all Marquees cleared (`clear_marquees.py`); Lantana Piano Notes; oak cymbal Twinkles; then **hand-edit baseline above** (removed window snow, downstairs Holy text, Roof accent Ons, **all House Outline + Icicles GRP effects**).
 
+## Xtreme V1 pass (branch `xtremeify`, worktree `/Users/elliott.ohara/xlights-worktrees/xtremeify`, 2026-07-19)
+
+Applied the Xtreme Sequences techniques (see `Style References/XTREME SEQUENCES STYLE REPORT.md`) to Verse 1 only, at verse brightness — five changes on top of the hand-approved baseline. All V1 starts verified 100% quantized (±25 ms) to labeled timing marks (`Tools/work/audit_v1_quantization.py`).
+
+1. **Rotating chord banks** (`Tools/xtreme_v1_chord_banks.py`): each `Piano Chords` `P` mark gets a dim (b30) warm Shockwave (Xtreme skeleton, `Per Model Per Preview`) on a rotating bank — Canes → `GE Rosa Grande Web Ring GRP` → `GE Starlord Plunger All GRP` → `GE Baby Grand Illusion Rings GRP` → `GE Reel Max Circles Outer GRP` → `Flakes Outline All GRP` → `Mini Tree Stars`+Canes. All these part-bank GRPs ARE addressable in the master view (probed 2026-07-19). L0 of each bank is owned by this script.
+2. **Arch reveal pair** (`Tools/xtreme_v1_arch_reveal.py`): the approved From-Middle chase is now L0 white SingleStrand `T_CHOICE_LayerMethod=1 reveals 2` over L1 ivory→gold Color Wash (`--restore-flat` rebuilds the old flat look). Effect name for the API is `Color Wash` (with space) — `ColorWash` fails with worked:false.
+3. **Mini trees on real onsets** (`Tools/xtreme_v1_mini_tree_notes.py`): replaces the 19 hand-curated pulses with 15 pulses, one per labeled `Piano Notes` mark in V1 (chord-coincident marks ±50 ms excluded), top MIDI note rank-mapped to `Mini Tree - 1..4` (low→left).
+4. **Oak odd/even split** (`Tools/xtreme_v1_oak_split.py`): V1 cymbal Twinkles alternate left/right `B_CUSTOM_SubBuffer` halves (the tight 39750/40575 pair answers itself); the two PC1 hits stay full-tree. Supersedes `intimate_oak_cymbals.py` on this branch.
+5. **Snow rest dips** (`Tools/xtreme_v1_snow_phrase_dips.py`): rebuild of `intro_snow_inverse.py` whose verse hold (28/400) dips to 16/400 in `Lyrics Lead` word-layer gaps ≥500 ms. V1's vocal is nearly continuous — exactly ONE rest qualifies (18150–18950).
+
+On this branch the superseded builders are `intimate_arch_chords.py`, `intimate_mini_tree_piano.py`, `intimate_oak_cymbals.py`, `intro_snow_inverse.py` — running them would undo the pass. Preview: `RenderCompare/holy_forever_xtremeify_v1.mp4` (primary tree); per-chord fire verified numerically (`Tools/work/frame_diff_check.py`).
+
+**Session quirks learned:** `changeShowFolder` reports success but does NOT stick — relaunch xLights with `-s <worktree>/Christmas` instead. `openSequence` on a file outside the active show folder silently opens an empty 30 s sequence (media="", len=30000) — always verify `getOpenSequence` length. `renderAll`/`exportVideoPreview` hung once when `RenderCompare/` didn't exist; create output dirs first, and a hung xLights needs kill -9 (AppleScript quit leaves it wedged).
+
 ## Musical grid (verified — ⚠ anchor corrected 2026-07-18)
 
 - **72.0 BPM, 4/4 — bar = 3333.33 ms. TRUE audio downbeat anchor = 600 ms** (600, 3933, 7267, 10600, 13933, …). Fitted by maximizing backbeat snare flux over V2→C3 and confirmed by section-start crashes landing on 600-grid downbeats (e.g. crashes at 13909, 40583, 93896 are all within ~35 ms of a 600-anchor downbeat but ~400 ms off the 180 grid).
