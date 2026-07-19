@@ -117,7 +117,7 @@ Reading existing sequences for analysis is fine (XML): `ColorPalettes`/`EffectDB
 
 - `Tools/xlights_api.py` — shared API client (launch/wait, new_sequence, import_timings, add_effect, save, render_all, export_video_preview).
 - `Christmas/Sequences/Holy Forever 2026/Tools/` — Holy Forever build/choreography scripts + lyric-timing pipeline (whisper → alignment → phonemes → timing template) + face/casting helpers. Reference implementation for per-song tooling; see that sequence's `AGENT NOTES.md`.
-- `Christmas/Sequences/Holy Forever 2026/Tools/holy_forever_2026_wind_intro.py` — bar-synced "swaying wind" intro build (phase-continuous Bars direction flips + marquee streams + spiral sway).
+- `Christmas/Sequences/Holy Forever 2026/Tools/holy_forever_2026_wind_intro.py` — historical wind-intro builder; **refuses to run** (intro was cleared; would undo the 2026-07-19 baseline).
 - `Tools/vidstats.swift` — per-frame brightness/motion metrics + sample frames from exported preview videos (must run outside a sandbox for AVFoundation), if present.
 
 ## Layout: key models and groups (Christmas)
@@ -177,6 +177,8 @@ Instrument tracks are gold for musicality: map each horn stab / string run to a 
 - Reference these via the `/Users/elliott.ohara/xlights/...` path (symlinked) to match existing sequences.
 
 ## Style reference sequences (user's favorites)
+
+**Deep-dive style report:** `Style References/XTREME SEQUENCES STYLE REPORT.md` — full analysis of all 18 purchased Xtreme Sequences vendor packages (`/Volumes/Personal-Drive/xlights/Imports/xS_*`): their submodel-group ("part bank") technique, Shockwave/SingleStrand recipes, buffer-style choices, layer-stack anatomy, and note-onset timing discipline. Read it before styling a new sequence; regenerate stats with `Tools/analyze_xtreme_sequences.py`.
 
 `The Imperal March.xsq`, `Carol Of the Bells (Instramental).xsq`, `Christmas Every Day.xsq`, `Christmas Dubstep.xsq` — Dubstep is the gold standard. Its signature moves:
 
