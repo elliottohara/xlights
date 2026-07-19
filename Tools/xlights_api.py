@@ -2,16 +2,23 @@
 
 xLights must be running with the automation API enabled (launch attached to the
 GUI session: `open -a xLights --args -a -s "<show dir>"`). All commands are
-HTTP POSTs to /xlDoAutomation on port 49913. Command reference:
+HTTP POSTs to /xlDoAutomation. Command reference:
 documentation/xlDo Commands.txt in the xLights repo, or
 https://github.com/xLightsSequencer/xLights/blob/master/documentation/xlDo%20Commands.txt
+
+xLights supports exactly two API instances: the A port (49913, `-a` flag) and
+the B port (49914, `-b` flag) — port = 49912 + slot, nothing else is possible.
+Default here is the A port; set XLIGHTS_API_PORT=49914 to drive a second
+instance (see "Running two agents at once" in AGENTS.md).
 """
 import json
+import os
 import subprocess
 import time
 import urllib.request
 
-BASE = 'http://127.0.0.1:49913/xlDoAutomation'
+PORT = int(os.environ.get('XLIGHTS_API_PORT', '49913'))
+BASE = f'http://127.0.0.1:{PORT}/xlDoAutomation'
 
 
 def xl(cmd, timeout=600, retries=5, **kwargs):
@@ -47,12 +54,20 @@ def wait_ready(timeout=600):
 
 
 def launch(show_dir, timeout=600):
-    """Start xLights attached to the user's GUI session and wait for the API."""
+    """Start xLights attached to the user's GUI session and wait for the API.
+
+    PORT selects the instance: 49913 launches with -a; 49914 launches with -b
+    and `open -n` (without -n, macOS just focuses the already-running copy
+    instead of starting a second instance)."""
     try:
         return wait_ready(timeout=10)
     except TimeoutError:
         pass
-    subprocess.run(['open', '-a', 'xLights', '--args', '-a', '-s', show_dir], check=True)
+    cmd = ['open', '-a', 'xLights', '--args',
+           '-b' if PORT == 49914 else '-a', '-s', show_dir]
+    if PORT == 49914:
+        cmd.insert(1, '-n')
+    subprocess.run(cmd, check=True)
     return wait_ready(timeout)
 
 

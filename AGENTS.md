@@ -34,10 +34,24 @@ Open the **worktree path** as the Cursor workspace for that agent (not the prima
 
 - Absolute paths in this file that point at `/Users/elliott.ohara/xlights/...` mean the **primary** tree. In a worktree, prefer paths under that worktree root (or resolve relative to the repo root) for sequence files, scripts, and `saveSequence` targets.
 - Shared on-disk media outside git (e.g. large `ImportedMedia/`, `Audio/`, `Videos/`) may still live under the primary tree — symlink or pass the primary path when the worktree checkout does not contain the file.
-- Only one xLights GUI/API session should own a given show directory at a time. Point `-s` at the worktree's `Christmas/` (or Halloween/) when sequencing from that worktree; do not have two agents drive the same open show folder.
+- Only one xLights GUI/API session should own a given show directory at a time. Point `-s` at the worktree's `Christmas/` (or Halloween/) when sequencing from that worktree; do not have two agents drive the same open show folder. Two agents on two *different* worktrees is fine — see "Running two agents at once" below.
 - **Switching show directories requires a relaunch.** `changeShowFolder` replies "Show folder changed" but does NOT actually stick (verified 2026-07-19, xLights 2026.13) — kill the process and `open -a xLights --args -a -s "<dir>"` instead. AppleScript `quit` can leave xLights wedged with the API dead; use `kill -9` on the pid, then relaunch and poll `getVersion`.
 - **`openSequence` on an .xsq outside the active show folder silently opens a NEW empty sequence** (`len:30000`, `media:""`) instead of failing. After every openSequence, verify `getOpenSequence` returns the expected `len`/`media` before touching effects.
 - If the primary tree has uncommitted work the worktree needs (hand edits to the .xsq, notes, templates), copy those files into the worktree and commit them there as a baseline-snapshot first commit, so the branch history starts from the approved state.
+
+### Running two agents at once (two xLights instances)
+
+xLights supports **at most two** concurrent instances with working automation APIs (verified in source, `src-ui-wx/automation/`): the **A port 49913** (`-a` flag) and the **B port 49914** (`-b` flag). Port = 49912 + slot; no other ports are possible. A third instance silently runs with **no API at all** (if a bind fails, xLights flips A↔B and retries once, then gives up).
+
+- **Agent 1 (primary checkout, A port)** — the default, unchanged:
+  `open -a xLights --args -a -s "/Users/elliott.ohara/xlights/Christmas"`
+- **Agent 2 (worktree, B port)** — note `-n`, without it macOS just focuses the existing instance instead of starting a second one:
+  `open -n -a xLights --args -b -s "/Users/elliott.ohara/xlights-worktrees/<branch>/Christmas"`
+- `Tools/xlights_api.py` targets the A port by default; the second agent sets `XLIGHTS_API_PORT=49914` (env var) and the client's `launch()` then uses `-n`/`-b` automatically. Export it once at the top of the session/script.
+- **Claim ports explicitly.** Preferences persist the last-used port (`xFadePort`, last-quit-wins), so always pass `-a`/`-b` on launch; never rely on the saved default.
+- Both instances share the same preferences file (`LastDir` etc.) — cosmetic, but a bare `open -a xLights` afterwards may open the other agent's show dir. Always pass `-s`.
+- Each instance still runs its blocking show-dir backup at startup, and two simultaneous `renderAll`s compete for CPU — stagger heavy renders.
+- When killing a wedged instance, `kill -9` the right pid: `pgrep -fl xLights` lists both; match by the `-s <show dir>` in `ps -p <pid> -o command=`.
 
 ### Task wrap-up checklist (do this unprompted — don't make the user ask)
 
