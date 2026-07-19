@@ -1,184 +1,177 @@
-# Xtreme Sequences — Style Analysis Report
+# Building Sequences in the Xtreme Sequences Style — Agent Playbook
 
-**Purpose:** Reference for future sequencing work. Elliott's favorite vendor is [Xtreme Sequences](https://xtremesequences.com/sequences/christmas-sequences); most purchased sequences in this show come from them. This report mines the 18 original vendor packages in `/Volumes/Personal-Drive/xlights/Imports/xS_*` (each ships its own `xlights_rgbeffects.xml` layout + sequence file) to document *why* their work looks good — especially their submodel technique — so agents can reproduce the style on Elliott's layout.
+**Goal of this document:** guide an agent building a NEW sequence on Elliott's Christmas layout to produce work in the style of [Xtreme Sequences](https://xtremesequences.com/sequences/christmas-sequences) — the vendor behind most of the purchased sequences in this show, and the style Elliott wants. It is a *how-to*, not an inventory. Every rule below was extracted by analyzing 18 original vendor packages (`/Volumes/Personal-Drive/xlights/Imports/xS_*`, 62k effects) plus 38 Xtreme sequences already mapped onto this exact layout (`/Volumes/Personal-Drive/xlights/Christmas/*.xsq`, 125k effects). Evidence and inventories are in the appendices; regenerate stats with `Tools/analyze_xtreme_sequences.py`.
 
-**How it was produced:** `Tools/analyze_xtreme_sequences.py` (in this repo) parses every vendor layout and sequence, classifies sequenced elements, and aggregates effect/buffer/layer statistics. Raw JSON output can be regenerated any time (`python3 Tools/analyze_xtreme_sequences.py out.json`). Analysis date: July 2026.
-
-**Corpus:** 18 packages, 62,157 effects on 1,367 sequenced elements. Spans 2017 (`Selfish Elf`, `Ghost Busters`, `Classic Christmas Medley`) through the 2020 High-Density era (`Fight Song V2`, `Imperial March HD Add-On Pack`, `Snoop Winter Wonderland HD Add-On Pack`, `We Will Rock You`, `Christmas Every Day`, `Twas the Night Before Christmas V2`).
+Use this together with `AGENTS.md` (API workflow, layout gotchas, user preferences). Where the two conflict, AGENTS.md wins — though note the pros' mapped files independently agree with the house rules (they use `Verts` not `House Outline`, Faces only on singing props, floods as color beds).
 
 ---
 
-## 1. The core insight: they never sequence a prop — they sequence its parts
+## The one-sentence style
 
-This is the single most important finding, and it grew over time:
-
-| Era | Example | Elements that are submodel-groups |
-|---|---|---|
-| 2017 | Classic Christmas Medley | 0 of 95 |
-| 2018–19 | Home Alone Carol | 20 of 61 |
-| 2020 HD | Fight Song V2 | **64 of 107** |
-| 2020 HD | Imperial March HD Add-On | **54 of 82** |
-| 2020 HD | Snoop HD Add-On | **58 of 77** |
-
-In the HD packs the sequenced timeline is *mostly submodel-groups*. Whole models barely appear (Fight Song: 18 of 107; Imperial HD: 15 of 82) and are usually matrices, mega tree, or the "All Pixels" wow group.
-
-### 1a. The mechanism: `<part> GRP` model groups whose members are `Model/Submodel` paths
-
-They define hundreds of submodels per prop in the layout (Fight Song layout: 2,115 submodels, 121 submodel-groups; Imperial HD: 2,378 submodels, 124 submodel-groups). Then they build a model group per *part-type*, spanning all fixtures of that type. Examples from Fight Song V2:
-
-- `Eaves GRP` = `Ice 1/Eave Upper 1`, `Ice 2/Eave Upper 2`, … (12 house segments unified into one sweepable element)
-- `Icicles GRP` = `Ice 1/Icicles 1` … `Ice 8/Icicles 8`
-- `GE SpinReelMax Spokes GRP` = `GE MegaSpinReel Max/Spoke 1..14`
-- `Starburst xTreme Point GRP` = `StarBurst xTreme/Point 1..8`
-- `GE RosaWreath Feather Odd GRP` = `Feather 1,3,5,7,9,11,13,15` (odd/even splits are everywhere)
-
-**Why groups instead of addressing submodels directly:** the group gives them a *buffer* across all the parts, so one Shockwave/SingleStrand/Pinwheel effect animates the whole bank coherently — and `Per Model` buffer styles then re-render that effect per part. In the sequences themselves, direct `Model/Submodel` elements are essentially never used (0 across all 18 packages). Everything goes through a named ` GRP`.
-
-### 1b. Part-bank vocabulary (submodel taxonomy)
-
-Across the HD layouts, submodel names collapse to a consistent part vocabulary — this is what they carve every spinner/flake/star prop into:
-
-**Spoke** (669), **Ring** (258), **Arm** (244), **Hook CW / Hook CCW** (200 each — spiral arms in both directions), **Arrow** (122), **Flower**, **Track**, **Circle Inner/Outer Small/Large**, **Diamond**, **Feather**, **Wiggly CW/CCW**, **Rib**, **Outer Leg**, **Bird**, **Outer Ball**, **Ribbon**, **Outline**, **Star**, **Cross**, **Square**, **Point**, **Crown**.
-
-Per prop they sequence **many separate banks**. In Imperial HD, one prop (`GE XLS`) gets 11 independently-sequenced banks (Arms, Arrows, Center, Drum Stick L/R, Outer Leg, Outline, Ring, Snowflake, Spokes); `GE Grand Illusion` gets 9 (Flower, Hook CW, Snowflake Center, Snowflake Spokes, Spokes Even, Spokes Odd, Whirliwig, Whirliwig Even, Whirliwig Odd). Fight Song carves its 6 flake styles into 24 banks (per style: Arms, Arrows, Circles, Spokes, Rings, Ribs, Bursts…).
-
-**Takeaway for Elliott's layout:** this exactly matches the ` GRP` submodel groups already in `Christmas/xlights_rgbeffects.xml` (`GE Reel Max Arrows GRP`, `GE Starlord Plunger All GRP`, `GE Rosa Grande Hook CW GRP`, etc.) — those groups *are* the Xtreme pattern, imported. Use them as first-class instruments, several banks per prop, not the whole spinner.
+**Sequence body parts, not props; lock every effect start to an instrument timing mark; keep a tiny effect vocabulary but fire it relentlessly; put art on the matrices and rhythm on everything else.**
 
 ---
 
-## 2. Effect vocabulary — small, repeated relentlessly
+## Step 0 — Classify the song and set a budget
 
-Aggregate counts across all 18 sequences:
+Pick the closest template. These budgets come from measured pro sequences on this layout (~3–4 min songs):
 
-| Effect | Count | Role |
-|---|---|---|
-| Shockwave | 23,090 (37%) | THE signature. Short radial hits on every accent |
-| SingleStrand (Chase) | 8,430 | Chases along linear parts and part-banks |
-| On | 6,346 | Punch hits, holds, blocks of color |
-| Morph | 3,267 | (mostly one sequence — Can Can's 144-layer star) |
-| Galaxy / Fan / Pinwheel | 2,605 / 2,351 / 1,995 | Rotational motion on spinners & tree |
-| VU Meter | 1,758 | Music-reactive layers ("On" type, level meters) |
-| Spirals / Color Wash | 1,586 / 1,345 | Bases |
-| Warp / Wave / Marquee / Curtain / Shimmer / Meteors | few hundred each | Texture and transitions |
-| Shader | 250 | Matrices/mega-tree only, late-era |
+| Song type | Total effects | Typical layers | Reference (mapped, on this layout) |
+|---|---|---|---|
+| Ballad / worship / crooner | 600–1,300 | 1–2, a few 3+ | `We Three Kings`, `The Christmas Song`, `O Come O Come Emmanuel` |
+| Mid-energy pop / cheerful | 1,800–2,900 | 2–4, heroes 6–8 | `Hark The Herald Angels Sing`, `Home for the Holidays`, `Takin' Care Of Christmas` |
+| Rock / orchestral power | 4,300–8,600 | 4–8, heroes 12–18 | `We Will Rock You`, `TSO Chistmas Medley`, `01 - The Imperial March` |
+| Groove / novelty / rap | 4,000–7,000 | matrix stacks huge (40+), yard moderate | `Snoop Winter Wonderland `, `Twas the Night…`, `Little Drummer Boy` |
+| Faces feature | 300–500 | 2 | `01 - Grandma Got Run Over By A Reindeer` (380 Faces effects, 4 props, nothing else) |
 
-The magic isn't exotic effects — it's ~10 effects, tightly parameterized, fired thousands of times on the right body parts at the right instant.
+Don't inflate a ballad. The pros' quiet songs are *sparse but wide*: only 1–2 layers, long fades on nearly every effect (`We Three Kings`: fadein+fadeout on ~75% of 1,305 effects), yet 40–70 elements still participate.
 
-### 2a. The Shockwave recipe (extracted from Imperial HD, the heaviest user)
+## Step 1 — Build per-instrument timing tracks FIRST
 
-Nearly all Shockwaves share one skeleton, varying only end radius/width by prop size:
+Every modern Xtreme sequence ships far more than `Beats`: they separate **Kick, Snare, Toms, cymbals, hat, bass, piano, Guitar, Piano Solo, Synth Punches, Intro High/Low Bells**, plus `Note Onsets` split by instrument (`Note Onsets Piano/Other/Drums`) and per-voice lyric tracks (`Male`/`Female`/`Backup Vocals`, `Lyrics 1..4`). Some ship `Tree 1–4` tracks for per-mini-tree choreography.
+
+This is the exact approach already proven here (Holy Forever drum timings, Feliz Navidad horn/string tracks) — keep doing it. The payoff is measurable: in `Fight Song`, **100% of effect starts land within one frame of a timing mark**. Nothing free-floats, ever.
+
+**Rule: every `addEffect` startTime must be a mark from some instrument track, and each visual voice follows ONE instrument** (kick → one bank, snare → another, piano runs → chases). Hit *density* then automatically follows the music.
+
+## Step 2 — Plan the matrices first, then the yard
+
+On this layout ~30% of all pro effects live on four surfaces: `Matrix - Entry` (workhorse: Morph tails + Pictures art), `Matrix - Downstairs Window`, `Matrix-Garage Window`, `Matrix - Lantana`. Decide the matrix story per section (video clip? Morph tail-chase? shader? lyrics as Text?) before touching the yard. The yard then plays rhythm around that anchor.
+
+Matrix content by era/energy: Video + Pictures for novelty songs, Morph tail-chases + Ripple for emotional builds (`Hallelujah` runs a 95-layer Morph/Ripple stack on the entry matrix), Shader/Warp for intensity. `Projector` and `Tune To` get the same treatment (Text/Video/Shader).
+
+## Step 3 — Cast the elements (this layout's roles)
+
+Assign roles the way the pros consistently do on this exact display:
+
+- **Hero / accent:** `Mega Tree` (deep stack), `Tree Topper` (hit target in 33/38 sequences — don't forget it), `Toni - Flat Tree` (first-class prop, 28/38), `GE Merry Christmas` (pulse it like an instrument — Shockwave-heavy).
+- **House rhythm:** `Roof`, `Windows`, `Verts` — Shockwave + SingleStrand chases. Windows can move during high-energy sections (pros do), but respect the standing rule: no face outlines, default to warm glow in calm sections.
+- **Linear sweeps:** `Arches - All` (the single most-used element, 36/38 — SingleStrand-first), `Icicles GRP`, `Canes`, `Colums`, `Column Matrixes` (C1–C6 as one bank), `Driveway`, `Yard Borders`.
+- **Count patterns:** `Mini Trees` and `Mini Tree Stars` are TWO separate voices (trees = body hits, stars = sparkle answers). Same for `Large Spiral Trees` (12 units — great for runs).
+- **Color beds + punches:** `Floods GRP` = On/Color Wash only, never patterned. `Colum Shrubs` needs motion (marquee/twinkle), never static fills.
+- **Spinner part-banks:** see Step 4 — this is the heart of the style.
+- **Faces:** only on the actual singing props (`SingingTree`, `Singing Bulb - L/C/R`, `GE Grinch Talk`, `GE 8ft Snowman Singing`, `EFL Teddy`, `Toni - Penguin 1/2`, `GE Santa Singing`), driven by the per-voice lyric tracks. White mouths/eyes except Teddy (see AGENTS.md).
+- **Whole-scene groups:** sub-second slams on downbeats only.
+
+## Step 4 — Choreograph part-banks, never whole spinners
+
+The core Xtreme move. In their HD-era work, 60–75% of the timeline is `<part> GRP` submodel groups; whole props barely appear. On this layout, use the proven A-list (ranked by how hard the pros lean on each across 38 mapped sequences — see Appendix B for the full table):
+
+1. `GE Rosa Grande Ribbon GRP` — the most-used spinner bank on this display
+2. `GE Baby Grand Illusion Spokes GRP` (+ `Snowflake Spokes`, `Flower`, `Hook CW`, `Rings`, `Whirlwig Even/Odd`)
+3. **Starlord banks — the pros' favorite prop here:** `Plunger All/LG/SM`, `Spoke`, `Cross`, `Feather Even/Odd`, `Ribbon`, `Square`, `Z All`, `Star`, `Diamond`
+4. `GE Reel Max`: `Outer Triangles`, `Spokes`, `Kites`, `Circles Inner/Outer`, `Chevrons`
+5. `GE Rosa Grande`: `Torch Long Even/Odd`, `Feather Long Even/Odd`, `Snowflake Spoke`, `Spoke`, `Ring`, `Web Spoke`
+6. `Flakes Arms GRP` / `Flakes Spokes All GRP` / `Flakes Outline All GRP` (outline = glow base, spokes = hit, arms = chase-out)
+7. `GE MOAW Snowflake Spoke GRP`, `GE MOAW Spokes GRP`, `GE MOAW Swag GRP`
+
+How to use them:
+
+- **Whole-prop group carries the base, part-banks take the hits.** Both coexist: e.g. slow Pinwheel on `GE Starlord GRP` layer 0, Shockwave stabs on `Plunger All GRP` above. The pros do this on the same props simultaneously.
+- **Rotate which banks take each hit.** Measured pattern (Imperial HD): downbeat fires 2 banks, next accent fires 6 *different* banks 575 ms later, next bar rotates again. Never park one bank on every beat.
+- **Even/Odd pairs alternate** — hit Even on beat 1, Odd on beat 3, or counter-rotate colors. The pros use them strictly as pairs (Torch Long Even 706 uses / Odd 486).
+- **Pick 3–6 banks per prop per song**, not all of them. Different songs feature different banks.
+- Unexplored on this layout (no pro sequence touches them): `Arches - Middle`, `GE Reel Max Arcs Even/Odd GRP` — safe territory for original moves.
+
+## Step 5 — Layer architecture per element
+
+Anatomy of a pro hero stack (measured on We Will Rock You's 18-layer Mega Tree, Snoop HD's 13-layer Priem Cube):
+
+- **Top 1–2 layers: the base.** Long effects (3–24 s): Spirals, Fan, Pinwheel, Meteors, Shader. Sets the tone; changes per song section.
+- **Middle 3–7 layers: hit layers.** Dense 300–825 ms Shockwave/Pinwheel/Warp/SingleStrand hits (median 725 ms). Multiple parallel layers exist SO OVERLAPPING ACCENTS NEVER COLLIDE — when two hits overlap in time, they sit on different layers.
+- **Bottom layers: specials.** One-off Text, a 375 ms shockwave run, a Fan finale.
+
+Non-hero elements: 2–4 layers (base + 1–2 hit layers). Ballads: 1–2 layers everywhere.
+
+**Blending is choreography, not decoration.** The signature methods (corpus-wide counts):
+
+- `2 reveals 1` / `1 reveals 2` (27k uses) — a *moving* effect on one layer reveals a *color field* on the other: motion draws the shape, the partner supplies the color. This is their default trick for colored chases/rings.
+- Unmask family (`1/2 is (True) Unmask`, ~6k) — high-contrast effect stamps a moving window into a rich base. **VU Meter as unmask source = music-reactive color.**
+- Newer era adds `Additive`, `Max`, `Min`, `Brightness` for stacking glows without blowing out.
+- `T_CHECKBOX_Canvas=1` + Warp over composed layers below (the Dubstep trick) — used ~950× corpus-wide, heavily in Home Alone (667).
+
+Almost no fancy transitions — just `T_TEXTCTRL_Fadein/Fadeout=.1–.5` on nearly everything. Fades are what keep thousands of short hits from strobing.
+
+## Step 6 — The two bread-and-butter recipes (exact settings)
+
+### Shockwave hit (37% of everything they do)
 
 ```
-B_CHOICE_BufferStyle=Per Model Per Preview   (or Overlay - Centered / Per Model Single Line)
-E_CHECKBOX_Shockwave_Blend_Edges=1
-E_SLIDER_Shockwave_Start_Radius=1, Start_Width=5
-E_SLIDER_Shockwave_End_Radius=13–42, End_Width=25–77
-E_SLIDER_Shockwave_Accel=0, Center 50/50
+effect:  Shockwave
+settings: E_CHECKBOX_Shockwave_Blend_Edges=1,E_NOTEBOOK_Shockwave=Position,
+          E_SLIDER_Shockwave_Accel=0,E_SLIDER_Shockwave_CenterX=50,E_SLIDER_Shockwave_CenterY=50,
+          E_SLIDER_Shockwave_Start_Radius=1,E_SLIDER_Shockwave_Start_Width=5,
+          E_SLIDER_Shockwave_End_Radius=<13 small | 28 med | 42 large>,
+          E_SLIDER_Shockwave_End_Width=<25 | 65 | 77>,
+          T_TEXTCTRL_Fadeout=.25
+duration: 375–825 ms, start ON a timing mark
+buffer:   B_CHOICE_BufferStyle=Overlay - Centered        → ONE wave across the whole bank
+          B_CHOICE_BufferStyle=Per Model Per Preview     → wave re-renders INSIDE each part (every spoke pulses) ← HD signature
+          B_CHOICE_BufferStyle=Per Model Single Line     → each part as a line (messy wiring)
 ```
 
-- **`Per Model Per Preview`** on a part-bank GRP = the shockwave re-renders *inside each part* (each spoke/arm pulses individually) — this is the sparkling multi-fixture look.
-- **`Overlay - Centered`** = one wave across the whole group (the group ripples as one).
-- Typical duration: **375–825 ms**, median ~725 ms; on downbeats they stack the same hit on 5–10 banks at once with staggered starts 200–600 ms apart (measured: a chorus bar in Imperial HD fires `All Pixels`, `Priem Cube`, `SpinReel Max`, then six banks together 575 ms later).
+### SingleStrand chase (their linear workhorse)
 
-### 2b. The SingleStrand recipe
+```
+effect:  SingleStrand
+settings: E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_CHOICE_SingleStrand_Colors=Palette,
+          E_CHOICE_Chase_Type1=<Left-Right | Bounce from Left | Dual Bounce>,
+          E_TEXTCTRL_Chase_Rotations=0.4–1.0,E_SLIDER_Number_Chases=1–4,
+          E_SLIDER_Color_Mix1=10–42
+duration: ~375 ms typical
+buffer:   Vertical Per Model/Strand   → identical simultaneous drip down EVERY member (icicles, arches, feathers)
+          Horizontal Per Model/Strand + E_CHECKBOX_Chase_Group_All=1 → one chase traveling ACROSS members in order
+```
 
-Median duration **375 ms**. Chase type `Left-Right` / `Bounce from Left` / `Dual Bounce`, `Chase_Rotations=0.4–1.0`, 1–4 chases, palette colors. Buffer style is the trick:
+**Buffer style is chosen per musical job, not per prop** — the same GRP legitimately gets `Overlay - Centered` (boom), `Per Model Per Preview` (per-part shimmer), and `Horizontal Per Model/Strand` (traveling run) on different layers in the same song.
 
-- `Vertical Per Model/Strand` on `Arches GRP` / `Windows GRP` / part-bank GRPs → simultaneous identical drips/chases down every member (Home Alone Carol does this 1,863 times — arch cascades, window sweeps, feather runs).
-- `Horizontal Per Model/Strand` with `Chase_Group_All=1` → one chase traveling across the members in sequence.
+Beyond these two: Pinwheel/Galaxy/Fan for rotation, Spirals for tree bases, On for punches, Morph for matrix tails, VU Meter for reactivity. That's the whole vocabulary — resist exotic effects.
 
----
+## Step 7 — Dynamics pass
 
-## 3. Buffer styles — the real submodel superpower
+- **Dark valleys between phrases.** The pros' loud songs go near-black between sections; contrast is the punch.
+- **Downbeat slams:** stack the same hit on 5–10 banks at once (staggered 200–600 ms), or use `Whole Scene` for <1 s.
+- **Builds:** add one layer/voice per 4–8 bars rather than turning everything on.
+- **Endings:** a long Fan or Shader (13–24 s) as the final gesture is a repeated pro move.
 
-Aggregate usage:
+## Build workflow recap (API)
 
-| Buffer style | Count | What they use it for |
-|---|---|---|
-| Overlay - Centered | 14,901 | Radial hits centered on group (shockwaves, galaxies) |
-| Vertical Per Model/Strand | 5,247 | Per-member vertical chases (icicle drips, arch fills) |
-| Per Model Per Preview | 3,659 | Effect re-rendered per member using its preview location — the HD signature |
-| Default / Per Preview | 2,587 / 2,316 | Whole-group canvas; Per Preview keeps geographic layout |
-| Horizontal Per Model/Strand | 1,364 | Chase across members in order |
-| Per Model Single Line | 517 | Treat each member as one line (uniform motion on messy wiring) |
-| Layer Star / Overlaid X / Stacks | ~500 | Specialty tree/star buffers |
-
-Rule of thumb from their work: **choose the buffer style per musical job, not per prop** — the same GRP will get `Overlay - Centered` for a boom, `Per Model Per Preview` for a shimmer-hit, and `Horizontal Per Model/Strand` for a traveling run, on different layers simultaneously.
-
----
-
-## 4. Layering — deep stacks with mask/reveal choreography
-
-- Hero elements go deep: **Mega Tree in We Will Rock You = 18 layers / 565 effects**; Matrix 1 in Fight Song = 9 layers; `GE Priem Cube GRP` in Snoop HD = 13 layers. Skrillex Medley runs *every* element at 6+ layers (32 elements at exactly 6).
-- Anatomy of the We Will Rock You mega tree stack: top 1–2 layers = long (3–24 s) bases (Fan, Shader, Meteors, Spirals); middle layers = dense 700–750 ms Shockwave/Pinwheel/Warp/Shape hits (5–7 parallel hit layers so overlapping accents never collide); bottom layers = special moments (Text, one-off 375 ms shockwave runs).
-- Layer methods aggregate: `2 reveals 1` (5,768), `Average` (4,325), `1 reveals 2` (2,339), `Effect 1` (1,305), `True Unmask` variants (~2,000), `Unmask` (~1,600), plus Shadow/Subtractive/Mask accents.
-  - **Reveal** pairs are their bread and butter: a moving effect (chase/shockwave/wipe) on one layer *reveals* a color field or texture on the neighbor — motion defines the shape, the partner defines the color.
-  - **Unmask/True Unmask**: a high-contrast effect stamps a moving window into a rich base (e.g. VU Meter unmasking a Color Wash = music-reactive color).
-  - `Average` blends dual textures into one softer composite (Can Can uses it 3,962× under its Morph star).
-- Transitions are mostly bare `T_TEXTCTRL_Fadeout=.10–.5` / `Fadein` (thousands of uses) — almost never fancy wipe transitions (Wipe appears only 101× corpus-wide). Fades keep the dense hits from strobing harshly.
-- `T_CHECKBOX_Canvas=1` shows up ~950× (Warp/Shader-era) — Warp-on-canvas over the composed layers below, exactly the Christmas Dubstep trick already noted in AGENTS.md.
+Per AGENTS.md: `newSequence` → import timing template(s) (each track once) → `addEffect` everything (settings strings above are `addEffect`-ready) → `saveSequence` (full path) → `renderAll` → `exportVideoPreview`. Never `setEffectSettings`.
 
 ---
 
-## 5. Timing — note-onset locked, not just beat-locked
+# Appendix A — Evidence: the vendor originals (Imports/xS_*)
 
-Every package carries **`Beats` + `Note Onsets`** timing tracks (16 of 18), some add `Drums`, `Bass Drum`, `Intro High Bells`, `Lyrics`, or hand tracks (`By Ron`, `By Feel`, `Custom`).
+18 packages, 62,157 effects / 1,367 sequenced elements, spanning 2017 → 2020-HD era.
 
-Measured on Fight Song V2: **633 of 633 model-effect starts land within one frame (25 ms) of a Beats/Note Onsets/Drums mark — 100% quantization.** Nothing free-floats. The hit *density* follows the onsets (more marks → more shockwaves), which is why their sequences feel like they're playing the music rather than pulsing on a grid.
+**Evolution to part-banks:** elements that are submodel-groups: Classic Medley 2017 = 0/95 → Home Alone 2019 = 20/61 → Fight Song V2 2020 = 64/107, Imperial HD = 54/82, Snoop HD = 58/77. Their own layouts define 2,100–2,400 submodels and 120+ `<part> GRP` groups whose members are `Model/Submodel` paths. Direct `Model/Submodel` elements in sequences: zero — always via a GRP (the group provides the buffer).
 
-This matches the instrument-track approach already proven here (Feliz Navidad horn/string tracks, Holy Forever drum timings): **generate/import a note-onset-level track per instrument and snap every effect to it.**
+**Part vocabulary** (submodel names across HD layouts): Spoke (669), Ring (258), Arm (244), Hook CW/CCW (200 ea), Arrow (122), Flower, Track, Circles, Diamond, Feather, Wiggly CW/CCW, Rib, Outer Leg, Bird, Outer Ball, Ribbon, Outline, Star, Cross, Square, Point, Crown. One prop = up to 11 sequenced banks (GE XLS in Imperial HD).
 
----
+**Aggregate effect vocab:** Shockwave 23,090; SingleStrand 8,430; On 6,346; Morph 3,267; Galaxy 2,605; Fan 2,351; Pinwheel 1,995; VU Meter 1,758; Spirals 1,586; Color Wash 1,345; Pictures 1,229; then Warp/Wave/Marquee/Curtain/Shimmer/Meteors/Shader in the hundreds.
 
-## 6. Per-sequence highlights (what to steal from each)
+**Buffers:** Overlay-Centered 14,901; Vertical Per Model/Strand 5,247; Per Model Per Preview 3,659; Default 2,587; Per Preview 2,316; Horizontal Per Model/Strand 1,364; Per Model Single Line 517.
 
-- **Fight Song V2 (2020)** — purest HD example: 107 elements, only 633 effects, but 64 are submodel-group banks each doing one clean job. Sparse-but-surgical; every hit is a different bank. 100% onset-locked. Shaders on Matrix.
-- **Imperial March HD Add-On (2020)** — the shockwave bible: 1,822 shockwaves in 3,547 effects, `2 reveals 1` × 668. Study its downbeat bank-rotation (multiple part-banks of *different props* fired together per accent, rotating each bar).
-- **We Will Rock You (2020)** — hero-element depth: 18-layer mega tree, 8-layer topper/eaves/verts/poles; `Fadein/Fadeout` on nearly every effect (1,347 combined); Text effects for lyric moments.
-- **Home Alone Carol (2019)** — linear-prop choreography: 1,863 SingleStrand at `Vertical Per Model/Strand` (arch/window/feather cascades), plus early Shader + `Canvas=1` Warp use, and heavy `Subtractive`/`Layered` blending experiments.
-- **Snoop Winter Wonderland HD (2020)** — gentler dynamic: Shimmer/Fill/Pinwheel-forward, unmask-heavy (`1/2 is Unmask` × 527), good model for laid-back grooves.
-- **TSO Christmas Medley (2018)** — mega-tree-centric: Tree effect × 651, `1 reveals 2` × 1,692, 5–6 layers on most groups. Good orchestral-build reference.
-- **It's Christmas Medley Live (2018)** — brute-force shockwave era: 6,618 shockwaves, `2 reveals 1` × 4,139 (shockwave revealing color layer = their classic "colored ring" hit).
-- **Christmas Can Can (2018)** — one-off spectacle: a 144-layer element of Morphs (3,048) + Butterfly/Pictures under `Average` blending. Also 816 Pictures effects — prop-art era.
-- **Skrillex Medley (2019)** — dubstep template (the style Elliott's `Christmas Dubstep` gold standard follows): uniform 6-layer stacks everywhere, Galaxy × 1,745, VU Meter × 529, `Effect 1`/unmask layer tricks, 1,352 value-curve-driven params.
-- **Childrens Xmas Mix / Ghost Busters / Selfish Elf / Classic Medley / Monster Mash (2017)** — pre-submodel era: mostly whole models, On/Color Wash-heavy, SubBuffers used instead of submodels (Monster Mash: 200 subbuffer effects). Useful mainly to see how much the HD approach improved things.
+**Layer methods:** 2 reveals 1 (5,768), Average (4,325), 1 reveals 2 (2,339), Effect 1 (1,305), True Unmask variants (~2,000), Unmask (~1,600), Subtractive/Shadow/Mask accents.
 
----
+**Timing:** `Beats` + `Note Onsets` in 16/18 packages; extras like Drums, Bass Drum, Intro High Bells, Lyrics, hand tracks. Fight Song: 633/633 effect starts within 1 frame of a mark.
 
-## 7. Cheat sheet — reproducing the Xtreme look on this layout
+**Per-package one-liners:** Fight Song V2 = purest HD (sparse, surgical, 64 banks); Imperial HD = shockwave bible + bank rotation; We Will Rock You = 18-layer hero stacks + fades everywhere; Home Alone Carol = linear-prop cascades (1,863 SingleStrand) + canvas Warp; Snoop HD = gentle shimmer/unmask groove; TSO = mega-tree orchestral builds (`1 reveals 2` ×1,692); It's Christmas Medley = brute shockwave-reveals (×4,139); Christmas Can Can = 144-layer Morph star stunt; Skrillex = uniform 6-layer dubstep stacks + 1,352 value curves; 2017 titles (Childrens/GhostBusters/SelfishElf/ClassicMedley/MonsterMash) = pre-submodel era, mostly useful as contrast.
 
-1. **Pick 3–6 part-banks per hero prop** (`* GRP` submodel groups in the layout: Spokes, Rings, Arrows, Plungers, Hooks, Feathers Even/Odd…) and treat each as an instrument. Never light the whole spinner.
-2. **One long base + short hits.** Top layer(s): slow Spirals/Fan/Pinwheel/Shader 3–20 s. Below: 300–825 ms Shockwave/SingleStrand/On hits, several parallel layers so overlaps never collide.
-3. **Shockwave skeleton:** Blend_Edges=1, start 1/5, end radius 13–42, end width 25–77, accel 0, centered; `Overlay - Centered` for one wave over the group, `Per Model Per Preview` to pulse every part individually. Fadeout .25.
-4. **SingleStrand skeleton:** Chase, 0.4–1.0 rotations, 1–4 chases, `Vertical Per Model/Strand` for simultaneous per-member drips or `Horizontal Per Model/Strand` + Group All for a traveling run. ~375 ms.
-5. **Reveal/unmask pairs:** moving effect on one layer + color field on the other with `2 reveals 1` / `Unmask` — motion draws, partner colors. VU Meter as an unmask source = music-reactive color.
-6. **Quantize 100% of starts** to Beats/Note Onsets/instrument marks. Rotate which banks take the hit each bar; stack 5–10 banks on downbeats; go dark between phrases.
-7. **Reserve whole-scene groups** (`All Pixels GRP` equivalent = `Whole Scene`) for sub-second slams — same as the user preference already recorded in AGENTS.md.
-8. **Odd/Even splits** of any radial bank are the cheapest way to double motion (alternate colors, counter-rotate, ping-pong hits).
+# Appendix B — Evidence: 38 Xtreme sequences mapped onto THIS layout
 
----
+Matched share `.xsq` files against the vendor's website catalog (84 filename matches → 38 unique analyzable sequences, mostly saved by xLights 2025.12). 125,252 effects, all in Elliott's element names. They use **101 of the layout's 120 submodel-groups**.
 
-## Appendix: corpus inventory
+**Top elements** (effects / #sequences): Matrix - Entry 13,433/29 · Matrix - Downstairs Window 7,872/18 · Mega Tree 6,340/35 · Matrix-Garage Window 4,045/28 · Tree Topper 3,145/33 · Toni - Flat Tree 2,757/28 · Column Matrixes 2,498/26 · Mini Trees 2,184/35 · Roof 2,172/35 · Projector 2,142/30 · Verts 2,076/33 · Arches - All 1,970/36 · Flakes GRP 1,968/32 · GE Merry Christmas 1,900/26 · Windows 1,894/34 · Floods GRP 1,709/32 · Icicles GRP 1,659/28 · Large Spiral Trees 1,657/32 · Mini Tree Stars 1,626/26 · Canes 1,607/32.
 
-| Package | Seq file | xLights ver | Elements | Effects | Submodel-GRP elements |
-|---|---|---|---|---|---|
-| xS_Childrens Xmas Mix | Childrens Xmas Mix.xml | 2019.54 | 161 | 3,885 | 5 |
-| xS_Christmas Can Can | Christmas Can Can.xml | 2018.33 | 77 | 5,406 | 4 |
-| xS_Christmas Every Day | Christmas Every Day.xsq | 2020.47 | 91 | 2,724 | 25 |
-| xS_Classic Chrismas Medley | Clasic Chrismas Medley 2017.xml | 2017.29 | 95 | 1,230 | 0 |
-| xS_Fight Song V2 | Fight Song.xsq | 2020.31 | 107 | 633 | 64 |
-| xS_Ghost Busters | Ghost Busters.xml | 2017.17 | 96 | 2,099 | 8 |
-| xS_Home Alone Carol | Home Alone Carol.xml | 2019.30 | 61 | 5,004 | 20 |
-| xS_Imperial March | Imperial March.xml | 2019.6 | 44 | 2,913 | 12 |
-| xS_Imperial March 2020 HD Add-On | Imperial March HD Add-On Pack.xsq | 2020.24 | 82 | 3,547 | 54 |
-| xS_It's Christmas Medley Live | It's Christmas.xml | 2018.15 | 86 | 8,196 | 4 |
-| xS_Monster Mash | Monster Mash.xml | 2017.19 | 61 | 266 | 6 |
-| xS_Selfish Elf | Selfish Elf.xml | 2017.33 | 75 | 1,195 | 2 |
-| xS_Skrillex Medley | Skrillex Medley.xml | 2019.46 | 36 | 9,955 | 12 |
-| xS_Snoop Winter Wonderland | Snoop Winter Wonderland 2017.xsq | 2020.49 | 46 | 837 | 2 |
-| xS_Snoop Winter Wonderland HD Add-On | …HD Add-On Pack.xsq | 2020.47 | 77 | 1,866 | 58 |
-| xS_TSO Christmas Medley | TSO Christmas Medley.xml | 2018.52 | 49 | 5,008 | 4 |
-| xS_Twas The Night Before Christmas | …Family Force V2.xsq | 2020.47 | 39 | 2,600 | 12 |
-| xS_We Will Rock You | We Will Rock You.xml | 2020.4 | 84 | 4,793 | 35 |
+**Submodel-bank A-list** (effects / #seqs): Rosa Grande Ribbon 1,331/26 · Baby Grand Illusion Spokes 1,068/20 · Starlord Plunger All 955/25 · Starlord Spoke 871/25 · Starlord Plunger LG 805/22 · Reel Max Outer Triangles 795/8 · Flakes Arms 729/21 · Starlord Cross 715/18 · Starlord Feather Odd 710/17 · Rosa Torch Long Even 706/21 · BGI Snowflake Spokes 689/12 · Reel Max Spokes 661/25 · Starlord Ribbon 657/23 · Rosa Feather Long Even 612/24 · Rosa Torch Long Odd 486/20 · Rosa Snowflake Spoke 464/16 · MOAW Snowflake Spoke 408/22 · Flakes Spokes All 333/21 · Reel Max Kites 317/16 · Reel Max Circles Outer 283/16 · MOAW Spokes 264/15 · Starlord Z All 232/13 · Rosa Ring 228/14 · BGI Hook CW 217/12.
 
-Vendor layouts referenced: each package's own `xlights_rgbeffects.xml` (Fight Song layout: 153 models / 2,115 submodels / 164 groups; Imperial HD: 173 / 2,378 / 187). Legacy `.xml` sequence files are old-format `<xsequence>` — same EffectDB/ElementEffects structure as `.xsq`.
+**Element effect-mixes:** Roof = SW 826/SS 506/On 195 · Arches = SS 703/SW 498 · Floods = On 634/ColorWash 326 · Mini Trees = SW 882/SS 339 · GE Merry Christmas = SW 725 · Matrix-Entry = Morph 8,658/Pictures 2,212. Faces: SingingTree 403, Singing Bulbs ~70 each, Grinch/Snowman/Teddy/Penguins/Santa 40–63 — nothing on windows/walls.
+
+**Newer-era (2022–2025 titles) shifts:** Morph 9,959 (matrix tail-chases; Hallelujah = Morph 3,869 + Ripple 2,259, 95-layer matrix element; Snoop remaster = 43–73-layer matrix stacks); new blends Additive 1,598 / Max 1,298 / Min 717 / Brightness 583; per-instrument timing tracks (Kick/Snare/Toms/cymbals/hat/bass/piano/Guitar/Synth Punches/per-voice lyrics/Tree 1–4); Video effects on matrices; `We Three Kings` = fade-everything ballad discipline (fades on ~75% of effects).
+
+**High-signal reference files on the share** (by style): rock = `We Will Rock You` (8,574), `TSO Chistmas Medley` (8,055), `01 - The Imperial March` (4,557); matrix-art = `Hallelujah` (7,462), `Snoop Winter Wonderland ` (6,944 — trailing space in filename); cascades = `Home Alone` (6,710); percussion-On style = `Little Drummer Boy` (6,165); mid-energy = `Hark The Herald Angels Sing` (2,033), `01 - Takin' Care Of Christmas` (2,883), `Home for the Holidays` (1,844), `Happily Ever After` (1,752, Additive); ballads = `We Three Kings` (1,305), `The Christmas Song` (628), `Human Nature - White Christmas` (760); faces-feature = `01 - Grandma Got Run Over By A Reindeer` (385).
+
+**Never touched by any pro sequence** (19 banks; excluding Halloween parts and test groups): `Arches - Middle`, `GE Reel Max Arcs Even GRP`, `GE Reel Max Arcs Odd GRP`, `Grand Illusion Hooks CW`, `GE Rosa Grande Torch Long V2 GRP`.
+
+*Caveat:* the share's `xlights_rgbeffects.xml` differs slightly from the local repo copy (local has newer edits, e.g. `GE Merry Christmas/Christ`); all element names cited here were verified to exist in the current local layout.

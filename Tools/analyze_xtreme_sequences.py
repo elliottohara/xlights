@@ -4,6 +4,10 @@
 For each package: parses the vendor xlights_rgbeffects.xml (models, submodels,
 model groups and their members) and the sequence file (.xsq or legacy .xml
 xsequence), then emits aggregate stats as JSON for report writing.
+
+Second mode — analyze already-mapped sequences against a specific layout:
+    analyze_xtreme_sequences.py --layout <xlights_rgbeffects.xml> <out.json> <seq.xsq> [...]
+Used for the Xtreme sequences imported/mapped onto Elliott's own Christmas layout.
 """
 import json
 import re
@@ -168,7 +172,66 @@ def classify_elements(seq, layout):
     return out
 
 
+def parse_layout_file(f: Path):
+    root = ET.parse(f).getroot()
+    models = {}
+    for m in root.iter("model"):
+        name = m.get("name")
+        if not name:
+            continue
+        subs = [sm.get("name") for sm in m.findall("subModel")]
+        models[name] = {"DisplayAs": m.get("DisplayAs"), "submodels": subs}
+    groups = {}
+    for g in root.iter("modelGroup"):
+        name = g.get("name")
+        members = [x.strip() for x in (g.get("models") or "").split(",") if x.strip()]
+        groups[name] = {
+            "members": members,
+            "n_members": len(members),
+            "n_submodel_members": len([x for x in members if "/" in x]),
+        }
+    return {"models": models, "groups": groups}
+
+
+def main_layout_mode(layout_file: Path, out: Path, seq_files):
+    layout = parse_layout_file(layout_file)
+    results = {}
+    for sf in seq_files:
+        sf = Path(sf)
+        entry = {"sequence_file": str(sf)}
+        try:
+            seq = parse_sequence(sf)
+        except Exception as e:
+            entry["sequence_error"] = str(e)
+            results[sf.stem] = entry
+            continue
+        if seq:
+            entry["sequence"] = seq
+            cls = classify_elements(seq, layout)
+            entry["element_classes"] = {k: len(v) for k, v in cls.items()}
+            entry["element_class_names"] = cls
+        results[sf.stem] = entry
+    out.write_text(json.dumps(results, indent=1))
+    for name, e in results.items():
+        seq = e.get("sequence")
+        print(f"\n== {name}")
+        if not seq:
+            print("  ERROR:", e.get("sequence_error"))
+            continue
+        print(f"  v{seq['meta'].get('version')} {seq['n_elements_with_effects']} elements, "
+              f"{seq['total_effects']} effects; classes={e['element_classes']}")
+        print(f"  top effects: {list(seq['effect_names'].items())[:8]}")
+        print(f"  layer depth: {seq['layer_depth']}")
+        print(f"  buffer styles: {list(seq['buffer_styles'].items())[:5]}")
+        print(f"  layer methods: {list(seq['layer_methods'].items())[:5]}")
+        print(f"  special: {seq['special']}")
+        print(f"  timing tracks: {seq['timing_tracks']}")
+
+
 def main():
+    if len(sys.argv) > 1 and sys.argv[1] == "--layout":
+        main_layout_mode(Path(sys.argv[2]), Path(sys.argv[3]), sys.argv[4:])
+        return
     results = {}
     for pkg in sorted(IMPORTS.glob("xS_*")):
         if not pkg.is_dir():

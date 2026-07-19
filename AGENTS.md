@@ -193,7 +193,7 @@ Instrument tracks are gold for musicality: map each horn stab / string run to a 
 
 ## Style reference sequences (user's favorites)
 
-**Deep-dive style report:** `Style References/XTREME SEQUENCES STYLE REPORT.md` — full analysis of all 18 purchased Xtreme Sequences vendor packages (`/Volumes/Personal-Drive/xlights/Imports/xS_*`): their submodel-group ("part bank") technique, Shockwave/SingleStrand recipes, buffer-style choices, layer-stack anatomy, and note-onset timing discipline. Read it before styling a new sequence; regenerate stats with `Tools/analyze_xtreme_sequences.py`.
+**Xtreme-style playbook (READ BEFORE SEQUENCING A NEW SONG):** `Style References/XTREME SEQUENCES STYLE REPORT.md` — step-by-step guide for building sequences in the Xtreme Sequences style on this layout: song-type budgets, per-instrument timing first, matrix-first planning, element casting, part-bank choreography (Starlord/Rosa/Baby Grand A-list), layer architecture, exact Shockwave/SingleStrand settings recipes, dynamics rules. Derived from 18 vendor packages + 38 Xtreme sequences mapped onto this layout (~187k effects analyzed); evidence in its appendices. Regenerate stats with `Tools/analyze_xtreme_sequences.py`.
 
 `The Imperal March.xsq`, `Carol Of the Bells (Instramental).xsq`, `Christmas Every Day.xsq`, `Christmas Dubstep.xsq` — Dubstep is the gold standard. Its signature moves:
 
