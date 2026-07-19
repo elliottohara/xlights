@@ -1,22 +1,29 @@
-.local-snapshots/
+# Local machine state
 .DS_Store
+.local-snapshots/
 
+# xLights rendered playback/export data
 *.fseq
+*.eseq
 
-*.mp3
-*.mp4
-*.wav
-*.m4a
-*.aac
-*.flac
-*.mov
-*.avi
-*.mkv
+# xLights caches and automatic recovery copies
+**/RenderCache/
+**/Render Cache/
+**/Backup/
+*.xbkp
+*.jbkp
 
+# Locally rendered previews used for visual review
+RenderCompare/
+
+# One-off sequence working copies; Git holds the history
+*.xsq.bak-*
+
+# Python tooling
 __pycache__/
 *.py[cod]
 .venv/
 
-**/Backup/
-*.xbkp
-*.jbkp
+# Generated audio from analysis/audition scripts, not show media
+Tools/tmp_*/**/*.wav
+Tools/tmp_*/**/*_audition.*
