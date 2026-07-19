@@ -24,6 +24,8 @@ Backups from just before the edit: `Holy Forever 2026.xsq.bak-before-intro-clear
 
 2026-07-19 (later): **19 short individual piano-note pulses added across `Mini Tree - 1..4`** in six sparse fills during intimate V1. These answer the arches between wide chords; no group-level Mini Trees or star effects were added. Rebuild/clear: `Christmas/Sequences/Holy Forever 2026/Tools/intimate_mini_tree_piano.py`.
 
+2026-07-19: **all Marquee effects removed** (268 total — every one lived on `House Outline` L0 and `Roof` L0, the snare-flip bed from 41850–301500). Direct .xsq edit via `Christmas/Sequences/Holy Forever 2026/Tools/clear_marquees.py` (`--dry-run` supported). Non-Marquee house/roof layers kept (final On hold + accent On hits). Backup: `Holy Forever 2026.xsq.bak-before-marquee-clear`. Done on branch `remove-marquees-holy-forever` in worktree `/Users/elliott.ohara/xlights-worktrees/remove-marquees-holy-forever` so main stays free.
+
 ## Musical grid (verified — ⚠ anchor corrected 2026-07-18)
 
 - **72.0 BPM, 4/4 — bar = 3333.33 ms. TRUE audio downbeat anchor = 600 ms** (600, 3933, 7267, 10600, 13933, …). Fitted by maximizing backbeat snare flux over V2→C3 and confirmed by section-start crashes landing on 600-grid downbeats (e.g. crashes at 13909, 40583, 93896 are all within ~35 ms of a 600-anchor downbeat but ~400 ms off the 180 grid).
