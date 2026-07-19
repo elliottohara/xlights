@@ -8,7 +8,7 @@ Knowledge gathered while building "Feliz Navidad 2026" and "Holy Forever 2026" (
 
 - **Show directory (Christmas):** `/Users/elliott.ohara/xlights/Christmas/` — sequences (`.xsq`), `xlights_rgbeffects.xml` (models/groups/faces), `ImportedMedia/` (videos, shaders).
 - **Audio:** `/Users/elliott.ohara/xlights/Audio/` (e.g. `01 Feliz Navidad.mp3`).
-- **Old media paths:** many sequences reference `/Users/elliott.ohara/xlights/...`. A symlink makes them resolve: `/Users/elliott.ohara/xlights -> /Users/elliott.ohara/xlights`. If media fails to load, check this symlink first (`fixallpaths.sh` at the root documents the path conventions).
+- **Canonical local root:** `/Users/elliott.ohara/xlights`. Older sequences may still reference `/Users/elliott.ohara/Documents/xlights/...`; that symlink currently points to `/Volumes/Personal-Drive/xlights`. Prefer the local repo path in new scripts, and check the share/symlink if legacy media fails to load (`fixallpaths.sh` documents the path conventions).
 - **Halloween:** separate show directory at `/Users/elliott.ohara/xlights/Halloween/`.
 - **Videos:** `/Users/elliott.ohara/xlights/Videos/` — matrix/background video media.
 
@@ -34,7 +34,7 @@ If a user wants a YouTube video for the show, **do not invent a one-off download
   `open -a xLights --args -a -s "/Users/elliott.ohara/xlights/Christmas"`
 - The API is **HTTP POST** to `http://127.0.0.1:49913/xlDoAutomation` with a JSON body — not raw TCP.
   Example: `curl -s -X POST -d '{"cmd":"getVersion"}' http://127.0.0.1:49913/xlDoAutomation`
-- On startup xLights runs a **blocking show-directory backup** (slow on this network volume). Poll `getVersion` until it responds.
+- On startup xLights runs a **blocking show-directory backup**. Poll `getVersion` until it responds.
 
 ### Sequence-authoring workflow (proven, see `Tools/feliz_navidad_2026.py`)
 
@@ -49,7 +49,7 @@ If a user wants a YouTube video for the show, **do not invent a one-off download
 - **Element names are trimmed** by the API: layout name `Arches - Top ` (trailing space) must be sent as `Arches - Top`.
 - **addEffect fails (503) for elements not in the sequence's master view**, and there is no API to add display elements. The default master view here excludes some groups (notably `EFL Wings`, `Large Spiral Trees`, `Spinners`, individual `Rose Bush N`). Workaround: sequence their member models instead (see `EXPAND` in `Tools/feliz_navidad_2026.py`).
 - **Submodels ARE addressable** as `Model/Submodel` (e.g. `Singing Bulb - Center/Base`) for `addEffect`/`getEffectIDs` — no wrapper group needed.
-- **ALWAYS check a model's submodels FIRST** (in `xlights_rgbeffects.xml`) before resorting to per-pixel/custom-grid analysis to light part of a prop. If no submodel matches exactly, combine the nearest submodel with `B_CUSTOM_SubBuffer` (works because ranges-submodel node order is usually geographic — verify x-monotonicity). Example: `GE Merry Christmas` has submodels `Merry` + `Christmas`; "Christ" alone = element `GE Merry Christmas/Christmas` + `B_CUSTOM_SubBuffer=0.00x0.00x69.10x100.00` (left 69.1% of the horizontal-layout buffer ends exactly after the cursive t).
+- **ALWAYS check a model's submodels FIRST** (in `xlights_rgbeffects.xml`) before resorting to per-pixel/custom-grid analysis to light part of a prop. If no submodel matches exactly, combine the nearest submodel with `B_CUSTOM_SubBuffer` (works because ranges-submodel node order is usually geographic — verify x-monotonicity). `GE Merry Christmas` now has a dedicated `Christ` ranges submodel (241 nodes through custom-grid x=262; `mas` starts at x=264), so use element `GE Merry Christmas/Christ` directly with no buffer.
 - **NEVER edit effects with `setEffectSettings` — it corrupts them.** Verified in source (`SettingsMap::ParseJson`): it parses the settings param as `key:value` with values **whitespace-trimmed** (destroys the `Teddy ` face def → silently falls back to another def), and JSON-object params are **silently dropped** (dict settings/palette = no-op that still reports `worked:true`). Round-tripping `getEffectSettings` output back in re-defaults the effect. The only safe effect edit: **wipe the element** with `cloneModelEffects` (`source` = any effect-free element like `House`, `eraseModel:"true"`) **and re-add** via `addEffect`, whose `key=value` parser preserves values verbatim.
 - **No API command deletes individual effects or timing tracks.** Timing tracks: GUI only (plan track names before importing). Effects, two workarounds:
   - Layer is entirely yours: `cloneModelEffects` wipe (true deletion). Note it only touches target layers up to the SOURCE's layer count — a 1-layer empty source (e.g. `House`) wipes layer 0 only, leaving deeper layers untouched.

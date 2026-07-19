@@ -6,7 +6,7 @@ Working notes for `Christmas/Holy Forever 2026.xsq` (built July 2026). Read alon
 
 2026-07-12 late evening: the session was saved to disk via `saveSequence`, then **the entire intro (everything ending at or before 15520 ms) was deleted by editing the .xsq directly** (`Tools/tmp_holy/clear_intro.py`, kept re-runnable with `--dry-run`) and the sequence was closed/reopened through the API so the live session matches disk. Direct .xsq editing for *deletion* is proven safe: line-oriented (one self-closing `<Effect .../>` per line), leaves EffectDB/ColorPalettes untouched (orphaned entries are harmless), xLights reloads clean.
 
-**Current state: intro (0:00–0:15) carries the downstairs glowing crosses + whole-scene snowfall (brightness pulses on each choir "Holy"; see below).** The old purple/shader/7710/wind intro and Off-park stubs were deleted 2026-07-12 (`clear_intro.py`). Kept from that clear: `Projector` L0 full-length Video, timing tracks, and everything from 15275 (Snowman V1 Faces pickup) onward.
+**Current state: intro + intimate V1 (0:00–0:42)** — Whole Scene falling snow + Mega Tree glowing cross (snow inverse of cross on intro Holys; both hold dimmed through the acoustic verse) + dim Singing Bulb Faces + Snowman lead from 0:15 + **`Arches - All` slow From Middle SingleStrand on each big piano chord** (keyed to the `Piano Chords` timing track, not Beat Count) + **six restrained individual-note fills stepping across `Mini Tree - 1..4`** between the chords. Deleted (77 effects): the whole original intro (purple ColorWash + shader hold, the 7710 build, wind marquees, Off-park stubs). Kept: `Projector` L0 full-length Video, all timing tracks (incl. `Piano Chords`), everything from 15275 onward.
 
 Backups from just before the edit: `Holy Forever 2026.xsq.bak-before-intro-clear` (post-save, pre-delete) and `Holy Forever 2026.pre-save.xsq.bak` (stale pre-session file).
 
@@ -16,14 +16,19 @@ Backups from just before the edit: `Holy Forever 2026.xsq.bak-before-intro-clear
 
 2026-07-13: **verse-2 house/wall marquee direction flipped** (`Tools/tmp_holy/reverse_v2_house.py`). On `House Outline` and `Roof` L0, only the V2 block (95100–127625) now has `E_CHECKBOX_Marquee_Reverse=1`; all other section marquees stay Reverse=0. Wipe+re-add via `House` as empty source (deep layers untouched). Backup: `Holy Forever 2026.xsq.bak-before-v2-reverse`. **Superseded same day by snare-flip script above.**
 
-2026-07-13 (same session): **column matrixes + all yard props except the Mega Tree cleared too** (`Tools/tmp_holy/clear_yard_props.py`, 1327 effects, backup `Holy Forever 2026.xsq.bak-before-yard-clear`). Wiped: `Column Matrixes`, `Yard Borders`, `Driveway`, `Colum Shrubs`, `Canes`, `Tree - Oak`, `Toni - Flat Tree`, all `Arches` rows, `Mini Trees`/`Mini Tree - 1..4`/`Mini Tree Stars`, `EFL Wing - Left/Right`, `Large Spiral Tree - 01..12`. Deliberately KEPT: `Mega Tree` + `Tree Topper`, all singing faces (user: "do not remove"), the `GE Merry Christmas/Christmas` Christ glow (user-requested feature; the 4 effects live on the submodel element, so top-level `GE Merry Christmas` reads 0). `Floods GRP` and `Colums` were initially kept, then **cleared on a follow-up request** (`Tools/tmp_holy/clear_floods_colums.py`, 27 effects — the floods' full-song ColorWash bed and the columns' chorus On slams; backup `Holy Forever 2026.xsq.bak-before-floods-colums-clear`). **What still has effects: Projector video, window matrixes (`Matrixes` group incl. Matrix - Lantana, downstairs/entry text+cross), `House Outline`, `Roof`, `Icicles GRP`, Mega Tree + Topper, faces, Christ glow.**
+2026-07-13 (same session): **column matrixes + all yard props except the Mega Tree cleared too** (`Tools/tmp_holy/clear_yard_props.py`, 1327 effects, backup `Holy Forever 2026.xsq.bak-before-yard-clear`). Wiped: `Column Matrixes`, `Yard Borders`, `Driveway`, `Colum Shrubs`, `Canes`, `Tree - Oak`, `Toni - Flat Tree`, all `Arches` rows, `Mini Trees`/`Mini Tree - 1..4`/`Mini Tree Stars`, `EFL Wing - Left/Right`, `Large Spiral Tree - 01..12`. Deliberately KEPT: `Mega Tree` + `Tree Topper`, all singing faces (user: "do not remove"), the `GE Merry Christmas/Christ` glow (user-requested feature; the 4 effects live on the dedicated submodel element, so top-level `GE Merry Christmas` reads 0). `Floods GRP` and `Colums` were initially kept, then **cleared on a follow-up request** (`Tools/tmp_holy/clear_floods_colums.py`, 27 effects — the floods' full-song ColorWash bed and the columns' chorus On slams; backup `Holy Forever 2026.xsq.bak-before-floods-colums-clear`). **What still has effects: Projector video, window matrixes (`Matrixes` group incl. Matrix - Lantana, downstairs/entry text+cross), `House Outline`, `Roof`, `Icicles GRP`, Mega Tree + Topper, faces, Christ glow.**
 
 2026-07-18: **six drum/mood/section timing tracks imported and saved** (details in their own section below). Backup from just before: `Holy Forever 2026.xsq.bak-before-drum-timings`.
+
+2026-07-19: **`Piano Chords` timing track imported** (7 audio-detected wide piano hits in intimate V1) and **`Arches - All` piano-chord SingleStrand** rebuilt to follow it. Backup from earlier arch work: `Holy Forever 2026.xsq.bak-before-arch-chords`. Details in their own sections below.
+
+2026-07-19 (later): **19 short individual piano-note pulses added across `Mini Tree - 1..4`** in six sparse fills during intimate V1. These answer the arches between wide chords; no group-level Mini Trees or star effects were added. Rebuild/clear: `Tools/tmp_holy/intimate_mini_tree_piano.py`.
 
 ## Musical grid (verified — ⚠ anchor corrected 2026-07-18)
 
 - **72.0 BPM, 4/4 — bar = 3333.33 ms. TRUE audio downbeat anchor = 600 ms** (600, 3933, 7267, 10600, 13933, …). Fitted by maximizing backbeat snare flux over V2→C3 and confirmed by section-start crashes landing on 600-grid downbeats (e.g. crashes at 13909, 40583, 93896 are all within ~35 ms of a 600-anchor downbeat but ~400 ms off the 180 grid).
 - **The previously documented 180 ms anchor is half a beat (416.7 ms) EARLY vs the audio.** Effects built on it (the chorus Fan hits, and the snare-flip marquee splits from `snare_reverse_marquees.py`) actually sit on offbeat eighths, not beats. They look fine as-is — don't churn them — but **any NEW beat-locked work should use anchor 600**, or better, snap to the imported `Beat Count`/`Kick`/`Snare` timing tracks (below).
+- **⚠ Intimate-V1 piano chords are NOT on Beat Count downbeats.** The big wide piano hits land ~1.6 s after each bar `1` (near beat 3 of the grid). Do **not** key piano-reactive effects off `Beat Count` 1 or 1+3 — use the dedicated **`Piano Chords`** track.
 - **Section boundaries in the sequence are NOT bar-aligned** — the original sequencer placed them at vocal pickups (e.g. 15520, 67570). Don't "fix" them to the grid.
 
 ## Song structure / section times
@@ -48,47 +53,69 @@ Sung-phrase spans (whisper-derived, clamped to the boundaries above; also in `To
 
 ## Original design (from 15520 on; the pre-vocal intro was deleted 2026-07-12)
 
-~~Intro: purple ColorWash + shader + 7710 build~~ — deleted with the wind intro. **Current intro canvas:** Projector video + downstairs glowing crosses + whole-scene snowfall (above). Verses: Marquee refs on House Outline, Snowflakes on Matrixes, per-section palettes. ~~Starlord Fan hits / Galaxy moments~~ — spinner/flake props cleared 2026-07-13; final On hold 301500–308264 survives on the non-house elements.
+~~Intro: purple ColorWash + shader + 7710 build~~ — **deleted along with the wind intro; 0–15275 is now an empty canvas** (only the Projector video runs there). Verses: Marquee refs on House Outline, Snowflakes on Matrixes, per-section palettes. ~~Starlord Fan hits every 2 bars alternating props in choruses; Galaxy moments at 207210 and 293790~~ — the spinner/flake props carrying these were cleared 2026-07-13 (above); final On hold 301500–308264 survives on the non-house elements.
 
-## Added: intro glowing cross on `Matrix - Downstairs Window`
+## Added: glowing cross on `Mega Tree` (intro + intimate V1)
 
 The record opens with an ethereal choir singing **"Holy" twice** before Tomlin's V1. Whisper can't transcribe the pad (too reverbed), so the swells were located by band-limited (250–3500 Hz) mid-channel RMS: **swell 1 rises ~3.9 s, peaks ~4.4–5.1, decays through ~6.4 s; swell 2 rises ~10.55 s, sustains ~10.65–11.6, decays through ~13.3 s** (a smaller mid-bump ~7.2–8.2 s is instrumental, not a "Holy").
-Implementation: two Pictures effects on `Matrix - Downstairs Window` L0 (element verified addressable; matrix is 32w×35h portrait — `parm1=4` strands ×`parm2=280` ÷ `parm3=8` strands/string... net 32×35, `Dir=L` `StartSide=B`):
 
-- 3900–6600 ms, `T_TEXTCTRL_Fadein=0.50`, `Fadeout=1.50`
-- 10550–13550 ms, `Fadein=0.50`, `Fadeout=1.75`
-- Image: `ImportedMedia/Holy Forever/Images/Glowing Cross.png` (AI-generated warm white/gold cross on black, padded to 585×640 ≈ the matrix aspect; referenced via the `/Users/elliott.ohara/xlights/...` symlink path). `Scale To Fit`, white palette. **Note: the API rewrote `E_FILEPICKER_Pictures_Filename` to `E_TEXTCTRL_Pictures_Filename` in the EffectDB — it renders fine; don't "fix" it.**
-- Verified in `RenderCompare/holy_forever_cross_intro.mp4` (brightness curve of the matrix region matches both audio swells; measurement script: `Tools/tmp_holy/measure_cross.py`).
+**2026-07-19:** user wanted the cross **on the whole intro**, brightening with each Holy (not discrete on/off hits). Continuous Pictures on L0, originally `0–15275`, `Fadein=1.00` / `Fadeout=1.50`, `Glowing Cross.png` (`Scale To Fit`, white). Brightness via palette `C_VALUECURVE_Brightness` Custom curve (Min=0/Max=400): dim baseline ≈30 between Holys, peak 100 on each swell.
 
-## Added 2026-07-18: gentle whole-scene snowfall on the intro (with Holy brightness pulses)
+**2026-07-19 (later):** moved the cross from `Matrix - Downstairs Window` L0 → **`Mega Tree` L0** (same timing/curve/image). Matrix L0 cleared (L1 Holy Text untouched). Backup: `Holy Forever 2026.xsq.bak-before-cross-to-megatree`.
 
-User: snow gently falling over the whole scene; brightness jumps up with each choir "Holy" and darkens slightly when they stop. Rebuild: `Tools/holy_forever_2026_intro_snow.py` (wipe `Whole Scene` L0 via empty `House`, re-add; does not save).
+**2026-07-19 (intimate V1):** extended cross through the acoustic verse to PC1 — now `0–41850` on Mega Tree L0. After the intro Holys, holds soft glow ≈22 through V1 (Snowman lead), eases out into PC1 (`Fadeout=2.00`). Mega Tree L0 is cross-only (verse Spirals gone), so the rebuild House-wipes L0 + re-adds. Rebuild: `Tools/tmp_holy/continuous_cross_intro.py`. Backup: `Holy Forever 2026.xsq.bak-before-intimate-extend`.
 
-Five abutting `Snowflakes` segments on **`Whole Scene` L0**, 0–15520 (hands off before Matrixes verse snow at 15525):
+- Image: `ImportedMedia/Holy Forever/Images/Glowing Cross.png` (AI-generated warm white/gold cross on black; referenced from the local `/Users/elliott.ohara/xlights/...` repo path). **Note: the API rewrote `E_FILEPICKER_Pictures_Filename` to `E_TEXTCTRL_Pictures_Filename` in the EffectDB — it renders fine; don't "fix" it.**
 
-| Span | Brightness | Role |
-|---|---|---|
-| 0–3900 | 28 | Soft pad, 2 s fade-in |
-| 3900–6600 | 78 | First Holy — abrupt (`Fadein=0`), `.75` fade-out into dim |
-| 6600–10550 | 42 | Slightly darker between swells |
-| 10550–13550 | 78 | Second Holy — same abrupt lift |
-| 13550–15520 | 42 | Afterglow, 1.5 s fade into V1 |
+## Added: Whole Scene snow (inverse of cross; dimmed through intimate V1)
 
-Effect settings: `Falling=Driving`, Count=60, Speed=4, Type=1, palette soft white `#EEEAE2`. Glowing crosses on the downstairs window still run on their own element (unchanged). **Not saved yet — scrub in the editor; save when happy.**
+**2026-07-19:** `Whole Scene` L0 continuous Snowflakes (`Driving`, count 90, speed 4, ivory `#eeeae2`). Brightness VC is the **inverse** of the Mega Tree cross curve at the Holy-swell keypoints: quiet baseline ≈55, dips to ≈18 under each Holy peak.
+
+**2026-07-19 (intimate V1):** extended with the cross to `0–41850`. After the intro, holds a dimmed (not zero) presence ≈28 through the acoustic verse so the atmosphere stays under the Snowman; eases toward PC1. Rebuild: `Tools/tmp_holy/intro_snow_inverse.py` (House-wipe L0 + re-add). Backup: `Holy Forever 2026.xsq.bak-before-intimate-extend`.
+
+## Added 2026-07-19: `Piano Chords` timing track (intimate V1 — audio-detected)
+
+**Do not use Beat Count for these.** First attempts keyed off grid downbeats / half-notes were wrong — the user hears big wide piano *chords*, which sit ~1.6 s after each bar downbeat.
+
+Template: `Timing Templates/Holy Forever Piano Chords.xsq` (single track, imported once). Builder: `Tools/tmp_holy/build_piano_chords_timing.py` (on `Tools/tmp_holy/holy_44k.wav`: low+mid spectral-breadth flux + RMS jump, min sep ~2.8 s, score ≥ 1.5). Audition (ducked song + 1 kHz clicks): `Tools/tmp_holy/piano_chord_audition.mp3`.
+
+- Track name: **`Piano Chords`** — contiguous marks; labeled hit = `P` (400 ms), unlabeled gap fillers to song end.
+- **7 live `P` marks (user-approved "Beautiful"):** 15550, 18875, 22225, 25550, 28850, 32200, 36150.
+- ⚠ **Already imported — never re-import** this template (duplicated marks). Nudge times in the GUI or rebuild template + hand-replace if detection ever needs revisiting.
+
+## Added 2026-07-19: intimate V1 arch piano-chord SingleStrand
+
+On each `Piano Chords` `P` mark: one SingleStrand on **`Arches - All`**, all four arches together.
+
+- **Buffer:** `B_CHOICE_BufferStyle=Per Model Per Preview` (required — each Arch - N is a Custom triple; whole-model `Single Line` only chased one strand path).
+- **Chase:** `From Middle`, `Rotations=1.0`, `Number_Chases=1`, `Color_Mix1=16`, `Fade_Type=From Head` — expands apex→both feet once and **stops at the bottom** (no Bounce types).
+- **Duration:** gap to next `P` mark (~3.3 s) so the expand is slow; warm ivory `#F0E6D0`, brightness 70.
+- **Arch layout note:** each `Arch - N` is Custom 126 nodes with submodels `Arch 1`/`Arch 2`/`Arch 3` (three parallel strands). Prefer the group + Per Model Per Preview over sequencing submodels by hand. Groups `Arches - Top`/`Middle`/`Bottom` are the strand rows across all four props (different use).
+- Rebuild: `python3 Tools/tmp_holy/intimate_arch_chords.py` (wipes `Arches - All` + leftover per-arch/submodel effects, re-reads `Piano Chords`). Backup: `Holy Forever 2026.xsq.bak-before-arch-chords`.
+
+## Added 2026-07-19: intimate V1 individual piano notes on mini trees
+
+The arches remain the **wide-chord voice**. Six deliberately sparse fills use the smaller between-chord tonal attacks to step across **`Mini Tree - 1..4`**:
+
+- **19 On pulses total**, 425 ms each, warm gold `#FFD89A`, brightness 55, fast 40 ms attack / 300 ms fade.
+- Run starts: **16.375, 23.900, 26.175, 30.100, 33.475, 36.775 s**. Individual frame-snapped note times and tree orders are canonical in `RUNS` inside the rebuild script.
+- Runs move left→right or right→left rather than counting every beat. The sequence intentionally leaves broad gaps, preserving the acoustic intimacy.
+- Individual trees use **layer 0**, owned by this feature. `Mini Trees` group effects and `Mini Tree Stars` remain empty; Whole Scene snow still supplies the quiet atmospheric bed.
+- Rebuild or remove: `python3 Tools/tmp_holy/intimate_mini_tree_piano.py` (`--dry-run`, or `--clear-only` to remove the 19 pulses). The script wipes only layer 0 of the four individual mini-tree models.
 
 ## Added: "Christ" glow on each PC1 "Your name" (user: "when it says Your name… light the Christ part")
 
-Four On effects, element **`GE Merry Christmas/Christmas`** L0, warm gold `#FFC878`, with `B_CUSTOM_SubBuffer=0.00x0.00x69.10x100.00` — the `Christmas` submodel is a horizontal-layout ranges submodel whose node order tracks x (verified 0 violations), and the left 69.1% of its buffer = the cursive letters **C-h-r-i-s-t exactly** (cut lands in the t→m gap at grid x≈262/332; boundary calibrated by rendering candidate cuts from the CustomModel grid — strips in git history of `Tools/tmp_holy/`).
+Four On effects, element **`GE Merry Christmas/Christ`** L0, warm gold `#FFC878`, with **no custom buffer**. `Christ` is now a dedicated horizontal-layout ranges submodel: 241 unique nodes, exactly the left prefix of the existing `Christmas` ordering through custom-grid x=262; the remaining `mas` starts at x=264. The same submodel row is present in both the live local show layout and canonical `Christmas/xlights_rgbeffects.xml`.
 Each effect fades in across the sung "Your name" (start of "Your" → end of "name" from `Lyrics Lead` words layer) and fades out 1.5 s after:
 
 - 40950–44675 (fadein 2.23) · 45300–48125 (1.32) · 48250–51750 (2.00) · 61450–64900 (1.95)
 - The 4th "Your name" (48950–50250, "…stands above them all" #1) shares block 3's window; the one at 61450 is the final "Your name stands above them all".
 
-Verified in `RenderCompare/holy_forever_christ_glow.mp4` (region brightness ramps/decays inside all four windows — `Tools/tmp_holy/measure_christ.py`; baseline ~4 outside windows is the blue verse wash bleeding into the crop, not the prop).
+Migrated target-only with `Tools/tmp_holy/migrate_christ_submodel.py` (replacement effects verified before the old buffered row was wiped). Render/export verified in `RenderCompare/holy_forever_christ_submodel.mp4`; the 43.0 s frame lights only the dedicated gold `Christ` segment.
 
 ## Added: "Holy" text on downstairs + entry windows (every sung "Holy")
 
-44 Text effects — one per "Holy" word mark in `Lyrics 1` (22 marks: 70425, 77275, 83975, 87250; 130075, 138525, 144750, 147300; 156450, 164350, 171025, 173950; 238150, 244375, 251150, 253950, 264425, 273625, 278350, 280575, 290350, 293875) × 2 elements, both **layer 1** (L0 downstairs holds the intro crosses):
+44 Text effects — one per "Holy" word mark in `Lyrics 1` (22 marks: 70425, 77275, 83975, 87250; 130075, 138525, 144750, 147300; 156450, 164350, 171025, 173950; 238150, 244375, 251150, 253950, 264425, 273625, 278350, 280575, 290350, 293875) × 2 elements, both **layer 1** (intro cross now lives on Mega Tree, not downstairs L0):
 
 - `Matrix - Downstairs Window` (32×35): font `7-7x9 Thin`.
 - `Matrix - Entry` (24×25): font `6-5x6 Thin`.
@@ -101,19 +128,22 @@ All wind-intro voices are gone (first Off-parked, later truly deleted by `clear_
 
 ## Added: lyric timing tracks
 
-Five tracks (3-layer: phrases with empty gap-filler marks / words / phonemes, snapped to 25 ms):
+The copied sequence currently contains four lyric tracks (3-layer: phrases with empty gap-filler marks / words / phonemes, snapped to 25 ms):
 
-- **`Lyrics 1`** — every sung line (76/259/894 marks). The Snowman's V2+chorus-2 duet block drives from it whenever the faces are (re)added — keep it.
-- **`Lyrics Lead`** — Tomlin part. ⚠ The in-sequence copy was imported **before** the C2b backup lines were added; the on-disk template now includes them but was deliberately **not re-imported** (re-importing an existing track risks duplicated marks). That's why chorus 2 uses `Lyrics 1` instead.
+- **`Lyrics Lead`** — Tomlin part. The in-sequence copy was imported before the C2b backup lines were added.
 - **`Lyrics Female`** — Jenn part: V2, C2b, C2c, PC2a/b, C3.
 - **`Lyrics Choir`** — ensemble: C1, C2, PC2a/b, C3.
-- **`Lyrics Intro Choir`** — ethereal pad choir: two drawn-out **"Holy"**s at 3900–6600 and 10550–13550 (same windows as the glowing crosses / snow pulses; whisper can't hear the reverb pad, so marks are hand-placed from mid-channel RMS). Template: `Timing Templates/Holy Forever Intro Choir.xsq`. Build+import+bulb faces: `Tools/tmp_holy/add_intro_holy_choir.py`. ⚠ Imported once — do not re-import.
+- **`Lyrics Intro Choir`** — two hand-placed “Holy” swells at 3900–6600 and 10550–13550; the dim bulb Faces block driven by it extends through 41850.
 
-Template (main voices): `Timing Templates/Holy Forever Lyrics.xsq`. Pipeline that built it (word-level whisper transcription → lyric alignment → phonemes from xLights' own dictionaries): see root AGENTS.md "Lyric timing from scratch" and `Tools/tmp_holy/`. Phrase *starts* are approximate (clamped to section anchors); word ends track the vocal closely. The "Holy holy holy" echoes in C3 are folded into the "To the King of kings holy" phrase end.
+⚠ **Copied-source inconsistency:** `Lyrics 1` (the full-lyric track) is absent from the current `.xsq`, even though the Snowman's V2-through-chorus-2 Faces block still references it. Do not assume that block will mouth correctly, and do not run `fix_faces.py`, until the track is deliberately restored. A mark-for-mark recovery template was extracted from the last complete backup as `Timing Templates/Holy Forever Lyrics 1.xsq` (76/259/894 phrase/word/phoneme marks). Import it **once**.
 
-## Added 2026-07-18: drum / mood / section timing tracks (6 new — sequence now has 10)
+Templates: `Timing Templates/Holy Forever Lyrics.xsq` contains the three per-voice tracks; `Timing Templates/Holy Forever Lyrics 1.xsq` is the full-lyric recovery track; `Timing Templates/Holy Forever Intro Choir.xsq` contains the preserved intro track. The main pipeline is `Tools/tmp_holy/build_lyrics.py`; `Tools/tmp_holy/add_intro_holy_choir.py` is the older intro-track builder. Phrase *starts* are approximate (clamped to section anchors); word ends track the vocal closely. The "Holy holy holy" echoes in C3 are folded into the "To the King of kings holy" phrase end.
+
+## Added 2026-07-18: drum / mood / section timing tracks (6) — plus Piano Chords 2026-07-19 → **11 timing tracks total**
 
 Template `Timing Templates/Holy Forever Drums and Mood.xsq`, built by `Tools/tmp_holy/build_timing_template.py` (band-limited spectral-flux onset detection on `Tools/tmp_holy/holy_44k.wav`, gated per 16th slot of the TRUE 600-anchor grid, kick/snare validated by onset-spectrum template matching, crashes by a ring/sustain test). Imported once via `importXLightsSequence` (auto, no media) and verified mark-for-mark (`Tools/tmp_holy/verify_timing_import.py` — all 6 OK). All marks snapped to 25 ms. Hit tracks are contiguous: unlabeled gap fillers + short labeled hit marks (Kick=`K` 150 ms, Snare=`S` 150 ms, Cymbals=`C` 400 ms) — sequencers key effects off the labeled marks.
+
+(Current total: 3 per-voice lyric tracks + Intro Choir + these 6 tracks + **`Piano Chords`** = 11.)
 
 - **`Song Sections`** — 15 labeled blocks on the original effect-section boundaries (Intro 0 / Verse 1 15520 / Pre-Chorus 1 41850 / Chorus 1 67570 / Verse 2 95100 / Chorus 2 127630 / "Hear Your People" female feature 154150 / Holy Forever 166850 / Pre-Chorus 2 pass 1 181900 / pass 2 full cast 207210 / Final Chorus 234230 / Hear Your People 260760 / Holy Forever 273650 / Outro solo tag 287290 / Final hold 301500).
 - **`Mood`** — 12 labeled energy arcs on true-grid downbeats: Ethereal 0 → Intimate 13900 → Building 40600 (bass+kick enter, RMS jumps ~4 dB) → Anthemic 67275 → Groove 93925 (kit settles, backbeat starts) → Soaring 127275 → Featured 153925 → Regather 180600 → Climbing 207275 → Climax 233925 (loudest stretch of the song) → Afterglow 287275 (band falls away; low band drops ~19 dB at bar 87) → Silence 300600.
@@ -135,19 +165,17 @@ All faces layer 0; **eyes and mouths render white on every prop EXCEPT Teddy**, 
 |---|---|---|
 | GE 8ft Snowman Singing (lead) | Lyrics Lead | V1→C1; **verse 2 + all of chorus 2 as one block on `Lyrics 1`** (duets with Teddy from her 1:34 entrance, backs her up on C2b); PC2a→C3; outro solo |
 | EFL Teddy (female lead) — def `Teddy `, colored face | Lyrics Female | V2; C2b→C2c; PC2a→C3 |
-| Singing Bulb - L/C/R (choir) | Lyrics Intro Choir → Lyrics Choir | **Intro 3900–13850** (cross-warm, brightness 45); C1; C2a→C2c; PC2b→C3 |
+| Singing Bulb - L/C/R (choir) | Lyrics Intro Choir (dim) then Lyrics Choir | **intro Holys + intimate V1** (`3900–41850`, muted ivory/gold palette, brightness 40); then C1; C2a→C2c; PC2b→C3 (full C9) |
 | GE Santa Singing, GE Grinch Talk, SingingTree | Lyrics Choir | PC2a→C3 |
 | Toni - Penguin 1/2 | Lyrics Choir | PC2b→C3 |
 
-Regenerate everything above: `python3 Tools/tmp_holy/fix_faces.py` (wipe-and-re-add; verified to reproduce this exact state — 21 effects).
+⚠ The current scripts are not yet a one-command full rebuild: `fix_faces.py` requires the missing `Lyrics 1` track and removes the dim intro/V1 bulb block, while `intimate_bulb_faces.py` only extends an intro block that already exists. Preserve the live effects; restore `Lyrics 1` and reconcile those two scripts before rebuilding all faces.
 
 ## Bulb colors (C9 look — pure Faces palette, no submodel effects) — LIVE, part of the bulbs' face effects
 
-The ChromaBulb defs map glass = `FaceOutline` and base = `FaceOutline2`, and with `CustomColors=0` the Faces effect assigns checked palette colors **in order: mouth, eyes, FaceOutline, FaceOutline2** (verified in `FacesEffect.cpp`). Each bulb's **chorus** Faces palette is therefore:
+The ChromaBulb defs map glass = `FaceOutline` and base = `FaceOutline2`, and with `CustomColors=0` the Faces effect assigns checked palette colors **in order: mouth, eyes, FaceOutline, FaceOutline2** (verified in `FacesEffect.cpp`). Each bulb's Faces palette is therefore:
 
 - C1 `#FFFFFF` mouth · C2 `#FFFFFF` eyes · C3 glass (Left `#FF0000` / Center `#00FF00` / Right `#0000FF`) · C4 `#FFC800` amber base.
-
-**Intro exception (2026-07-19):** the opening "Holy" Faces block uses a dim warm palette matching the downstairs glowing cross — mouth/eyes `#EEEAE2`, glass `#C8A878`, base `#8B6B3D`, `C_SLIDER_Brightness=45` — no C9 R/G/B. Fadein 0.50 / fadeout 1.50.
 
 The bulb **submodel elements carry no effects** — an earlier submodel-On approach was removed; `fix_faces.py` wipes them to keep it that way. (Submodel names, if ever needed for non-face effects: Center = `Base`/`Bulb`, L/R = `Bulb Stem`/`Bulb Outline`.)
 
@@ -155,11 +183,18 @@ The bulb **submodel elements carry no effects** — an earlier submodel-On appro
 
 - `transcribe.py` — faster-whisper word timestamps (needs a venv with `faster-whisper`; use `vad_filter=False` — VAD ate this vocal).
 - `words.json` — transcription output (kept; lets you rebuild timing without re-transcribing).
-- `build_lyrics.py` — alignment + phonemes + writes the 4-track template and `sections.json`. Canonical lyrics and per-voice membership live at the top of this file.
+- `build_lyrics.py` — alignment + phonemes + writes the 3-track per-voice template and `sections.json`. Canonical lyrics and per-voice membership live at the top of this file.
 - `sections.json` — per-section/per-line sung spans (used by all placement scripts).
-- `fix_faces.py` — canonical singing-face rebuild (matches live state; includes intro cross-warm bulb faces + C9 chorus palettes and clears the bulb submodels).
-- `add_intro_holy_choir.py` — builds/imports `Lyrics Intro Choir` and adds the intro bulb Faces (skip-safe if already present).
+- `fix_faces.py` — canonical C1+ singing-face rebuild (includes bulb C9 palettes and clears the bulb submodels). It requires the currently missing `Lyrics 1` track and does not recreate the dim intro/V1 bulb block.
+- `add_intro_holy_choir.py` — preserved builder/importer for `Lyrics Intro Choir`; do not re-import when the track exists. Its short original Faces treatment is historical; `intimate_bulb_faces.py` defines the current longer treatment.
 - `clear_intro.py` — direct .xsq edit that deleted every model effect ending ≤15520 (supports `--dry-run`). Pattern to copy for any future time-scoped deletion the API can't do: save session → cp backup → run → close/reopen sequence.
+- `continuous_cross_intro.py` — rebuild Mega Tree L0 cross through intro + intimate V1 (`0–41850`, Holy-swell curve then verse hold ≈22); clears any leftover matrix L0 cross.
+- `intro_snow_inverse.py` — Whole Scene L0 Snowflakes through intro + intimate V1 (`0–41850`, inverse of cross then dimmed verse hold ≈28).
+- `intimate_bulb_faces.py` — extend muted dim Faces on Singing Bulb L/C/R through intro + intimate V1 (`3900–41850`, brightness 40); preserves later C9 choir blocks.
+- `build_piano_chords_timing.py` — detect + write `Timing Templates/Holy Forever Piano Chords.xsq` + audition mp3. Track already imported — do not re-import.
+- `intimate_arch_chords.py` — wipe/rebuild `Arches - All` piano SingleStrand from live `Piano Chords` `P` marks (`Per Model Per Preview`, From Middle, rot 1.0).
+- `intimate_mini_tree_piano.py` — wipe/rebuild six sparse between-chord piano-note fills (19 short warm-gold On pulses) across individual `Mini Tree - 1..4` layer 0; supports `--dry-run` / `--clear-only`.
+- `migrate_christ_submodel.py` — guarded target-only migration of the four PC1 glows from buffered `GE Merry Christmas/Christmas` to unbuffered `GE Merry Christmas/Christ`; verifies exact source/destination state and supports `--dry-run`.
 - `migrate_faces.py`, `place_faces.py`, `lead_backup_c2.py` — historical steps, fully superseded by `fix_faces.py`.
 - `../holy_forever_2026_wind_intro.py` — wind intro build.
 - `reverse_v2_house.py` — (superseded) whole-V2 marquee reverse on House Outline + Roof.
@@ -167,4 +202,4 @@ The bulb **submodel elements carry no effects** — an earlier submodel-On appro
 
 ## Review checklist (what to scrub)
 
-0:00–0:15 gentle whole-scene snow (brightens on each choir "Holy", dims after) + glowing cross on downstairs window (~0:04 and ~0:11) + singing bulbs mouth the intro "Holy"s in dim warm gold · 0:15 Snowman verse 1 · 1:07 bulbs join in C9 (choir) · 1:34 verse-2 duet (Teddy leads, Snowman with her) · 2:33 female feature, Snowman backup · 3:01 Santa/Grinch/Tree join · 3:28 penguins/full cast · 4:47 Snowman outro solo, fades.
+0:00–0:42 Whole Scene snow + Mega Tree cross + dim Singing Bulb faces (snow dims as cross swells on each "Holy" ~0:04 / ~0:11; bulbs brightness ~40; ease out at PC1) · 0:15 Snowman V1 + 7 big piano chords → slow From Middle on Arches - All (Per Model Per Preview; times from `Piano Chords` track @ 15.55/18.88/22.23/25.55/28.85/32.20/36.15) + six small gold note runs stepping across individual mini trees (first @ 16.375, last @ 38.900) · 0:42 PC1 · 1:07 bulbs full C9 · 1:34 verse-2 duet · 2:33 female feature · 3:01 Santa/Grinch/Tree · 3:28 penguins/full cast · 4:47 Snowman outro solo.

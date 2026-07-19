@@ -1,10 +1,9 @@
 """Canonical wipe-and-rebuild of ALL singing-face effects for Holy Forever 2026.
 
 Reproduces the reviewed live state. Prereq: the sequence already contains the
-timing tracks 'Lyrics 1' (full lyric), 'Lyrics Lead/Female/Choir' (imported
-ONCE from Timing Templates/Holy Forever Lyrics.xsq), and 'Lyrics Intro Choir'
-(imported ONCE from Timing Templates/Holy Forever Intro Choir.xsq). Do not
-re-import over existing tracks (mark duplication risk).
+timing tracks 'Lyrics 1' (full lyric) and 'Lyrics Lead/Female/Choir' (imported
+ONCE from Timing Templates/Holy Forever Lyrics.xsq). Do not re-import over
+existing tracks (mark duplication risk).
 
 Casting:
   Snowman = Tomlin lead. Verse 2 through chorus 2 is ONE block on 'Lyrics 1'
@@ -12,16 +11,14 @@ Casting:
             the female feature (in-sequence 'Lyrics Lead' lacks the V2/C2b
             phrases; 'Lyrics 1' has everything).
   Teddy   = Jenn Johnson: V2, C2b+C2c, both pre-choruses, final chorus.
-  Bulbs   = intro ethereal choir "Holy"s on 'Lyrics Intro Choir' (cross-warm
-            palette), then choir from chorus 1 (C9); Santa/Grinch/SingingTree
-            join at PC2a; Penguins at PC2b; everyone sings the final chorus.
+  Bulbs   = choir from chorus 1; Santa/Grinch/SingingTree join at PC2a;
+            Penguins at PC2b; everyone sings the final chorus.
 
 Bulb C9 look is done entirely by the Faces palette (no submodel effects).
 With CustomColors=0 the Faces effect maps checked palette colors in order to
 mouth, eyes, FaceOutline (glass), FaceOutline2 (base) - verified in
-FacesEffect.cpp. So bulbs get: white mouth/eyes, R/G/B glass, amber base —
-except the intro block, which uses a dim warm white/gold matching the glowing
-cross. This script also wipes any legacy On effects off the bulb submodels.
+FacesEffect.cpp. So bulbs get: white mouth/eyes, R/G/B glass, amber base.
+This script also wipes any legacy On effects off the bulb submodels.
 
 Why wipe+re-add: setEffectSettings mangles values (see AGENTS.md) - the only
 safe effect edit is cloneModelEffects(eraseModel) from an effect-free element
@@ -71,17 +68,6 @@ BULB_GLASS = {
     'Singing Bulb - Center': '#00FF00',
     'Singing Bulb - Right': '#0000FF',
 }
-# Intro ethereal choir "Holy"s — same windows as glowing crosses / snow pulses
-INTRO_HOLY = (3900, 13550)
-INTRO_TRACK = 'Lyrics Intro Choir'
-# Soft warm white/gold matching the downstairs glowing cross (not C9)
-CROSS_PAL = (
-    'C_BUTTON_Palette1=#EEEAE2,C_CHECKBOX_Palette1=1,'
-    'C_BUTTON_Palette2=#EEEAE2,C_CHECKBOX_Palette2=1,'
-    'C_BUTTON_Palette3=#C8A878,C_CHECKBOX_Palette3=1,'
-    'C_BUTTON_Palette4=#8B6B3D,C_CHECKBOX_Palette4=1,'
-    'C_SLIDER_Brightness=45'
-)
 # legacy targets from the submodel-On approach; kept clean by this script
 BULB_SUBMODELS = [
     'Singing Bulb - Left/Bulb Stem', 'Singing Bulb - Left/Bulb Outline',
@@ -89,10 +75,8 @@ BULB_SUBMODELS = [
     'Singing Bulb - Right/Bulb Stem', 'Singing Bulb - Right/Bulb Outline',
 ]
 
-def palette_for(el, track=None):
+def palette_for(el):
     """Faces palette. Order (CustomColors=0): mouth, eyes, outline, outline2."""
-    if el in BULB_GLASS and track == INTRO_TRACK:
-        return CROSS_PAL
     if el in BULB_GLASS:
         cols = ['#FFFFFF', '#FFFFFF', BULB_GLASS[el], AMBER]
         return ','.join(
@@ -100,14 +84,12 @@ def palette_for(el, track=None):
             [f'C_CHECKBOX_Palette{i}=1' for i in range(1, len(cols) + 1)])
     return 'C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1'
 
-def face_settings(defn, state, track, fadein=None, fadeout=None):
+def face_settings(defn, state, track, fadeout=None):
     s = ('E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,'
          'E_CHOICE_Faces_Eyes=Auto,'
          f'E_CHOICE_Faces_FaceDefinition={defn},E_CHOICE_Faces_TimingTrack={track}')
     if state:
         s += f',E_CHOICE_Faces_UseState={state}'
-    if fadein:
-        s += f',T_TEXTCTRL_Fadein={fadein}'
     if fadeout:
         s += f',T_TEXTCTRL_Fadeout={fadeout}'
     return s
@@ -125,9 +107,7 @@ def spans():
             (v2s, c2c_e, 'Lyrics 1'),        # V2 + chorus 2 = duet with Teddy
             (pc2a_s, c3e), (outs, oute)]
     female = [(v2s, v2e), (c2b_s, c2c_e), (pc2a_s, c3e)]
-    # intro "Holy" choir pad, then full choir blocks
-    choir = [(INTRO_HOLY[0], INTRO_HOLY[1], INTRO_TRACK),
-             sec('C1'), (c2a_s, c2c_e), (pc2b_s, c3e)]
+    choir = [sec('C1'), (c2a_s, c2c_e), (pc2b_s, c3e)]
     joiners1 = [(pc2a_s, c3e)]
     joiners2 = [(pc2b_s, c3e)]
 
@@ -164,18 +144,16 @@ def main():
         defn, state, deftrack = SINGERS[el]
         blocks = sorted((b[0], b[1], b[2] if len(b) > 2 else deftrack) for b in blocks)
         x.xl('cloneModelEffects', target=el, source=EMPTY_SOURCE, eraseModel='true')
+        pal = palette_for(el)
         final = []
         for k, (s, e, track) in enumerate(blocks):
             last = k == len(blocks) - 1
-            intro = track == INTRO_TRACK
             s, e = int(s), int(e) + (1500 if last else 300)
             if not last:
                 e = min(e, int(blocks[k + 1][0]))
-            fin = '0.50' if intro else None
-            fout = '1.50' if (last or intro) else None
             x.add_effect(el, 0, 'Faces',
-                         face_settings(defn, state, track, fadein=fin, fadeout=fout),
-                         palette_for(el, track), s, e)
+                         face_settings(defn, state, track, 1.5 if last else None),
+                         pal, s, e)
             final.append((s, e, track))
             n += 1
         expected[el] = final
@@ -191,17 +169,13 @@ def main():
         for eid in ids:
             e = x.xl('getEffectSettings', model=el, layer='0', id=str(eid))
             st, p = e['settings'], e['palette']
-            track = st.get('E_CHOICE_Faces_TimingTrack')
-            got.append((int(e['startTime']), int(e['endTime']), track))
+            got.append((int(e['startTime']), int(e['endTime']),
+                        st.get('E_CHOICE_Faces_TimingTrack')))
             ok = (e.get('name') == 'Faces'
                   and st.get('E_CHOICE_Faces_FaceDefinition') == defn
                   and st.get('E_CHECKBOX_Faces_Outline') == '1'
                   and (state is None or st.get('E_CHOICE_Faces_UseState') == state))
-            if glass and track == INTRO_TRACK:
-                ok = ok and (p.get('C_BUTTON_Palette3', '').upper() == '#C8A878'
-                             and p.get('C_BUTTON_Palette1', '').upper() == '#EEEAE2'
-                             and str(p.get('C_SLIDER_Brightness', '')) == '45')
-            elif glass:
+            if glass:
                 ok = ok and (p.get('C_BUTTON_Palette3', '').upper() == glass
                              and p.get('C_BUTTON_Palette4', '').upper() == AMBER
                              and all(p.get(f'C_CHECKBOX_Palette{i}') == '1'
