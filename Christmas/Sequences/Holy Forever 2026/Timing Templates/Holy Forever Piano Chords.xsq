@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xsequence BaseChannel="0" ChanCtrlBasic="0" ChanCtrlColor="0" FixedPointTiming="1" ModelBlending="false">
+  <head>
+    <version>2026.12</version>
+    <author />
+    <song>Holy Forever</song>
+    <artist>Chris Tomlin</artist>
+    <sequenceTiming>25 ms</sequenceTiming>
+    <sequenceType>Media</sequenceType>
+    <mediaFile>/Users/elliott.ohara/xlights/Christmas/Sequences/Holy Forever 2026/Media/Chris Tomlin - Holy Forever (Lyric Video).mp4</mediaFile>
+    <sequenceDuration>308.314</sequenceDuration>
+  </head>
+  <nextid>1</nextid>
+  <Jukebox />
+  <ColorPalettes />
+  <EffectDB />
+  <DataLayers />
+  <DisplayElements>
+    <Element collapsed="0" type="timing" name="Piano Chords" visible="1" views="" active="1" />
+  </DisplayElements>
+  <ElementEffects>
+    <Element type="timing" name="Piano Chords">
+      <EffectLayer>
+        <Effect label="" startTime="0" endTime="15550" />
+        <Effect label="P" startTime="15550" endTime="15950" />
+        <Effect label="" startTime="15950" endTime="18875" />
+        <Effect label="P" startTime="18875" endTime="19275" />
+        <Effect label="" startTime="19275" endTime="22225" />
+        <Effect label="P" startTime="22225" endTime="22625" />
+        <Effect label="" startTime="22625" endTime="25550" />
+        <Effect label="P" startTime="25550" endTime="25950" />
+        <Effect label="" startTime="25950" endTime="28850" />
+        <Effect label="P" startTime="28850" endTime="29250" />
+        <Effect label="" startTime="29250" endTime="32200" />
+        <Effect label="P" startTime="32200" endTime="32600" />
+        <Effect label="" startTime="32600" endTime="36150" />
+        <Effect label="P" startTime="36150" endTime="36550" />
+        <Effect label="" startTime="36550" endTime="308300" />
+      </EffectLayer>
+    </Element>
+  </ElementEffects>
+</xsequence>

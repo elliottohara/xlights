@@ -2,15 +2,18 @@
 
 Knowledge gathered while building "Feliz Navidad 2026" and "Holy Forever 2026" (July 2026). Verified against the live layout; re-verify names with `Christmas/xlights_rgbeffects.xml` if the layout has changed since.
 
-**Per-sequence notes:** sequences with agent history have a companion file next to the .xsq, named `<sequence> - AGENT NOTES.md` (e.g. `Christmas/Holy Forever 2026 - AGENT NOTES.md`). Read it before editing that sequence; keep it updated after significant work.
+**Per-sequence notes:** each song lives under `Christmas/Sequences/<Song Name>/` with `AGENT NOTES.md` next to the `.xsq` (e.g. `Christmas/Sequences/Holy Forever 2026/AGENT NOTES.md`). Read it before editing that sequence; keep it updated after significant work. To scaffold a new song folder, use the project skill `.cursor/skills/setup-sequence/`.
 
 ## Directory layout
 
-- **Show directory (Christmas):** `/Users/elliott.ohara/xlights/Christmas/` — sequences (`.xsq`), `xlights_rgbeffects.xml` (models/groups/faces), `ImportedMedia/` (videos, shaders).
-- **Audio:** `/Users/elliott.ohara/xlights/Audio/` (e.g. `01 Feliz Navidad.mp3`).
+- **Show directory (Christmas):** `/Users/elliott.ohara/xlights/Christmas/` — layout only: `xlights_rgbeffects.xml`, `xlights_networks.xml`, faces, shared `ImportedMedia/`. **Do not** dump song files at this root.
+- **Per-sequence folders:** `Christmas/Sequences/<Song Name>/` — `<Song Name>.xsq`, `AGENT NOTES.md`, `Media/` (lyric video + song images), `Timing Templates/`, `Tools/` (song scripts), optional `Backups/`.
+- **Shared timing templates:** `/Users/elliott.ohara/xlights/Timing Templates/` — cross-show / reusable templates only. Song-specific templates live under that song's `Timing Templates/`.
+- **Shared API tooling:** `/Users/elliott.ohara/xlights/Tools/xlights_api.py` (and other show-agnostic helpers). Song scripts import it via `sys.path` to this folder.
+- **Audio:** `/Users/elliott.ohara/xlights/Audio/` (e.g. `01 Feliz Navidad.mp3`) when audio is shared; otherwise prefer `Sequences/<Song>/Media/`.
 - **Canonical local root:** `/Users/elliott.ohara/xlights`. Older sequences may still reference `/Users/elliott.ohara/Documents/xlights/...`; that symlink currently points to `/Volumes/Personal-Drive/xlights`. Prefer the local repo path in new scripts, and check the share/symlink if legacy media fails to load (`fixallpaths.sh` documents the path conventions).
-- **Halloween:** separate show directory at `/Users/elliott.ohara/xlights/Halloween/`.
-- **Videos:** `/Users/elliott.ohara/xlights/Videos/` — matrix/background video media.
+- **Halloween:** separate show directory at `/Users/elliott.ohara/xlights/Halloween/` (same `Sequences/<Song>/` convention when used).
+- **Videos (legacy/shared):** `/Users/elliott.ohara/xlights/Videos/` — optional shared downloads; prefer song `Media/` for sequence media.
 
 ## YouTube downloads
 
@@ -21,10 +24,12 @@ If a user wants a YouTube video for the show, **do not invent a one-off download
 ```
 
 - Default output: `/Users/elliott.ohara/xlights/Videos/<video title>.mp4`
-- Optional second arg for another folder (e.g. `./Audio`):
+- For a sequence, pass that song's Media folder as the second arg:
+  `./yt2mp4.sh "<url>" "/Users/elliott.ohara/xlights/Christmas/Sequences/<Song Name>/Media"`
+- Optional other folders (e.g. `./Audio`):
   `./yt2mp4.sh "<url>" "/Users/elliott.ohara/xlights/Audio"`
 - Requires `yt-dlp` and `ffmpeg` (`brew install yt-dlp ffmpeg`). Ask before installing if they are missing.
-- Prefer saving video media under `Videos/`; use `Audio/` only when the user wants audio-only / audio-folder placement.
+- Prefer song `Media/` for sequence media; use `Audio/` only when the user wants audio-only / audio-folder placement.
 
 ## xLights automation API — build sequences through it, don't write .xsq by hand
 
@@ -39,7 +44,7 @@ If a user wants a YouTube video for the show, **do not invent a one-off download
 ### Sequence-authoring workflow (proven, see `Tools/feliz_navidad_2026.py`)
 
 1. `newSequence` (`mediaFile`, `frameMS:25`, `force:"true"`) — response includes exact duration (`len` ms).
-2. `importXLightsSequence` (`mapmethod:"auto"`, `importmedia:"false"`) with a timing-only template to bring in timing tracks — templates live in `Timing Templates/` at the xlights root (shared across Christmas/Halloween/etc. shows; each template is an old sequence with all model effects stripped).
+2. `importXLightsSequence` (`mapmethod:"auto"`, `importmedia:"false"`) with a timing-only template to bring in timing tracks — song templates live in `Christmas/Sequences/<Song>/Timing Templates/`; shared/reusable ones in root `Timing Templates/` (each template is an old sequence with all model effects stripped).
 3. `addEffect` per effect: `{"cmd":"addEffect","target":"<element>","effect":"On","settings":"T_TEXTCTRL_Fadeout=.25","palette":"C_BUTTON_Palette1=#FF0000,C_CHECKBOX_Palette1=1","layer":0,"startTime":1000,"endTime":2000}`. Settings/palette use the same key=value strings as the .xsq EffectDB. Layers auto-create. ~1 ms per call.
 4. `saveSequence` (`seq` = **full path**, else it saves relative to cwd), `renderAll`, `exportVideoPreview`.
 
@@ -63,7 +68,7 @@ If a user wants a YouTube video for the show, **do not invent a one-off download
 
 ### Lyric timing from scratch (proven on Holy Forever 2026)
 
-When no lyric timing exists for a song, generate it (reference implementation: `Tools/tmp_holy/`):
+When no lyric timing exists for a song, generate it (reference implementation: `Christmas/Sequences/Holy Forever 2026/Tools/`):
 
 1. Extract audio with ffmpeg → **faster-whisper** (`medium`, int8, `word_timestamps=True`, **`vad_filter=False`** — VAD swallowed the sung vocal entirely; `condition_on_previous_text=False`). Runs in ~1 min on CPU.
 2. Align hypothesis words to canonical lyrics (web-sourced) with Levenshtein + fuzzy similarity; interpolate unmatched words. **Clamp phrase starts to the sequence's human-placed section boundaries** — whisper drags sung phrase starts back into instrumental pads; word *ends* are trustworthy.
@@ -77,11 +82,10 @@ Reading existing sequences for analysis is fine (XML): `ColorPalettes`/`EffectDB
 
 ## Tools
 
-- `Tools/xlights_api.py` — API client (launch/wait, new_sequence, import_timings, add_effect, save, render_all, export_video_preview).
-- `Tools/feliz_navidad_2026.py` — full API-driven build of Feliz Navidad 2026: timing-mark loading, palette + effect-settings library (borrowed from the favorite sequences), choreography helpers (`add()`, `slam()`, `horn_stabs()`, `string_runs()`, verse/chorus functions), overlap validation, push loop. **Copy this as the starting point for any new sequence** — the top half is song-agnostic, the choreography half is per-song.
-- `Tools/tmp_holy/` — the lyric-timing pipeline (whisper transcription → alignment → phoneme breakdown → timing template) plus the Holy Forever face/casting scripts. Despite the name it's kept as the reference implementation; see the Holy Forever sequence notes for what each script does.
-- `Tools/holy_forever_2026_wind_intro.py` — bar-synced "swaying wind" intro build (phase-continuous Bars direction flips + marquee streams + spiral sway).
-- `Tools/vidstats.swift` — per-frame brightness/motion metrics + sample frames from exported preview videos (must run outside a sandbox for AVFoundation).
+- `Tools/xlights_api.py` — shared API client (launch/wait, new_sequence, import_timings, add_effect, save, render_all, export_video_preview).
+- `Christmas/Sequences/Holy Forever 2026/Tools/` — Holy Forever build/choreography scripts + lyric-timing pipeline (whisper → alignment → phonemes → timing template) + face/casting helpers. Reference implementation for per-song tooling; see that sequence's `AGENT NOTES.md`.
+- `Christmas/Sequences/Holy Forever 2026/Tools/holy_forever_2026_wind_intro.py` — bar-synced "swaying wind" intro build (phase-continuous Bars direction flips + marquee streams + spiral sway).
+- `Tools/vidstats.swift` — per-frame brightness/motion metrics + sample frames from exported preview videos (must run outside a sandbox for AVFoundation), if present.
 
 ## Layout: key models and groups (Christmas)
 

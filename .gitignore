@@ -27,3 +27,6 @@ __pycache__/
 # Generated audio from analysis/audition scripts, not show media
 Tools/tmp_*/**/*.wav
 Tools/tmp_*/**/*_audition.*
+Christmas/Sequences/*/Tools/**/*.wav
+Christmas/Sequences/*/Tools/**/*_audition.*
+Christmas/Sequences/*/Tools/work/
