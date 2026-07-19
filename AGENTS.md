@@ -4,64 +4,53 @@ Knowledge gathered while building "Feliz Navidad 2026" and "Holy Forever 2026" (
 
 **Per-sequence notes:** each song lives under `Christmas/Sequences/<Song Name>/` with `AGENT NOTES.md` next to the `.xsq` (e.g. `Christmas/Sequences/Holy Forever 2026/AGENT NOTES.md`). Read it before editing that sequence; keep it updated after significant work. To scaffold a new song folder, use the project skill `.cursor/skills/setup-sequence/`.
 
-## Parallel agent work — use git worktrees
+## Parallel agent work — two permanent worktree slots
 
-**Do not pile concurrent agent work onto `main` in the primary checkout.** Multiple agents (or agent + human) editing the same working tree collide on branches, dirty files, and saves. For any non-trivial or parallel task, work in a **dedicated git worktree** so `main` stays free.
+**Do not pile concurrent agent work onto `main` in the primary checkout.** Multiple agents (or agent + human) editing the same working tree collide on branches, dirty files, and saves. Agent edits happen in one of **two permanent git worktree "slots"**, each bound for its lifetime to one xLights instance.
 
-### Convention
+Why exactly two: xLights supports **at most two** concurrent instances with working automation APIs (verified in source, `src-ui-wx/automation/`) — the **A port 49913** (`-a` flag) and the **B port 49914** (`-b` flag). Port = 49912 + slot; no other ports are possible. A third instance silently runs with **no API at all** (on a failed bind, xLights flips A↔B, retries once, then gives up). So instead of one worktree per branch (which forced an xLights relaunch + show-dir change every task), the two slots are long-lived and **branches rotate through them**.
 
-- **Worktree root (sibling of this repo):** `/Users/elliott.ohara/xlights-worktrees/<branch-name>/`
-- **Branch name:** short kebab-case task slug (e.g. `remove-marquees-holy-forever`, `holy-forever-intro-rebuild`).
-- **Primary checkout** (`/Users/elliott.ohara/xlights`) stays on `main` for review, merges, and one-off reads — not for long-running agent edits.
+### The slots
 
-### Create / switch / clean up
+| Slot | Worktree path | xLights port | Launch flags | API client |
+|---|---|---|---|---|
+| A | `/Users/elliott.ohara/xlights-worktrees/slot-a` | 49913 | `-a` | default |
+| B | `/Users/elliott.ohara/xlights-worktrees/slot-b` | 49914 | `-b` (+ `open -n`) | `XLIGHTS_API_PORT=49914` |
 
-```bash
-# From the primary repo
-mkdir -p /Users/elliott.ohara/xlights-worktrees
-git fetch origin   # if tracking remotes
-git worktree add -b <branch-name> /Users/elliott.ohara/xlights-worktrees/<branch-name> main
+- **Primary checkout** (`/Users/elliott.ohara/xlights`) stays on `main` for review, merges, and one-off reads. It does not run an agent's xLights session.
+- The slot↔port pairing never changes. Slot A launches with `open -a xLights --args -a -s ".../slot-a/Christmas"`; slot B with `open -n -a xLights --args -b -s ".../slot-b/Christmas"` (the `-n` forces a second macOS instance; without it `open` just focuses the existing one). `Tools/xlights_api.py` handles both automatically — in slot B, export `XLIGHTS_API_PORT=49914` once at the top of the session and `launch()` adds `-n`/`-b` itself.
+- **The xLights instance stays running across tasks.** The show-dir path is stable, so no relaunch, no show-folder change, no blocking startup backup between tasks.
+- Between tasks a slot **parks on a detached HEAD at `main`** (slots can't check out `main` itself — the primary holds it).
 
-# List / remove when the branch is merged or abandoned
-git worktree list
-git worktree remove /Users/elliott.ohara/xlights-worktrees/<branch-name>
-# optional: git branch -d <branch-name>
-```
+### Task start (in a slot)
 
-Open the **worktree path** as the Cursor workspace for that agent (not the primary checkout). Record the branch + worktree path in the song's `AGENT NOTES.md` when the work is non-trivial.
-
-### xLights / path caveats in a worktree
-
-- Absolute paths in this file that point at `/Users/elliott.ohara/xlights/...` mean the **primary** tree. In a worktree, prefer paths under that worktree root (or resolve relative to the repo root) for sequence files, scripts, and `saveSequence` targets.
-- Shared on-disk media outside git (e.g. large `ImportedMedia/`, `Audio/`, `Videos/`) may still live under the primary tree — symlink or pass the primary path when the worktree checkout does not contain the file.
-- Only one xLights GUI/API session should own a given show directory at a time. Point `-s` at the worktree's `Christmas/` (or Halloween/) when sequencing from that worktree; do not have two agents drive the same open show folder. Two agents on two *different* worktrees is fine — see "Running two agents at once" below.
-- **Switching show directories requires a relaunch.** `changeShowFolder` replies "Show folder changed" but does NOT actually stick (verified 2026-07-19, xLights 2026.13) — kill the process and `open -a xLights --args -a -s "<dir>"` instead. AppleScript `quit` can leave xLights wedged with the API dead; use `kill -9` on the pid, then relaunch and poll `getVersion`.
-- **`openSequence` on an .xsq outside the active show folder silently opens a NEW empty sequence** (`len:30000`, `media:""`) instead of failing. After every openSequence, verify `getOpenSequence` returns the expected `len`/`media` before touching effects.
-- If the primary tree has uncommitted work the worktree needs (hand edits to the .xsq, notes, templates), copy those files into the worktree and commit them there as a baseline-snapshot first commit, so the branch history starts from the approved state.
-
-### Running two agents at once (two xLights instances)
-
-xLights supports **at most two** concurrent instances with working automation APIs (verified in source, `src-ui-wx/automation/`): the **A port 49913** (`-a` flag) and the **B port 49914** (`-b` flag). Port = 49912 + slot; no other ports are possible. A third instance silently runs with **no API at all** (if a bind fails, xLights flips A↔B and retries once, then gives up).
-
-- **Agent 1 (primary checkout, A port)** — the default, unchanged:
-  `open -a xLights --args -a -s "/Users/elliott.ohara/xlights/Christmas"`
-- **Agent 2 (worktree, B port)** — note `-n`, without it macOS just focuses the existing instance instead of starting a second one:
-  `open -n -a xLights --args -b -s "/Users/elliott.ohara/xlights-worktrees/<branch>/Christmas"`
-- `Tools/xlights_api.py` targets the A port by default; the second agent sets `XLIGHTS_API_PORT=49914` (env var) and the client's `launch()` then uses `-n`/`-b` automatically. Export it once at the top of the session/script.
-- **Claim ports explicitly.** Preferences persist the last-used port (`xFadePort`, last-quit-wins), so always pass `-a`/`-b` on launch; never rely on the saved default.
-- Both instances share the same preferences file (`LastDir` etc.) — cosmetic, but a bare `open -a xLights` afterwards may open the other agent's show dir. Always pass `-s`.
-- Each instance still runs its blocking show-dir backup at startup, and two simultaneous `renderAll`s compete for CPU — stagger heavy renders.
-- When killing a wedged instance, `kill -9` the right pid: `pgrep -fl xLights` lists both; match by the `-s <show dir>` in `ps -p <pid> -o command=`.
+1. Pick a free slot (its worktree is clean and no other agent is using its xLights instance). Open the **slot path** as the Cursor workspace.
+2. `git status` must be clean; `git fetch` if tracking remotes, then branch off: `git switch -c <task-branch> main` (short kebab-case slug, e.g. `holy-forever-intro-rebuild`).
+3. If the primary tree has uncommitted work the task needs (hand edits to the .xsq, notes), copy those files in and commit them as a baseline-snapshot first commit.
+4. If xLights isn't already running for this slot, launch with this slot's flags and poll `getVersion`.
+5. **Close before switching:** if the instance has a sequence open from a prior task, `closeSequence` BEFORE any `git switch`/checkout that rewrites the .xsq under it. Then `openSequence` and verify `getOpenSequence` returns the expected `len`/`media` (`openSequence` on a path outside the show folder silently opens a NEW empty sequence instead of failing).
+6. Record the branch + slot in the song's `AGENT NOTES.md` when the work is non-trivial.
 
 ### Task wrap-up checklist (do this unprompted — don't make the user ask)
 
 When the user approves the work (or asks to ship it):
 
 1. Commit on the task branch (including an updated `AGENT NOTES.md`).
-2. From the primary checkout: verify any leftover dirty files in primary match the branch's baseline snapshot (`cmp` against the snapshot commit), clean them, then `git merge --ff-only <branch>` into `main`.
+2. From the primary checkout: verify any leftover dirty files in primary match the branch's baseline snapshot (`cmp` against the snapshot commit), clean them, then `git merge --ff-only <task-branch>` into `main`.
 3. `git push origin main`.
-4. Relaunch xLights on the **primary** show dir (`open -a xLights --args -a -s "/Users/elliott.ohara/xlights/Christmas"`) and reopen the sequence from the primary path — never leave the GUI pointed at a worktree that's about to be removed.
-5. `git worktree remove` the worktree and delete the merged branch.
+4. Re-park the slot: `closeSequence` in that slot's xLights, then in the slot `git switch --detach main` and delete the merged branch (`git branch -d <task-branch>`). Leave the xLights instance running for the next task.
+
+### Slot / xLights caveats
+
+- Absolute paths in this file that point at `/Users/elliott.ohara/xlights/...` mean the **primary** tree. In a slot, use paths under that slot root for sequence files, scripts, and `saveSequence` targets.
+- **Only one xLights session per show directory.** Each slot's instance owns that slot's `Christmas/` (or `Halloween/`) — never point two instances at the same folder.
+- **Layout changes still need a relaunch.** `xlights_rgbeffects.xml` is read when the show folder opens; if a branch switch changes it, `kill -9` that slot's xLights pid and relaunch with the same flags (`changeShowFolder` does NOT work — replies OK but doesn't stick; AppleScript `quit` can wedge the app). Most tasks only touch the `.xsq` and don't need this.
+- **Claim ports explicitly.** Preferences persist the last-used port (`xFadePort`, last-quit-wins), so always pass `-a`/`-b` on launch; never rely on the saved default.
+- Both instances share the same preferences file (`LastDir` etc.) — cosmetic, but a bare `open -a xLights` may open the other slot's show dir. Always pass `-s`.
+- Two simultaneous `renderAll`/`exportVideoPreview` runs compete for CPU — stagger heavy renders.
+- When killing a wedged instance, `kill -9` the right pid: `pgrep -fl xLights` lists both; match by the `-s <show dir>` in `ps -p <pid> -o command=`, then relaunch and poll `getVersion`.
+- Shared on-disk media outside git (legacy `/Users/elliott.ohara/Documents/xlights/...` paths, `/Volumes/Personal-Drive/xlights`) resolves identically from any slot — no per-slot setup needed.
+- Legacy per-branch worktrees created under the old convention (e.g. `angels-cry-wings`, `pc1-star-ascent`) finish under the old rules: merge via primary, `git worktree remove`, delete the branch. New tasks use slots.
 
 ## Directory layout
 
