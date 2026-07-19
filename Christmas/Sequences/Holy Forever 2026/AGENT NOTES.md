@@ -30,7 +30,7 @@ Saved from the live xLights session after hand edits. Live model effects now:
 
 2026-07-19: Piano Chords + arch SingleStrand; mini-tree piano fills; all Marquees cleared (`clear_marquees.py`); Lantana Piano Notes; oak cymbal Twinkles; then **hand-edit baseline above** (removed window snow, downstairs Holy text, Roof accent Ons, **all House Outline + Icicles GRP effects**).
 
-## Xtreme V1 pass (branch `xtremeify`, worktree `/Users/elliott.ohara/xlights-worktrees/xtremeify`, 2026-07-19)
+## Xtreme V1 pass (2026-07-19 — built on branch `xtremeify`, MERGED to main same day; worktree removed)
 
 Applied the Xtreme Sequences techniques (see `Style References/XTREME SEQUENCES STYLE REPORT.md`) to Verse 1 only, at verse brightness — five changes on top of the hand-approved baseline. All V1 starts verified 100% quantized (±25 ms) to labeled timing marks (`Tools/work/audit_v1_quantization.py`).
 

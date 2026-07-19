@@ -35,7 +35,19 @@ Open the **worktree path** as the Cursor workspace for that agent (not the prima
 - Absolute paths in this file that point at `/Users/elliott.ohara/xlights/...` mean the **primary** tree. In a worktree, prefer paths under that worktree root (or resolve relative to the repo root) for sequence files, scripts, and `saveSequence` targets.
 - Shared on-disk media outside git (e.g. large `ImportedMedia/`, `Audio/`, `Videos/`) may still live under the primary tree — symlink or pass the primary path when the worktree checkout does not contain the file.
 - Only one xLights GUI/API session should own a given show directory at a time. Point `-s` at the worktree's `Christmas/` (or Halloween/) when sequencing from that worktree; do not have two agents drive the same open show folder.
-- When the task finishes: merge/PR into `main`, update `AGENT NOTES.md` if needed, then remove the worktree.
+- **Switching show directories requires a relaunch.** `changeShowFolder` replies "Show folder changed" but does NOT actually stick (verified 2026-07-19, xLights 2026.13) — kill the process and `open -a xLights --args -a -s "<dir>"` instead. AppleScript `quit` can leave xLights wedged with the API dead; use `kill -9` on the pid, then relaunch and poll `getVersion`.
+- **`openSequence` on an .xsq outside the active show folder silently opens a NEW empty sequence** (`len:30000`, `media:""`) instead of failing. After every openSequence, verify `getOpenSequence` returns the expected `len`/`media` before touching effects.
+- If the primary tree has uncommitted work the worktree needs (hand edits to the .xsq, notes, templates), copy those files into the worktree and commit them there as a baseline-snapshot first commit, so the branch history starts from the approved state.
+
+### Task wrap-up checklist (do this unprompted — don't make the user ask)
+
+When the user approves the work (or asks to ship it):
+
+1. Commit on the task branch (including an updated `AGENT NOTES.md`).
+2. From the primary checkout: verify any leftover dirty files in primary match the branch's baseline snapshot (`cmp` against the snapshot commit), clean them, then `git merge --ff-only <branch>` into `main`.
+3. `git push origin main`.
+4. Relaunch xLights on the **primary** show dir (`open -a xLights --args -a -s "/Users/elliott.ohara/xlights/Christmas"`) and reopen the sequence from the primary path — never leave the GUI pointed at a worktree that's about to be removed.
+5. `git worktree remove` the worktree and delete the merged branch.
 
 ## Directory layout
 
@@ -95,6 +107,9 @@ If a user wants a YouTube video for the show, **do not invent a one-off download
 - **`importXLightsSequence` adds timing tracks by name; import each track ONCE.** Re-importing a template containing a track that already exists in the sequence risks duplicated marks — rebuild the template, but don't re-import existing tracks; add-only.
 - `getEffectSettings` also reads **timing tracks** (marks come back as effects; `name` = the mark label) — useful for verifying imported timing.
 - **Unknown commands can hang the HTTP request forever** (e.g. there is no `getTimings`). Always call with a timeout (`curl -m`).
+- **Effect names must match the UI spelling, spaces included:** `addEffect` with `"ColorWash"` fails (`worked:"false"`); it's `"Color Wash"`. On failure, suspect the name before the settings.
+- **`renderAll`/`exportVideoPreview` can hang the whole API** if the export destination folder doesn't exist — `mkdir -p` output dirs (e.g. `RenderCompare/`) before exporting. A hung instance won't recover: `kill -9` + relaunch (see worktree section).
+- **Part-bank submodel GRPs are in the master view** (verified 2026-07-19: `Canes`, `Mini Tree Stars`, `GE Rosa Grande * GRP`, `GE Starlord * GRP`, `GE Reel Max * GRP`, `GE Baby Grand Illusion * GRP`, `Flakes * GRP` all accept addEffect) even though their parent whole-prop groups (`Spinners` etc.) are not. Probe with `getEffectIDs` before assuming.
 - Other useful commands: `getModels`, `getViews`, `getEffectIDs`/`getEffectSettings`, `cloneModelEffects`, `checkSequence` (can hang for minutes — long timeout).
 - Verifying API behavior from source: github `xLightsSequencer/xLights` — automation dispatch in `src-ui-wx/automation/xLightsAutomations.cpp`, effect/settings internals in `src-core/render/Effect.cpp` and `src-core/utils/UtilClasses.cpp`.
 - Rendered comparison videos live in `/Users/elliott.ohara/xlights/RenderCompare/`.
