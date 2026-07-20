@@ -1,8 +1,7 @@
-"""Build meteor-only Mega Tree chases for every PC1 bass-drum star pair.
+"""Build meteor-only Mega Tree chases for PC1 bass pairs on sung "name" only.
 
-Each of the eight windows uses only amber/gold `Meteors Up` across the whole
-tree. The prior solid Morph sweep, white core, and added tree Shockwaves are
-removed; Tree Topper retains its original bass-drum Shockwaves.
+Each of the four windows uses only amber/gold `Meteors Up` across the whole
+tree when the lead vocal says "name" — not during thrones/powers/positions.
 
 Run with xLights open on this worktree's Holy Forever sequence:
 
@@ -28,6 +27,14 @@ PC1_START = 40950
 L0_CLEANUP_START = 41850  # preserves the intro cross ending here
 OUTER_TRAVEL_MS = 1375
 PC1_END = 67570
+
+# Lyrics Lead word-layer "name" marks in PC1 — tree meteors only on these.
+NAME_WORDS = (
+    (42250, 43175),
+    (45600, 46625),
+    (48950, 50250),
+    (62175, 63400),
+)
 
 METEORS_SETTINGS = (
     "B_CHOICE_BufferStyle=Default,"
@@ -120,7 +127,24 @@ def star_clusters():
                 "end": cluster_end,
             }
         )
-    return clusters
+    return name_word_clusters(clusters)
+
+
+def name_word_clusters(clusters):
+    """Keep only bass pairs whose lead pulse lands on a sung 'name'."""
+    kept = []
+    for cluster in clusters:
+        first_star = cluster["first_start"]
+        if any(
+            word_start <= first_star < word_end
+            for word_start, word_end in NAME_WORDS
+        ):
+            kept.append(cluster)
+    if len(kept) != 4:
+        raise RuntimeError(
+            f"Expected four 'name' bass pairs, found: {kept}"
+        )
+    return kept
 
 
 def prior_build_rows(plan):
@@ -173,6 +197,7 @@ def main():
     clusters = star_clusters()
     if len(clusters) != 8:
         raise RuntimeError(f"Expected eight PC1 star pairs, found: {clusters}")
+    clusters = name_word_clusters(clusters)
 
     plan = []
     previous_end = None
@@ -225,7 +250,7 @@ def main():
             for layer, row in prior
         }
         if actual == expected and len(prior) == len(plan):
-            print("already built: all eight Mega Tree meteor windows match")
+            print("already built: all four 'name' Mega Tree meteor windows match")
             return
         raise RuntimeError(
             "Conflicting PC1 Mega Tree effects found. Run "

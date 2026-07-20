@@ -496,11 +496,7 @@
         <Effect ref="0" name="Meteors" startTime="40950" endTime="43875" palette="0" />
         <Effect ref="0" name="Meteors" id="1" startTime="44275" endTime="47175" palette="0" />
         <Effect ref="0" name="Meteors" id="2" startTime="47625" endTime="50525" palette="0" />
-        <Effect ref="0" name="Meteors" id="3" startTime="50950" endTime="53875" palette="0" />
-        <Effect ref="0" name="Meteors" id="4" startTime="54275" endTime="57200" palette="0" />
-        <Effect ref="0" name="Meteors" id="5" startTime="57600" endTime="60500" palette="0" />
         <Effect ref="0" name="Meteors" id="6" startTime="60950" endTime="63875" palette="0" />
-        <Effect ref="0" name="Meteors" id="7" startTime="64275" endTime="67175" palette="0" />
       </EffectLayer>
     </Element>
     <Element type="model" name="Whole Scene">
@@ -805,30 +801,25 @@
     </Element>
     <Element type="model" name="GE Merry Christmas">
       <EffectLayer>
-        <Effect ref="11" name="Off" startTime="40950" endTime="67175" />
+        <Effect ref="11" name="Off" startTime="40950" endTime="43875" />
+        <Effect ref="11" name="Off" startTime="44275" endTime="47175" />
+        <Effect ref="11" name="Off" startTime="47625" endTime="50525" />
+        <Effect ref="11" name="Off" startTime="60950" endTime="63875" />
       </EffectLayer>
       <EffectLayer />
       <SubModelEffectLayer layer="1" name="Christ">
         <Effect ref="12" name="On" startTime="42325" endTime="43425" palette="9" />
         <Effect ref="13" name="On" id="1" startTime="46225" endTime="47175" palette="10" />
-        <Effect ref="12" name="On" id="2" startTime="52325" endTime="53425" palette="9" />
-        <Effect ref="13" name="On" id="3" startTime="56250" endTime="57200" palette="10" />
         <Effect ref="12" name="On" id="4" startTime="62325" endTime="63425" palette="9" />
-        <Effect ref="13" name="On" id="5" startTime="66225" endTime="67175" palette="10" />
       </SubModelEffectLayer>
       <SubModelEffectLayer layer="2" name="Christ">
         <Effect ref="13" name="On" startTime="42925" endTime="43875" palette="10" />
         <Effect ref="12" name="On" id="1" startTime="49000" endTime="50100" palette="9" />
-        <Effect ref="13" name="On" id="2" startTime="52925" endTime="53875" palette="10" />
-        <Effect ref="12" name="On" id="3" startTime="58975" endTime="60075" palette="9" />
         <Effect ref="13" name="On" id="4" startTime="62925" endTime="63875" palette="10" />
       </SubModelEffectLayer>
       <SubModelEffectLayer layer="3" name="Christ">
         <Effect ref="12" name="On" startTime="45650" endTime="46750" palette="9" />
         <Effect ref="13" name="On" id="1" startTime="49575" endTime="50525" palette="10" />
-        <Effect ref="12" name="On" id="2" startTime="55650" endTime="56750" palette="9" />
-        <Effect ref="13" name="On" id="3" startTime="59550" endTime="60500" palette="10" />
-        <Effect ref="12" name="On" id="4" startTime="65650" endTime="66750" palette="9" />
       </SubModelEffectLayer>
     </Element>
     <Element type="model" name="GE Reel Max Arrows GRP">
@@ -1054,11 +1045,7 @@
         <Effect ref="15" name="Meteors" startTime="40950" endTime="43875" palette="12" />
         <Effect ref="15" name="Meteors" id="1" startTime="44275" endTime="47175" palette="12" />
         <Effect ref="15" name="Meteors" id="2" startTime="47625" endTime="50525" palette="12" />
-        <Effect ref="15" name="Meteors" id="3" startTime="50950" endTime="53875" palette="12" />
-        <Effect ref="15" name="Meteors" id="4" startTime="54275" endTime="57200" palette="12" />
-        <Effect ref="15" name="Meteors" id="5" startTime="57600" endTime="60500" palette="12" />
         <Effect ref="15" name="Meteors" id="6" startTime="60950" endTime="63875" palette="12" />
-        <Effect ref="15" name="Meteors" id="7" startTime="64275" endTime="67175" palette="12" />
       </EffectLayer>
       <EffectLayer />
       <EffectLayer />

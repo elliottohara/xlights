@@ -2,12 +2,8 @@
 
 PC1 behavior:
 
-* `GE Merry Christmas/Christ` receives 16 full-submodel On pulses using the
-  Tree Topper's exact bass-drum timing, palettes, and transition fades,
-  replacing the four lyric-timed "Your name" glows.
-* `Whole Scene w Matrixes` receives eight amber/gold Meteors Implode windows
-  matching the Mega Tree's bass-pair windows. The radial center is offset to
-  the Christ submodel's preview position.
+* `GE Merry Christmas/Christ` receives On pulses on the **four bass pairs that land on sung "name"** (not thrones/powers/positions tails), using Tree Topper timing/palettes/fades.
+* `Whole Scene w Matrixes` receives four matching `Meteors Implode` windows (same "name"-only filter).
 
 Run with xLights open on this worktree's Holy Forever sequence:
 
@@ -35,6 +31,14 @@ OLD_SCENE_TARGET = "Whole Scene"
 PC1_START = 40950
 PC1_END = 67570
 OUTER_TRAVEL_MS = 1375
+
+# Lyrics Lead word-layer "name" marks in PC1 — meteors/Christ only on these.
+NAME_WORDS = (
+    (42250, 43175),
+    (45600, 46625),
+    (48950, 50250),
+    (62175, 63400),
+)
 
 # Whole Scene preview bounds are x=-811..470 and y=203..821. The Christ
 # submodel's center is approximately (-279, 491), which maps to x=41.5% and
@@ -151,7 +155,24 @@ def pulse_clusters(pulses):
         )
     if len(clusters) != 8:
         raise RuntimeError(f"Expected eight star pairs, found: {clusters}")
-    return clusters
+    return name_word_clusters(clusters)
+
+
+def name_word_clusters(clusters):
+    """Keep only bass pairs whose lead pulse lands on a sung 'name'."""
+    kept = []
+    for cluster in clusters:
+        first_star = cluster["first_star"]
+        if any(
+            word_start <= first_star < word_end
+            for word_start, word_end in NAME_WORDS
+        ):
+            kept.append(cluster)
+    if len(kept) != 4:
+        raise RuntimeError(
+            f"Expected four 'name' bass pairs, found: {kept}"
+        )
+    return kept
 
 
 def map_string(values):
@@ -273,6 +294,10 @@ def main():
             "settings": christ_on_settings(pulse),
         }
         for pulse in pulses
+        if any(
+            word_start <= pulse["start"] < word_end
+            for word_start, word_end in NAME_WORDS
+        )
     ]
     christ_ok = [signature(row) for row in sorted(
         christ_prior, key=lambda row: (row["start"], row["layer"])
@@ -292,9 +317,14 @@ def main():
         and {(row["start"], row["end"]) for row in new_scene} == wanted_scene
     )
     sign_ok = (
-        len(sign_prior) == 1
-        and sign_prior[0]["start"] == build_start
-        and sign_prior[0]["end"] == build_end
+        len(sign_prior) == len(clusters)
+        and all(
+            row["start"] == cluster["start"] and row["end"] == cluster["end"]
+            for row, cluster in zip(
+                sorted(sign_prior, key=lambda row: row["start"]),
+                sorted(clusters, key=lambda row: row["start"]),
+            )
+        )
     )
 
     if christ_prior or scene_prior or sign_prior:
@@ -311,20 +341,21 @@ def main():
         print("dry-run: no writes")
         return
 
-    # The expanded scene group contains the whole sign. An individual parent
-    # Off masks that lower group effect; the Christ submodel pulses below are
-    # then rendered back on over the masked parent.
-    x.add_effect(
-        SIGN_TARGET,
-        0,
-        "Off",
-        "",
-        "",
-        build_start,
-        build_end,
-    )
+    # The expanded scene group contains the whole sign. Parent Off masks block
+    # that lower group effect during each meteor window; Christ submodel
+    # pulses render back on over the masked parent.
+    for cluster in clusters:
+        x.add_effect(
+            SIGN_TARGET,
+            0,
+            "Off",
+            "",
+            "",
+            cluster["start"],
+            cluster["end"],
+        )
 
-    for pulse in pulses:
+    for pulse in expected_christ:
         x.add_effect(
             CHRIST_TARGET,
             pulse["layer"],
@@ -377,12 +408,14 @@ def main():
         row
         for row in effect_rows(SIGN_TARGET, 0)
         if row["name"] == "Off"
-        and row["start"] == build_start
-        and row["end"] == build_end
+        and any(
+            row["start"] == cluster["start"] and row["end"] == cluster["end"]
+            for cluster in clusters
+        )
     ]
-    if len(live_sign_masks) != 1:
+    if len(live_sign_masks) != len(clusters):
         raise RuntimeError(
-            f"Expected one full-sign mask, found: {live_sign_masks}"
+            f"Expected {len(clusters)} sign masks, found: {live_sign_masks}"
         )
 
     x.save(str(OUT))

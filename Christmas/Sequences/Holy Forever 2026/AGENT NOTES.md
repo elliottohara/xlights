@@ -15,7 +15,7 @@ Saved from the live xLights session after hand edits. Live model effects now:
 - **Intro + intimate V1 (0–41850):** Whole Scene snow + Mega Tree glowing cross + dim Singing Bulb Faces; from 0:15 Snowman + `Arches - All` piano-chord SingleStrand + mini-tree note fills + oak cymbal Twinkles.
 - **Windows:** `Matrix - Entry` = "Holy" Text only (L0). `Matrix - Downstairs Window`, `Matrix-Garage Window`, and `Matrix - Lantana` = **empty** (Lantana's True Piano MIDI effect removed 2026-07-19 — user reported it wasn't working; do not restore). `Matrixes` group = empty.
 - **House / icicles:** `Icicles GRP` = **empty**. `House Outline` = empty except the **8 C3 climax drum-riff strobe flashes** (see below; L0 only, layers 1–3 still empty). `Roof` L0 = final On hold only (301500–308275).
-- **Also live:** Tree Topper bass accents; eight Mega Tree meteor windows; eight `Whole Scene w Matrixes` implosions phase-locked into `Christ`; full-word Christ bass blinks with the rest of the sign masked off; "angels cry" EFL Wing stacks; and the verified Teddy/Bulb/Penguin/PiXeL Paradise choir described below.
+- **Also live:** Tree Topper bass accents; **four** Mega Tree meteor windows on sung **"name"**; **four** `Whole Scene w Matrixes` implosions phase-locked into `Christ` (same four moments — not thrones/powers/positions); Christ bass blinks matching those windows; "angels cry" EFL Wing stacks; and the verified Teddy/Bulb/Penguin/PiXeL Paradise choir described below.
 - **Timing tracks (13):** Lyrics 1, Lyrics Lead/Female/Choir + Intro Choir, Song Sections, Mood, Beat Count, Kick, Snare, Cymbals, Piano Chords, Piano Notes.
 
 **Do not run / deleted (would undo this baseline):**
@@ -174,27 +174,20 @@ Mood **Building - bass and kick enter** through Pre-Chorus 1. **Not keyed off th
 - Owns L1–L3 only inside 42000–67570. Detect + rebuild: `Tools/.venv/bin/python …/pc1_double_kick_star.py` (`--dry-run` / `--clear-only` / `--audition` → `Tools/pc1_bass_thump_audition.mp3`).
 - Backup: `Holy Forever 2026.xsq.bak-before-pc1-double-kick-star`.
 
-## Added 2026-07-19: PC1 Mega Tree ascents on all eight bass-drum star pairs
+## Added 2026-07-19: PC1 Mega Tree ascents on "name" bass pairs
 
-Built on branch `pc1-star-ascent` in worktree `/Users/elliott.ohara/xlights-worktrees/pc1-star-ascent`.
-
-- Every one of the **eight** PC1 Tree Topper bass-drum pairs gets one sparse amber/gold **`Meteors Up`** effect across the whole Mega Tree. It starts **1375 ms** before the pair's first star hit and ends with the overlapping pair.
-- Final user direction was explicit: keep only the "meteor-looking" motion that had been visible after the solid sweep. The solid Morph, white/ivory core, and added Mega Tree Shockwaves are all removed; only Tree Topper's original bass-drum Shockwaves remain.
-- First-star anchors: **42325 / 45650 / 49000 / 52325 / 55650 / 58975 / 62325 / 65650**.
-- Rebuild/idempotent tool: `Tools/pc1_star_ascent.py`. It discovers overlapping Tree Topper Shockwave clusters directly, refuses unless there are exactly eight PC1 pairs, and no longer depends on lyric timing.
-- Owns Mega Tree L1 inside the eight short windows. Superseded L0–L4 builds were directly deleted; the intro cross is explicitly preserved.
-- Rendered and checked across all eight windows; the full review clip spans 40.0–68.5 s at worktree `RenderCompare/holy_forever_pc1_star_ascent_clip.mp4`.
+- **Four** PC1 bass pairs (those landing on sung **"name"**) get sparse amber/gold **`Meteors Up`** on Mega Tree L1, starting 1375 ms before the pair's first star hit. Tree Topper still accents all eight pairs.
+- First-star anchors kept: **42325 / 45650 / 49000 / 62325** (removed 52325, 55650, 58975, 65650 — thrones/powers/positions and "stands above" tails).
+- Rebuild: `Tools/pc1_star_ascent.py` (name-word filter). Trim existing build: `Tools/pc1_your_name_only.py`.
 
 ## Added 2026-07-19: Christ bass blinks + whole-scene meteor convergence
 
-- The four long lyric-timed "Your name" glows were removed. **`GE Merry Christmas/Christ` now blinks on all 16 PC1 bass pulses** with full-submodel On effects using the Tree Topper's exact layers, start/end times, transition fades, and palettes. This lights the whole word while matching the star's temporal envelope.
-- `GE Merry Christmas` parent L0 has one Off mask from **40950–67175**. It blocks the lower `Whole Scene w Matrixes` meteor effect from lighting `Merry` or `mas`; the dedicated Christ submodel pulses render back over that mask.
-- `Whole Scene w Matrixes` L0 carries eight `Meteors Implode` windows matching the Mega Tree bass-pair spans, replacing the ineffective `Whole Scene` L1 pass (directly deleted). This expanded group includes the matrices, flakes, and house-face props; the Mega Tree's individual meteor effect remains visually dominant over the lower group effect.
-- Render style is `Per Preview`; amber/gold meteors converge on the Christ submodel at offsets **X=-17 / Y=-7**, derived from the shared scene bounds and Christ's preview center. Count 81 / length 52 / **speed 50** / brightness 80.
-- The radial simulation uses **36 warm-up frames**. Combined with the fixed 1375 ms pre-roll and maximum speed, this phase-locks the first meteor front to the Christ/Tree Topper lead pulse; speed 18 could not cross the expanded preview before the hit.
-- Rebuild/idempotent tool: `Tools/pc1_christ_convergence.py`. It discovers the live Tree Topper pulses, requires exactly 16 effects grouped as eight pairs, rebuilds Christ, and verifies the scene windows.
-- `Christ` remains the dedicated 241-node horizontal-layout ranges submodel (custom-grid x≤262; `mas` starts x=264). `migrate_christ_submodel.py` is now historical—do not run it to restore the superseded lyric glows.
-- Rendered review clip: worktree `RenderCompare/holy_forever_pc1_christ_convergence_clip.mp4` (40.0–68.5 s).
+- **`GE Merry Christmas/Christ` blinks on the four PC1 bass pairs that land on sung "name"** (not thrones/powers/positions or "stands above them all" tails). Tree Topper still hits all eight pairs; meteor/Christ choreography is limited to "Your name is the highest/greatest", the first "name" in "stands above them all", and the final "name" before chorus.
+- `GE Merry Christmas` parent L0 carries **four** Off masks (one per meteor window) so scene implosions do not light `Merry`/`mas`; Christ submodel pulses render back over each mask.
+- `Whole Scene w Matrixes` L0: **four** `Meteors Implode` windows (40950–43875, 44275–47175, 47625–50525, 60950–63875). Mega Tree L1 matches the same four windows.
+- Render style is `Per Preview`; amber/gold meteors converge on Christ at offsets **X=-17 / Y=-7**. Count 81 / length 52 / speed 50 / brightness 80; 36 warm-up frames phase-lock to each bass lead pulse.
+- Rebuild: `Tools/pc1_christ_convergence.py` + `Tools/pc1_star_ascent.py` (both filter to Lyrics Lead `name` marks). One-shot trim of an existing eight-window build: `Tools/pc1_your_name_only.py` (direct .xsq edit; close xLights first).
+- Backup: `Backups/Holy Forever 2026.xsq.bak-before-pc1-your-name-only`.
 
 ## Live: "Holy" text on entry window only
 
@@ -336,8 +329,9 @@ Exact target: **`PiXeL Paradise Xmas Tree Choir`** (not `Toni - Flat Tree` and n
 - `intimate_arch_chords.py` — wipe/rebuild `Arches - All` piano SingleStrand from live `Piano Chords` `P` marks.
 - `intimate_mini_tree_piano.py` — wipe/rebuild mini-tree piano-note fills (`--dry-run` / `--clear-only`).
 - `intimate_oak_cymbals.py` — wipe/rebuild oak V1+PC1 cymbal Twinkles (`--dry-run` / `--clear-only`).
-- `pc1_star_ascent.py` — rebuild the eight meteor-only Mega Tree windows from live Tree Topper bass-pair clusters.
-- `pc1_christ_convergence.py` — rebuild the 16 Christ blinks plus eight `Whole Scene w Matrixes` meteor implosions aimed at Christ.
+- `pc1_star_ascent.py` — rebuild the four "name"-only Mega Tree meteor windows from live Tree Topper bass-pair clusters.
+- `pc1_christ_convergence.py` — rebuild Christ blinks + four scene meteor implosions (name-word filter).
+- `pc1_your_name_only.py` — direct .xsq trim from eight windows → four (close xLights first).
 - `cleanup_pc1_convergence.py` — direct-delete reset for superseded PC1 effects/stubs before a clean rebuild; run `--dry-run`, close xLights, then run once.
 - `climax_house_flash.py` — CURRENT owner of the C3 climax drum riff: 8 short, dramatic white strobe flashes on `House Outline` L0. `--dry-run` / `--clear-only`. (Superseded/deleted: `climax_drum_riff.py` [Roof-line Marquee], `climax_snowflake_shocks.py` [roof-snowflake Shockwaves] — both tried and rejected first.)
 - `climax_blue_house_marquee.py` — add/verify the subtle sapphire `House Outline` L1 Marquee across the full Final Chorus; brightness breathes 38↔46 with the bar downbeats (`--dry-run`; safely migrates the superseded 273650 start only).
