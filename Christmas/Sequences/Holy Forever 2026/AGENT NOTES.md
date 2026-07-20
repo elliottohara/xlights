@@ -2,9 +2,9 @@
 
 Working notes for `Christmas/Sequences/Holy Forever 2026/Holy Forever 2026.xsq` (built July 2026). Read alongside the root `AGENTS.md`. Song: Chris Tomlin "Holy Forever" (Jenn Johnson female vocal), media = `Media/Chris Tomlin - Holy Forever (Lyric Video).mp4`, 308314 ms, 25 ms frames, ModelBlending on.
 
-**Current task:** branch `holy-pc1-house-chase` in permanent **Slot B** (`/Users/elliott.ohara/xlights-worktrees/slot-b`, API 49914). PC1 "your name" Whole Scene w Matrixes → Christ implode + star-only Mega Tree descents (see below).
+**Current task:** branch `holy-angels-cry-holy-text` in permanent **Slot A** (`/Users/elliott.ohara/xlights-worktrees/slot-a`, API 49913). Script-font swaying "Holy" on Projector + Entry + Downstairs at each chorus "angels cry holy" (see below).
 
-**Prior task:** branch `holy-climax-blue-marquee` in Slot B. Subtle blue `House Outline` marquee across the full Final Chorus.
+**Prior task (Slot B):** branch `holy-pc1-house-chase` — PC1 "your name" Whole Scene w Matrixes → Christ implode + star-only Mega Tree descents.
 
 ## ⚠ Baseline (hand-approved 2026-07-19)
 
@@ -190,9 +190,23 @@ Mood **Building - bass and kick enter** through Pre-Chorus 1. **Not keyed off th
 - Legacy: `Tools/pc1_christ_convergence.py` (same Whole Scene recipe; house_name_chase is the current owner). `pc1_star_ascent.py` superseded. One-shot trim: `Tools/pc1_your_name_only.py` (close xLights first).
 - Backup: `Backups/Holy Forever 2026.xsq.bak-before-pc1-clean-reapply`.
 
-## Live: "Holy" text on entry window only
+## Added 2026-07-20: script "Holy" with brightness breath (Projector + Entry + Downstairs)
 
-**Baseline:** 22 Text effects on **`Matrix - Entry` L0** only (one per sung "Holy"; font `6-5x6 Thin`, white, static centered, fadein .25 / fadeout .5). Downstairs Holy Text were **hand-deleted 2026-07-19** — do not restore. No rebuild script.
+User: on choruses where they say "angels cry holy", write **Holy** in a script font on **all of** `Projector`, `Matrix - Downstairs Window`, and `Matrix - Entry`. Wavey motion rejected ("looks horrible") — keep text **static** and let **brightness rise and fall** with the melisma.
+
+- **Windows (9):** Lyrics Lead `holy` closing each of **angels cry / creation cries / lifted high** in C1, C2a, C3:
+  C1 `70425-72850`, `77275-79250`, `83975-86275` · C2a `130075-132625`, `138525-139925`, `144750-146150` · C3 `238150-239550`, `244375-245775`, `251150-252550`.
+- **Effect:** white OS-font Text (`Brush Script MT`), Movement=`none`, `C_VALUECURVE_Brightness` Custom soft→peak→soft (35→100→35 on 0–400 scale). Font sizes: Projector 64 / Entry 20 / Downstairs 24.
+- History: (1) static + X/Y VCs — Text ignores position VCs; (2) `wavey` — rejected; (3) this brightness breath.
+- Owns **L0 only** on those three models. Rebuild/clear: `Tools/angels_cry_holy_text.py` (`--dry-run` / `--clear-only`).
+- Backup: `Holy Forever 2026.xsq.bak-before-angels-cry-holy-text`.
+- Built on branch `holy-angels-cry-holy-text` in **Slot A**.
+
+**Supersedes baseline note:** the old 22 static Entry-only "Holy" Texts (`6-5x6 Thin`) are gone from the live `.xsq`. Do **not** restore those; this feature is the current matrix Holy text.
+
+## Historical: "Holy" text on entry window only (removed before 2026-07-20)
+
+~~Baseline: 22 Text effects on `Matrix - Entry` L0 only~~ — no longer in the file. Downstairs Holy Texts were hand-deleted 2026-07-19. Replaced by the angels-cry script Text above.
 
 ## Deleted: swaying wind intro (was 180 → 15520)
 
@@ -338,6 +352,7 @@ Exact target: **`PiXeL Paradise Xmas Tree Choir`** (not `Toni - Flat Tree` and n
 - `cleanup_pc1_convergence.py` — direct-delete reset for superseded PC1 effects/stubs before a clean rebuild; run `--dry-run`, close xLights, then run once.
 - `climax_house_flash.py` — CURRENT owner of the C3 climax drum riff: 8 short, dramatic white strobe flashes on `House Outline` L0. `--dry-run` / `--clear-only`. (Superseded/deleted: `climax_drum_riff.py` [Roof-line Marquee], `climax_snowflake_shocks.py` [roof-snowflake Shockwaves] — both tried and rejected first.)
 - `climax_blue_house_marquee.py` — add/verify the subtle sapphire `House Outline` L1 Marquee across the full Final Chorus; brightness breathes 38↔46 with the bar downbeats (`--dry-run`; safely migrates the superseded 273650 start only).
+- `angels_cry_holy_text.py` — wipe/rebuild static script "Holy" Text (brightness rise/fall) on Projector + Entry + Downstairs for the 9 chorus triad holy marks (`--dry-run` / `--clear-only`).
 - `lantana_piano.py` — wipe/rebuild full-song True Piano on `Matrix - Lantana` (`--dry-run` / `--clear-only`). **Removed 2026-07-19 (user: not working) — refuse to re-run its build mode; `--clear-only` is safe/idempotent.**
 - `migrate_christ_submodel.py` — historical one-shot Christ-submodel migration; **do not run** (its four lyric glows were superseded by bass blinks).
 - `migrate_faces.py`, `place_faces.py`, `lead_backup_c2.py` — historical; superseded by `fix_faces.py`.
@@ -345,4 +360,4 @@ Exact target: **`PiXeL Paradise Xmas Tree Choir`** (not `Toni - Flat Tree` and n
 
 ## Review checklist (baseline — do not “restore” removed bits)
 
-0:00–0:42 Whole Scene snow + Mega Tree cross + dim bulbs; Penguins + PiXeL Paradise dark · 0:15 Snowman + arch piano chords + shrub-bank piano notes + oak cymbal Twinkles · Lantana empty (Piano MIDI effect removed 2026-07-19, wasn't working) · Entry "Holy" Text only (no downstairs/garage/window snow) · Icicles empty; House Outline dark except 8 dramatic white strobe flashes at 3:53 and the subtle blue bar-breathing Marquee across 3:54–4:47; Roof = final hold only; Tree Topper accents kept · C1/C2/PC2b→C3 Bulbs + both white-exterior, belly-accented Penguins + all seven PiXeL Paradise faces sing together · 4:47 Snowman outro solo.
+0:00–0:42 Whole Scene snow + Mega Tree cross + dim bulbs; Penguins + PiXeL Paradise dark · 0:15 Snowman + arch piano chords + shrub-bank piano notes + oak cymbal Twinkles · Lantana empty (Piano MIDI effect removed 2026-07-19, wasn't working) · C1/C2a/C3 angels/creation/lifted-high holys: static Brush Script "Holy" with brightness breath on Projector + Entry + Downstairs (no garage/window snow) · Icicles empty; House Outline dark except 8 dramatic white strobe flashes at 3:53 and the subtle blue bar-breathing Marquee across 3:54–4:47; Roof = final hold only; Tree Topper accents kept · C1/C2/PC2b→C3 Bulbs + both white-exterior, belly-accented Penguins + all seven PiXeL Paradise faces sing together · 4:47 Snowman outro solo.
