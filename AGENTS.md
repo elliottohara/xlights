@@ -4,64 +4,53 @@ Knowledge gathered while building "Feliz Navidad 2026" and "Holy Forever 2026" (
 
 **Per-sequence notes:** each song lives under `Christmas/Sequences/<Song Name>/` with `AGENT NOTES.md` next to the `.xsq` (e.g. `Christmas/Sequences/Holy Forever 2026/AGENT NOTES.md`). Read it before editing that sequence; keep it updated after significant work. To scaffold a new song folder, use the project skill `.cursor/skills/setup-sequence/`.
 
-## Parallel agent work — use git worktrees
+## Parallel agent work — two permanent worktree slots
 
-**Do not pile concurrent agent work onto `main` in the primary checkout.** Multiple agents (or agent + human) editing the same working tree collide on branches, dirty files, and saves. For any non-trivial or parallel task, work in a **dedicated git worktree** so `main` stays free.
+**Do not pile concurrent agent work onto `main` in the primary checkout.** Multiple agents (or agent + human) editing the same working tree collide on branches, dirty files, and saves. Agent edits happen in one of **two permanent git worktree "slots"**, each bound for its lifetime to one xLights instance.
 
-### Convention
+Why exactly two: xLights supports **at most two** concurrent instances with working automation APIs (verified in source, `src-ui-wx/automation/`) — the **A port 49913** (`-a` flag) and the **B port 49914** (`-b` flag). Port = 49912 + slot; no other ports are possible. A third instance silently runs with **no API at all** (on a failed bind, xLights flips A↔B, retries once, then gives up). So instead of one worktree per branch (which forced an xLights relaunch + show-dir change every task), the two slots are long-lived and **branches rotate through them**.
 
-- **Worktree root (sibling of this repo):** `/Users/elliott.ohara/xlights-worktrees/<branch-name>/`
-- **Branch name:** short kebab-case task slug (e.g. `remove-marquees-holy-forever`, `holy-forever-intro-rebuild`).
-- **Primary checkout** (`/Users/elliott.ohara/xlights`) stays on `main` for review, merges, and one-off reads — not for long-running agent edits.
+### The slots
 
-### Create / switch / clean up
+| Slot | Worktree path | xLights port | Launch flags | API client |
+|---|---|---|---|---|
+| A | `/Users/elliott.ohara/xlights-worktrees/slot-a` | 49913 | `-a` | default |
+| B | `/Users/elliott.ohara/xlights-worktrees/slot-b` | 49914 | `-b` (+ `open -n`) | `XLIGHTS_API_PORT=49914` |
 
-```bash
-# From the primary repo
-mkdir -p /Users/elliott.ohara/xlights-worktrees
-git fetch origin   # if tracking remotes
-git worktree add -b <branch-name> /Users/elliott.ohara/xlights-worktrees/<branch-name> main
+- **Primary checkout** (`/Users/elliott.ohara/xlights`) stays on `main` for review, merges, and one-off reads. It does not run an agent's xLights session.
+- The slot↔port pairing never changes. Slot A launches with `open -a xLights --args -a -s ".../slot-a/Christmas"`; slot B with `open -n -a xLights --args -b -s ".../slot-b/Christmas"` (the `-n` forces a second macOS instance; without it `open` just focuses the existing one). `Tools/xlights_api.py` handles both automatically — in slot B, export `XLIGHTS_API_PORT=49914` once at the top of the session and `launch()` adds `-n`/`-b` itself.
+- **The xLights instance stays running across tasks.** The show-dir path is stable, so no relaunch, no show-folder change, no blocking startup backup between tasks.
+- Between tasks a slot **parks on a detached HEAD at `main`** (slots can't check out `main` itself — the primary holds it).
 
-# List / remove when the branch is merged or abandoned
-git worktree list
-git worktree remove /Users/elliott.ohara/xlights-worktrees/<branch-name>
-# optional: git branch -d <branch-name>
-```
+### Task start (in a slot)
 
-Open the **worktree path** as the Cursor workspace for that agent (not the primary checkout). Record the branch + worktree path in the song's `AGENT NOTES.md` when the work is non-trivial.
-
-### xLights / path caveats in a worktree
-
-- Absolute paths in this file that point at `/Users/elliott.ohara/xlights/...` mean the **primary** tree. In a worktree, prefer paths under that worktree root (or resolve relative to the repo root) for sequence files, scripts, and `saveSequence` targets.
-- Shared on-disk media outside git (e.g. large `ImportedMedia/`, `Audio/`, `Videos/`) may still live under the primary tree — symlink or pass the primary path when the worktree checkout does not contain the file.
-- Only one xLights GUI/API session should own a given show directory at a time. Point `-s` at the worktree's `Christmas/` (or Halloween/) when sequencing from that worktree; do not have two agents drive the same open show folder. Two agents on two *different* worktrees is fine — see "Running two agents at once" below.
-- **Switching show directories requires a relaunch.** `changeShowFolder` replies "Show folder changed" but does NOT actually stick (verified 2026-07-19, xLights 2026.13) — kill the process and `open -a xLights --args -a -s "<dir>"` instead. AppleScript `quit` can leave xLights wedged with the API dead; use `kill -9` on the pid, then relaunch and poll `getVersion`.
-- **`openSequence` on an .xsq outside the active show folder silently opens a NEW empty sequence** (`len:30000`, `media:""`) instead of failing. After every openSequence, verify `getOpenSequence` returns the expected `len`/`media` before touching effects.
-- If the primary tree has uncommitted work the worktree needs (hand edits to the .xsq, notes, templates), copy those files into the worktree and commit them there as a baseline-snapshot first commit, so the branch history starts from the approved state.
-
-### Running two agents at once (two xLights instances)
-
-xLights supports **at most two** concurrent instances with working automation APIs (verified in source, `src-ui-wx/automation/`): the **A port 49913** (`-a` flag) and the **B port 49914** (`-b` flag). Port = 49912 + slot; no other ports are possible. A third instance silently runs with **no API at all** (if a bind fails, xLights flips A↔B and retries once, then gives up).
-
-- **Agent 1 (primary checkout, A port)** — the default, unchanged:
-  `open -a xLights --args -a -s "/Users/elliott.ohara/xlights/Christmas"`
-- **Agent 2 (worktree, B port)** — note `-n`, without it macOS just focuses the existing instance instead of starting a second one:
-  `open -n -a xLights --args -b -s "/Users/elliott.ohara/xlights-worktrees/<branch>/Christmas"`
-- `Tools/xlights_api.py` targets the A port by default; the second agent sets `XLIGHTS_API_PORT=49914` (env var) and the client's `launch()` then uses `-n`/`-b` automatically. Export it once at the top of the session/script.
-- **Claim ports explicitly.** Preferences persist the last-used port (`xFadePort`, last-quit-wins), so always pass `-a`/`-b` on launch; never rely on the saved default.
-- Both instances share the same preferences file (`LastDir` etc.) — cosmetic, but a bare `open -a xLights` afterwards may open the other agent's show dir. Always pass `-s`.
-- Each instance still runs its blocking show-dir backup at startup, and two simultaneous `renderAll`s compete for CPU — stagger heavy renders.
-- When killing a wedged instance, `kill -9` the right pid: `pgrep -fl xLights` lists both; match by the `-s <show dir>` in `ps -p <pid> -o command=`.
+1. Pick a free slot (its worktree is clean and no other agent is using its xLights instance). Open the **slot path** as the Cursor workspace.
+2. `git status` must be clean; `git fetch` if tracking remotes, then branch off: `git switch -c <task-branch> main` (short kebab-case slug, e.g. `holy-forever-intro-rebuild`).
+3. If the primary tree has uncommitted work the task needs (hand edits to the .xsq, notes), copy those files in and commit them as a baseline-snapshot first commit.
+4. If xLights isn't already running for this slot, launch with this slot's flags and poll `getVersion`.
+5. **Close before switching:** if the instance has a sequence open from a prior task, `closeSequence` BEFORE any `git switch`/checkout that rewrites the .xsq under it. Then `openSequence` and verify `getOpenSequence` returns the expected `len`/`media` (`openSequence` on a path outside the show folder silently opens a NEW empty sequence instead of failing).
+6. Record the branch + slot in the song's `AGENT NOTES.md` when the work is non-trivial.
 
 ### Task wrap-up checklist (do this unprompted — don't make the user ask)
 
 When the user approves the work (or asks to ship it):
 
 1. Commit on the task branch (including an updated `AGENT NOTES.md`).
-2. From the primary checkout: verify any leftover dirty files in primary match the branch's baseline snapshot (`cmp` against the snapshot commit), clean them, then `git merge --ff-only <branch>` into `main`.
+2. From the primary checkout: verify any leftover dirty files in primary match the branch's baseline snapshot (`cmp` against the snapshot commit), clean them, then `git merge --ff-only <task-branch>` into `main`.
 3. `git push origin main`.
-4. Relaunch xLights on the **primary** show dir (`open -a xLights --args -a -s "/Users/elliott.ohara/xlights/Christmas"`) and reopen the sequence from the primary path — never leave the GUI pointed at a worktree that's about to be removed.
-5. `git worktree remove` the worktree and delete the merged branch.
+4. Re-park the slot: `closeSequence` in that slot's xLights, then in the slot `git switch --detach main` and delete the merged branch (`git branch -d <task-branch>`). Leave the xLights instance running for the next task.
+
+### Slot / xLights caveats
+
+- Absolute paths in this file that point at `/Users/elliott.ohara/xlights/...` mean the **primary** tree. In a slot, use paths under that slot root for sequence files, scripts, and `saveSequence` targets.
+- **Only one xLights session per show directory.** Each slot's instance owns that slot's `Christmas/` (or `Halloween/`) — never point two instances at the same folder.
+- **Layout changes still need a relaunch.** `xlights_rgbeffects.xml` is read when the show folder opens; if a branch switch changes it, `kill -9` that slot's xLights pid and relaunch with the same flags (`changeShowFolder` does NOT work — replies OK but doesn't stick; AppleScript `quit` can wedge the app). Most tasks only touch the `.xsq` and don't need this.
+- **Claim ports explicitly.** Preferences persist the last-used port (`xFadePort`, last-quit-wins), so always pass `-a`/`-b` on launch; never rely on the saved default.
+- Both instances share the same preferences file (`LastDir` etc.) — cosmetic, but a bare `open -a xLights` may open the other slot's show dir. Always pass `-s`.
+- Two simultaneous `renderAll`/`exportVideoPreview` runs compete for CPU — stagger heavy renders.
+- When killing a wedged instance, `kill -9` the right pid: `pgrep -fl xLights` lists both; match by the `-s <show dir>` in `ps -p <pid> -o command=`, then relaunch and poll `getVersion`.
+- Shared on-disk media outside git (legacy `/Users/elliott.ohara/Documents/xlights/...` paths, `/Volumes/Personal-Drive/xlights`) resolves identically from any slot — no per-slot setup needed.
+- Legacy per-branch worktrees created under the old convention (e.g. `angels-cry-wings`, `pc1-star-ascent`) finish under the old rules: merge via primary, `git worktree remove`, delete the branch. New tasks use slots.
 
 ## Directory layout
 
@@ -90,9 +79,11 @@ If a user wants a YouTube video for the show, **do not invent a one-off download
 - Requires `yt-dlp` and `ffmpeg` (`brew install yt-dlp ffmpeg`). Ask before installing if they are missing.
 - Prefer song `Media/` for sequence media; use `Audio/` only when the user wants audio-only / audio-folder placement.
 
-## xLights automation API — build sequences through it, don't write .xsq by hand
+## xLights automation API — prefer the API for authoring; edit `.xsq` when the API can't
 
-**Sequences are authored via the API** (survives xLights file-format changes). Full command reference: `documentation/xlDo Commands.txt` in the xLights repo. Use `Tools/xlights_api.py` (thin Python client).
+**Add / build effects via the API** (survives xLights file-format changes). Full command reference: `documentation/xlDo Commands.txt` in the xLights repo. Use `Tools/xlights_api.py` (thin Python client).
+
+**Deleting or surgically removing effects is fine as a direct `.xsq` edit** — the API has no delete command. Prefer that over inventing workarounds. Pattern: save session → `cp` backup → line-oriented edit (one `<Effect .../>` per line; see `Christmas/Sequences/Holy Forever 2026/Tools/clear_intro.py` and siblings) → close/reopen the sequence in xLights. If the deletion scope is unclear or risky, **stop, tell the user the problem, and ask for guidance** — do not Off-park, stub, or otherwise hack around it.
 
 - Launch attached to the GUI session (a headless shell launch will hang):
   `open -a xLights --args -a -s "/Users/elliott.ohara/xlights/Christmas"`
@@ -114,10 +105,11 @@ If a user wants a YouTube video for the show, **do not invent a one-off download
 - **addEffect fails (503) for elements not in the sequence's master view**, and there is no API to add display elements. The default master view here excludes some groups (notably `EFL Wings`, `Large Spiral Trees`, `Spinners`, individual `Rose Bush N`). Workaround: sequence their member models instead (see `EXPAND` in `Tools/feliz_navidad_2026.py`).
 - **Submodels ARE addressable** as `Model/Submodel` (e.g. `Singing Bulb - Center/Base`) for `addEffect`/`getEffectIDs` — no wrapper group needed.
 - **ALWAYS check a model's submodels FIRST** (in `xlights_rgbeffects.xml`) before resorting to per-pixel/custom-grid analysis to light part of a prop. If no submodel matches exactly, combine the nearest submodel with `B_CUSTOM_SubBuffer` (works because ranges-submodel node order is usually geographic — verify x-monotonicity). `GE Merry Christmas` now has a dedicated `Christ` ranges submodel (241 nodes through custom-grid x=262; `mas` starts at x=264), so use element `GE Merry Christmas/Christ` directly with no buffer.
-- **NEVER edit effects with `setEffectSettings` — it corrupts them.** Verified in source (`SettingsMap::ParseJson`): it parses the settings param as `key:value` with values **whitespace-trimmed** (destroys the `Teddy ` face def → silently falls back to another def), and JSON-object params are **silently dropped** (dict settings/palette = no-op that still reports `worked:true`). Round-tripping `getEffectSettings` output back in re-defaults the effect. The only safe effect edit: **wipe the element** with `cloneModelEffects` (`source` = any effect-free element like `House`, `eraseModel:"true"`) **and re-add** via `addEffect`, whose `key=value` parser preserves values verbatim.
-- **No API command deletes individual effects or timing tracks.** Timing tracks: GUI only (plan track names before importing). Effects, two workarounds:
-  - Layer is entirely yours: `cloneModelEffects` wipe (true deletion). Note it only touches target layers up to the SOURCE's layer count — a 1-layer empty source (e.g. `House`) wipes layer 0 only, leaving deeper layers untouched.
-  - Effect sits on a layer shared with originals (or on a deep layer): **"Off-park" it** — `setEffectSettings` with `name:"Off"` + shrink to a 25 ms slot inside a known-dark window (t<180 ms on Holy Forever). Off ignores settings, so the value-mangling doesn't matter; result is inert and invisible, and the stub row can be hand-deleted in the GUI later.
+- **NEVER edit effects with `setEffectSettings` — it corrupts them.** Verified in source (`SettingsMap::ParseJson`): it parses the settings param as `key:value` with values **whitespace-trimmed** (destroys the `Teddy ` face def → silently falls back to another def), and JSON-object params are **silently dropped** (dict settings/palette = no-op that still reports `worked:true`). Round-tripping `getEffectSettings` output back in re-defaults the effect. To change an effect via the API: **wipe the element** with `cloneModelEffects` (`source` = any effect-free element like `House`, `eraseModel:"true"`) **and re-add** via `addEffect`, whose `key=value` parser preserves values verbatim. To remove effects: edit the `.xsq` directly (below) — do not Off-park or use `setEffectSettings` as a fake delete.
+- **No API command deletes individual effects or timing tracks.** Timing tracks: GUI only (plan track names before importing). For effects:
+  - **OK / preferred:** edit the `.xsq` directly (backup first; see `clear_intro.py` / `clear_*.py` in Holy Forever Tools). Selective, time-scoped, and deep-layer deletes are all legitimate this way.
+  - **OK when the whole layer is yours:** `cloneModelEffects` wipe from an empty source. Note it only touches target layers up to the SOURCE's layer count — a 1-layer empty source (e.g. `House`) wipes layer 0 only.
+  - **Not OK:** Off-parking, shrinking effects into dark windows, renaming to `Off`, or other API hacks that leave garbage in the sequence. If you are unsure what to delete or how far to go, **tell the user the problem and ask for guidance.**
 - **`importXLightsSequence` adds timing tracks by name; import each track ONCE.** Re-importing a template containing a track that already exists in the sequence risks duplicated marks — rebuild the template, but don't re-import existing tracks; add-only.
 - `getEffectSettings` also reads **timing tracks** (marks come back as effects; `name` = the mark label) — useful for verifying imported timing.
 - **Unknown commands can hang the HTTP request forever** (e.g. there is no `getTimings`). Always call with a timeout (`curl -m`).
@@ -138,9 +130,11 @@ When no lyric timing exists for a song, generate it (reference implementation: `
 4. Write a timing-only template .xsq — each track is 3 layers: **phrases (contiguous, with empty-label gap fillers), words, phonemes** — then `importXLightsSequence` (`mapmethod:"auto"`, `importmedia:"false"`).
 5. **Prefer per-voice tracks** (`Lyrics Lead` / `Lyrics Female` / `Lyrics Choir`) over one shared track: each singer's Faces effect can then only mouth its own lines, and a full-lyric track (`Lyrics 1`) is still handy for duet/backup blocks.
 
-## Sequence file format notes (.xsq — read-only reference)
+## Sequence file format notes (.xsq)
 
-Reading existing sequences for analysis is fine (XML): `ColorPalettes`/`EffectDB` are deduped strings referenced by index, `ElementEffects` holds per-element `EffectLayer`s. Settings prefixes: `B_` = buffer, `C_` = color, `E_` = effect params, `T_` = transition/layer. Effects on the same element+layer must not overlap.
+Reading sequences for analysis is fine (XML): `ColorPalettes`/`EffectDB` are deduped strings referenced by index, `ElementEffects` holds per-element `EffectLayer`s. Settings prefixes: `B_` = buffer, `C_` = color, `E_` = effect params, `T_` = transition/layer. Effects on the same element+layer must not overlap.
+
+**Direct deletes are allowed** when the API can't do the job: remove `<Effect .../>` lines under `ElementEffects` (timing elements stay put). Always backup first; prefer a small script with `--dry-run` over ad-hoc edits. Do not invent new EffectDB/palette indices by hand when authoring — use `addEffect` for that.
 
 ## Tools
 
@@ -185,6 +179,7 @@ Effective pattern (from Christmas Dubstep): slow base on spokes (Pinwheel), spar
 - **Face color rules** (verified in `FacesEffect.cpp`): with `CustomColors=1` the def's per-part colors win and the palette is ignored — but **empty part colors render WHITE**, so a CC=1 def with no colors set (Snowman, Santa) is effectively all-white. With `CustomColors=0` the checked palette colors map in order = **mouth, eyes, FaceOutline, FaceOutline2** (5th/6th = eyes-2/3 variants). Prefer palette colors over submodel effects for coloring face props — e.g. the ChromaBulbs' C9 look (white mouth/eyes, R/G/B glass = FaceOutline, amber base = FaceOutline2) is a single 4-color Faces palette.
 - **EFL Teddy has two equivalent defs:** `Teddy ` (trailing space; forces brown mouth `#c16100`, blue/brown eyes) and `No Forced Colors` (identical node ranges, all colors empty → white). Mind the trailing-space landmine on `Teddy ` (`setEffectSettings` trims it and the effect falls back to `Hell Bear`, a Halloween def — another reason to only ever addEffect).
 - **User preference (July 2026): white mouths/eyes on all singing faces EXCEPT Teddy**, who keeps his forced-color face (`Teddy ` def). White is already the default everywhere else (empty CC=1 colors render white; palette-driven defs get white palette slots); SingingTree's forced green outline is fine.
+- **Hard Penguin color rule (user, 2026-07-19): never color/cover the outside of `Toni - Penguin 1/2`; only their bellies may carry color.** With `Penguin v.1.1 - No Tongue`, keep palette slots 1–3 white (mouth, eyes/wings, body/feet) and put any accent only in slot 4 (`FaceOutline2` = Belly).
 - Singing Bulb submodels are inconsistently named per prop (Center = `Base`+`Bulb`; L/R = `Bulb Stem`+`Bulb Outline`) — only relevant for non-face submodel effects.
 
 ## Timing tracks (reusable from old sequences on the same mp3)

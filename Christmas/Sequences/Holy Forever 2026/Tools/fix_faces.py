@@ -12,12 +12,16 @@ Casting:
             phrases; 'Lyrics 1' has everything).
   Teddy   = Jenn Johnson: V2, C2b+C2c, both pre-choruses, final chorus.
   Bulbs   = choir from chorus 1; Santa/Grinch/SingingTree join at PC2a;
-            Penguins at PC2b; everyone sings the final chorus.
+            Penguins match the bulbs in every chorus; everyone sings the final
+            chorus.
 
 Bulb C9 look is done entirely by the Faces palette (no submodel effects).
 With CustomColors=0 the Faces effect maps checked palette colors in order to
 mouth, eyes, FaceOutline (glass), FaceOutline2 (base) - verified in
 FacesEffect.cpp. So bulbs get: white mouth/eyes, R/G/B glass, amber base.
+Penguins use the same palette slots as mouth, eyes/wings, body/feet, belly:
+the entire outside stays white; only the bellies are colored (burgundy for
+Toni 1, sapphire for Toni 2).
 This script also wipes any legacy On effects off the bulb submodels.
 
 Why wipe+re-add: setEffectSettings mangles values (see AGENTS.md) - the only
@@ -28,11 +32,14 @@ Not saved, not rendered.
 """
 import json
 import sys
+from pathlib import Path
 
-sys.path.insert(0, '/Users/elliott.ohara/xlights/Tools')
+TOOLS_DIR = Path(__file__).resolve().parent
+REPO_ROOT = Path(__file__).resolve().parents[4]
+sys.path.insert(0, str(REPO_ROOT / 'Tools'))
 import xlights_api as x
 
-SECTIONS = json.load(open('/Users/elliott.ohara/xlights/Christmas/Sequences/Holy Forever 2026/Tools/sections.json'))
+SECTIONS = json.loads((TOOLS_DIR / 'sections.json').read_text())
 EMPTY_SOURCE = 'House'          # element with a single empty effect layer
 
 def sec(name):
@@ -51,7 +58,8 @@ SINGERS = {
     # Teddy is the ONE face that keeps its forced colors (brown mouth, blue/brown
     # eyes) per user preference - everyone else renders white mouth/eyes.
     # ('No Forced Colors' = identical nodes rendering white, if ever wanted.)
-    'EFL Teddy': ('Teddy ', 'Teddy RedBow static', 'Lyrics Female'),
+    # Pink bow (not red) — see teddy_expressive.py for arms/brows/eyes States.
+    'EFL Teddy': ('Teddy ', 'Teddy PinkBow', 'Lyrics Female'),
     'GE Santa Singing': ('Santa Singing', 'hat', 'Lyrics Choir'),
     'GE Grinch Talk': ('Grinch', None, 'Lyrics Choir'),
     'SingingTree': ('Tree', None, 'Lyrics Choir'),
@@ -68,6 +76,10 @@ BULB_GLASS = {
     'Singing Bulb - Center': '#00FF00',
     'Singing Bulb - Right': '#0000FF',
 }
+PENGUIN_BELLY = {
+    'Toni - Penguin 1': '#9D1D25',
+    'Toni - Penguin 2': '#2864FF',
+}
 # legacy targets from the submodel-On approach; kept clean by this script
 BULB_SUBMODELS = [
     'Singing Bulb - Left/Bulb Stem', 'Singing Bulb - Left/Bulb Outline',
@@ -75,14 +87,20 @@ BULB_SUBMODELS = [
     'Singing Bulb - Right/Bulb Stem', 'Singing Bulb - Right/Bulb Outline',
 ]
 
+def palette_colors_for(el):
+    if el in BULB_GLASS:
+        return ['#FFFFFF', '#FFFFFF', BULB_GLASS[el], AMBER]
+    if el in PENGUIN_BELLY:
+        return ['#FFFFFF', '#FFFFFF', '#FFFFFF', PENGUIN_BELLY[el]]
+    return ['#FFFFFF']
+
+
 def palette_for(el):
     """Faces palette. Order (CustomColors=0): mouth, eyes, outline, outline2."""
-    if el in BULB_GLASS:
-        cols = ['#FFFFFF', '#FFFFFF', BULB_GLASS[el], AMBER]
-        return ','.join(
-            [f'C_BUTTON_Palette{i}={c}' for i, c in enumerate(cols, 1)] +
-            [f'C_CHECKBOX_Palette{i}=1' for i in range(1, len(cols) + 1)])
-    return 'C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1'
+    cols = palette_colors_for(el)
+    return ','.join(
+        [f'C_BUTTON_Palette{i}={c}' for i, c in enumerate(cols, 1)] +
+        [f'C_CHECKBOX_Palette{i}=1' for i in range(1, len(cols) + 1)])
 
 def face_settings(defn, state, track, fadeout=None):
     s = ('E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,'
@@ -109,7 +127,6 @@ def spans():
     female = [(v2s, v2e), (c2b_s, c2c_e), (pc2a_s, c3e)]
     choir = [sec('C1'), (c2a_s, c2c_e), (pc2b_s, c3e)]
     joiners1 = [(pc2a_s, c3e)]
-    joiners2 = [(pc2b_s, c3e)]
 
     return {
         'GE 8ft Snowman Singing': lead,
@@ -120,8 +137,8 @@ def spans():
         'GE Santa Singing': joiners1,
         'GE Grinch Talk': joiners1,
         'SingingTree': joiners1,
-        'Toni - Penguin 1': joiners2,
-        'Toni - Penguin 2': joiners2,
+        'Toni - Penguin 1': choir,
+        'Toni - Penguin 2': choir,
     }
 
 def main():
@@ -163,7 +180,7 @@ def main():
     print('verifying...')
     bad = []
     for el, (defn, state, _) in SINGERS.items():
-        glass = BULB_GLASS.get(el)
+        colors = palette_colors_for(el)
         ids = x.xl('getEffectIDs', model=el)['effects'][0]
         got = []
         for eid in ids:
@@ -175,13 +192,11 @@ def main():
                   and st.get('E_CHOICE_Faces_FaceDefinition') == defn
                   and st.get('E_CHECKBOX_Faces_Outline') == '1'
                   and (state is None or st.get('E_CHOICE_Faces_UseState') == state))
-            if glass:
-                ok = ok and (p.get('C_BUTTON_Palette3', '').upper() == glass
-                             and p.get('C_BUTTON_Palette4', '').upper() == AMBER
-                             and all(p.get(f'C_CHECKBOX_Palette{i}') == '1'
-                                     for i in range(1, 5)))
-            else:
-                ok = ok and p.get('C_BUTTON_Palette1', '').upper() == '#FFFFFF'
+            ok = ok and all(
+                p.get(f'C_BUTTON_Palette{i}', '').upper() == color
+                and p.get(f'C_CHECKBOX_Palette{i}') == '1'
+                for i, color in enumerate(colors, 1)
+            )
             if not ok:
                 bad.append((el, eid, st.get('E_CHOICE_Faces_FaceDefinition'), p))
         if sorted(got) != expected[el]:

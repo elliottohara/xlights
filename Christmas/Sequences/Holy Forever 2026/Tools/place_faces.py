@@ -46,7 +46,7 @@ WHITE = 'C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1'
 
 SINGERS = {
     'GE 8ft Snowman Singing': ('8ft Snowman Singing', 'Colored'),
-    'EFL Teddy': ('Teddy ', 'Teddy RedBow static'),
+    'EFL Teddy': ('Teddy ', 'Teddy PinkBow'),
     'GE Santa Singing': ('Santa Singing', 'hat'),
     'GE Grinch Talk': ('Grinch', None),
     'SingingTree': ('Tree', None),

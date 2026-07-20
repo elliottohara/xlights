@@ -8,8 +8,9 @@ https://github.com/xLightsSequencer/xLights/blob/master/documentation/xlDo%20Com
 
 xLights supports exactly two API instances: the A port (49913, `-a` flag) and
 the B port (49914, `-b` flag) — port = 49912 + slot, nothing else is possible.
-Default here is the A port; set XLIGHTS_API_PORT=49914 to drive a second
-instance (see "Running two agents at once" in AGENTS.md).
+Default here is the A port (worktree slot-a); set XLIGHTS_API_PORT=49914 to
+drive the slot-b instance (see "Parallel agent work — two permanent worktree
+slots" in AGENTS.md).
 """
 import json
 import os

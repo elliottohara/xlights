@@ -2,6 +2,8 @@
 
 Working notes for `Christmas/Sequences/Holy Forever 2026/Holy Forever 2026.xsq` (built July 2026). Read alongside the root `AGENTS.md`. Song: Chris Tomlin "Holy Forever" (Jenn Johnson female vocal), media = `Media/Chris Tomlin - Holy Forever (Lyric Video).mp4`, 308314 ms, 25 ms frames, ModelBlending on.
 
+**Current task:** branch `teddy-pink-expressive` in permanent **Slot A** (`/Users/elliott.ohara/xlights-worktrees/slot-a`, API 49913). Teddy rebuilt pink + expressive States for the whole female part (see below). Prior Slot A review baseline still holds for everything else (chorus choir, PC1 ascents, wings, etc.).
+
 ## ⚠ Baseline (hand-approved 2026-07-19)
 
 **The on-disk `.xsq` is the starting point. Do not re-add effects the user removed.**
@@ -11,7 +13,7 @@ Saved from the live xLights session after hand edits. Live model effects now:
 - **Intro + intimate V1 (0–41850):** Whole Scene snow + Mega Tree glowing cross + dim Singing Bulb Faces; from 0:15 Snowman + `Arches - All` piano-chord SingleStrand + mini-tree note fills + oak cymbal Twinkles.
 - **Windows:** `Matrix - Entry` = "Holy" Text only (L0). `Matrix - Downstairs Window`, `Matrix-Garage Window`, and `Matrix - Lantana` = **empty** (Lantana's True Piano MIDI effect removed 2026-07-19 — user reported it wasn't working; do not restore). `Matrixes` group = empty.
 - **House / icicles:** `House Outline` and `Icicles GRP` = **empty** (all accent/twinkle/hold effects hand-deleted). **`Roof` = final On hold only** (301500–308275). No Marquees anywhere.
-- **Also live:** Tree Topper (On accents + hold), singing faces, `GE Merry Christmas/Christ` PC1 glow.
+- **Also live:** Tree Topper (On accents + hold), `GE Merry Christmas/Christ` PC1 glow, pending PC1 Mega Tree ascents on all four "Your name" phrases + "angels cry" EFL Wing stacks, and the verified Bulb/Penguin/PiXeL Paradise chorus choir described below.
 - **Timing tracks (12):** Lyrics Lead/Female/Choir + Intro Choir, Song Sections, Mood, Beat Count, Kick, Snare, Cymbals, Piano Chords, Piano Notes. (`Lyrics 1` still missing — see faces section.)
 
 **Do not run / deleted (would undo this baseline):**
@@ -55,19 +57,19 @@ On this branch the superseded builders are `intimate_arch_chords.py`, `intimate_
 
 Original effect-section boundaries: 15520, 41850, 67570, 95100, 127630, 154150, 181900, 207210, 234230, 260760, 287290, 301500 (final hold to 308264).
 
-Sung-phrase spans (whisper-derived, clamped to the boundaries above; also in `Christmas/Sequences/Holy Forever 2026/Tools/sections.json`). **This table is the vocal arrangement — who sings what, where.** On the record: Chris Tomlin = male lead (Snowman), Jenn Johnson = female lead (Teddy); our choir = 3 ChromaBulbs, then Santa/Grinch/SingingTree, then Penguins.
+Sung-phrase spans (whisper-derived, clamped to the boundaries above; also in `Christmas/Sequences/Holy Forever 2026/Tools/sections.json`). **This table is the vocal arrangement — who sings what, where.** On the record: Chris Tomlin = male lead (Snowman), Jenn Johnson = female lead (Teddy); our chorus choir = 3 ChromaBulbs + both Penguins + the seven-face `PiXeL Paradise Xmas Tree Choir` from C1, with Santa/Grinch/SingingTree joining in PC2.
 
 | Section | Span (ms) | ≈ time | Lyric | Who sings |
 |---|---|---|---|---|
 | V1 | 15275–39975 | 0:15–0:40 | "A thousand generations falling down in worship…" | **Snowman solo** |
 | PC1 | 40950–66700 | 0:41–1:07 | "Your name is the highest… stands above them all" | **Snowman solo** |
-| C1 | 66700–90825 | 1:07–1:31 | "And the angels cry Holy… Holy forever" | Snowman + Bulbs (choir enters) |
+| C1 | 66700–90825 | 1:07–1:31 | "And the angels cry Holy… Holy forever" | Snowman + Bulbs + Penguins + PiXeL Paradise Tree Choir |
 | V2 | 94375–126525 | 1:34–2:07 | "If you've been forgiven, if you've been redeemed…" | **Duet: Teddy (her entrance) with Snowman** |
-| C2a | 126725–151400 | 2:07–2:31 | chorus first half | Snowman + Teddy + Bulbs |
-| C2b | 153250–165750 | 2:33–2:46 | **"Hear Your people sing / To the King of kings" — Teddy's feature** | Teddy leads, Snowman backs up, Bulbs |
-| C2c | 166850–178350 | 2:47–2:58 | "You will always be holy / Holy forever" | Snowman + Teddy + Bulbs |
+| C2a | 126725–151400 | 2:07–2:31 | chorus first half | Snowman + Teddy + Bulbs + Penguins + PiXeL Paradise Tree Choir |
+| C2b | 153250–165750 | 2:33–2:46 | **"Hear Your people sing / To the King of kings" — Teddy's feature** | Teddy leads, Snowman backs up, Bulbs + Penguins + PiXeL Paradise Tree Choir |
+| C2c | 166850–178350 | 2:47–2:58 | "You will always be holy / Holy forever" | Snowman + Teddy + Bulbs + Penguins + PiXeL Paradise Tree Choir |
 | PC2a | 181450–207775 | 3:01–3:28 | pre-chorus pass 1 (ends "…Jesus") | + Santa, Grinch, SingingTree join |
-| PC2b | 207775–233350 | 3:28–3:53 | pre-chorus pass 2 (bigger) | + Penguins → **full cast** |
+| PC2b | 207775–233350 | 3:28–3:53 | pre-chorus pass 2 (bigger) | Bulbs + Penguins + PiXeL Paradise Tree Choir rejoin → **full cast** |
 | C3 | 233350–283550 | 3:53–4:44 | final chorus (both halves) | **Everyone** (fades out at the end) |
 | OUT | 286700–296650 | 4:47–4:57 | "You will always be holy / Holy forever" | **Snowman solo tag** (ends as it began) |
 
@@ -198,7 +200,7 @@ The copied sequence currently contains four lyric tracks (3-layer: phrases with 
 - **`Lyrics Choir`** — ensemble: C1, C2, PC2a/b, C3.
 - **`Lyrics Intro Choir`** — two hand-placed “Holy” swells at 3900–6600 and 10550–13550; the dim bulb Faces block driven by it extends through 41850.
 
-⚠ **Copied-source inconsistency:** `Lyrics 1` (the full-lyric track) is absent from the current `.xsq`, even though the Snowman's V2-through-chorus-2 Faces block still references it. Do not assume that block will mouth correctly, and do not run `fix_faces.py`, until the track is deliberately restored. A mark-for-mark recovery template was extracted from the last complete backup as `Christmas/Sequences/Holy Forever 2026/Timing Templates/Holy Forever Lyrics 1.xsq` (76/259/894 phrase/word/phoneme marks). Import it **once**.
+✅ **Fixed 2026-07-19 (branch `teddy-pink-expressive`):** `Lyrics 1` (the full-lyric track) was missing from the `.xsq`, which is why the Snowman went silent during his V2/Chorus-2 duet+backup block (94375–178650, `E_CHOICE_Faces_TimingTrack=Lyrics 1` with no matching timing element — Faces effect had nothing to sync mouths to). Restored by importing `Christmas/Sequences/Holy Forever 2026/Timing Templates/Holy Forever Lyrics 1.xsq` once (`importXLightsSequence`, auto, no media) — verified 1229 marks landed across 3 layers (76 phrase / 259 word / 894 phoneme), matching the extracted template exactly. Saved, closed/reopened to confirm `getOpenSequence` length unchanged (308314 ms). Backup: `Holy Forever 2026.xsq.bak-before-lyrics1-restore`. **Track is now present — never re-import this template again** (would duplicate marks).
 
 Templates: `Christmas/Sequences/Holy Forever 2026/Timing Templates/Holy Forever Lyrics.xsq` contains the three per-voice tracks; `Christmas/Sequences/Holy Forever 2026/Timing Templates/Holy Forever Lyrics 1.xsq` is the full-lyric recovery track; `Christmas/Sequences/Holy Forever 2026/Timing Templates/Holy Forever Intro Choir.xsq` contains the preserved intro track. The main pipeline is `Christmas/Sequences/Holy Forever 2026/Tools/build_lyrics.py`; `Christmas/Sequences/Holy Forever 2026/Tools/add_intro_holy_choir.py` is the older intro-track builder. Phrase *starts* are approximate (clamped to section anchors); word ends track the vocal closely. The "Holy holy holy" echoes in C3 are folded into the "To the King of kings holy" phrase end.
 
@@ -218,21 +220,39 @@ Template `Christmas/Sequences/Holy Forever 2026/Timing Templates/Holy Forever Dr
 - ⚠ Per the root AGENTS.md rule: these tracks are now IN the sequence — never re-import this template (duplicated marks). Rebuild-and-hand-fix in the GUI if they ever need changing.
 - Analysis scratch tools (kept): `analyze_drums.py`, `grid_drums.py`, `backbeat_scan.py`, `phase_check.py`/`phase_check2.py`, `anchor_check.py` (the anchor-correction evidence), `extract_marks.py`, `refine_marks.py`, `build_drum_marks.py`.
 
-## Singing faces (casting) — LIVE in the sequence (user-approved: "they were perfect"; do not remove)
+## Singing faces (casting) — LIVE in the sequence
 
 Effect-block implementation of the vocal-arrangement table above.
 
-All faces layer 0; **eyes and mouths render white on every prop EXCEPT Teddy**, who keeps his forced-color face (`Teddy ` def: brown mouth, blue/brown eyes) per user preference. (`No Forced Colors` is an identical-nodes all-white def if ever wanted.) Non-bulb palettes are plain white; bulbs use the 4-color C9 palette (below). Non-final blocks get +300 ms tails, final blocks +1500 ms tail with `T_TEXTCTRL_Fadeout=1.5`:
+The original cast is user-approved ("they were perfect"; do not remove). Standard singers use layer 0; the PiXeL Paradise prop uses layers 1–7 because each ornament/present/star is a separate face. **Eyes and mouths render white on every standard prop EXCEPT Teddy**, who keeps his forced-color face (`Teddy ` def: brown mouth, blue/brown eyes) per user preference. (`No Forced Colors` is an identical-nodes all-white def if ever wanted.) Bulbs use the 4-color C9 palette; Penguins keep their entire exterior white and color only their bellies as described below. Non-final blocks get +300 ms tails, final blocks +1500 ms tail with `T_TEXTCTRL_Fadeout=1.5`:
 
 | Prop | Track | Blocks |
 |---|---|---|
 | GE 8ft Snowman Singing (lead) | Lyrics Lead | V1→C1; **verse 2 + all of chorus 2 as one block on `Lyrics 1`** (duets with Teddy from her 1:34 entrance, backs her up on C2b); PC2a→C3; outro solo |
-| EFL Teddy (female lead) — def `Teddy `, colored face | Lyrics Female | V2; C2b→C2c; PC2a→C3 |
+| EFL Teddy (female lead) — def `Teddy `, **UseState `Teddy PinkBow`** (not red) | Lyrics Female (+ Lyrics Choir on C2a) | V2; **C2a**; C2b→C2c; PC2a→C3 — plus L0–L2 State expression (see Teddy section) |
 | Singing Bulb - L/C/R (choir) | Lyrics Intro Choir (dim) then Lyrics Choir | **intro Holys + intimate V1** (`3900–41850`, muted ivory/gold palette, brightness 40); then C1; C2a→C2c; PC2b→C3 (full C9) |
 | GE Santa Singing, GE Grinch Talk, SingingTree | Lyrics Choir | PC2a→C3 |
-| Toni - Penguin 1/2 | Lyrics Choir | PC2b→C3 |
+| Toni - Penguin 1/2 | Lyrics Choir | C1; C2a→C2c; PC2b→C3 (exactly matches the bulbs' chorus blocks) |
+| PiXeL Paradise Xmas Tree Choir — Star + 5 Ornaments + Present | Lyrics Choir | C1; C2a→C2c; PC2b→C3 (exactly matches the Penguins) |
 
-⚠ The current scripts are not yet a one-command full rebuild: `fix_faces.py` requires the missing `Lyrics 1` track and removes the dim intro/V1 bulb block, while `intimate_bulb_faces.py` only extends an intro block that already exists. Preserve the live effects; restore `Lyrics 1` and reconcile those two scripts before rebuilding all faces.
+Verified saved spans after close/reopen: bulbs = `3900–41850`, `66700–91125`, `126725–178650`, `207775–285050`; Penguins and PiXeL Paradise = the latter three blocks. `chorus_choir_faces.py` safely rebuilds the Bulbs/Penguins and preserves the dim intro; `pixel_paradise_tree_choir.py` independently rebuilds the seven-face tree choir. `fix_faces.py` still requires the missing `Lyrics 1` track and does not recreate the dim intro/V1 bulb block; do not use it for this targeted repair.
+
+## EFL Teddy — pink bow + expressive States (LIVE 2026-07-19, branch `teddy-pink-expressive`)
+
+Rebuild: `Tools/teddy_expressive.py` (`--dry-run` / default saves). Backup: `Holy Forever 2026.xsq.bak-before-teddy-expressive`.
+
+Teddy keeps the forced-color face def `Teddy ` (brown mouth, blue/brown eyes). Costume state is **`Teddy PinkBow`** (pink bowtie/knot/shade — not `Teddy RedBow static`).
+
+| Layer | Effect | Role |
+|---|---|---|
+| L0 | State arms (beat-driven + poses) | Beat-animated blocks (`Mode=Default`, `TimingTrack=Beat Count` — the 1–4 labels step the 1–4 states): `leaning (beats)` in V2/C2c, `flapping (beats)` in choruses/PC2, one-arm `left/right wave (beats)` on her C2b + C3b features and PC2b. Held `arms` poses (`mid`/`up`, Fade_Time 80) punctuate peaks: "amen", "Holy forever", "above them all", "Jesus", "lifted high", final raise into the fade. |
+| L1 | State `eye direction` | up / upleft / upright / left / right — heavenward on worship lines; side glances in PC2 |
+| L2 | State `Brows` | `sad` on V2 redemption lines; `highbrows` on praise; occasional `spockleft`/`spockright` in PC2 |
+| L3 | Faces | mouth sync; `UseState=Teddy PinkBow`; Auto blink |
+
+Faces blocks: V2 `Lyrics Female` → C2a `Lyrics Choir` (Female track has no C2a phrases) → C2b–C2c `Lyrics Female` → PC2a–C3 `Lyrics Female` (+1.5 s final fade). 93 effects (34 arm blocks). Script clears Teddy via .xsq (multi-layer) then re-adds — safe to re-run.
+
+Beat-state recipe (verified against the vendor sequences that ship these defs — You Make It Feel Like Christmas, Happily Ever After, Can-Can): `E_CHOICE_State_Color=Graduate, E_CHOICE_State_Mode=Default, E_CHOICE_State_StateDefinition=<def> (beats), E_CHOICE_State_TimingTrack=Beat Count, E_SLIDER_State_Fade_Time=0`. The existing `Beat Count` track's 1–4 labels drive the animation — no new timing tracks were needed. (`Brows (Beats)` exists too but only defines states 1–2, so it's unused.)
 
 ## Bulb colors (C9 look — pure Faces palette, no submodel effects) — LIVE, part of the bulbs' face effects
 
@@ -242,13 +262,35 @@ The ChromaBulb defs map glass = `FaceOutline` and base = `FaceOutline2`, and wit
 
 The bulb **submodel elements carry no effects** — an earlier submodel-On approach was removed; `fix_faces.py` wipes them to keep it that way. (Submodel names, if ever needed for non-face effects: Center = `Base`/`Bulb`, L/R = `Bulb Stem`/`Bulb Outline`.)
 
+## Penguin colors (belly only — LIVE, pure Faces palettes)
+
+`Penguin v.1.1 - No Tongue` uses `CustomColors=0`, so checked colors map in order to **mouth, eyes/wings, body/feet, belly**. Eyes and wings share one slot and therefore remain white together:
+
+- **Hard user rule:** never color/cover the outside of either Penguin. Mouth, eyes/wings, body, and feet stay `#FFFFFF`; color is allowed only on `FaceOutline2` = the belly.
+- **Toni - Penguin 1:** C1 mouth `#FFFFFF` · C2 eyes/wings `#FFFFFF` · C3 body/feet `#FFFFFF` · C4 belly burgundy `#9D1D25`.
+- **Toni - Penguin 2:** C1 mouth `#FFFFFF` · C2 eyes/wings `#FFFFFF` · C3 body/feet `#FFFFFF` · C4 belly sapphire `#2864FF`.
+
+Model-video review verified the exterior is white and only the belly is colored on both Penguins. They remain dark in the intimate intro, sing in C1/C2/PC2b/C3, visibly fade at 284.0 s, and are fully dark by 286.0 s. The Center bulb retained its dim intro treatment, switches to green glass + amber base in every chorus, and follows the same final fade.
+
+## PiXeL Paradise Xmas Tree Choir (seven simultaneous faces — LIVE, preview pending approval)
+
+Exact target: **`PiXeL Paradise Xmas Tree Choir`** (not `Toni - Flat Tree` and not `SingingTree`). All seven built-in CustomColors faces sing simultaneously on `Lyrics Choir`: `Star`, `Blue Ornamnet` (canonical typo), `Green Ornament`, `Red Ornament`, `Yellow Ornament`, `Purple Ornament`, and `Present`.
+
+- Faces occupy parent layers 1–7 at brightness 82 and use their designed ornament/present colors; all share the Penguin spans and fades.
+- Supporting submodel Ons make the full prop read without overpowering the faces: `Tree Outline` muted evergreen `#0B6B3A` at b38, `Candy Canes White Stripes` ivory `#EEEAE2` at b52, and `Candy Canes Red Stripes` burgundy `#9D1D25` at b48.
+- Rendered/model-reviewed at C1, C2, C3, and the final fade. It is open in Slot A xLights for user review.
+- Rebuild/clear: `Tools/pixel_paradise_tree_choir.py` (`--dry-run` / `--clear-only`).
+
 ## Tools inventory (`Christmas/Sequences/Holy Forever 2026/Tools/`)
 
 - `transcribe.py` — faster-whisper word timestamps (needs a venv with `faster-whisper`; use `vad_filter=False` — VAD ate this vocal).
 - `words.json` — transcription output (kept; lets you rebuild timing without re-transcribing).
 - `build_lyrics.py` — alignment + phonemes + writes the 3-track per-voice template and `sections.json`. Canonical lyrics and per-voice membership live at the top of this file.
 - `sections.json` — per-section/per-line sung spans (used by all placement scripts).
-- `fix_faces.py` — canonical C1+ singing-face rebuild (includes bulb C9 palettes and clears the bulb submodels). It requires the currently missing `Lyrics 1` track and does not recreate the dim intro/V1 bulb block.
+- `chorus_choir_faces.py` — targeted, idempotent Bulb + Penguin chorus rebuild; preserves/validates the dim intro bulb block, restores bulb C9, applies belly-only Penguin colors, verifies, then saves.
+- `pixel_paradise_tree_choir.py` — seven PiXeL Paradise faces + subdued tree/candy-cane support, matched exactly to the Penguin choir blocks.
+- `teddy_expressive.py` — wipe/rebuild EFL Teddy pink-bow Faces + arms/brows/eye-direction States for the whole female part (`--dry-run`).
+- `fix_faces.py` — canonical C1+ all-face rebuild (includes bulb C9 + belly-only Penguin palettes and clears the bulb submodels). It requires the currently missing `Lyrics 1` track and does not recreate the dim intro/V1 bulb block. **Does not rebuild Teddy's L0–L2 States** — use `teddy_expressive.py` for Teddy.
 - `add_intro_holy_choir.py` — preserved builder/importer for `Lyrics Intro Choir`; do not re-import when the track exists. Its short original Faces treatment is historical; `intimate_bulb_faces.py` defines the current longer treatment.
 - `clear_intro.py` — direct .xsq edit that deleted every model effect ending ≤15520 (supports `--dry-run`). Pattern to copy for any future time-scoped deletion the API can't do: save session → cp backup → run → close/reopen sequence.
 - `continuous_cross_intro.py` — rebuild Mega Tree L0 cross through intro + intimate V1 (`0–41850`); clears leftover downstairs L0 if any.
@@ -268,4 +310,4 @@ The bulb **submodel elements carry no effects** — an earlier submodel-On appro
 
 ## Review checklist (baseline — do not “restore” removed bits)
 
-0:00–0:42 Whole Scene snow + Mega Tree cross + dim bulbs · 0:15 Snowman + arch piano chords + mini-tree fills + oak cymbal Twinkles · PC1: eight Mega Tree meteor windows + eight Whole Scene meteor implosions into Christ; Christ blinks on all 16 star bass pulses · Lantana empty (Piano MIDI effect removed 2026-07-19, wasn't working) · Entry "Holy" Text only (no downstairs/garage/window snow) · House Outline + Icicles empty; Roof final-hold only · faces casting as below · 4:47 Snowman outro solo.
+0:00–0:42 Whole Scene snow + Mega Tree cross + dim bulbs; Penguins + PiXeL Paradise dark · 0:15 Snowman + arch piano chords + mini-tree fills + oak cymbal Twinkles · Lantana empty (Piano MIDI effect removed 2026-07-19, wasn't working) · Entry "Holy" Text only (no downstairs/garage/window snow) · House Outline + Icicles empty; Roof final-hold only; Tree Topper accents kept · C1/C2/PC2b→C3 Bulbs + both white-exterior, belly-accented Penguins + all seven PiXeL Paradise faces sing together · 4:47 Snowman outro solo.
