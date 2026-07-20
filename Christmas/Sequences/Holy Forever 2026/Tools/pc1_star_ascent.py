@@ -123,37 +123,6 @@ def star_clusters():
     return clusters
 
 
-def free_park_slot(layer, build_start, build_end):
-    """Find a 25 ms slot that overlaps neither live effects nor this build."""
-    rows = effect_rows(TARGET, layer)
-    for park in range(25, 308275, 25):
-        if park < build_end and park + 25 > build_start:
-            continue
-        if all(park + 25 <= row["start"] or park >= row["end"] for row in rows):
-            return park
-    raise RuntimeError(f"No free Off-park slot on Mega Tree layer {layer}")
-
-
-def off_park(layer, row, build_start, build_end):
-    """Safely retire a prior build; Off ignores the settings parser quirks."""
-    park = free_park_slot(layer, build_start, build_end)
-    x.xl(
-        "setEffectSettings",
-        model=TARGET,
-        layer=layer,
-        id=row["id"],
-        name="Off",
-        startTime=park,
-        endTime=park + 25,
-        settings="",
-        palette="",
-    )
-    print(
-        f"off-parked prior L{layer} {row['name']} at {row['start']} ms "
-        f"-> {park}-{park + 25}"
-    )
-
-
 def prior_build_rows(plan):
     """Return only effects in the layers/windows this tool owns."""
     expected_names = {
@@ -247,16 +216,26 @@ def main():
 
     prior = prior_build_rows(plan)
     if prior:
-        print(f"existing owned effects: {prior}")
+        expected = {
+            (layer, effect, start, end)
+            for layer, effect, _, _, start, end, _ in plan
+        }
+        actual = {
+            (layer, row["name"], row["start"], row["end"])
+            for layer, row in prior
+        }
+        if actual == expected and len(prior) == len(plan):
+            print("already built: all eight Mega Tree meteor windows match")
+            return
+        raise RuntimeError(
+            "Conflicting PC1 Mega Tree effects found. Run "
+            "cleanup_pc1_convergence.py with xLights closed, reopen, "
+            "then rebuild; refusing to leave Off stubs."
+        )
 
     if dry_run:
         print("dry-run: no writes")
         return
-
-    build_start = min(item[4] for item in plan)
-    build_end = max(item[5] for item in plan)
-    for layer, row in prior:
-        off_park(layer, row, build_start, build_end)
 
     for layer, effect, settings, palette, start, end, _ in plan:
         x.add_effect(TARGET, layer, effect, settings, palette, start, end)

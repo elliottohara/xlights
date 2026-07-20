@@ -169,14 +169,14 @@ Built on branch `pc1-star-ascent` in worktree `/Users/elliott.ohara/xlights-work
 - Final user direction was explicit: keep only the "meteor-looking" motion that had been visible after the solid sweep. The solid Morph, white/ivory core, and added Mega Tree Shockwaves are all removed; only Tree Topper's original bass-drum Shockwaves remain.
 - First-star anchors: **42325 / 45650 / 49000 / 52325 / 55650 / 58975 / 62325 / 65650**.
 - Rebuild/idempotent tool: `Tools/pc1_star_ascent.py`. It discovers overlapping Tree Topper Shockwave clusters directly, refuses unless there are exactly eight PC1 pairs, and no longer depends on lyric timing.
-- Owns Mega Tree L1 inside the eight short windows. Superseded L0–L4 builds are safely Off-parked; the intro cross is explicitly preserved.
+- Owns Mega Tree L1 inside the eight short windows. Superseded L0–L4 builds were directly deleted; the intro cross is explicitly preserved.
 - Rendered and checked across all eight windows; the full review clip spans 40.0–68.5 s at worktree `RenderCompare/holy_forever_pc1_star_ascent_clip.mp4`.
 
 ## Added 2026-07-19: Christ bass blinks + whole-scene meteor convergence
 
 - The four long lyric-timed "Your name" glows were removed. **`GE Merry Christmas/Christ` now blinks on all 16 PC1 bass pulses** with full-submodel On effects using the Tree Topper's exact layers, start/end times, transition fades, and palettes. This lights the whole word while matching the star's temporal envelope.
 - `GE Merry Christmas` parent L0 has one Off mask from **40950–67175**. It blocks the lower `Whole Scene w Matrixes` meteor effect from lighting `Merry` or `mas`; the dedicated Christ submodel pulses render back over that mask.
-- `Whole Scene w Matrixes` L0 carries eight `Meteors Implode` windows matching the Mega Tree bass-pair spans, replacing the ineffective `Whole Scene` L1 pass (now Off-parked). This expanded group includes the matrices, flakes, and house-face props; the Mega Tree's individual meteor effect remains visually dominant over the lower group effect.
+- `Whole Scene w Matrixes` L0 carries eight `Meteors Implode` windows matching the Mega Tree bass-pair spans, replacing the ineffective `Whole Scene` L1 pass (directly deleted). This expanded group includes the matrices, flakes, and house-face props; the Mega Tree's individual meteor effect remains visually dominant over the lower group effect.
 - Render style is `Per Preview`; amber/gold meteors converge on the Christ submodel at offsets **X=-17 / Y=-7**, derived from the shared scene bounds and Christ's preview center. Count 81 / length 52 / **speed 50** / brightness 80.
 - The radial simulation uses **36 warm-up frames**. Combined with the fixed 1375 ms pre-roll and maximum speed, this phase-locks the first meteor front to the Christ/Tree Topper lead pulse; speed 18 could not cross the expanded preview before the hit.
 - Rebuild/idempotent tool: `Tools/pc1_christ_convergence.py`. It discovers the live Tree Topper pulses, requires exactly 16 effects grouped as eight pairs, rebuilds Christ, and verifies the scene windows.
@@ -302,7 +302,8 @@ Exact target: **`PiXeL Paradise Xmas Tree Choir`** (not `Toni - Flat Tree` and n
 - `intimate_mini_tree_piano.py` — wipe/rebuild mini-tree piano-note fills (`--dry-run` / `--clear-only`).
 - `intimate_oak_cymbals.py` — wipe/rebuild oak V1+PC1 cymbal Twinkles (`--dry-run` / `--clear-only`).
 - `pc1_star_ascent.py` — rebuild the eight meteor-only Mega Tree windows from live Tree Topper bass-pair clusters.
-- `pc1_christ_convergence.py` — rebuild the 16 Christ blinks plus eight Whole Scene meteor implosions aimed at Christ.
+- `pc1_christ_convergence.py` — rebuild the 16 Christ blinks plus eight `Whole Scene w Matrixes` meteor implosions aimed at Christ.
+- `cleanup_pc1_convergence.py` — direct-delete reset for superseded PC1 effects/stubs before a clean rebuild; run `--dry-run`, close xLights, then run once.
 - `lantana_piano.py` — wipe/rebuild full-song True Piano on `Matrix - Lantana` (`--dry-run` / `--clear-only`). **Removed 2026-07-19 (user: not working) — refuse to re-run its build mode; `--clear-only` is safe/idempotent.**
 - `migrate_christ_submodel.py` — historical one-shot Christ-submodel migration; **do not run** (its four lyric glows were superseded by bass blinks).
 - `migrate_faces.py`, `place_faces.py`, `lead_backup_c2.py` — historical; superseded by `fix_faces.py`.

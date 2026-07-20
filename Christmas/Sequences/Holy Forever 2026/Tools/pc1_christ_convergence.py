@@ -173,35 +173,6 @@ def christ_on_settings(pulse):
     return settings
 
 
-def free_park_slot(model, layer, build_start, build_end):
-    rows = effect_rows(model, layer)
-    for park in range(25, 308275, 25):
-        if park < build_end and park + 25 > build_start:
-            continue
-        if all(park + 25 <= row["start"] or park >= row["end"] for row in rows):
-            return park
-    raise RuntimeError(f"No free Off-park slot on {model} layer {layer}")
-
-
-def off_park(model, row, build_start, build_end):
-    park = free_park_slot(model, row["layer"], build_start, build_end)
-    x.xl(
-        "setEffectSettings",
-        model=model,
-        layer=row["layer"],
-        id=row["id"],
-        name="Off",
-        startTime=park,
-        endTime=park + 25,
-        settings="",
-        palette="",
-    )
-    print(
-        f"  off-parked {model} L{row['layer']} {row['name']} "
-        f"{row['start']}-{row['end']} -> {park}-{park + 25}"
-    )
-
-
 def prior_christ_effects():
     prior = []
     ids = x.xl("getEffectIDs", model=CHRIST_TARGET)["effects"]
@@ -293,18 +264,52 @@ def main():
             f"first star {cluster['first_star']}"
         )
 
+    build_start = min(cluster["start"] for cluster in clusters)
+    build_end = max(cluster["end"] for cluster in clusters)
+    expected_christ = [
+        {
+            **pulse,
+            "name": "On",
+            "settings": christ_on_settings(pulse),
+        }
+        for pulse in pulses
+    ]
+    christ_ok = [signature(row) for row in sorted(
+        christ_prior, key=lambda row: (row["start"], row["layer"])
+    )] == [signature(row) for row in expected_christ]
+    new_scene = [
+        row for model, row in scene_prior if model == SCENE_TARGET
+    ]
+    old_scene = [
+        row for model, row in scene_prior if model == OLD_SCENE_TARGET
+    ]
+    wanted_scene = {
+        (cluster["start"], cluster["end"]) for cluster in clusters
+    }
+    scene_ok = (
+        not old_scene
+        and len(new_scene) == len(clusters)
+        and {(row["start"], row["end"]) for row in new_scene} == wanted_scene
+    )
+    sign_ok = (
+        len(sign_prior) == 1
+        and sign_prior[0]["start"] == build_start
+        and sign_prior[0]["end"] == build_end
+    )
+
+    if christ_prior or scene_prior or sign_prior:
+        if christ_ok and scene_ok and sign_ok:
+            print("already built: Christ, scene convergence, and sign mask match")
+            return
+        raise RuntimeError(
+            "Conflicting PC1 Christ/scene effects found. Run "
+            "cleanup_pc1_convergence.py with xLights closed, reopen, "
+            "then rebuild; refusing to leave Off stubs."
+        )
+
     if dry_run:
         print("dry-run: no writes")
         return
-
-    build_start = min(cluster["start"] for cluster in clusters)
-    build_end = max(cluster["end"] for cluster in clusters)
-    for row in christ_prior:
-        off_park(CHRIST_TARGET, row, build_start, build_end)
-    for model, row in scene_prior:
-        off_park(model, row, build_start, build_end)
-    for row in sign_prior:
-        off_park(SIGN_TARGET, row, build_start, build_end)
 
     # The expanded scene group contains the whole sign. An individual parent
     # Off masks that lower group effect; the Christ submodel pulses below are
@@ -351,14 +356,6 @@ def main():
             and PC1_START < row["start"] < PC1_END
         )
     actual_christ.sort(key=lambda row: (row["start"], row["layer"]))
-    expected_christ = [
-        {
-            **pulse,
-            "name": "On",
-            "settings": christ_on_settings(pulse),
-        }
-        for pulse in pulses
-    ]
     if [signature(row) for row in actual_christ] != [
         signature(row) for row in expected_christ
     ]:
@@ -370,9 +367,6 @@ def main():
         if row["name"] == "Meteors"
         and PC1_START <= row["start"] < PC1_END
     ]
-    wanted_scene = {
-        (cluster["start"], cluster["end"]) for cluster in clusters
-    }
     got_scene = {(row["start"], row["end"]) for row in actual_scene}
     if got_scene != wanted_scene:
         raise RuntimeError(
