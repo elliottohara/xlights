@@ -2,9 +2,9 @@
 
 Working notes for `Christmas/Sequences/Holy Forever 2026/Holy Forever 2026.xsq` (built July 2026). Read alongside the root `AGENTS.md`. Song: Chris Tomlin "Holy Forever" (Jenn Johnson female vocal), media = `Media/Chris Tomlin - Holy Forever (Lyric Video).mp4`, 308314 ms, 25 ms frames, ModelBlending on.
 
-**Current task:** branch `holy-climax-blue-marquee` in permanent **Slot B** (`/Users/elliott.ohara/xlights-worktrees/slot-b`, API 49914). Subtle blue `House Outline` marquee across the full Final Chorus (see below).
+**Current task:** branch `holy-pc1-house-chase` in permanent **Slot B** (`/Users/elliott.ohara/xlights-worktrees/slot-b`, API 49914). PC1 "your name" meteor chase scoped to house-adjacent props only (see below).
 
-**Prior task:** branch `fix-pc1-merge` in Slot B (API 49914). Rebuilt from the exact clean `3692089` sequence after a textual `.xsq` merge corrupted shared effect/palette references; final PC1 effects were reapplied only through xLights.
+**Prior task:** branch `holy-climax-blue-marquee` in Slot B. Subtle blue `House Outline` marquee across the full Final Chorus.
 
 ## ⚠ Baseline (hand-approved 2026-07-19)
 
@@ -184,10 +184,11 @@ Mood **Building - bass and kick enter** through Pre-Chorus 1. **Not keyed off th
 
 - **`GE Merry Christmas/Christ` blinks on the four PC1 bass pairs that land on sung "name"** (not thrones/powers/positions or "stands above them all" tails). Tree Topper still hits all eight pairs; meteor/Christ choreography is limited to "Your name is the highest/greatest", the first "name" in "stands above them all", and the final "name" before chorus.
 - `GE Merry Christmas` parent L0 carries **four** Off masks (one per meteor window) so scene implosions do not light `Merry`/`mas`; Christ submodel pulses render back over each mask.
-- `Whole Scene w Matrixes` L0: **four** `Meteors Implode` windows (40950–43875, 44275–47175, 47625–50525, 60950–63875). Mega Tree L1 matches the same four windows.
-- Render style is `Per Preview`; amber/gold meteors converge on Christ at offsets **X=-17 / Y=-7**. Count 81 / length 52 / speed 50 / brightness 80; 36 warm-up frames phase-lock to each bass lead pulse.
-- Rebuild: `Tools/pc1_christ_convergence.py` + `Tools/pc1_star_ascent.py` (both filter to Lyrics Lead `name` marks). One-shot trim of an existing eight-window build: `Tools/pc1_your_name_only.py` (direct .xsq edit; close xLights first).
-- Backup: `Backups/Holy Forever 2026.xsq.bak-before-pc1-your-name-only`.
+- **2026-07-20 experiment (branch `holy-pc1-house-chase`, LIVE in Slot B):** replaced Whole Scene w Matrixes + Mega Tree meteors with **house-adjacent-only** Meteors Implode on **`Colum Shrubs`, `House Outline`, `Roof`, `Verts`, `Windows`, `Colums`, `Icicles GRP`** L0 (four windows, same "name" bass-pair timing). Christ blinks + sign Off masks unchanged. Rebuild: `Tools/pc1_house_name_chase.py` after `cleanup_pc1_convergence.py`. Supersedes whole-scene/tree meteor sources from `pc1_christ_convergence.py` + `pc1_star_ascent.py` for this experiment.
+- ~~`Whole Scene w Matrixes` L0: **four** `Meteors Implode` windows~~ (removed in house-chase experiment). ~~Mega Tree L1 matches the same four windows~~ (removed).
+- Render style was `Per Preview` on whole scene; house experiment uses `Per Preview` on `House Outline` and `Per Model Per Preview` on the other six groups. Amber/gold palette, brightness 78.
+- Rebuild (legacy whole-scene): `Tools/pc1_christ_convergence.py` + `Tools/pc1_star_ascent.py` (both filter to Lyrics Lead `name` marks). One-shot trim of an existing eight-window build: `Tools/pc1_your_name_only.py` (direct .xsq edit; close xLights first).
+- Backup: `Backups/Holy Forever 2026.xsq.bak-before-pc1-clean-reapply` (latest cleanup before house-chase rebuild).
 
 ## Live: "Holy" text on entry window only
 
@@ -329,8 +330,9 @@ Exact target: **`PiXeL Paradise Xmas Tree Choir`** (not `Toni - Flat Tree` and n
 - `intimate_arch_chords.py` — wipe/rebuild `Arches - All` piano SingleStrand from live `Piano Chords` `P` marks.
 - `intimate_mini_tree_piano.py` — wipe/rebuild mini-tree piano-note fills (`--dry-run` / `--clear-only`).
 - `intimate_oak_cymbals.py` — wipe/rebuild oak V1+PC1 cymbal Twinkles (`--dry-run` / `--clear-only`).
-- `pc1_star_ascent.py` — rebuild the four "name"-only Mega Tree meteor windows from live Tree Topper bass-pair clusters.
-- `pc1_christ_convergence.py` — rebuild Christ blinks + four scene meteor implosions (name-word filter).
+- `pc1_star_ascent.py` — rebuild the four "name"-only Mega Tree meteor windows from live Tree Topper bass-pair clusters. **Superseded for now by house-chase experiment** (Mega Tree meteors removed).
+- `pc1_house_name_chase.py` — **CURRENT PC1 chase experiment:** Christ/sign unchanged; Meteors Implode on house-adjacent groups only (`Colum Shrubs`, `House Outline`, `Roof`, `Verts`, `Windows`, `Colums`, `Icicles GRP`). Run after `cleanup_pc1_convergence.py`.
+- `pc1_christ_convergence.py` — legacy whole-scene Implode rebuild (four "name" windows on `Whole Scene w Matrixes`).
 - `pc1_your_name_only.py` — direct .xsq trim from eight windows → four (close xLights first).
 - `cleanup_pc1_convergence.py` — direct-delete reset for superseded PC1 effects/stubs before a clean rebuild; run `--dry-run`, close xLights, then run once.
 - `climax_house_flash.py` — CURRENT owner of the C3 climax drum riff: 8 short, dramatic white strobe flashes on `House Outline` L0. `--dry-run` / `--clear-only`. (Superseded/deleted: `climax_drum_riff.py` [Roof-line Marquee], `climax_snowflake_shocks.py` [roof-snowflake Shockwaves] — both tried and rejected first.)

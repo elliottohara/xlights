@@ -20,6 +20,16 @@ BACKUP = SCRIPT_DIR.parent / "Backups" / "Holy Forever 2026.xsq.bak-before-pc1-c
 PC1_START = 40950
 PC1_END = 67570
 
+HOUSE_CHASE_TARGETS = (
+    "Colum Shrubs",
+    "House Outline",
+    "Roof",
+    "Verts",
+    "Windows",
+    "Colums",
+    "Icicles GRP",
+)
+
 ELEMENT_RE = re.compile(r'<Element type="(\w+)" name="([^"]*)"')
 SUBMODEL_RE = re.compile(
     r'<SubModelEffectLayer\b[^>]*\bname="([^"]*)"'
@@ -61,6 +71,9 @@ def should_delete(element, submodel, name, start, end):
                 name in {"On", "Shockwave", "Meteors"}
                 and overlaps_pc1(start, end)
             )
+
+    if element in HOUSE_CHASE_TARGETS:
+        return name == "Meteors" and overlaps_pc1(start, end)
 
     return False
 
