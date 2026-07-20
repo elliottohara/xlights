@@ -79,9 +79,11 @@ If a user wants a YouTube video for the show, **do not invent a one-off download
 - Requires `yt-dlp` and `ffmpeg` (`brew install yt-dlp ffmpeg`). Ask before installing if they are missing.
 - Prefer song `Media/` for sequence media; use `Audio/` only when the user wants audio-only / audio-folder placement.
 
-## xLights automation API — build sequences through it, don't write .xsq by hand
+## xLights automation API — prefer the API for authoring; edit `.xsq` when the API can't
 
-**Sequences are authored via the API** (survives xLights file-format changes). Full command reference: `documentation/xlDo Commands.txt` in the xLights repo. Use `Tools/xlights_api.py` (thin Python client).
+**Add / build effects via the API** (survives xLights file-format changes). Full command reference: `documentation/xlDo Commands.txt` in the xLights repo. Use `Tools/xlights_api.py` (thin Python client).
+
+**Deleting or surgically removing effects is fine as a direct `.xsq` edit** — the API has no delete command. Prefer that over inventing workarounds. Pattern: save session → `cp` backup → line-oriented edit (one `<Effect .../>` per line; see `Christmas/Sequences/Holy Forever 2026/Tools/clear_intro.py` and siblings) → close/reopen the sequence in xLights. If the deletion scope is unclear or risky, **stop, tell the user the problem, and ask for guidance** — do not Off-park, stub, or otherwise hack around it.
 
 - Launch attached to the GUI session (a headless shell launch will hang):
   `open -a xLights --args -a -s "/Users/elliott.ohara/xlights/Christmas"`
@@ -103,10 +105,11 @@ If a user wants a YouTube video for the show, **do not invent a one-off download
 - **addEffect fails (503) for elements not in the sequence's master view**, and there is no API to add display elements. The default master view here excludes some groups (notably `EFL Wings`, `Large Spiral Trees`, `Spinners`, individual `Rose Bush N`). Workaround: sequence their member models instead (see `EXPAND` in `Tools/feliz_navidad_2026.py`).
 - **Submodels ARE addressable** as `Model/Submodel` (e.g. `Singing Bulb - Center/Base`) for `addEffect`/`getEffectIDs` — no wrapper group needed.
 - **ALWAYS check a model's submodels FIRST** (in `xlights_rgbeffects.xml`) before resorting to per-pixel/custom-grid analysis to light part of a prop. If no submodel matches exactly, combine the nearest submodel with `B_CUSTOM_SubBuffer` (works because ranges-submodel node order is usually geographic — verify x-monotonicity). `GE Merry Christmas` now has a dedicated `Christ` ranges submodel (241 nodes through custom-grid x=262; `mas` starts at x=264), so use element `GE Merry Christmas/Christ` directly with no buffer.
-- **NEVER edit effects with `setEffectSettings` — it corrupts them.** Verified in source (`SettingsMap::ParseJson`): it parses the settings param as `key:value` with values **whitespace-trimmed** (destroys the `Teddy ` face def → silently falls back to another def), and JSON-object params are **silently dropped** (dict settings/palette = no-op that still reports `worked:true`). Round-tripping `getEffectSettings` output back in re-defaults the effect. The only safe effect edit: **wipe the element** with `cloneModelEffects` (`source` = any effect-free element like `House`, `eraseModel:"true"`) **and re-add** via `addEffect`, whose `key=value` parser preserves values verbatim.
-- **No API command deletes individual effects or timing tracks.** Timing tracks: GUI only (plan track names before importing). Effects, two workarounds:
-  - Layer is entirely yours: `cloneModelEffects` wipe (true deletion). Note it only touches target layers up to the SOURCE's layer count — a 1-layer empty source (e.g. `House`) wipes layer 0 only, leaving deeper layers untouched.
-  - Effect sits on a layer shared with originals (or on a deep layer): **"Off-park" it** — `setEffectSettings` with `name:"Off"` + shrink to a 25 ms slot inside a known-dark window (t<180 ms on Holy Forever). Off ignores settings, so the value-mangling doesn't matter; result is inert and invisible, and the stub row can be hand-deleted in the GUI later.
+- **NEVER edit effects with `setEffectSettings` — it corrupts them.** Verified in source (`SettingsMap::ParseJson`): it parses the settings param as `key:value` with values **whitespace-trimmed** (destroys the `Teddy ` face def → silently falls back to another def), and JSON-object params are **silently dropped** (dict settings/palette = no-op that still reports `worked:true`). Round-tripping `getEffectSettings` output back in re-defaults the effect. To change an effect via the API: **wipe the element** with `cloneModelEffects` (`source` = any effect-free element like `House`, `eraseModel:"true"`) **and re-add** via `addEffect`, whose `key=value` parser preserves values verbatim. To remove effects: edit the `.xsq` directly (below) — do not Off-park or use `setEffectSettings` as a fake delete.
+- **No API command deletes individual effects or timing tracks.** Timing tracks: GUI only (plan track names before importing). For effects:
+  - **OK / preferred:** edit the `.xsq` directly (backup first; see `clear_intro.py` / `clear_*.py` in Holy Forever Tools). Selective, time-scoped, and deep-layer deletes are all legitimate this way.
+  - **OK when the whole layer is yours:** `cloneModelEffects` wipe from an empty source. Note it only touches target layers up to the SOURCE's layer count — a 1-layer empty source (e.g. `House`) wipes layer 0 only.
+  - **Not OK:** Off-parking, shrinking effects into dark windows, renaming to `Off`, or other API hacks that leave garbage in the sequence. If you are unsure what to delete or how far to go, **tell the user the problem and ask for guidance.**
 - **`importXLightsSequence` adds timing tracks by name; import each track ONCE.** Re-importing a template containing a track that already exists in the sequence risks duplicated marks — rebuild the template, but don't re-import existing tracks; add-only.
 - `getEffectSettings` also reads **timing tracks** (marks come back as effects; `name` = the mark label) — useful for verifying imported timing.
 - **Unknown commands can hang the HTTP request forever** (e.g. there is no `getTimings`). Always call with a timeout (`curl -m`).
@@ -127,9 +130,11 @@ When no lyric timing exists for a song, generate it (reference implementation: `
 4. Write a timing-only template .xsq — each track is 3 layers: **phrases (contiguous, with empty-label gap fillers), words, phonemes** — then `importXLightsSequence` (`mapmethod:"auto"`, `importmedia:"false"`).
 5. **Prefer per-voice tracks** (`Lyrics Lead` / `Lyrics Female` / `Lyrics Choir`) over one shared track: each singer's Faces effect can then only mouth its own lines, and a full-lyric track (`Lyrics 1`) is still handy for duet/backup blocks.
 
-## Sequence file format notes (.xsq — read-only reference)
+## Sequence file format notes (.xsq)
 
-Reading existing sequences for analysis is fine (XML): `ColorPalettes`/`EffectDB` are deduped strings referenced by index, `ElementEffects` holds per-element `EffectLayer`s. Settings prefixes: `B_` = buffer, `C_` = color, `E_` = effect params, `T_` = transition/layer. Effects on the same element+layer must not overlap.
+Reading sequences for analysis is fine (XML): `ColorPalettes`/`EffectDB` are deduped strings referenced by index, `ElementEffects` holds per-element `EffectLayer`s. Settings prefixes: `B_` = buffer, `C_` = color, `E_` = effect params, `T_` = transition/layer. Effects on the same element+layer must not overlap.
+
+**Direct deletes are allowed** when the API can't do the job: remove `<Effect .../>` lines under `ElementEffects` (timing elements stay put). Always backup first; prefer a small script with `--dry-run` over ad-hoc edits. Do not invent new EffectDB/palette indices by hand when authoring — use `addEffect` for that.
 
 ## Tools
 
