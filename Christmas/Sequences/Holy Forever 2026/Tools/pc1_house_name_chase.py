@@ -1,17 +1,20 @@
-"""PC1 "your name" chase on house-adjacent props only.
+"""PC1 "your name" meteor chase into Christ (whole house + matrices).
 
-Replaces Whole Scene w Matrixes + Mega Tree meteor windows with matching
-Meteors Implode windows on props mounted on or flush against the house:
+Restores the proven `Whole Scene w Matrixes` Per-Preview `Meteors Implode`
+aimed at Christ (X/Y offsets). The earlier house-group split only painted
+outlines / icicles — `Windows` is outline submodels, not the matrix panels —
+and Per Model Per Preview made each prop implode into itself instead of
+toward Christ.
 
-* Colum Shrubs
-* House Outline, Roof, Verts, Windows, Colums, Icicles GRP
+Christ blinks + parent Off masks stay on the four sung "name" bass pairs.
 
-Christ blinks + parent Off masks are unchanged (same four sung "name" bass pairs).
-
-Close the sequence, run cleanup_pc1_convergence.py, reopen, then:
+Close the sequence, run cleanup_pc1_convergence.py (clears the old house-group
+meteors), reopen, then:
 
     XLIGHTS_API_PORT=49914 python3 \
       "Christmas/Sequences/Holy Forever 2026/Tools/pc1_house_name_chase.py"
+
+Then re-apply star-only descents: `Tools/pc1_star_descent.py`.
 """
 from pathlib import Path
 import sys
@@ -35,7 +38,8 @@ OLD_SCENE_TARGET = "Whole Scene"
 PC1_START = 40950
 PC1_END = 67570
 OUTER_TRAVEL_MS = 1375
-CHASE_LAYER = 0
+SCENE_LAYER = 0
+OLD_SCENE_LAYER = 1
 
 NAME_WORDS = (
     (42250, 43175),
@@ -44,8 +48,8 @@ NAME_WORDS = (
     (62175, 63400),
 )
 
-# House-mounted / porch-flush groups only — no yard, tree, or spinner props.
-HOUSE_CHASE_TARGETS = (
+# Leftover targets from the house-group experiment — must be empty in PC1.
+LEGACY_HOUSE_TARGETS = (
     "Colum Shrubs",
     "House Outline",
     "Roof",
@@ -55,59 +59,39 @@ HOUSE_CHASE_TARGETS = (
     "Icicles GRP",
 )
 
-METEORS_PALETTE = (
-    "C_BUTTON_Palette1=#8A4512,"
-    "C_BUTTON_Palette2=#D88924,"
-    "C_BUTTON_Palette3=#FFC857,"
-    "C_CHECKBOX_Palette1=1,"
-    "C_CHECKBOX_Palette2=1,"
-    "C_CHECKBOX_Palette3=1,"
-    "C_SLIDER_Brightness=78"
-)
+# Whole Scene preview bounds are x=-811..470 and y=203..821. The Christ
+# submodel's center is approximately (-279, 491), which maps to x=41.5% and
+# y=46.6%. Meteors offsets are twice the delta from buffer center.
+CHRIST_X_OFFSET = -17
+CHRIST_Y_OFFSET = -7
 
-# Whole-house silhouette: one preview buffer, slightly denser than shrubs.
-OUTLINE_METEORS_SETTINGS = (
+SCENE_METEORS_SETTINGS = (
     "B_CHOICE_BufferStyle=Per Preview,"
     "B_SLIDER_Blur=2,"
     "E_CHECKBOX_FadeWithDistance=0,"
     "E_CHECKBOX_Meteors_UseMusic=0,"
     "E_CHOICE_Meteors_Effect=Implode,"
     "E_CHOICE_Meteors_Type=Palette,"
-    "E_SLIDER_Meteors_Count=56,"
-    "E_SLIDER_Meteors_Length=44,"
-    "E_SLIDER_Meteors_Speed=44,"
+    "E_SLIDER_Meteors_Count=81,"
+    "E_SLIDER_Meteors_Length=52,"
+    "E_SLIDER_Meteors_Speed=50,"
     "E_SLIDER_Meteors_Swirl_Intensity=0,"
-    "E_SLIDER_Meteors_WamupFrames=30,"
+    "E_SLIDER_Meteors_WamupFrames=36,"
+    f"E_TEXTCTRL_Meteors_XOffset={CHRIST_X_OFFSET},"
+    f"E_TEXTCTRL_Meteors_YOffset={CHRIST_Y_OFFSET},"
     "T_CHOICE_LayerMethod=Normal,"
     "T_TEXTCTRL_Fadein=.08,"
     "T_TEXTCTRL_Fadeout=.35"
 )
-
-# Smaller porch / trim groups: per-member implode reads cleaner than one blob.
-GROUP_METEORS_SETTINGS = (
-    "B_CHOICE_BufferStyle=Per Model Per Preview,"
-    "B_SLIDER_Blur=2,"
-    "E_CHECKBOX_FadeWithDistance=0,"
-    "E_CHECKBOX_Meteors_UseMusic=0,"
-    "E_CHOICE_Meteors_Effect=Implode,"
-    "E_CHOICE_Meteors_Type=Palette,"
-    "E_SLIDER_Meteors_Count=22,"
-    "E_SLIDER_Meteors_Length=30,"
-    "E_SLIDER_Meteors_Speed=36,"
-    "E_SLIDER_Meteors_Swirl_Intensity=0,"
-    "E_SLIDER_Meteors_WamupFrames=22,"
-    "T_CHOICE_LayerMethod=Normal,"
-    "T_TEXTCTRL_Fadein=.08,"
-    "T_TEXTCTRL_Fadeout=.35"
+SCENE_METEORS_PALETTE = (
+    "C_BUTTON_Palette1=#8A4512,"
+    "C_BUTTON_Palette2=#D88924,"
+    "C_BUTTON_Palette3=#FFC857,"
+    "C_CHECKBOX_Palette1=1,"
+    "C_CHECKBOX_Palette2=1,"
+    "C_CHECKBOX_Palette3=1,"
+    "C_SLIDER_Brightness=80"
 )
-
-TARGET_SETTINGS = {
-    "House Outline": OUTLINE_METEORS_SETTINGS,
-}
-
-
-def meteors_settings(target):
-    return TARGET_SETTINGS.get(target, GROUP_METEORS_SETTINGS)
 
 
 def effect_rows(model, layer):
@@ -264,8 +248,8 @@ def prior_sign_masks():
 def prior_scene_meteors():
     prior = []
     for model, layer in (
-        (OLD_SCENE_TARGET, 1),
-        (SCENE_TARGET, 0),
+        (OLD_SCENE_TARGET, OLD_SCENE_LAYER),
+        (SCENE_TARGET, SCENE_LAYER),
     ):
         for row in effect_rows(model, layer):
             if row["name"] == "Off":
@@ -280,7 +264,23 @@ def prior_scene_meteors():
     return prior
 
 
-def prior_tree_meteors():
+def prior_legacy_house_meteors():
+    prior = {}
+    for target in LEGACY_HOUSE_TARGETS:
+        rows = [
+            row
+            for row in effect_rows(target, 0)
+            if row["name"] == "Meteors"
+            and row["end"] > PC1_START
+            and row["start"] < PC1_END
+        ]
+        if rows:
+            prior[target] = rows
+    return prior
+
+
+def prior_tree_ascent_meteors():
+    """Legacy Up/Implode on Mega Tree L1 — ignore star-only Down descents."""
     prior = []
     for row in effect_rows(MEGA_TREE, 1):
         if row["name"] == "Off":
@@ -289,22 +289,10 @@ def prior_tree_meteors():
             continue
         if row["name"] != "Meteors":
             raise RuntimeError(f"Unexpected Mega Tree L1 effect: {row}")
+        direction = row["settings"].get("E_CHOICE_Meteors_Effect", "")
+        if direction == "Down":
+            continue
         prior.append(row)
-    return prior
-
-
-def prior_house_meteors():
-    prior = {}
-    for target in HOUSE_CHASE_TARGETS:
-        rows = [
-            row
-            for row in effect_rows(target, CHASE_LAYER)
-            if row["name"] == "Meteors"
-            and row["end"] > PC1_START
-            and row["start"] < PC1_END
-        ]
-        if rows:
-            prior[target] = rows
     return prior
 
 
@@ -338,27 +326,27 @@ def wanted_windows(clusters):
     return {(cluster["start"], cluster["end"]) for cluster in clusters}
 
 
-def house_ok(house_prior, clusters):
+def scene_ok(scene_prior, clusters):
+    new_scene = [row for model, row in scene_prior if model == SCENE_TARGET]
+    old_scene = [row for model, row in scene_prior if model == OLD_SCENE_TARGET]
     wanted = wanted_windows(clusters)
-    if set(house_prior) != set(HOUSE_CHASE_TARGETS):
+    if old_scene:
         return False
-    for target, rows in house_prior.items():
-        if {(row["start"], row["end"]) for row in rows} != wanted:
+    if len(new_scene) != len(clusters):
+        return False
+    if {(row["start"], row["end"]) for row in new_scene} != wanted:
+        return False
+    for row in new_scene:
+        settings = row["settings"]
+        if settings.get("E_CHOICE_Meteors_Effect") != "Implode":
+            return False
+        if settings.get("B_CHOICE_BufferStyle") != "Per Preview":
+            return False
+        if settings.get("E_TEXTCTRL_Meteors_XOffset") != str(CHRIST_X_OFFSET):
+            return False
+        if settings.get("E_TEXTCTRL_Meteors_YOffset") != str(CHRIST_Y_OFFSET):
             return False
     return True
-
-
-def probe_targets():
-    missing = []
-    for target in HOUSE_CHASE_TARGETS:
-        try:
-            x.xl("getEffectIDs", model=target)
-        except RuntimeError:
-            missing.append(target)
-    if missing:
-        raise RuntimeError(
-            f"House chase targets not in master view: {', '.join(missing)}"
-        )
 
 
 def main():
@@ -370,24 +358,23 @@ def main():
     if int(info.get("len", 0)) != 308314:
         raise RuntimeError(f"Unexpected sequence length: {info}")
 
-    probe_targets()
-
     pulses = star_pulses()
     clusters = pulse_clusters(pulses)
     christ_prior = prior_christ_effects()
     sign_prior = prior_sign_masks()
     scene_prior = prior_scene_meteors()
-    tree_prior = prior_tree_meteors()
-    house_prior = prior_house_meteors()
+    legacy_house = prior_legacy_house_meteors()
+    tree_ascent = prior_tree_ascent_meteors()
     expected = expected_christ(pulses)
     windows = wanted_windows(clusters)
 
-    print(f"House chase targets ({len(HOUSE_CHASE_TARGETS)}):")
-    for target in HOUSE_CHASE_TARGETS:
-        print(f"  {target} L{CHASE_LAYER}")
+    print(
+        f"{SCENE_TARGET} L{SCENE_LAYER}: Implode toward Christ "
+        f"offset ({CHRIST_X_OFFSET}, {CHRIST_Y_OFFSET})"
+    )
     for index, cluster in enumerate(clusters, start=1):
         print(
-            f"  window #{index}: Implode {cluster['start']}-{cluster['end']} "
+            f"  window #{index}: {cluster['start']}-{cluster['end']} "
             f"(first star {cluster['first_star']})"
         )
 
@@ -404,22 +391,21 @@ def main():
             )
         )
     )
-    no_legacy = not scene_prior and not tree_prior
-    house_built = house_ok(house_prior, clusters)
+    no_legacy = not legacy_house and not tree_ascent
+    scene_built = scene_ok(scene_prior, clusters)
 
-    if (
-        christ_ok
-        and sign_ok
-        and no_legacy
-        and house_built
-    ):
-        print("already built: house chase + Christ/sign match; no legacy meteors")
+    if christ_ok and sign_ok and no_legacy and scene_built:
+        print(
+            "already built: Whole Scene w Matrixes → Christ + sign; "
+            "no legacy house-group meteors"
+        )
         return
 
-    if christ_prior or sign_prior or scene_prior or tree_prior or house_prior:
+    if christ_prior or sign_prior or scene_prior or legacy_house or tree_ascent:
         raise RuntimeError(
             "Conflicting or legacy PC1 meteor effects found. Close xLights, run "
-            "cleanup_pc1_convergence.py, reopen, then rebuild with this script."
+            "cleanup_pc1_convergence.py, reopen, then rebuild with this script "
+            "(then pc1_star_descent.py)."
         )
 
     if dry_run:
@@ -448,18 +434,16 @@ def main():
             pulse["end"],
         )
 
-    for target in HOUSE_CHASE_TARGETS:
-        settings = meteors_settings(target)
-        for cluster in clusters:
-            x.add_effect(
-                target,
-                CHASE_LAYER,
-                "Meteors",
-                settings,
-                METEORS_PALETTE,
-                cluster["start"],
-                cluster["end"],
-            )
+    for cluster in clusters:
+        x.add_effect(
+            SCENE_TARGET,
+            SCENE_LAYER,
+            "Meteors",
+            SCENE_METEORS_SETTINGS,
+            SCENE_METEORS_PALETTE,
+            cluster["start"],
+            cluster["end"],
+        )
 
     actual_christ = []
     ids = x.xl("getEffectIDs", model=CHRIST_TARGET)["effects"]
@@ -476,12 +460,11 @@ def main():
     ]:
         raise RuntimeError("Christ pulses do not exactly match Tree Topper")
 
-    rebuilt_house = prior_house_meteors()
-    if not house_ok(rebuilt_house, clusters):
-        raise RuntimeError(f"House meteor windows mismatch: {rebuilt_house}")
+    if not scene_ok(prior_scene_meteors(), clusters):
+        raise RuntimeError("Whole Scene w Matrixes windows mismatch after add")
 
-    if prior_scene_meteors() or prior_tree_meteors():
-        raise RuntimeError("Legacy Whole Scene or Mega Tree meteors still present")
+    if prior_legacy_house_meteors() or prior_tree_ascent_meteors():
+        raise RuntimeError("Legacy house-group or Mega Tree ascent still present")
 
     live_sign_masks = [
         row
@@ -499,6 +482,7 @@ def main():
 
     x.save(str(OUT))
     print(f"saved {OUT}")
+    print("next: run pc1_star_descent.py to restore star-only Mega Tree Downs")
 
 
 if __name__ == "__main__":
