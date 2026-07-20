@@ -14,7 +14,7 @@ Saved from the live xLights session after hand edits. Live model effects now:
 
 - **Intro + intimate V1 (0–41850):** Whole Scene snow + Mega Tree glowing cross + dim Singing Bulb Faces; from 0:15 Snowman + `Arches - All` piano-chord SingleStrand + mini-tree note fills + oak cymbal Twinkles.
 - **Windows:** `Matrix - Entry` = "Holy" Text only (L0). `Matrix - Downstairs Window`, `Matrix-Garage Window`, and `Matrix - Lantana` = **empty** (Lantana's True Piano MIDI effect removed 2026-07-19 — user reported it wasn't working; do not restore). `Matrixes` group = empty.
-- **House / icicles:** `House Outline` and `Icicles GRP` = **empty** (all accent/twinkle/hold effects hand-deleted). **`Roof` = final On hold only** (301500–308275). No Marquees anywhere.
+- **House / icicles:** `Icicles GRP` = **empty**. `House Outline` = empty except the **8 C3 climax drum-riff strobe flashes** (see below; L0 only, layers 1–3 still empty). `Roof` L0 = final On hold only (301500–308275).
 - **Also live:** Tree Topper bass accents; eight Mega Tree meteor windows; eight `Whole Scene w Matrixes` implosions phase-locked into `Christ`; full-word Christ bass blinks with the rest of the sign masked off; "angels cry" EFL Wing stacks; and the verified Teddy/Bulb/Penguin/PiXeL Paradise choir described below.
 - **Timing tracks (13):** Lyrics 1, Lyrics Lead/Female/Choir + Intro Choir, Song Sections, Mood, Beat Count, Kick, Snare, Cymbals, Piano Chords, Piano Notes.
 
@@ -294,6 +294,18 @@ Exact target: **`PiXeL Paradise Xmas Tree Choir`** (not `Toni - Flat Tree` and n
 - Rendered/model-reviewed at C1, C2, C3, and the final fade. It is open in Slot A xLights for user review.
 - Rebuild/clear: `Tools/pixel_paradise_tree_choir.py` (`--dry-run` / `--clear-only`).
 
+## Added 2026-07-20: C3 climax drum-riff — dramatic `House Outline` strobe flash
+
+**User request (3 iterations):** (1) "show that hard drum riff, like 8 hits... a single line effect just on the roof line where it changes directions with each hit" → Roof-line Marquee, disliked; (2) "Let's use shockwaves... on individual snowflakes on the roof instead" → 8 Shockwave pops on individual roof-snowflake props, disliked ("too subtle"); (3) **"Let's use house outline instead. Just flash it, fairly dramatically."** Live version is (3).
+
+- **Timing correction after user review:** the first build guessed 8 eighth notes from the beat grid (**233925–236850**) and did not match the audible riff. Do not restore those times. Targeted analysis of `holy_44k.wav` around 232.6–235.1 s (1024-point STFT, 128-sample hop, combined low/tom/attack spectral flux) found the actual fill as **8 consecutive ~16th-note transients straddling the 233925 Climax downbeat**: raw peaks **233287.9, 233494.0, 233697.1, 233909.0, 234112.2, 234321.2, 234536.0, 234742.0 ms**; live 25 ms-snapped starts = **233300, 233500, 233700, 233900, 234100, 234325, 234525, 234750**.
+- **Effect:** one full-brightness white **On** flash per measured hit on the whole **`House Outline`** group L0 (26-model group = walls + roof + icicle eaves — the entire house silhouette). Each flash keeps the user-approved shape at **175 ms** (7 frames), `T_TEXTCTRL_Fadein=0` (instant snap on) / `Fadeout=.15` (quick decay); the corrected fast spacing leaves 25–50 ms dark gaps between hits.
+- Owns `House Outline` L0 only inside the 8 short hit windows; layers 1–3 remain empty (untouched, same as the pre-existing baseline).
+- Rebuild/idempotent tool: `Tools/climax_house_flash.py` (`--dry-run` / `--clear-only`). Superseded/removed: `climax_drum_riff.py` (Roof-line Marquee) and `climax_snowflake_shocks.py` (roof-snowflake Shockwaves) — both deleted, do not recreate.
+- Built on branch `climax-drum-riff` in **Slot B** (Slot A was in use for other work when this task restarted, so it moved here rather than colliding with it — the Slot A copy of the earlier attempts was fully reverted).
+- Backup: `Holy Forever 2026.xsq.bak-before-climax-drum-riff` (taken before the very first Roof-Marquee attempt; still valid as a pre-this-feature snapshot).
+- Preview: `RenderCompare/holy_forever_climax_house_flash.mp4` (7 s clip centered on the riff).
+
 ## Tools inventory (`Christmas/Sequences/Holy Forever 2026/Tools/`)
 
 - `transcribe.py` — faster-whisper word timestamps (needs a venv with `faster-whisper`; use `vad_filter=False` — VAD ate this vocal).
@@ -317,6 +329,7 @@ Exact target: **`PiXeL Paradise Xmas Tree Choir`** (not `Toni - Flat Tree` and n
 - `pc1_star_ascent.py` — rebuild the eight meteor-only Mega Tree windows from live Tree Topper bass-pair clusters.
 - `pc1_christ_convergence.py` — rebuild the 16 Christ blinks plus eight `Whole Scene w Matrixes` meteor implosions aimed at Christ.
 - `cleanup_pc1_convergence.py` — direct-delete reset for superseded PC1 effects/stubs before a clean rebuild; run `--dry-run`, close xLights, then run once.
+- `climax_house_flash.py` — CURRENT owner of the C3 climax drum riff: 8 short, dramatic white strobe flashes on `House Outline` L0. `--dry-run` / `--clear-only`. (Superseded/deleted: `climax_drum_riff.py` [Roof-line Marquee], `climax_snowflake_shocks.py` [roof-snowflake Shockwaves] — both tried and rejected first.)
 - `lantana_piano.py` — wipe/rebuild full-song True Piano on `Matrix - Lantana` (`--dry-run` / `--clear-only`). **Removed 2026-07-19 (user: not working) — refuse to re-run its build mode; `--clear-only` is safe/idempotent.**
 - `migrate_christ_submodel.py` — historical one-shot Christ-submodel migration; **do not run** (its four lyric glows were superseded by bass blinks).
 - `migrate_faces.py`, `place_faces.py`, `lead_backup_c2.py` — historical; superseded by `fix_faces.py`.
@@ -324,4 +337,4 @@ Exact target: **`PiXeL Paradise Xmas Tree Choir`** (not `Toni - Flat Tree` and n
 
 ## Review checklist (baseline — do not “restore” removed bits)
 
-0:00–0:42 Whole Scene snow + Mega Tree cross + dim bulbs; Penguins + PiXeL Paradise dark · 0:15 Snowman + arch piano chords + mini-tree fills + oak cymbal Twinkles · Lantana empty (Piano MIDI effect removed 2026-07-19, wasn't working) · Entry "Holy" Text only (no downstairs/garage/window snow) · House Outline + Icicles empty; Roof final-hold only; Tree Topper accents kept · C1/C2/PC2b→C3 Bulbs + both white-exterior, belly-accented Penguins + all seven PiXeL Paradise faces sing together · 4:47 Snowman outro solo.
+0:00–0:42 Whole Scene snow + Mega Tree cross + dim bulbs; Penguins + PiXeL Paradise dark · 0:15 Snowman + arch piano chords + mini-tree fills + oak cymbal Twinkles · Lantana empty (Piano MIDI effect removed 2026-07-19, wasn't working) · Entry "Holy" Text only (no downstairs/garage/window snow) · Icicles empty; House Outline dark except 8 dramatic white strobe flashes at 3:53 (C3 climax drum riff); Roof = final hold only; Tree Topper accents kept · C1/C2/PC2b→C3 Bulbs + both white-exterior, belly-accented Penguins + all seven PiXeL Paradise faces sing together · 4:47 Snowman outro solo.
