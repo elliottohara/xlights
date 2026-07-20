@@ -159,15 +159,27 @@ Mood **Building - bass and kick enter** through Pre-Chorus 1. **Not keyed off th
 - Owns L1–L3 only inside 42000–67570. Detect + rebuild: `Tools/.venv/bin/python …/pc1_double_kick_star.py` (`--dry-run` / `--clear-only` / `--audition` → `Tools/pc1_bass_thump_audition.mp3`).
 - Backup: `Holy Forever 2026.xsq.bak-before-pc1-double-kick-star`.
 
-## Added: "Christ" glow on each PC1 "Your name" (user: "when it says Your name… light the Christ part")
+## Added 2026-07-19: PC1 Mega Tree ascents on all eight bass-drum star pairs
 
-Four On effects, element **`GE Merry Christmas/Christ`** L0, warm gold `#FFC878`, with **no custom buffer**. `Christ` is now a dedicated horizontal-layout ranges submodel: 241 unique nodes, exactly the left prefix of the existing `Christmas` ordering through custom-grid x=262; the remaining `mas` starts at x=264. The same submodel row is present in both the live local show layout and canonical `Christmas/xlights_rgbeffects.xml`.
-Each effect fades in across the sung "Your name" (start of "Your" → end of "name" from `Lyrics Lead` words layer) and fades out 1.5 s after:
+Built on branch `pc1-star-ascent` in worktree `/Users/elliott.ohara/xlights-worktrees/pc1-star-ascent`.
 
-- 40950–44675 (fadein 2.23) · 45300–48125 (1.32) · 48250–51750 (2.00) · 61450–64900 (1.95)
-- The 4th "Your name" (48950–50250, "…stands above them all" #1) shares block 3's window; the one at 61450 is the final "Your name stands above them all".
+- Every one of the **eight** PC1 Tree Topper bass-drum pairs gets one sparse amber/gold **`Meteors Up`** effect across the whole Mega Tree. It starts **1375 ms** before the pair's first star hit and ends with the overlapping pair.
+- Final user direction was explicit: keep only the "meteor-looking" motion that had been visible after the solid sweep. The solid Morph, white/ivory core, and added Mega Tree Shockwaves are all removed; only Tree Topper's original bass-drum Shockwaves remain.
+- First-star anchors: **42325 / 45650 / 49000 / 52325 / 55650 / 58975 / 62325 / 65650**.
+- Rebuild/idempotent tool: `Tools/pc1_star_ascent.py`. It discovers overlapping Tree Topper Shockwave clusters directly, refuses unless there are exactly eight PC1 pairs, and no longer depends on lyric timing.
+- Owns Mega Tree L1 inside the eight short windows. Superseded L0–L4 builds are safely Off-parked; the intro cross is explicitly preserved.
+- Rendered and checked across all eight windows; the full review clip spans 40.0–68.5 s at worktree `RenderCompare/holy_forever_pc1_star_ascent_clip.mp4`.
 
-Migrated target-only with `Christmas/Sequences/Holy Forever 2026/Tools/migrate_christ_submodel.py` (replacement effects verified before the old buffered row was wiped). Render/export verified in `RenderCompare/holy_forever_christ_submodel.mp4`; the 43.0 s frame lights only the dedicated gold `Christ` segment.
+## Added 2026-07-19: Christ bass blinks + whole-scene meteor convergence
+
+- The four long lyric-timed "Your name" glows were removed. **`GE Merry Christmas/Christ` now blinks on all 16 PC1 bass pulses** with full-submodel On effects using the Tree Topper's exact layers, start/end times, transition fades, and palettes. This lights the whole word while matching the star's temporal envelope.
+- `GE Merry Christmas` parent L0 has one Off mask from **40950–67175**. It blocks the lower `Whole Scene w Matrixes` meteor effect from lighting `Merry` or `mas`; the dedicated Christ submodel pulses render back over that mask.
+- `Whole Scene w Matrixes` L0 carries eight `Meteors Implode` windows matching the Mega Tree bass-pair spans, replacing the ineffective `Whole Scene` L1 pass (now Off-parked). This expanded group includes the matrices, flakes, and house-face props; the Mega Tree's individual meteor effect remains visually dominant over the lower group effect.
+- Render style is `Per Preview`; amber/gold meteors converge on the Christ submodel at offsets **X=-17 / Y=-7**, derived from the shared scene bounds and Christ's preview center. Count 81 / length 52 / **speed 50** / brightness 80.
+- The radial simulation uses **36 warm-up frames**. Combined with the fixed 1375 ms pre-roll and maximum speed, this phase-locks the first meteor front to the Christ/Tree Topper lead pulse; speed 18 could not cross the expanded preview before the hit.
+- Rebuild/idempotent tool: `Tools/pc1_christ_convergence.py`. It discovers the live Tree Topper pulses, requires exactly 16 effects grouped as eight pairs, rebuilds Christ, and verifies the scene windows.
+- `Christ` remains the dedicated 241-node horizontal-layout ranges submodel (custom-grid x≤262; `mas` starts x=264). `migrate_christ_submodel.py` is now historical—do not run it to restore the superseded lyric glows.
+- Rendered review clip: worktree `RenderCompare/holy_forever_pc1_christ_convergence_clip.mp4` (40.0–68.5 s).
 
 ## Live: "Holy" text on entry window only
 
@@ -247,11 +259,13 @@ The bulb **submodel elements carry no effects** — an earlier submodel-On appro
 - `intimate_arch_chords.py` — wipe/rebuild `Arches - All` piano SingleStrand from live `Piano Chords` `P` marks.
 - `intimate_mini_tree_piano.py` — wipe/rebuild mini-tree piano-note fills (`--dry-run` / `--clear-only`).
 - `intimate_oak_cymbals.py` — wipe/rebuild oak V1+PC1 cymbal Twinkles (`--dry-run` / `--clear-only`).
+- `pc1_star_ascent.py` — rebuild the eight meteor-only Mega Tree windows from live Tree Topper bass-pair clusters.
+- `pc1_christ_convergence.py` — rebuild the 16 Christ blinks plus eight Whole Scene meteor implosions aimed at Christ.
 - `lantana_piano.py` — wipe/rebuild full-song True Piano on `Matrix - Lantana` (`--dry-run` / `--clear-only`). **Removed 2026-07-19 (user: not working) — refuse to re-run its build mode; `--clear-only` is safe/idempotent.**
-- `migrate_christ_submodel.py` — one-shot Christ-submodel migration (already done).
+- `migrate_christ_submodel.py` — historical one-shot Christ-submodel migration; **do not run** (its four lyric glows were superseded by bass blinks).
 - `migrate_faces.py`, `place_faces.py`, `lead_backup_c2.py` — historical; superseded by `fix_faces.py`.
 - **REFUSE / deleted:** `holy_forever_2026.py`, `holy_forever_2026_wind_intro.py`, `holy_forever_2026_intro_snow.py`, `snare_reverse_marquees.py`, `reverse_v2_house.py`; deleted `migrate_matrixes_snow_to_windows.py`.
 
 ## Review checklist (baseline — do not “restore” removed bits)
 
-0:00–0:42 Whole Scene snow + Mega Tree cross + dim bulbs · 0:15 Snowman + arch piano chords + mini-tree fills + oak cymbal Twinkles · Lantana empty (Piano MIDI effect removed 2026-07-19, wasn't working) · Entry "Holy" Text only (no downstairs/garage/window snow) · House Outline + Icicles empty; Roof final-hold only; Tree Topper accents kept · faces casting as below · 4:47 Snowman outro solo.
+0:00–0:42 Whole Scene snow + Mega Tree cross + dim bulbs · 0:15 Snowman + arch piano chords + mini-tree fills + oak cymbal Twinkles · PC1: eight Mega Tree meteor windows + eight Whole Scene meteor implosions into Christ; Christ blinks on all 16 star bass pulses · Lantana empty (Piano MIDI effect removed 2026-07-19, wasn't working) · Entry "Holy" Text only (no downstairs/garage/window snow) · House Outline + Icicles empty; Roof final-hold only · faces casting as below · 4:47 Snowman outro solo.
