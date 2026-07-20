@@ -64,18 +64,30 @@ def main():
         print('dry run: no changes made')
         return
 
-    src = x.xl('getEffectIDs', model=EMPTY_SOURCE)['effects']
-    assert len(src) == 1 and not src[0], f'{EMPTY_SOURCE} unusable as wipe source: {src}'
-    x.xl('cloneModelEffects', target=ELEMENT, source=EMPTY_SOURCE, eraseModel='true')
+    expected = [('On', s, e) for s, e in plan]
+    before = read_l0()
+    if before == expected and not clear_only:
+        print(f'done: {ELEMENT} L0 already matches ({len(before)} effects).')
+        return
+    if before:
+        owned = all(name == 'On' and 233000 <= start < 235000
+                    for name, start, _ in before)
+        if not owned:
+            raise SystemExit(f'REFUSING TO WIPE non-riff effects on {ELEMENT} L0: {before}')
+        src = x.xl('getEffectIDs', model=EMPTY_SOURCE)['effects']
+        assert len(src) == 1 and not src[0], \
+            f'{EMPTY_SOURCE} unusable as wipe source: {src}'
+        x.xl('cloneModelEffects', target=ELEMENT, source=EMPTY_SOURCE,
+             eraseModel='true')
 
     if not clear_only:
         for s, e in plan:
             x.add_effect(ELEMENT, 0, 'On', FLASH, PALETTE, s, e)
 
     after = read_l0()
-    expected_n = 0 if clear_only else len(plan)
-    if len(after) != expected_n:
-        raise SystemExit(f'VERIFY FAILED: expected {expected_n} L0 effects, got {len(after)}: {after}')
+    expected = [] if clear_only else expected
+    if after != expected:
+        raise SystemExit(f'VERIFY FAILED: expected {expected}, got {after}')
     print(f'done: {ELEMENT} L0 rebuilt ({len(after)} effects; not saved).')
 
 
