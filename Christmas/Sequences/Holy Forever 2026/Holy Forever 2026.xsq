@@ -82,7 +82,7 @@
     <Effect>E_CHECKBOX_Shockwave_Blend_Edges=1,E_CHECKBOX_Shockwave_Scale=0,E_NOTEBOOK_Shockwave=Position,E_SLIDER_Shockwave_Accel=0,E_SLIDER_Shockwave_CenterX=50,E_SLIDER_Shockwave_CenterY=50,E_SLIDER_Shockwave_End_Radius=42,E_SLIDER_Shockwave_End_Width=40,E_SLIDER_Shockwave_Start_Radius=1,E_SLIDER_Shockwave_Start_Width=5,T_TEXTCTRL_Fadein=0.05,T_TEXTCTRL_Fadeout=0.45</Effect>
     <Effect>E_CHECKBOX_Fan_Blend_Edges=1,E_CHECKBOX_Fan_Reverse=1,E_CHECKBOX_Fan_Scale=0,E_NOTEBOOK_Fan=Options,E_SLIDER_Fan_Accel=0,E_SLIDER_Fan_Blade_Angle=90,E_SLIDER_Fan_Blade_Width=100,E_SLIDER_Fan_CenterX=50,E_SLIDER_Fan_CenterY=50,E_SLIDER_Fan_Duration=95,E_SLIDER_Fan_Element_Width=100,E_SLIDER_Fan_End_Radius=70,E_SLIDER_Fan_Num_Blades=3,E_SLIDER_Fan_Num_Elements=1,E_SLIDER_Fan_Revolutions=360,E_SLIDER_Fan_Start_Angle=0,E_SLIDER_Fan_Start_Radius=1,T_CHOICE_LayerMethod=1 reveals 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.40</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressShimmer=0,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHECKBOX_Faces_TransparentBlack=0,E_CHOICE_Faces_EyeBlinkDuration=Normal,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Grinch,E_CHOICE_Faces_TimingTrack=Lyrics Choir,E_CHOICE_Faces_UseState=,E_TEXTCTRL_Faces_TransparentBlack=0,T_CHECKBOX_Canvas=0,T_CHECKBOX_LayerMorph=0,T_CHOICE_LayerMethod=Normal,T_SLIDER_EffectLayerMix=0,T_TEXTCTRL_Fadeout=1.5</Effect>
-    <Effect>E_CHECKBOX_On_Shimmer=0,T_TEXTCTRL_Fadein=.04,T_TEXTCTRL_Fadeout=.30</Effect>
+    <Effect>E_CHECKBOX_On_Shimmer=0,T_TEXTCTRL_Fadein=.02,T_TEXTCTRL_Fadeout=.20</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressShimmer=0,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHECKBOX_Faces_TransparentBlack=0,E_CHOICE_Faces_EyeBlinkDuration=Normal,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Boscoyo ChromaBulb Face,E_CHOICE_Faces_TimingTrack=Lyrics Intro Choir,E_TEXTCTRL_Faces_TransparentBlack=0,T_CHECKBOX_Canvas=0,T_CHECKBOX_LayerMorph=0,T_CHOICE_LayerMethod=Normal,T_SLIDER_EffectLayerMix=0,T_TEXTCTRL_Fadein=0.50,T_TEXTCTRL_Fadeout=2.00</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Boscoyo ChromaBulb Face,E_CHOICE_Faces_TimingTrack=Lyrics Choir</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Boscoyo ChromaBulb Face,E_CHOICE_Faces_TimingTrack=Lyrics Choir,T_TEXTCTRL_Fadeout=1.5</Effect>
@@ -402,6 +402,15 @@
     <Element collapsed="false" type="model" name="Shrub Center" visible="true" />
     <Element collapsed="false" type="model" name="Shrub Left" visible="true" />
     <Element collapsed="false" type="model" name="Shrub Right" visible="true" />
+    <Element collapsed="false" type="model" name="Rose Bush 1" visible="true" />
+    <Element collapsed="false" type="model" name="Rose Bush 2" visible="true" />
+    <Element collapsed="false" type="model" name="Rose Bush 3" visible="true" />
+    <Element collapsed="false" type="model" name="Rose Bush 4" visible="true" />
+    <Element collapsed="false" type="model" name="Rose Bush 5" visible="true" />
+    <Element collapsed="false" type="model" name="Rose Bush 6" visible="true" />
+    <Element collapsed="false" type="model" name="Rose Bush 7" visible="true" />
+    <Element collapsed="false" type="model" name="Rose Bush 8" visible="true" />
+    <Element collapsed="false" type="model" name="Rose Bush 9" visible="true" />
     <Element collapsed="false" type="model" name="Singing Bulb - Center" visible="true" />
     <Element collapsed="false" type="model" name="Singing Bulb - Left" visible="true" />
     <Element collapsed="false" type="model" name="Singing Bulb - Right" visible="true" />
@@ -1544,47 +1553,28 @@
       <EffectLayer />
     </Element>
     <Element type="model" name="Mini Tree - 1">
-      <EffectLayer>
-        <Effect ref="27" name="On" startTime="30350" endTime="30775" palette="23" />
-        <Effect ref="27" name="On" id="1" startTime="33475" endTime="33900" palette="23" />
-        <Effect ref="27" name="On" id="2" startTime="37000" endTime="37425" palette="23" />
-        <Effect ref="27" name="On" id="3" startTime="38900" endTime="39325" palette="23" />
-      </EffectLayer>
+      <EffectLayer />
       <EffectLayer />
     </Element>
     <Element type="model" name="Mini Tree - 1 Star">
       <EffectLayer />
     </Element>
     <Element type="model" name="Mini Tree - 2">
-      <EffectLayer>
-        <Effect ref="27" name="On" startTime="19550" endTime="19975" palette="23" />
-        <Effect ref="27" name="On" id="1" startTime="35275" endTime="35700" palette="23" />
-      </EffectLayer>
+      <EffectLayer />
       <EffectLayer />
     </Element>
     <Element type="model" name="Mini Tree - 2 Star">
       <EffectLayer />
     </Element>
     <Element type="model" name="Mini Tree - 3">
-      <EffectLayer>
-        <Effect ref="27" name="On" startTime="15300" endTime="15725" palette="23" />
-        <Effect ref="27" name="On" id="1" startTime="22850" endTime="23275" palette="23" />
-        <Effect ref="27" name="On" id="2" startTime="23675" endTime="23875" palette="23" />
-        <Effect ref="27" name="On" id="3" startTime="23900" endTime="24325" palette="23" />
-        <Effect ref="27" name="On" id="4" startTime="35550" endTime="35975" palette="23" />
-        <Effect ref="27" name="On" id="5" startTime="37200" endTime="37625" palette="23" />
-        <Effect ref="27" name="On" id="6" startTime="38050" endTime="38475" palette="23" />
-      </EffectLayer>
+      <EffectLayer />
       <EffectLayer />
     </Element>
     <Element type="model" name="Mini Tree - 3 Star">
       <EffectLayer />
     </Element>
     <Element type="model" name="Mini Tree - 4">
-      <EffectLayer>
-        <Effect ref="27" name="On" startTime="29550" endTime="29975" palette="23" />
-        <Effect ref="27" name="On" id="1" startTime="32600" endTime="33025" palette="23" />
-      </EffectLayer>
+      <EffectLayer />
       <EffectLayer />
     </Element>
     <Element type="model" name="Mini Tree - 4 Star">
@@ -1621,13 +1611,147 @@
       <EffectLayer />
     </Element>
     <Element type="model" name="Shrub Center">
-      <EffectLayer />
+      <EffectLayer>
+        <Effect ref="27" name="On" startTime="24750" endTime="25010" palette="23" />
+        <Effect ref="27" name="On" id="1" startTime="26200" endTime="26460" palette="23" />
+        <Effect ref="27" name="On" id="2" startTime="27050" endTime="27310" palette="23" />
+        <Effect ref="27" name="On" id="3" startTime="30125" endTime="30385" palette="23" />
+        <Effect ref="27" name="On" id="4" startTime="31200" endTime="31460" palette="23" />
+        <Effect ref="27" name="On" id="5" startTime="34400" endTime="34660" palette="23" />
+        <Effect ref="27" name="On" id="6" startTime="39125" endTime="39385" palette="23" />
+        <Effect ref="27" name="On" id="7" startTime="39550" endTime="39810" palette="23" />
+      </EffectLayer>
     </Element>
     <Element type="model" name="Shrub Left">
-      <EffectLayer />
+      <EffectLayer>
+        <Effect ref="27" name="On" startTime="16400" endTime="16660" palette="23" />
+        <Effect ref="27" name="On" id="1" startTime="22400" endTime="22575" palette="23" />
+        <Effect ref="27" name="On" id="2" startTime="22600" endTime="22860" palette="23" />
+        <Effect ref="27" name="On" id="3" startTime="25575" endTime="25835" palette="23" />
+        <Effect ref="27" name="On" id="4" startTime="26000" endTime="26260" palette="23" />
+        <Effect ref="27" name="On" id="5" startTime="33850" endTime="33975" palette="23" />
+        <Effect ref="27" name="On" id="6" startTime="34000" endTime="34260" palette="23" />
+        <Effect ref="27" name="On" id="7" startTime="35900" endTime="36160" palette="23" />
+      </EffectLayer>
     </Element>
     <Element type="model" name="Shrub Right">
-      <EffectLayer />
+      <EffectLayer>
+        <Effect ref="27" name="On" startTime="24475" endTime="24735" palette="23" />
+        <Effect ref="27" name="On" id="1" startTime="26625" endTime="26885" palette="23" />
+        <Effect ref="27" name="On" id="2" startTime="27250" endTime="27510" palette="23" />
+        <Effect ref="27" name="On" id="3" startTime="28225" endTime="28485" palette="23" />
+        <Effect ref="27" name="On" id="4" startTime="32225" endTime="32485" palette="23" />
+        <Effect ref="27" name="On" id="5" startTime="33275" endTime="33535" palette="23" />
+        <Effect ref="27" name="On" id="6" startTime="34750" endTime="35010" palette="23" />
+        <Effect ref="27" name="On" id="7" startTime="37825" endTime="38085" palette="23" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="Rose Bush 1">
+      <EffectLayer>
+        <Effect ref="27" name="On" startTime="16725" endTime="16985" palette="23" />
+        <Effect ref="27" name="On" id="1" startTime="20300" endTime="20560" palette="23" />
+        <Effect ref="27" name="On" id="2" startTime="22225" endTime="22485" palette="23" />
+        <Effect ref="27" name="On" id="3" startTime="23925" endTime="24150" palette="23" />
+        <Effect ref="27" name="On" id="4" startTime="24175" endTime="24435" palette="23" />
+        <Effect ref="27" name="On" id="5" startTime="25100" endTime="25360" palette="23" />
+        <Effect ref="27" name="On" id="6" startTime="36800" endTime="37060" palette="23" />
+        <Effect ref="27" name="On" id="7" startTime="38950" endTime="39210" palette="23" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="Rose Bush 2">
+      <EffectLayer>
+        <Effect ref="27" name="On" startTime="20575" endTime="20835" palette="23" />
+        <Effect ref="27" name="On" id="1" startTime="21050" endTime="21200" palette="23" />
+        <Effect ref="27" name="On" id="2" startTime="21225" endTime="21485" palette="23" />
+        <Effect ref="27" name="On" id="3" startTime="29225" endTime="29485" palette="23" />
+        <Effect ref="27" name="On" id="4" startTime="35300" endTime="35560" palette="23" />
+        <Effect ref="27" name="On" id="5" startTime="36200" endTime="36460" palette="23" />
+        <Effect ref="27" name="On" id="6" startTime="37475" endTime="37735" palette="23" />
+        <Effect ref="27" name="On" id="7" startTime="39350" endTime="39610" palette="23" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="Rose Bush 3">
+      <EffectLayer>
+        <Effect ref="27" name="On" startTime="15550" endTime="15810" palette="23" />
+        <Effect ref="27" name="On" id="1" startTime="22000" endTime="22260" palette="23" />
+        <Effect ref="27" name="On" id="2" startTime="23450" endTime="23710" palette="23" />
+        <Effect ref="27" name="On" id="3" startTime="26825" endTime="27085" palette="23" />
+        <Effect ref="27" name="On" id="4" startTime="28650" endTime="28910" palette="23" />
+        <Effect ref="27" name="On" id="5" startTime="35575" endTime="35835" palette="23" />
+        <Effect ref="27" name="On" id="6" startTime="36400" endTime="36660" palette="23" />
+        <Effect ref="27" name="On" id="7" startTime="38800" endTime="39060" palette="23" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="Rose Bush 4">
+      <EffectLayer>
+        <Effect ref="27" name="On" startTime="16225" endTime="16485" palette="23" />
+        <Effect ref="27" name="On" id="1" startTime="17850" endTime="18110" palette="23" />
+        <Effect ref="27" name="On" id="2" startTime="20875" endTime="21135" palette="23" />
+        <Effect ref="27" name="On" id="3" startTime="24950" endTime="25210" palette="23" />
+        <Effect ref="27" name="On" id="4" startTime="25775" endTime="26035" palette="23" />
+        <Effect ref="27" name="On" id="5" startTime="27775" endTime="28035" palette="23" />
+        <Effect ref="27" name="On" id="6" startTime="29075" endTime="29335" palette="23" />
+        <Effect ref="27" name="On" id="7" startTime="30375" endTime="30635" palette="23" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="Rose Bush 5">
+      <EffectLayer>
+        <Effect ref="27" name="On" startTime="17450" endTime="17710" palette="23" />
+        <Effect ref="27" name="On" id="1" startTime="21625" endTime="21885" palette="23" />
+        <Effect ref="27" name="On" id="2" startTime="22850" endTime="23050" palette="23" />
+        <Effect ref="27" name="On" id="3" startTime="23075" endTime="23335" palette="23" />
+        <Effect ref="27" name="On" id="4" startTime="28025" endTime="28285" palette="23" />
+        <Effect ref="27" name="On" id="5" startTime="31400" endTime="31660" palette="23" />
+        <Effect ref="27" name="On" id="6" startTime="33075" endTime="33335" palette="23" />
+        <Effect ref="27" name="On" id="7" startTime="34600" endTime="34860" palette="23" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="Rose Bush 6">
+      <EffectLayer>
+        <Effect ref="27" name="On" startTime="18250" endTime="18510" palette="23" />
+        <Effect ref="27" name="On" id="1" startTime="27425" endTime="27575" palette="23" />
+        <Effect ref="27" name="On" id="2" startTime="27600" endTime="27860" palette="23" />
+        <Effect ref="27" name="On" id="3" startTime="29950" endTime="30210" palette="23" />
+        <Effect ref="27" name="On" id="4" startTime="31600" endTime="31860" palette="23" />
+        <Effect ref="27" name="On" id="5" startTime="32000" endTime="32260" palette="23" />
+        <Effect ref="27" name="On" id="6" startTime="39750" endTime="39900" palette="23" />
+        <Effect ref="27" name="On" id="7" startTime="39925" endTime="40185" palette="23" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="Rose Bush 7">
+      <EffectLayer>
+        <Effect ref="27" name="On" startTime="15325" endTime="15585" palette="23" />
+        <Effect ref="27" name="On" id="1" startTime="15750" endTime="16010" palette="23" />
+        <Effect ref="27" name="On" id="2" startTime="18075" endTime="18335" palette="23" />
+        <Effect ref="27" name="On" id="3" startTime="26400" endTime="26660" palette="23" />
+        <Effect ref="27" name="On" id="4" startTime="34950" endTime="35210" palette="23" />
+        <Effect ref="27" name="On" id="5" startTime="38075" endTime="38335" palette="23" />
+        <Effect ref="27" name="On" id="6" startTime="38500" endTime="38760" palette="23" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="Rose Bush 8">
+      <EffectLayer>
+        <Effect ref="27" name="On" startTime="19300" endTime="19560" palette="23" />
+        <Effect ref="27" name="On" id="1" startTime="21400" endTime="21660" palette="23" />
+        <Effect ref="27" name="On" id="2" startTime="21825" endTime="22085" palette="23" />
+        <Effect ref="27" name="On" id="3" startTime="28900" endTime="29160" palette="23" />
+        <Effect ref="27" name="On" id="4" startTime="29700" endTime="29960" palette="23" />
+        <Effect ref="27" name="On" id="5" startTime="31025" endTime="31285" palette="23" />
+        <Effect ref="27" name="On" id="6" startTime="32400" endTime="32575" palette="23" />
+        <Effect ref="27" name="On" id="7" startTime="32600" endTime="32860" palette="23" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="Rose Bush 9">
+      <EffectLayer>
+        <Effect ref="27" name="On" startTime="18475" endTime="18735" palette="23" />
+        <Effect ref="27" name="On" id="1" startTime="19050" endTime="19310" palette="23" />
+        <Effect ref="27" name="On" id="2" startTime="19750" endTime="19925" palette="23" />
+        <Effect ref="27" name="On" id="3" startTime="19950" endTime="20210" palette="23" />
+        <Effect ref="27" name="On" id="4" startTime="28500" endTime="28760" palette="23" />
+        <Effect ref="27" name="On" id="5" startTime="29550" endTime="29810" palette="23" />
+        <Effect ref="27" name="On" id="6" startTime="30800" endTime="31060" palette="23" />
+        <Effect ref="27" name="On" id="7" startTime="32925" endTime="33185" palette="23" />
+      </EffectLayer>
     </Element>
     <Element type="model" name="Singing Bulb - Center">
       <EffectLayer>
@@ -1692,10 +1816,26 @@
       <EffectLayer />
     </Element>
     <Element type="model" name="Door Tree Left">
-      <EffectLayer />
+      <EffectLayer>
+        <Effect ref="27" name="On" startTime="16575" endTime="16835" palette="23" />
+        <Effect ref="27" name="On" id="1" startTime="18900" endTime="19160" palette="23" />
+        <Effect ref="27" name="On" id="2" startTime="19550" endTime="19810" palette="23" />
+        <Effect ref="27" name="On" id="3" startTime="20150" endTime="20410" palette="23" />
+        <Effect ref="27" name="On" id="4" startTime="33650" endTime="33910" palette="23" />
+        <Effect ref="27" name="On" id="5" startTime="37025" endTime="37200" palette="23" />
+        <Effect ref="27" name="On" id="6" startTime="37225" endTime="37485" palette="23" />
+      </EffectLayer>
     </Element>
     <Element type="model" name="Door Tree Right">
-      <EffectLayer />
+      <EffectLayer>
+        <Effect ref="27" name="On" startTime="16000" endTime="16260" palette="23" />
+        <Effect ref="27" name="On" id="1" startTime="17000" endTime="17260" palette="23" />
+        <Effect ref="27" name="On" id="2" startTime="17650" endTime="17910" palette="23" />
+        <Effect ref="27" name="On" id="3" startTime="23700" endTime="23960" palette="23" />
+        <Effect ref="27" name="On" id="4" startTime="30575" endTime="30835" palette="23" />
+        <Effect ref="27" name="On" id="5" startTime="31750" endTime="32010" palette="23" />
+        <Effect ref="27" name="On" id="6" startTime="33500" endTime="33760" palette="23" />
+      </EffectLayer>
     </Element>
     <Element type="model" name="Arches - Top">
       <EffectLayer />
@@ -4510,7 +4650,7 @@
         <Effect label="Verse 1" startTime="15525" endTime="41850" />
         <Effect label="Pre-Chorus 1" startTime="41850" endTime="67575" />
         <Effect label="Chorus 1" startTime="67575" endTime="95100" />
-        <Effect label="Verse 2" selected="1" startTime="95100" endTime="127625" />
+        <Effect label="Verse 2" startTime="95100" endTime="127625" />
         <Effect label="Chorus 2" startTime="127625" endTime="154150" />
         <Effect label="Chorus 2 - Hear Your People (female feature)" startTime="154150" endTime="166850" />
         <Effect label="Chorus 2 - Holy Forever" startTime="166850" endTime="181900" />

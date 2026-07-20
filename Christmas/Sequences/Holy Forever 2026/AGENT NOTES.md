@@ -2,7 +2,9 @@
 
 Working notes for `Christmas/Sequences/Holy Forever 2026/Holy Forever 2026.xsq` (built July 2026). Read alongside the root `AGENTS.md`. Song: Chris Tomlin "Holy Forever" (Jenn Johnson female vocal), media = `Media/Chris Tomlin - Holy Forever (Lyric Video).mp4`, 308314 ms, 25 ms frames, ModelBlending on.
 
-**Current task:** branch `fix-pc1-merge` in permanent **Slot B** (`/Users/elliott.ohara/xlights-worktrees/slot-b`, API 49914). Rebuilt from the exact clean `3692089` sequence after a textual `.xsq` merge corrupted shared effect/palette references; final PC1 effects were reapplied only through xLights.
+**Current task:** branch `shrub-verse-piano-notes` in permanent **Slot A** (`/Users/elliott.ohara/xlights-worktrees/slot-a`, API 49913). Intimate-V1 piano notes on `All Shrubs GRP` (see "Dense piano onsets" below). ⚠ **2026-07-20 incident:** this work was first built directly on a detached-`main` HEAD (no task branch) and got wiped when another agent drove this shared worktree through `git checkout climax-drum-riff` and back — the checkout reverted the uncommitted `.xsq`. Recovered by re-running the tools on this dedicated branch. **Lesson: always work on a task branch and commit; uncommitted `.xsq` edits in a slot are destroyed by any branch switch another agent makes in that worktree.**
+
+**Prior task:** branch `fix-pc1-merge` in Slot B (API 49914). Rebuilt from the exact clean `3692089` sequence after a textual `.xsq` merge corrupted shared effect/palette references; final PC1 effects were reapplied only through xLights.
 
 ## ⚠ Baseline (hand-approved 2026-07-19)
 
@@ -133,6 +135,17 @@ The arches remain the **wide-chord voice**. Six deliberately sparse fills use th
 - Runs move left→right or right→left rather than counting every beat. The sequence intentionally leaves broad gaps, preserving the acoustic intimacy.
 - Individual trees use **layer 0**, owned by this feature. `Mini Trees` group effects and `Mini Tree Stars` remain empty; Whole Scene snow still supplies the quiet atmospheric bed.
 - Rebuild or remove: `python3 Christmas/Sequences/Holy Forever 2026/Tools/intimate_mini_tree_piano.py` (`--dry-run`, or `--clear-only` to remove the 19 pulses). The script wipes only layer 0 of the four individual mini-tree models.
+
+## Moved/rebuilt 2026-07-20: intimate V1 piano notes → dense onsets on `All Shrubs GRP` (LIVE, branch `shrub-verse-piano-notes`, Slot A)
+
+User moved the "mini trees in front of the arches" verse effect onto the shrub bank, then refined it across several iterations (whole-group flash → per-prop → 5-prop → 14-prop keyboard → sparse melody off the `Piano Notes` track → **dense audio-detected onsets**). The mini trees (`Mini Tree - 1..4`) are now **empty** in V1; `All Shrubs GRP` members carry the verse piano.
+
+- **Master view fix (⚠ .xsq edit, reproducible):** the 9 `Rose Bush N` models are excluded from this sequence's master view, so the API rejects them ("target element doesn't exists."; no API adds master-view elements). `Tools/add_rosebush_masterview.py` (idempotent; sequence CLOSED → reopen) adds each to `<DisplayElements>` (next to the shrubs) + an empty `<EffectLayer/>` in `<ElementEffects>`. **General fix for any non-addressable group member.** Re-run after any revert.
+- **Left→right prop order (by layout X):** `Shrub Left, Rose Bush 1, Rose Bush 2, Door Tree Left, Rose Bush 3, Rose Bush 4, Door Tree Right, Shrub Center, Rose Bush 5, Rose Bush 6, Rose Bush 7, Rose Bush 8, Shrub Right, Rose Bush 9`. Spatial rule: **lower pitch → farther left.**
+- **Dense onsets (LIVE):** `Tools/v1_piano_dense.py` (run via `Tools/.venv/bin/python`). The imported `Piano Notes` track is deliberately sparse (~15–22 V1 marks) and felt thin; instead detect real note attacks from audio. Pipeline (numpy in `Tools/.venv`): `Tools/holy_44k.wav` (ffmpeg mono 44.1k of the media) → STFT (2048/441) → band flux (150–2500 Hz) → adaptive peak pick (×1.35, min sep 150 ms) = **~109 onsets in V1 (~4.4/s)**. Pitch proxy = spectral centroid in 160–1600 Hz (a single peak bin collapsed onto the vocal fundamental; centroid is stable), onsets **percentile-ranked** across the 14 props (low→left) for even use (~7–8/prop). ONE prop per onset. Warm gold `#FFD89A` On, brightness 55, `.02`/`.20` fade, 260 ms; same-prop overlaps shortened to stay on L0. **109 live effects, all L0** (verified close/reopen, len 308314 ms). Knobs (`THRESH_MULT`, `MIN_SEP_MS`, `PULSE_MS`, bands) in its CONFIG block.
+- ⚠ **`cloneModelEffects` only clears L0 in 2026.13** (probed: 1-layer House AND 4-layer group source both leave L1 intact). To reset upper layers use the direct-.xsq `Tools/clear_shrub_props.py` (closed → reopen). This design is L0-only so normal reruns are fine.
+- **Superseded — do not run alongside:** `mini_tree_notes_to_shrubs.py` (sparse melody off the timing track), `intimate_mini_tree_piano.py` / `xtreme_v1_mini_tree_notes.py` (old mini-tree pulses).
+- Backups (`*.xsq.bak-*`, gitignored): `-before-shrubs-mini-tree-move`, `-before-shrubs-per-prop-notes`, `-before-rosebush-masterview`, `-before-melody-single`, `-before-clear-shrub-props`, `-before-dense-piano`, `-before-add-rosebush-masterview`.
 
 ## Added 2026-07-19: `Piano Notes` timing track (whole song — audio-detected)
 
