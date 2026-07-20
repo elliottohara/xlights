@@ -57,7 +57,7 @@
     <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1</ColorPalette>
     <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#FFFFFF,C_BUTTON_Palette3=#FFFFFF,C_BUTTON_Palette4=#9D1D25,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1,C_CHECKBOX_Palette4=1</ColorPalette>
     <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#FFFFFF,C_BUTTON_Palette3=#FFFFFF,C_BUTTON_Palette4=#2864FF,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1,C_CHECKBOX_Palette4=1</ColorPalette>
-    <ColorPalette>C_BUTTON_Palette1=#ffffff,C_BUTTON_Palette2=#13a8ff,C_BUTTON_Palette3=#00ff00,C_BUTTON_Palette4=#ffc800,C_BUTTON_Palette5=#143a5a,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#ffffff,C_BUTTON_Palette8=#7258b7,C_CHECKBOXBRIGHTNESSLEVEL=0,C_CHECKBOX_Chroma=0,C_CHECKBOX_MusicSparkles=0,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=0,C_CHECKBOX_Palette3=0,C_CHECKBOX_Palette4=0,C_CHECKBOX_Palette5=0,C_CHECKBOX_Palette6=0,C_CHECKBOX_Palette7=0,C_CHECKBOX_Palette8=0,C_SLIDER_SparkleFrequency=0</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#804000,C_BUTTON_Palette2=#FF8811,C_BUTTON_Palette3=#FF80C0,C_BUTTON_Palette4=#0000FF,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1,C_CHECKBOX_Palette4=1</ColorPalette>
     <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=82</ColorPalette>
     <ColorPalette>C_BUTTON_Palette1=#0B6B3A,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=38</ColorPalette>
     <ColorPalette>C_BUTTON_Palette1=#EEEAE2,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=52</ColorPalette>
@@ -116,9 +116,24 @@
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Santa Singing,E_CHOICE_Faces_TimingTrack=Lyrics Choir,E_CHOICE_Faces_UseState=hat,T_TEXTCTRL_Fadeout=1.5</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Penguin v.1.1 - No Tongue,E_CHOICE_Faces_TimingTrack=Lyrics Choir</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Penguin v.1.1 - No Tongue,E_CHOICE_Faces_TimingTrack=Lyrics Choir,T_TEXTCTRL_Fadeout=1.5</Effect>
-    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_TimingTrack=Lyrics Female,E_CHOICE_Faces_UseState=Teddy RedBow static</Effect>
-    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressShimmer=0,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHECKBOX_Faces_TransparentBlack=0,E_CHOICE_Faces_EyeBlinkDuration=Normal,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_TimingTrack=Lyrics Female,E_CHOICE_Faces_UseState=Teddy RedBow static,E_TEXTCTRL_Faces_TransparentBlack=0,T_CHECKBOX_Canvas=0,T_CHECKBOX_LayerMorph=0,T_CHOICE_LayerMethod=Normal,T_SLIDER_EffectLayerMix=0</Effect>
-    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_TimingTrack=Lyrics Female,E_CHOICE_Faces_UseState=Teddy RedBow static,T_TEXTCTRL_Fadeout=1.5</Effect>
+    <Effect>E_CHOICE_State_Color=Graduate,E_CHOICE_State_Mode=Default,E_CHOICE_State_StateDefinition=leaning (beats),E_CHOICE_State_TimingTrack=Beat Count,E_SLIDER_State_Fade_Time=0</Effect>
+    <Effect>E_CHOICE_State_Color=Graduate,E_CHOICE_State_Mode=Default,E_CHOICE_State_StateDefinition=right wave (beats),E_CHOICE_State_TimingTrack=Beat Count,E_SLIDER_State_Fade_Time=0</Effect>
+    <Effect>E_CHOICE_State_Color=Graduate,E_CHOICE_State_Mode=Default,E_CHOICE_State_State=up,E_CHOICE_State_StateDefinition=arms,E_SLIDER_State_Fade_Time=80</Effect>
+    <Effect>E_CHOICE_State_Color=Graduate,E_CHOICE_State_Mode=Default,E_CHOICE_State_StateDefinition=flapping (beats),E_CHOICE_State_TimingTrack=Beat Count,E_SLIDER_State_Fade_Time=0</Effect>
+    <Effect>E_CHOICE_State_Color=Graduate,E_CHOICE_State_Mode=Default,E_CHOICE_State_State=mid,E_CHOICE_State_StateDefinition=arms,E_SLIDER_State_Fade_Time=80</Effect>
+    <Effect>E_CHOICE_State_Color=Graduate,E_CHOICE_State_Mode=Default,E_CHOICE_State_StateDefinition=left wave (beats),E_CHOICE_State_TimingTrack=Beat Count,E_SLIDER_State_Fade_Time=0</Effect>
+    <Effect>E_CHOICE_State_Color=Graduate,E_CHOICE_State_Mode=Default,E_CHOICE_State_State=upleft,E_CHOICE_State_StateDefinition=eye direction,E_SLIDER_State_Fade_Time=80</Effect>
+    <Effect>E_CHOICE_State_Color=Graduate,E_CHOICE_State_Mode=Default,E_CHOICE_State_State=up,E_CHOICE_State_StateDefinition=eye direction,E_SLIDER_State_Fade_Time=80</Effect>
+    <Effect>E_CHOICE_State_Color=Graduate,E_CHOICE_State_Mode=Default,E_CHOICE_State_State=upright,E_CHOICE_State_StateDefinition=eye direction,E_SLIDER_State_Fade_Time=80</Effect>
+    <Effect>E_CHOICE_State_Color=Graduate,E_CHOICE_State_Mode=Default,E_CHOICE_State_State=left,E_CHOICE_State_StateDefinition=eye direction,E_SLIDER_State_Fade_Time=80</Effect>
+    <Effect>E_CHOICE_State_Color=Graduate,E_CHOICE_State_Mode=Default,E_CHOICE_State_State=right,E_CHOICE_State_StateDefinition=eye direction,E_SLIDER_State_Fade_Time=80</Effect>
+    <Effect>E_CHOICE_State_Color=Graduate,E_CHOICE_State_Mode=Default,E_CHOICE_State_State=sad,E_CHOICE_State_StateDefinition=Brows,E_SLIDER_State_Fade_Time=80</Effect>
+    <Effect>E_CHOICE_State_Color=Graduate,E_CHOICE_State_Mode=Default,E_CHOICE_State_State=highbrows,E_CHOICE_State_StateDefinition=Brows,E_SLIDER_State_Fade_Time=80</Effect>
+    <Effect>E_CHOICE_State_Color=Graduate,E_CHOICE_State_Mode=Default,E_CHOICE_State_State=spockright,E_CHOICE_State_StateDefinition=Brows,E_SLIDER_State_Fade_Time=80</Effect>
+    <Effect>E_CHOICE_State_Color=Graduate,E_CHOICE_State_Mode=Default,E_CHOICE_State_State=spockleft,E_CHOICE_State_StateDefinition=Brows,E_SLIDER_State_Fade_Time=80</Effect>
+    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_TimingTrack=Lyrics Female,E_CHOICE_Faces_UseState=Teddy PinkBow</Effect>
+    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_TimingTrack=Lyrics Choir,E_CHOICE_Faces_UseState=Teddy PinkBow</Effect>
+    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_TimingTrack=Lyrics Female,E_CHOICE_Faces_UseState=Teddy PinkBow,T_TEXTCTRL_Fadeout=1.5</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkDuration=Normal,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Star,E_CHOICE_Faces_TimingTrack=Lyrics Choir,T_TEXTCTRL_Fadeout=.30</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkDuration=Normal,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Star,E_CHOICE_Faces_TimingTrack=Lyrics Choir,T_TEXTCTRL_Fadeout=1.5</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkDuration=Normal,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Blue Ornamnet,E_CHOICE_Faces_TimingTrack=Lyrics Choir,T_TEXTCTRL_Fadeout=.30</Effect>
@@ -1755,9 +1770,105 @@
     </Element>
     <Element type="model" name="EFL Teddy">
       <EffectLayer>
-        <Effect ref="52" name="Faces" startTime="94375" endTime="126825" palette="37" />
-        <Effect ref="53" name="Faces" id="1" startTime="153250" endTime="178650" palette="40" />
-        <Effect ref="54" name="Faces" id="2" startTime="181450" endTime="285050" palette="37" />
+        <Effect ref="52" name="State" startTime="94375" endTime="114425" palette="40" />
+        <Effect ref="53" name="State" id="1" startTime="114850" endTime="120525" palette="40" />
+        <Effect ref="52" name="State" id="2" startTime="120525" endTime="125625" palette="40" />
+        <Effect ref="54" name="State" id="3" startTime="125625" endTime="126725" palette="40" />
+        <Effect ref="55" name="State" id="4" startTime="126725" endTime="146150" palette="40" />
+        <Effect ref="56" name="State" id="5" startTime="147300" endTime="150800" palette="40" />
+        <Effect ref="54" name="State" id="6" startTime="150800" endTime="151700" palette="40" />
+        <Effect ref="57" name="State" id="7" startTime="153250" endTime="159200" palette="40" />
+        <Effect ref="53" name="State" id="8" startTime="159950" endTime="165150" palette="40" />
+        <Effect ref="54" name="State" id="9" startTime="165150" endTime="165950" palette="40" />
+        <Effect ref="52" name="State" id="10" startTime="166850" endTime="172425" palette="40" />
+        <Effect ref="56" name="State" id="11" startTime="173950" endTime="177350" palette="40" />
+        <Effect ref="54" name="State" id="12" startTime="177350" endTime="178650" palette="40" />
+        <Effect ref="55" name="State" id="13" startTime="181450" endTime="188150" palette="40" />
+        <Effect ref="56" name="State" id="14" startTime="188150" endTime="194175" palette="40" />
+        <Effect ref="54" name="State" id="15" startTime="194175" endTime="194575" palette="40" />
+        <Effect ref="52" name="State" id="16" startTime="194575" endTime="201500" palette="40" />
+        <Effect ref="56" name="State" id="17" startTime="201500" endTime="207375" palette="40" />
+        <Effect ref="54" name="State" id="18" startTime="207375" endTime="207775" palette="40" />
+        <Effect ref="57" name="State" id="19" startTime="207775" endTime="214925" palette="40" />
+        <Effect ref="53" name="State" id="20" startTime="214925" endTime="220325" palette="40" />
+        <Effect ref="55" name="State" id="21" startTime="221700" endTime="228275" palette="40" />
+        <Effect ref="56" name="State" id="22" startTime="228275" endTime="232950" palette="40" />
+        <Effect ref="54" name="State" id="23" startTime="232950" endTime="233350" palette="40" />
+        <Effect ref="55" name="State" id="24" startTime="233350" endTime="245775" palette="40" />
+        <Effect ref="54" name="State" id="25" startTime="246850" endTime="252550" palette="40" />
+        <Effect ref="56" name="State" id="26" startTime="253950" endTime="255850" palette="40" />
+        <Effect ref="54" name="State" id="27" startTime="255850" endTime="256650" palette="40" />
+        <Effect ref="57" name="State" id="28" startTime="259850" endTime="265825" palette="40" />
+        <Effect ref="53" name="State" id="29" startTime="265825" endTime="273650" palette="40" />
+        <Effect ref="52" name="State" id="30" startTime="273650" endTime="279250" palette="40" />
+        <Effect ref="54" name="State" id="31" startTime="279250" endTime="279750" palette="40" />
+        <Effect ref="56" name="State" id="32" startTime="280575" endTime="283100" palette="40" />
+        <Effect ref="54" name="State" id="33" startTime="283100" endTime="283850" palette="40" />
+      </EffectLayer>
+      <EffectLayer>
+        <Effect ref="58" name="State" startTime="94375" endTime="101250" palette="40" />
+        <Effect ref="59" name="State" id="1" startTime="102500" endTime="106150" palette="40" />
+        <Effect ref="60" name="State" id="2" startTime="106150" endTime="114425" palette="40" />
+        <Effect ref="59" name="State" id="3" startTime="114850" endTime="126525" palette="40" />
+        <Effect ref="58" name="State" id="4" startTime="126725" endTime="132625" palette="40" />
+        <Effect ref="60" name="State" id="5" startTime="132625" endTime="139925" palette="40" />
+        <Effect ref="59" name="State" id="6" startTime="140075" endTime="146150" palette="40" />
+        <Effect ref="59" name="State" id="7" startTime="147300" endTime="151400" palette="40" />
+        <Effect ref="59" name="State" id="8" startTime="153250" endTime="159200" palette="40" />
+        <Effect ref="59" name="State" id="9" startTime="159950" endTime="165750" palette="40" />
+        <Effect ref="58" name="State" id="10" startTime="166850" endTime="172425" palette="40" />
+        <Effect ref="59" name="State" id="11" startTime="173950" endTime="178350" palette="40" />
+        <Effect ref="61" name="State" id="12" startTime="181450" endTime="184775" palette="40" />
+        <Effect ref="62" name="State" id="13" startTime="184775" endTime="188150" palette="40" />
+        <Effect ref="59" name="State" id="14" startTime="188150" endTime="194575" palette="40" />
+        <Effect ref="62" name="State" id="15" startTime="194575" endTime="198350" palette="40" />
+        <Effect ref="61" name="State" id="16" startTime="198350" endTime="201500" palette="40" />
+        <Effect ref="59" name="State" id="17" startTime="201500" endTime="207775" palette="40" />
+        <Effect ref="61" name="State" id="18" startTime="207775" endTime="211450" palette="40" />
+        <Effect ref="62" name="State" id="19" startTime="211950" endTime="214925" palette="40" />
+        <Effect ref="59" name="State" id="20" startTime="214925" endTime="220325" palette="40" />
+        <Effect ref="62" name="State" id="21" startTime="221700" endTime="225150" palette="40" />
+        <Effect ref="61" name="State" id="22" startTime="225550" endTime="228275" palette="40" />
+        <Effect ref="59" name="State" id="23" startTime="228275" endTime="233350" palette="40" />
+        <Effect ref="58" name="State" id="24" startTime="233350" endTime="239550" palette="40" />
+        <Effect ref="60" name="State" id="25" startTime="240425" endTime="245775" palette="40" />
+        <Effect ref="59" name="State" id="26" startTime="246850" endTime="252550" palette="40" />
+        <Effect ref="59" name="State" id="27" startTime="253950" endTime="256350" palette="40" />
+        <Effect ref="59" name="State" id="28" startTime="259850" endTime="273650" palette="40" />
+        <Effect ref="58" name="State" id="29" startTime="273650" endTime="279750" palette="40" />
+        <Effect ref="59" name="State" id="30" startTime="280575" endTime="283550" palette="40" />
+      </EffectLayer>
+      <EffectLayer>
+        <Effect ref="63" name="State" startTime="94375" endTime="101250" palette="40" />
+        <Effect ref="64" name="State" id="1" startTime="102500" endTime="106150" palette="40" />
+        <Effect ref="63" name="State" id="2" startTime="106150" endTime="114425" palette="40" />
+        <Effect ref="64" name="State" id="3" startTime="114850" endTime="126525" palette="40" />
+        <Effect ref="64" name="State" id="4" startTime="126725" endTime="139925" palette="40" />
+        <Effect ref="64" name="State" id="5" startTime="140075" endTime="146150" palette="40" />
+        <Effect ref="64" name="State" id="6" startTime="147300" endTime="151400" palette="40" />
+        <Effect ref="64" name="State" id="7" startTime="153250" endTime="159200" palette="40" />
+        <Effect ref="64" name="State" id="8" startTime="159950" endTime="165750" palette="40" />
+        <Effect ref="64" name="State" id="9" startTime="166850" endTime="172425" palette="40" />
+        <Effect ref="64" name="State" id="10" startTime="173950" endTime="178350" palette="40" />
+        <Effect ref="64" name="State" id="11" startTime="181450" endTime="194575" palette="40" />
+        <Effect ref="65" name="State" id="12" startTime="194575" endTime="198350" palette="40" />
+        <Effect ref="66" name="State" id="13" startTime="198350" endTime="201500" palette="40" />
+        <Effect ref="64" name="State" id="14" startTime="201500" endTime="211450" palette="40" />
+        <Effect ref="64" name="State" id="15" startTime="211950" endTime="220325" palette="40" />
+        <Effect ref="65" name="State" id="16" startTime="221700" endTime="225150" palette="40" />
+        <Effect ref="66" name="State" id="17" startTime="225550" endTime="228275" palette="40" />
+        <Effect ref="64" name="State" id="18" startTime="228275" endTime="239550" palette="40" />
+        <Effect ref="64" name="State" id="19" startTime="240425" endTime="245775" palette="40" />
+        <Effect ref="64" name="State" id="20" startTime="246850" endTime="252550" palette="40" />
+        <Effect ref="64" name="State" id="21" startTime="253950" endTime="256350" palette="40" />
+        <Effect ref="64" name="State" id="22" startTime="259850" endTime="279750" palette="40" />
+        <Effect ref="64" name="State" id="23" startTime="280575" endTime="283550" palette="40" />
+      </EffectLayer>
+      <EffectLayer>
+        <Effect ref="67" name="Faces" startTime="94375" endTime="126725" palette="37" />
+        <Effect ref="68" name="Faces" id="1" startTime="126725" endTime="151700" palette="37" />
+        <Effect ref="67" name="Faces" id="2" startTime="153250" endTime="178650" palette="37" />
+        <Effect ref="69" name="Faces" id="3" startTime="181450" endTime="285050" palette="37" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Dark Helmet">
@@ -1853,54 +1964,54 @@
     <Element type="model" name="PiXeL Paradise Xmas Tree Choir">
       <EffectLayer />
       <EffectLayer>
-        <Effect ref="55" name="Faces" startTime="66700" endTime="91125" palette="41" />
-        <Effect ref="55" name="Faces" id="1" startTime="126725" endTime="178650" palette="41" />
-        <Effect ref="56" name="Faces" id="2" startTime="207775" endTime="285050" palette="41" />
+        <Effect ref="70" name="Faces" startTime="66700" endTime="91125" palette="41" />
+        <Effect ref="70" name="Faces" id="1" startTime="126725" endTime="178650" palette="41" />
+        <Effect ref="71" name="Faces" id="2" startTime="207775" endTime="285050" palette="41" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="57" name="Faces" startTime="66700" endTime="91125" palette="41" />
-        <Effect ref="57" name="Faces" id="1" startTime="126725" endTime="178650" palette="41" />
-        <Effect ref="58" name="Faces" id="2" startTime="207775" endTime="285050" palette="41" />
+        <Effect ref="72" name="Faces" startTime="66700" endTime="91125" palette="41" />
+        <Effect ref="72" name="Faces" id="1" startTime="126725" endTime="178650" palette="41" />
+        <Effect ref="73" name="Faces" id="2" startTime="207775" endTime="285050" palette="41" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="59" name="Faces" startTime="66700" endTime="91125" palette="41" />
-        <Effect ref="59" name="Faces" id="1" startTime="126725" endTime="178650" palette="41" />
-        <Effect ref="60" name="Faces" id="2" startTime="207775" endTime="285050" palette="41" />
+        <Effect ref="74" name="Faces" startTime="66700" endTime="91125" palette="41" />
+        <Effect ref="74" name="Faces" id="1" startTime="126725" endTime="178650" palette="41" />
+        <Effect ref="75" name="Faces" id="2" startTime="207775" endTime="285050" palette="41" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="61" name="Faces" startTime="66700" endTime="91125" palette="41" />
-        <Effect ref="61" name="Faces" id="1" startTime="126725" endTime="178650" palette="41" />
-        <Effect ref="62" name="Faces" id="2" startTime="207775" endTime="285050" palette="41" />
+        <Effect ref="76" name="Faces" startTime="66700" endTime="91125" palette="41" />
+        <Effect ref="76" name="Faces" id="1" startTime="126725" endTime="178650" palette="41" />
+        <Effect ref="77" name="Faces" id="2" startTime="207775" endTime="285050" palette="41" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="63" name="Faces" startTime="66700" endTime="91125" palette="41" />
-        <Effect ref="63" name="Faces" id="1" startTime="126725" endTime="178650" palette="41" />
-        <Effect ref="64" name="Faces" id="2" startTime="207775" endTime="285050" palette="41" />
+        <Effect ref="78" name="Faces" startTime="66700" endTime="91125" palette="41" />
+        <Effect ref="78" name="Faces" id="1" startTime="126725" endTime="178650" palette="41" />
+        <Effect ref="79" name="Faces" id="2" startTime="207775" endTime="285050" palette="41" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="65" name="Faces" startTime="66700" endTime="91125" palette="41" />
-        <Effect ref="65" name="Faces" id="1" startTime="126725" endTime="178650" palette="41" />
-        <Effect ref="66" name="Faces" id="2" startTime="207775" endTime="285050" palette="41" />
+        <Effect ref="80" name="Faces" startTime="66700" endTime="91125" palette="41" />
+        <Effect ref="80" name="Faces" id="1" startTime="126725" endTime="178650" palette="41" />
+        <Effect ref="81" name="Faces" id="2" startTime="207775" endTime="285050" palette="41" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="67" name="Faces" startTime="66700" endTime="91125" palette="41" />
-        <Effect ref="67" name="Faces" id="1" startTime="126725" endTime="178650" palette="41" />
-        <Effect ref="68" name="Faces" id="2" startTime="207775" endTime="285050" palette="41" />
+        <Effect ref="82" name="Faces" startTime="66700" endTime="91125" palette="41" />
+        <Effect ref="82" name="Faces" id="1" startTime="126725" endTime="178650" palette="41" />
+        <Effect ref="83" name="Faces" id="2" startTime="207775" endTime="285050" palette="41" />
       </EffectLayer>
       <SubModelEffectLayer name="Tree Outline">
-        <Effect ref="69" name="On" startTime="66700" endTime="91125" palette="42" />
-        <Effect ref="69" name="On" id="1" startTime="126725" endTime="178650" palette="42" />
-        <Effect ref="70" name="On" id="2" startTime="207775" endTime="285050" palette="42" />
+        <Effect ref="84" name="On" startTime="66700" endTime="91125" palette="42" />
+        <Effect ref="84" name="On" id="1" startTime="126725" endTime="178650" palette="42" />
+        <Effect ref="85" name="On" id="2" startTime="207775" endTime="285050" palette="42" />
       </SubModelEffectLayer>
       <SubModelEffectLayer name="Candy Canes White Stripes">
-        <Effect ref="69" name="On" startTime="66700" endTime="91125" palette="43" />
-        <Effect ref="69" name="On" id="1" startTime="126725" endTime="178650" palette="43" />
-        <Effect ref="70" name="On" id="2" startTime="207775" endTime="285050" palette="43" />
+        <Effect ref="84" name="On" startTime="66700" endTime="91125" palette="43" />
+        <Effect ref="84" name="On" id="1" startTime="126725" endTime="178650" palette="43" />
+        <Effect ref="85" name="On" id="2" startTime="207775" endTime="285050" palette="43" />
       </SubModelEffectLayer>
       <SubModelEffectLayer name="Candy Canes Red Stripes">
-        <Effect ref="69" name="On" startTime="66700" endTime="91125" palette="44" />
-        <Effect ref="69" name="On" id="1" startTime="126725" endTime="178650" palette="44" />
-        <Effect ref="70" name="On" id="2" startTime="207775" endTime="285050" palette="44" />
+        <Effect ref="84" name="On" startTime="66700" endTime="91125" palette="44" />
+        <Effect ref="84" name="On" id="1" startTime="126725" endTime="178650" palette="44" />
+        <Effect ref="85" name="On" id="2" startTime="207775" endTime="285050" palette="44" />
       </SubModelEffectLayer>
     </Element>
     <Element type="timing" name="Lyrics Lead">

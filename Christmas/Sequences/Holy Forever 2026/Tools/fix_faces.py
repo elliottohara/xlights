@@ -58,7 +58,8 @@ SINGERS = {
     # Teddy is the ONE face that keeps its forced colors (brown mouth, blue/brown
     # eyes) per user preference - everyone else renders white mouth/eyes.
     # ('No Forced Colors' = identical nodes rendering white, if ever wanted.)
-    'EFL Teddy': ('Teddy ', 'Teddy RedBow static', 'Lyrics Female'),
+    # Pink bow (not red) — see teddy_expressive.py for arms/brows/eyes States.
+    'EFL Teddy': ('Teddy ', 'Teddy PinkBow', 'Lyrics Female'),
     'GE Santa Singing': ('Santa Singing', 'hat', 'Lyrics Choir'),
     'GE Grinch Talk': ('Grinch', None, 'Lyrics Choir'),
     'SingingTree': ('Tree', None, 'Lyrics Choir'),

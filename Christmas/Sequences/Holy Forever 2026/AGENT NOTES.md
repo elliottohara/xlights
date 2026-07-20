@@ -2,7 +2,7 @@
 
 Working notes for `Christmas/Sequences/Holy Forever 2026/Holy Forever 2026.xsq` (built July 2026). Read alongside the root `AGENTS.md`. Song: Chris Tomlin "Holy Forever" (Jenn Johnson female vocal), media = `Media/Chris Tomlin - Holy Forever (Lyric Video).mp4`, 308314 ms, 25 ms frames, ModelBlending on.
 
-**Current task:** branch `holy-forever-chorus-choir` in permanent **Slot A** (`/Users/elliott.ohara/xlights-worktrees/slot-a`, API 49913). Its saved `.xsq` is a combined review baseline: the pending `angels-cry-wings` effects and latest four-phrase `pc1-star-ascent` five-layer stacks were replayed first, then the Bulb/Penguin/PiXeL Paradise chorus choir was added. Those two legacy branches still own their builders/notes until they are merged.
+**Current task:** branch `teddy-pink-expressive` in permanent **Slot A** (`/Users/elliott.ohara/xlights-worktrees/slot-a`, API 49913). Teddy rebuilt pink + expressive States for the whole female part (see below). Prior Slot A review baseline still holds for everything else (chorus choir, PC1 ascents, wings, etc.).
 
 ## ⚠ Baseline (hand-approved 2026-07-19)
 
@@ -217,13 +217,30 @@ The original cast is user-approved ("they were perfect"; do not remove). Standar
 | Prop | Track | Blocks |
 |---|---|---|
 | GE 8ft Snowman Singing (lead) | Lyrics Lead | V1→C1; **verse 2 + all of chorus 2 as one block on `Lyrics 1`** (duets with Teddy from her 1:34 entrance, backs her up on C2b); PC2a→C3; outro solo |
-| EFL Teddy (female lead) — def `Teddy `, colored face | Lyrics Female | V2; C2b→C2c; PC2a→C3 |
+| EFL Teddy (female lead) — def `Teddy `, **UseState `Teddy PinkBow`** (not red) | Lyrics Female (+ Lyrics Choir on C2a) | V2; **C2a**; C2b→C2c; PC2a→C3 — plus L0–L2 State expression (see Teddy section) |
 | Singing Bulb - L/C/R (choir) | Lyrics Intro Choir (dim) then Lyrics Choir | **intro Holys + intimate V1** (`3900–41850`, muted ivory/gold palette, brightness 40); then C1; C2a→C2c; PC2b→C3 (full C9) |
 | GE Santa Singing, GE Grinch Talk, SingingTree | Lyrics Choir | PC2a→C3 |
 | Toni - Penguin 1/2 | Lyrics Choir | C1; C2a→C2c; PC2b→C3 (exactly matches the bulbs' chorus blocks) |
 | PiXeL Paradise Xmas Tree Choir — Star + 5 Ornaments + Present | Lyrics Choir | C1; C2a→C2c; PC2b→C3 (exactly matches the Penguins) |
 
 Verified saved spans after close/reopen: bulbs = `3900–41850`, `66700–91125`, `126725–178650`, `207775–285050`; Penguins and PiXeL Paradise = the latter three blocks. `chorus_choir_faces.py` safely rebuilds the Bulbs/Penguins and preserves the dim intro; `pixel_paradise_tree_choir.py` independently rebuilds the seven-face tree choir. `fix_faces.py` still requires the missing `Lyrics 1` track and does not recreate the dim intro/V1 bulb block; do not use it for this targeted repair.
+
+## EFL Teddy — pink bow + expressive States (LIVE 2026-07-19, branch `teddy-pink-expressive`)
+
+Rebuild: `Tools/teddy_expressive.py` (`--dry-run` / default saves). Backup: `Holy Forever 2026.xsq.bak-before-teddy-expressive`.
+
+Teddy keeps the forced-color face def `Teddy ` (brown mouth, blue/brown eyes). Costume state is **`Teddy PinkBow`** (pink bowtie/knot/shade — not `Teddy RedBow static`).
+
+| Layer | Effect | Role |
+|---|---|---|
+| L0 | State arms (beat-driven + poses) | Beat-animated blocks (`Mode=Default`, `TimingTrack=Beat Count` — the 1–4 labels step the 1–4 states): `leaning (beats)` in V2/C2c, `flapping (beats)` in choruses/PC2, one-arm `left/right wave (beats)` on her C2b + C3b features and PC2b. Held `arms` poses (`mid`/`up`, Fade_Time 80) punctuate peaks: "amen", "Holy forever", "above them all", "Jesus", "lifted high", final raise into the fade. |
+| L1 | State `eye direction` | up / upleft / upright / left / right — heavenward on worship lines; side glances in PC2 |
+| L2 | State `Brows` | `sad` on V2 redemption lines; `highbrows` on praise; occasional `spockleft`/`spockright` in PC2 |
+| L3 | Faces | mouth sync; `UseState=Teddy PinkBow`; Auto blink |
+
+Faces blocks: V2 `Lyrics Female` → C2a `Lyrics Choir` (Female track has no C2a phrases) → C2b–C2c `Lyrics Female` → PC2a–C3 `Lyrics Female` (+1.5 s final fade). 93 effects (34 arm blocks). Script clears Teddy via .xsq (multi-layer) then re-adds — safe to re-run.
+
+Beat-state recipe (verified against the vendor sequences that ship these defs — You Make It Feel Like Christmas, Happily Ever After, Can-Can): `E_CHOICE_State_Color=Graduate, E_CHOICE_State_Mode=Default, E_CHOICE_State_StateDefinition=<def> (beats), E_CHOICE_State_TimingTrack=Beat Count, E_SLIDER_State_Fade_Time=0`. The existing `Beat Count` track's 1–4 labels drive the animation — no new timing tracks were needed. (`Brows (Beats)` exists too but only defines states 1–2, so it's unused.)
 
 ## Bulb colors (C9 look — pure Faces palette, no submodel effects) — LIVE, part of the bulbs' face effects
 
@@ -260,7 +277,8 @@ Exact target: **`PiXeL Paradise Xmas Tree Choir`** (not `Toni - Flat Tree` and n
 - `sections.json` — per-section/per-line sung spans (used by all placement scripts).
 - `chorus_choir_faces.py` — targeted, idempotent Bulb + Penguin chorus rebuild; preserves/validates the dim intro bulb block, restores bulb C9, applies belly-only Penguin colors, verifies, then saves.
 - `pixel_paradise_tree_choir.py` — seven PiXeL Paradise faces + subdued tree/candy-cane support, matched exactly to the Penguin choir blocks.
-- `fix_faces.py` — canonical C1+ all-face rebuild (includes bulb C9 + belly-only Penguin palettes and clears the bulb submodels). It requires the currently missing `Lyrics 1` track and does not recreate the dim intro/V1 bulb block.
+- `teddy_expressive.py` — wipe/rebuild EFL Teddy pink-bow Faces + arms/brows/eye-direction States for the whole female part (`--dry-run`).
+- `fix_faces.py` — canonical C1+ all-face rebuild (includes bulb C9 + belly-only Penguin palettes and clears the bulb submodels). It requires the currently missing `Lyrics 1` track and does not recreate the dim intro/V1 bulb block. **Does not rebuild Teddy's L0–L2 States** — use `teddy_expressive.py` for Teddy.
 - `add_intro_holy_choir.py` — preserved builder/importer for `Lyrics Intro Choir`; do not re-import when the track exists. Its short original Faces treatment is historical; `intimate_bulb_faces.py` defines the current longer treatment.
 - `clear_intro.py` — direct .xsq edit that deleted every model effect ending ≤15520 (supports `--dry-run`). Pattern to copy for any future time-scoped deletion the API can't do: save session → cp backup → run → close/reopen sequence.
 - `continuous_cross_intro.py` — rebuild Mega Tree L0 cross through intro + intimate V1 (`0–41850`); clears leftover downstairs L0 if any.
