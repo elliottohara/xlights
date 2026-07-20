@@ -2,7 +2,7 @@
 
 Working notes for `Christmas/Sequences/Holy Forever 2026/Holy Forever 2026.xsq` (built July 2026). Read alongside the root `AGENTS.md`. Song: Chris Tomlin "Holy Forever" (Jenn Johnson female vocal), media = `Media/Chris Tomlin - Holy Forever (Lyric Video).mp4`, 308314 ms, 25 ms frames, ModelBlending on.
 
-**Current task:** branch `shrub-verse-piano-notes` in permanent **Slot A** (`/Users/elliott.ohara/xlights-worktrees/slot-a`, API 49913). Intimate-V1 piano notes on `All Shrubs GRP` (see "Dense piano onsets" below). ⚠ **2026-07-20 incident:** this work was first built directly on a detached-`main` HEAD (no task branch) and got wiped when another agent drove this shared worktree through `git checkout climax-drum-riff` and back — the checkout reverted the uncommitted `.xsq`. Recovered by re-running the tools on this dedicated branch. **Lesson: always work on a task branch and commit; uncommitted `.xsq` edits in a slot are destroyed by any branch switch another agent makes in that worktree.**
+**Current task:** branch `holy-climax-blue-marquee` in permanent **Slot B** (`/Users/elliott.ohara/xlights-worktrees/slot-b`, API 49914). Subtle blue `House Outline` marquee across the full Final Chorus (see below).
 
 **Prior task:** branch `fix-pc1-merge` in Slot B (API 49914). Rebuilt from the exact clean `3692089` sequence after a textual `.xsq` merge corrupted shared effect/palette references; final PC1 effects were reapplied only through xLights.
 
@@ -306,6 +306,16 @@ Exact target: **`PiXeL Paradise Xmas Tree Choir`** (not `Toni - Flat Tree` and n
 - Backup: `Holy Forever 2026.xsq.bak-before-climax-drum-riff` (taken before the very first Roof-Marquee attempt; still valid as a pre-this-feature snapshot).
 - Preview: `RenderCompare/holy_forever_climax_house_flash.mp4` (7 s clip centered on the riff).
 
+## Added 2026-07-20: subtle blue House Outline marquee across the Final Chorus
+
+- One slow sapphire-blue (`#2864FF`) **Marquee** on `House Outline` L1 from **234225–287275 ms**: starts exactly with the live `Song Sections` = `Final Chorus` label and ends at the `Mood` Climax→Afterglow boundary.
+- Uses `Single Line` so the 26-model house group reads as one coherent outline rather than scattered segment chases. Narrow/sparse recipe: band 4, skip 9, thickness 2, speed 2, `.60` fade in / `.75` fade out.
+- Custom palette brightness curve breathes only **38→46→38** within each bar: midpoint dips and peaks on every live `Beat Count` bar downbeat from **237275 through 283925**. The effect enters 300 ms after the preceding 233925 downbeat and the final 287275 boundary is the next downbeat under the fadeout. This is intentionally super subtle.
+- L0's eight dramatic white drum-riff flashes at 233.3–234.9 s are preserved; the marquee begins under the final flashes but remains isolated on L1.
+- `Tools/climax_blue_house_marquee.py` (`--dry-run`) adds/verifies the live version. It also recognizes and replaces the superseded 273650 start via one targeted closed-sequence delete followed by API re-add; any other L1 contents cause a refusal.
+- Backup: `Holy Forever 2026.xsq.bak-before-final-chorus-marquee`.
+- Built on branch `holy-climax-blue-marquee` in **Slot B**.
+
 ## Tools inventory (`Christmas/Sequences/Holy Forever 2026/Tools/`)
 
 - `transcribe.py` — faster-whisper word timestamps (needs a venv with `faster-whisper`; use `vad_filter=False` — VAD ate this vocal).
@@ -330,6 +340,7 @@ Exact target: **`PiXeL Paradise Xmas Tree Choir`** (not `Toni - Flat Tree` and n
 - `pc1_christ_convergence.py` — rebuild the 16 Christ blinks plus eight `Whole Scene w Matrixes` meteor implosions aimed at Christ.
 - `cleanup_pc1_convergence.py` — direct-delete reset for superseded PC1 effects/stubs before a clean rebuild; run `--dry-run`, close xLights, then run once.
 - `climax_house_flash.py` — CURRENT owner of the C3 climax drum riff: 8 short, dramatic white strobe flashes on `House Outline` L0. `--dry-run` / `--clear-only`. (Superseded/deleted: `climax_drum_riff.py` [Roof-line Marquee], `climax_snowflake_shocks.py` [roof-snowflake Shockwaves] — both tried and rejected first.)
+- `climax_blue_house_marquee.py` — add/verify the subtle sapphire `House Outline` L1 Marquee across the full Final Chorus; brightness breathes 38↔46 with the bar downbeats (`--dry-run`; safely migrates the superseded 273650 start only).
 - `lantana_piano.py` — wipe/rebuild full-song True Piano on `Matrix - Lantana` (`--dry-run` / `--clear-only`). **Removed 2026-07-19 (user: not working) — refuse to re-run its build mode; `--clear-only` is safe/idempotent.**
 - `migrate_christ_submodel.py` — historical one-shot Christ-submodel migration; **do not run** (its four lyric glows were superseded by bass blinks).
 - `migrate_faces.py`, `place_faces.py`, `lead_backup_c2.py` — historical; superseded by `fix_faces.py`.
@@ -337,4 +348,4 @@ Exact target: **`PiXeL Paradise Xmas Tree Choir`** (not `Toni - Flat Tree` and n
 
 ## Review checklist (baseline — do not “restore” removed bits)
 
-0:00–0:42 Whole Scene snow + Mega Tree cross + dim bulbs; Penguins + PiXeL Paradise dark · 0:15 Snowman + arch piano chords + mini-tree fills + oak cymbal Twinkles · Lantana empty (Piano MIDI effect removed 2026-07-19, wasn't working) · Entry "Holy" Text only (no downstairs/garage/window snow) · Icicles empty; House Outline dark except 8 dramatic white strobe flashes at 3:53 (C3 climax drum riff); Roof = final hold only; Tree Topper accents kept · C1/C2/PC2b→C3 Bulbs + both white-exterior, belly-accented Penguins + all seven PiXeL Paradise faces sing together · 4:47 Snowman outro solo.
+0:00–0:42 Whole Scene snow + Mega Tree cross + dim bulbs; Penguins + PiXeL Paradise dark · 0:15 Snowman + arch piano chords + shrub-bank piano notes + oak cymbal Twinkles · Lantana empty (Piano MIDI effect removed 2026-07-19, wasn't working) · Entry "Holy" Text only (no downstairs/garage/window snow) · Icicles empty; House Outline dark except 8 dramatic white strobe flashes at 3:53 and the subtle blue bar-breathing Marquee across 3:54–4:47; Roof = final hold only; Tree Topper accents kept · C1/C2/PC2b→C3 Bulbs + both white-exterior, belly-accented Penguins + all seven PiXeL Paradise faces sing together · 4:47 Snowman outro solo.
