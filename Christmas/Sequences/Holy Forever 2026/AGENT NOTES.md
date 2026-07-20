@@ -2,7 +2,7 @@
 
 Working notes for `Christmas/Sequences/Holy Forever 2026/Holy Forever 2026.xsq` (built July 2026). Read alongside the root `AGENTS.md`. Song: Chris Tomlin "Holy Forever" (Jenn Johnson female vocal), media = `Media/Chris Tomlin - Holy Forever (Lyric Video).mp4`, 308314 ms, 25 ms frames, ModelBlending on.
 
-**Current task:** branch `teddy-pink-expressive` in permanent **Slot A** (`/Users/elliott.ohara/xlights-worktrees/slot-a`, API 49913). Teddy rebuilt pink + expressive States for the whole female part (see below). Prior Slot A review baseline still holds for everything else (chorus choir, PC1 ascents, wings, etc.).
+**Current task:** branch `fix-pc1-merge` in permanent **Slot B** (`/Users/elliott.ohara/xlights-worktrees/slot-b`, API 49914). Rebuilt from the exact clean `3692089` sequence after a textual `.xsq` merge corrupted shared effect/palette references; final PC1 effects were reapplied only through xLights.
 
 ## ⚠ Baseline (hand-approved 2026-07-19)
 
@@ -13,8 +13,8 @@ Saved from the live xLights session after hand edits. Live model effects now:
 - **Intro + intimate V1 (0–41850):** Whole Scene snow + Mega Tree glowing cross + dim Singing Bulb Faces; from 0:15 Snowman + `Arches - All` piano-chord SingleStrand + mini-tree note fills + oak cymbal Twinkles.
 - **Windows:** `Matrix - Entry` = "Holy" Text only (L0). `Matrix - Downstairs Window`, `Matrix-Garage Window`, and `Matrix - Lantana` = **empty** (Lantana's True Piano MIDI effect removed 2026-07-19 — user reported it wasn't working; do not restore). `Matrixes` group = empty.
 - **House / icicles:** `House Outline` and `Icicles GRP` = **empty** (all accent/twinkle/hold effects hand-deleted). **`Roof` = final On hold only** (301500–308275). No Marquees anywhere.
-- **Also live:** Tree Topper (On accents + hold), `GE Merry Christmas/Christ` PC1 glow, pending PC1 Mega Tree ascents on all four "Your name" phrases + "angels cry" EFL Wing stacks, and the verified Bulb/Penguin/PiXeL Paradise chorus choir described below.
-- **Timing tracks (12):** Lyrics Lead/Female/Choir + Intro Choir, Song Sections, Mood, Beat Count, Kick, Snare, Cymbals, Piano Chords, Piano Notes. (`Lyrics 1` still missing — see faces section.)
+- **Also live:** Tree Topper bass accents; eight Mega Tree meteor windows; eight `Whole Scene w Matrixes` implosions phase-locked into `Christ`; full-word Christ bass blinks with the rest of the sign masked off; "angels cry" EFL Wing stacks; and the verified Teddy/Bulb/Penguin/PiXeL Paradise choir described below.
+- **Timing tracks (13):** Lyrics 1, Lyrics Lead/Female/Choir + Intro Choir, Song Sections, Mood, Beat Count, Kick, Snare, Cymbals, Piano Chords, Piano Notes.
 
 **Do not run / deleted (would undo this baseline):**
 - deleted: `Tools/migrate_matrixes_snow_to_windows.py` (window snow)
@@ -208,7 +208,7 @@ Templates: `Christmas/Sequences/Holy Forever 2026/Timing Templates/Holy Forever 
 
 Template `Christmas/Sequences/Holy Forever 2026/Timing Templates/Holy Forever Drums and Mood.xsq`, built by `Christmas/Sequences/Holy Forever 2026/Tools/build_timing_template.py` (band-limited spectral-flux onset detection on `Christmas/Sequences/Holy Forever 2026/Tools/holy_44k.wav`, gated per 16th slot of the TRUE 600-anchor grid, kick/snare validated by onset-spectrum template matching, crashes by a ring/sustain test). Imported once via `importXLightsSequence` (auto, no media) and verified mark-for-mark (`Christmas/Sequences/Holy Forever 2026/Tools/verify_timing_import.py` — all 6 OK). All marks snapped to 25 ms. Hit tracks are contiguous: unlabeled gap fillers + short labeled hit marks (Kick=`K` 150 ms, Snare=`S` 150 ms, Cymbals=`C` 400 ms) — sequencers key effects off the labeled marks.
 
-(Current total: 3 per-voice lyric tracks + Intro Choir + these 6 tracks + **`Piano Chords`** + **`Piano Notes`** = 12.)
+(Current total: full **`Lyrics 1`** + 3 per-voice lyric tracks + Intro Choir + these 6 tracks + **`Piano Chords`** + **`Piano Notes`** = 13.)
 
 - **`Song Sections`** — 15 labeled blocks on the original effect-section boundaries (Intro 0 / Verse 1 15520 / Pre-Chorus 1 41850 / Chorus 1 67570 / Verse 2 95100 / Chorus 2 127630 / "Hear Your People" female feature 154150 / Holy Forever 166850 / Pre-Chorus 2 pass 1 181900 / pass 2 full cast 207210 / Final Chorus 234230 / Hear Your People 260760 / Holy Forever 273650 / Outro solo tag 287290 / Final hold 301500).
 - **`Mood`** — 12 labeled energy arcs on true-grid downbeats: Ethereal 0 → Intimate 13900 → Building 40600 (bass+kick enter, RMS jumps ~4 dB) → Anthemic 67275 → Groove 93925 (kit settles, backbeat starts) → Soaring 127275 → Featured 153925 → Regather 180600 → Climbing 207275 → Climax 233925 (loudest stretch of the song) → Afterglow 287275 (band falls away; low band drops ~19 dB at bar 87) → Silence 300600.
@@ -235,7 +235,7 @@ The original cast is user-approved ("they were perfect"; do not remove). Standar
 | Toni - Penguin 1/2 | Lyrics Choir | C1; C2a→C2c; PC2b→C3 (exactly matches the bulbs' chorus blocks) |
 | PiXeL Paradise Xmas Tree Choir — Star + 5 Ornaments + Present | Lyrics Choir | C1; C2a→C2c; PC2b→C3 (exactly matches the Penguins) |
 
-Verified saved spans after close/reopen: bulbs = `3900–41850`, `66700–91125`, `126725–178650`, `207775–285050`; Penguins and PiXeL Paradise = the latter three blocks. `chorus_choir_faces.py` safely rebuilds the Bulbs/Penguins and preserves the dim intro; `pixel_paradise_tree_choir.py` independently rebuilds the seven-face tree choir. `fix_faces.py` still requires the missing `Lyrics 1` track and does not recreate the dim intro/V1 bulb block; do not use it for this targeted repair.
+Verified saved spans after close/reopen: bulbs = `3900–41850`, `66700–91125`, `126725–178650`, `207775–285050`; Penguins and PiXeL Paradise = the latter three blocks. `chorus_choir_faces.py` safely rebuilds the Bulbs/Penguins and preserves the dim intro; `pixel_paradise_tree_choir.py` independently rebuilds the seven-face tree choir. `fix_faces.py` requires `Lyrics 1` (now present) but does not recreate the dim intro/V1 bulb block; do not use it for this targeted repair.
 
 ## EFL Teddy — pink bow + expressive States (LIVE 2026-07-19, branch `teddy-pink-expressive`)
 
@@ -290,7 +290,7 @@ Exact target: **`PiXeL Paradise Xmas Tree Choir`** (not `Toni - Flat Tree` and n
 - `chorus_choir_faces.py` — targeted, idempotent Bulb + Penguin chorus rebuild; preserves/validates the dim intro bulb block, restores bulb C9, applies belly-only Penguin colors, verifies, then saves.
 - `pixel_paradise_tree_choir.py` — seven PiXeL Paradise faces + subdued tree/candy-cane support, matched exactly to the Penguin choir blocks.
 - `teddy_expressive.py` — wipe/rebuild EFL Teddy pink-bow Faces + arms/brows/eye-direction States for the whole female part (`--dry-run`).
-- `fix_faces.py` — canonical C1+ all-face rebuild (includes bulb C9 + belly-only Penguin palettes and clears the bulb submodels). It requires the currently missing `Lyrics 1` track and does not recreate the dim intro/V1 bulb block. **Does not rebuild Teddy's L0–L2 States** — use `teddy_expressive.py` for Teddy.
+- `fix_faces.py` — canonical C1+ all-face rebuild (includes bulb C9 + belly-only Penguin palettes and clears the bulb submodels). It requires the now-present `Lyrics 1` track but does not recreate the dim intro/V1 bulb block. **Does not rebuild Teddy's L0–L2 States** — use `teddy_expressive.py` for Teddy.
 - `add_intro_holy_choir.py` — preserved builder/importer for `Lyrics Intro Choir`; do not re-import when the track exists. Its short original Faces treatment is historical; `intimate_bulb_faces.py` defines the current longer treatment.
 - `clear_intro.py` — direct .xsq edit that deleted every model effect ending ≤15520 (supports `--dry-run`). Pattern to copy for any future time-scoped deletion the API can't do: save session → cp backup → run → close/reopen sequence.
 - `continuous_cross_intro.py` — rebuild Mega Tree L0 cross through intro + intimate V1 (`0–41850`); clears leftover downstairs L0 if any.
