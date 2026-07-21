@@ -304,12 +304,12 @@ Exact target: **`PiXeL Paradise Xmas Tree Choir`** (not `Toni - Flat Tree` and n
 
 ## Added 2026-07-21: Rosa Grande C1 constant motion (branch `rosa-c1-constant-motion`, Slot A — pending user review)
 
-First Rosa Grande feature. Xtreme-style treatment of Chorus 1, window **67275–93925** (Anthemic Mood downbeat → Groove/V2 downbeat), 23 effects on six part-bank GRPs, all starts ON live timing marks. Recipes lifted from the pros' Imperial March HD mapping of this layout.
+First Rosa Grande feature. Window **67275–93925** (Anthemic Mood downbeat → Groove/V2 downbeat). Live version = **v2**: 4 slow continuous full-window effects, one per bank, each in its own traditional color.
 
-- **Continuous bases (constant movement):** `Ribbon GRP` L0 Fan (4 blades, 720 rev, gold/ivory b70) · `Spoke GRP` L0 3D Pinwheel with **speed ramp VC 10→26** across the chorus (accelerates as it builds; ivory/gold b75) · `Ring GRP` L0 Spirals rotation −6 counter-rotating against the pinwheel (amber/gold b65). All three run the full window.
-- **Beat-locked detail:** `Snowflake Spoke GRP` L0 Shockwave bloom (Overlay-Centered, 28/65, 600 ms, white/gold b90) on each of the 8 `Beat Count` bar `1` marks 67275–90600 · `Torch Long Even/Odd GRP` L0 alternating Shockwave stabs (Per Model Per Preview, 13/25, 450 ms, gold/white b85) on the 12 `Kick` `K` marks 68075–93075 (even/odd pair alternation).
-- Owns **L0 only** on those six banks inside the window. `Web Ring GRP` untouched (has the V1 chord-bank effect). Rebuild: `Tools/rosa_c1_constant_motion.py` (`--dry-run`; **refuses if the window isn't empty** — clear via .xsq first on rework since the API can't delete).
-- Backup: `Holy Forever 2026.xsq.bak-before-rosa-c1`.
+- **v1 REJECTED same day** ("positively awful... It'll cause seizures"): 8 bar-downbeat Shockwave blooms (Snowflake Spoke) + 12 kick Shockwave stabs (Torch Long Even/Odd) over fast bases (Pinwheel speed-ramp 10→26, Spirals −6, Fan 720 rev), all warm gold. **Do not restore short Shockwave hits or fast rotation on the Rosa in this song.**
+- **v2 (LIVE, pending review):** `Spoke GRP` 3D Pinwheel constant speed 8, deep red `#B01212`/gold b60 · `Ring GRP` Spirals rotation −3 movement 1.0 counter-rotating, evergreen `#0B6B3A`/gold b55 · `Ribbon GRP` Fan 3 blades ONE revolution across the whole chorus (360), gold/white b55 · `Snowflake Spoke GRP` sparse Twinkle (8/60) white/gold b45. Torch banks dark. 1.0 s fade in/out everywhere.
+- Owns **L0 only** on the six banks (incl. the now-empty torches) inside the window. `Web Ring GRP` untouched (has the V1 chord-bank effect). Rebuild: `Tools/rosa_c1_constant_motion.py` (`--dry-run` / `--clear-only` / `--rework` = clear the window via direct .xsq edit [close → strip → reopen] then re-add — the pattern for any future Rosa rework).
+- Backups: `Holy Forever 2026.xsq.bak-before-rosa-c1` (pre-v1), `.bak-before-rosa-c1-v2` (v1 state).
 
 ## Added 2026-07-20: C3 climax drum-riff — dramatic `House Outline` strobe flash
 
