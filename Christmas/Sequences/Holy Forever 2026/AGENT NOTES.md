@@ -2,7 +2,7 @@
 
 Working notes for `Christmas/Sequences/Holy Forever 2026/Holy Forever 2026.xsq` (built July 2026). Read alongside the root `AGENTS.md`. Song: Chris Tomlin "Holy Forever" (Jenn Johnson female vocal), media = `Media/Chris Tomlin - Holy Forever (Lyric Video).mp4`, 308314 ms, 25 ms frames, ModelBlending on.
 
-**Current task:** branch `holy-angels-cry-holy-text` in permanent **Slot A** (`/Users/elliott.ohara/xlights-worktrees/slot-a`, API 49913). Script-font swaying "Holy" on Projector + Entry + Downstairs at each chorus "angels cry holy" (see below).
+**Current task:** branch `rosa-c1-constant-motion` in permanent **Slot A** (`/Users/elliott.ohara/xlights-worktrees/slot-a`, API 49913). First Rosa Grande feature: constant detailed movement across Chorus 1 (see "Rosa Grande C1" section).
 
 **Prior task (Slot B):** branch `holy-pc1-house-chase` — PC1 "your name" Whole Scene w Matrixes → Christ implode + star-only Mega Tree descents.
 
@@ -303,6 +303,46 @@ Exact target: **`PiXeL Paradise Xmas Tree Choir`** (not `Toni - Flat Tree` and n
 - Supporting submodel Ons make the full prop read without overpowering the faces: `Tree Outline` muted evergreen `#0B6B3A` at b38, `Candy Canes White Stripes` ivory `#EEEAE2` at b52, and `Candy Canes Red Stripes` burgundy `#9D1D25` at b48.
 - Rendered/model-reviewed at C1, C2, C3, and the final fade. It is open in Slot A xLights for user review.
 - Rebuild/clear: `Tools/pixel_paradise_tree_choir.py` (`--dry-run` / `--clear-only`).
+
+## Added 2026-07-21: Rosa Grande C1 constant motion (branch `rosa-c1-constant-motion`, Slot A — pending user review)
+
+First Rosa Grande feature. Window **67275–93925** (Anthemic Mood downbeat → Groove/V2 downbeat). Live version = **v2**: 4 slow continuous full-window effects, one per bank, each in its own traditional color.
+
+- **v1 REJECTED same day** ("positively awful... It'll cause seizures"): 8 bar-downbeat Shockwave blooms (Snowflake Spoke) + 12 kick Shockwave stabs (Torch Long Even/Odd) over fast bases (Pinwheel speed-ramp 10→26, Spirals −6, Fan 720 rev), all warm gold. **Do not restore short Shockwave hits or fast rotation on the Rosa in this song.**
+- **v2 REJECTED same day** (user: not using submodel render style the way Xtreme does): flat Overlay-Centered bases (Pinwheel/Spirals/Fan/Twinkle, one color pair each) ignore the prop's real geometry.
+- **v3 (LIVE — user-approved "much better" 2026-07-21)** — direct port of the pros' Rosa stacks in `/Volumes/Personal-Drive/xlights/Christmas/The Christmas Song .xsq` (their ballad: ONE long slow effect per bank, 4–6 banks per ~27 s section, stacked mirrored pinwheels on the whole-prop GRP as the hero move):
+  - `GE Rosa Grande GRP` **L0+L1**: identical slow 2-arm **3D-Inverted twisted Pinwheel** (ArmSize 271, Twist −65, Speed 3, Thickness 40, Blur 3), **`Per Model Per Preview` + `PerPreviewCamera=2D`**, L1 adds `BufferTransform=Flip Horizontal` → the two sweeps counter-rotate through each other over the prop's real geometry. Gradient palette red→gold→green.
+  - `Torch Long Even GRP` L0: slow 4-arm Pinwheel (Thickness 82, Speed 2, Twist −60), Per Model Per Preview 2D, deep red `#B01212`.
+  - `Spoke GRP` L0: Fan, Overlay-Centered, **overscanned End_Radius=333**, Blur 2 (their exact recipe), gold `#FFD89A`.
+  - `Feather Long Odd GRP` L0: Spirals rot 20 / move 4, Overlay-Centered + Flip Horizontal, evergreen `#0B6B3A`.
+  - `Outer Ball GRP` L0: SingleStrand `Bounce from Left`, 8 rotations across the chorus, 2.5 s fades, white/gold.
+  - **Key style lesson (measured, 64 sequences):** the pros' Rosa continuous-motion vocabulary is Per Model Per Preview (+2D camera, often Blur + Flip-Horizontal mirror pairs) for pinwheels through the geometry; Overlay-Centered for Spirals/Fan/chases; `Vertical Per Model/Strand` for SingleStrand drips on feather/torch/ball banks. Long effects = one per bank per section (~27 s), 2 s fades; NOT short hits.
+- Owns the window on: whole GRP L0–L1 + the four banks' L0. `Web Ring GRP` untouched (V1 chord-bank effect). Rebuild: `Tools/rosa_c1_constant_motion.py` (`--dry-run` / `--clear-only` / `--rework` = clear all owned banks' window effects via direct .xsq edit [close → strip → reopen] then re-add).
+- Backups: `Holy Forever 2026.xsq.bak-before-rosa-c1` (pre-v1), `.bak-before-rosa-c1-v2` (v1 state), `.bak-before-rosa-c1-v3` (v2 state).
+
+## Added 2026-07-21: Starlords C1 constant motion (branch `rosa-c1-constant-motion`, Slot A — pending user review)
+
+Blue-led companion to the approved Rosa C1 treatment — same window (67275–93925), same style rules (long slow geometry-aware effects, 2 s fades, no hits), **contrasting motion**, ported from the pros' Starlord verse stack in The Christmas Song. Both fixtures via the shared GRPs. 6 effects:
+
+- `GE Starlord GRP` **L0**: Fan Per Model Per Preview 2D + Blur 2, overscanned radius 333, gold — runs UNDER the pinwheel pair (their exact verse trio).
+- `GE Starlord GRP` **L1+L2**: identical fat 4-arm **3D** Pinwheel (Speed 2, Thickness 82, **Twist value-curve wobble** — verbatim pro curve), Per Model Per Preview 2D, L2 Flip Horizontal → counter-rotating pair. Blue gradient (sapphire→gold→white). Contrast vs Rosa: fat upright 3D arms with wobble vs Rosa's thin 3D-Inverted −65° twist sweeps.
+- `Plunger All GRP` L0: Spirals on **`Vertical Per Model/Strand`** — each plunger drips its own spiral (their exact recipe), sapphire `#2864FF`. ⚠ this layer also holds the V1 chord Shockwave @22225 (outside the window — rework only clears window effects).
+- `Spoke GRP` L0: SingleStrand Left-Right, 3 chases, rotations 4, Vertical Per Model/Strand (TSO recipe slowed), white.
+- `Cross GRP` L0: SingleStrand From Middle drip, Vertical Per Model/Strand (Imperial recipe slowed), ice blue/sapphire.
+- Rebuild: `Tools/starlord_c1_constant_motion.py` (`--dry-run` / `--clear-only` / `--rework`, same .xsq-clear pattern as the Rosa script).
+- Backup: `Holy Forever 2026.xsq.bak-before-starlord-c1`.
+
+## Added 2026-07-21: Reel Maxes C1 constant motion (branch `rosa-c1-constant-motion`, Slot A — pending user review)
+
+Third spinner in the C1 set (Rosa red-led approved, Starlord blue-led). Blue-led like the Starlords, same window (67275–93925) / rules (long slow, 2 s fades, no hits), Reel Max's own measured vocabulary (crisp Twist=82 pinwheel + linear chases on ring banks). Both fixtures via shared GRPs. 6 effects:
+
+- `GE Reel Max GRP` **L0+L1**: mirrored 4-arm 3D Pinwheel pair, fixed **Twist 82 / Thickness 47** (the pros' signature Reel Max whole-prop pinwheel, slowed to Speed 3), Per Model Per Preview 2D, L1 Flip Horizontal. Same sapphire→gold→white gradient as Starlord.
+- `Spokes GRP` L0: thin Spirals (Rot 85, Thick 10, Move 4, flipped) — spoke shimmer, white.
+- `Chevrons GRP` L0: SingleStrand Left-Right rot 4 (their Christmas Song chevron recipe), ice blue/sapphire.
+- `Kites GRP` L0: SingleStrand Bounce rot 3 (TSO recipe), sapphire.
+- `Circles Outer GRP` L0: SingleStrand on **Vertical Per Model/Strand** rot 8 — each circle drips individually (I Saw Mommy recipe), gold. ⚠ layer also holds the V1 chord Shockwave @28850 (outside window).
+- Rebuild: `Tools/reelmax_c1_constant_motion.py` (`--dry-run` / `--clear-only` / `--rework`).
+- Backup: `Holy Forever 2026.xsq.bak-before-reelmax-c1`.
 
 ## Added 2026-07-20: C3 climax drum-riff — dramatic `House Outline` strobe flash
 
