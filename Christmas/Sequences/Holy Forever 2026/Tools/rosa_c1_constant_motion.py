@@ -18,7 +18,7 @@ geometry. v3 is a direct port of the pros' Rosa stacks in
   - GE Rosa Grande Feather Long Odd GRP L0: Spirals, Overlay-Centered +
     Flip Horizontal, rotation 20 / movement 4 (their exact recipe), green.
   - GE Rosa Grande Outer Ball GRP L0: SingleStrand Bounce chase,
-    8 rotations across the chorus, long fades (their exact recipe), white.
+    8 rotations across the chorus, long fades (their exact recipe), Rosa amber.
 
 Window: 67275-93925 (Chorus 1 / Anthemic). No beat hits, no brightness
 tricks — movement only, per user direction 2026-07-21.
@@ -57,7 +57,6 @@ OWNED = [WHOLE, SPOKE, TORCH_EVEN, FEATHER_ODD, OUTER_BALL,
 RED = '#B01212'
 GREEN = '#0B6B3A'
 GOLD = '#FFD89A'
-WHITE = '#FFFFFF'
 
 # gradient button for the mirrored whole-prop pinwheels (red -> gold -> green)
 GRADIENT = ('Active=TRUE|Id=ID_BUTTON_Palette1|'
@@ -168,7 +167,7 @@ PLAN = [
     (TORCH_EVEN, 0, 'Pinwheel', TORCH_PINWHEEL, flat_pal(RED)),
     (SPOKE, 0, 'Fan', SPOKE_FAN, flat_pal(GOLD)),
     (FEATHER_ODD, 0, 'Spirals', FEATHER_SPIRALS, flat_pal(GREEN)),
-    (OUTER_BALL, 0, 'SingleStrand', BALL_CHASE, flat_pal(WHITE, GOLD)),
+    (OUTER_BALL, 0, 'SingleStrand', BALL_CHASE, flat_pal(GOLD)),
 ]
 
 

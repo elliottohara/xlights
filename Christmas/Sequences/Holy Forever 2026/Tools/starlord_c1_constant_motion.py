@@ -24,7 +24,7 @@ Banks (both fixtures via the shared GRPs):
   - GE Starlord Plunger All GRP L0: Spirals on Vertical Per Model/Strand
     (each plunger drips its own spiral - their exact recipe), sapphire.
   - GE Starlord Spoke GRP L0: slow SingleStrand chase, Vertical Per
-    Model/Strand, 3 chases (TSO recipe, slowed), white.
+    Model/Strand, 3 chases (TSO recipe, slowed), Rosa amber (no white).
   - GE Starlord Cross GRP L0: SingleStrand From Middle drip, Vertical Per
     Model/Strand (Imperial recipe, slowed), ice blue.
 
@@ -56,12 +56,11 @@ OWNED = [WHOLE, PLUNGER, SPOKE, CROSS]
 SAPPHIRE = '#2864FF'
 ICE = '#8080FF'
 GOLD = '#FFD89A'
-WHITE = '#FFFFFF'
 
-# blue-led gradient for the mirrored pinwheel pair (blue -> gold -> white)
+# blue-led gradient for the mirrored pinwheel pair (sapphire -> amber -> sapphire)
 GRADIENT = ('Active=TRUE|Id=ID_BUTTON_Palette1|'
             'Values=x=0.000^c=#2864ff;x=0.400^c=#ffd89a;'
-            'x=0.700^c=#ffffff;x=1.000^c=#2864ff|')
+            'x=0.700^c=#ffd89a;x=1.000^c=#2864ff|')
 GRADIENT_PAL = f'C_BUTTON_Palette1={GRADIENT},C_CHECKBOX_Palette1=1'
 
 # their twist wobble curve (verbatim from The Christmas Song verse pinwheels)
@@ -163,7 +162,7 @@ PLAN = [
     (WHOLE, 1, 'Pinwheel', WHOLE_PINWHEEL, GRADIENT_PAL),
     (WHOLE, 2, 'Pinwheel', WHOLE_PINWHEEL_FLIP, GRADIENT_PAL),
     (PLUNGER, 0, 'Spirals', PLUNGER_SPIRALS, flat_pal(SAPPHIRE)),
-    (SPOKE, 0, 'SingleStrand', SPOKE_CHASE, flat_pal(WHITE)),
+    (SPOKE, 0, 'SingleStrand', SPOKE_CHASE, flat_pal(GOLD)),
     (CROSS, 0, 'SingleStrand', CROSS_DRIP, flat_pal(ICE, SAPPHIRE)),
 ]
 

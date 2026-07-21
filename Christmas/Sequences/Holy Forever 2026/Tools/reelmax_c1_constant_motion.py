@@ -10,9 +10,9 @@ crisp twisted pinwheel + linear chases on its ring banks):
     Twist=82 / Thickness=47 (the pros' signature Reel Max whole-prop
     pinwheel, slowed to Speed 3), Per Model Per Preview 2D so each fixture
     spins about its own center; L1 Flip Horizontal -> counter-rotation.
-    Blue gradient (sapphire -> gold -> white), same family as Starlord.
+    Blue gradient (sapphire -> amber), same family as Starlord — no white.
   - GE Reel Max Spokes GRP L0: thin fast-ish Spirals (Rotation 85,
-    Thickness 10, Movement 4, flipped) - their spoke shimmer, white.
+    Thickness 10, Movement 4, flipped) - their spoke shimmer, Rosa amber.
   - GE Reel Max Chevrons GRP L0: SingleStrand Left-Right, 1 chase,
     rotations 4, 2 s fades (their exact Christmas Song ballad recipe),
     ice blue.
@@ -52,11 +52,10 @@ OWNED = [WHOLE, SPOKES, CHEVRONS, KITES, CIRCLES]
 SAPPHIRE = '#2864FF'
 ICE = '#8080FF'
 GOLD = '#FFD89A'
-WHITE = '#FFFFFF'
 
 GRADIENT = ('Active=TRUE|Id=ID_BUTTON_Palette1|'
             'Values=x=0.000^c=#2864ff;x=0.400^c=#ffd89a;'
-            'x=0.700^c=#ffffff;x=1.000^c=#2864ff|')
+            'x=0.700^c=#ffd89a;x=1.000^c=#2864ff|')
 GRADIENT_PAL = f'C_BUTTON_Palette1={GRADIENT},C_CHECKBOX_Palette1=1'
 
 
@@ -143,7 +142,7 @@ CIRCLES_DRIP = (
 PLAN = [
     (WHOLE, 0, 'Pinwheel', WHOLE_PINWHEEL, GRADIENT_PAL),
     (WHOLE, 1, 'Pinwheel', WHOLE_PINWHEEL_FLIP, GRADIENT_PAL),
-    (SPOKES, 0, 'Spirals', SPOKES_SPIRALS, flat_pal(WHITE)),
+    (SPOKES, 0, 'Spirals', SPOKES_SPIRALS, flat_pal(GOLD)),
     (CHEVRONS, 0, 'SingleStrand', CHEVRONS_CHASE, flat_pal(ICE, SAPPHIRE)),
     (KITES, 0, 'SingleStrand', KITES_BOUNCE, flat_pal(SAPPHIRE)),
     (CIRCLES, 0, 'SingleStrand', CIRCLES_DRIP, flat_pal(GOLD)),
