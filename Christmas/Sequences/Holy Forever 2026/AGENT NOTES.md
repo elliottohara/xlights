@@ -2,9 +2,9 @@
 
 Working notes for `Christmas/Sequences/Holy Forever 2026/Holy Forever 2026.xsq` (built July 2026). Read alongside the root `AGENTS.md`. Song: Chris Tomlin "Holy Forever" (Jenn Johnson female vocal), media = `Media/Chris Tomlin - Holy Forever (Lyric Video).mp4`, 308314 ms, 25 ms frames, ModelBlending on.
 
-**Current task:** branch `holy-c1-flakes-blue-amber` in permanent **Slot A** (`/Users/elliott.ohara/xlights-worktrees/slot-a`, API 49913). C1 flakes sparkles + Mini Grand glowing cross.
+**Current task:** branch `holy-c1-shrubs-aurora` in permanent **Slot A** (`/Users/elliott.ohara/xlights-worktrees/slot-a`, API 49913). C1 Whole Scene Aurora experiment (shared field for flakes+shrubs).
 
-**Prior task (Slot A):** branch `holy-c1-house-icicles` — C1 house Rosa-red reveal + BMOAW red/amber motion; merged to main.
+**Prior task (Slot A):** branch `holy-c1-flakes-blue-amber` — C1 flakes Aurora + Mega Tree cross-over-aurora + Mini Grand cross; merged to main.
 
 **2026-07-21 (Slot B, branch `sequence-show-folders`):** this folder is now a **standalone xLights show folder** — it has its own `xlights_rgbeffects.xml` copy (may diverge from the master for song-specific groups/views) plus `../../` symlinks to shared show-root assets. Launch xLights with `-s` pointing at this folder. See "Per-sequence show folders" in root `AGENTS.md`; promotion/refresh via `Tools/make_show_folder.sh`. No layout customizations yet — the copy matches the master as of this date.
 
@@ -359,6 +359,79 @@ User ask: "cross in the foreground and some cool shader that uses the blue and a
 - **v4 (LIVE — user hand-edited in the GUI 2026-07-21, "use what I did"):** same effect/palette but **`B_CHOICE_BufferStyle=Per Preview`** — ONE aurora field sweeps across all flakes as a group — with **continuous rotation `uRotate=-6083`** and **`uZoom=301`**. Window 67275–93925, blue/amber alternate palette (amber `#FFC800` / navy `#0A1E50` / sapphire `#2864FF`), Speed 60, intensity 220, 2 s fades. Script matches the live values verbatim — don't "correct" them. Stale part-bank C1 effects cleared. Outline L0 V1 Shockwave @32200 untouched.
 - Rebuild: `Tools/c1_flakes_blue_amber.py` (`--dry-run` / `--clear-only` / `--rework`). Backup: `Holy Forever 2026.xsq.bak-before-flakes-aurora` (v2 state).
 
+## Added 2026-07-21: C1 shrubs — same Aurora as flakes (branch `holy-c1-shrubs-aurora`, Slot A — pending user review)
+
+User: "add that blue shader on all the shrubs (same way we did the snowflakes)".
+
+- **`All Shrubs GRP` L0:** identical to live Flakes v4 — `Aurora Solid.fs`, `Per Preview`, `uContRot=1`, `uRotate=-6083`, `uZoom=301`, Speed 60, intensity 220, amber/navy/sapphire alternate palette, 2 s fades, window **67275–93925**.
+- Individual shrub/rose-bush members untouched (V1 dense piano notes stay).
+- Rebuild: `Tools/c1_shrubs_aurora.py` (`--dry-run` / `--clear-only` / `--rework`). Backup: `Holy Forever 2026.xsq.bak-before-c1-shrubs-aurora`.
+- **Superseded same day** by Whole Scene experiment below (group copy cleared so flakes+shrubs share one field). Restore with this script if Whole Scene is rejected.
+
+## Added 2026-07-21: C1 arches amber/red beat chase (branch `holy-c1-shrubs-aurora`, Slot A — pending user review)
+
+User: amber+red on arches, Off to hide Whole Scene; L→R one arch per beat, chase each other, flip each bar; 1–2–3–4 with 4 hitting the ground then reverse.
+
+- **v1 REJECTED** ("horrible"): per-arch On pulses stepping Arch1→4. Cleared.
+- **v2 REJECTED** (misread the ask): red+amber dual chase, one pass per bar.
+- **v3:** "a single amber bar to bounce from left to right starting on each beat, switching directions every 4th (each bar)". `Arches - All` L1 Off + L0 **32 per-beat SingleStrand sweeps** (single chase, amber `#FFD89A`, `Rotations=1.0` = one full crossing per beat, Fade From Head, Color_Mix 20). Render style **`Per Model Per Preview`** (user; each arch sweeps in its own preview space, all four in unison — initial `Single Line` pass replaced).
+- **v3.1 — phase fix ("you're starting on the wrong beat"):** sweeps ARRIVE on their beat instead of launching on it. Superseded by v4 below.
+- **v4 (LIVE) — user hand-edited two bars in the GUI ("I like where the timing is... repeat what I did for the whole chorus").** Read back live: `Arches - All` L0 = ONE long SingleStrand Chase per ~bar span (not per-beat), `Chase_Rotations=4` + Blink FX (intensity/speed 128) on top, `Per Model Per Preview`, single amber palette slot. Discovered **period 3300 ms, phase anchor 68975** (68975→72275 Left-Right, 72275→75575 Right-Left — NOT aligned to Beat Count bar downbeats, which drift 3325–3350 ms). Script locks that period+phase and **tiles it across the whole C1 window** (67275–93925): 9 segments total incl. a clipped lead-in (67275–68975 R-L) and clipped tail (92075–93925 R-L), alternating L-R/R-L. The two hand-placed spans fall out of the tiling exactly (asserted). L1 Off unchanged.
+- Rebuild: `Tools/c1_arches_beat_chase.py` (`--dry-run` / `--clear-only` / `--rework`). Backup: `Holy Forever 2026.xsq.bak-before-c1-arches-beat-chase`.
+
+## Added 2026-07-21: C1 Merry Christmas blackout — Christ only (branch `holy-c1-shrubs-aurora`, Slot A — pending user review)
+
+User: "black out merry christmas… so just christ shows" (Whole Scene aurora was lighting the full sign).
+
+- **`GE Merry Christmas` L0 Off** 67275–93925 — same empty Off pattern as the PC1 sign blackouts.
+- **`GE Merry Christmas/Christ`** white wash + marquee reveal left intact.
+- Rebuild: `Tools/c1_merry_christmas_blackout.py` (`--dry-run` / `--clear-only` / `--rework`). Backup: `Holy Forever 2026.xsq.bak-before-c1-merry-blackout`.
+
+## Added 2026-07-21: C1 Toni Flat Tree cross-over-aurora (branch `holy-c1-shrubs-aurora`, Slot A — pending user review)
+
+User: "treat the Toni - flat tree the same way we do the mega tree."
+
+- **`Toni - Flat Tree` L1:** `Glowing Cross.png` Pictures (Scale To Fit, TransparentBlack threshold 30, white).
+- **`Toni - Flat Tree` L2:** `Aurora Solid.fs` Shader, Alternate Color Palette (amber/navy/sapphire), intensity 80, Speed 60 — same as Mega Tree C1 (no Tree Topper twin).
+- Window 67275–93925, 2 s fades.
+- Rebuild: `Tools/c1_toni_flat_tree_cross_shader.py` (`--dry-run` / `--clear-only` / `--rework`). Backup: `Holy Forever 2026.xsq.bak-before-c1-toni-flat-tree`.
+
+## Added 2026-07-21: C1 Yard Borders Rosa reveal (branch `holy-c1-shrubs-aurora`, Slot A — pending user review)
+
+User: "make the driveway and garden borders do marquees like the verts."
+
+- **`Yard Borders`** (Rose Bed Border + Front Garden Border + Driveway Left/Right) L1 Rosa red wash + L0 amber Single Line Marquee `1 reveals 2` — same recipe as Verts (`c1_house_icicles.py`). Window 67275–93925, 2 s fades.
+- Rebuild: `Tools/c1_yard_borders_marquee.py` (`--dry-run` / `--clear-only` / `--rework`). Backup: `Holy Forever 2026.xsq.bak-before-c1-yard-borders-marquee`.
+
+## Added 2026-07-21: C1 Whole Scene Aurora experiment (branch `holy-c1-shrubs-aurora`, Slot A — pending user review)
+
+User: "for shits and giggles lets try that on whole scene… snowflakes and rose bushes work together?"
+
+- **`Whole Scene` L0:** same Aurora Solid Per Preview recipe, **67275–93925**. Intro Snowflakes `0–41850` untouched.
+- Cleared C1 copies on `Flakes GRP` + `All Shrubs GRP` so those props sample this shared field (not a second local Per Preview).
+- ⚠ Not a hard override: ModelBlending means Rosa/house/Mega Tree/etc. **blend with** this bed on those props — they don't replace it. Expect some blue wash under the C1 beds.
+- Rebuild: `Tools/c1_whole_scene_aurora.py` (`--dry-run` / `--clear-only` / `--rework`). Backup: `Holy Forever 2026.xsq.bak-before-c1-whole-scene-aurora`.
+
+### Layout fix 2026-07-21: rose bushes + Shrub Left into per-sequence `Whole Scene`
+
+User: roses weren't getting the shader — correctly diagnosed: master `Whole Scene` never listed `Rose Bush 1–9` or `Shrub Left` (only Shrub Center/Right + Door Trees + Rose Bed Border). **Edited this sequence's `xlights_rgbeffects.xml` only** (not the show-root master): appended those 10 models after `Rose Bed Border`. Slot A xLights relaunched so the group reload stuck. `Colum Shrubs` / `All Shrubs GRP` already had them; do **not** nest those groups into Whole Scene or Shrub Center/Right/Door Trees would double-render.
+
+## Added 2026-07-21: C1 Candy Canes — red/white barber-pole (branch `holy-c1-shrubs-aurora`, Slot A)
+
+User: "make those candy canes look like candy canes" (scoped to C1 after a first whole-song attempt).
+
+- **v1 REJECTED** ("looks like shit... shouldn't be vertical"): one `Bars` effect on the `Canes` GROUP, `Per Model Per Preview` buffer, `Direction=up`. That buffer style projects each model through the 2D preview camera and stripes by real-world Y — but each `Candy Cane - N` is a single 48-node curved strand (node 1 base, node 48 hook tip), so Y-based striping cuts across the physical curve instead of following it.
+- **v2 (LIVE):** `Bars` on each `Candy Cane - 1..4` **individually** (not the group), **`B_CHOICE_BufferStyle=Single Line`** — remaps the model to a virtual 1xN strip ordered by NODE INDEX regardless of physical XY, so stripes follow the actual wire path. Red `#FF0000`/white `#FFFFFF`, `BarCount=4` (8 bands), `Bars_3D=1`, `Cycles=8` over the window (spin), `Direction=Left`, brightness 65. Window 67275–93925, .5 s fades. `Canes` GROUP's own L0 Shockwave accents (15550–16650, 36150–37550, outside this window) untouched.
+- Rebuild: `Tools/candy_canes_barberpole.py` (`--dry-run` / `--clear-only` / `--rework`).
+
+### ⚠ CRASH INCIDENT 2026-07-21: invalid Bars buffer style hung/killed xLights twice
+
+`B_CHOICE_BufferStyle=Per Model` (no "Per Preview") is **not a valid buffer-style string** anywhere in this codebase — grep confirms every proven `Bars` usage uses `Per Preview`, `Per Model Per Preview`, `Overlay - *`, `Single Line`, or `Horizontal Per Model`. Using bare `Per Model` on the `Canes` GROUP (Custom-model members) hung the automation call for 160 s on a whole-song-duration attempt (xLights survived, `RemoteDisconnected`), then killed the process outright on a second, much shorter (10 s, then 3 s) attempt. **Do not use `B_CHOICE_BufferStyle=Per Model` — always use `Per Model Per Preview` or `Single Line`.** Both `.xsq` on disk survived untouched both times (nothing had saved yet) — always verify with a quick diff against a pre-change backup before assuming corruption.
+
+### ⚠ OPERATIONAL GOTCHA 2026-07-21: bare relaunch after a crash loads the WRONG show folder
+
+After the crash above, xLights was relaunched **without** `-a -s <folder>` (manual Finder/Dock reopen) — `ps` showed zero args on the new pid. It auto-reopened the correct `.xsq` (openSequence works by absolute path) and `getOpenSequence`/`getVersion` looked totally normal, but the **show folder** silently fell back to whatever was last cached in xLights' preferences. Symptom: a shader effect's `E_0FILEPICKERCTRL_IFS` path (`Media/Shaders/Aurora Solid.fs`, relative to the show folder) showed as missing/not-found in the GUI even though the file was sitting right there on disk in this slot's `Media/Shaders/` — because it was being resolved against the wrong base directory. Media/`mediaFile` paths are absolute (per root AGENTS.md) so those keep working and mask the mismatch; only show-folder-relative asset paths (shaders, some Pictures) break. **Fix:** save + `closeSequence`, `kill` the process, relaunch with the explicit flags (`open -a xLights --args -a -s "<slot>/Christmas/Sequences/<Song>"`), poll `getVersion`, `openSequence` again, `renderAll` to confirm. **Always verify `ps -p <pid> -o command=` shows the expected `-a -s <folder>` (or `-b`) after ANY crash-recovery relaunch** — don't assume a responsive API means the show folder is correct.
+
 ## Added 2026-07-21: BMOAW C1 constant motion (branch `holy-c1-house-icicles`, MERGED to main)
 
 Red/amber companion for both `BMOAW Left`/`Right` via shared `GE MOAW * GRP` banks — same C1 window (67275–93925) / ballad rules (long slow, 2 s fades, no hits, no white).
@@ -434,7 +507,14 @@ Idea 1 from the Xtreme house/icicle pass: Rosa-red reveal motion on the house, s
 - `climax_blue_house_marquee.py` — add/verify the subtle sapphire `House Outline` L1 Marquee across the full Final Chorus; brightness breathes 38↔46 with the bar downbeats (`--dry-run`; safely migrates the superseded 273650 start only).
 - `c1_house_icicles.py` — C1 `Verts`/`Roof`/`Windows`/`Christ` Marquee + `Icicles GRP` drip, Rosa-red `1 reveals 2` (67275–93925). `--dry-run` / `--clear-only` / `--rework`.
 - `moaw_c1_constant_motion.py` — C1 BMOAW Left/Right red/amber constant motion via MOAW GRPs (67275–93925). `--dry-run` / `--clear-only` / `--rework`.
-- `c1_flakes_blue_amber.py` — C1 `Flakes GRP` sapphire Color Wash + amber music sparkles (Color panel; 67275–93925). `--dry-run` / `--clear-only` / `--rework`.
+- `c1_flakes_blue_amber.py` — C1 `Flakes GRP` Aurora Solid Per Preview (67275–93925). `--dry-run` / `--clear-only` / `--rework`.
+- `c1_shrubs_aurora.py` — C1 `All Shrubs GRP` Aurora Solid Per Preview (same recipe as flakes; 67275–93925). `--dry-run` / `--clear-only` / `--rework`. Superseded by `c1_whole_scene_aurora.py` while that experiment is live.
+- `c1_whole_scene_aurora.py` — C1 `Whole Scene` Aurora Solid Per Preview; clears Flakes/All Shrubs C1 copies (67275–93925). `--dry-run` / `--clear-only` / `--rework`.
+- `c1_yard_borders_marquee.py` — C1 `Yard Borders` Rosa-red reveal Marquee (same as Verts; 67275–93925). `--dry-run` / `--clear-only` / `--rework`.
+- `c1_toni_flat_tree_cross_shader.py` — C1 `Toni - Flat Tree` cross-over-Aurora (Mega Tree twin; 67275–93925). `--dry-run` / `--clear-only` / `--rework`.
+- `c1_merry_christmas_blackout.py` — C1 `GE Merry Christmas` L0 Off so only Christ shows (67275–93925). `--dry-run` / `--clear-only` / `--rework`.
+- `c1_arches_beat_chase.py` — C1 Arch 1–4 red/amber opposite beat chase + Off underlay (67275–93925). `--dry-run` / `--clear-only` / `--rework`.
+- `candy_canes_barberpole.py` — C1 red/white `Single Line` Bars barber-pole on each `Candy Cane - 1..4` individually (67275–93925). `--dry-run` / `--clear-only` / `--rework`.
 - `c1_mini_grand_cross.py` — C1 `GE Mini Grand Illusion` Pictures Glowing Cross (67575–95100). `--dry-run` / `--clear-only` / `--rework`.
 - `c1_megatree_cross_shader.py` — C1 Mega Tree cross-over-Aurora + Tree Topper aurora (67275–93925). `--dry-run` / `--clear-only` / `--rework`.
 - `angels_cry_holy_text.py` — **refuses** rebuild (Holy Text deleted 2026-07-21). `--clear-only` / `--dry-run` still work.
@@ -445,4 +525,4 @@ Idea 1 from the Xtreme house/icicle pass: Rosa-red reveal motion on the house, s
 
 ## Review checklist (baseline — do not “restore” removed bits)
 
-0:00–0:42 Whole Scene snow + Mega Tree cross + dim bulbs; Penguins + PiXeL Paradise dark · 0:15 Snowman + arch piano chords + shrub-bank piano notes + oak cymbal Twinkles · Lantana empty · Projector/Entry/Downstairs empty (script Holy Text removed 2026-07-21) · C1 (1:07–1:34): `Verts`/`Roof`/`Windows`/`Christ`+`Icicles GRP` Rosa-red reveal + BMOAW red/amber + `Flakes GRP` rotating blue/amber Aurora Solid shader (Per Preview, whole roof as one field) under the spinner beds + Mega Tree cross-over-aurora with amber sparkle star · House Outline dark except 8 dramatic white strobe flashes at 3:53 and the subtle blue bar-breathing Marquee across 3:54–4:47; Roof = final hold only; Tree Topper accents kept · C1/C2/PC2b→C3 Bulbs + both white-exterior, belly-accented Penguins + all seven PiXeL Paradise faces sing together · 4:47 Snowman outro solo.
+0:00–0:42 Whole Scene snow + Mega Tree cross + dim bulbs; Penguins + PiXeL Paradise dark · 0:15 Snowman + arch piano chords + shrub-bank piano notes + oak cymbal Twinkles · Lantana empty · Projector/Entry/Downstairs empty (script Holy Text removed 2026-07-21) · C1 (1:07–1:34): `Verts`/`Roof`/`Windows`/`Christ`+`Icicles GRP`+`Yard Borders` Rosa-red reveal + BMOAW red/amber + `Whole Scene` rotating blue/amber Aurora Solid (Per Preview; flakes+shrubs share the field) under the spinner beds + Mega Tree + Toni Flat Tree cross-over-aurora with amber sparkle star · House Outline dark except 8 dramatic white strobe flashes at 3:53 and the subtle blue bar-breathing Marquee across 3:54–4:47; Roof = final hold only; Tree Topper accents kept · C1/C2/PC2b→C3 Bulbs + both white-exterior, belly-accented Penguins + all seven PiXeL Paradise faces sing together · 4:47 Snowman outro solo.

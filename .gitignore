@@ -12,6 +12,7 @@
 **/Backup/
 *.xbkp
 *.jbkp
+xLights_dbgrpt-*.zip
 
 # Locally rendered previews used for visual review
 RenderCompare/
