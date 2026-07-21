@@ -6,6 +6,8 @@ Working notes for `Christmas/Sequences/Holy Forever 2026/Holy Forever 2026.xsq` 
 
 **Prior task (Slot B):** branch `holy-pc1-house-chase` — PC1 "your name" Whole Scene w Matrixes → Christ implode + star-only Mega Tree descents.
 
+**2026-07-21 (Slot B, branch `sequence-show-folders`):** this folder is now a **standalone xLights show folder** — it has its own `xlights_rgbeffects.xml` copy (may diverge from the master for song-specific groups/views) plus `../../` symlinks to shared show-root assets. Launch xLights with `-s` pointing at this folder. See "Per-sequence show folders" in root `AGENTS.md`; promotion/refresh via `Tools/make_show_folder.sh`. No layout customizations yet — the copy matches the master as of this date.
+
 ## ⚠ Baseline (hand-approved 2026-07-19)
 
 **The on-disk `.xsq` is the starting point. Do not re-add effects the user removed.**

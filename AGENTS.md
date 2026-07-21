@@ -4,6 +4,16 @@ Knowledge gathered while building "Feliz Navidad 2026" and "Holy Forever 2026" (
 
 **Per-sequence notes:** each song lives under `Christmas/Sequences/<Song Name>/` with `AGENT NOTES.md` next to the `.xsq` (e.g. `Christmas/Sequences/Holy Forever 2026/AGENT NOTES.md`). Read it before editing that sequence; keep it updated after significant work. To scaffold a new song folder, use the project skill `.cursor/skills/setup-sequence/`.
 
+## Per-sequence show folders
+
+**Each sequence folder is a standalone xLights show folder** (since 2026-07-21): it holds its own **copy** of `xlights_rgbeffects.xml` plus relative symlinks (`../../`) to the shared show-root assets (`Faces`, `DownloadedFaces`, `ImportedMedia`, `Images`, `colorcurves`, `palettes`, `valuecurves`, `mhpresets`, `xlights_networks.xml`, `xlights_keybindings.xml`, `xlights_effectpresets.json`). Launch xLights with `-s "<seq folder>"` and edit groups/views/submodels **per sequence** — e.g. add song-specific groups or trim the master view — without touching the master layout.
+
+- **Promote / refresh:** `Tools/make_show_folder.sh "<Show>/Sequences/<Song>"` (idempotent; symlinks and an existing per-sequence layout are kept). `--refresh-layout` re-copies the master `xlights_rgbeffects.xml` over the per-sequence copy — only do that if the song has no layout customizations worth keeping (it clobbers them). The setup-sequence skill promotes new song folders automatically.
+- **Which layout is "the layout":** the show-root `Christmas/xlights_rgbeffects.xml` stays the master (user-owned, do-not-edit rule below still applies). The per-sequence copy is where sequence-specific group/view engineering happens — editing it via the xLights GUI/API when the user asks is fine; it diverges from the master by design and there is **no automatic sync** in either direction. If the user updates the master (new props etc.), older per-sequence copies won't have the change until refreshed/hand-merged — flag this rather than silently refreshing.
+- **Slots now point at sequence folders, not `Christmas/`.** Launch example (slot B): `open -n -a xLights --args -b -s ".../slot-b/Christmas/Sequences/<Song>"`. Switching a slot to a different song = show-folder change = **kill + relaunch** that slot's instance (`changeShowFolder` doesn't stick). Expect the blocking startup backup on each relaunch; it now only backs up that sequence folder, so it's fast.
+- The per-sequence `xlights_rgbeffects.xml` and the symlinks are **tracked in git**; xLights droppings in the sequence folder (`Backup/`, `RenderCache/`, `*.xbkp`, `*.fseq`) are already gitignored.
+- The `.xsq`'s `mediaFile` and effect asset paths are absolute — unaffected by which show folder is open.
+
 ## Parallel agent work — two permanent worktree slots
 
 **Do not pile concurrent agent work onto `main` in the primary checkout.** Multiple agents (or agent + human) editing the same working tree collide on branches, dirty files, and saves. Agent edits happen in one of **two permanent git worktree "slots"**, each bound for its lifetime to one xLights instance.
@@ -18,8 +28,9 @@ Why exactly two: xLights supports **at most two** concurrent instances with work
 | B | `/Users/elliott.ohara/xlights-worktrees/slot-b` | 49914 | `-b` (+ `open -n`) | `XLIGHTS_API_PORT=49914` |
 
 - **Primary checkout** (`/Users/elliott.ohara/xlights`) stays on `main` for review, merges, and one-off reads. It does not run an agent's xLights session.
-- The slot↔port pairing never changes. Slot A launches with `open -a xLights --args -a -s ".../slot-a/Christmas"`; slot B with `open -n -a xLights --args -b -s ".../slot-b/Christmas"` (the `-n` forces a second macOS instance; without it `open` just focuses the existing one). `Tools/xlights_api.py` handles both automatically — in slot B, export `XLIGHTS_API_PORT=49914` once at the top of the session and `launch()` adds `-n`/`-b` itself.
-- **The xLights instance stays running across tasks.** The show-dir path is stable, so no relaunch, no show-folder change, no blocking startup backup between tasks.
+- The slot↔port pairing never changes. Slot A launches with `open -a xLights --args -a -s "<show folder>"`; slot B with `open -n -a xLights --args -b -s "<show folder>"` (the `-n` forces a second macOS instance; without it `open` just focuses the existing one). `Tools/xlights_api.py` handles both automatically — in slot B, export `XLIGHTS_API_PORT=49914` once at the top of the session and `launch()` adds `-n`/`-b` itself.
+- **The show folder is the song's sequence folder** (see "Per-sequence show folders"), e.g. `-s ".../slot-b/Christmas/Sequences/Holy Forever 2026"`.
+- **The xLights instance stays running across tasks on the same song.** Switching a slot to a different song is a show-folder change: kill that slot's instance and relaunch with the new song's sequence folder (the startup backup only covers the sequence folder now, so it's quick).
 - Between tasks a slot **parks on a detached HEAD at `main`** (slots can't check out `main` itself — the primary holds it).
 
 ### Task start (in a slot)
@@ -43,7 +54,7 @@ When the user approves the work (or asks to ship it):
 ### Slot / xLights caveats
 
 - Absolute paths in this file that point at `/Users/elliott.ohara/xlights/...` mean the **primary** tree. In a slot, use paths under that slot root for sequence files, scripts, and `saveSequence` targets.
-- **Only one xLights session per show directory.** Each slot's instance owns that slot's `Christmas/` (or `Halloween/`) — never point two instances at the same folder.
+- **Only one xLights session per show directory.** Each slot's instance owns whatever folder it launched with (`-s`) — never point two instances at the same folder. Two slots can safely work the same song only via their separate worktree copies of that sequence folder.
 - **Layout changes still need a relaunch.** `xlights_rgbeffects.xml` is read when the show folder opens; if a branch switch changes it, `kill -9` that slot's xLights pid and relaunch with the same flags (`changeShowFolder` does NOT work — replies OK but doesn't stick; AppleScript `quit` can wedge the app). Most tasks only touch the `.xsq` and don't need this.
 - **Claim ports explicitly.** Preferences persist the last-used port (`xFadePort`, last-quit-wins), so always pass `-a`/`-b` on launch; never rely on the saved default.
 - Both instances share the same preferences file (`LastDir` etc.) — cosmetic, but a bare `open -a xLights` may open the other slot's show dir. Always pass `-s`.
@@ -54,8 +65,8 @@ When the user approves the work (or asks to ship it):
 
 ## Directory layout
 
-- **Show directory (Christmas):** `/Users/elliott.ohara/xlights/Christmas/` — layout only: `xlights_rgbeffects.xml`, `xlights_networks.xml`, faces, shared `ImportedMedia/`. **Do not** dump song files at this root.
-- **Per-sequence folders:** `Christmas/Sequences/<Song Name>/` — `<Song Name>.xsq`, `AGENT NOTES.md`, `Media/` (lyric video + song images), `Timing Templates/`, `Tools/` (song scripts), optional `Backups/`.
+- **Show directory (Christmas):** `/Users/elliott.ohara/xlights/Christmas/` — master layout only: `xlights_rgbeffects.xml`, `xlights_networks.xml`, faces, shared `ImportedMedia/`. **Do not** dump song files at this root.
+- **Per-sequence folders:** `Christmas/Sequences/<Song Name>/` — `<Song Name>.xsq`, `AGENT NOTES.md`, `Media/` (lyric video + song images), `Timing Templates/`, `Tools/` (song scripts), optional `Backups/`, plus the per-sequence show-folder files (layout copy + shared-asset symlinks; see "Per-sequence show folders").
 - **Shared timing templates:** `/Users/elliott.ohara/xlights/Timing Templates/` — cross-show / reusable templates only. Song-specific templates live under that song's `Timing Templates/`.
 - **Shared API tooling:** `/Users/elliott.ohara/xlights/Tools/xlights_api.py` (and other show-agnostic helpers). Song scripts import it via `sys.path` to this folder.
 - **Audio:** `/Users/elliott.ohara/xlights/Audio/` (e.g. `01 Feliz Navidad.mp3`) when audio is shared; otherwise prefer `Sequences/<Song>/Media/`.
@@ -105,7 +116,7 @@ If a user wants a YouTube video for the show, **do not invent a one-off download
 - **addEffect fails (503) for elements not in the sequence's master view**, and there is no API to add display elements. The default master view here excludes some groups (notably `EFL Wings`, `Large Spiral Trees`, `Spinners`, individual `Rose Bush N`). Workaround: sequence their member models instead (see `EXPAND` in `Tools/feliz_navidad_2026.py`).
 - **Submodels ARE addressable** as `Model/Submodel` (e.g. `Singing Bulb - Center/Base`) for `addEffect`/`getEffectIDs` — no wrapper group needed.
 - **ALWAYS check a model's submodels FIRST** (in `xlights_rgbeffects.xml`) before resorting to per-pixel/custom-grid analysis to light part of a prop. If no submodel matches exactly, combine the nearest submodel with `B_CUSTOM_SubBuffer` (works because ranges-submodel node order is usually geographic — verify x-monotonicity). `GE Merry Christmas` has a dedicated `Christ` submodel — address it as `GE Merry Christmas/Christ` with no `B_CUSTOM_SubBuffer`.
-- **Layout file is user-owned.** Do **not** edit `xlights_rgbeffects.xml` (or `xlights_networks.xml`) unless the user explicitly asks. In particular, never rewrite, regenerate, "fix," or restore `GE Merry Christmas/Christ` ranges from old notes/backups — the user hand-maintains that submodel (2026-07-20: multi-line custom-grid ranges, not the old flat 241-node list). Sequence work targets the element name only; leave the layout definition alone.
+- **The master layout file is user-owned.** Do **not** edit `Christmas/xlights_rgbeffects.xml` (or `xlights_networks.xml`) unless the user explicitly asks. The **per-sequence** layout copy (in the song's show folder) may be edited when the task calls for it — that's what it's for. In particular, never rewrite, regenerate, "fix," or restore `GE Merry Christmas/Christ` ranges from old notes/backups — the user hand-maintains that submodel (2026-07-20: multi-line custom-grid ranges, not the old flat 241-node list). Sequence work targets the element name only; leave the layout definition alone.
 - **NEVER edit effects with `setEffectSettings` — it corrupts them.** Verified in source (`SettingsMap::ParseJson`): it parses the settings param as `key:value` with values **whitespace-trimmed** (destroys the `Teddy ` face def → silently falls back to another def), and JSON-object params are **silently dropped** (dict settings/palette = no-op that still reports `worked:true`). Round-tripping `getEffectSettings` output back in re-defaults the effect. To change an effect via the API: **wipe the element** with `cloneModelEffects` (`source` = any effect-free element like `House`, `eraseModel:"true"`) **and re-add** via `addEffect`, whose `key=value` parser preserves values verbatim. To remove effects: edit the `.xsq` directly (below) — do not Off-park or use `setEffectSettings` as a fake delete.
 - **No API command deletes individual effects or timing tracks.** Timing tracks: GUI only (plan track names before importing). For effects:
   - **OK / preferred:** edit the `.xsq` directly (backup first; see `clear_intro.py` / `clear_*.py` in Holy Forever Tools). Selective, time-scoped, and deep-layer deletes are all legitimate this way.

@@ -62,6 +62,10 @@ touch \
   "$SEQ_DIR/Tools/.gitkeep" \
   "$SEQ_DIR/Backups/.gitkeep"
 
+# Make the sequence folder a standalone xLights show folder (per-sequence
+# layout copy + symlinks to shared show-root assets).
+"$ROOT/Tools/make_show_folder.sh" "$SEQ_DIR"
+
 echo "Created: $SEQ_DIR"
 echo "Next:"
 echo "  1. Put media in: $SEQ_DIR/Media/"

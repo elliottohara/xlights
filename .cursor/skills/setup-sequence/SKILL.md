@@ -22,9 +22,15 @@ Every song gets its own folder under the show directory:
   Timing Templates/        # song-specific timing .xsq templates
   Tools/                   # song scripts (import shared Tools/xlights_api.py)
   Backups/                 # local .xsq.bak-* copies
+  xlights_rgbeffects.xml   # per-sequence layout COPY (may diverge: groups/views)
+  Faces@ DownloadedFaces@ ImportedMedia@ Images@ colorcurves@ palettes@
+  valuecurves@ mhpresets@ xlights_networks.xml@ xlights_keybindings.xml@
+  xlights_effectpresets.json@   # relative symlinks -> ../../ (show root)
 ```
 
-Show root (`Christmas/`) keeps layout only: `xlights_rgbeffects.xml`, networks, faces, shared `ImportedMedia/`.
+**Each sequence folder is itself an xLights show folder** — launch xLights with `-s "<seq dir>"` and edit groups/views per song without touching the master layout. The scaffold script promotes it automatically (via `Tools/make_show_folder.sh`); run that script manually to promote a pre-existing sequence folder or `--refresh-layout` to re-copy the master layout.
+
+Show root (`Christmas/`) keeps the master layout: `xlights_rgbeffects.xml`, networks, faces, shared `ImportedMedia/`.
 
 Shared across songs:
 - `/Users/elliott.ohara/xlights/Tools/xlights_api.py`
