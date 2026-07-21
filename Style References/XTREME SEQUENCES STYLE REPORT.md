@@ -125,15 +125,23 @@ buffer:   Vertical Per Model/Strand   → identical simultaneous drip down EVERY
 
 **Buffer style is chosen per musical job, not per prop** — the same GRP legitimately gets `Overlay - Centered` (boom), `Per Model Per Preview` (per-part shimmer), and `Horizontal Per Model/Strand` (traveling run) on different layers in the same song.
 
-### Continuous motion on spinners (verified 2026-07-21 on the Rosa across 64 mapped sequences; user-approved on Holy Forever C1)
+### Continuous motion on spinners — INSPECT RENDER STYLES FIRST (verified 2026-07-21 on Rosa + Starlord + Reel Max; user-approved on Holy Forever C1)
 
-For LONG slow moving bases on spinner banks, buffer/render style is the whole game — a flat `Overlay - Centered` Pinwheel reads as a generic square wash and was explicitly rejected by the user ("not using submodel render style the way Xtreme does"). The measured pro vocabulary:
+**⚠ Mandatory step for ANY Xtreme-style request:** before writing spinner effects, open real pro sequences on the share (`/Volumes/Personal-Drive/xlights/Christmas/*.xsq`) and read the **`B_CHOICE_BufferStyle` / `B_CHOICE_BufferTransform` / `B_CHOICE_PerPreviewCamera`** strings the pros used on the exact banks you're targeting (parse `EffectDB` refs — 5-line python, see the survey pattern in this section's history). Do NOT guess buffer styles from effect names. A flat `Overlay - Centered` Pinwheel reads as a generic square wash and was explicitly rejected by the user ("not using submodel render style the way Xtreme does"); the exact same effect with the right render style was approved ("much better" / "Perfect").
 
-- **Pinwheels/Fans through the prop's real geometry:** `B_CHOICE_BufferStyle=Per Model Per Preview` + `B_CHOICE_PerPreviewCamera=2D`, usually `B_SLIDER_Blur=2-3`. This is what makes arms sweep along the actual spokes/torches instead of across an abstract grid.
-- **The mirror-pair hero move** (their signature, e.g. The Christmas Song whole-Rosa): stack the SAME slow pinwheel on two layers, second one with `B_CHOICE_BufferTransform=Flip Horizontal` → two sweeps counter-rotate through each other. Their ballad pinwheel: 2 arms, `3D Inverted`, ArmSize 271, Twist −65, Speed 3, Thickness 40, gradient palette so color travels along the arms.
-- **`Overlay - Centered` is still correct** for Spirals / overscanned Fan (End_Radius ~333 + blur = blades wash rather than pop) / SingleStrand bounce chases on radial banks; **`Vertical Per Model/Strand`** for SingleStrand drips down feather/torch/outer-ball banks.
-- **Ballad dosage:** ONE long effect per bank per section (~27 s), 4–6 banks at once, `T_TEXTCTRL_Fadein/Fadeout=2`, one color family per bank. No short hits — repeated sub-second Shockwave stabs on the Rosa were rejected as seizure-inducing on a worship song.
-- Working reference implementation: `Christmas/Sequences/Holy Forever 2026/Tools/rosa_c1_constant_motion.py` (addEffect-ready settings strings for all five recipes).
+The measured pro vocabulary:
+
+- **Pinwheels/Fans through the prop's real geometry:** `B_CHOICE_BufferStyle=Per Model Per Preview` + `B_CHOICE_PerPreviewCamera=2D`, usually `B_SLIDER_Blur=2-3`. This is what makes arms sweep along the actual spokes/torches instead of across an abstract grid (and, on multi-fixture GRPs, makes each fixture spin about its own center).
+- **The mirror-pair hero move** (their signature): stack the SAME slow pinwheel on two layers, second one with `B_CHOICE_BufferTransform=Flip Horizontal` → two sweeps counter-rotate through each other. Give it a gradient palette so color travels along the arms.
+- **`Overlay - Centered` is still correct** for Spirals / overscanned Fan (End_Radius ~333 + blur = blades wash rather than pop) / SingleStrand chases on radial ring banks; **`Vertical Per Model/Strand`** makes SingleStrand/Spirals render per-part (each plunger/torch/circle drips its own copy).
+- **Ballad dosage:** ONE long effect per bank per section (~27 s), 4–6 banks at once, `T_TEXTCTRL_Fadein/Fadeout=2`, one color family per bank. No short hits — repeated sub-second Shockwave stabs were rejected as seizure-inducing on a worship song.
+- **Per-prop motion signatures** (each spinner keeps its own character; contrast is the point):
+  | Prop | Whole-GRP hero | Part-bank texture |
+  |---|---|---|
+  | Rosa Grande | thin 2-arm `3D Inverted` sweeps, ArmSize 271, Twist −65, Speed 3, Thickness 40, Blur 3 | Overlay Spirals on feathers, overscanned Fan on Spoke, bounce chase on Outer Ball |
+  | Starlord | Fan (PMPP 2D, Blur 2) UNDER a mirrored pair of fat 4-arm `3D` pinwheels, Speed 2, Thickness 82, Twist value-curve wobble | `Vertical Per Model/Strand` Spirals on Plunger All (per-plunger drips), vertical chases on Spoke/Cross |
+  | Reel Max | mirrored 4-arm `3D` pair, fixed Twist 82, Thickness 47, Speed 3 (crisp, no wobble) | thin Spirals (Rot 85/Thick 10) on Spokes, Left-Right/Bounce chases on Chevrons/Kites, per-circle vertical drip on Circles Outer |
+- Working reference implementations (addEffect-ready settings strings, idempotent, with `--rework` .xsq-clear): `Christmas/Sequences/Holy Forever 2026/Tools/rosa_c1_constant_motion.py`, `starlord_c1_constant_motion.py`, `reelmax_c1_constant_motion.py`.
 
 Beyond these two: Pinwheel/Galaxy/Fan for rotation, Spirals for tree bases, On for punches, Morph for matrix tails, VU Meter for reactivity. That's the whole vocabulary — resist exotic effects.
 
