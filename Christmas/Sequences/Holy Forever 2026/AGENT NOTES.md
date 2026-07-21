@@ -318,6 +318,18 @@ First Rosa Grande feature. Window **67275–93925** (Anthemic Mood downbeat → 
 - Owns the window on: whole GRP L0–L1 + the four banks' L0. `Web Ring GRP` untouched (V1 chord-bank effect). Rebuild: `Tools/rosa_c1_constant_motion.py` (`--dry-run` / `--clear-only` / `--rework` = clear all owned banks' window effects via direct .xsq edit [close → strip → reopen] then re-add).
 - Backups: `Holy Forever 2026.xsq.bak-before-rosa-c1` (pre-v1), `.bak-before-rosa-c1-v2` (v1 state), `.bak-before-rosa-c1-v3` (v2 state).
 
+## Added 2026-07-21: Starlords C1 constant motion (branch `rosa-c1-constant-motion`, Slot A — pending user review)
+
+Blue-led companion to the approved Rosa C1 treatment — same window (67275–93925), same style rules (long slow geometry-aware effects, 2 s fades, no hits), **contrasting motion**, ported from the pros' Starlord verse stack in The Christmas Song. Both fixtures via the shared GRPs. 6 effects:
+
+- `GE Starlord GRP` **L0**: Fan Per Model Per Preview 2D + Blur 2, overscanned radius 333, gold — runs UNDER the pinwheel pair (their exact verse trio).
+- `GE Starlord GRP` **L1+L2**: identical fat 4-arm **3D** Pinwheel (Speed 2, Thickness 82, **Twist value-curve wobble** — verbatim pro curve), Per Model Per Preview 2D, L2 Flip Horizontal → counter-rotating pair. Blue gradient (sapphire→gold→white). Contrast vs Rosa: fat upright 3D arms with wobble vs Rosa's thin 3D-Inverted −65° twist sweeps.
+- `Plunger All GRP` L0: Spirals on **`Vertical Per Model/Strand`** — each plunger drips its own spiral (their exact recipe), sapphire `#2864FF`. ⚠ this layer also holds the V1 chord Shockwave @22225 (outside the window — rework only clears window effects).
+- `Spoke GRP` L0: SingleStrand Left-Right, 3 chases, rotations 4, Vertical Per Model/Strand (TSO recipe slowed), white.
+- `Cross GRP` L0: SingleStrand From Middle drip, Vertical Per Model/Strand (Imperial recipe slowed), ice blue/sapphire.
+- Rebuild: `Tools/starlord_c1_constant_motion.py` (`--dry-run` / `--clear-only` / `--rework`, same .xsq-clear pattern as the Rosa script).
+- Backup: `Holy Forever 2026.xsq.bak-before-starlord-c1`.
+
 ## Added 2026-07-20: C3 climax drum-riff — dramatic `House Outline` strobe flash
 
 **User request (3 iterations):** (1) "show that hard drum riff, like 8 hits... a single line effect just on the roof line where it changes directions with each hit" → Roof-line Marquee, disliked; (2) "Let's use shockwaves... on individual snowflakes on the roof instead" → 8 Shockwave pops on individual roof-snowflake props, disliked ("too subtle"); (3) **"Let's use house outline instead. Just flash it, fairly dramatically."** Live version is (3).
