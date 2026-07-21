@@ -307,9 +307,16 @@ Exact target: **`PiXeL Paradise Xmas Tree Choir`** (not `Toni - Flat Tree` and n
 First Rosa Grande feature. Window **67275–93925** (Anthemic Mood downbeat → Groove/V2 downbeat). Live version = **v2**: 4 slow continuous full-window effects, one per bank, each in its own traditional color.
 
 - **v1 REJECTED same day** ("positively awful... It'll cause seizures"): 8 bar-downbeat Shockwave blooms (Snowflake Spoke) + 12 kick Shockwave stabs (Torch Long Even/Odd) over fast bases (Pinwheel speed-ramp 10→26, Spirals −6, Fan 720 rev), all warm gold. **Do not restore short Shockwave hits or fast rotation on the Rosa in this song.**
-- **v2 (LIVE, pending review):** `Spoke GRP` 3D Pinwheel constant speed 8, deep red `#B01212`/gold b60 · `Ring GRP` Spirals rotation −3 movement 1.0 counter-rotating, evergreen `#0B6B3A`/gold b55 · `Ribbon GRP` Fan 3 blades ONE revolution across the whole chorus (360), gold/white b55 · `Snowflake Spoke GRP` sparse Twinkle (8/60) white/gold b45. Torch banks dark. 1.0 s fade in/out everywhere.
-- Owns **L0 only** on the six banks (incl. the now-empty torches) inside the window. `Web Ring GRP` untouched (has the V1 chord-bank effect). Rebuild: `Tools/rosa_c1_constant_motion.py` (`--dry-run` / `--clear-only` / `--rework` = clear the window via direct .xsq edit [close → strip → reopen] then re-add — the pattern for any future Rosa rework).
-- Backups: `Holy Forever 2026.xsq.bak-before-rosa-c1` (pre-v1), `.bak-before-rosa-c1-v2` (v1 state).
+- **v2 REJECTED same day** (user: not using submodel render style the way Xtreme does): flat Overlay-Centered bases (Pinwheel/Spirals/Fan/Twinkle, one color pair each) ignore the prop's real geometry.
+- **v3 (LIVE, pending review)** — direct port of the pros' Rosa stacks in `/Volumes/Personal-Drive/xlights/Christmas/The Christmas Song .xsq` (their ballad: ONE long slow effect per bank, 4–6 banks per ~27 s section, stacked mirrored pinwheels on the whole-prop GRP as the hero move):
+  - `GE Rosa Grande GRP` **L0+L1**: identical slow 2-arm **3D-Inverted twisted Pinwheel** (ArmSize 271, Twist −65, Speed 3, Thickness 40, Blur 3), **`Per Model Per Preview` + `PerPreviewCamera=2D`**, L1 adds `BufferTransform=Flip Horizontal` → the two sweeps counter-rotate through each other over the prop's real geometry. Gradient palette red→gold→green.
+  - `Torch Long Even GRP` L0: slow 4-arm Pinwheel (Thickness 82, Speed 2, Twist −60), Per Model Per Preview 2D, deep red `#B01212`.
+  - `Spoke GRP` L0: Fan, Overlay-Centered, **overscanned End_Radius=333**, Blur 2 (their exact recipe), gold `#FFD89A`.
+  - `Feather Long Odd GRP` L0: Spirals rot 20 / move 4, Overlay-Centered + Flip Horizontal, evergreen `#0B6B3A`.
+  - `Outer Ball GRP` L0: SingleStrand `Bounce from Left`, 8 rotations across the chorus, 2.5 s fades, white/gold.
+  - **Key style lesson (measured, 64 sequences):** the pros' Rosa continuous-motion vocabulary is Per Model Per Preview (+2D camera, often Blur + Flip-Horizontal mirror pairs) for pinwheels through the geometry; Overlay-Centered for Spirals/Fan/chases; `Vertical Per Model/Strand` for SingleStrand drips on feather/torch/ball banks. Long effects = one per bank per section (~27 s), 2 s fades; NOT short hits.
+- Owns the window on: whole GRP L0–L1 + the four banks' L0. `Web Ring GRP` untouched (V1 chord-bank effect). Rebuild: `Tools/rosa_c1_constant_motion.py` (`--dry-run` / `--clear-only` / `--rework` = clear all owned banks' window effects via direct .xsq edit [close → strip → reopen] then re-add).
+- Backups: `Holy Forever 2026.xsq.bak-before-rosa-c1` (pre-v1), `.bak-before-rosa-c1-v2` (v1 state), `.bak-before-rosa-c1-v3` (v2 state).
 
 ## Added 2026-07-20: C3 climax drum-riff — dramatic `House Outline` strobe flash
 

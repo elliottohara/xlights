@@ -1,25 +1,30 @@
-"""Chorus 1 Rosa Grande — slow constant motion in traditional colors (v2).
+"""Chorus 1 Rosa Grande — slow constant motion, Christmas Song style (v3).
 
-v1 (rejected 2026-07-21: "positively awful... It'll cause seizures") fired
-8 Shockwave blooms + 12 kick stabs over fast bases. v2 removes ALL hits and
-runs only slow, continuous, counter-rotating movement, each bank in its own
-traditional color, full Chorus 1 window: 67275 (Anthemic Mood downbeat) to
-93925 (Groove/V2 downbeat).
+v1 (rejected: seizure strobing) fired 20 short Shockwave hits. v2 (rejected:
+buffer styles wrong) ran Overlay-Centered bases that ignore the prop's real
+geometry. v3 is a direct port of the pros' Rosa stacks in
+`/Volumes/Personal-Drive/xlights/Christmas/The Christmas Song .xsq`
+(their ballad — one long slow effect per bank, 4-6 banks per section):
 
-  - GE Rosa Grande Spoke GRP    L0: 3D Pinwheel, constant slow speed 8,
-    red/gold. (No speed ramp.)
-  - GE Rosa Grande Ring GRP     L0: Spirals rotation -3, movement 1 --
-    slow counter-rotation against the pinwheel, green/gold.
-  - GE Rosa Grande Ribbon GRP   L0: Fan, one revolution across the whole
-    chorus (Revolutions 360), gold/white.
-  - GE Rosa Grande Snowflake Spoke GRP L0: sparse white Twinkle shimmer.
+  - GE Rosa Grande GRP L0+L1 (whole-prop group, 2 layers): their hero move —
+    the SAME slow 2-arm 3D-Inverted twisted Pinwheel on both layers, L1 with
+    BufferTransform=Flip Horizontal, so the two sweeps counter-rotate through
+    each other. Per Model Per Preview + PerPreviewCamera=2D + Blur 3 renders
+    through the prop's real geometry. Gradient palette (red-gold-green).
+  - GE Rosa Grande Torch Long Even GRP L0: slow 4-arm Pinwheel, Per Model
+    Per Preview 2D, thickness 82, speed 2 (their verse recipe), deep red.
+  - GE Rosa Grande Spoke GRP L0: Fan, Overlay-Centered, overscanned
+    End_Radius=333, Blur 2 (their exact verse Fan), gold.
+  - GE Rosa Grande Feather Long Odd GRP L0: Spirals, Overlay-Centered +
+    Flip Horizontal, rotation 20 / movement 4 (their exact recipe), green.
+  - GE Rosa Grande Outer Ball GRP L0: SingleStrand Bounce chase,
+    8 rotations across the chorus, long fades (their exact recipe), white.
 
-Torch banks are dark this pass (v1's kick stabs were the seizure trigger).
+Window: 67275-93925 (Chorus 1 / Anthemic). No beat hits, no brightness
+tricks — movement only, per user direction 2026-07-21.
 
-Rework support: if the window already holds effects on these banks (or the
-v1 torch banks), pass --rework to clear them via direct .xsq edit (the API
-has no delete): closeSequence -> strip our window effects from L0 of the
-six banks -> openSequence -> verify len -> re-add.
+Rework: --rework clears ALL layers of every bank this feature has ever
+owned inside the window via direct .xsq edit (close -> strip -> reopen).
 
 Run (xLights slot A):
     python3 rosa_c1_constant_motion.py [--dry-run] [--clear-only] [--rework]
@@ -37,29 +42,64 @@ SEQ_LEN = 308314
 WIN_START = 67275
 WIN_END = 93925
 
-RIBBON = 'GE Rosa Grande Ribbon GRP'
+WHOLE = 'GE Rosa Grande GRP'
 SPOKE = 'GE Rosa Grande Spoke GRP'
-RING = 'GE Rosa Grande Ring GRP'
-SNOWFLAKE = 'GE Rosa Grande Snowflake Spoke GRP'
 TORCH_EVEN = 'GE Rosa Grande Torch Long Even GRP'
-TORCH_ODD = 'GE Rosa Grande Torch Long Odd GRP'
-# all banks this feature has ever owned in the window (v1 + v2) — cleared on rework
-OWNED = [RIBBON, SPOKE, RING, SNOWFLAKE, TORCH_EVEN, TORCH_ODD]
+FEATHER_ODD = 'GE Rosa Grande Feather Long Odd GRP'
+OUTER_BALL = 'GE Rosa Grande Outer Ball GRP'
+# every bank v1/v2/v3 ever wrote in the window — all cleared on rework
+OWNED = [WHOLE, SPOKE, TORCH_EVEN, FEATHER_ODD, OUTER_BALL,
+         'GE Rosa Grande Ribbon GRP', 'GE Rosa Grande Ring GRP',
+         'GE Rosa Grande Snowflake Spoke GRP',
+         'GE Rosa Grande Torch Long Odd GRP']
 
-RED = '#B01212'      # deep red, not fire-engine
-GREEN = '#0B6B3A'    # muted evergreen (house green)
+# traditional palette
+RED = '#B01212'
+GREEN = '#0B6B3A'
 GOLD = '#FFD89A'
 WHITE = '#FFFFFF'
 
+# gradient button for the mirrored whole-prop pinwheels (red -> gold -> green)
+GRADIENT = ('Active=TRUE|Id=ID_BUTTON_Palette1|'
+            'Values=x=0.000^c=#b01212;x=0.400^c=#ffd89a;'
+            'x=0.700^c=#0b6b3a;x=1.000^c=#b01212|')
 
-def pal(c1, c2, brightness):
-    return (f'C_BUTTON_Palette1={c1},C_BUTTON_Palette2={c2},'
-            f'C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,'
-            f'C_SLIDER_Brightness={brightness}')
+
+def flat_pal(c1, c2=None):
+    p = f'C_BUTTON_Palette1={c1},C_CHECKBOX_Palette1=1'
+    if c2:
+        p += f',C_BUTTON_Palette2={c2},C_CHECKBOX_Palette2=1'
+    return p
 
 
-PINWHEEL_SETTINGS = (
-    'B_CHOICE_BufferStyle=Overlay - Centered,'
+GRADIENT_PAL = f'C_BUTTON_Palette1={GRADIENT},C_CHECKBOX_Palette1=1'
+
+# their hero: slow mirrored 2-arm inverted pinwheel pair on the whole prop
+HERO_PINWHEEL = (
+    'B_CHOICE_BufferStyle=Per Model Per Preview,'
+    'B_CHOICE_PerPreviewCamera=2D,'
+    'B_SLIDER_Blur=3,'
+    'E_CHECKBOX_Pinwheel_Rotation=0,'
+    'E_CHOICE_Pinwheel_3D=3D Inverted,'
+    'E_CHOICE_Pinwheel_Style=New Render Method,'
+    'E_SLIDER_PinwheelXC=0,'
+    'E_SLIDER_PinwheelYC=0,'
+    'E_SLIDER_Pinwheel_ArmSize=271,'
+    'E_SLIDER_Pinwheel_Arms=2,'
+    'E_SLIDER_Pinwheel_Speed=3,'
+    'E_SLIDER_Pinwheel_Thickness=40,'
+    'E_SLIDER_Pinwheel_Twist=-65,'
+    'T_TEXTCTRL_Fadein=2,'
+    'T_TEXTCTRL_Fadeout=2'
+)
+HERO_PINWHEEL_FLIP = HERO_PINWHEEL.replace(
+    'B_CHOICE_PerPreviewCamera=2D,',
+    'B_CHOICE_PerPreviewCamera=2D,B_CHOICE_BufferTransform=Flip Horizontal,')
+
+# their verse torch pinwheel: 4 fat slow arms through the real torch geometry
+TORCH_PINWHEEL = (
+    'B_CHOICE_BufferStyle=Per Model Per Preview,'
+    'B_CHOICE_PerPreviewCamera=2D,'
     'E_CHECKBOX_Pinwheel_Rotation=1,'
     'E_CHOICE_Pinwheel_3D=3D,'
     'E_CHOICE_Pinwheel_Style=New Render Method,'
@@ -67,87 +107,98 @@ PINWHEEL_SETTINGS = (
     'E_SLIDER_PinwheelYC=0,'
     'E_SLIDER_Pinwheel_ArmSize=100,'
     'E_SLIDER_Pinwheel_Arms=4,'
-    'E_SLIDER_Pinwheel_Speed=8,'
-    'E_SLIDER_Pinwheel_Thickness=30,'
-    'E_SLIDER_Pinwheel_Twist=0,'
-    'T_TEXTCTRL_Fadein=1.0,'
-    'T_TEXTCTRL_Fadeout=1.0'
+    'E_SLIDER_Pinwheel_Speed=2,'
+    'E_SLIDER_Pinwheel_Thickness=82,'
+    'E_SLIDER_Pinwheel_Twist=-60,'
+    'T_TEXTCTRL_Fadein=2,'
+    'T_TEXTCTRL_Fadeout=2'
 )
 
-SPIRALS_SETTINGS = (
+# their exact verse Fan on the Spoke bank (overscanned radius, blurred)
+SPOKE_FAN = (
     'B_CHOICE_BufferStyle=Overlay - Centered,'
-    'E_CHECKBOX_Spirals_3D=1,'
-    'E_SLIDER_Spirals_Count=3,'
-    'E_SLIDER_Spirals_Rotation=-3,'
-    'E_SLIDER_Spirals_Thickness=64,'
-    'E_TEXTCTRL_Spirals_Movement=1.0,'
-    'T_TEXTCTRL_Fadein=1.0,'
-    'T_TEXTCTRL_Fadeout=1.0'
-)
-
-FAN_SETTINGS = (
-    'B_CHOICE_BufferStyle=Default,'
+    'B_SLIDER_Blur=2,'
     'E_CHECKBOX_Fan_Blend_Edges=1,'
-    'E_NOTEBOOK_Fan=Options,'
+    'E_NOTEBOOK_Fan=Position,'
     'E_SLIDER_Fan_Blade_Angle=90,'
     'E_SLIDER_Fan_Blade_Width=100,'
     'E_SLIDER_Fan_CenterX=50,'
     'E_SLIDER_Fan_CenterY=50,'
     'E_SLIDER_Fan_Duration=100,'
-    'E_SLIDER_Fan_End_Radius=70,'
+    'E_SLIDER_Fan_Element_Width=100,'
+    'E_SLIDER_Fan_End_Radius=333,'
     'E_SLIDER_Fan_Num_Blades=3,'
     'E_SLIDER_Fan_Num_Elements=1,'
-    'E_SLIDER_Fan_Revolutions=360,'
-    'E_SLIDER_Fan_Start_Radius=0,'
-    'T_TEXTCTRL_Fadein=1.0,'
-    'T_TEXTCTRL_Fadeout=1.0'
+    'E_SLIDER_Fan_Revolutions=720,'
+    'E_SLIDER_Fan_Start_Radius=1,'
+    'T_TEXTCTRL_Fadein=2,'
+    'T_TEXTCTRL_Fadeout=2'
 )
 
-TWINKLE_SETTINGS = (
+# their exact feather Spirals (flipped, gentle drift)
+FEATHER_SPIRALS = (
     'B_CHOICE_BufferStyle=Overlay - Centered,'
-    'E_SLIDER_Twinkle_Count=8,'
-    'E_SLIDER_Twinkle_Steps=60,'
-    'T_TEXTCTRL_Fadein=1.0,'
-    'T_TEXTCTRL_Fadeout=1.0'
+    'B_CHOICE_BufferTransform=Flip Horizontal,'
+    'E_CHECKBOX_Spirals_3D=1,'
+    'E_SLIDER_Spirals_Count=2,'
+    'E_SLIDER_Spirals_Rotation=20,'
+    'E_SLIDER_Spirals_Thickness=50,'
+    'E_TEXTCTRL_Spirals_Movement=4,'
+    'T_TEXTCTRL_Fadein=2,'
+    'T_TEXTCTRL_Fadeout=2'
+)
+
+# their exact outer-ball bounce chase
+BALL_CHASE = (
+    'B_CHOICE_BufferStyle=Overlay - Centered,'
+    'E_CHECKBOX_Chase_Group_All=0,'
+    'E_CHOICE_Chase_Type1=Bounce from Left,'
+    'E_CHOICE_SingleStrand_Colors=Palette,'
+    'E_NOTEBOOK_SSEFFECT_TYPE=Chase,'
+    'E_SLIDER_Color_Mix1=10,'
+    'E_SLIDER_Number_Chases=1,'
+    'E_TEXTCTRL_Chase_Rotations=8,'
+    'T_TEXTCTRL_Fadein=2.5,'
+    'T_TEXTCTRL_Fadeout=2.5'
 )
 
 PLAN = [
-    (SPOKE, 'Pinwheel', PINWHEEL_SETTINGS, pal(RED, GOLD, 60)),
-    (RING, 'Spirals', SPIRALS_SETTINGS, pal(GREEN, GOLD, 55)),
-    (RIBBON, 'Fan', FAN_SETTINGS, pal(GOLD, WHITE, 55)),
-    (SNOWFLAKE, 'Twinkle', TWINKLE_SETTINGS, pal(WHITE, GOLD, 45)),
+    (WHOLE, 0, 'Pinwheel', HERO_PINWHEEL, GRADIENT_PAL),
+    (WHOLE, 1, 'Pinwheel', HERO_PINWHEEL_FLIP, GRADIENT_PAL),
+    (TORCH_EVEN, 0, 'Pinwheel', TORCH_PINWHEEL, flat_pal(RED)),
+    (SPOKE, 0, 'Fan', SPOKE_FAN, flat_pal(GOLD)),
+    (FEATHER_ODD, 0, 'Spirals', FEATHER_SPIRALS, flat_pal(GREEN)),
+    (OUTER_BALL, 0, 'SingleStrand', BALL_CHASE, flat_pal(WHITE, GOLD)),
 ]
 
 
 def window_effects(model):
+    """(layer, id) pairs of effects on `model` touching the C1 window."""
     layers = x.xl('getEffectIDs', model=model)['effects']
     hits = []
-    for eid in (layers[0] if layers else []):
-        s = x.xl('getEffectSettings', model=model, layer=0, id=eid)
-        if int(s['endTime']) > WIN_START and int(s['startTime']) < WIN_END:
-            hits.append(eid)
+    for li, ids in enumerate(layers):
+        for eid in ids:
+            s = x.xl('getEffectSettings', model=model, layer=li, id=eid)
+            if int(s['endTime']) > WIN_START and int(s['startTime']) < WIN_END:
+                hits.append((li, eid))
     return hits
 
 
 def clear_window_via_xsq():
-    """Direct .xsq edit: drop this feature's window effects from OWNED banks.
-
-    Sequence must be CLOSED in xLights before calling."""
+    """Strip this feature's window effects (ALL layers) from OWNED banks.
+    Sequence must be CLOSED in xLights first."""
     tree = ET.parse(XSQ)
     root = tree.getroot()
     removed = 0
     for el in root.find('ElementEffects').findall('Element'):
         if el.get('name') not in OWNED:
             continue
-        layers = el.findall('EffectLayer')
-        if not layers:
-            continue
-        l0 = layers[0]
-        for eff in list(l0.findall('Effect')):
-            s, e = int(eff.get('startTime')), int(eff.get('endTime'))
-            if e > WIN_START and s < WIN_END:
-                l0.remove(eff)
-                removed += 1
+        for layer in el.findall('EffectLayer'):
+            for eff in list(layer.findall('Effect')):
+                s, e = int(eff.get('startTime')), int(eff.get('endTime'))
+                if e > WIN_START and s < WIN_END:
+                    layer.remove(eff)
+                    removed += 1
     tree.write(XSQ, encoding='UTF-8', xml_declaration=True)
     return removed
 
@@ -162,8 +213,8 @@ def main():
     assert info.get('len') == SEQ_LEN, f'unexpected len: {info}'
 
     dirty = {b: ids for b in OWNED if (ids := window_effects(b))}
-    for m, e, _, p in PLAN:
-        print(f'  {m:44s} {e:10s} {WIN_START}-{WIN_END}  {p.split(",")[0]}')
+    for m, li, e, _, p in PLAN:
+        print(f'  {m:38s} L{li} {e:13s} {WIN_START}-{WIN_END}')
     print(f'{len(PLAN)} slow continuous effects planned')
 
     if dry:
@@ -175,8 +226,8 @@ def main():
     if dirty:
         if not rework:
             raise SystemExit(
-                f'C1 window not empty on {list(dirty)} — rerun with --rework '
-                f'to clear via .xsq. Nothing written.')
+                f'C1 window not empty on {list(dirty)} — rerun with --rework. '
+                f'Nothing written.')
         x.save(XSQ)
         x.xl('closeSequence', force='true', quiet='true')
         removed = clear_window_via_xsq()
@@ -186,8 +237,8 @@ def main():
         assert info.get('len') == SEQ_LEN, f'reopen failed: {info}'
 
     if not clear_only:
-        for model, effect, settings, palette in PLAN:
-            x.add_effect(model, 0, effect, settings, palette,
+        for model, layer, effect, settings, palette in PLAN:
+            x.add_effect(model, layer, effect, settings, palette,
                          WIN_START, WIN_END)
 
     got = sum(len(window_effects(b)) for b in OWNED)
