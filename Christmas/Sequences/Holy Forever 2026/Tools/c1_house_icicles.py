@@ -1,12 +1,14 @@
 """Chorus 1 — house Rosa-red reveal (idea 1).
 
 Cast:
-  - Verts / Roof / Windows: L1 Rosa red (#B01212) Color Wash + L0 narrow
-    Single Line Marquee with `1 reveals 2` and Rosa amber (#FFD89A) mask.
-  - GE Merry Christmas/Christ: same marquee reveal, but full bright white
-    (#FFFFFF) wash + white mask (no amber/red/blue).
-  - Icicles GRP: same red wash, but L0 is the Vertical Per Model SingleStrand
-    drip (liked motion) with the same reveal + amber mask.
+  - Verts / Roof: L1 Rosa red (#B01212) Color Wash + L0 narrow Single Line
+    Marquee with `1 reveals 2` and Rosa amber (#FFD89A) mask.
+  - Windows group: same L0/L1 reveal with **Per Model Per Preview** so each
+    frame (Bottom Left / Play Room / Garage outline / Bedroom outline /
+    Entry outline / Front Door) gets its own marquee. Full matrix panels
+    stay free for angels-cry Holy Text (Additive on Entry/Downstairs L0).
+  - GE Merry Christmas/Christ: white wash + white mask marquee.
+  - Icicles GRP: red wash + amber SingleStrand drip (`1 reveals 2`).
   Christ PC1 bass blinks (L1–L3, ends ≤63875) sit outside this window.
 
 ⚠ Roof includes /Eves submodels — overlaps Icicles GRP visually; intentional
@@ -15,7 +17,8 @@ per user (roof line + icicles both active in C1). Roof L0 final-hold On at
 
 Window: 67275-93925 (same Anthemic C1 window as Rosa/Starlord/Reel Max).
 Long fades (2 s). Idempotent; --rework clears owned layers in-window via .xsq.
-`--rework` also strips the mistaken Flakes Outline/Arms C1 pass if present.
+`--rework` also strips stale per-member window reveals and Flakes Outline/Arms
+C1 leftovers if present.
 
 Run (Slot A):
     python3 c1_house_icicles.py [--dry-run] [--clear-only] [--rework]
@@ -38,18 +41,26 @@ ROOF = 'Roof'
 WINDOWS = 'Windows'
 CHRIST = 'GE Merry Christmas/Christ'
 ICICLES = 'Icicles GRP'
-# Cleared on --rework only — mistaken "snowflakes" pass (user meant icicles).
-STALE_FLAKES = [
+# Cleared on --rework only — old per-member window reveals + flake leftovers.
+STALE = [
     ('Flakes Outline All GRP', 0), ('Flakes Outline All GRP', 1),
     ('Flakes Arms GRP', 0), ('Flakes Arms GRP', 1),
+    # Prior per-member cast (before consolidating onto Windows + PMPP).
+    ('Window - Bottom Left', 0), ('Window - Bottom Left', 1),
+    ('Window - Play Room', 0), ('Window - Play Room', 1),
+    ('Front Door', 0), ('Front Door', 1),
+    ('Matrix-Garage Window/Window - Garage', 0),
+    ('Matrix-Garage Window/Window - Garage', 1),
+    ('Matrix - Entry', 1), ('Matrix - Entry', 2),
+    ('Matrix - Downstairs Window', 1), ('Matrix - Downstairs Window', 2),
 ]
-MARQUEE_MODELS = (VERTS, ROOF, WINDOWS, CHRIST)
+MARQUEE_L0 = (VERTS, ROOF, WINDOWS, CHRIST)
 OWNED = (
-    [(m, 0) for m in MARQUEE_MODELS] +
-    [(m, 1) for m in MARQUEE_MODELS] +
+    [(m, 0) for m in MARQUEE_L0] +
+    [(m, 1) for m in MARQUEE_L0] +
     [(ICICLES, 0), (ICICLES, 1)]
 )
-CLEAR_TARGETS = OWNED + STALE_FLAKES
+CLEAR_TARGETS = OWNED + STALE
 
 ROSA_RED = '#B01212'   # same as rosa_c1_constant_motion.py
 ROSA_GOLD = '#FFD89A'  # warm amber mask (Rosa palette)
@@ -76,7 +87,41 @@ VERTS_MARQUEE = (
     'T_TEXTCTRL_Fadeout=2'
 )
 
+# Windows = outline frames across the house — PMPP so each frame marquees
+# in its own preview space (Single Line on the group chased one combined path).
+WINDOWS_MARQUEE = (
+    'B_CHOICE_BufferStyle=Per Model Per Preview,'
+    'B_CHOICE_PerPreviewCamera=2D,'
+    'E_CHECKBOX_Marquee_PixelOffsets=0,'
+    'E_CHECKBOX_Marquee_Reverse=0,'
+    'E_CHECKBOX_Marquee_WrapX=0,'
+    'E_NOTEBOOK_Marquee=Settings,'
+    'E_SLIDER_MarqueeXC=0,'
+    'E_SLIDER_MarqueeYC=0,'
+    'E_SLIDER_Marquee_Band_Size=4,'
+    'E_SLIDER_Marquee_ScaleX=100,'
+    'E_SLIDER_Marquee_ScaleY=100,'
+    'E_SLIDER_Marquee_Skip_Size=9,'
+    'E_SLIDER_Marquee_Speed=2,'
+    'E_SLIDER_Marquee_Stagger=0,'
+    'E_SLIDER_Marquee_Start=0,'
+    'E_SLIDER_Marquee_Thickness=2,'
+    'T_CHOICE_LayerMethod=1 reveals 2,'
+    'T_TEXTCTRL_Fadein=2,'
+    'T_TEXTCTRL_Fadeout=2'
+)
+
 VERTS_WASH = (
+    'E_CHECKBOX_ColorWash_HFade=0,'
+    'E_CHECKBOX_ColorWash_VFade=0,'
+    'E_TEXTCTRL_ColorWash_Cycles=1.0,'
+    'T_TEXTCTRL_Fadein=2,'
+    'T_TEXTCTRL_Fadeout=2'
+)
+
+WINDOWS_WASH = (
+    'B_CHOICE_BufferStyle=Per Model Per Preview,'
+    'B_CHOICE_PerPreviewCamera=2D,'
     'E_CHECKBOX_ColorWash_HFade=0,'
     'E_CHECKBOX_ColorWash_VFade=0,'
     'E_TEXTCTRL_ColorWash_Cycles=1.0,'
@@ -110,32 +155,37 @@ def flat_pal(*colors, brightness=None):
     return ','.join(parts)
 
 
-def reveal_marquee(model, wash=ROSA_RED, mask=ROSA_GOLD, wash_brightness=80):
+def reveal_marquee(model, wash=ROSA_RED, mask=ROSA_GOLD, wash_brightness=80,
+                   wash_layer=1, motion_layer=0):
     return [
-        (model, 1, 'Color Wash', VERTS_WASH, flat_pal(wash, brightness=wash_brightness)),
-        (model, 0, 'Marquee', VERTS_MARQUEE, flat_pal(mask, brightness=100)),
+        (model, wash_layer, 'Color Wash', VERTS_WASH,
+         flat_pal(wash, brightness=wash_brightness)),
+        (model, motion_layer, 'Marquee', VERTS_MARQUEE,
+         flat_pal(mask, brightness=100)),
     ]
 
 
-PLAN = (
-    reveal_marquee(VERTS) +
-    reveal_marquee(ROOF) +
-    reveal_marquee(WINDOWS) +
-    reveal_marquee(CHRIST, wash=WHITE, mask=WHITE, wash_brightness=100) +
-    [
-        (ICICLES, 1, 'Color Wash', VERTS_WASH, flat_pal(ROSA_RED, brightness=80)),
-        (ICICLES, 0, 'SingleStrand', ICICLES_DRIP, flat_pal(ROSA_GOLD, brightness=100)),
-    ]
-)
+PLAN = []
+for m in (VERTS, ROOF):
+    PLAN += reveal_marquee(m)
+PLAN += [
+    (WINDOWS, 1, 'Color Wash', WINDOWS_WASH,
+     flat_pal(ROSA_RED, brightness=80)),
+    (WINDOWS, 0, 'Marquee', WINDOWS_MARQUEE,
+     flat_pal(ROSA_GOLD, brightness=100)),
+]
+PLAN += reveal_marquee(CHRIST, wash=WHITE, mask=WHITE, wash_brightness=100)
+PLAN += [
+    (ICICLES, 1, 'Color Wash', VERTS_WASH, flat_pal(ROSA_RED, brightness=80)),
+    (ICICLES, 0, 'SingleStrand', ICICLES_DRIP, flat_pal(ROSA_GOLD, brightness=100)),
+]
 
-WASH_COLOR = {
-    VERTS: ROSA_RED, ROOF: ROSA_RED, WINDOWS: ROSA_RED,
-    CHRIST: WHITE, ICICLES: ROSA_RED,
-}
-MASK_COLOR = {
-    VERTS: ROSA_GOLD, ROOF: ROSA_GOLD, WINDOWS: ROSA_GOLD,
-    CHRIST: WHITE, ICICLES: ROSA_GOLD,
-}
+WASH_COLOR = {m: ROSA_RED for m in (VERTS, ROOF, WINDOWS)}
+WASH_COLOR[CHRIST] = WHITE
+WASH_COLOR[ICICLES] = ROSA_RED
+MASK_COLOR = {m: ROSA_GOLD for m in (VERTS, ROOF, WINDOWS)}
+MASK_COLOR[CHRIST] = WHITE
+MASK_COLOR[ICICLES] = ROSA_GOLD
 
 
 def window_effects(model, layer=None):
@@ -162,20 +212,30 @@ def expected_present():
                 or int(s['endTime']) != WIN_END):
             return False
         method = (s.get('settings') or {}).get('T_CHOICE_LayerMethod')
+        sett = s.get('settings') or {}
         if name == 'Marquee':
             if method != '1 reveals 2':
                 return False
             want = MASK_COLOR.get(model, ROSA_GOLD)
-            if s.get('palette', {}).get('C_BUTTON_Palette1') != want:
+            got = (s.get('palette') or {}).get('C_BUTTON_Palette1', '')
+            if got.lower() != want.lower():
                 return False
+            if model == WINDOWS:
+                if sett.get('B_CHOICE_BufferStyle') != 'Per Model Per Preview':
+                    return False
         if name == 'SingleStrand':
             if method != '1 reveals 2':
                 return False
-            if s.get('palette', {}).get('C_BUTTON_Palette1') != ROSA_GOLD:
+            got = (s.get('palette') or {}).get('C_BUTTON_Palette1', '')
+            if got.lower() != ROSA_GOLD.lower():
                 return False
         if name == 'Color Wash' and model in WASH_COLOR:
-            if s.get('palette', {}).get('C_BUTTON_Palette1') != WASH_COLOR[model]:
+            got = (s.get('palette') or {}).get('C_BUTTON_Palette1', '')
+            if got.lower() != WASH_COLOR[model].lower():
                 return False
+            if model == WINDOWS:
+                if sett.get('B_CHOICE_BufferStyle') != 'Per Model Per Preview':
+                    return False
     return True
 
 
@@ -241,8 +301,8 @@ def main():
     assert 'Holy Forever 2026' in info.get('seq', ''), info
     assert int(info.get('len', 0)) == SEQ_LEN, info
 
-    print(f'plan: Verts/Roof/Windows/Christ Marquee + Icicles drip, '
-          f'Rosa-red reveal {WIN_START}-{WIN_END}')
+    print(f'plan: Verts/Roof + Windows(PMPP) + Christ + Icicles reveal '
+          f'{WIN_START}-{WIN_END}')
 
     if expected_present() and not rework and not clear_only:
         print('done: exact effects already present.')

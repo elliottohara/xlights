@@ -2,9 +2,9 @@
 
 Working notes for `Christmas/Sequences/Holy Forever 2026/Holy Forever 2026.xsq` (built July 2026). Read alongside the root `AGENTS.md`. Song: Chris Tomlin "Holy Forever" (Jenn Johnson female vocal), media = `Media/Chris Tomlin - Holy Forever (Lyric Video).mp4`, 308314 ms, 25 ms frames, ModelBlending on.
 
-**Current task:** branch `holy-c1-house-icicles` in permanent **Slot A** (`/Users/elliott.ohara/xlights-worktrees/slot-a`, API 49913). C1 house Rosa-red reveal + BMOAW red/amber constant motion.
+**Current task:** branch `holy-c1-flakes-blue-amber` in permanent **Slot A** (`/Users/elliott.ohara/xlights-worktrees/slot-a`, API 49913). C1 flakes sparkles + Mini Grand glowing cross.
 
-**Prior task (Slot A):** branch `rosa-c1-constant-motion` — C1 spinner constant motion (Rosa/Starlord/Reel Max); merged to main.
+**Prior task (Slot A):** branch `holy-c1-house-icicles` — C1 house Rosa-red reveal + BMOAW red/amber motion; merged to main.
 
 **2026-07-21 (Slot B, branch `sequence-show-folders`):** this folder is now a **standalone xLights show folder** — it has its own `xlights_rgbeffects.xml` copy (may diverge from the master for song-specific groups/views) plus `../../` symlinks to shared show-root assets. Launch xLights with `-s` pointing at this folder. See "Per-sequence show folders" in root `AGENTS.md`; promotion/refresh via `Tools/make_show_folder.sh`. No layout customizations yet — the copy matches the master as of this date.
 
@@ -15,7 +15,7 @@ Working notes for `Christmas/Sequences/Holy Forever 2026/Holy Forever 2026.xsq` 
 Saved from the live xLights session after hand edits. Live model effects now:
 
 - **Intro + intimate V1 (0–41850):** Whole Scene snow + Mega Tree glowing cross + dim Singing Bulb Faces; from 0:15 Snowman + `Arches - All` piano-chord SingleStrand + mini-tree note fills + oak cymbal Twinkles.
-- **Windows:** `Matrix - Entry` = "Holy" Text only (L0). `Matrix - Downstairs Window`, `Matrix-Garage Window`, and `Matrix - Lantana` = **empty** (Lantana's True Piano MIDI effect removed 2026-07-19 — user reported it wasn't working; do not restore). `Matrixes` group = empty.
+- **Windows:** `Matrix - Entry`, `Matrix - Downstairs Window`, `Matrix-Garage Window`, and `Matrix - Lantana` = **empty** (script "Holy" Text removed 2026-07-21 — do not restore; Lantana piano removed 2026-07-19). `Matrixes` group = empty. C1 Rosa marquee is on the `Windows` group (frames).
 - **House / icicles:** `Icicles GRP` = **empty**. `House Outline` = empty except the **8 C3 climax drum-riff strobe flashes** (see below; L0 only, layers 1–3 still empty). `Roof` L0 = final On hold only (301500–308275).
 - **Also live:** Tree Topper bass accents; **four** Mega Tree meteor windows on sung **"name"**; **four** `Whole Scene w Matrixes` implosions phase-locked into `Christ` (same four moments — not thrones/powers/positions); Christ bass blinks matching those windows; "angels cry" EFL Wing stacks; and the verified Teddy/Bulb/Penguin/PiXeL Paradise choir described below.
 - **Timing tracks (13):** Lyrics 1, Lyrics Lead/Female/Choir + Intro Choir, Song Sections, Mood, Beat Count, Kick, Snare, Cymbals, Piano Chords, Piano Notes.
@@ -192,23 +192,15 @@ Mood **Building - bass and kick enter** through Pre-Chorus 1. **Not keyed off th
 - Legacy: `Tools/pc1_christ_convergence.py` (same Whole Scene recipe; house_name_chase is the current owner). `pc1_star_ascent.py` superseded. One-shot trim: `Tools/pc1_your_name_only.py` (close xLights first).
 - Backup: `Backups/Holy Forever 2026.xsq.bak-before-pc1-clean-reapply`.
 
-## Added 2026-07-20: script "Holy" with brightness breath (Projector + Entry + Downstairs)
+## Deleted 2026-07-21: script "Holy" Text (Projector + Entry + Downstairs)
 
-User: on choruses where they say "angels cry holy", write **Holy** in a script font on **all of** `Projector`, `Matrix - Downstairs Window`, and `Matrix - Entry`. Wavey motion rejected ("looks horrible") — keep text **static** and let **brightness rise and fall** with the melisma.
+Removed — user tired of fighting window-marquee overlap. `Projector` / `Matrix - Entry` / `Matrix - Downstairs Window` L0 are empty. Do **not** restore. `Tools/angels_cry_holy_text.py` **refuses** to rebuild (clear-only still works). Backup from when it was first added: `Holy Forever 2026.xsq.bak-before-angels-cry-holy-text`.
 
-- **Windows (9):** Lyrics Lead `holy` closing each of **angels cry / creation cries / lifted high** in C1, C2a, C3:
-  C1 `70425-72850`, `77275-79250`, `83975-86275` · C2a `130075-132625`, `138525-139925`, `144750-146150` · C3 `238150-239550`, `244375-245775`, `251150-252550`.
-- **Effect:** white OS-font Text (`Brush Script MT`), Movement=`none`, `C_VALUECURVE_Brightness` Custom soft→peak→soft (35→100→35 on 0–400 scale). Font sizes: Projector 64 / Entry 20 / Downstairs 24.
-- History: (1) static + X/Y VCs — Text ignores position VCs; (2) `wavey` — rejected; (3) this brightness breath.
-- Owns **L0 only** on those three models. Rebuild/clear: `Tools/angels_cry_holy_text.py` (`--dry-run` / `--clear-only`).
-- Backup: `Holy Forever 2026.xsq.bak-before-angels-cry-holy-text`.
-- Built on branch `holy-angels-cry-holy-text` in **Slot A**.
-
-**Supersedes baseline note:** the old 22 static Entry-only "Holy" Texts (`6-5x6 Thin`) are gone from the live `.xsq`. Do **not** restore those; this feature is the current matrix Holy text.
+Earlier history (all gone): (1) 22 static Entry-only `6-5x6 Thin` Texts; (2) 2026-07-20 Brush Script + brightness breath on 9 triad holys; (3) Additive / SubBuffer inset attempts vs `Windows` marquees.
 
 ## Historical: "Holy" text on entry window only (removed before 2026-07-20)
 
-~~Baseline: 22 Text effects on `Matrix - Entry` L0 only~~ — no longer in the file. Downstairs Holy Texts were hand-deleted 2026-07-19. Replaced by the angels-cry script Text above.
+~~Baseline: 22 Text effects on `Matrix - Entry` L0 only~~ — no longer in the file.
 
 ## Deleted: swaying wind intro (was 180 → 15520)
 
@@ -344,7 +336,30 @@ Third spinner in the C1 set (Rosa red-led approved, Starlord blue-led). Blue-led
 - Rebuild: `Tools/reelmax_c1_constant_motion.py` (`--dry-run` / `--clear-only` / `--rework`).
 - Backup: `Holy Forever 2026.xsq.bak-before-reelmax-c1`.
 
-## Added 2026-07-21: BMOAW C1 constant motion (branch `holy-c1-house-icicles`, Slot A — pending user review)
+## Added 2026-07-21: C1 Mini Grand glowing cross (branch `holy-c1-flakes-blue-amber`, Slot A — pending user review)
+
+Intro Pictures image (`Glowing Cross.png`, Scale To Fit, white) on **`GE Mini Grand Illusion`** L0 for Song Sections Chorus 1 (**67575–95100**), 2 s fades. **Render style hand-tuned to `Per Preview`** (default did not paint). Rebuild: `Tools/c1_mini_grand_cross.py` (`--dry-run` / `--clear-only` / `--rework`).
+
+## Added 2026-07-21: C1 Mega Tree cross + blue/amber Aurora shader, amber sparkle star (branch `holy-c1-flakes-blue-amber`, Slot A — pending user review)
+
+User ask: "cross in the foreground and some cool shader that uses the blue and amber color" for the chorus, on the Mega Tree + star. Window 67275–93925 (same as the other C1 sets), 2 s fades, ballad dosage (3 long effects, no hits).
+
+- **`Mega Tree` L1**: intro `Glowing Cross.png` Pictures (Scale To Fit, white) with **`E_CHECKBOX_Pictures_TransparentBlack=1` (threshold 30)** so the shader beneath shows around the cross. L1 also holds the PC1 meteors — they end before this window; script only owns the window.
+- **`Mega Tree` L2**: `Aurora.fs` **Shader**, `uColMode=Alternate Color Palette (3 used) ` (maps palette slots 1–3 → shader r/g/b: amber `#FFC800` on the pulsing r, dim navy `#0A1E50` on g, sapphire `#2864FF` on the hot b channel — verified in shader source), `Shader_Speed=50`, intensity 80. Renders as slow blue ribbons with amber pulses behind the warm gold cross.
+- **`Tree Topper` L3**: steady amber (`#FFC800`) **On** at b70 with ivory sparkles (`C_SLIDER_SparkleFrequency=40`) — user rejected the aurora on the star same day ("just make it be that amber color with sparkles"). Its existing L1/L2 white On bass pops render over it.
+- Shader: **`Media/Shaders/Aurora Solid.fs`** — user rejected stock `Aurora.fs` ("don't like the hole in the middle"), then a clamped-inversion fix (still a center "bubble" — any radial math leaves circular structure), then v2's motion ("not moving like the other one did" — the inversion was what amplified motion). **v3 (LIVE):** no radial math (constant `p *= 1.09` zoom + PI/60 rotation per tap, output `col*0.13 − 0.18`) **plus per-layer time speed** `TIME*(0.45 + 0.18*i)` in the sine phase so the 18 curtains slide at different rates (parallax). Effects run `Shader_Speed=60`. Motion validated numerically: mean |Δframe| over lit pixels ≈0.085 vs stock 0.086 (v2 was 0.036). All variants prototyped offline with a numpy emulation of the GLSL before touching xLights (grid-render the math; check ring-wise luminance for holes, frame-pair deltas for motion). Stock `Aurora.fs` kept alongside for reference; both git-tracked. ⚠ The saved `.xsq` references the **slot-a absolute path** for the shader and this cross image (the permanent slot path renders fine from any instance; xLights only relativized the intro cross, not these).
+- Pro shader survey (share `.xsq`s): shaders always run on `Default` buffer; Mega Tree/Tree Topper favorites there are Spacels/Lightning Flash/Black Cherry Cosmos/Aurora/Voronoi Spiral Vortex; `Everybody Loves Christmas` uses long low-intensity Silexars beds like this.
+- Rebuild: `Tools/c1_megatree_cross_shader.py` (`--dry-run` / `--clear-only` / `--rework`). Backup: `Holy Forever 2026.xsq.bak-before-c1-megatree-cross-shader`. Preview: `RenderCompare/holy_forever_c1_megatree_cross_shader.mp4` (33 s C1 clip; `_full.mp4` = whole song).
+
+## Added 2026-07-21: C1 snowflakes — Aurora shader per flake (branch `holy-c1-flakes-blue-amber`, Slot A — pending user review)
+
+- **v1 REJECTED:** per-bank washes + Kick Twinkles on Outline/Spokes/Arms — wrong look, heavy.
+- **v2 REJECTED (same day):** sapphire Color Wash (`Single Line`) + Color-panel music sparkles — replaced after the Mega Tree aurora was approved ("apply the same shader to the snowflakes, render per model per preview, instead of the blue with sparkles").
+- **v3:** `Aurora Solid.fs` on **`Flakes GRP`** L0 with `Per Model Per Preview` (each flake its own aurora) — superseded by the user's hand tune below.
+- **v4 (LIVE — user hand-edited in the GUI 2026-07-21, "use what I did"):** same effect/palette but **`B_CHOICE_BufferStyle=Per Preview`** — ONE aurora field sweeps across all flakes as a group — with **continuous rotation `uRotate=-6083`** and **`uZoom=301`**. Window 67275–93925, blue/amber alternate palette (amber `#FFC800` / navy `#0A1E50` / sapphire `#2864FF`), Speed 60, intensity 220, 2 s fades. Script matches the live values verbatim — don't "correct" them. Stale part-bank C1 effects cleared. Outline L0 V1 Shockwave @32200 untouched.
+- Rebuild: `Tools/c1_flakes_blue_amber.py` (`--dry-run` / `--clear-only` / `--rework`). Backup: `Holy Forever 2026.xsq.bak-before-flakes-aurora` (v2 state).
+
+## Added 2026-07-21: BMOAW C1 constant motion (branch `holy-c1-house-icicles`, MERGED to main)
 
 Red/amber companion for both `BMOAW Left`/`Right` via shared `GE MOAW * GRP` banks — same C1 window (67275–93925) / ballad rules (long slow, 2 s fades, no hits, no white).
 
@@ -361,10 +376,11 @@ Red/amber companion for both `BMOAW Left`/`Right` via shared `GE MOAW * GRP` ban
 
 Idea 1 from the Xtreme house/icicle pass: Rosa-red reveal motion on the house, same Anthemic window as the C1 spinners (**67275–93925**), 2 s fades, no hits / no brightness breath.
 
-- `Verts` / `Roof` / `Windows`: L1 Rosa red (`#B01212`) **Color Wash** (b80) + L0 sparse **Marquee** (`Single Line`, band 4 / skip 9 / thickness 2 / speed 2) with **`1 reveals 2`** and Rosa amber (`#FFD89A`) mask. Roof final-hold On @301500 untouched. Roof `/Eves` overlap Icicles visually — accepted for this pass.
-- `GE Merry Christmas/Christ`: same marquee reveal, full bright white (`#FFFFFF`) wash + white mask (b100). PC1 blinks (≤63875) untouched.
+- `Verts` / `Roof`: L1 Rosa red (`#B01212`) **Color Wash** (b80) + L0 sparse **Marquee** (`Single Line`) with **`1 reveals 2`** + Rosa amber (`#FFD89A`) mask.
+- `Windows` group (outline frames — Bottom Left / Play Room / Garage / Bedroom / Entry / Front Door): same L0/L1 reveal with **`Per Model Per Preview` + `PerPreviewCamera=2D`** (2026-07-21 — was per-member `Single Line`; user asked for the group + PMPP). Matrix panels empty (Holy Text deleted).
+- `GE Merry Christmas/Christ`: white wash + white mask marquee. PC1 blinks (≤63875) untouched.
 - `Icicles GRP`: same red wash, L0 Vertical Per Model **SingleStrand** drip (rot 3) with **`1 reveals 2`** + amber mask.
-- Rebuild: `Tools/c1_house_icicles.py` (`--dry-run` / `--clear-only` / `--rework`; rework also clears stale flake C1 effects).
+- Rebuild: `Tools/c1_house_icicles.py` (`--dry-run` / `--clear-only` / `--rework`; also clears stale per-member window + flake C1 leftovers).
 
 ## Added 2026-07-20: C3 climax drum-riff — dramatic `House Outline` strobe flash
 
@@ -418,7 +434,10 @@ Idea 1 from the Xtreme house/icicle pass: Rosa-red reveal motion on the house, s
 - `climax_blue_house_marquee.py` — add/verify the subtle sapphire `House Outline` L1 Marquee across the full Final Chorus; brightness breathes 38↔46 with the bar downbeats (`--dry-run`; safely migrates the superseded 273650 start only).
 - `c1_house_icicles.py` — C1 `Verts`/`Roof`/`Windows`/`Christ` Marquee + `Icicles GRP` drip, Rosa-red `1 reveals 2` (67275–93925). `--dry-run` / `--clear-only` / `--rework`.
 - `moaw_c1_constant_motion.py` — C1 BMOAW Left/Right red/amber constant motion via MOAW GRPs (67275–93925). `--dry-run` / `--clear-only` / `--rework`.
-- `angels_cry_holy_text.py` — wipe/rebuild static script "Holy" Text (brightness rise/fall) on Projector + Entry + Downstairs for the 9 chorus triad holy marks (`--dry-run` / `--clear-only`).
+- `c1_flakes_blue_amber.py` — C1 `Flakes GRP` sapphire Color Wash + amber music sparkles (Color panel; 67275–93925). `--dry-run` / `--clear-only` / `--rework`.
+- `c1_mini_grand_cross.py` — C1 `GE Mini Grand Illusion` Pictures Glowing Cross (67575–95100). `--dry-run` / `--clear-only` / `--rework`.
+- `c1_megatree_cross_shader.py` — C1 Mega Tree cross-over-Aurora + Tree Topper aurora (67275–93925). `--dry-run` / `--clear-only` / `--rework`.
+- `angels_cry_holy_text.py` — **refuses** rebuild (Holy Text deleted 2026-07-21). `--clear-only` / `--dry-run` still work.
 - `lantana_piano.py` — wipe/rebuild full-song True Piano on `Matrix - Lantana` (`--dry-run` / `--clear-only`). **Removed 2026-07-19 (user: not working) — refuse to re-run its build mode; `--clear-only` is safe/idempotent.**
 - `migrate_christ_submodel.py` — historical one-shot Christ-submodel migration; **do not run** (its four lyric glows were superseded by bass blinks).
 - `migrate_faces.py`, `place_faces.py`, `lead_backup_c2.py` — historical; superseded by `fix_faces.py`.
@@ -426,4 +445,4 @@ Idea 1 from the Xtreme house/icicle pass: Rosa-red reveal motion on the house, s
 
 ## Review checklist (baseline — do not “restore” removed bits)
 
-0:00–0:42 Whole Scene snow + Mega Tree cross + dim bulbs; Penguins + PiXeL Paradise dark · 0:15 Snowman + arch piano chords + shrub-bank piano notes + oak cymbal Twinkles · Lantana empty (Piano MIDI effect removed 2026-07-19, wasn't working) · C1/C2a/C3 angels/creation/lifted-high holys: static Brush Script "Holy" with brightness breath on Projector + Entry + Downstairs (no garage/window snow) · C1 (1:07–1:34): `Verts`/`Roof`/`Windows`/`Christ`+`Icicles GRP` Rosa-red reveal + BMOAW red/amber motion under the spinner beds · House Outline dark except 8 dramatic white strobe flashes at 3:53 and the subtle blue bar-breathing Marquee across 3:54–4:47; Roof = final hold only; Tree Topper accents kept · C1/C2/PC2b→C3 Bulbs + both white-exterior, belly-accented Penguins + all seven PiXeL Paradise faces sing together · 4:47 Snowman outro solo.
+0:00–0:42 Whole Scene snow + Mega Tree cross + dim bulbs; Penguins + PiXeL Paradise dark · 0:15 Snowman + arch piano chords + shrub-bank piano notes + oak cymbal Twinkles · Lantana empty · Projector/Entry/Downstairs empty (script Holy Text removed 2026-07-21) · C1 (1:07–1:34): `Verts`/`Roof`/`Windows`/`Christ`+`Icicles GRP` Rosa-red reveal + BMOAW red/amber + `Flakes GRP` rotating blue/amber Aurora Solid shader (Per Preview, whole roof as one field) under the spinner beds + Mega Tree cross-over-aurora with amber sparkle star · House Outline dark except 8 dramatic white strobe flashes at 3:53 and the subtle blue bar-breathing Marquee across 3:54–4:47; Roof = final hold only; Tree Topper accents kept · C1/C2/PC2b→C3 Bulbs + both white-exterior, belly-accented Penguins + all seven PiXeL Paradise faces sing together · 4:47 Snowman outro solo.

@@ -1,24 +1,13 @@
-"""Script-font "Holy" on Projector + Entry + Downstairs — brightness breathes.
+"""Script-font "Holy" on Projector + Entry + Downstairs — REMOVED.
 
-Covers every chorus "… holy" that closes the triad:
-  And the angels cry holy / All creation cries holy / You are lifted high holy
-in C1, C2a, and C3 (9 windows).
+Deleted 2026-07-21 (user): stop fighting window-marquee overlap.
+This script **refuses** to rebuild. `--clear-only` / `--dry-run` still work.
 
-Static centered Text (no movement). Brightness value curve rises and falls
-with the sung melisma (soft → peak mid-hold → soft).
-
-Targets (L0 each):
-  - Projector
-  - Matrix - Entry
-  - Matrix - Downstairs Window
-
-Run (Slot A default port 49913):
-  python3 "Christmas/Sequences/Holy Forever 2026/Tools/angels_cry_holy_text.py"
-  [--dry-run] [--clear-only]
+Historical: 9 triad holy windows, Brush Script + brightness breath;
+Entry/Downstairs Additive + 1-px SubBuffer inset vs Windows frames.
 """
 from __future__ import annotations
 
-import shutil
 import sys
 from pathlib import Path
 
@@ -27,7 +16,6 @@ sys.path.insert(0, str(ROOT / "Tools"))
 import xlights_api as x
 
 SEQUENCE = Path(__file__).resolve().parents[1] / "Holy Forever 2026.xsq"
-BACKUP = SEQUENCE.with_name(SEQUENCE.name + ".bak-before-angels-cry-holy-text")
 EMPTY_SOURCE = "House"
 
 # Lyrics Lead word-layer "holy"/"Holy" closing angels / creation / lifted-high.
@@ -51,10 +39,23 @@ HOLY_WINDOWS = [
 BRIGHT_LO = 35
 BRIGHT_HI = 100
 
+# Matrix sizes from layout (nodes/strand × strands). SubBuffer is percent
+# of buffer: inset one pixel on each edge so Windows-group frame marquees
+# keep the outer ring.
+#   Entry:      25 × 24  → 100/25=4.00, 100/24≈4.17
+#   Downstairs: 35 × 32  → 100/35≈2.86, 100/32=3.12
 TARGETS = {
     "Projector": {"font_size": 64},
-    "Matrix - Entry": {"font_size": 20},
-    "Matrix - Downstairs Window": {"font_size": 24},
+    "Matrix - Entry": {
+        "font_size": 20,
+        "additive": True,
+        "subbuffer": "4.00x4.17x96.00x95.83",
+    },
+    "Matrix - Downstairs Window": {
+        "font_size": 24,
+        "additive": True,
+        "subbuffer": "2.86x3.12x97.14x96.88",
+    },
 }
 
 
@@ -79,7 +80,15 @@ def brightness_curve() -> str:
 
 def settings_for(cfg: dict) -> str:
     font = f"'brush script mt' {cfg['font_size']} utf-8"
+    # Additive on matrices so black text pixels don't erase underlayers.
+    blend = "T_CHOICE_LayerMethod=Additive," if cfg.get("additive") else ""
+    sub = (
+        f"B_CUSTOM_SubBuffer={cfg['subbuffer']},"
+        if cfg.get("subbuffer")
+        else ""
+    )
     return (
+        f"{sub}"
         "E_CHECKBOX_TextNoRepeat=0,"
         "E_CHECKBOX_TextToCenter=0,"
         "E_CHECKBOX_Text_Color_PerWord=0,"
@@ -96,6 +105,7 @@ def settings_for(cfg: dict) -> str:
         "E_SLIDER_Text_YStart=0,"
         "E_TEXTCTRL_Text=Holy,"
         "E_TEXTCTRL_Text_Speed=10,"
+        f"{blend}"
         "T_TEXTCTRL_Fadein=.08,"
         "T_TEXTCTRL_Fadeout=.20"
     )
@@ -138,32 +148,23 @@ def main() -> None:
     dry = "--dry-run" in sys.argv
     clear_only = "--clear-only" in sys.argv
 
+    if not clear_only and not dry:
+        raise SystemExit(
+            "REFUSING: Holy Text was deleted 2026-07-21 (user). "
+            "Use --clear-only to wipe leftovers, or get new direction to re-add."
+        )
+
     info = x.xl("getOpenSequence")
     assert "Holy Forever 2026" in info.get("seq", ""), f"wrong sequence open: {info}"
     assert int(info.get("len", 0)) == 308314, f"unexpected length: {info}"
 
-    print(f"Holy windows ({len(HOLY_WINDOWS)} — static + brightness breath):")
-    for s, e in HOLY_WINDOWS:
-        print(f"  {s}-{e}  ({e - s} ms)")
-    print(f"brightness {BRIGHT_LO} → {BRIGHT_HI} → {BRIGHT_LO}")
-
     if dry:
-        for model, cfg in TARGETS.items():
-            print(
-                f"would {'clear' if clear_only else 'rebuild'} {model} "
-                f"font={cfg['font_size']} static + brightness VC"
-            )
+        for model in TARGETS:
+            print(f"would clear {model} L0")
         print("dry run: no changes made")
         return
 
-    if not BACKUP.exists():
-        shutil.copy2(SEQUENCE, BACKUP)
-        print(f"backup: {BACKUP.name}")
-
-    settings_by_model = {m: settings_for(cfg) for m, cfg in TARGETS.items()}
-    palette = palette_for()
-
-    for model, cfg in TARGETS.items():
+    for model in TARGETS:
         before = read_l0(model)
         if before and not owned_by_us(before):
             raise SystemExit(
@@ -174,19 +175,6 @@ def main() -> None:
             print(f"wiped {model} L0 ({len(before)} effects)")
         else:
             print(f"{model} L0 already empty")
-
-        if clear_only:
-            continue
-
-        settings = settings_by_model[model]
-        for s, e in HOLY_WINDOWS:
-            x.add_effect(model, 0, "Text", settings, palette, s, e)
-            print(f"  + {model} Text {s}-{e}")
-
-        after = read_l0(model)
-        expected = [("Text", s, e) for s, e in HOLY_WINDOWS]
-        if after != expected:
-            raise SystemExit(f"{model} L0 mismatch: got {after}, expected {expected}")
 
     x.save(str(SEQUENCE))
     print(f"saved {SEQUENCE}")
