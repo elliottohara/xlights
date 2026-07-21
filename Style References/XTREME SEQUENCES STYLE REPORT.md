@@ -125,6 +125,16 @@ buffer:   Vertical Per Model/Strand   → identical simultaneous drip down EVERY
 
 **Buffer style is chosen per musical job, not per prop** — the same GRP legitimately gets `Overlay - Centered` (boom), `Per Model Per Preview` (per-part shimmer), and `Horizontal Per Model/Strand` (traveling run) on different layers in the same song.
 
+### Continuous motion on spinners (verified 2026-07-21 on the Rosa across 64 mapped sequences; user-approved on Holy Forever C1)
+
+For LONG slow moving bases on spinner banks, buffer/render style is the whole game — a flat `Overlay - Centered` Pinwheel reads as a generic square wash and was explicitly rejected by the user ("not using submodel render style the way Xtreme does"). The measured pro vocabulary:
+
+- **Pinwheels/Fans through the prop's real geometry:** `B_CHOICE_BufferStyle=Per Model Per Preview` + `B_CHOICE_PerPreviewCamera=2D`, usually `B_SLIDER_Blur=2-3`. This is what makes arms sweep along the actual spokes/torches instead of across an abstract grid.
+- **The mirror-pair hero move** (their signature, e.g. The Christmas Song whole-Rosa): stack the SAME slow pinwheel on two layers, second one with `B_CHOICE_BufferTransform=Flip Horizontal` → two sweeps counter-rotate through each other. Their ballad pinwheel: 2 arms, `3D Inverted`, ArmSize 271, Twist −65, Speed 3, Thickness 40, gradient palette so color travels along the arms.
+- **`Overlay - Centered` is still correct** for Spirals / overscanned Fan (End_Radius ~333 + blur = blades wash rather than pop) / SingleStrand bounce chases on radial banks; **`Vertical Per Model/Strand`** for SingleStrand drips down feather/torch/outer-ball banks.
+- **Ballad dosage:** ONE long effect per bank per section (~27 s), 4–6 banks at once, `T_TEXTCTRL_Fadein/Fadeout=2`, one color family per bank. No short hits — repeated sub-second Shockwave stabs on the Rosa were rejected as seizure-inducing on a worship song.
+- Working reference implementation: `Christmas/Sequences/Holy Forever 2026/Tools/rosa_c1_constant_motion.py` (addEffect-ready settings strings for all five recipes).
+
 Beyond these two: Pinwheel/Galaxy/Fan for rotation, Spirals for tree bases, On for punches, Morph for matrix tails, VU Meter for reactivity. That's the whole vocabulary — resist exotic effects.
 
 ## Step 7 — Dynamics pass
