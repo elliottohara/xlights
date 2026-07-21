@@ -2,7 +2,7 @@
 
 Working notes for `Christmas/Sequences/Holy Forever 2026/Holy Forever 2026.xsq` (built July 2026). Read alongside the root `AGENTS.md`. Song: Chris Tomlin "Holy Forever" (Jenn Johnson female vocal), media = `Media/Chris Tomlin - Holy Forever (Lyric Video).mp4`, 308314 ms, 25 ms frames, ModelBlending on.
 
-**Current task:** branch `holy-angels-cry-holy-text` in permanent **Slot A** (`/Users/elliott.ohara/xlights-worktrees/slot-a`, API 49913). Script-font swaying "Holy" on Projector + Entry + Downstairs at each chorus "angels cry holy" (see below).
+**Current task:** branch `rosa-c1-constant-motion` in permanent **Slot A** (`/Users/elliott.ohara/xlights-worktrees/slot-a`, API 49913). First Rosa Grande feature: constant detailed movement across Chorus 1 (see "Rosa Grande C1" section).
 
 **Prior task (Slot B):** branch `holy-pc1-house-chase` — PC1 "your name" Whole Scene w Matrixes → Christ implode + star-only Mega Tree descents.
 
@@ -301,6 +301,15 @@ Exact target: **`PiXeL Paradise Xmas Tree Choir`** (not `Toni - Flat Tree` and n
 - Supporting submodel Ons make the full prop read without overpowering the faces: `Tree Outline` muted evergreen `#0B6B3A` at b38, `Candy Canes White Stripes` ivory `#EEEAE2` at b52, and `Candy Canes Red Stripes` burgundy `#9D1D25` at b48.
 - Rendered/model-reviewed at C1, C2, C3, and the final fade. It is open in Slot A xLights for user review.
 - Rebuild/clear: `Tools/pixel_paradise_tree_choir.py` (`--dry-run` / `--clear-only`).
+
+## Added 2026-07-21: Rosa Grande C1 constant motion (branch `rosa-c1-constant-motion`, Slot A — pending user review)
+
+First Rosa Grande feature. Xtreme-style treatment of Chorus 1, window **67275–93925** (Anthemic Mood downbeat → Groove/V2 downbeat), 23 effects on six part-bank GRPs, all starts ON live timing marks. Recipes lifted from the pros' Imperial March HD mapping of this layout.
+
+- **Continuous bases (constant movement):** `Ribbon GRP` L0 Fan (4 blades, 720 rev, gold/ivory b70) · `Spoke GRP` L0 3D Pinwheel with **speed ramp VC 10→26** across the chorus (accelerates as it builds; ivory/gold b75) · `Ring GRP` L0 Spirals rotation −6 counter-rotating against the pinwheel (amber/gold b65). All three run the full window.
+- **Beat-locked detail:** `Snowflake Spoke GRP` L0 Shockwave bloom (Overlay-Centered, 28/65, 600 ms, white/gold b90) on each of the 8 `Beat Count` bar `1` marks 67275–90600 · `Torch Long Even/Odd GRP` L0 alternating Shockwave stabs (Per Model Per Preview, 13/25, 450 ms, gold/white b85) on the 12 `Kick` `K` marks 68075–93075 (even/odd pair alternation).
+- Owns **L0 only** on those six banks inside the window. `Web Ring GRP` untouched (has the V1 chord-bank effect). Rebuild: `Tools/rosa_c1_constant_motion.py` (`--dry-run`; **refuses if the window isn't empty** — clear via .xsq first on rework since the API can't delete).
+- Backup: `Holy Forever 2026.xsq.bak-before-rosa-c1`.
 
 ## Added 2026-07-20: C3 climax drum-riff — dramatic `House Outline` strobe flash
 
