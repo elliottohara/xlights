@@ -330,6 +330,18 @@ Blue-led companion to the approved Rosa C1 treatment — same window (67275–93
 - Rebuild: `Tools/starlord_c1_constant_motion.py` (`--dry-run` / `--clear-only` / `--rework`, same .xsq-clear pattern as the Rosa script).
 - Backup: `Holy Forever 2026.xsq.bak-before-starlord-c1`.
 
+## Added 2026-07-21: Reel Maxes C1 constant motion (branch `rosa-c1-constant-motion`, Slot A — pending user review)
+
+Third spinner in the C1 set (Rosa red-led approved, Starlord blue-led). Blue-led like the Starlords, same window (67275–93925) / rules (long slow, 2 s fades, no hits), Reel Max's own measured vocabulary (crisp Twist=82 pinwheel + linear chases on ring banks). Both fixtures via shared GRPs. 6 effects:
+
+- `GE Reel Max GRP` **L0+L1**: mirrored 4-arm 3D Pinwheel pair, fixed **Twist 82 / Thickness 47** (the pros' signature Reel Max whole-prop pinwheel, slowed to Speed 3), Per Model Per Preview 2D, L1 Flip Horizontal. Same sapphire→gold→white gradient as Starlord.
+- `Spokes GRP` L0: thin Spirals (Rot 85, Thick 10, Move 4, flipped) — spoke shimmer, white.
+- `Chevrons GRP` L0: SingleStrand Left-Right rot 4 (their Christmas Song chevron recipe), ice blue/sapphire.
+- `Kites GRP` L0: SingleStrand Bounce rot 3 (TSO recipe), sapphire.
+- `Circles Outer GRP` L0: SingleStrand on **Vertical Per Model/Strand** rot 8 — each circle drips individually (I Saw Mommy recipe), gold. ⚠ layer also holds the V1 chord Shockwave @28850 (outside window).
+- Rebuild: `Tools/reelmax_c1_constant_motion.py` (`--dry-run` / `--clear-only` / `--rework`).
+- Backup: `Holy Forever 2026.xsq.bak-before-reelmax-c1`.
+
 ## Added 2026-07-20: C3 climax drum-riff — dramatic `House Outline` strobe flash
 
 **User request (3 iterations):** (1) "show that hard drum riff, like 8 hits... a single line effect just on the roof line where it changes directions with each hit" → Roof-line Marquee, disliked; (2) "Let's use shockwaves... on individual snowflakes on the roof instead" → 8 Shockwave pops on individual roof-snowflake props, disliked ("too subtle"); (3) **"Let's use house outline instead. Just flash it, fairly dramatically."** Live version is (3).
