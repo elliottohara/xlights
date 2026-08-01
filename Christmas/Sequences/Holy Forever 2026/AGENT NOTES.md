@@ -477,8 +477,21 @@ Idea 1 from the Xtreme house/icicle pass: Rosa-red reveal motion on the house, s
 - Backup: `Holy Forever 2026.xsq.bak-before-final-chorus-marquee`.
 - Built on branch `holy-climax-blue-marquee` in **Slot B**.
 
+## REJECTED 2026-08-01: C1-end kick build + V2 groove on house-face snowflakes (branch `v2-flakes-groove`, Slot B — removed same review)
+
+2026-07-31 ask: "end of the first chorus, where the kick drum starts... really nice xtreme style effects on the snowflakes on the face of the house... all the way through verse 2." Built window **88925–127275** with the style-report flake pattern (outline navy→sapphire Color Wash bed; amber PMPP Shockwave per `Kick` mark on `Flakes Spokes All GRP` L0/L1; Overlay-Centered slam on `Flakes GRP` at the Groove downbeat 93925; sapphire `Vertical Per Model/Strand` SingleStrand chase-out per `Snare` mark on `Flakes Arms GRP`), blue/amber palette, every start on a labeled timing mark. 39 effects.
+
+**User rejected the look next day ("I don't like the effects on the flakes like that") — all 39 effects removed 2026-08-01; the `.xsq` was restored byte-identical to pre-task main.** The flake banks are empty again in 88925–127275. `Tools/v2_flakes_kick_groove.py` **refuses to rebuild** (`--clear-only`/`--dry-run` still work); it stays as the reference for what was tried. Do not re-add this treatment; ask the user what they want on the flakes for V2 instead.
+
+Technical notes that remain valid: hits below b100 / narrow End_Width are invisible on these sparse flake submodels; `Flakes Spokes All GRP` also contains the BMOAW snowflake-spoke submodels (yard MOAWs fire too); the V1 chord Shockwave @32200 lives on `Flakes Outline All GRP` L0.
+
+### ⚠ Slot-B launch gotcha 2026-07-31: `open -n -a xLights` fails with LS error -10699
+
+With the slot A instance already running, `open -n -a xLights --args -b -s <folder>` now fails (`_LSOpenURLsWithCompletionHandler() failed ... error -10699`) — the documented second-instance launch no longer works on this macOS build. A plain backgrounded direct-binary launch dies when the launching agent shell exits (process-group kill; nohup/disown don't save it). **Working recipe:** double-fork + `os.setsid()` then `execv` the binary (`/Applications/xLights.app/Contents/MacOS/xLights -b -s <folder>`) so the instance detaches from the shell session — see this task's transcript; API on 49914 came up immediately. Also moved a stale Jul-20 `Holy Forever 2026.xbkp` out of the slot-B sequence folder (crash-recovery prompt suspect) to `/tmp`.
+
 ## Tools inventory (`Christmas/Sequences/Holy Forever 2026/Tools/`)
 
+- `v2_flakes_kick_groove.py` — **REJECTED 2026-08-01, refuses rebuild** (was: C1-end kick build + V2 groove flake pass, 88925–127275). `--dry-run` / `--clear-only` still work.
 - `transcribe.py` — faster-whisper word timestamps (needs a venv with `faster-whisper`; use `vad_filter=False` — VAD ate this vocal).
 - `words.json` — transcription output (kept; lets you rebuild timing without re-transcribing).
 - `build_lyrics.py` — alignment + phonemes + writes the 3-track per-voice template and `sections.json`. Canonical lyrics and per-voice membership live at the top of this file.
