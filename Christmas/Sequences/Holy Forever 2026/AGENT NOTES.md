@@ -2,7 +2,9 @@
 
 Working notes for `Christmas/Sequences/Holy Forever 2026/Holy Forever 2026.xsq` (built July 2026). Read alongside the root `AGENTS.md`. Song: Chris Tomlin "Holy Forever" (Jenn Johnson female vocal), media = `Media/Chris Tomlin - Holy Forever (Lyric Video).mp4`, 308314 ms, 25 ms frames, ModelBlending on.
 
-**Current task:** branch `holy-c1-shrubs-aurora` in permanent **Slot A** (`/Users/elliott.ohara/xlights-worktrees/slot-a`, API 49913). C1 Whole Scene Aurora experiment (shared field for flakes+shrubs).
+**Current task (2026-08-02, Slot B, branch `v2-continue-c1-props`, MERGED to main same day):** C1 look continued through V2, V2-end blackout + cross swell, C2 red↔blue color swap, C3 mirrors C1. See the dated 2026-08-01/02 sections below.
+
+**⚠ FELT-BEAT MAPPING (user's ear, 2026-08-01): the `Beat Count` labels sit a HALF BAR off the felt beat.** Labeled "1" is felt beat **3**; **felt beat 1 = the marks labeled "3"**. Evidence: (1) the user's hand-placed Mini Grand rings land on labeled "2" and they hear them as beat 4; (2) marquee flips keyed to labeled "1" were heard as beat 3 ("That was on beat 3. I want it on beat 1"). The snare-flux anchor fit (root notes, 2026-07-18) could not detect this — a half-bar shift maps the 2-and-4 backbeat onto itself. **For anything the user should FEEL on the downbeat, key off labeled-"3" marks.** Grid-locked instrumental work (kick/snare onsets) is unaffected.
 
 **Prior task (Slot A):** branch `holy-c1-flakes-blue-amber` — C1 flakes Aurora + Mega Tree cross-over-aurora + Mini Grand cross; merged to main.
 
@@ -489,9 +491,47 @@ Technical notes that remain valid: hits below b100 / narrow End_Width are invisi
 
 With the slot A instance already running, `open -n -a xLights --args -b -s <folder>` now fails (`_LSOpenURLsWithCompletionHandler() failed ... error -10699`) — the documented second-instance launch no longer works on this macOS build. A plain backgrounded direct-binary launch dies when the launching agent shell exits (process-group kill; nohup/disown don't save it). **Working recipe:** double-fork + `os.setsid()` then `execv` the binary (`/Applications/xLights.app/Contents/MacOS/xLights -b -s <folder>`) so the instance detaches from the shell session — see this task's transcript; API on 49914 came up immediately. Also moved a stale Jul-20 `Holy Forever 2026.xbkp` out of the slot-B sequence folder (crash-recovery prompt suspect) to `/tmp`.
 
+## Added 2026-08-01: C1 look continued through V2 (branch `v2-continue-c1-props`, Slot B — MERGED 2026-08-02)
+
+User: "I'd like verse 2 to continue the effects the chorus had on all the non singing props."
+
+- `Tools/v2_continue_c1.py` — three classes: EXTEND (time-based effects, endTime 93925→127275 only), RESCALE (motion-total effects deleted + re-added 67275–127275 with totals ×2.2514), ARCHES (alternating 6650 ms chase tiles continued into V2). Singing props and one-off accents (Tree Topper pops, EFL Wing stacks) not extended.
+- `Tools/minigrand_cross_beat_rings.py` — per-bar gold Shockwave rings on `GE Mini Grand Illusion` L0 at labeled-"2" marks (**felt beat 4** — see FELT-BEAT MAPPING above), 108425→287275. The user's four hand hits (98025, 101400, 104700, 108075; 350 ms, Fadeout 0.20, starting ~2 frames before the beat) are canonical — never touched; script rings start LEAD=50 ms before each mark.
+- **User hand edits (keep, do not revert):** Mini Grand cross moved to **L1** and stretched to song end (67575–308400, Per Preview); `GE Merry Christmas/Christ` L1 **VU Meter** in PC2 (181550–233025).
+
+## Added 2026-08-01: V2 house marquees flip direction every felt bar
+
+User: "for each bar, can we just change the marquee direction. No slowing down or fading" + "That was on beat 3. I want it on beat 1."
+
+- `Tools/v2_marquee_bar_flip.py` (idempotent) — the 5 marquees (`Verts`/`Roof`/`Windows`/`Yard Borders` amber `1 reveals 2` + white `Christ`) re-tiled 67275–127275: one forward segment 67275–95600 (nothing happens at the labeled-"1" section line 93925 — that's felt beat 3), then one segment per felt bar between labeled-"3" flip points (95600…125600), alternating Reverse 1,0,1,0…, **no fades**, hard stop at 127275. Speed/band/skip/thickness untouched. Split marquees re-phase at each segment boundary — inherent, reads as part of the flip.
+
+## Added 2026-08-02: V2-end blackout + Mega Tree cross swell
+
+User: "at the end of verse 2, lets dim everything to total black except the cross on the mega tree, let's have it get brighter." Choices via AskQuestion: **quick plunge** (~1.7 s, 125600→127275) over 5 s/8.3 s; **singers stay lit**; **mega-only cross** (Toni's + Mini Grand's dim); **cross stays lit through C2**.
+
+- `Tools/v2_end_blackout.py` — 41 beds + 5 marquee tails get Fadeout=1.68 (fade spans exactly the plunge); Mega Tree L1 cross extended 67275–**180600** with brightness VC (Min 0/Max 400): 100 → **300** across the plunge → ease to 100 by ~130600, Fadeout=2 at the end; Mini Grand L1 cross split into 4 segments to dip black at 127275 and recover by 130600 (a VC can't hit 127275 on a 240 s effect — 2-decimal x points); Toni cross + aurora end with the beds. Faces and C2 accents (wings, topper pops, rings) untouched.
+
+## Added 2026-08-02: C2 = the V2 look with red↔blue swapped
+
+User: "let's ramp back up to what we had, but where it was blue, make it red, and where it was red make it blue... except crosses, they stay the same--- all through chourse 2."
+
+- `Tools/c2_ramp_color_swap.py` — window **127275–180600** (Soaring → Regather downbeats). 40 beds + 2 Off masks + per-felt-bar marquee flips (17 segments/target, continuing the V2 alternation) + arches 6650 tiles, all re-added with Fadein=1.68 (mirrors the plunge) / Fadeout=2. Motion totals ×53325/60000 (same visible speed). **Swap:** checked palette slots + gradient stops only; blue family (hue 190–260) → hue 0, red family (≤15/≥345) → hue 226, S/L preserved: `#2864FF→#FF2828`, `#0A1E50→#500A0A`, `#8080FF→#FF8080`, `#B01212→#122FB0`, `#FF0000→#0028FF`. Amber/gold/white/green and unchecked slots untouched. Crosses exempt: Mega Tree swell rides, Mini Grand rides, Toni returns white over the swapped aurora.
+
+## Added 2026-08-02: C3 (Final Chorus) mirrors C1
+
+User: "On the final chours, let's make it look like the first chours. We can edit more later."
+
+- `Tools/c3_like_c1.py` — window **233925–287275** (Climax → Afterglow downbeats; same boundary the blue House Outline marquee uses). The C1 bed set with **original C1 palettes** (no swap), plain-white Mega Tree cross (C2 swell VC stripped), continuous marquees (no flips — those were a V2 invention), arches alternating 6650 tiles starting Right-Left like C1's first tile, C1-style 2 s fades. House Outline climax flashes + blue marquee, Mini Grand cross + rings, faces, and the user's Christ VU meter all verified untouched.
+
 ## Tools inventory (`Christmas/Sequences/Holy Forever 2026/Tools/`)
 
 - `v2_flakes_kick_groove.py` — **REJECTED 2026-08-01, refuses rebuild** (was: C1-end kick build + V2 groove flake pass, 88925–127275). `--dry-run` / `--clear-only` still work.
+- `v2_continue_c1.py` — C1 treatments carried through V2 (to 127275); EXTEND/RESCALE/ARCHES classes. Ran 2026-08-01; re-running re-does its .xsq edits — dry-run first.
+- `minigrand_cross_beat_rings.py` — per-bar gold rings on Mini Grand L0 at felt beat 4 (labeled-"2" marks), 108425→287275; `--dry-run` / `--clear-only` (never touches the 4 hand hits).
+- `v2_marquee_bar_flip.py` — V2 house marquees flip per felt bar (labeled-"3" marks), no fades. Idempotent; `--dry-run` / `--clear-only`.
+- `v2_end_blackout.py` — V2-end plunge to black 125600→127275 + Mega Tree cross swell through C2 + Mini Grand dip. `--dry-run`.
+- `c2_ramp_color_swap.py` — C2 (127275–180600): V2 look restored with red↔blue swap, crosses exempt. `--dry-run`.
+- `c3_like_c1.py` — C3 (233925–287275) mirrors C1 (original palettes, continuous marquees, R-L-first arches). `--dry-run`.
 - `transcribe.py` — faster-whisper word timestamps (needs a venv with `faster-whisper`; use `vad_filter=False` — VAD ate this vocal).
 - `words.json` — transcription output (kept; lets you rebuild timing without re-transcribing).
 - `build_lyrics.py` — alignment + phonemes + writes the 3-track per-voice template and `sections.json`. Canonical lyrics and per-voice membership live at the top of this file.
