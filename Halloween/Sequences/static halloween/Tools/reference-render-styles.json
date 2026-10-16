@@ -1,0 +1,650 @@
+[
+  {
+    "source": "Halloween/Sequences/We Will Rock You/We Will Rock You.xsq",
+    "element": "GE Baby Grand Illusion Spokes GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Overlay - Centered,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Right-Left,E_CHOICE_Fade_Type=From Head,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_SingleStrand_FX=Fireworks 1D,E_CHOICE_SingleStrand_FX_Palette=* Colors Only,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=31,E_SLIDER_FX_Intensity=128,E_SLIDER_FX_Speed=128,E_SLIDER_Number_Chases=4,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=3,T_TEXTCTRL_Fadein=.5,T_TEXTCTRL_Fadeout=.5",
+    "start": "122725",
+    "buffer": "B_CHOICE_BufferStyle=Overlay - Centered"
+  },
+  {
+    "source": "Halloween/Sequences/We Will Rock You/We Will Rock You.xsq",
+    "element": "GE Baby Grand Illusion Spokes GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=From Middle,E_CHOICE_Fade_Type=None,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_SingleStrand_FX=Fireworks 1D,E_CHOICE_SingleStrand_FX_Palette=* Colors Only,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=10,E_SLIDER_FX_Intensity=128,E_SLIDER_FX_Speed=128,E_SLIDER_Number_Chases=2,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=1.0",
+    "start": "25",
+    "buffer": "B_CHOICE_BufferStyle=Vertical Per Model/Strand"
+  },
+  {
+    "source": "Halloween/Sequences/We Will Rock You/We Will Rock You.xsq",
+    "element": "GE Baby Grand Illusion Spokes GRP",
+    "effect": "Fan",
+    "settings": "B_CHOICE_BufferStyle=Per Model Per Preview,E_CHECKBOX_Fan_Blend_Edges=1,E_CHECKBOX_Fan_Reverse=0,E_CHECKBOX_Fan_Scale=0,E_NOTEBOOK_Fan=Blades,E_SLIDER_Fan_Accel=0,E_SLIDER_Fan_Blade_Angle=90,E_SLIDER_Fan_Blade_Width=100,E_SLIDER_Fan_CenterX=50,E_SLIDER_Fan_CenterY=50,E_SLIDER_Fan_Duration=100,E_SLIDER_Fan_Element_Width=100,E_SLIDER_Fan_End_Radius=110,E_SLIDER_Fan_Num_Blades=4,E_SLIDER_Fan_Num_Elements=1,E_SLIDER_Fan_Revolutions=1440,E_SLIDER_Fan_Start_Angle=0,E_SLIDER_Fan_Start_Radius=1",
+    "start": "135875",
+    "buffer": "B_CHOICE_BufferStyle=Per Model Per Preview"
+  },
+  {
+    "source": "Halloween/Sequences/We Will Rock You/We Will Rock You.xsq",
+    "element": "GE Baby Grand Illusion Spokes GRP",
+    "effect": "Fan",
+    "settings": "B_CHOICE_BufferStyle=Overlay - Centered,B_SLIDER_Blur=2,E_CHECKBOX_Fan_Blend_Edges=1,E_CHECKBOX_Fan_Reverse=0,E_CHECKBOX_Fan_Scale=0,E_NOTEBOOK_Fan=Position,E_SLIDER_Fan_Accel=0,E_SLIDER_Fan_Blade_Angle=90,E_SLIDER_Fan_Blade_Width=100,E_SLIDER_Fan_CenterX=50,E_SLIDER_Fan_CenterY=50,E_SLIDER_Fan_Duration=100,E_SLIDER_Fan_Element_Width=100,E_SLIDER_Fan_End_Radius=171,E_SLIDER_Fan_Num_Blades=3,E_SLIDER_Fan_Num_Elements=1,E_SLIDER_Fan_Revolutions=720,E_SLIDER_Fan_Start_Angle=0,E_SLIDER_Fan_Start_Radius=1,T_TEXTCTRL_Fadein=.5",
+    "start": "64975",
+    "buffer": "B_CHOICE_BufferStyle=Overlay - Centered,B_SLIDER_Blur=2"
+  },
+  {
+    "source": "Halloween/Sequences/We Will Rock You/We Will Rock You.xsq",
+    "element": "GE Baby Grand Illusion Spokes GRP",
+    "effect": "Spirals",
+    "settings": "B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Spirals_3D=1,E_CHECKBOX_Spirals_Blend=0,E_CHECKBOX_Spirals_Grow=0,E_CHECKBOX_Spirals_Shrink=0,E_SLIDER_Spirals_Count=2,E_SLIDER_Spirals_Rotation=-215,E_SLIDER_Spirals_Thickness=90,E_TEXTCTRL_Spirals_Movement=4.3,T_CHOICE_LayerMethod=1 is Unmask",
+    "start": "41375",
+    "buffer": "B_CHOICE_BufferStyle=Vertical Per Model/Strand"
+  },
+  {
+    "source": "Halloween/Sequences/We Will Rock You/We Will Rock You.xsq",
+    "element": "GE Reel Max Chevrons GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Dual Chase,E_CHOICE_Fade_Type=None,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_SingleStrand_FX=Fireworks 1D,E_CHOICE_SingleStrand_FX_Palette=* Colors Only,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=10,E_SLIDER_FX_Intensity=128,E_SLIDER_FX_Speed=128,E_SLIDER_Number_Chases=1,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=1.0",
+    "start": "41375",
+    "buffer": "B_CHOICE_BufferStyle=Vertical Per Model/Strand"
+  },
+  {
+    "source": "Halloween/Sequences/We Will Rock You/We Will Rock You.xsq",
+    "element": "GE Reel Max Chevrons GRP",
+    "effect": "Spirals",
+    "settings": "B_CHOICE_BufferStyle=Vertical Per Model/Strand,B_CHOICE_BufferTransform=Flip Vertical,E_CHECKBOX_Spirals_3D=1,E_CHECKBOX_Spirals_Blend=1,E_CHECKBOX_Spirals_Grow=0,E_CHECKBOX_Spirals_Shrink=0,E_SLIDER_Spirals_Count=1,E_SLIDER_Spirals_Rotation=80,E_SLIDER_Spirals_Thickness=60,E_TEXTCTRL_Spirals_Movement=1.0,T_TEXTCTRL_Fadein=.25",
+    "start": "160500",
+    "buffer": "B_CHOICE_BufferStyle=Vertical Per Model/Strand,B_CHOICE_BufferTransform=Flip Vertical"
+  },
+  {
+    "source": "Halloween/Sequences/We Will Rock You/We Will Rock You.xsq",
+    "element": "GE Reel Max Chevrons GRP",
+    "effect": "Spirals",
+    "settings": "B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Spirals_3D=1,E_CHECKBOX_Spirals_Blend=1,E_CHECKBOX_Spirals_Grow=0,E_CHECKBOX_Spirals_Shrink=0,E_SLIDER_Spirals_Count=1,E_SLIDER_Spirals_Rotation=80,E_SLIDER_Spirals_Thickness=60,E_TEXTCTRL_Spirals_Movement=1.0,T_TEXTCTRL_Fadein=.25",
+    "start": "164925",
+    "buffer": "B_CHOICE_BufferStyle=Vertical Per Model/Strand"
+  },
+  {
+    "source": "Halloween/Sequences/We Will Rock You/We Will Rock You.xsq",
+    "element": "GE Reel Max Chevrons GRP",
+    "effect": "Spirals",
+    "settings": "B_CHOICE_BufferStyle=Overlay - Centered,B_CHOICE_BufferTransform=Flip Vertical,E_CHECKBOX_Spirals_3D=1,E_CHECKBOX_Spirals_Blend=1,E_CHECKBOX_Spirals_Grow=0,E_CHECKBOX_Spirals_Shrink=0,E_SLIDER_Spirals_Count=1,E_SLIDER_Spirals_Rotation=80,E_SLIDER_Spirals_Thickness=60,E_TEXTCTRL_Spirals_Movement=1.0,T_TEXTCTRL_Fadein=.25",
+    "start": "172325",
+    "buffer": "B_CHOICE_BufferStyle=Overlay - Centered,B_CHOICE_BufferTransform=Flip Vertical"
+  },
+  {
+    "source": "Halloween/Sequences/We Will Rock You/We Will Rock You.xsq",
+    "element": "GE Reel Max Chevrons GRP",
+    "effect": "Spirals",
+    "settings": "B_CHOICE_BufferStyle=Overlay - Centered,E_CHECKBOX_Spirals_3D=1,E_CHECKBOX_Spirals_Blend=1,E_CHECKBOX_Spirals_Grow=0,E_CHECKBOX_Spirals_Shrink=0,E_SLIDER_Spirals_Count=1,E_SLIDER_Spirals_Rotation=80,E_SLIDER_Spirals_Thickness=60,E_TEXTCTRL_Spirals_Movement=1.0,T_TEXTCTRL_Fadein=.25",
+    "start": "176750",
+    "buffer": "B_CHOICE_BufferStyle=Overlay - Centered"
+  },
+  {
+    "source": "Halloween/Sequences/We Will Rock You/We Will Rock You.xsq",
+    "element": "GE Reel Max Spokes GRP",
+    "effect": "Spirals",
+    "settings": "B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Spirals_3D=1,E_CHECKBOX_Spirals_Blend=1,E_CHECKBOX_Spirals_Grow=0,E_CHECKBOX_Spirals_Shrink=1,E_SLIDER_Spirals_Count=1,E_SLIDER_Spirals_Rotation=80,E_SLIDER_Spirals_Thickness=60,E_TEXTCTRL_Spirals_Movement=1.0,T_TEXTCTRL_Fadein=.2",
+    "start": "167875",
+    "buffer": "B_CHOICE_BufferStyle=Vertical Per Model/Strand"
+  },
+  {
+    "source": "Halloween/Sequences/We Will Rock You/We Will Rock You.xsq",
+    "element": "GE Reel Max Spokes GRP",
+    "effect": "Spirals",
+    "settings": "B_CHOICE_BufferStyle=Overlay - Centered,E_CHECKBOX_Spirals_3D=1,E_CHECKBOX_Spirals_Blend=1,E_CHECKBOX_Spirals_Grow=0,E_CHECKBOX_Spirals_Shrink=1,E_SLIDER_Spirals_Count=1,E_SLIDER_Spirals_Rotation=80,E_SLIDER_Spirals_Thickness=60,E_TEXTCTRL_Spirals_Movement=1.0,T_TEXTCTRL_Fadein=.2",
+    "start": "179700",
+    "buffer": "B_CHOICE_BufferStyle=Overlay - Centered"
+  },
+  {
+    "source": "Halloween/Sequences/We Will Rock You/We Will Rock You.xsq",
+    "element": "GE Rosa Grande Feather Long Odd GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Dual Chase,E_CHOICE_Fade_Type=None,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=10,E_SLIDER_Number_Chases=1,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=1.0",
+    "start": "41375",
+    "buffer": "B_CHOICE_BufferStyle=Vertical Per Model/Strand"
+  },
+  {
+    "source": "Halloween/Sequences/We Will Rock You/We Will Rock You.xsq",
+    "element": "GE Rosa Grande Outer Ball GRP",
+    "effect": "Pinwheel",
+    "settings": "E_CHECKBOX_Pinwheel_Rotation=1,E_CHOICE_Pinwheel_3D=3D,E_CHOICE_Pinwheel_Style=New Render Method,E_SLIDER_PinwheelXC=0,E_SLIDER_PinwheelYC=0,E_SLIDER_Pinwheel_ArmSize=82,E_SLIDER_Pinwheel_Arms=3,E_SLIDER_Pinwheel_Speed=10,E_SLIDER_Pinwheel_Thickness=29,E_SLIDER_Pinwheel_Twist=0,T_CHOICE_LayerMethod=1 reveals 2",
+    "start": "41500",
+    "buffer": ""
+  },
+  {
+    "source": "Halloween/Sequences/We Will Rock You/We Will Rock You.xsq",
+    "element": "GE Rosa Grande Outer Ball GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Overlay - Centered,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Bounce from Left,E_CHOICE_Fade_Type=From Head,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=57,E_SLIDER_Number_Chases=1,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=8",
+    "start": "135875",
+    "buffer": "B_CHOICE_BufferStyle=Overlay - Centered"
+  },
+  {
+    "source": "Halloween/Sequences/We Will Rock You/We Will Rock You.xsq",
+    "element": "GE Rosa Grande Torch Long Even GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Left-Right,E_CHOICE_Fade_Type=None,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=10,E_SLIDER_Number_Chases=1,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=1.0",
+    "start": "42075",
+    "buffer": "B_CHOICE_BufferStyle=Vertical Per Model/Strand"
+  },
+  {
+    "source": "Halloween/Sequences/We Will Rock You/We Will Rock You.xsq",
+    "element": "GE Rosa Grande Torch Long Even GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Overlay - Centered,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Bounce from Left,E_CHOICE_Fade_Type=None,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_SingleStrand_FX=Fireworks 1D,E_CHOICE_SingleStrand_FX_Palette=* Colors Only,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=1,E_SLIDER_FX_Intensity=128,E_SLIDER_FX_Speed=128,E_SLIDER_Number_Chases=2,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=8",
+    "start": "135900",
+    "buffer": "B_CHOICE_BufferStyle=Overlay - Centered"
+  },
+  {
+    "source": "Halloween/Sequences/We Will Rock You/We Will Rock You.xsq",
+    "element": "GE Starlord Plunger All GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=From Middle,E_CHOICE_Fade_Type=None,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_SingleStrand_FX=Fireworks 1D,E_CHOICE_SingleStrand_FX_Palette=* Colors Only,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=10,E_SLIDER_FX_Intensity=128,E_SLIDER_FX_Speed=128,E_SLIDER_Number_Chases=2,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=1.0",
+    "start": "25",
+    "buffer": "B_CHOICE_BufferStyle=Vertical Per Model/Strand"
+  },
+  {
+    "source": "Halloween/Sequences/We Will Rock You/We Will Rock You.xsq",
+    "element": "GE Starlord Spoke GRP",
+    "effect": "Spirals",
+    "settings": "B_CHOICE_BufferStyle=Overlay - Centered,E_CHECKBOX_Spirals_3D=1,E_CHECKBOX_Spirals_Blend=1,E_CHECKBOX_Spirals_Grow=0,E_CHECKBOX_Spirals_Shrink=0,E_SLIDER_Spirals_Count=1,E_SLIDER_Spirals_Rotation=80,E_SLIDER_Spirals_Thickness=60,E_TEXTCTRL_Spirals_Movement=1.0,T_TEXTCTRL_Fadein=.25",
+    "start": "160875",
+    "buffer": "B_CHOICE_BufferStyle=Overlay - Centered"
+  },
+  {
+    "source": "Halloween/Sequences/We Will Rock You/We Will Rock You.xsq",
+    "element": "GE Starlord Spoke GRP",
+    "effect": "Spirals",
+    "settings": "B_CHOICE_BufferStyle=Overlay - Centered,B_CHOICE_BufferTransform=Flip Vertical,E_CHECKBOX_Spirals_3D=1,E_CHECKBOX_Spirals_Blend=1,E_CHECKBOX_Spirals_Grow=0,E_CHECKBOX_Spirals_Shrink=0,E_SLIDER_Spirals_Count=1,E_SLIDER_Spirals_Rotation=80,E_SLIDER_Spirals_Thickness=60,E_TEXTCTRL_Spirals_Movement=1.0,T_TEXTCTRL_Fadein=1",
+    "start": "164775",
+    "buffer": "B_CHOICE_BufferStyle=Overlay - Centered,B_CHOICE_BufferTransform=Flip Vertical"
+  },
+  {
+    "source": "Halloween/Sequences/We Will Rock You/We Will Rock You.xsq",
+    "element": "GE Starlord Spoke GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Horizontal Per Model/Strand,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Right-Left,E_CHOICE_Fade_Type=From Head,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=1,E_SLIDER_Number_Chases=4,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=8,T_TEXTCTRL_Fadeout=.5",
+    "start": "41375",
+    "buffer": "B_CHOICE_BufferStyle=Horizontal Per Model/Strand"
+  },
+  {
+    "source": "Halloween/Sequences/We Will Rock You/We Will Rock You.xsq",
+    "element": "GE Starlord Spoke GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Overlay - Centered,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Bounce from Left,E_CHOICE_Fade_Type=None,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=10,E_SLIDER_Number_Chases=1,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=1.0",
+    "start": "65700",
+    "buffer": "B_CHOICE_BufferStyle=Overlay - Centered"
+  },
+  {
+    "source": "Halloween/Sequences/We Will Rock You/We Will Rock You.xsq",
+    "element": "GE Starlord Spoke GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Left-Right,E_CHOICE_Fade_Type=None,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=1,E_SLIDER_Number_Chases=2,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=8",
+    "start": "159525",
+    "buffer": "B_CHOICE_BufferStyle=Vertical Per Model/Strand"
+  },
+  {
+    "source": "Halloween/Sequences/We Will Rock You/We Will Rock You.xsq",
+    "element": "GE Starlord Spoke GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Single Line,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=From Middle,E_CHOICE_Fade_Type=From Head,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=1,E_SLIDER_Number_Chases=7,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_VALUECURVE_Chase_Rotations=Active=TRUE|Id=ID_VALUECURVE_Chase_Rotations|Type=Custom|Min=1.00|Max=500.00|P1=1.00|RV=TRUE|Values=0.00:0.17;0.10:0.17;0.14:0.16;0.44:0.16;0.50:0.15;0.70:0.15;0.74:0.14;0.80:0.12;0.85:0.09;0.90:0.05;0.95:0.02;1.00:0.00|",
+    "start": "181700",
+    "buffer": "B_CHOICE_BufferStyle=Single Line"
+  },
+  {
+    "source": "Halloween/Sequences/Skrillex Medley/Skrillex Medley.xsq",
+    "element": "GE Reel Max Spokes GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Overlay - Centered,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=From Middle,E_CHOICE_Fade_Type=None,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=10,E_SLIDER_Number_Chases=1,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=1.0",
+    "start": "84900",
+    "buffer": "B_CHOICE_BufferStyle=Overlay - Centered"
+  },
+  {
+    "source": "Halloween/Sequences/Skrillex Medley/Skrillex Medley.xsq",
+    "element": "GE Reel Max Spokes GRP",
+    "effect": "Fan",
+    "settings": "B_CHOICE_BufferStyle=Overlay - Centered,E_CHECKBOX_Fan_Blend_Edges=1,E_CHECKBOX_Fan_Reverse=0,E_CHECKBOX_Fan_Scale=0,E_NOTEBOOK_Fan=Position,E_SLIDER_Fan_Accel=0,E_SLIDER_Fan_Blade_Angle=90,E_SLIDER_Fan_Blade_Width=100,E_SLIDER_Fan_CenterX=50,E_SLIDER_Fan_CenterY=50,E_SLIDER_Fan_Duration=100,E_SLIDER_Fan_Element_Width=100,E_SLIDER_Fan_End_Radius=60,E_SLIDER_Fan_Num_Blades=3,E_SLIDER_Fan_Num_Elements=1,E_SLIDER_Fan_Revolutions=160,E_SLIDER_Fan_Start_Angle=0,E_SLIDER_Fan_Start_Radius=1,T_CHOICE_LayerMethod=2 is True Unmask",
+    "start": "100100",
+    "buffer": "B_CHOICE_BufferStyle=Overlay - Centered"
+  },
+  {
+    "source": "Halloween/Sequences/Skrillex Medley/Skrillex Medley.xsq",
+    "element": "GE Reel Max Spokes GRP",
+    "effect": "Pinwheel",
+    "settings": "B_CHOICE_BufferStyle=Overlay - Centered,E_CHECKBOX_Pinwheel_Rotation=1,E_CHOICE_Pinwheel_3D=None,E_CHOICE_Pinwheel_Style=New Render Method,E_SLIDER_PinwheelXC=0,E_SLIDER_PinwheelYC=0,E_SLIDER_Pinwheel_ArmSize=146,E_SLIDER_Pinwheel_Arms=4,E_SLIDER_Pinwheel_Speed=11,E_SLIDER_Pinwheel_Thickness=28,E_VALUECURVE_Pinwheel_Twist=Active=TRUE|Id=ID_VALUECURVE_Pinwheel_Twist|Type=Ramp Up/Down|Min=-360.00|Max=360.00|P1=-360.00|P2=360.00|P3=-360.00|RV=TRUE|,T_CHOICE_LayerMethod=1 reveals 2",
+    "start": "101250",
+    "buffer": "B_CHOICE_BufferStyle=Overlay - Centered"
+  },
+  {
+    "source": "Halloween/Sequences/Skrillex Medley/Skrillex Medley.xsq",
+    "element": "GE Reel Max Spokes GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Left-Right,E_CHOICE_Fade_Type=From Head,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=15,E_SLIDER_Number_Chases=3,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=1.0,T_CHOICE_LayerMethod=1 reveals 2",
+    "start": "91675",
+    "buffer": "B_CHOICE_BufferStyle=Vertical Per Model/Strand"
+  },
+  {
+    "source": "Halloween/Sequences/Skrillex Medley/Skrillex Medley.xsq",
+    "element": "GE Rosa Grande Feather Long Odd GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Left-Right,E_CHOICE_Fade_Type=None,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=1,E_SLIDER_Number_Chases=2,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=0.4",
+    "start": "110450",
+    "buffer": "B_CHOICE_BufferStyle=Vertical Per Model/Strand"
+  },
+  {
+    "source": "Halloween/Sequences/Skrillex Medley/Skrillex Medley.xsq",
+    "element": "GE Rosa Grande Feather Long Odd GRP",
+    "effect": "Pinwheel",
+    "settings": "E_CHECKBOX_Pinwheel_Rotation=1,E_CHOICE_Pinwheel_3D=None,E_CHOICE_Pinwheel_Style=New Render Method,E_SLIDER_PinwheelXC=0,E_SLIDER_PinwheelYC=0,E_SLIDER_Pinwheel_ArmSize=146,E_SLIDER_Pinwheel_Arms=4,E_SLIDER_Pinwheel_Speed=11,E_SLIDER_Pinwheel_Thickness=18,E_SLIDER_Pinwheel_Twist=-29,T_CHOICE_LayerMethod=1 reveals 2",
+    "start": "101250",
+    "buffer": ""
+  },
+  {
+    "source": "Halloween/Sequences/Skrillex Medley/Skrillex Medley.xsq",
+    "element": "GE Rosa Grande Feather Long Odd GRP",
+    "effect": "SingleStrand",
+    "settings": "E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=From Middle,E_CHOICE_Fade_Type=None,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=10,E_SLIDER_Number_Chases=1,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=1.0",
+    "start": "84900",
+    "buffer": ""
+  },
+  {
+    "source": "Halloween/Sequences/Skrillex Medley/Skrillex Medley.xsq",
+    "element": "GE Rosa Grande Feather Long Odd GRP",
+    "effect": "Pinwheel",
+    "settings": "B_CHOICE_BufferStyle=Per Model Single Line,E_CHECKBOX_Pinwheel_Rotation=1,E_CHOICE_Pinwheel_3D=None,E_CHOICE_Pinwheel_Style=New Render Method,E_SLIDER_PinwheelXC=0,E_SLIDER_Pinwheel_ArmSize=146,E_SLIDER_Pinwheel_Arms=4,E_SLIDER_Pinwheel_Speed=0,E_SLIDER_Pinwheel_Thickness=18,E_SLIDER_Pinwheel_Twist=-29,E_VALUECURVE_PinwheelYC=Active=TRUE|Id=ID_VALUECURVE_PinwheelYC|Type=Exponential Down|Min=-100.00|Max=100.00|P1=34.00|RV=TRUE|,T_CHOICE_LayerMethod=1 reveals 2",
+    "start": "82075",
+    "buffer": "B_CHOICE_BufferStyle=Per Model Single Line"
+  },
+  {
+    "source": "Halloween/Sequences/Skrillex Medley/Skrillex Medley.xsq",
+    "element": "GE Rosa Grande Feather Long Odd GRP",
+    "effect": "Fan",
+    "settings": "E_CHECKBOX_Fan_Blend_Edges=1,E_CHECKBOX_Fan_Reverse=0,E_CHECKBOX_Fan_Scale=0,E_NOTEBOOK_Fan=Blades,E_SLIDER_Fan_Accel=0,E_SLIDER_Fan_Blade_Angle=90,E_SLIDER_Fan_Blade_Width=100,E_SLIDER_Fan_CenterX=50,E_SLIDER_Fan_CenterY=50,E_SLIDER_Fan_Duration=100,E_SLIDER_Fan_Element_Width=100,E_SLIDER_Fan_End_Radius=187,E_SLIDER_Fan_Num_Blades=3,E_SLIDER_Fan_Num_Elements=1,E_SLIDER_Fan_Revolutions=720,E_SLIDER_Fan_Start_Angle=0,E_SLIDER_Fan_Start_Radius=1,T_TEXTCTRL_Fadeout=.1",
+    "start": "86875",
+    "buffer": ""
+  },
+  {
+    "source": "Halloween/Sequences/Skrillex Medley/Skrillex Medley.xsq",
+    "element": "GE Rosa Grande Feather Long Odd GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Horizontal Per Model/Strand,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Right-Left,E_CHOICE_Fade_Type=None,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=10,E_SLIDER_Number_Chases=2,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=1.0",
+    "start": "91675",
+    "buffer": "B_CHOICE_BufferStyle=Horizontal Per Model/Strand"
+  },
+  {
+    "source": "Halloween/Sequences/Skrillex Medley/Skrillex Medley.xsq",
+    "element": "GE Rosa Grande Feather Long Odd GRP",
+    "effect": "Fan",
+    "settings": "B_CHOICE_BufferStyle=Default,E_CHECKBOX_Fan_Blend_Edges=1,E_CHECKBOX_Fan_Reverse=0,E_CHECKBOX_Fan_Scale=0,E_NOTEBOOK_Fan=Blades,E_SLIDER_Fan_Accel=0,E_SLIDER_Fan_Blade_Angle=90,E_SLIDER_Fan_Blade_Width=100,E_SLIDER_Fan_CenterX=50,E_SLIDER_Fan_CenterY=50,E_SLIDER_Fan_Duration=80,E_SLIDER_Fan_Element_Width=100,E_SLIDER_Fan_End_Radius=187,E_SLIDER_Fan_Num_Blades=5,E_SLIDER_Fan_Num_Elements=1,E_SLIDER_Fan_Revolutions=720,E_SLIDER_Fan_Start_Angle=0,E_SLIDER_Fan_Start_Radius=1,T_CHOICE_LayerMethod=2 is Unmask",
+    "start": "96475",
+    "buffer": "B_CHOICE_BufferStyle=Default"
+  },
+  {
+    "source": "Halloween/Sequences/Skrillex Medley/Skrillex Medley.xsq",
+    "element": "GE Rosa Grande Outer Ball GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Left-Right,E_CHOICE_Fade_Type=None,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=1,E_SLIDER_Number_Chases=2,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=0.4",
+    "start": "44875",
+    "buffer": "B_CHOICE_BufferStyle=Vertical Per Model/Strand"
+  },
+  {
+    "source": "Halloween/Sequences/Skrillex Medley/Skrillex Medley.xsq",
+    "element": "GE Starlord Cross GRP",
+    "effect": "Pinwheel",
+    "settings": "B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Pinwheel_Rotation=1,E_CHOICE_Pinwheel_3D=None,E_CHOICE_Pinwheel_Style=New Render Method,E_SLIDER_PinwheelYC=0,E_SLIDER_Pinwheel_ArmSize=100,E_SLIDER_Pinwheel_Arms=4,E_SLIDER_Pinwheel_Speed=10,E_SLIDER_Pinwheel_Thickness=19,E_SLIDER_Pinwheel_Twist=0,E_VALUECURVE_PinwheelXC=Active=TRUE|Id=ID_VALUECURVE_PinwheelXC|Type=Saw Tooth|Min=-100.00|Max=100.00|P1=-100.00|P2=100.00|P3=4.00|RV=TRUE|",
+    "start": "68875",
+    "buffer": "B_CHOICE_BufferStyle=Vertical Per Model/Strand"
+  },
+  {
+    "source": "Halloween/Sequences/Skrillex Medley/Skrillex Medley.xsq",
+    "element": "GE Starlord Cross GRP",
+    "effect": "Pinwheel",
+    "settings": "B_CHOICE_BufferStyle=Overlay - Centered,E_CHECKBOX_Pinwheel_Rotation=1,E_CHOICE_Pinwheel_3D=None,E_CHOICE_Pinwheel_Style=New Render Method,E_SLIDER_PinwheelYC=0,E_SLIDER_Pinwheel_ArmSize=100,E_SLIDER_Pinwheel_Arms=4,E_SLIDER_Pinwheel_Speed=10,E_SLIDER_Pinwheel_Thickness=19,E_SLIDER_Pinwheel_Twist=0,E_VALUECURVE_PinwheelXC=Active=TRUE|Id=ID_VALUECURVE_PinwheelXC|Type=Saw Tooth|Min=-100.00|Max=100.00|P1=-100.00|P2=100.00|P3=3.00|RV=TRUE|",
+    "start": "70450",
+    "buffer": "B_CHOICE_BufferStyle=Overlay - Centered"
+  },
+  {
+    "source": "Halloween/Sequences/Skrillex Medley/Skrillex Medley.xsq",
+    "element": "GE Starlord Cross GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Left-Right,E_CHOICE_Fade_Type=From Head,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=24,E_SLIDER_Number_Chases=2,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=0.4",
+    "start": "110450",
+    "buffer": "B_CHOICE_BufferStyle=Vertical Per Model/Strand"
+  },
+  {
+    "source": "Halloween/Sequences/Skrillex Medley/Skrillex Medley.xsq",
+    "element": "GE Starlord Cross GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Per Model Single Line,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Left-Right,E_CHOICE_Fade_Type=None,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=8,E_SLIDER_Number_Chases=3,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=0.1",
+    "start": "111450",
+    "buffer": "B_CHOICE_BufferStyle=Per Model Single Line"
+  },
+  {
+    "source": "Halloween/Sequences/Skrillex Medley/Skrillex Medley.xsq",
+    "element": "GE Starlord Plunger All GRP",
+    "effect": "Pinwheel",
+    "settings": "B_CHOICE_BufferStyle=Per Model Per Preview,E_CHECKBOX_Pinwheel_Rotation=1,E_CHOICE_Pinwheel_3D=None,E_CHOICE_Pinwheel_Style=New Render Method,E_SLIDER_PinwheelXC=0,E_SLIDER_Pinwheel_ArmSize=146,E_SLIDER_Pinwheel_Arms=4,E_SLIDER_Pinwheel_Speed=0,E_SLIDER_Pinwheel_Thickness=18,E_SLIDER_Pinwheel_Twist=-29,E_VALUECURVE_PinwheelYC=Active=TRUE|Id=ID_VALUECURVE_PinwheelYC|Type=Exponential Down|Min=-100.00|Max=100.00|P1=34.00|RV=TRUE|,T_CHOICE_LayerMethod=1 reveals 2",
+    "start": "82075",
+    "buffer": "B_CHOICE_BufferStyle=Per Model Per Preview"
+  },
+  {
+    "source": "Halloween/Sequences/Skrillex Medley/Skrillex Medley.xsq",
+    "element": "GE Starlord Plunger All GRP",
+    "effect": "Fan",
+    "settings": "B_CHOICE_BufferStyle=Per Model Per Preview,E_CHECKBOX_Fan_Blend_Edges=1,E_CHECKBOX_Fan_Reverse=0,E_CHECKBOX_Fan_Scale=0,E_NOTEBOOK_Fan=Blades,E_SLIDER_Fan_Accel=0,E_SLIDER_Fan_Blade_Angle=90,E_SLIDER_Fan_Blade_Width=100,E_SLIDER_Fan_CenterX=50,E_SLIDER_Fan_CenterY=50,E_SLIDER_Fan_Duration=100,E_SLIDER_Fan_Element_Width=100,E_SLIDER_Fan_End_Radius=187,E_SLIDER_Fan_Num_Blades=3,E_SLIDER_Fan_Num_Elements=1,E_SLIDER_Fan_Revolutions=720,E_SLIDER_Fan_Start_Angle=0,E_SLIDER_Fan_Start_Radius=1,T_TEXTCTRL_Fadeout=.1",
+    "start": "86875",
+    "buffer": "B_CHOICE_BufferStyle=Per Model Per Preview"
+  },
+  {
+    "source": "Halloween/Sequences/Skrillex Medley/Skrillex Medley.xsq",
+    "element": "GE Starlord Plunger All GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Left-Right,E_CHOICE_Fade_Type=None,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=10,E_SLIDER_Number_Chases=1,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=1.0",
+    "start": "89275",
+    "buffer": "B_CHOICE_BufferStyle=Vertical Per Model/Strand"
+  },
+  {
+    "source": "Halloween/Sequences/Skrillex Medley/Skrillex Medley.xsq",
+    "element": "GE Starlord Plunger All GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Overlay - Centered,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Bounce from Right,E_CHOICE_Fade_Type=None,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=10,E_SLIDER_Number_Chases=2,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=1.0",
+    "start": "90500",
+    "buffer": "B_CHOICE_BufferStyle=Overlay - Centered"
+  },
+  {
+    "source": "Halloween/Sequences/Skrillex Medley/Skrillex Medley.xsq",
+    "element": "GE Starlord Plunger All GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Per Model Default,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Left-Right,E_CHOICE_Fade_Type=From Head,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=15,E_SLIDER_Number_Chases=3,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=1.0,T_CHOICE_LayerMethod=1 reveals 2",
+    "start": "91675",
+    "buffer": "B_CHOICE_BufferStyle=Per Model Default"
+  },
+  {
+    "source": "Halloween/Sequences/Skrillex Medley/Skrillex Medley.xsq",
+    "element": "GE Starlord Plunger All GRP",
+    "effect": "Fan",
+    "settings": "B_CHOICE_BufferStyle=Default,E_CHECKBOX_Fan_Blend_Edges=1,E_CHECKBOX_Fan_Reverse=0,E_CHECKBOX_Fan_Scale=0,E_NOTEBOOK_Fan=Blades,E_SLIDER_Fan_Accel=0,E_SLIDER_Fan_Blade_Angle=90,E_SLIDER_Fan_Blade_Width=100,E_SLIDER_Fan_CenterX=50,E_SLIDER_Fan_CenterY=50,E_SLIDER_Fan_Duration=80,E_SLIDER_Fan_Element_Width=100,E_SLIDER_Fan_End_Radius=187,E_SLIDER_Fan_Num_Blades=5,E_SLIDER_Fan_Num_Elements=1,E_SLIDER_Fan_Revolutions=720,E_SLIDER_Fan_Start_Angle=0,E_SLIDER_Fan_Start_Radius=1,T_CHOICE_LayerMethod=2 is Unmask",
+    "start": "96475",
+    "buffer": "B_CHOICE_BufferStyle=Default"
+  },
+  {
+    "source": "Halloween/Sequences/The Imperial March/The Imperial March.xsq",
+    "element": "GE Rosa Grande Feather Long Odd GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Left-Right,E_CHOICE_Fade_Type=None,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=10,E_SLIDER_Number_Chases=2,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=7.5",
+    "start": "37075",
+    "buffer": "B_CHOICE_BufferStyle=Vertical Per Model/Strand"
+  },
+  {
+    "source": "Halloween/Sequences/The Imperial March/The Imperial March.xsq",
+    "element": "GE Rosa Grande Feather Long Odd GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Overlay - Centered,B_CHOICE_BufferTransform=None,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Bounce from Left,E_CHOICE_Fade_Type=None,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=42,E_SLIDER_Number_Chases=1,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=1.0",
+    "start": "37075",
+    "buffer": "B_CHOICE_BufferStyle=Overlay - Centered,B_CHOICE_BufferTransform=None"
+  },
+  {
+    "source": "Halloween/Sequences/The Imperial March/The Imperial March.xsq",
+    "element": "GE Rosa Grande Feather Long Odd GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Overlay - Centered,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Left-Right,E_CHOICE_Fade_Type=None,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=10,E_SLIDER_Number_Chases=1,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=4",
+    "start": "102750",
+    "buffer": "B_CHOICE_BufferStyle=Overlay - Centered"
+  },
+  {
+    "source": "Halloween/Sequences/The Imperial March/The Imperial March.xsq",
+    "element": "GE Rosa Grande Torch Long Even GRP",
+    "effect": "Fan",
+    "settings": "E_CHECKBOX_Fan_Blend_Edges=1,E_CHECKBOX_Fan_Reverse=0,E_CHECKBOX_Fan_Scale=0,E_NOTEBOOK_Fan=Options,E_SLIDER_Fan_Accel=0,E_SLIDER_Fan_Blade_Angle=90,E_SLIDER_Fan_Blade_Width=100,E_SLIDER_Fan_CenterX=50,E_SLIDER_Fan_CenterY=50,E_SLIDER_Fan_Duration=100,E_SLIDER_Fan_Element_Width=100,E_SLIDER_Fan_End_Radius=70,E_SLIDER_Fan_Num_Blades=4,E_SLIDER_Fan_Num_Elements=1,E_SLIDER_Fan_Revolutions=720,E_SLIDER_Fan_Start_Angle=0,E_SLIDER_Fan_Start_Radius=0,T_CHOICE_LayerMethod=Shadow 2 on 1",
+    "start": "47175",
+    "buffer": ""
+  },
+  {
+    "source": "Halloween/Sequences/The Imperial March/The Imperial March.xsq",
+    "element": "GE Rosa Grande Torch Long Even GRP",
+    "effect": "Fan",
+    "settings": "B_CHOICE_BufferStyle=Overlay - Centered,E_CHECKBOX_Fan_Blend_Edges=1,E_CHECKBOX_Fan_Reverse=0,E_CHECKBOX_Fan_Scale=0,E_NOTEBOOK_Fan=Position,E_SLIDER_Fan_Accel=0,E_SLIDER_Fan_Blade_Angle=90,E_SLIDER_Fan_Blade_Width=100,E_SLIDER_Fan_CenterX=50,E_SLIDER_Fan_CenterY=50,E_SLIDER_Fan_Duration=100,E_SLIDER_Fan_Element_Width=100,E_SLIDER_Fan_End_Radius=160,E_SLIDER_Fan_Num_Blades=3,E_SLIDER_Fan_Num_Elements=1,E_SLIDER_Fan_Revolutions=720,E_SLIDER_Fan_Start_Angle=0,E_SLIDER_Fan_Start_Radius=1",
+    "start": "52350",
+    "buffer": "B_CHOICE_BufferStyle=Overlay - Centered"
+  },
+  {
+    "source": "Halloween/Sequences/The Imperial March/The Imperial March.xsq",
+    "element": "GE Rosa Grande Torch Long Even GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Horizontal Per Model/Strand,E_CHECKBOX_Chase_Group_All=1,E_CHOICE_Chase_Type1=Left-Right,E_CHOICE_Fade_Type=None,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=10,E_SLIDER_Number_Chases=4,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=1.0",
+    "start": "47175",
+    "buffer": "B_CHOICE_BufferStyle=Horizontal Per Model/Strand"
+  },
+  {
+    "source": "Halloween/Sequences/The Imperial March/The Imperial March.xsq",
+    "element": "GE Rosa Grande Torch Long Even GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Overlay - Centered,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Right-Left,E_CHOICE_Fade_Type=None,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=1,E_SLIDER_Number_Chases=6,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=4",
+    "start": "72450",
+    "buffer": "B_CHOICE_BufferStyle=Overlay - Centered"
+  },
+  {
+    "source": "Halloween/Sequences/The Imperial March/The Imperial March.xsq",
+    "element": "GE Rosa Grande Torch Long Even GRP",
+    "effect": "Spirals",
+    "settings": "B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Spirals_3D=1,E_CHECKBOX_Spirals_Blend=0,E_CHECKBOX_Spirals_Grow=0,E_CHECKBOX_Spirals_Shrink=0,E_SLIDER_Spirals_Count=2,E_SLIDER_Spirals_Rotation=2,E_SLIDER_Spirals_Thickness=64,E_TEXTCTRL_Spirals_Movement=1.0,T_CHOICE_LayerMethod=1 reveals 2,T_TEXTCTRL_Fadein=.4",
+    "start": "26975",
+    "buffer": "B_CHOICE_BufferStyle=Vertical Per Model/Strand"
+  },
+  {
+    "source": "Halloween/Sequences/The Imperial March/The Imperial March.xsq",
+    "element": "GE Rosa Grande Torch Long Even GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Left-Right,E_CHOICE_Fade_Type=None,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=6,E_SLIDER_Number_Chases=5,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=2.4",
+    "start": "92650",
+    "buffer": "B_CHOICE_BufferStyle=Vertical Per Model/Strand"
+  },
+  {
+    "source": "Halloween/Sequences/The Imperial March/The Imperial March.xsq",
+    "element": "GE Baby Grand Illusion Spokes GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Overlay - Centered,B_CHOICE_BufferTransform=None,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Bounce from Left,E_CHOICE_Fade_Type=None,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=42,E_SLIDER_Number_Chases=1,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=1.0",
+    "start": "37075",
+    "buffer": "B_CHOICE_BufferStyle=Overlay - Centered,B_CHOICE_BufferTransform=None"
+  },
+  {
+    "source": "Halloween/Sequences/The Imperial March/The Imperial March.xsq",
+    "element": "GE Baby Grand Illusion Spokes GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Left-Right,E_CHOICE_Fade_Type=None,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=6,E_SLIDER_Number_Chases=4,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=1.0",
+    "start": "72450",
+    "buffer": "B_CHOICE_BufferStyle=Vertical Per Model/Strand"
+  },
+  {
+    "source": "Halloween/Sequences/The Imperial March/The Imperial March.xsq",
+    "element": "GE MOAW Spokes GRP",
+    "effect": "Fan",
+    "settings": "E_CHECKBOX_Fan_Blend_Edges=1,E_CHECKBOX_Fan_Reverse=0,E_CHECKBOX_Fan_Scale=0,E_NOTEBOOK_Fan=Options,E_SLIDER_Fan_Accel=0,E_SLIDER_Fan_Blade_Angle=90,E_SLIDER_Fan_Blade_Width=100,E_SLIDER_Fan_CenterX=50,E_SLIDER_Fan_CenterY=50,E_SLIDER_Fan_Duration=100,E_SLIDER_Fan_Element_Width=100,E_SLIDER_Fan_End_Radius=70,E_SLIDER_Fan_Num_Blades=4,E_SLIDER_Fan_Num_Elements=1,E_SLIDER_Fan_Revolutions=720,E_SLIDER_Fan_Start_Angle=0,E_SLIDER_Fan_Start_Radius=0,T_CHOICE_LayerMethod=Shadow 2 on 1",
+    "start": "47175",
+    "buffer": ""
+  },
+  {
+    "source": "Halloween/Sequences/The Imperial March/The Imperial March.xsq",
+    "element": "GE MOAW Spokes GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Horizontal Per Model/Strand,E_CHECKBOX_Chase_Group_All=1,E_CHOICE_Chase_Type1=Left-Right,E_CHOICE_Fade_Type=None,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=10,E_SLIDER_Number_Chases=4,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=1.0",
+    "start": "47175",
+    "buffer": "B_CHOICE_BufferStyle=Horizontal Per Model/Strand"
+  },
+  {
+    "source": "Halloween/Sequences/The Imperial March/The Imperial March.xsq",
+    "element": "GE MOAW Spokes GRP",
+    "effect": "Fan",
+    "settings": "B_CHOICE_BufferStyle=Default,E_CHECKBOX_Fan_Blend_Edges=1,E_CHECKBOX_Fan_Reverse=0,E_CHECKBOX_Fan_Scale=0,E_NOTEBOOK_Fan=Position,E_SLIDER_Fan_Accel=0,E_SLIDER_Fan_Blade_Angle=90,E_SLIDER_Fan_Blade_Width=100,E_SLIDER_Fan_CenterX=50,E_SLIDER_Fan_CenterY=50,E_SLIDER_Fan_Duration=80,E_SLIDER_Fan_Element_Width=100,E_SLIDER_Fan_End_Radius=92,E_SLIDER_Fan_Num_Blades=3,E_SLIDER_Fan_Num_Elements=1,E_SLIDER_Fan_Revolutions=720,E_SLIDER_Fan_Start_Angle=0,E_SLIDER_Fan_Start_Radius=1",
+    "start": "15625",
+    "buffer": "B_CHOICE_BufferStyle=Default"
+  },
+  {
+    "source": "Halloween/Sequences/The Imperial March/The Imperial March.xsq",
+    "element": "GE Reel Max Spokes GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Overlay - Centered,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=From Middle,E_CHOICE_Fade_Type=None,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=10,E_SLIDER_Number_Chases=3,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=5.5",
+    "start": "26975",
+    "buffer": "B_CHOICE_BufferStyle=Overlay - Centered"
+  },
+  {
+    "source": "Halloween/Sequences/The Imperial March/The Imperial March.xsq",
+    "element": "GE Reel Max Spokes GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Left-Right,E_CHOICE_Fade_Type=None,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=10,E_SLIDER_Number_Chases=2,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=7.5",
+    "start": "37075",
+    "buffer": "B_CHOICE_BufferStyle=Vertical Per Model/Strand"
+  },
+  {
+    "source": "Halloween/Sequences/The Imperial March/The Imperial March.xsq",
+    "element": "GE Reel Max Spokes GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Overlay - Centered,B_CHOICE_BufferTransform=None,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Bounce from Left,E_CHOICE_Fade_Type=None,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=42,E_SLIDER_Number_Chases=1,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=1.0",
+    "start": "37075",
+    "buffer": "B_CHOICE_BufferStyle=Overlay - Centered,B_CHOICE_BufferTransform=None"
+  },
+  {
+    "source": "Halloween/Sequences/The Imperial March/The Imperial March.xsq",
+    "element": "GE Reel Max Spokes GRP",
+    "effect": "Fan",
+    "settings": "B_CHOICE_BufferStyle=Overlay - Centered,E_CHECKBOX_Fan_Blend_Edges=1,E_CHECKBOX_Fan_Reverse=0,E_CHECKBOX_Fan_Scale=0,E_NOTEBOOK_Fan=Options,E_SLIDER_Fan_Accel=0,E_SLIDER_Fan_Blade_Angle=11,E_SLIDER_Fan_Blade_Width=100,E_SLIDER_Fan_CenterX=50,E_SLIDER_Fan_CenterY=50,E_SLIDER_Fan_Duration=100,E_SLIDER_Fan_Element_Width=100,E_SLIDER_Fan_End_Radius=57,E_SLIDER_Fan_Num_Blades=3,E_SLIDER_Fan_Num_Elements=1,E_SLIDER_Fan_Revolutions=1440,E_SLIDER_Fan_Start_Angle=0,E_SLIDER_Fan_Start_Radius=1",
+    "start": "102750",
+    "buffer": "B_CHOICE_BufferStyle=Overlay - Centered"
+  },
+  {
+    "source": "Halloween/Sequences/The Imperial March/The Imperial March.xsq",
+    "element": "GE Reel Max Spokes GRP",
+    "effect": "Fan",
+    "settings": "B_CHOICE_BufferStyle=Per Preview,E_CHECKBOX_Fan_Blend_Edges=1,E_CHECKBOX_Fan_Reverse=0,E_CHECKBOX_Fan_Scale=0,E_NOTEBOOK_Fan=Position,E_SLIDER_Fan_Accel=0,E_SLIDER_Fan_Blade_Angle=90,E_SLIDER_Fan_Blade_Width=100,E_SLIDER_Fan_CenterX=50,E_SLIDER_Fan_CenterY=50,E_SLIDER_Fan_Duration=100,E_SLIDER_Fan_Element_Width=100,E_SLIDER_Fan_End_Radius=100,E_SLIDER_Fan_Num_Blades=3,E_SLIDER_Fan_Num_Elements=1,E_SLIDER_Fan_Revolutions=720,E_SLIDER_Fan_Start_Angle=0,E_SLIDER_Fan_Start_Radius=1",
+    "start": "52350",
+    "buffer": "B_CHOICE_BufferStyle=Per Preview"
+  },
+  {
+    "source": "Halloween/Sequences/The Imperial March/The Imperial March.xsq",
+    "element": "GE Starlord Plunger All GRP",
+    "effect": "Fan",
+    "settings": "E_CHECKBOX_Fan_Blend_Edges=1,E_CHECKBOX_Fan_Reverse=0,E_CHECKBOX_Fan_Scale=0,E_NOTEBOOK_Fan=Options,E_SLIDER_Fan_Accel=0,E_SLIDER_Fan_Blade_Angle=90,E_SLIDER_Fan_Blade_Width=100,E_SLIDER_Fan_CenterX=50,E_SLIDER_Fan_CenterY=50,E_SLIDER_Fan_Duration=100,E_SLIDER_Fan_Element_Width=100,E_SLIDER_Fan_End_Radius=70,E_SLIDER_Fan_Num_Blades=4,E_SLIDER_Fan_Num_Elements=1,E_SLIDER_Fan_Revolutions=720,E_SLIDER_Fan_Start_Angle=0,E_SLIDER_Fan_Start_Radius=0,T_CHOICE_LayerMethod=Shadow 2 on 1",
+    "start": "47175",
+    "buffer": ""
+  },
+  {
+    "source": "Halloween/Sequences/The Imperial March/The Imperial March.xsq",
+    "element": "GE Starlord Plunger All GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Left-Right,E_CHOICE_Fade_Type=None,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=1,E_SLIDER_Number_Chases=2,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=1.0",
+    "start": "46550",
+    "buffer": "B_CHOICE_BufferStyle=Vertical Per Model/Strand"
+  },
+  {
+    "source": "Halloween/Sequences/The Imperial March/The Imperial March.xsq",
+    "element": "GE Starlord Plunger All GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Horizontal Per Model/Strand,E_CHECKBOX_Chase_Group_All=1,E_CHOICE_Chase_Type1=Left-Right,E_CHOICE_Fade_Type=None,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=10,E_SLIDER_Number_Chases=4,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=1.0",
+    "start": "47175",
+    "buffer": "B_CHOICE_BufferStyle=Horizontal Per Model/Strand"
+  },
+  {
+    "source": "Halloween/Sequences/The Imperial March/The Imperial March.xsq",
+    "element": "GE Starlord Plunger All GRP",
+    "effect": "Fan",
+    "settings": "B_CHOICE_BufferStyle=Overlay - Centered,E_CHECKBOX_Fan_Blend_Edges=1,E_CHECKBOX_Fan_Reverse=0,E_CHECKBOX_Fan_Scale=0,E_NOTEBOOK_Fan=Position,E_SLIDER_Fan_Accel=0,E_SLIDER_Fan_Blade_Angle=90,E_SLIDER_Fan_Blade_Width=100,E_SLIDER_Fan_CenterX=50,E_SLIDER_Fan_CenterY=50,E_SLIDER_Fan_Duration=80,E_SLIDER_Fan_Element_Width=100,E_SLIDER_Fan_End_Radius=61,E_SLIDER_Fan_Num_Blades=3,E_SLIDER_Fan_Num_Elements=1,E_SLIDER_Fan_Revolutions=720,E_SLIDER_Fan_Start_Angle=0,E_SLIDER_Fan_Start_Radius=1,T_CHOICE_LayerMethod=1 reveals 2",
+    "start": "72450",
+    "buffer": "B_CHOICE_BufferStyle=Overlay - Centered"
+  },
+  {
+    "source": "Halloween/Sequences/The Imperial March/The Imperial March.xsq",
+    "element": "GE Starlord Plunger All GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Overlay - Centered,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Bounce from Left,E_CHOICE_Fade_Type=None,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=1,E_SLIDER_Number_Chases=1,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=16,T_TEXTCTRL_Fadein=.25",
+    "start": "52350",
+    "buffer": "B_CHOICE_BufferStyle=Overlay - Centered"
+  },
+  {
+    "source": "Halloween/Sequences/The Imperial March/The Imperial March.xsq",
+    "element": "GE Starlord Plunger All GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Vertical Per Model/Strand,B_CHOICE_BufferTransform=Rotate CC 90,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Left-Right,E_CHOICE_Fade_Type=None,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=1,E_SLIDER_Number_Chases=11,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Rotations=6.7",
+    "start": "92650",
+    "buffer": "B_CHOICE_BufferStyle=Vertical Per Model/Strand,B_CHOICE_BufferTransform=Rotate CC 90"
+  },
+  {
+    "source": "Christmas/Sequences/Holy Forever 2026/Holy Forever 2026.xsq",
+    "element": "GE MOAW Spokes GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Single Line,E_CHECKBOX_Chase_Group_All=1,E_CHOICE_Chase_Type1=Bounce from Left,E_CHOICE_Fade_Type=From Head,E_CHOICE_SingleStrand_Colors=Palette,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=28,E_SLIDER_Number_Chases=1,E_TEXTCTRL_Chase_Rotations=3.2,T_TEXTCTRL_Fadein=2,T_TEXTCTRL_Fadeout=1.68",
+    "start": "67275",
+    "buffer": "B_CHOICE_BufferStyle=Single Line"
+  },
+  {
+    "source": "Christmas/Sequences/Holy Forever 2026/Holy Forever 2026.xsq",
+    "element": "GE Reel Max Chevrons GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Overlay - Centered,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Left-Right,E_CHOICE_SingleStrand_Colors=Palette,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=10,E_SLIDER_Number_Chases=1,E_TEXTCTRL_Chase_Rotations=9,T_TEXTCTRL_Fadein=2,T_TEXTCTRL_Fadeout=1.68",
+    "start": "67275",
+    "buffer": "B_CHOICE_BufferStyle=Overlay - Centered"
+  },
+  {
+    "source": "Christmas/Sequences/Holy Forever 2026/Holy Forever 2026.xsq",
+    "element": "GE Reel Max Circles Outer GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Left-Right,E_CHOICE_Fade_Type=From Head,E_CHOICE_SingleStrand_Colors=Palette,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=1,E_SLIDER_Number_Chases=1,E_TEXTCTRL_Chase_Rotations=18,T_TEXTCTRL_Fadein=2,T_TEXTCTRL_Fadeout=1.68",
+    "start": "67275",
+    "buffer": "B_CHOICE_BufferStyle=Vertical Per Model/Strand"
+  },
+  {
+    "source": "Christmas/Sequences/Holy Forever 2026/Holy Forever 2026.xsq",
+    "element": "GE Reel Max Spokes GRP",
+    "effect": "Spirals",
+    "settings": "B_CHOICE_BufferStyle=Overlay - Centered,B_CHOICE_BufferTransform=Flip Horizontal,E_CHECKBOX_Spirals_3D=1,E_SLIDER_Spirals_Count=2,E_SLIDER_Spirals_Rotation=85,E_SLIDER_Spirals_Thickness=10,E_TEXTCTRL_Spirals_Movement=9,T_TEXTCTRL_Fadein=2,T_TEXTCTRL_Fadeout=1.68",
+    "start": "67275",
+    "buffer": "B_CHOICE_BufferStyle=Overlay - Centered,B_CHOICE_BufferTransform=Flip Horizontal"
+  },
+  {
+    "source": "Christmas/Sequences/Holy Forever 2026/Holy Forever 2026.xsq",
+    "element": "GE Rosa Grande Feather Long Odd GRP",
+    "effect": "Spirals",
+    "settings": "B_CHOICE_BufferStyle=Overlay - Centered,B_CHOICE_BufferTransform=Flip Horizontal,E_CHECKBOX_Spirals_3D=1,E_SLIDER_Spirals_Count=2,E_SLIDER_Spirals_Rotation=20,E_SLIDER_Spirals_Thickness=50,E_TEXTCTRL_Spirals_Movement=9,T_TEXTCTRL_Fadein=2,T_TEXTCTRL_Fadeout=1.68",
+    "start": "67275",
+    "buffer": "B_CHOICE_BufferStyle=Overlay - Centered,B_CHOICE_BufferTransform=Flip Horizontal"
+  },
+  {
+    "source": "Christmas/Sequences/Holy Forever 2026/Holy Forever 2026.xsq",
+    "element": "GE Rosa Grande Outer Ball GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Overlay - Centered,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Bounce from Left,E_CHOICE_SingleStrand_Colors=Palette,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=10,E_SLIDER_Number_Chases=1,E_TEXTCTRL_Chase_Rotations=18,T_TEXTCTRL_Fadein=2.5,T_TEXTCTRL_Fadeout=1.68",
+    "start": "67275",
+    "buffer": "B_CHOICE_BufferStyle=Overlay - Centered"
+  },
+  {
+    "source": "Christmas/Sequences/Holy Forever 2026/Holy Forever 2026.xsq",
+    "element": "GE Rosa Grande Torch Long Even GRP",
+    "effect": "Pinwheel",
+    "settings": "B_CHOICE_BufferStyle=Per Model Per Preview,B_CHOICE_PerPreviewCamera=2D,E_CHECKBOX_Pinwheel_Rotation=1,E_CHOICE_Pinwheel_3D=3D,E_CHOICE_Pinwheel_Style=New Render Method,E_SLIDER_PinwheelXC=0,E_SLIDER_PinwheelYC=0,E_SLIDER_Pinwheel_ArmSize=100,E_SLIDER_Pinwheel_Arms=4,E_SLIDER_Pinwheel_Speed=2,E_SLIDER_Pinwheel_Thickness=82,E_SLIDER_Pinwheel_Twist=-60,T_TEXTCTRL_Fadein=2,T_TEXTCTRL_Fadeout=1.68",
+    "start": "67275",
+    "buffer": "B_CHOICE_BufferStyle=Per Model Per Preview,B_CHOICE_PerPreviewCamera=2D"
+  },
+  {
+    "source": "Christmas/Sequences/Holy Forever 2026/Holy Forever 2026.xsq",
+    "element": "GE Starlord Cross GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=From Middle,E_CHOICE_Fade_Type=From Head,E_CHOICE_SingleStrand_Colors=Palette,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=45,E_SLIDER_Number_Chases=1,E_TEXTCTRL_Chase_Rotations=12.4,T_TEXTCTRL_Fadein=2,T_TEXTCTRL_Fadeout=1.68",
+    "start": "67275",
+    "buffer": "B_CHOICE_BufferStyle=Vertical Per Model/Strand"
+  },
+  {
+    "source": "Christmas/Sequences/Holy Forever 2026/Holy Forever 2026.xsq",
+    "element": "GE Starlord Plunger All GRP",
+    "effect": "Spirals",
+    "settings": "B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Spirals_3D=1,E_SLIDER_Spirals_Count=2,E_SLIDER_Spirals_Rotation=20,E_SLIDER_Spirals_Thickness=50,E_TEXTCTRL_Spirals_Movement=4.5,T_TEXTCTRL_Fadein=2,T_TEXTCTRL_Fadeout=1.68",
+    "start": "67275",
+    "buffer": "B_CHOICE_BufferStyle=Vertical Per Model/Strand"
+  },
+  {
+    "source": "Christmas/Sequences/Holy Forever 2026/Holy Forever 2026.xsq",
+    "element": "GE Starlord Spoke GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Left-Right,E_CHOICE_Fade_Type=From Head,E_CHOICE_SingleStrand_Colors=Palette,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=10,E_SLIDER_Number_Chases=3,E_TEXTCTRL_Chase_Rotations=9,T_TEXTCTRL_Fadein=2,T_TEXTCTRL_Fadeout=1.68",
+    "start": "67275",
+    "buffer": "B_CHOICE_BufferStyle=Vertical Per Model/Strand"
+  }
+]

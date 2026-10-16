@@ -17,27 +17,87 @@
     <imageDir></imageDir>
   </head>
   <ColorPalettes>
+    <ColorPalette>C_BUTTON_Palette1=#FFB34D,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=76</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#FF6508,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=40</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=55</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#FFB34D,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=55</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#7300FF,C_BUTTON_Palette2=#A45AFF,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_SLIDER_Brightness=68</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=12</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#FF6508,C_BUTTON_Palette2=#7300FF,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_SLIDER_Brightness=63</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=45</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#7300FF,C_BUTTON_Palette2=#FFB34D,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_SLIDER_Brightness=76</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=32</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#FF6508,C_BUTTON_Palette2=#FFB34D,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_SLIDER_Brightness=68</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#FF6508,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=32</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#7300FF,C_BUTTON_Palette2=#FFB34D,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_SLIDER_Brightness=72</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#A45AFF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=41</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#FF6508,C_BUTTON_Palette2=#7300FF,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_SLIDER_Brightness=54</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#FF6508,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=43</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=40</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=36</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#FF6508,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=86</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=83</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#FFB34D,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=45</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#FFB34D,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=81</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#7300FF,C_BUTTON_Palette2=#A45AFF,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_SLIDER_Brightness=76</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#FF6508,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=81</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#FFB34D,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=50</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#FF6508,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=72</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#A45AFF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=63</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#FF6508,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=76</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=72</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#FF6508,C_BUTTON_Palette2=#FFB34D,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_SLIDER_Brightness=72</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#7300FF,C_BUTTON_Palette2=#A45AFF,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_SLIDER_Brightness=54</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=54</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=63</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#FFB34D,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=90</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#FFB34D,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=63</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=81</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=76</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#76C82B,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=72</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=90</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=68</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=81</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=54</ColorPalette>
     <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#FD8008,C_BUTTON_Palette3=#00FF00,C_BUTTON_Palette4=#0000FF,C_BUTTON_Palette5=#FFFF00,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#00FFFF,C_BUTTON_Palette8=#FF00FF,C_CHECKBOX_Palette1=1</ColorPalette>
-    <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#FD8008,C_BUTTON_Palette3=#00FF00,C_BUTTON_Palette4=#0000FF,C_BUTTON_Palette5=#FFFF00,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#00FFFF,C_BUTTON_Palette8=#FF00FF,C_CHECKBOX_Palette2=1</ColorPalette>
-    <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#FD8008,C_BUTTON_Palette3=#00FF00,C_BUTTON_Palette4=#0000FF,C_BUTTON_Palette5=#FFFF00,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#FB0207,C_BUTTON_Palette8=#FF00FF,C_CHECKBOX_Palette7=1</ColorPalette>
     <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#FD8008,C_BUTTON_Palette3=#00FF00,C_BUTTON_Palette4=#0000FF,C_BUTTON_Palette5=#FFFF00,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#00FFFF,C_BUTTON_Palette8=#FF00FF,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette6=1</ColorPalette>
-    <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#FD8008,C_BUTTON_Palette3=#00FF00,C_BUTTON_Palette4=#0000FF,C_BUTTON_Palette5=#FFFF00,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#00FFFF,C_BUTTON_Palette8=#FF00FF,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette6=1,C_SLIDER_SparkleFrequency=28</ColorPalette>
-    <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#FD8008,C_BUTTON_Palette3=#FB0207,C_BUTTON_Palette4=#0000FF,C_BUTTON_Palette5=#FFFF00,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#00FFFF,C_BUTTON_Palette8=#FF00FF,C_CHECKBOX_Palette3=1</ColorPalette>
-    <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#FD8008,C_BUTTON_Palette3=#FB0207,C_BUTTON_Palette4=#0000FF,C_BUTTON_Palette5=#FFFF00,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#00FFFF,C_BUTTON_Palette8=#FF00FF,C_CHECKBOX_Palette2=1</ColorPalette>
   </ColorPalettes>
   <EffectDB>
-    <Effect>E_CHECKBOX_PRE_2017_7=0,E_CHECKBOX_Shimmer_Use_All_Colors=0,E_SLIDER_Shimmer_Duty_Factor=58,E_TEXTCTRL_Shimmer_Cycles=65.3</Effect>
+    <Effect>B_CHOICE_BufferStyle=Single Line,E_SLIDER_Marquee_Band_Size=4,E_SLIDER_Marquee_ScaleX=100,E_SLIDER_Marquee_ScaleY=100,E_SLIDER_Marquee_Skip_Size=18,E_SLIDER_Marquee_Speed=1,E_SLIDER_Marquee_Thickness=1,T_CHOICE_LayerMethod=1 reveals 2</Effect>
     <Effect></Effect>
-    <Effect>B_CHOICE_BufferStyle=Per Model Per Preview,E_CHECKBOX_Meteors_UseMusic=0,E_CHOICE_Meteors_Effect=Down,E_CHOICE_Meteors_Type=Palette,E_SLIDER_Meteors_Count=4,E_SLIDER_Meteors_Length=23,E_SLIDER_Meteors_Speed=6,E_SLIDER_Meteors_Swirl_Intensity=0,E_SLIDER_Meteors_WamupFrames=0,T_TEXTCTRL_Fadein=.5,T_TEXTCTRL_Fadeout=.5</Effect>
-    <Effect>B_CHOICE_BufferStyle=Per Model Per Preview,E_CHECKBOX_Marquee_PixelOffsets=0,E_CHECKBOX_Marquee_Reverse=0,E_CHECKBOX_Marquee_WrapX=0,E_CHECKBOX_Marquee_WrapY=0,E_NOTEBOOK_Marquee=Settings,E_SLIDER_MarqueeXC=0,E_SLIDER_MarqueeYC=0,E_SLIDER_Marquee_Band_Size=3,E_SLIDER_Marquee_ScaleX=100,E_SLIDER_Marquee_ScaleY=100,E_SLIDER_Marquee_Skip_Size=0,E_SLIDER_Marquee_Speed=1,E_SLIDER_Marquee_Stagger=0,E_SLIDER_Marquee_Start=0,E_SLIDER_Marquee_Thickness=1</Effect>
-    <Effect>B_CHOICE_BufferStyle=Per Preview</Effect>
-    <Effect>B_CHOICE_BufferStyle=Per Model Default,E_CHECKBOX_Marquee_PixelOffsets=0,E_CHECKBOX_Marquee_Reverse=0,E_CHECKBOX_Marquee_WrapX=0,E_CHECKBOX_Marquee_WrapY=0,E_NOTEBOOK_Marquee=Settings,E_SLIDER_MarqueeXC=0,E_SLIDER_MarqueeYC=0,E_SLIDER_Marquee_Band_Size=3,E_SLIDER_Marquee_ScaleX=100,E_SLIDER_Marquee_ScaleY=100,E_SLIDER_Marquee_Skip_Size=0,E_SLIDER_Marquee_Speed=1,E_SLIDER_Marquee_Stagger=0,E_SLIDER_Marquee_Start=0,E_SLIDER_Marquee_Thickness=1</Effect>
-    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_Phoneme=AI</Effect>
-    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Pumpkin face,E_CHOICE_Faces_Phoneme=E,E_CHOICE_Faces_UseState=outline with stem</Effect>
+    <Effect>B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Left-Right,E_CHOICE_Fade_Type=From Head,E_CHOICE_SingleStrand_Colors=Palette,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=25,E_SLIDER_Number_Chases=1,E_TEXTCTRL_Chase_Rotations=2,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25</Effect>
+    <Effect>B_CHOICE_BufferStyle=Single Line,E_SLIDER_Marquee_Band_Size=6,E_SLIDER_Marquee_ScaleX=100,E_SLIDER_Marquee_ScaleY=100,E_SLIDER_Marquee_Skip_Size=20,E_SLIDER_Marquee_Speed=1,E_SLIDER_Marquee_Thickness=1</Effect>
+    <Effect>B_CHOICE_BufferStyle=Single Line,E_SLIDER_Marquee_Band_Size=3,E_SLIDER_Marquee_ScaleX=100,E_SLIDER_Marquee_ScaleY=100,E_SLIDER_Marquee_Skip_Size=30,E_SLIDER_Marquee_Speed=1,E_SLIDER_Marquee_Thickness=1</Effect>
+    <Effect>E_CHECKBOX_Twinkle_Strobe=0,E_SLIDER_Twinkle_Count=8,E_SLIDER_Twinkle_Steps=100,T_CHOICE_LayerMethod=1 reveals 2</Effect>
+    <Effect>B_CHOICE_BufferStyle=Single Line,E_SLIDER_Marquee_Band_Size=3,E_SLIDER_Marquee_ScaleX=100,E_SLIDER_Marquee_ScaleY=100,E_SLIDER_Marquee_Skip_Size=16,E_SLIDER_Marquee_Speed=1,E_SLIDER_Marquee_Thickness=1</Effect>
+    <Effect>E_CHECKBOX_Twinkle_Strobe=0,E_SLIDER_Twinkle_Count=5,E_SLIDER_Twinkle_Steps=150</Effect>
+    <Effect>B_CHOICE_BufferStyle=Per Model Per Preview,B_CHOICE_PerPreviewCamera=2D,B_SLIDER_Blur=3,E_CHECKBOX_Pinwheel_Rotation=0,E_CHOICE_Pinwheel_3D=3D Inverted,E_CHOICE_Pinwheel_Style=New Render Method,E_SLIDER_PinwheelXC=0,E_SLIDER_PinwheelYC=0,E_SLIDER_Pinwheel_ArmSize=271,E_SLIDER_Pinwheel_Arms=2,E_SLIDER_Pinwheel_Speed=3,E_SLIDER_Pinwheel_Thickness=40,E_SLIDER_Pinwheel_Twist=-65,T_CHOICE_LayerMethod=1 reveals 2,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25</Effect>
+    <Effect>B_CHOICE_BufferStyle=Per Model Per Preview,B_CHOICE_BufferTransform=Flip Horizontal,B_CHOICE_PerPreviewCamera=2D,B_SLIDER_Blur=3,E_CHECKBOX_Pinwheel_Rotation=0,E_CHOICE_Pinwheel_3D=3D Inverted,E_CHOICE_Pinwheel_Style=New Render Method,E_SLIDER_PinwheelXC=0,E_SLIDER_PinwheelYC=0,E_SLIDER_Pinwheel_ArmSize=271,E_SLIDER_Pinwheel_Arms=2,E_SLIDER_Pinwheel_Speed=3,E_SLIDER_Pinwheel_Thickness=40,E_SLIDER_Pinwheel_Twist=-65,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25</Effect>
+    <Effect>B_CHOICE_BufferStyle=Per Model Per Preview,B_CHOICE_PerPreviewCamera=2D,E_CHECKBOX_Pinwheel_Rotation=1,E_CHOICE_Pinwheel_3D=3D,E_CHOICE_Pinwheel_Style=New Render Method,E_SLIDER_PinwheelXC=0,E_SLIDER_PinwheelYC=0,E_SLIDER_Pinwheel_ArmSize=100,E_SLIDER_Pinwheel_Arms=4,E_SLIDER_Pinwheel_Speed=2,E_SLIDER_Pinwheel_Thickness=82,E_VALUECURVE_Pinwheel_Twist=Active=TRUE|Id=ID_VALUECURVE_Pinwheel_Twist|Type=Custom|Min=-360.00|Max=360.00|P1=1.00|RV=TRUE|Values=0.00:0.19;0.11:0.49;0.24:0.18;0.37:0.52;0.49:0.60;0.62:0.57;0.74:0.49;0.88:0.53;1.00:0.18|,T_CHOICE_LayerMethod=1 reveals 2,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25</Effect>
+    <Effect>B_CHOICE_BufferStyle=Per Model Per Preview,B_CHOICE_BufferTransform=Flip Horizontal,B_CHOICE_PerPreviewCamera=2D,E_CHECKBOX_Pinwheel_Rotation=1,E_CHOICE_Pinwheel_3D=3D,E_CHOICE_Pinwheel_Style=New Render Method,E_SLIDER_PinwheelXC=0,E_SLIDER_PinwheelYC=0,E_SLIDER_Pinwheel_ArmSize=100,E_SLIDER_Pinwheel_Arms=4,E_SLIDER_Pinwheel_Speed=2,E_SLIDER_Pinwheel_Thickness=82,E_VALUECURVE_Pinwheel_Twist=Active=TRUE|Id=ID_VALUECURVE_Pinwheel_Twist|Type=Custom|Min=-360.00|Max=360.00|P1=1.00|RV=TRUE|Values=0.00:0.19;0.11:0.49;0.24:0.18;0.37:0.52;0.49:0.60;0.62:0.57;0.74:0.49;0.88:0.53;1.00:0.18|,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25</Effect>
+    <Effect>B_CHOICE_BufferStyle=Per Model Per Preview,B_CHOICE_PerPreviewCamera=2D,E_CHECKBOX_Pinwheel_Rotation=1,E_CHOICE_Pinwheel_3D=3D,E_CHOICE_Pinwheel_Style=New Render Method,E_SLIDER_PinwheelXC=0,E_SLIDER_PinwheelYC=0,E_SLIDER_Pinwheel_ArmSize=100,E_SLIDER_Pinwheel_Arms=4,E_SLIDER_Pinwheel_Speed=3,E_SLIDER_Pinwheel_Thickness=47,E_SLIDER_Pinwheel_Twist=82,T_CHOICE_LayerMethod=1 reveals 2,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25</Effect>
+    <Effect>B_CHOICE_BufferStyle=Per Model Per Preview,B_CHOICE_BufferTransform=Flip Horizontal,B_CHOICE_PerPreviewCamera=2D,E_CHECKBOX_Pinwheel_Rotation=1,E_CHOICE_Pinwheel_3D=3D,E_CHOICE_Pinwheel_Style=New Render Method,E_SLIDER_PinwheelXC=0,E_SLIDER_PinwheelYC=0,E_SLIDER_Pinwheel_ArmSize=100,E_SLIDER_Pinwheel_Arms=4,E_SLIDER_Pinwheel_Speed=3,E_SLIDER_Pinwheel_Thickness=47,E_SLIDER_Pinwheel_Twist=82,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25</Effect>
+    <Effect>B_CHOICE_BufferStyle=Per Model Per Preview,B_CHOICE_PerPreviewCamera=2D,E_CHECKBOX_Pinwheel_Rotation=1,E_CHOICE_Pinwheel_3D=3D,E_CHOICE_Pinwheel_Style=New Render Method,E_SLIDER_PinwheelXC=0,E_SLIDER_PinwheelYC=0,E_SLIDER_Pinwheel_ArmSize=100,E_SLIDER_Pinwheel_Arms=4,E_SLIDER_Pinwheel_Speed=2,E_SLIDER_Pinwheel_Thickness=82,E_SLIDER_Pinwheel_Twist=-60,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25</Effect>
+    <Effect>B_CHOICE_BufferStyle=Overlay - Centered,B_CHOICE_BufferTransform=Flip Horizontal,E_CHECKBOX_Spirals_3D=1,E_SLIDER_Spirals_Count=2,E_SLIDER_Spirals_Rotation=20,E_SLIDER_Spirals_Thickness=50,E_TEXTCTRL_Spirals_Movement=2,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25</Effect>
+    <Effect>B_CHOICE_BufferStyle=Overlay - Centered,B_SLIDER_Blur=2,E_CHECKBOX_Fan_Blend_Edges=1,E_NOTEBOOK_Fan=Position,E_SLIDER_Fan_Blade_Angle=90,E_SLIDER_Fan_Blade_Width=100,E_SLIDER_Fan_CenterX=50,E_SLIDER_Fan_CenterY=50,E_SLIDER_Fan_Duration=100,E_SLIDER_Fan_Element_Width=100,E_SLIDER_Fan_End_Radius=333,E_SLIDER_Fan_Num_Blades=3,E_SLIDER_Fan_Num_Elements=1,E_SLIDER_Fan_Revolutions=360,E_SLIDER_Fan_Start_Radius=1,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25</Effect>
+    <Effect>B_CHOICE_BufferStyle=Overlay - Centered,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Bounce from Left,E_CHOICE_SingleStrand_Colors=Palette,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=10,E_SLIDER_Number_Chases=1,E_TEXTCTRL_Chase_Rotations=3,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25</Effect>
+    <Effect>B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Spirals_3D=1,E_SLIDER_Spirals_Count=2,E_SLIDER_Spirals_Rotation=20,E_SLIDER_Spirals_Thickness=50,E_TEXTCTRL_Spirals_Movement=2,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25</Effect>
+    <Effect>B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Left-Right,E_CHOICE_Fade_Type=From Head,E_CHOICE_SingleStrand_Colors=Palette,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=10,E_SLIDER_Number_Chases=1,E_TEXTCTRL_Chase_Rotations=3,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25</Effect>
+    <Effect>B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=From Middle,E_CHOICE_Fade_Type=From Head,E_CHOICE_SingleStrand_Colors=Palette,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=45,E_SLIDER_Number_Chases=1,E_TEXTCTRL_Chase_Rotations=2,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25</Effect>
+    <Effect>B_CHOICE_BufferStyle=Overlay - Centered,B_CHOICE_BufferTransform=Flip Horizontal,E_CHECKBOX_Spirals_3D=1,E_SLIDER_Spirals_Count=2,E_SLIDER_Spirals_Rotation=85,E_SLIDER_Spirals_Thickness=10,E_TEXTCTRL_Spirals_Movement=2,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25</Effect>
+    <Effect>B_CHOICE_BufferStyle=Overlay - Centered,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Left-Right,E_CHOICE_SingleStrand_Colors=Palette,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=10,E_SLIDER_Number_Chases=1,E_TEXTCTRL_Chase_Rotations=3,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25</Effect>
+    <Effect>B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Left-Right,E_CHOICE_Fade_Type=From Head,E_CHOICE_SingleStrand_Colors=Palette,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=1,E_SLIDER_Number_Chases=1,E_TEXTCTRL_Chase_Rotations=3,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25</Effect>
+    <Effect>B_CHOICE_BufferStyle=Per Model Per Preview,B_CHOICE_PerPreviewCamera=2D,B_SLIDER_Blur=2,E_CHECKBOX_Fan_Blend_Edges=1,E_NOTEBOOK_Fan=Position,E_SLIDER_Fan_Blade_Angle=90,E_SLIDER_Fan_Blade_Width=100,E_SLIDER_Fan_CenterX=50,E_SLIDER_Fan_CenterY=50,E_SLIDER_Fan_Duration=100,E_SLIDER_Fan_Element_Width=100,E_SLIDER_Fan_End_Radius=60,E_SLIDER_Fan_Num_Blades=3,E_SLIDER_Fan_Num_Elements=1,E_SLIDER_Fan_Revolutions=360,E_SLIDER_Fan_Start_Radius=1,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25</Effect>
+    <Effect>B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Spirals_3D=1,E_SLIDER_Spirals_Count=2,E_SLIDER_Spirals_Rotation=20,E_SLIDER_Spirals_Thickness=35,E_TEXTCTRL_Spirals_Movement=2,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25</Effect>
+    <Effect>B_CHOICE_BufferStyle=Single Line,E_CHECKBOX_Chase_Group_All=1,E_CHOICE_Chase_Type1=Bounce from Left,E_CHOICE_Fade_Type=From Head,E_CHOICE_SingleStrand_Colors=Palette,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=28,E_SLIDER_Number_Chases=1,E_TEXTCTRL_Chase_Rotations=2,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25</Effect>
+    <Effect>B_CHOICE_BufferStyle=Single Line,E_CHECKBOX_ColorWash_HFade=1,E_CHECKBOX_ColorWash_VFade=0,E_TEXTCTRL_ColorWash_Cycles=2,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25</Effect>
+    <Effect>B_CHOICE_BufferStyle=Overlay - Scaled,E_CHECKBOX_Bars_3D=1,E_CHOICE_Bars_Direction=Right,E_SLIDER_Bars_BarCount=3,E_TEXTCTRL_Bars_Cycles=2,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25</Effect>
+    <Effect>T_TEXTCTRL_Fadein=.6,T_TEXTCTRL_Fadeout=.6</Effect>
+    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkFrequency=Slow,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_Phoneme=rest</Effect>
+    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkFrequency=Slow,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Pumpkin face,E_CHOICE_Faces_Phoneme=rest,E_CHOICE_Faces_UseState=outline with stem</Effect>
+    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkFrequency=Slow,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_Phoneme=rest,E_CHOICE_Faces_UseState=Teddy RedBow static</Effect>
     <Effect>B_CUSTOM_SubBuffer=0.00x60.00x102.00x105.00x0.00x0.00,E_CHECKBOX_TextNoRepeat=0,E_CHECKBOX_TextToCenter=0,E_CHECKBOX_Text_Color_PerWord=0,E_CHECKBOX_Text_PixelOffsets=0,E_CHOICE_Text_Count=none,E_CHOICE_Text_Dir=left,E_CHOICE_Text_Effect=normal,E_CHOICE_Text_Font=Use OS Fonts,E_FILEPICKERCTRL_Text_File=,E_FONTPICKER_Text_Font=italic 'marker felt' 18 utf-8,E_SLIDER_Text_XEnd=0,E_SLIDER_Text_XStart=0,E_SLIDER_Text_YEnd=0,E_SLIDER_Text_YStart=0,E_TEXTCTRL_Text=Happy Halloween!,E_TEXTCTRL_Text_Speed=10,T_CHECKBOX_Canvas=1,T_CHOICE_LayerMethod=Highlight,T_LayersSelected=Blend</Effect>
     <Effect>E_CHECKBOX_SynchroniseWithAudio=0,E_CHECKBOX_Video_AspectRatio=0,E_CHECKBOX_Video_TransparentBlack=0,E_CHOICE_Video_DurationTreatment=Normal,E_FILEPICKERCTRL_Video_Filename=Media/Images-57b64d/jackolatern.mp4,E_TEXTCTRL_Duration=714:55.500,E_TEXTCTRL_SampleSpacing=0,E_TEXTCTRL_Video_CropBottom=0,E_TEXTCTRL_Video_CropLeft=0,E_TEXTCTRL_Video_CropRight=100,E_TEXTCTRL_Video_CropTop=100,E_TEXTCTRL_Video_Starttime=0.00,E_TEXTCTRL_Video_TransparentBlack=0</Effect>
-    <Effect>B_CHOICE_BufferStyle=Per Preview,E_CHECKBOX_Marquee_PixelOffsets=0,E_CHECKBOX_Marquee_Reverse=0,E_CHECKBOX_Marquee_WrapX=0,E_CHECKBOX_Marquee_WrapY=0,E_NOTEBOOK_Marquee=Settings,E_SLIDER_MarqueeXC=0,E_SLIDER_MarqueeYC=0,E_SLIDER_Marquee_Band_Size=3,E_SLIDER_Marquee_ScaleX=100,E_SLIDER_Marquee_ScaleY=100,E_SLIDER_Marquee_Skip_Size=0,E_SLIDER_Marquee_Speed=1,E_SLIDER_Marquee_Stagger=0,E_SLIDER_Marquee_Start=0,E_SLIDER_Marquee_Thickness=1</Effect>
-    <Effect>B_CHOICE_BufferStyle=Single Line,E_CHECKBOX_Marquee_PixelOffsets=0,E_CHECKBOX_Marquee_Reverse=0,E_CHECKBOX_Marquee_WrapX=0,E_CHECKBOX_Marquee_WrapY=0,E_NOTEBOOK_Marquee=Settings,E_SLIDER_MarqueeXC=0,E_SLIDER_MarqueeYC=0,E_SLIDER_Marquee_Band_Size=3,E_SLIDER_Marquee_ScaleX=100,E_SLIDER_Marquee_ScaleY=100,E_SLIDER_Marquee_Skip_Size=0,E_SLIDER_Marquee_Speed=1,E_SLIDER_Marquee_Stagger=0,E_SLIDER_Marquee_Start=0,E_SLIDER_Marquee_Thickness=1</Effect>
   </EffectDB>
   <SequenceMedia>
     <Video path="Media/Images-57b64d/jackolatern.mp4" />
@@ -48,28 +108,50 @@
   <DisplayElements>
     <Element collapsed="false" type="timing" name="New Timing" visible="true" views="Master View,Faces,Snowflakes,Everything,Default,Arches,Matrixes,Yard Elements,Effects,Floods,Toni,Robbie,Spinners,HD props" active="false" />
     <Element collapsed="false" type="timing" name="250ms Metronome 2 Tag" visible="true" views="" active="true" />
+    <Element collapsed="true" type="model" name="Roof" visible="true" />
+    <Element collapsed="true" type="model" name="Verts" visible="true" />
+    <Element collapsed="true" type="model" name="Garage" visible="true" />
+    <Element collapsed="true" type="model" name="Windows" visible="true" />
+    <Element collapsed="true" type="model" name="Colums" visible="true" />
     <Element collapsed="true" type="model" name="Floods GRP" visible="true" />
-    <Element collapsed="false" type="model" name="Icicles" visible="true" />
-    <Element collapsed="false" type="model" name="Colums" visible="true" />
-    <Element collapsed="false" type="model" name="House Outline" visible="true" />
-    <Element collapsed="false" type="model" name="Windows" visible="true" />
-    <Element collapsed="false" type="model" name="Roof" visible="true" />
-    <Element collapsed="false" type="model" name="GE Evil Clown" visible="true" />
-    <Element collapsed="false" type="model" name="GE Flying Bats Jr Eyes GRP" visible="true" />
-    <Element collapsed="false" type="model" name="GE Flying Bats Wings Down GRP" visible="true" />
-    <Element collapsed="false" type="model" name="GE Flying Bats Wings Up GRP" visible="true" />
-    <Element collapsed="false" type="model" name="GE Preying Spider 150 Cross GRP" visible="true" />
-    <Element collapsed="false" type="model" name="GE Singing Pumpkin" visible="true" />
+    <Element collapsed="true" type="model" name="Garden Borders" visible="true" />
+    <Element collapsed="true" type="model" name="Driveway Left" visible="true" />
+    <Element collapsed="true" type="model" name="Driveway Right" visible="true" />
+    <Element collapsed="true" type="model" name="Shrubs" visible="true" />
+    <Element collapsed="true" type="model" name="Rose Bush GRP" visible="true" />
+    <Element collapsed="true" type="model" name="Lantanas" visible="true" />
     <Element collapsed="true" type="model" name="Tombstones" visible="true" />
-    <Element collapsed="false" type="model" name="Tune To" visible="true" />
-    <Element collapsed="false" type="model" name="Shrub Center" visible="true" />
-    <Element collapsed="false" type="model" name="Wall - Office" visible="true" />
-    <Element collapsed="false" type="model" name="Wall - Office Top" visible="true" />
-    <Element collapsed="false" type="model" name="Shrubs" visible="true" />
-    <Element collapsed="false" type="model" name="Rose Bush GRP" visible="true" />
-    <Element collapsed="false" type="model" name="Lantanas" visible="true" />
-    <Element collapsed="false" type="model" name="Garden Borders" visible="true" />
-    <Element collapsed="false" type="model" name="Halloween Accents" visible="true" />
+    <Element collapsed="true" type="model" name="Tree - Oak" visible="true" />
+    <Element collapsed="true" type="model" name="GE Rosa Grande GRP" visible="true" />
+    <Element collapsed="true" type="model" name="GE Starlord GRP" visible="true" />
+    <Element collapsed="true" type="model" name="GE Reel Max GRP" visible="true" />
+    <Element collapsed="true" type="model" name="GE Rosa Grande Torch Long Even GRP" visible="true" />
+    <Element collapsed="true" type="model" name="GE Rosa Grande Feather Long Odd GRP" visible="true" />
+    <Element collapsed="true" type="model" name="GE Rosa Grande Spoke GRP" visible="true" />
+    <Element collapsed="true" type="model" name="GE Rosa Grande Outer Ball GRP" visible="true" />
+    <Element collapsed="true" type="model" name="GE Starlord Plunger All GRP" visible="true" />
+    <Element collapsed="true" type="model" name="GE Starlord Spoke GRP" visible="true" />
+    <Element collapsed="true" type="model" name="GE Starlord Cross GRP" visible="true" />
+    <Element collapsed="true" type="model" name="GE Reel Max Spokes GRP" visible="true" />
+    <Element collapsed="true" type="model" name="GE Reel Max Chevrons GRP" visible="true" />
+    <Element collapsed="true" type="model" name="GE Reel Max Circles Outer GRP" visible="true" />
+    <Element collapsed="true" type="model" name="GE Baby Grand Illusion Hook CW GRP" visible="true" />
+    <Element collapsed="true" type="model" name="GE Baby Grand Illusion Spokes GRP" visible="true" />
+    <Element collapsed="true" type="model" name="GE MOAW Spokes GRP" visible="true" />
+    <Element collapsed="true" type="model" name="GE MOAW Diamonds GRP" visible="true" />
+    <Element collapsed="true" type="model" name="GE MOAW Swag GRP" visible="true" />
+    <Element collapsed="true" type="model" name="GE Preying Spider Body GRP" visible="true" />
+    <Element collapsed="true" type="model" name="GE Preying Spider 150 Leg GRP" visible="true" />
+    <Element collapsed="true" type="model" name="GE Preying Spider Eye GRP" visible="true" />
+    <Element collapsed="true" type="model" name="GE Preying Spider 150 Mouth GRP" visible="true" />
+    <Element collapsed="true" type="model" name="GE Flying Bats Jr Eyes GRP" visible="true" />
+    <Element collapsed="true" type="model" name="GE Flying Bats Wings Up GRP" visible="true" />
+    <Element collapsed="true" type="model" name="GE Flying Bats Wings Down GRP" visible="true" />
+    <Element collapsed="true" type="model" name="GE Evil Clown" visible="true" />
+    <Element collapsed="true" type="model" name="GE Singing Pumpkin" visible="true" />
+    <Element collapsed="true" type="model" name="GE Dark Helmet" visible="true" />
+    <Element collapsed="true" type="model" name="Elliott - EFL Teddy" visible="true" />
+    <Element collapsed="true" type="model" name="Tune To" visible="true" />
   </DisplayElements>
   <ElementEffects>
     <Element type="timing" name="New Timing">
@@ -199,254 +281,280 @@
         <Effect label="2" startTime="29750" endTime="30000" />
       </EffectLayer>
     </Element>
-    <Element type="model" name="Floods GRP">
-      <EffectLayer />
+    <Element type="model" name="Roof">
       <EffectLayer>
-        <Effect ref="0" name="Shimmer" startTime="0" endTime="450" palette="0" />
-        <Effect ref="0" name="Shimmer" id="1" startTime="6600" endTime="7050" palette="0" />
-        <Effect ref="0" name="Shimmer" id="2" startTime="13450" endTime="13900" palette="0" />
-        <Effect ref="0" name="Shimmer" id="3" startTime="21000" endTime="21450" palette="0" />
-        <Effect ref="0" name="Shimmer" id="4" startTime="27400" endTime="27850" palette="0" />
+        <Effect ref="0" name="Marquee" startTime="0" endTime="30000" palette="0" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="1" name="On" startTime="0" endTime="30100" palette="1" />
+        <Effect ref="1" name="On" startTime="0" endTime="30000" palette="1" />
       </EffectLayer>
     </Element>
-    <Element type="model" name="Icicles">
+    <Element type="model" name="Verts">
       <EffectLayer>
-        <Effect ref="2" name="Meteors" startTime="24900" endTime="29075" palette="2" />
+        <Effect ref="1" name="On" startTime="0" endTime="30000" palette="2" />
       </EffectLayer>
     </Element>
-    <Element type="model" name="Colums">
+    <Element type="model" name="Garage">
       <EffectLayer>
-        <Effect ref="3" name="Marquee" startTime="0" endTime="30000" palette="3" />
-      </EffectLayer>
-    </Element>
-    <Element type="model" name="House Outline">
-      <EffectLayer>
-        <Effect ref="4" name="On" startTime="0" endTime="30050" palette="4" />
+        <Effect ref="1" name="On" startTime="0" endTime="30000" palette="1" />
       </EffectLayer>
     </Element>
     <Element type="model" name="Windows">
       <EffectLayer>
-        <Effect ref="5" name="Marquee" startTime="0" endTime="30000" palette="3" />
+        <Effect ref="1" name="On" startTime="0" endTime="30000" palette="3" />
       </EffectLayer>
     </Element>
-    <Element type="model" name="Roof">
+    <Element type="model" name="Colums">
       <EffectLayer>
-        <Effect ref="4" name="On" startTime="0" endTime="30050" palette="4" />
+        <Effect ref="2" name="SingleStrand" startTime="0" endTime="30000" palette="4" />
       </EffectLayer>
     </Element>
-    <Element type="model" name="GE Evil Clown">
+    <Element type="model" name="Floods GRP">
       <EffectLayer>
-        <Effect ref="6" name="Faces" startTime="0" endTime="30050" palette="2" />
-      </EffectLayer>
-    </Element>
-    <Element type="model" name="GE Flying Bats Jr Eyes GRP">
-      <EffectLayer>
-        <Effect ref="1" name="On" startTime="100" endTime="30125" palette="5" />
-      </EffectLayer>
-    </Element>
-    <Element type="model" name="GE Flying Bats Wings Down GRP">
-      <EffectLayer>
-        <Effect ref="1" name="On" startTime="250" endTime="500" palette="6" />
-        <Effect ref="1" name="On" id="1" startTime="750" endTime="1000" palette="6" />
-        <Effect ref="1" name="On" id="2" startTime="1250" endTime="1500" palette="6" />
-        <Effect ref="1" name="On" id="3" startTime="1750" endTime="2000" palette="6" />
-        <Effect ref="1" name="On" id="4" startTime="2250" endTime="2500" palette="6" />
-        <Effect ref="1" name="On" id="5" startTime="2750" endTime="3000" palette="6" />
-        <Effect ref="1" name="On" id="6" startTime="3250" endTime="3500" palette="6" />
-        <Effect ref="1" name="On" id="7" startTime="3750" endTime="4000" palette="6" />
-        <Effect ref="1" name="On" id="8" startTime="4250" endTime="4500" palette="6" />
-        <Effect ref="1" name="On" id="9" startTime="4750" endTime="5000" palette="6" />
-        <Effect ref="1" name="On" id="10" startTime="5250" endTime="5500" palette="6" />
-        <Effect ref="1" name="On" id="11" startTime="5750" endTime="6000" palette="6" />
-        <Effect ref="1" name="On" id="12" startTime="6250" endTime="6500" palette="6" />
-        <Effect ref="1" name="On" id="13" startTime="6750" endTime="7000" palette="6" />
-        <Effect ref="1" name="On" id="14" startTime="7250" endTime="7500" palette="6" />
-        <Effect ref="1" name="On" id="15" startTime="7750" endTime="8000" palette="6" />
-        <Effect ref="1" name="On" id="16" startTime="8250" endTime="8500" palette="6" />
-        <Effect ref="1" name="On" id="17" startTime="8750" endTime="9000" palette="6" />
-        <Effect ref="1" name="On" id="18" startTime="9250" endTime="9500" palette="6" />
-        <Effect ref="1" name="On" id="19" startTime="9750" endTime="10000" palette="6" />
-        <Effect ref="1" name="On" id="20" startTime="10250" endTime="10500" palette="6" />
-        <Effect ref="1" name="On" id="21" startTime="10750" endTime="11000" palette="6" />
-        <Effect ref="1" name="On" id="22" startTime="11250" endTime="11500" palette="6" />
-        <Effect ref="1" name="On" id="23" startTime="11750" endTime="12000" palette="6" />
-        <Effect ref="1" name="On" id="24" startTime="12250" endTime="12500" palette="6" />
-        <Effect ref="1" name="On" id="25" startTime="12750" endTime="13000" palette="6" />
-        <Effect ref="1" name="On" id="26" startTime="13250" endTime="13500" palette="6" />
-        <Effect ref="1" name="On" id="27" startTime="13750" endTime="14000" palette="6" />
-        <Effect ref="1" name="On" id="28" startTime="14250" endTime="14500" palette="6" />
-        <Effect ref="1" name="On" id="29" startTime="14750" endTime="15000" palette="6" />
-        <Effect ref="1" name="On" id="30" startTime="15250" endTime="15500" palette="6" />
-        <Effect ref="1" name="On" id="31" startTime="15750" endTime="16000" palette="6" />
-        <Effect ref="1" name="On" id="32" startTime="16250" endTime="16500" palette="6" />
-        <Effect ref="1" name="On" id="33" startTime="16750" endTime="17000" palette="6" />
-        <Effect ref="1" name="On" id="34" startTime="17250" endTime="17500" palette="6" />
-        <Effect ref="1" name="On" id="35" startTime="17750" endTime="18000" palette="6" />
-        <Effect ref="1" name="On" id="36" startTime="18250" endTime="18500" palette="6" />
-        <Effect ref="1" name="On" id="37" startTime="18750" endTime="19000" palette="6" />
-        <Effect ref="1" name="On" id="38" startTime="19250" endTime="19500" palette="6" />
-        <Effect ref="1" name="On" id="39" startTime="19500" endTime="19750" palette="6" />
-        <Effect ref="1" name="On" id="40" startTime="20000" endTime="20250" palette="6" />
-        <Effect ref="1" name="On" id="41" startTime="20500" endTime="20750" palette="6" />
-        <Effect ref="1" name="On" id="42" startTime="21000" endTime="21250" palette="6" />
-        <Effect ref="1" name="On" id="43" startTime="21500" endTime="21750" palette="6" />
-        <Effect ref="1" name="On" id="44" startTime="22000" endTime="22250" palette="6" />
-        <Effect ref="1" name="On" id="45" startTime="22500" endTime="22750" palette="6" />
-        <Effect ref="1" name="On" id="46" startTime="23000" endTime="23250" palette="6" />
-        <Effect ref="1" name="On" id="47" startTime="23500" endTime="23750" palette="6" />
-        <Effect ref="1" name="On" id="48" startTime="24000" endTime="24250" palette="6" />
-        <Effect ref="1" name="On" id="49" startTime="24500" endTime="24750" palette="6" />
-        <Effect ref="1" name="On" id="50" startTime="25000" endTime="25250" palette="6" />
-        <Effect ref="1" name="On" id="51" startTime="25500" endTime="25750" palette="6" />
-        <Effect ref="1" name="On" id="52" startTime="26000" endTime="26250" palette="6" />
-        <Effect ref="1" name="On" id="53" startTime="26500" endTime="26750" palette="6" />
-        <Effect ref="1" name="On" id="54" startTime="27000" endTime="27250" palette="6" />
-        <Effect ref="1" name="On" id="55" startTime="27500" endTime="27750" palette="6" />
-        <Effect ref="1" name="On" id="56" startTime="28000" endTime="28250" palette="6" />
-        <Effect ref="1" name="On" id="57" startTime="28500" endTime="28750" palette="6" />
-        <Effect ref="1" name="On" id="58" startTime="29000" endTime="29250" palette="6" />
-        <Effect ref="1" name="On" id="59" startTime="29500" endTime="29750" palette="6" />
-      </EffectLayer>
-    </Element>
-    <Element type="model" name="GE Flying Bats Wings Up GRP">
-      <EffectLayer>
-        <Effect ref="1" name="On" startTime="500" endTime="750" palette="6" />
-        <Effect ref="1" name="On" id="1" startTime="1000" endTime="1250" palette="6" />
-        <Effect ref="1" name="On" id="2" startTime="1500" endTime="1750" palette="6" />
-        <Effect ref="1" name="On" id="3" startTime="2000" endTime="2250" palette="6" />
-        <Effect ref="1" name="On" id="4" startTime="2500" endTime="2750" palette="6" />
-        <Effect ref="1" name="On" id="5" startTime="3000" endTime="3250" palette="6" />
-        <Effect ref="1" name="On" id="6" startTime="3500" endTime="3750" palette="6" />
-        <Effect ref="1" name="On" id="7" startTime="4000" endTime="4250" palette="6" />
-        <Effect ref="1" name="On" id="8" startTime="4500" endTime="4750" palette="6" />
-        <Effect ref="1" name="On" id="9" startTime="5000" endTime="5250" palette="6" />
-        <Effect ref="1" name="On" id="10" startTime="5500" endTime="5750" palette="6" />
-        <Effect ref="1" name="On" id="11" startTime="6000" endTime="6250" palette="6" />
-        <Effect ref="1" name="On" id="12" startTime="6500" endTime="6750" palette="6" />
-        <Effect ref="1" name="On" id="13" startTime="7000" endTime="7250" palette="6" />
-        <Effect ref="1" name="On" id="14" startTime="7500" endTime="7750" palette="6" />
-        <Effect ref="1" name="On" id="15" startTime="8000" endTime="8250" palette="6" />
-        <Effect ref="1" name="On" id="16" startTime="8500" endTime="8750" palette="6" />
-        <Effect ref="1" name="On" id="17" startTime="9000" endTime="9250" palette="6" />
-        <Effect ref="1" name="On" id="18" startTime="9500" endTime="9750" palette="6" />
-        <Effect ref="1" name="On" id="19" startTime="10000" endTime="10250" palette="6" />
-        <Effect ref="1" name="On" id="20" startTime="10500" endTime="10750" palette="6" />
-        <Effect ref="1" name="On" id="21" startTime="11000" endTime="11250" palette="6" />
-        <Effect ref="1" name="On" id="22" startTime="11500" endTime="11750" palette="6" />
-        <Effect ref="1" name="On" id="23" startTime="12000" endTime="12250" palette="6" />
-        <Effect ref="1" name="On" id="24" startTime="12500" endTime="12750" palette="6" />
-        <Effect ref="1" name="On" id="25" startTime="13000" endTime="13250" palette="6" />
-        <Effect ref="1" name="On" id="26" startTime="13500" endTime="13750" palette="6" />
-        <Effect ref="1" name="On" id="27" startTime="14000" endTime="14250" palette="6" />
-        <Effect ref="1" name="On" id="28" startTime="14500" endTime="14750" palette="6" />
-        <Effect ref="1" name="On" id="29" startTime="15000" endTime="15250" palette="6" />
-        <Effect ref="1" name="On" id="30" startTime="15500" endTime="15750" palette="6" />
-        <Effect ref="1" name="On" id="31" startTime="16000" endTime="16250" palette="6" />
-        <Effect ref="1" name="On" id="32" startTime="16500" endTime="16750" palette="6" />
-        <Effect ref="1" name="On" id="33" startTime="17000" endTime="17250" palette="6" />
-        <Effect ref="1" name="On" id="34" startTime="17500" endTime="17750" palette="6" />
-        <Effect ref="1" name="On" id="35" startTime="18000" endTime="18250" palette="6" />
-        <Effect ref="1" name="On" id="36" startTime="18500" endTime="18750" palette="6" />
-        <Effect ref="1" name="On" id="37" startTime="19000" endTime="19250" palette="6" />
-        <Effect ref="1" name="On" id="38" startTime="19750" endTime="20000" palette="6" />
-        <Effect ref="1" name="On" id="39" startTime="20250" endTime="20500" palette="6" />
-        <Effect ref="1" name="On" id="40" startTime="20750" endTime="21000" palette="6" />
-        <Effect ref="1" name="On" id="41" startTime="21250" endTime="21500" palette="6" />
-        <Effect ref="1" name="On" id="42" startTime="21750" endTime="22000" palette="6" />
-        <Effect ref="1" name="On" id="43" startTime="22250" endTime="22500" palette="6" />
-        <Effect ref="1" name="On" id="44" startTime="22750" endTime="23000" palette="6" />
-        <Effect ref="1" name="On" id="45" startTime="23250" endTime="23500" palette="6" />
-        <Effect ref="1" name="On" id="46" startTime="23750" endTime="24000" palette="6" />
-        <Effect ref="1" name="On" id="47" startTime="24250" endTime="24500" palette="6" />
-        <Effect ref="1" name="On" id="48" startTime="24750" endTime="25000" palette="6" />
-        <Effect ref="1" name="On" id="49" startTime="25250" endTime="25500" palette="6" />
-        <Effect ref="1" name="On" id="50" startTime="25750" endTime="26000" palette="6" />
-        <Effect ref="1" name="On" id="51" startTime="26250" endTime="26500" palette="6" />
-        <Effect ref="1" name="On" id="52" startTime="26750" endTime="27000" palette="6" />
-        <Effect ref="1" name="On" id="53" startTime="27250" endTime="27500" palette="6" />
-        <Effect ref="1" name="On" id="54" startTime="27750" endTime="28000" palette="6" />
-        <Effect ref="1" name="On" id="55" startTime="28250" endTime="28500" palette="6" />
-        <Effect ref="1" name="On" id="56" startTime="28750" endTime="29000" palette="6" />
-        <Effect ref="1" name="On" id="57" startTime="29250" endTime="29500" palette="6" />
-        <Effect ref="1" name="On" id="58" startTime="29750" endTime="30000" palette="6" />
-      </EffectLayer>
-    </Element>
-    <Element type="model" name="GE Preying Spider 150 Cross GRP">
-      <EffectLayer>
-        <Effect ref="1" name="On" startTime="50" endTime="30000" palette="1" />
-      </EffectLayer>
-    </Element>
-    <Element type="model" name="GE Singing Pumpkin">
-      <EffectLayer>
-        <Effect ref="7" name="Faces" startTime="0" endTime="30025" palette="2" />
-      </EffectLayer>
-    </Element>
-    <Element type="model" name="Tombstones">
-      <EffectLayer>
-        <Effect ref="0" name="Shimmer" startTime="0" endTime="450" palette="0" />
-        <Effect ref="0" name="Shimmer" id="1" startTime="6600" endTime="7050" palette="0" />
-        <Effect ref="0" name="Shimmer" id="2" startTime="13450" endTime="13900" palette="0" />
-        <Effect ref="0" name="Shimmer" id="3" startTime="21000" endTime="21450" palette="0" />
-        <Effect ref="0" name="Shimmer" id="4" startTime="27400" endTime="27850" palette="0" />
-      </EffectLayer>
-      <EffectLayer>
-        <Effect ref="4" name="On" startTime="0" endTime="30100" palette="4" />
-      </EffectLayer>
-    </Element>
-    <Element type="model" name="Tune To">
-      <EffectLayer>
-        <Effect ref="8" name="Text" startTime="0" endTime="30300" palette="0" />
-      </EffectLayer>
-      <EffectLayer>
-        <Effect ref="9" name="Video" startTime="0" endTime="30775" palette="3" />
-      </EffectLayer>
-    </Element>
-    <Element type="model" name="Shrub Center">
-      <EffectLayer />
-    </Element>
-    <Element type="model" name="Wall - Office">
-      <EffectLayer>
-        <Effect ref="10" name="Marquee" startTime="0" endTime="30000" palette="3" />
-      </EffectLayer>
-    </Element>
-    <Element type="model" name="Wall - Office Top">
-      <EffectLayer>
-        <Effect ref="10" name="Marquee" startTime="0" endTime="30000" palette="3" />
-      </EffectLayer>
-    </Element>
-    <Element type="model" name="Shrubs">
-      <EffectLayer>
-        <Effect ref="11" name="Marquee" startTime="0" endTime="30000" palette="3" />
-      </EffectLayer>
-    </Element>
-    <Element type="model" name="Rose Bush GRP">
-      <EffectLayer>
-        <Effect ref="11" name="Marquee" startTime="0" endTime="30000" palette="3" />
-      </EffectLayer>
-    </Element>
-    <Element type="model" name="Lantanas">
-      <EffectLayer>
-        <Effect ref="11" name="Marquee" startTime="0" endTime="30000" palette="3" />
+        <Effect ref="1" name="On" startTime="0" endTime="30000" palette="5" />
       </EffectLayer>
     </Element>
     <Element type="model" name="Garden Borders">
       <EffectLayer>
-        <Effect ref="11" name="Marquee" startTime="0" endTime="30000" palette="3" />
+        <Effect ref="3" name="Marquee" startTime="0" endTime="30000" palette="6" />
       </EffectLayer>
     </Element>
-    <Element type="model" name="Halloween Accents">
+    <Element type="model" name="Driveway Left">
       <EffectLayer>
-        <Effect ref="0" name="Shimmer" startTime="0" endTime="450" palette="0" />
-        <Effect ref="0" name="Shimmer" id="1" startTime="6600" endTime="7050" palette="0" />
-        <Effect ref="0" name="Shimmer" id="2" startTime="13450" endTime="13900" palette="0" />
-        <Effect ref="0" name="Shimmer" id="3" startTime="21000" endTime="21450" palette="0" />
-        <Effect ref="0" name="Shimmer" id="4" startTime="27400" endTime="27850" palette="0" />
+        <Effect ref="4" name="Marquee" startTime="0" endTime="30000" palette="7" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="Driveway Right">
+      <EffectLayer>
+        <Effect ref="4" name="Marquee" startTime="0" endTime="30000" palette="7" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="Shrubs">
+      <EffectLayer>
+        <Effect ref="5" name="Twinkle" startTime="0" endTime="30000" palette="8" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="4" name="On" startTime="0" endTime="30100" palette="4" />
+        <Effect ref="6" name="Marquee" startTime="0" endTime="30000" palette="9" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="Rose Bush GRP">
+      <EffectLayer>
+        <Effect ref="5" name="Twinkle" startTime="0" endTime="30000" palette="10" />
+      </EffectLayer>
+      <EffectLayer>
+        <Effect ref="6" name="Marquee" startTime="0" endTime="30000" palette="11" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="Lantanas">
+      <EffectLayer>
+        <Effect ref="5" name="Twinkle" startTime="0" endTime="30000" palette="12" />
+      </EffectLayer>
+      <EffectLayer>
+        <Effect ref="6" name="Marquee" startTime="0" endTime="30000" palette="9" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="Tombstones">
+      <EffectLayer>
+        <Effect ref="1" name="On" startTime="0" endTime="30000" palette="13" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="Tree - Oak">
+      <EffectLayer>
+        <Effect ref="7" name="Twinkle" startTime="0" endTime="30000" palette="14" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="GE Rosa Grande GRP">
+      <EffectLayer>
+        <Effect ref="8" name="Pinwheel" startTime="0" endTime="30000" palette="15" />
+      </EffectLayer>
+      <EffectLayer>
+        <Effect ref="9" name="Pinwheel" startTime="0" endTime="30000" palette="15" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="GE Starlord GRP">
+      <EffectLayer>
+        <Effect ref="10" name="Pinwheel" startTime="0" endTime="30000" palette="16" />
+      </EffectLayer>
+      <EffectLayer>
+        <Effect ref="11" name="Pinwheel" startTime="0" endTime="30000" palette="16" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="GE Reel Max GRP">
+      <EffectLayer>
+        <Effect ref="12" name="Pinwheel" startTime="0" endTime="30000" palette="17" />
+      </EffectLayer>
+      <EffectLayer>
+        <Effect ref="13" name="Pinwheel" startTime="0" endTime="30000" palette="17" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="GE Rosa Grande Torch Long Even GRP">
+      <EffectLayer>
+        <Effect ref="14" name="Pinwheel" startTime="0" endTime="30000" palette="18" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="GE Rosa Grande Feather Long Odd GRP">
+      <EffectLayer>
+        <Effect ref="15" name="Spirals" startTime="0" endTime="30000" palette="19" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="GE Rosa Grande Spoke GRP">
+      <EffectLayer>
+        <Effect ref="16" name="Fan" startTime="0" endTime="30000" palette="20" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="GE Rosa Grande Outer Ball GRP">
+      <EffectLayer>
+        <Effect ref="17" name="SingleStrand" startTime="0" endTime="30000" palette="21" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="GE Starlord Plunger All GRP">
+      <EffectLayer>
+        <Effect ref="18" name="Spirals" startTime="0" endTime="30000" palette="22" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="GE Starlord Spoke GRP">
+      <EffectLayer>
+        <Effect ref="19" name="SingleStrand" startTime="0" endTime="30000" palette="23" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="GE Starlord Cross GRP">
+      <EffectLayer>
+        <Effect ref="20" name="SingleStrand" startTime="0" endTime="30000" palette="24" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="GE Reel Max Spokes GRP">
+      <EffectLayer>
+        <Effect ref="21" name="Spirals" startTime="0" endTime="30000" palette="25" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="GE Reel Max Chevrons GRP">
+      <EffectLayer>
+        <Effect ref="22" name="SingleStrand" startTime="0" endTime="30000" palette="25" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="GE Reel Max Circles Outer GRP">
+      <EffectLayer>
+        <Effect ref="23" name="SingleStrand" startTime="0" endTime="30000" palette="26" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="GE Baby Grand Illusion Hook CW GRP">
+      <EffectLayer>
+        <Effect ref="24" name="Fan" startTime="0" endTime="30000" palette="27" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="GE Baby Grand Illusion Spokes GRP">
+      <EffectLayer>
+        <Effect ref="25" name="Spirals" startTime="0" endTime="30000" palette="28" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="GE MOAW Spokes GRP">
+      <EffectLayer>
+        <Effect ref="26" name="SingleStrand" startTime="0" endTime="30000" palette="29" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="GE MOAW Diamonds GRP">
+      <EffectLayer>
+        <Effect ref="27" name="Color Wash" startTime="0" endTime="30000" palette="30" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="GE MOAW Swag GRP">
+      <EffectLayer>
+        <Effect ref="28" name="Bars" startTime="0" endTime="30000" palette="31" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="GE Preying Spider Body GRP">
+      <EffectLayer>
+        <Effect ref="1" name="On" startTime="0" endTime="30000" palette="32" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="GE Preying Spider 150 Leg GRP">
+      <EffectLayer>
+        <Effect ref="2" name="SingleStrand" startTime="0" endTime="30000" palette="23" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="GE Preying Spider Eye GRP">
+      <EffectLayer>
+        <Effect ref="1" name="On" startTime="0" endTime="30000" palette="33" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="GE Preying Spider 150 Mouth GRP">
+      <EffectLayer>
+        <Effect ref="1" name="On" startTime="0" endTime="30000" palette="34" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="GE Flying Bats Jr Eyes GRP">
+      <EffectLayer>
+        <Effect ref="1" name="On" startTime="0" endTime="30000" palette="33" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="GE Flying Bats Wings Up GRP">
+      <EffectLayer>
+        <Effect ref="29" name="On" startTime="0" endTime="2000" palette="35" />
+        <Effect ref="29" name="On" id="1" startTime="4000" endTime="6000" palette="35" />
+        <Effect ref="29" name="On" id="2" startTime="8000" endTime="10000" palette="35" />
+        <Effect ref="29" name="On" id="3" startTime="12000" endTime="14000" palette="35" />
+        <Effect ref="29" name="On" id="4" startTime="16000" endTime="18000" palette="35" />
+        <Effect ref="29" name="On" id="5" startTime="20000" endTime="22000" palette="35" />
+        <Effect ref="29" name="On" id="6" startTime="24000" endTime="26000" palette="35" />
+        <Effect ref="29" name="On" id="7" startTime="28000" endTime="30000" palette="35" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="GE Flying Bats Wings Down GRP">
+      <EffectLayer>
+        <Effect ref="29" name="On" startTime="2000" endTime="4000" palette="35" />
+        <Effect ref="29" name="On" id="1" startTime="6000" endTime="8000" palette="35" />
+        <Effect ref="29" name="On" id="2" startTime="10000" endTime="12000" palette="35" />
+        <Effect ref="29" name="On" id="3" startTime="14000" endTime="16000" palette="35" />
+        <Effect ref="29" name="On" id="4" startTime="18000" endTime="20000" palette="35" />
+        <Effect ref="29" name="On" id="5" startTime="22000" endTime="24000" palette="35" />
+        <Effect ref="29" name="On" id="6" startTime="26000" endTime="28000" palette="35" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="GE Evil Clown">
+      <EffectLayer>
+        <Effect ref="30" name="Faces" startTime="0" endTime="30000" palette="36" />
+      </EffectLayer>
+      <SubModelEffectLayer name="Hair">
+        <Effect ref="1" name="On" startTime="0" endTime="30000" palette="37" />
+      </SubModelEffectLayer>
+    </Element>
+    <Element type="model" name="GE Singing Pumpkin">
+      <EffectLayer>
+        <Effect ref="31" name="Faces" startTime="0" endTime="30000" palette="38" />
+      </EffectLayer>
+      <SubModelEffectLayer name="Stem">
+        <Effect ref="1" name="On" startTime="0" endTime="30000" palette="37" />
+      </SubModelEffectLayer>
+    </Element>
+    <Element type="model" name="GE Dark Helmet">
+      <EffectLayer />
+      <SubModelEffectLayer name="Helmet Outside">
+        <Effect ref="1" name="On" startTime="0" endTime="30000" palette="39" />
+      </SubModelEffectLayer>
+      <SubModelEffectLayer name="Helmet Inside">
+        <Effect ref="1" name="On" startTime="0" endTime="30000" palette="16" />
+      </SubModelEffectLayer>
+      <SubModelEffectLayer name="Eyes">
+        <Effect ref="1" name="On" startTime="0" endTime="30000" palette="40" />
+      </SubModelEffectLayer>
+      <SubModelEffectLayer name="Mouth">
+        <Effect ref="1" name="On" startTime="0" endTime="30000" palette="41" />
+      </SubModelEffectLayer>
+      <SubModelEffectLayer name="Nose">
+        <Effect ref="1" name="On" startTime="0" endTime="30000" palette="7" />
+      </SubModelEffectLayer>
+    </Element>
+    <Element type="model" name="Elliott - EFL Teddy">
+      <EffectLayer>
+        <Effect ref="32" name="Faces" startTime="0" endTime="30000" palette="38" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="Tune To">
+      <EffectLayer>
+        <Effect ref="33" name="Text" startTime="0" endTime="30300" palette="42" />
+      </EffectLayer>
+      <EffectLayer>
+        <Effect ref="34" name="Video" startTime="0" endTime="30775" palette="43" />
       </EffectLayer>
     </Element>
   </ElementEffects>

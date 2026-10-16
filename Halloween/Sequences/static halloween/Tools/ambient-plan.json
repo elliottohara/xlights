@@ -1,0 +1,623 @@
+[
+  {
+    "target": "Roof",
+    "effect": "Marquee",
+    "settings": "B_CHOICE_BufferStyle=Single Line,E_SLIDER_Marquee_Band_Size=4,E_SLIDER_Marquee_Skip_Size=18,E_SLIDER_Marquee_Speed=1,E_SLIDER_Marquee_Thickness=1,E_SLIDER_Marquee_ScaleX=100,E_SLIDER_Marquee_ScaleY=100,T_CHOICE_LayerMethod=1 reveals 2",
+    "palette": "C_BUTTON_Palette1=#FFB34D,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=76",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "Roof",
+    "effect": "On",
+    "settings": "",
+    "palette": "C_BUTTON_Palette1=#FF6508,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=40",
+    "layer": 1,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "Verts",
+    "effect": "On",
+    "settings": "",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=55",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "Garage",
+    "effect": "On",
+    "settings": "",
+    "palette": "C_BUTTON_Palette1=#FF6508,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=40",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "Windows",
+    "effect": "On",
+    "settings": "",
+    "palette": "C_BUTTON_Palette1=#FFB34D,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=55",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "Colums",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Left-Right,E_CHOICE_Fade_Type=From Head,E_CHOICE_SingleStrand_Colors=Palette,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=25,E_SLIDER_Number_Chases=1,E_TEXTCTRL_Chase_Rotations=2,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_BUTTON_Palette2=#A45AFF,C_CHECKBOX_Palette2=1,C_SLIDER_Brightness=68",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "Floods GRP",
+    "effect": "On",
+    "settings": "",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=12",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "Garden Borders",
+    "effect": "Marquee",
+    "settings": "B_CHOICE_BufferStyle=Single Line,E_SLIDER_Marquee_Band_Size=6,E_SLIDER_Marquee_Skip_Size=20,E_SLIDER_Marquee_Speed=1,E_SLIDER_Marquee_Thickness=1,E_SLIDER_Marquee_ScaleX=100,E_SLIDER_Marquee_ScaleY=100",
+    "palette": "C_BUTTON_Palette1=#FF6508,C_CHECKBOX_Palette1=1,C_BUTTON_Palette2=#7300FF,C_CHECKBOX_Palette2=1,C_SLIDER_Brightness=63",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "Driveway Left",
+    "effect": "Marquee",
+    "settings": "B_CHOICE_BufferStyle=Single Line,E_SLIDER_Marquee_Band_Size=3,E_SLIDER_Marquee_Skip_Size=30,E_SLIDER_Marquee_Speed=1,E_SLIDER_Marquee_Thickness=1,E_SLIDER_Marquee_ScaleX=100,E_SLIDER_Marquee_ScaleY=100",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=45",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "Driveway Right",
+    "effect": "Marquee",
+    "settings": "B_CHOICE_BufferStyle=Single Line,E_SLIDER_Marquee_Band_Size=3,E_SLIDER_Marquee_Skip_Size=30,E_SLIDER_Marquee_Speed=1,E_SLIDER_Marquee_Thickness=1,E_SLIDER_Marquee_ScaleX=100,E_SLIDER_Marquee_ScaleY=100",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=45",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "Shrubs",
+    "effect": "Twinkle",
+    "settings": "E_CHECKBOX_Twinkle_Strobe=0,E_SLIDER_Twinkle_Count=8,E_SLIDER_Twinkle_Steps=100,T_CHOICE_LayerMethod=1 reveals 2",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_BUTTON_Palette2=#FFB34D,C_CHECKBOX_Palette2=1,C_SLIDER_Brightness=76",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "Shrubs",
+    "effect": "Marquee",
+    "settings": "B_CHOICE_BufferStyle=Single Line,E_SLIDER_Marquee_Band_Size=3,E_SLIDER_Marquee_Skip_Size=16,E_SLIDER_Marquee_Speed=1,E_SLIDER_Marquee_Thickness=1,E_SLIDER_Marquee_ScaleX=100,E_SLIDER_Marquee_ScaleY=100",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=32",
+    "layer": 1,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "Rose Bush GRP",
+    "effect": "Twinkle",
+    "settings": "E_CHECKBOX_Twinkle_Strobe=0,E_SLIDER_Twinkle_Count=8,E_SLIDER_Twinkle_Steps=100,T_CHOICE_LayerMethod=1 reveals 2",
+    "palette": "C_BUTTON_Palette1=#FF6508,C_CHECKBOX_Palette1=1,C_BUTTON_Palette2=#FFB34D,C_CHECKBOX_Palette2=1,C_SLIDER_Brightness=68",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "Rose Bush GRP",
+    "effect": "Marquee",
+    "settings": "B_CHOICE_BufferStyle=Single Line,E_SLIDER_Marquee_Band_Size=3,E_SLIDER_Marquee_Skip_Size=16,E_SLIDER_Marquee_Speed=1,E_SLIDER_Marquee_Thickness=1,E_SLIDER_Marquee_ScaleX=100,E_SLIDER_Marquee_ScaleY=100",
+    "palette": "C_BUTTON_Palette1=#FF6508,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=32",
+    "layer": 1,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "Lantanas",
+    "effect": "Twinkle",
+    "settings": "E_CHECKBOX_Twinkle_Strobe=0,E_SLIDER_Twinkle_Count=8,E_SLIDER_Twinkle_Steps=100,T_CHOICE_LayerMethod=1 reveals 2",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_BUTTON_Palette2=#FFB34D,C_CHECKBOX_Palette2=1,C_SLIDER_Brightness=72",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "Lantanas",
+    "effect": "Marquee",
+    "settings": "B_CHOICE_BufferStyle=Single Line,E_SLIDER_Marquee_Band_Size=3,E_SLIDER_Marquee_Skip_Size=16,E_SLIDER_Marquee_Speed=1,E_SLIDER_Marquee_Thickness=1,E_SLIDER_Marquee_ScaleX=100,E_SLIDER_Marquee_ScaleY=100",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=32",
+    "layer": 1,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "Tombstones",
+    "effect": "On",
+    "settings": "",
+    "palette": "C_BUTTON_Palette1=#A45AFF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=41",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "Tree - Oak",
+    "effect": "Twinkle",
+    "settings": "E_CHECKBOX_Twinkle_Strobe=0,E_SLIDER_Twinkle_Count=5,E_SLIDER_Twinkle_Steps=150",
+    "palette": "C_BUTTON_Palette1=#FF6508,C_CHECKBOX_Palette1=1,C_BUTTON_Palette2=#7300FF,C_CHECKBOX_Palette2=1,C_SLIDER_Brightness=54",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "GE Rosa Grande GRP",
+    "effect": "Pinwheel",
+    "settings": "B_CHOICE_BufferStyle=Per Model Per Preview,B_CHOICE_PerPreviewCamera=2D,B_SLIDER_Blur=3,E_CHECKBOX_Pinwheel_Rotation=0,E_CHOICE_Pinwheel_3D=3D Inverted,E_CHOICE_Pinwheel_Style=New Render Method,E_SLIDER_PinwheelXC=0,E_SLIDER_PinwheelYC=0,E_SLIDER_Pinwheel_ArmSize=271,E_SLIDER_Pinwheel_Arms=2,E_SLIDER_Pinwheel_Speed=3,E_SLIDER_Pinwheel_Thickness=40,E_SLIDER_Pinwheel_Twist=-65,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25,T_CHOICE_LayerMethod=1 reveals 2",
+    "palette": "C_BUTTON_Palette1=#FF6508,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=43",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "GE Rosa Grande GRP",
+    "effect": "Pinwheel",
+    "settings": "B_CHOICE_BufferStyle=Per Model Per Preview,B_CHOICE_PerPreviewCamera=2D,B_SLIDER_Blur=3,E_CHECKBOX_Pinwheel_Rotation=0,E_CHOICE_Pinwheel_3D=3D Inverted,E_CHOICE_Pinwheel_Style=New Render Method,E_SLIDER_PinwheelXC=0,E_SLIDER_PinwheelYC=0,E_SLIDER_Pinwheel_ArmSize=271,E_SLIDER_Pinwheel_Arms=2,E_SLIDER_Pinwheel_Speed=3,E_SLIDER_Pinwheel_Thickness=40,E_SLIDER_Pinwheel_Twist=-65,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25,B_CHOICE_BufferTransform=Flip Horizontal",
+    "palette": "C_BUTTON_Palette1=#FF6508,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=43",
+    "layer": 1,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "GE Starlord GRP",
+    "effect": "Pinwheel",
+    "settings": "B_CHOICE_BufferStyle=Per Model Per Preview,B_CHOICE_PerPreviewCamera=2D,E_CHECKBOX_Pinwheel_Rotation=1,E_CHOICE_Pinwheel_3D=3D,E_CHOICE_Pinwheel_Style=New Render Method,E_SLIDER_PinwheelXC=0,E_SLIDER_PinwheelYC=0,E_SLIDER_Pinwheel_ArmSize=100,E_SLIDER_Pinwheel_Arms=4,E_SLIDER_Pinwheel_Speed=2,E_SLIDER_Pinwheel_Thickness=82,E_VALUECURVE_Pinwheel_Twist=Active=TRUE|Id=ID_VALUECURVE_Pinwheel_Twist|Type=Custom|Min=-360.00|Max=360.00|RV=TRUE|Values=0.00:0.19;0.11:0.49;0.24:0.18;0.37:0.52;0.49:0.60;0.62:0.57;0.74:0.49;0.88:0.53;1.00:0.18|,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25,T_CHOICE_LayerMethod=1 reveals 2",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=40",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "GE Starlord GRP",
+    "effect": "Pinwheel",
+    "settings": "B_CHOICE_BufferStyle=Per Model Per Preview,B_CHOICE_PerPreviewCamera=2D,E_CHECKBOX_Pinwheel_Rotation=1,E_CHOICE_Pinwheel_3D=3D,E_CHOICE_Pinwheel_Style=New Render Method,E_SLIDER_PinwheelXC=0,E_SLIDER_PinwheelYC=0,E_SLIDER_Pinwheel_ArmSize=100,E_SLIDER_Pinwheel_Arms=4,E_SLIDER_Pinwheel_Speed=2,E_SLIDER_Pinwheel_Thickness=82,E_VALUECURVE_Pinwheel_Twist=Active=TRUE|Id=ID_VALUECURVE_Pinwheel_Twist|Type=Custom|Min=-360.00|Max=360.00|RV=TRUE|Values=0.00:0.19;0.11:0.49;0.24:0.18;0.37:0.52;0.49:0.60;0.62:0.57;0.74:0.49;0.88:0.53;1.00:0.18|,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25,B_CHOICE_BufferTransform=Flip Horizontal",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=40",
+    "layer": 1,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "GE Reel Max GRP",
+    "effect": "Pinwheel",
+    "settings": "B_CHOICE_BufferStyle=Per Model Per Preview,B_CHOICE_PerPreviewCamera=2D,E_CHECKBOX_Pinwheel_Rotation=1,E_CHOICE_Pinwheel_3D=3D,E_CHOICE_Pinwheel_Style=New Render Method,E_SLIDER_PinwheelXC=0,E_SLIDER_PinwheelYC=0,E_SLIDER_Pinwheel_ArmSize=100,E_SLIDER_Pinwheel_Arms=4,E_SLIDER_Pinwheel_Speed=3,E_SLIDER_Pinwheel_Thickness=47,E_SLIDER_Pinwheel_Twist=82,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25,T_CHOICE_LayerMethod=1 reveals 2",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=36",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "GE Reel Max GRP",
+    "effect": "Pinwheel",
+    "settings": "B_CHOICE_BufferStyle=Per Model Per Preview,B_CHOICE_PerPreviewCamera=2D,E_CHECKBOX_Pinwheel_Rotation=1,E_CHOICE_Pinwheel_3D=3D,E_CHOICE_Pinwheel_Style=New Render Method,E_SLIDER_PinwheelXC=0,E_SLIDER_PinwheelYC=0,E_SLIDER_Pinwheel_ArmSize=100,E_SLIDER_Pinwheel_Arms=4,E_SLIDER_Pinwheel_Speed=3,E_SLIDER_Pinwheel_Thickness=47,E_SLIDER_Pinwheel_Twist=82,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25,B_CHOICE_BufferTransform=Flip Horizontal",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=36",
+    "layer": 1,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "GE Rosa Grande Torch Long Even GRP",
+    "effect": "Pinwheel",
+    "settings": "B_CHOICE_BufferStyle=Per Model Per Preview,B_CHOICE_PerPreviewCamera=2D,E_CHECKBOX_Pinwheel_Rotation=1,E_CHOICE_Pinwheel_3D=3D,E_CHOICE_Pinwheel_Style=New Render Method,E_SLIDER_PinwheelXC=0,E_SLIDER_PinwheelYC=0,E_SLIDER_Pinwheel_ArmSize=100,E_SLIDER_Pinwheel_Arms=4,E_SLIDER_Pinwheel_Speed=2,E_SLIDER_Pinwheel_Thickness=82,E_SLIDER_Pinwheel_Twist=-60,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25",
+    "palette": "C_BUTTON_Palette1=#FF6508,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=86",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "GE Rosa Grande Feather Long Odd GRP",
+    "effect": "Spirals",
+    "settings": "B_CHOICE_BufferStyle=Overlay - Centered,B_CHOICE_BufferTransform=Flip Horizontal,E_CHECKBOX_Spirals_3D=1,E_SLIDER_Spirals_Count=2,E_SLIDER_Spirals_Rotation=20,E_SLIDER_Spirals_Thickness=50,E_TEXTCTRL_Spirals_Movement=2,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=83",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "GE Rosa Grande Spoke GRP",
+    "effect": "Fan",
+    "settings": "B_CHOICE_BufferStyle=Overlay - Centered,B_SLIDER_Blur=2,E_CHECKBOX_Fan_Blend_Edges=1,E_NOTEBOOK_Fan=Position,E_SLIDER_Fan_Blade_Angle=90,E_SLIDER_Fan_Blade_Width=100,E_SLIDER_Fan_CenterX=50,E_SLIDER_Fan_CenterY=50,E_SLIDER_Fan_Duration=100,E_SLIDER_Fan_Element_Width=100,E_SLIDER_Fan_End_Radius=333,E_SLIDER_Fan_Num_Blades=3,E_SLIDER_Fan_Num_Elements=1,E_SLIDER_Fan_Revolutions=360,E_SLIDER_Fan_Start_Radius=1,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25",
+    "palette": "C_BUTTON_Palette1=#FFB34D,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=45",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "GE Rosa Grande Outer Ball GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Overlay - Centered,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Bounce from Left,E_CHOICE_SingleStrand_Colors=Palette,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=10,E_SLIDER_Number_Chases=1,E_TEXTCTRL_Chase_Rotations=3,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25",
+    "palette": "C_BUTTON_Palette1=#FFB34D,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=81",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "GE Starlord Plunger All GRP",
+    "effect": "Spirals",
+    "settings": "B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Spirals_3D=1,E_SLIDER_Spirals_Count=2,E_SLIDER_Spirals_Rotation=20,E_SLIDER_Spirals_Thickness=50,E_TEXTCTRL_Spirals_Movement=2,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_BUTTON_Palette2=#A45AFF,C_CHECKBOX_Palette2=1,C_SLIDER_Brightness=76",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "GE Starlord Spoke GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Left-Right,E_CHOICE_Fade_Type=From Head,E_CHOICE_SingleStrand_Colors=Palette,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=10,E_SLIDER_Number_Chases=1,E_TEXTCTRL_Chase_Rotations=3,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25",
+    "palette": "C_BUTTON_Palette1=#FF6508,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=81",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "GE Starlord Cross GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=From Middle,E_CHOICE_Fade_Type=From Head,E_CHOICE_SingleStrand_Colors=Palette,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=45,E_SLIDER_Number_Chases=1,E_TEXTCTRL_Chase_Rotations=2,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25",
+    "palette": "C_BUTTON_Palette1=#FFB34D,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=50",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "GE Reel Max Spokes GRP",
+    "effect": "Spirals",
+    "settings": "B_CHOICE_BufferStyle=Overlay - Centered,B_CHOICE_BufferTransform=Flip Horizontal,E_CHECKBOX_Spirals_3D=1,E_SLIDER_Spirals_Count=2,E_SLIDER_Spirals_Rotation=85,E_SLIDER_Spirals_Thickness=10,E_TEXTCTRL_Spirals_Movement=2,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25",
+    "palette": "C_BUTTON_Palette1=#FF6508,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=72",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "GE Reel Max Chevrons GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Overlay - Centered,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Left-Right,E_CHOICE_SingleStrand_Colors=Palette,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=10,E_SLIDER_Number_Chases=1,E_TEXTCTRL_Chase_Rotations=3,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25",
+    "palette": "C_BUTTON_Palette1=#FF6508,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=72",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "GE Reel Max Circles Outer GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Left-Right,E_CHOICE_Fade_Type=From Head,E_CHOICE_SingleStrand_Colors=Palette,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=1,E_SLIDER_Number_Chases=1,E_TEXTCTRL_Chase_Rotations=3,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25",
+    "palette": "C_BUTTON_Palette1=#A45AFF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=63",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "GE Baby Grand Illusion Hook CW GRP",
+    "effect": "Fan",
+    "settings": "B_CHOICE_BufferStyle=Per Model Per Preview,B_SLIDER_Blur=2,E_CHECKBOX_Fan_Blend_Edges=1,E_NOTEBOOK_Fan=Position,E_SLIDER_Fan_Blade_Angle=90,E_SLIDER_Fan_Blade_Width=100,E_SLIDER_Fan_CenterX=50,E_SLIDER_Fan_CenterY=50,E_SLIDER_Fan_Duration=100,E_SLIDER_Fan_Element_Width=100,E_SLIDER_Fan_End_Radius=60,E_SLIDER_Fan_Num_Blades=3,E_SLIDER_Fan_Num_Elements=1,E_SLIDER_Fan_Revolutions=360,E_SLIDER_Fan_Start_Radius=1,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25,B_CHOICE_PerPreviewCamera=2D",
+    "palette": "C_BUTTON_Palette1=#FF6508,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=76",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "GE Baby Grand Illusion Spokes GRP",
+    "effect": "Spirals",
+    "settings": "B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Spirals_3D=1,E_SLIDER_Spirals_Count=2,E_SLIDER_Spirals_Rotation=20,E_SLIDER_Spirals_Thickness=35,E_TEXTCTRL_Spirals_Movement=2,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=72",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "GE MOAW Spokes GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Single Line,E_CHECKBOX_Chase_Group_All=1,E_CHOICE_Chase_Type1=Bounce from Left,E_CHOICE_Fade_Type=From Head,E_CHOICE_SingleStrand_Colors=Palette,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=28,E_SLIDER_Number_Chases=1,E_TEXTCTRL_Chase_Rotations=2,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25",
+    "palette": "C_BUTTON_Palette1=#FF6508,C_CHECKBOX_Palette1=1,C_BUTTON_Palette2=#FFB34D,C_CHECKBOX_Palette2=1,C_SLIDER_Brightness=72",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "GE MOAW Diamonds GRP",
+    "effect": "Color Wash",
+    "settings": "B_CHOICE_BufferStyle=Single Line,E_CHECKBOX_ColorWash_HFade=1,E_CHECKBOX_ColorWash_VFade=0,E_TEXTCTRL_ColorWash_Cycles=2,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_BUTTON_Palette2=#A45AFF,C_CHECKBOX_Palette2=1,C_SLIDER_Brightness=54",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "GE MOAW Swag GRP",
+    "effect": "Bars",
+    "settings": "B_CHOICE_BufferStyle=Overlay - Scaled,E_CHECKBOX_Bars_3D=1,E_CHOICE_Bars_Direction=Right,E_SLIDER_Bars_BarCount=3,E_TEXTCTRL_Bars_Cycles=2,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=54",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "GE Preying Spider Body GRP",
+    "effect": "On",
+    "settings": "",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=63",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "GE Preying Spider 150 Leg GRP",
+    "effect": "SingleStrand",
+    "settings": "B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Left-Right,E_CHOICE_Fade_Type=From Head,E_CHOICE_SingleStrand_Colors=Palette,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=25,E_SLIDER_Number_Chases=1,E_TEXTCTRL_Chase_Rotations=2,T_TEXTCTRL_Fadein=1.25,T_TEXTCTRL_Fadeout=1.25",
+    "palette": "C_BUTTON_Palette1=#FF6508,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=81",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "GE Preying Spider Eye GRP",
+    "effect": "On",
+    "settings": "",
+    "palette": "C_BUTTON_Palette1=#FFB34D,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=90",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "GE Preying Spider 150 Mouth GRP",
+    "effect": "On",
+    "settings": "",
+    "palette": "C_BUTTON_Palette1=#FFB34D,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=63",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "GE Flying Bats Jr Eyes GRP",
+    "effect": "On",
+    "settings": "",
+    "palette": "C_BUTTON_Palette1=#FFB34D,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=90",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "GE Flying Bats Wings Up GRP",
+    "effect": "On",
+    "settings": "T_TEXTCTRL_Fadein=.6,T_TEXTCTRL_Fadeout=.6",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=81",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 2000
+  },
+  {
+    "target": "GE Flying Bats Wings Down GRP",
+    "effect": "On",
+    "settings": "T_TEXTCTRL_Fadein=.6,T_TEXTCTRL_Fadeout=.6",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=81",
+    "layer": 0,
+    "startTime": 2000,
+    "endTime": 4000
+  },
+  {
+    "target": "GE Flying Bats Wings Up GRP",
+    "effect": "On",
+    "settings": "T_TEXTCTRL_Fadein=.6,T_TEXTCTRL_Fadeout=.6",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=81",
+    "layer": 0,
+    "startTime": 4000,
+    "endTime": 6000
+  },
+  {
+    "target": "GE Flying Bats Wings Down GRP",
+    "effect": "On",
+    "settings": "T_TEXTCTRL_Fadein=.6,T_TEXTCTRL_Fadeout=.6",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=81",
+    "layer": 0,
+    "startTime": 6000,
+    "endTime": 8000
+  },
+  {
+    "target": "GE Flying Bats Wings Up GRP",
+    "effect": "On",
+    "settings": "T_TEXTCTRL_Fadein=.6,T_TEXTCTRL_Fadeout=.6",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=81",
+    "layer": 0,
+    "startTime": 8000,
+    "endTime": 10000
+  },
+  {
+    "target": "GE Flying Bats Wings Down GRP",
+    "effect": "On",
+    "settings": "T_TEXTCTRL_Fadein=.6,T_TEXTCTRL_Fadeout=.6",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=81",
+    "layer": 0,
+    "startTime": 10000,
+    "endTime": 12000
+  },
+  {
+    "target": "GE Flying Bats Wings Up GRP",
+    "effect": "On",
+    "settings": "T_TEXTCTRL_Fadein=.6,T_TEXTCTRL_Fadeout=.6",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=81",
+    "layer": 0,
+    "startTime": 12000,
+    "endTime": 14000
+  },
+  {
+    "target": "GE Flying Bats Wings Down GRP",
+    "effect": "On",
+    "settings": "T_TEXTCTRL_Fadein=.6,T_TEXTCTRL_Fadeout=.6",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=81",
+    "layer": 0,
+    "startTime": 14000,
+    "endTime": 16000
+  },
+  {
+    "target": "GE Flying Bats Wings Up GRP",
+    "effect": "On",
+    "settings": "T_TEXTCTRL_Fadein=.6,T_TEXTCTRL_Fadeout=.6",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=81",
+    "layer": 0,
+    "startTime": 16000,
+    "endTime": 18000
+  },
+  {
+    "target": "GE Flying Bats Wings Down GRP",
+    "effect": "On",
+    "settings": "T_TEXTCTRL_Fadein=.6,T_TEXTCTRL_Fadeout=.6",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=81",
+    "layer": 0,
+    "startTime": 18000,
+    "endTime": 20000
+  },
+  {
+    "target": "GE Flying Bats Wings Up GRP",
+    "effect": "On",
+    "settings": "T_TEXTCTRL_Fadein=.6,T_TEXTCTRL_Fadeout=.6",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=81",
+    "layer": 0,
+    "startTime": 20000,
+    "endTime": 22000
+  },
+  {
+    "target": "GE Flying Bats Wings Down GRP",
+    "effect": "On",
+    "settings": "T_TEXTCTRL_Fadein=.6,T_TEXTCTRL_Fadeout=.6",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=81",
+    "layer": 0,
+    "startTime": 22000,
+    "endTime": 24000
+  },
+  {
+    "target": "GE Flying Bats Wings Up GRP",
+    "effect": "On",
+    "settings": "T_TEXTCTRL_Fadein=.6,T_TEXTCTRL_Fadeout=.6",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=81",
+    "layer": 0,
+    "startTime": 24000,
+    "endTime": 26000
+  },
+  {
+    "target": "GE Flying Bats Wings Down GRP",
+    "effect": "On",
+    "settings": "T_TEXTCTRL_Fadein=.6,T_TEXTCTRL_Fadeout=.6",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=81",
+    "layer": 0,
+    "startTime": 26000,
+    "endTime": 28000
+  },
+  {
+    "target": "GE Flying Bats Wings Up GRP",
+    "effect": "On",
+    "settings": "T_TEXTCTRL_Fadein=.6,T_TEXTCTRL_Fadeout=.6",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=81",
+    "layer": 0,
+    "startTime": 28000,
+    "endTime": 30000
+  },
+  {
+    "target": "GE Evil Clown",
+    "effect": "Faces",
+    "settings": "E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkFrequency=Slow,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_Phoneme=rest",
+    "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=76",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "GE Evil Clown/Hair",
+    "effect": "On",
+    "settings": "",
+    "palette": "C_BUTTON_Palette1=#76C82B,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=72",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "GE Singing Pumpkin",
+    "effect": "Faces",
+    "settings": "E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkFrequency=Slow,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Pumpkin face,E_CHOICE_Faces_Phoneme=rest,E_CHOICE_Faces_UseState=outline with stem",
+    "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=90",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "GE Singing Pumpkin/Stem",
+    "effect": "On",
+    "settings": "",
+    "palette": "C_BUTTON_Palette1=#76C82B,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=72",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "GE Dark Helmet/Helmet Outside",
+    "effect": "On",
+    "settings": "",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=68",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "GE Dark Helmet/Helmet Inside",
+    "effect": "On",
+    "settings": "",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=40",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "GE Dark Helmet/Eyes",
+    "effect": "On",
+    "settings": "",
+    "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=81",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "GE Dark Helmet/Mouth",
+    "effect": "On",
+    "settings": "",
+    "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=54",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "GE Dark Helmet/Nose",
+    "effect": "On",
+    "settings": "",
+    "palette": "C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=45",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  },
+  {
+    "target": "Elliott - EFL Teddy",
+    "effect": "Faces",
+    "settings": "E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkFrequency=Slow,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_Phoneme=rest,E_CHOICE_Faces_UseState=Teddy RedBow static",
+    "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=90",
+    "layer": 0,
+    "startTime": 0,
+    "endTime": 30000
+  }
+]

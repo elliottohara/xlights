@@ -1,0 +1,97 @@
+{
+  "host": "192.168.0.19",
+  "filename": "Halloween 2026 - static halloween refined.fseq",
+  "sha256": "53f4ec251a943d175898ff41df9c993209f707e21d69c4ed36aa656d9ceb4caf",
+  "bytes": 38358901,
+  "playlist": {
+    "name": "Halloween Overnight",
+    "version": 4,
+    "repeat": 0,
+    "loopCount": 0,
+    "desc": "Refined Halloween ambient loop with Teddy, nightly after the musical show until sunrise.",
+    "random": 0,
+    "globalPauseBetweenSequencesMS": 0,
+    "empty": false,
+    "leadIn": [
+      {
+        "type": "command",
+        "enabled": 1,
+        "playOnce": 0,
+        "command": "Effect Stop",
+        "multisyncCommand": true,
+        "multisyncHosts": "192.168.0.245,192.168.0.201,192.168.0.239",
+        "args": [
+          "background"
+        ],
+        "displayMode": "argsOnly"
+      }
+    ],
+    "mainPlaylist": [
+      {
+        "type": "sequence",
+        "enabled": 1,
+        "playOnce": 0,
+        "sequenceName": "Halloween 2026 - static halloween refined.fseq",
+        "duration": 30
+      }
+    ],
+    "leadOut": [],
+    "playlistInfo": {
+      "leadIn_items": 1,
+      "leadIn_duration": 0,
+      "mainPlaylist_items": 1,
+      "mainPlaylist_duration": 30,
+      "leadOut_items": 0,
+      "leadOut_duration": 0,
+      "total_items": 2,
+      "total_duration": 30
+    }
+  },
+  "schedule": {
+    "day": 7,
+    "enabled": 1,
+    "endDate": "2099-12-31",
+    "endTime": "SunRise",
+    "endTimeOffset": 0,
+    "playlist": "Halloween Overnight",
+    "repeat": 1,
+    "sequence": 0,
+    "startDate": "2026-10-13",
+    "startTime": "22:30:00",
+    "startTimeOffset": 0,
+    "stopType": 1
+  },
+  "musical_playlist_unchanged": true,
+  "routing_unchanged": true,
+  "verified_playback": {
+    "time": "Fri Oct 16 00:34:04 CDT 2026",
+    "status_name": "playing",
+    "current_sequence": "Halloween 2026 - static halloween refined.fseq",
+    "repeat_mode": 1,
+    "scheduler": {
+      "currentPlaylist": {
+        "actualEndTime": 1792154115,
+        "actualEndTimeStr": "Fri Oct 16 @ 07:35 AM",
+        "actualStartTime": 1792128827,
+        "actualStartTimeStr": "Fri Oct 16 @ 12:33 AM",
+        "currentTime": 1792128844,
+        "currentTimeStr": "Fri Oct 16 @ 12:34 AM",
+        "playlistName": "Halloween Overnight",
+        "scheduledEndTime": 1792154115,
+        "scheduledEndTimeStr": "Fri Oct 16 @ 07:35 AM",
+        "scheduledStartTime": 1792121400,
+        "scheduledStartTimeStr": "Thu Oct 15 @ 10:30 PM",
+        "secondsRemaining": 25271,
+        "stopType": 1,
+        "stopTypeStr": "Hard"
+      },
+      "enabled": 1,
+      "nextPlaylist": {
+        "playlistName": "Halloween 2026",
+        "scheduledStartTime": 1792195198,
+        "scheduledStartTimeStr": "Fri Oct 16 @ 06:59 PM - (Everyday)"
+      },
+      "status": "playing"
+    }
+  }
+}

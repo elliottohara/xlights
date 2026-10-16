@@ -108,3 +108,21 @@ Working notes for `Halloween/Sequences/static halloween/static halloween.xsq`. R
 - Static-yard verification correction: changed the four mapped Marquee effects from Per Preview to Single Line using delete/re-add through the API; removed the redundant center-only Marquee. Per Preview outlined only group edges and missed interior shrubs. Existing colors, timing, speed and all other effects preserved.
 - Final group safety check: removed the unconnected EFL Wing - Left reference from EFL - Wings GRP; its stale relative address overlapped the oak. Connected right wing retained; physical models, ports and addresses unchanged.
 - Completed: corrected groups and native effect mappings rendered and verified; uploaded to FPP Master under the existing playlist filename. All 24 yard props verified pixel-by-pixel in musical/static renders; Tune To utility retained. Physical output configuration and nightly schedule unchanged.
+
+
+## Approved ambient redesign and overnight deployment — October 16, 2026
+
+- User approved the refined look and requested Teddy, then approved scheduling and immediate playback.
+- Authored in permanent slot A, branch `codex/static-halloween-refinement`, using xLights 2026.18 automation API. Baseline snapshot commit `8e8e096`; original XSQ also retained in `Backups/Before ambient refinement 20261016/`.
+- Replaced the previous decorative pass with 69 effects: amber/violet architectural motion, sparse moving yard texture, distinct Rosa/Starlord/Reel Max/Baby Grand/MOAW part-bank layers, and readable Halloween characters. Existing timings and both Tune To utility effects retained. Layout geometry, face definitions, controller configuration and physical channel ranges unchanged.
+- Reviewed the Xtreme style report and actual mapped donor buffer/render strings. Reused approved Holy Forever part-bank recipes; exact reference strings are in `Tools/reference-render-styles.json`. The local source-share volume was unavailable.
+- Teddy (`Elliott - EFL Teddy`) uses the exact `Teddy ` face definition (trailing space), `Teddy RedBow static` state, resting mouth and slow automatic blinking. Brown body, forced-color mouth/eyes and red bow preserved.
+- Rebuild with `Tools/build_static_halloween.py`: close the sequence before `--prepare`, then `--build` adds effects through the API, renders, and saves again after rendering. The final save is essential: a pre-render save can write a black FSEQ even while the in-memory preview looks correct.
+- Verified no same-layer overlaps; final FSEQ has 1,200 frames at 25 ms. At 10 seconds, 368 Teddy pixels and 63,658 scene channels are lit. Details and SHA256 are in `Tools/render-verification.json` and `Tools/overnight-deployment.json`.
+- Preview exported to `Preview/static-halloween-refined.mp4` (local, not committed).
+- Deployed to FPP Master 192.168.0.19 as `Halloween 2026 - static halloween refined.fseq`; added playlist `Halloween Overnight`. Nightly schedule starts at 22:30 after the musical show and repeats until `SunRise`, zero offset, hard stop. Uses the existing Halloween season date range and America/Chicago time zone.
+- Verified actual scheduled playback immediately at 00:34 CDT October 16, with sunrise hard stop at 07:35. Musical show playlist, its sunset–22:30 schedule and all Master output routes remained unchanged. FPP validated all playlists.
+- Remote configuration snapshots are in `Backups/Overnight deployment 20261016/`. Previous deployed static FSEQ remains available under its original filename.
+- Kulp01 (.253) remains unreachable; user is aware and will fix it in the morning. This did not block deployment.
+- Runtime workaround: xLights initially could not follow shared config symlinks on slot startup. Used identical regular copies to launch, then restored relative symlinks before commit; no config changes.
+- Unrelated pre-existing slot A Holy Forever/network/media work was preserved in stash `96308ab8c550e5654c7e7271ea99267c80a22bc8` before this task; restore after parking the slot. Do not drop this stash until its contents are verified restored.
