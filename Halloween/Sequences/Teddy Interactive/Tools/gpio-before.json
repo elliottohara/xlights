@@ -1,0 +1,187 @@
+[
+  {
+    "pin": "P1-10",
+    "enabled": true,
+    "mode": "gpio",
+    "desc": "",
+    "debounceTime": 100,
+    "rising": {
+      "command": "FSEQ Effect Start",
+      "multisyncCommand": false,
+      "multisyncHosts": "",
+      "args": [
+        "butterfly-wings",
+        "false",
+        "true"
+      ]
+    },
+    "falling": {
+      "command": "Effect Start",
+      "multisyncCommand": true,
+      "multisyncHosts": "192.168.0.213",
+      "args": [
+        "Grinch O",
+        "",
+        "false",
+        "true",
+        "false",
+        ""
+      ]
+    }
+  },
+  {
+    "pin": "P1-11",
+    "enabled": true,
+    "mode": "gpio_pd",
+    "desc": "White",
+    "debounceTime": 100,
+    "rising": {
+      "command": "FSEQ Effect Start",
+      "multisyncCommand": false,
+      "multisyncHosts": "",
+      "args": [
+        "butterfly-wings",
+        "false",
+        "false"
+      ]
+    }
+  },
+  {
+    "pin": "P1-13",
+    "enabled": true,
+    "mode": "gpio_pu",
+    "desc": "Green",
+    "debounceTime": 100,
+    "rising": {
+      "command": "FSEQ Effect Start",
+      "multisyncCommand": false,
+      "multisyncHosts": "",
+      "args": [
+        "green-wings",
+        "true",
+        "false"
+      ]
+    }
+  },
+  {
+    "pin": "P1-15",
+    "enabled": true,
+    "mode": "gpio_pu",
+    "desc": "Blue",
+    "debounceTime": 100,
+    "rising": {
+      "command": "FSEQ Effect Start",
+      "multisyncCommand": false,
+      "multisyncHosts": "",
+      "args": [
+        "blue-wings",
+        "false",
+        "true"
+      ]
+    },
+    "falling": {
+      "command": "Play Media",
+      "multisyncCommand": false,
+      "multisyncHosts": "",
+      "args": [
+        "dry-fart.mp3",
+        "1",
+        "0"
+      ]
+    }
+  },
+  {
+    "pin": "P1-16",
+    "enabled": true,
+    "mode": "gpio",
+    "desc": "red",
+    "debounceTime": 100,
+    "rising": {
+      "command": "FSEQ Effect Start",
+      "multisyncCommand": false,
+      "multisyncHosts": "",
+      "args": [
+        "red-wings",
+        "false",
+        "true"
+      ]
+    },
+    "falling": {
+      "command": "Effect Start",
+      "multisyncCommand": true,
+      "multisyncHosts": "192.168.0.213",
+      "args": [
+        "Grinch O",
+        "",
+        "false",
+        "true",
+        "false",
+        ""
+      ]
+    }
+  },
+  {
+    "pin": "P1-18",
+    "enabled": true,
+    "mode": "gpio",
+    "desc": "yellow",
+    "debounceTime": 100,
+    "rising": {
+      "command": "FSEQ Effect Start",
+      "multisyncCommand": false,
+      "multisyncHosts": "",
+      "args": [
+        "yellow-wings",
+        "false",
+        "true"
+      ]
+    },
+    "falling": {
+      "command": "Effect Start",
+      "multisyncCommand": true,
+      "multisyncHosts": "192.168.0.213",
+      "args": [
+        "GrinchFart",
+        "",
+        "false",
+        "true",
+        "false",
+        ""
+      ]
+    }
+  },
+  {
+    "pin": "P1-23",
+    "enabled": false,
+    "mode": "gpio",
+    "desc": "",
+    "debounceTime": 100,
+    "rising": {
+      "command": "FSEQ Effect Start",
+      "multisyncCommand": false,
+      "multisyncHosts": "",
+      "args": [
+        "butterfly-wings",
+        "false",
+        "false"
+      ]
+    }
+  },
+  {
+    "pin": "P1-24",
+    "enabled": false,
+    "mode": "gpio_pd",
+    "desc": "",
+    "debounceTime": 100,
+    "rising": {
+      "command": "FSEQ Effect Start",
+      "multisyncCommand": false,
+      "multisyncHosts": "",
+      "args": [
+        "butterfly-wings",
+        "false",
+        "false"
+      ]
+    }
+  }
+]

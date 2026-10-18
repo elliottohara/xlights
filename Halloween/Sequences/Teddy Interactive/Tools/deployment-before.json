@@ -1,0 +1,686 @@
+{
+  "master": {
+    "MQTT": {
+      "configured": false,
+      "connected": false
+    },
+    "branch": "v10.2",
+    "bridging": false,
+    "channelInputsEnabled": false,
+    "channelOutputsEnabled": true,
+    "current_playlist": {
+      "count": "20",
+      "description": "Halloween 2026 using current Halloween controller configuration. All selected sequences ready.",
+      "generated": false,
+      "index": "18",
+      "playlist": "Halloween 2026",
+      "type": "both"
+    },
+    "current_sequence": "Halloween 2026 - Zombie.fseq",
+    "current_song": "Halloween 2026 - Zombie_xTreme_Edit.mp3",
+    "dateStr": "Sun Oct 18",
+    "fppd": "running",
+    "global_pause": {
+      "active": false,
+      "configured": false,
+      "duration_ms": 0
+    },
+    "host_description": "Fpp Master",
+    "host_name": "FPP-Master",
+    "media_playing": true,
+    "milliseconds_elapsed": 18460,
+    "mode": 2,
+    "mode_name": "player",
+    "multisync": true,
+    "next_playlist": {
+      "playlist": "Halloween 2026",
+      "start_time": "Sun Oct 18 @ 06:57 PM - (Everyday)"
+    },
+    "platform": "Raspberry Pi",
+    "powerBad": false,
+    "random": 0,
+    "repeat_mode": 0,
+    "scheduler": {
+      "currentPlaylist": {
+        "playlistName": "Halloween 2026"
+      },
+      "enabled": 1,
+      "nextPlaylist": {
+        "playlistName": "Halloween 2026",
+        "scheduledStartTime": 1792367870,
+        "scheduledStartTimeStr": "Sun Oct 18 @ 06:57 PM - (Everyday)"
+      },
+      "status": "manual"
+    },
+    "seconds_elapsed": "18",
+    "seconds_played": "18",
+    "seconds_remaining": "232",
+    "sensors": [
+      {
+        "formatted": "64.8",
+        "label": "CPU: ",
+        "postfix": "",
+        "prefix": "",
+        "value": 64.757,
+        "valueType": "Temperature"
+      }
+    ],
+    "status": 1,
+    "status_name": "playing",
+    "streamSlots": [
+      {
+        "isBackground": false,
+        "mediaFilename": "Halloween 2026 - Zombie_xTreme_Edit.mp3",
+        "minutesTotal": 4,
+        "nodeDescription": "FPP Media Stream 1",
+        "nodeName": "fppd_stream_1",
+        "secondsElapsed": 18,
+        "secondsRemaining": 232,
+        "secondsTotal": 11,
+        "slot": 1,
+        "status": "playing",
+        "subSecondsElapsed": 46,
+        "subSecondsRemaining": 72
+      },
+      {
+        "isBackground": false,
+        "mediaFilename": "",
+        "nodeDescription": "FPP Media Stream 2",
+        "nodeName": "fppd_stream_2",
+        "slot": 2,
+        "status": "idle"
+      },
+      {
+        "isBackground": false,
+        "mediaFilename": "",
+        "nodeDescription": "FPP Media Stream 3",
+        "nodeName": "fppd_stream_3",
+        "slot": 3,
+        "status": "idle"
+      },
+      {
+        "isBackground": false,
+        "mediaFilename": "",
+        "nodeDescription": "FPP Media Stream 4",
+        "nodeName": "fppd_stream_4",
+        "slot": 4,
+        "status": "idle"
+      },
+      {
+        "isBackground": false,
+        "mediaFilename": "",
+        "nodeDescription": "FPP Media Stream 5",
+        "nodeName": "fppd_stream_5",
+        "slot": 5,
+        "status": "idle"
+      }
+    ],
+    "systemUptimeTotalSeconds": 624648,
+    "time": "Sun Oct 18 18:19:32 CDT 2026",
+    "timeStr": "06:19 PM",
+    "timeStrFull": "06:19:32 PM",
+    "time_elapsed": "00:18",
+    "time_remaining": "03:52",
+    "uptime": "01:56:50",
+    "uptimeDays": 0,
+    "uptimeHours": 1,
+    "uptimeMinutes": 56,
+    "uptimeSeconds": 50,
+    "uptimeStr": "0 days, 1 hours, 56 minutes, 50 seconds",
+    "uptimeTotalSeconds": 7010,
+    "uuid": "M1-100000005ab99614",
+    "version": "10.2-3-g00e5f727c",
+    "volume": 49,
+    "warningInfo": [
+      {
+        "id": 27,
+        "message": "Cannot Ping DDP Channel Data Target 192.168.0.239 FPP-LEFT-YARD"
+      },
+      {
+        "id": 27,
+        "message": "Cannot Ping DDP Channel Data Target 192.168.0.213 FPP-LEFT-YARD"
+      }
+    ],
+    "warnings": [
+      "Cannot Ping DDP Channel Data Target 192.168.0.239 FPP-LEFT-YARD",
+      "Cannot Ping DDP Channel Data Target 192.168.0.213 FPP-LEFT-YARD"
+    ],
+    "wifi": [
+      {
+        "interface": "wlan0",
+        "link": 0,
+        "level": 0,
+        "unit": "dBm",
+        "noise": 0,
+        "desc": "weak"
+      }
+    ],
+    "interfaces": [
+      {
+        "ifindex": 2,
+        "ifname": "eth0",
+        "flags": [
+          "BROADCAST",
+          "MULTICAST",
+          "UP",
+          "LOWER_UP"
+        ],
+        "mtu": 1500,
+        "qdisc": "fq",
+        "operstate": "UP",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "ether",
+        "address": "d8:3a:dd:6b:76:0e",
+        "broadcast": "ff:ff:ff:ff:ff:ff",
+        "addr_info": [
+          {
+            "family": "inet",
+            "local": "192.168.0.19",
+            "prefixlen": 24,
+            "metric": 1024,
+            "broadcast": "192.168.0.255",
+            "scope": "global",
+            "dynamic": true,
+            "label": "eth0",
+            "valid_life_time": 52863,
+            "preferred_life_time": 52863
+          },
+          {
+            "family": "inet6",
+            "local": "fde0:e973:8f23:41df:da3a:ddff:fe6b:760e",
+            "prefixlen": 64,
+            "scope": "global",
+            "dynamic": true,
+            "mngtmpaddr": true,
+            "noprefixroute": true,
+            "valid_life_time": 1780,
+            "preferred_life_time": 1780
+          },
+          {
+            "family": "inet6",
+            "local": "fdb2:c553:f40d:8123:da3a:ddff:fe6b:760e",
+            "prefixlen": 64,
+            "scope": "global",
+            "dynamic": true,
+            "mngtmpaddr": true,
+            "noprefixroute": true,
+            "valid_life_time": 1796,
+            "preferred_life_time": 1796
+          },
+          {
+            "family": "inet6",
+            "local": "fe80::da3a:ddff:fe6b:760e",
+            "prefixlen": 64,
+            "scope": "link",
+            "protocol": "kernel_ll",
+            "valid_life_time": 4294967295,
+            "preferred_life_time": 4294967295
+          }
+        ]
+      },
+      {
+        "ifindex": 3,
+        "ifname": "wlan0",
+        "flags": [
+          "BROADCAST",
+          "MULTICAST"
+        ],
+        "mtu": 1500,
+        "qdisc": "noop",
+        "operstate": "DOWN",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "ether",
+        "address": "d8:3a:dd:6b:76:0f",
+        "broadcast": "ff:ff:ff:ff:ff:ff",
+        "addr_info": [],
+        "wifi": {
+          "interface": "wlan0",
+          "link": 0,
+          "level": 0,
+          "unit": "dBm",
+          "noise": 0,
+          "desc": "weak"
+        }
+      }
+    ],
+    "rebootFlag": 0,
+    "restartFlag": 0,
+    "bootDelayActive": 0,
+    "advancedView": {
+      "HostName": "FPP-Master",
+      "HostDescription": "Fpp Master",
+      "Platform": "Raspberry Pi",
+      "Variant": "Pi 4",
+      "SubPlatform": "Raspberry Pi 4 Model B Rev 1.5",
+      "backgroundColor": "",
+      "Mode": "player",
+      "Logo": "Raspberry_Pi_4.svg",
+      "Version": "10.2-3-g00e5f727c",
+      "Branch": "v10.2",
+      "multisync": true,
+      "OSVersion": "v2026-09 (32bit)",
+      "OSRelease": "Raspbian GNU/Linux 13 (trixie)",
+      "channelRanges": "170292-287093",
+      "majorVersion": 10,
+      "minorVersion": 2,
+      "typeId": 13,
+      "channelInputsEnabled": false,
+      "channelOutputsEnabled": true,
+      "uuid": "M1-100000005ab99614",
+      "Utilization": {
+        "CPU": 58.8235294117647,
+        "Memory": 10.238119004961199,
+        "Uptime": "7 days 5:30",
+        "Disk": {
+          "Media": {
+            "Free": 6172360704,
+            "Total": 62582202368
+          },
+          "Root": {
+            "Free": 6172360704,
+            "Total": 62582202368
+          }
+        }
+      },
+      "Kernel": "6.18.52-v8+",
+      "LocalGitVersion": "00e5f727c",
+      "RemoteGitVersion": "00e5f727c",
+      "UpgradeSource": "github.com",
+      "IPs": [
+        "192.168.0.19"
+      ]
+    },
+    "pluginHeaderIndicators": [],
+    "fppdRestartBlocked": {
+      "blocked": false
+    }
+  },
+  "pixels": {
+    "channelOutputs": [
+      {
+        "channelCount": -1,
+        "enabled": 1,
+        "outputCount": 2,
+        "outputs": [
+          {
+            "portNumber": 0,
+            "protocol": "ws2811",
+            "virtualStrings": [
+              {
+                "brightness": 20,
+                "colorOrder": "RGB",
+                "description": "Elliott - EFL Teddy",
+                "endNulls": 0,
+                "gamma": "1.0",
+                "groupCount": 0,
+                "nullNodes": 0,
+                "pixelCount": 500,
+                "reverse": 0,
+                "startChannel": 214642,
+                "zigZag": 0
+              }
+            ]
+          },
+          {
+            "portNumber": 1,
+            "protocol": "ws2811",
+            "virtualStrings": [
+              {
+                "brightness": 20,
+                "colorOrder": "RGB",
+                "description": "GE Singing Pumpkin",
+                "endNulls": 0,
+                "gamma": "1.0",
+                "groupCount": 0,
+                "nullNodes": 0,
+                "pixelCount": 167,
+                "reverse": 0,
+                "startChannel": 216142,
+                "zigZag": 0
+              }
+            ]
+          },
+          {
+            "portNumber": 2,
+            "virtualStrings": [
+              {
+                "brightness": 20,
+                "colorOrder": "RGB",
+                "description": "",
+                "endNulls": 0,
+                "gamma": "1.0",
+                "groupCount": 0,
+                "nullNodes": 0,
+                "pixelCount": 0,
+                "reverse": 0,
+                "startChannel": 0,
+                "zigZag": 0
+              }
+            ]
+          },
+          {
+            "portNumber": 3,
+            "virtualStrings": [
+              {
+                "brightness": 20,
+                "colorOrder": "RGB",
+                "description": "",
+                "endNulls": 0,
+                "gamma": "1.0",
+                "groupCount": 0,
+                "nullNodes": 0,
+                "pixelCount": 0,
+                "reverse": 0,
+                "startChannel": 0,
+                "zigZag": 0
+              }
+            ]
+          },
+          {
+            "portNumber": 4,
+            "virtualStrings": [
+              {
+                "brightness": 20,
+                "colorOrder": "RGB",
+                "description": "",
+                "endNulls": 0,
+                "gamma": "1.0",
+                "groupCount": 0,
+                "nullNodes": 0,
+                "pixelCount": 0,
+                "reverse": 0,
+                "startChannel": 0,
+                "zigZag": 0
+              }
+            ]
+          },
+          {
+            "portNumber": 5,
+            "virtualStrings": [
+              {
+                "brightness": 20,
+                "colorOrder": "RGB",
+                "description": "",
+                "endNulls": 0,
+                "gamma": "1.0",
+                "groupCount": 0,
+                "nullNodes": 0,
+                "pixelCount": 0,
+                "reverse": 0,
+                "startChannel": 0,
+                "zigZag": 0
+              }
+            ]
+          },
+          {
+            "portNumber": 6,
+            "virtualStrings": [
+              {
+                "brightness": 20,
+                "colorOrder": "RGB",
+                "description": "",
+                "endNulls": 0,
+                "gamma": "1.0",
+                "groupCount": 0,
+                "nullNodes": 0,
+                "pixelCount": 0,
+                "reverse": 0,
+                "startChannel": 0,
+                "zigZag": 0
+              }
+            ]
+          },
+          {
+            "portNumber": 7,
+            "virtualStrings": [
+              {
+                "brightness": 20,
+                "colorOrder": "RGB",
+                "description": "",
+                "endNulls": 0,
+                "gamma": "1.0",
+                "groupCount": 0,
+                "nullNodes": 0,
+                "pixelCount": 0,
+                "reverse": 0,
+                "startChannel": 0,
+                "zigZag": 0
+              }
+            ]
+          },
+          {
+            "portNumber": 8,
+            "virtualStrings": [
+              {
+                "brightness": 20,
+                "colorOrder": "RGB",
+                "description": "",
+                "endNulls": 0,
+                "gamma": "1.0",
+                "groupCount": 0,
+                "nullNodes": 0,
+                "pixelCount": 0,
+                "reverse": 0,
+                "startChannel": 0,
+                "zigZag": 0
+              }
+            ]
+          },
+          {
+            "portNumber": 9,
+            "virtualStrings": [
+              {
+                "brightness": 20,
+                "colorOrder": "RGB",
+                "description": "",
+                "endNulls": 0,
+                "gamma": "1.0",
+                "groupCount": 0,
+                "nullNodes": 0,
+                "pixelCount": 0,
+                "reverse": 0,
+                "startChannel": 0,
+                "zigZag": 0
+              }
+            ]
+          },
+          {
+            "portNumber": 10,
+            "virtualStrings": [
+              {
+                "brightness": 20,
+                "colorOrder": "RGB",
+                "description": "",
+                "endNulls": 0,
+                "gamma": "1.0",
+                "groupCount": 0,
+                "nullNodes": 0,
+                "pixelCount": 0,
+                "reverse": 0,
+                "startChannel": 0,
+                "zigZag": 0
+              }
+            ]
+          },
+          {
+            "portNumber": 11,
+            "virtualStrings": [
+              {
+                "brightness": 20,
+                "colorOrder": "RGB",
+                "description": "",
+                "endNulls": 0,
+                "gamma": "1.0",
+                "groupCount": 0,
+                "nullNodes": 0,
+                "pixelCount": 0,
+                "reverse": 0,
+                "startChannel": 0,
+                "zigZag": 0
+              }
+            ]
+          },
+          {
+            "portNumber": 12,
+            "virtualStrings": [
+              {
+                "brightness": 20,
+                "colorOrder": "RGB",
+                "description": "",
+                "endNulls": 0,
+                "gamma": "1.0",
+                "groupCount": 0,
+                "nullNodes": 0,
+                "pixelCount": 0,
+                "reverse": 0,
+                "startChannel": 0,
+                "zigZag": 0
+              }
+            ]
+          },
+          {
+            "portNumber": 13,
+            "virtualStrings": [
+              {
+                "brightness": 20,
+                "colorOrder": "RGB",
+                "description": "",
+                "endNulls": 0,
+                "gamma": "1.0",
+                "groupCount": 0,
+                "nullNodes": 0,
+                "pixelCount": 0,
+                "reverse": 0,
+                "startChannel": 0,
+                "zigZag": 0
+              }
+            ]
+          },
+          {
+            "portNumber": 14,
+            "virtualStrings": [
+              {
+                "brightness": 20,
+                "colorOrder": "RGB",
+                "description": "",
+                "endNulls": 0,
+                "gamma": "1.0",
+                "groupCount": 0,
+                "nullNodes": 0,
+                "pixelCount": 0,
+                "reverse": 0,
+                "startChannel": 0,
+                "zigZag": 0
+              }
+            ]
+          },
+          {
+            "portNumber": 15,
+            "virtualStrings": [
+              {
+                "brightness": 20,
+                "colorOrder": "RGB",
+                "description": "",
+                "endNulls": 0,
+                "gamma": "1.0",
+                "groupCount": 0,
+                "nullNodes": 0,
+                "pixelCount": 0,
+                "reverse": 0,
+                "startChannel": 0,
+                "zigZag": 0
+              }
+            ]
+          },
+          {
+            "portNumber": 16,
+            "virtualStrings": [
+              {
+                "brightness": 20,
+                "colorOrder": "RGB",
+                "description": "",
+                "endNulls": 0,
+                "gamma": "1.0",
+                "groupCount": 0,
+                "nullNodes": 0,
+                "pixelCount": 0,
+                "reverse": 0,
+                "startChannel": 0,
+                "zigZag": 0
+              }
+            ]
+          },
+          {
+            "portNumber": 17,
+            "virtualStrings": [
+              {
+                "brightness": 20,
+                "colorOrder": "RGB",
+                "description": "",
+                "endNulls": 0,
+                "gamma": "1.0",
+                "groupCount": 0,
+                "nullNodes": 0,
+                "pixelCount": 0,
+                "reverse": 0,
+                "startChannel": 0,
+                "zigZag": 0
+              }
+            ]
+          },
+          {
+            "portNumber": 18,
+            "virtualStrings": [
+              {
+                "brightness": 20,
+                "colorOrder": "RGB",
+                "description": "",
+                "endNulls": 0,
+                "gamma": "1.0",
+                "groupCount": 0,
+                "nullNodes": 0,
+                "pixelCount": 0,
+                "reverse": 0,
+                "startChannel": 0,
+                "zigZag": 0
+              }
+            ]
+          },
+          {
+            "portNumber": 19,
+            "virtualStrings": [
+              {
+                "brightness": 20,
+                "colorOrder": "RGB",
+                "description": "",
+                "endNulls": 0,
+                "gamma": "1.0",
+                "groupCount": 0,
+                "nullNodes": 0,
+                "pixelCount": 0,
+                "reverse": 0,
+                "startChannel": 0,
+                "zigZag": 0
+              }
+            ]
+          },
+          {
+            "expansionType": -1,
+            "portNumber": 20
+          }
+        ],
+        "pinoutVersion": "1.x",
+        "serialInUse": false,
+        "startChannel": 1,
+        "subType": "K8-B",
+        "type": "BBB48String"
+      }
+    ],
+    "status": "OK"
+  },
+  "presets": {
+    "commands": []
+  }
+}

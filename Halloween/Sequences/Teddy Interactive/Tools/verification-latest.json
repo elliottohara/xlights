@@ -1,0 +1,87 @@
+{
+  "command_path_checks": [
+    {
+      "action": "up",
+      "arms": "up",
+      "effect_verified": "Teddy Arms Up",
+      "sound_once_verified": false,
+      "after": "show"
+    },
+    {
+      "action": "left",
+      "arms": "up",
+      "effect_verified": "Teddy Look Left Up",
+      "sound_once_verified": false,
+      "after": "show"
+    },
+    {
+      "action": "right",
+      "arms": "up",
+      "effect_verified": "Teddy Look Right Up",
+      "sound_once_verified": false,
+      "after": "show"
+    },
+    {
+      "action": "red",
+      "arms": "up",
+      "effect_verified": "Teddy Surprised Up",
+      "sound_once_verified": true,
+      "after": "show"
+    },
+    {
+      "action": "down",
+      "arms": "down",
+      "effect_verified": "Teddy Arms Down",
+      "sound_once_verified": false,
+      "after": "show"
+    },
+    {
+      "action": "red",
+      "arms": "down",
+      "effect_verified": "Teddy Surprised Down",
+      "sound_once_verified": true,
+      "after": "show"
+    }
+  ],
+  "gpio_readback_verified": true,
+  "input_levels": {
+    "P1-11": {
+      "available": false,
+      "reason": "This FPP GET route exposes only manually set output values; input levels require a physical-button check."
+    },
+    "P1-13": {
+      "available": false,
+      "reason": "This FPP GET route exposes only manually set output values; input levels require a physical-button check."
+    },
+    "P1-15": {
+      "available": false,
+      "reason": "This FPP GET route exposes only manually set output values; input levels require a physical-button check."
+    },
+    "P1-16": {
+      "available": false,
+      "reason": "This FPP GET route exposes only manually set output values; input levels require a physical-button check."
+    },
+    "P1-18": {
+      "available": false,
+      "reason": "This FPP GET route exposes only manually set output values; input levels require a physical-button check."
+    }
+  },
+  "master_running": true,
+  "physical_button_presses_verified": false,
+  "sound_audibility_verified": false,
+  "controller_pixel_config_unchanged": true,
+  "runtime": {
+    "arms": "down",
+    "pid": 26898,
+    "last_request": "bd0b35deb77941e7a7377edeefbff82b",
+    "status": "show",
+    "last_action": "red",
+    "sound_count": 4,
+    "effect": null,
+    "show_playing": true,
+    "heartbeat": 1792365763.6484792
+  },
+  "gpio_kernel_ownership_verified": true,
+  "repeated_down_no_jump_verified": true,
+  "audio_decode_and_stream_open_verified": true
+}

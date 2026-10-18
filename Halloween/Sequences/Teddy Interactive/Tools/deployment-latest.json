@@ -1,0 +1,241 @@
+{
+  "pi": "192.168.0.133",
+  "teddy": "192.168.0.213",
+  "uploaded": [
+    {
+      "name": "Teddy Arms Down.eseq",
+      "bytes": 1104,
+      "sha256": "74b8ed8eaca30e4612be08794d9bf3aeac488b22ff02b76f539700d854c5d1eb"
+    },
+    {
+      "name": "Teddy Arms Up.eseq",
+      "bytes": 970,
+      "sha256": "d3eecead92989a7ad7622556317cd9c2b6b93c4b5bc0cf99e898f2a8b9e5360b"
+    },
+    {
+      "name": "Teddy Hold Down.eseq",
+      "bytes": 1621,
+      "sha256": "973161772a80da63263c97f1d4e735f09a0b65380e79a8a54684e63dd1770cf2"
+    },
+    {
+      "name": "Teddy Hold Up.eseq",
+      "bytes": 1881,
+      "sha256": "67761af7121b10af97395e043c5cf2158073e96db85da0942d9bc2e2506b2ade"
+    },
+    {
+      "name": "Teddy Look Left Down.eseq",
+      "bytes": 653,
+      "sha256": "d6f6b0c85f4800cec116d47d73b890dd1fc44ab256cadba4cfe31629c4a3b26a"
+    },
+    {
+      "name": "Teddy Look Left Up.eseq",
+      "bytes": 836,
+      "sha256": "c4eec65e144f7ea200cd38aa33ddb3d15bc14c2e6d6369ac263781254a739d40"
+    },
+    {
+      "name": "Teddy Look Right Down.eseq",
+      "bytes": 631,
+      "sha256": "12cafc89cf1067c490a07a56f706feedb67f51de36582646e5e2ec23930716de"
+    },
+    {
+      "name": "Teddy Look Right Up.eseq",
+      "bytes": 813,
+      "sha256": "d2b0661c207c796d2aec288b0d5c85048312a2ff3bacdce4ad1c6cbd0c1d5a16"
+    },
+    {
+      "name": "Teddy Surprised Down.eseq",
+      "bytes": 685,
+      "sha256": "ab5a88b0e0b009fd3c24ac6e7827668f7ad56a6b257e35b64bdaf7ec31660609"
+    },
+    {
+      "name": "Teddy Surprised Up.eseq",
+      "bytes": 874,
+      "sha256": "b643ac2c1fcfcc4f1430936b7789ed5cdd6867ad67f6d6e00107f6498cc2fc7d"
+    }
+  ],
+  "gpio": [
+    {
+      "pin": "P1-10",
+      "enabled": false,
+      "mode": "gpio",
+      "desc": "Unused legacy wing trigger",
+      "debounceTime": 100,
+      "rising": [],
+      "falling": [],
+      "hold": []
+    },
+    {
+      "pin": "P1-11",
+      "enabled": true,
+      "mode": "gpio_pd",
+      "desc": "White - Teddy arms up",
+      "debounceTime": 100,
+      "rising": [
+        {
+          "command": "Run Script",
+          "args": [
+            "teddy_controls.sh",
+            "up",
+            ""
+          ],
+          "multisyncCommand": false,
+          "multisyncHosts": ""
+        }
+      ],
+      "falling": [],
+      "hold": [],
+      "holdTime": 0,
+      "debounceEdge": "both",
+      "reEnableMode": "timed",
+      "reEnableDelay": 1100,
+      "ledPin": ""
+    },
+    {
+      "pin": "P1-13",
+      "enabled": true,
+      "mode": "gpio_pu",
+      "desc": "Green - Teddy arms down",
+      "debounceTime": 100,
+      "rising": [],
+      "falling": [
+        {
+          "command": "Run Script",
+          "args": [
+            "teddy_controls.sh",
+            "down",
+            ""
+          ],
+          "multisyncCommand": false,
+          "multisyncHosts": ""
+        }
+      ],
+      "hold": [],
+      "holdTime": 0,
+      "debounceEdge": "both",
+      "reEnableMode": "timed",
+      "reEnableDelay": 1100,
+      "ledPin": ""
+    },
+    {
+      "pin": "P1-15",
+      "enabled": true,
+      "mode": "gpio_pu",
+      "desc": "Blue - Teddy look left",
+      "debounceTime": 100,
+      "rising": [],
+      "falling": [
+        {
+          "command": "Run Script",
+          "args": [
+            "teddy_controls.sh",
+            "left",
+            ""
+          ],
+          "multisyncCommand": false,
+          "multisyncHosts": ""
+        }
+      ],
+      "hold": [],
+      "holdTime": 0,
+      "debounceEdge": "both",
+      "reEnableMode": "timed",
+      "reEnableDelay": 1100,
+      "ledPin": ""
+    },
+    {
+      "pin": "P1-16",
+      "enabled": true,
+      "mode": "gpio_pu",
+      "desc": "Red - Teddy surprise + fart",
+      "debounceTime": 100,
+      "rising": [],
+      "falling": [
+        {
+          "command": "Run Script",
+          "args": [
+            "teddy_controls.sh",
+            "red",
+            ""
+          ],
+          "multisyncCommand": false,
+          "multisyncHosts": ""
+        }
+      ],
+      "hold": [],
+      "holdTime": 0,
+      "debounceEdge": "both",
+      "reEnableMode": "timed",
+      "reEnableDelay": 2200,
+      "ledPin": ""
+    },
+    {
+      "pin": "P1-18",
+      "enabled": true,
+      "mode": "gpio_pu",
+      "desc": "Yellow - Teddy look right",
+      "debounceTime": 100,
+      "rising": [],
+      "falling": [
+        {
+          "command": "Run Script",
+          "args": [
+            "teddy_controls.sh",
+            "right",
+            ""
+          ],
+          "multisyncCommand": false,
+          "multisyncHosts": ""
+        }
+      ],
+      "hold": [],
+      "holdTime": 0,
+      "debounceEdge": "both",
+      "reEnableMode": "timed",
+      "reEnableDelay": 1100,
+      "ledPin": ""
+    },
+    {
+      "pin": "P1-23",
+      "enabled": false,
+      "mode": "gpio",
+      "desc": "",
+      "debounceTime": 100,
+      "rising": {
+        "command": "FSEQ Effect Start",
+        "multisyncCommand": false,
+        "multisyncHosts": "",
+        "args": [
+          "butterfly-wings",
+          "false",
+          "false"
+        ]
+      }
+    },
+    {
+      "pin": "P1-24",
+      "enabled": false,
+      "mode": "gpio_pd",
+      "desc": "",
+      "debounceTime": 100,
+      "rising": {
+        "command": "FSEQ Effect Start",
+        "multisyncCommand": false,
+        "multisyncHosts": "",
+        "args": [
+          "butterfly-wings",
+          "false",
+          "false"
+        ]
+      }
+    }
+  ],
+  "startup_preset": true,
+  "master_kept_running": true,
+  "controller_pixel_config_unchanged": true,
+  "controller_script": {
+    "name": "teddy_control.py",
+    "bytes": 6468,
+    "sha256": "52aae9d410e903e01a893fa6e7ade691b5847a118fca9de0dbb69304cb00ed90"
+  },
+  "complete": true
+}

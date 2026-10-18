@@ -1,0 +1,1214 @@
+<?xml version="1.0"?>
+<xsequence BaseChannel="0" ChanCtrlBasic="0" ChanCtrlColor="0" FixedPointTiming="1" ModelBlending="true">
+  <head>
+    <version>2026.18</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website></author-website>
+    <song></song>
+    <artist></artist>
+    <album></album>
+    <MusicURL></MusicURL>
+    <comment></comment>
+    <sequenceTiming>25 ms</sequenceTiming>
+    <sequenceType>Animation</sequenceType>
+    <mediaFile></mediaFile>
+    <sequenceDuration>6.000</sequenceDuration>
+    <imageDir></imageDir>
+  </head>
+  <ColorPalettes>
+    <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1</ColorPalette>
+  </ColorPalettes>
+  <EffectDB>
+    <Effect>E_CHOICE_State_Color=Graduate,E_CHOICE_State_Mode=Default,E_CHOICE_State_State=arms,E_CHOICE_State_StateDefinition=arms,E_SLIDER_State_Fade_Time=0</Effect>
+    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_Phoneme=rest,E_CHOICE_Faces_UseState=Teddy RedBow</Effect>
+  </EffectDB>
+  <SequenceMedia />
+  <DataLayers>
+    <DataLayer lor_params="0" channel_offset="0" num_channels="0" num_frames="0" data="&lt;rendered: erase-mode>" source="&lt;auto-generated>" name="Nutcracker" />
+  </DataLayers>
+  <DisplayElements>
+    <Element collapsed="false" type="timing" name="New Timing" visible="true" views=",Master View,Faces,Snowflakes,Everything,Default,Arches,Matrixes,Yard Elements,Effects,Toni,Robbie,Spinners,HD props,Song: 01 - Abracadabra,Song: 03 - This Is Halloween,Song: 12-The-Monster-_feat.-Rihanna_,Song: Bad Romance (Extra Clean),Song: Dracula,Song: Ghostbusters,Song: Ghostbusters 2,Song: GreatestShowWorking 2,Song: Halfway To Hell,Song: I Knew It I Knew You,Song: Insomnia,Song: Monster Mash,Song: Skrillex Medley,Song: Something In The Way,Song: The Dead Dance,Song: The Devil Went Down to Georgia,Song: The Imperial March,Song: Thriller Xtreme Remap,Song: Titanium,Song: Titanium 2,Song: We Will Rock You,Song: Zombie,Song: static halloween,Song: tuneto-halloween" active="true" />
+    <Element collapsed="false" type="model" name="Matrixes" visible="true" />
+    <Element collapsed="false" type="model" name="Elliott - EFL Teddy" visible="true" />
+    <Element collapsed="false" type="model" name="GE Evil Clown" visible="true" />
+    <Element collapsed="false" type="model" name="GE Grinch Talk" visible="true" />
+    <Element collapsed="false" type="model" name="GE Hanging Elf 4ft" visible="true" />
+    <Element collapsed="false" type="model" name="GE Singing Pumpkin" visible="true" />
+    <Element collapsed="false" type="model" name="Matrix-Garage Window" visible="true" />
+    <Element collapsed="false" type="model" name="Matrix - Entry" visible="true" />
+    <Element collapsed="false" type="model" name="Matrix - Downstairs Window" visible="true" />
+    <Element collapsed="false" type="model" name="Tune To" visible="true" />
+    <Element collapsed="false" type="model" name="2nd floor far right" visible="true" />
+    <Element collapsed="false" type="model" name="Arch - 1" visible="true" />
+    <Element collapsed="false" type="model" name="Arch - 2" visible="true" />
+    <Element collapsed="false" type="model" name="Arch - 3" visible="true" />
+    <Element collapsed="false" type="model" name="Arch - 4" visible="true" />
+    <Element collapsed="false" type="model" name="Arches - All" visible="true" />
+    <Element collapsed="false" type="model" name="Arches - Bottom" visible="true" />
+    <Element collapsed="false" type="model" name="Arches - Middle" visible="true" />
+    <Element collapsed="false" type="model" name="Boscoyo ChromaStone 1" visible="true" />
+    <Element collapsed="false" type="model" name="Boscoyo ChromaStone 3" visible="true" />
+    <Element collapsed="false" type="model" name="Boscoyo ChromaStone 5" visible="true" />
+    <Element collapsed="false" type="model" name="Boscoyo Snowflake 24 - Left 1" visible="true" />
+    <Element collapsed="false" type="model" name="Boscoyo Snowflake 24 - Left 3" visible="true" />
+    <Element collapsed="false" type="model" name="Boscoyo Snowflake 24 - Middle 1" visible="true" />
+    <Element collapsed="false" type="model" name="Boscoyo Snowflake 24 - Middle 2" visible="true" />
+    <Element collapsed="false" type="model" name="Boscoyo Snowflake 24 - Middle 3" visible="true" />
+    <Element collapsed="false" type="model" name="Boscoyo Snowflake 24 - Middle 4" visible="true" />
+    <Element collapsed="false" type="model" name="Boscoyo Snowflake 24 - Right 1" visible="true" />
+    <Element collapsed="false" type="model" name="Boscoyo Snowflake 24 - Right 2" visible="true" />
+    <Element collapsed="false" type="model" name="Boscoyo Snowflake 24 - Right 3" visible="true" />
+    <Element collapsed="false" type="model" name="Boscoyo Snowflake 24 - Wall 1" visible="true" />
+    <Element collapsed="false" type="model" name="Boscoyo Snowflake 24 - Wall 2" visible="true" />
+    <Element collapsed="false" type="model" name="Boscoyo Snowflake 24 - Wall 3" visible="true" />
+    <Element collapsed="false" type="model" name="Boscoyo Snowflake 24 - Wall 4" visible="true" />
+    <Element collapsed="false" type="model" name="Boscoyo Snowflake 36 - Bottom Left" visible="true" />
+    <Element collapsed="false" type="model" name="Boscoyo Snowflake 36 - Bottom Right" visible="true" />
+    <Element collapsed="false" type="model" name="Boscoyo Snowflake 36 - Middle Left" visible="true" />
+    <Element collapsed="false" type="model" name="Boscoyo Snowflake 36 - Middle Right" visible="true" />
+    <Element collapsed="false" type="model" name="Boscoyo Snowflake 36 - Right" visible="true" />
+    <Element collapsed="false" type="model" name="Boscoyo Snowflake 36 - Top" visible="true" />
+    <Element collapsed="false" type="model" name="Boscoyo Snowflake 36 - Top Left" visible="true" />
+    <Element collapsed="false" type="model" name="Boscoyo Snowflake 36 - Top Right" visible="true" />
+    <Element collapsed="false" type="model" name="Candy Cane - 1" visible="true" />
+    <Element collapsed="false" type="model" name="Candy Cane - 2" visible="true" />
+    <Element collapsed="false" type="model" name="Candy Cane - 3" visible="true" />
+    <Element collapsed="false" type="model" name="Candy Cane - 4" visible="true" />
+    <Element collapsed="false" type="model" name="Canes" visible="true" />
+    <Element collapsed="false" type="model" name="Colum Shrubs" visible="true" />
+    <Element collapsed="false" type="model" name="Column Center" visible="true" />
+    <Element collapsed="false" type="model" name="Column Left" visible="true" />
+    <Element collapsed="false" type="model" name="Column Matrix C" visible="true" />
+    <Element collapsed="false" type="model" name="Column Matrix L" visible="true" />
+    <Element collapsed="false" type="model" name="Column Matrix R" visible="true" />
+    <Element collapsed="false" type="model" name="Column Matrixes" visible="true" />
+    <Element collapsed="false" type="model" name="Column Right" visible="true" />
+    <Element collapsed="false" type="model" name="Colums" visible="true" />
+    <Element collapsed="false" type="model" name="Downstairs Matrixes" visible="true" />
+    <Element collapsed="false" type="model" name="EFL - Wings GRP" visible="true" />
+    <Element collapsed="false" type="model" name="EFL Wing - Left" visible="true" />
+    <Element collapsed="false" type="model" name="EFL Wing - Right" visible="true" />
+    <Element collapsed="false" type="model" name="Elliott - BMOAW Left" visible="true" />
+    <Element collapsed="false" type="model" name="Elliott - BMOAW Right" visible="true" />
+    <Element collapsed="false" type="model" name="Elliott - Driveway" visible="true" />
+    <Element collapsed="false" type="model" name="Elliott - Flakes GRP" visible="true" />
+    <Element collapsed="false" type="model" name="Elliott - GE Flake N 1" visible="true" />
+    <Element collapsed="false" type="model" name="Elliott - GE Flake N 2" visible="true" />
+    <Element collapsed="false" type="model" name="Elliott - GE Mini Grand Illusion" visible="true" />
+    <Element collapsed="false" type="model" name="Elliott - GE Reel Max 1" visible="true" />
+    <Element collapsed="false" type="model" name="Elliott - GE Reel Max 2" visible="true" />
+    <Element collapsed="false" type="model" name="Elliott - GE Rosa Grande 1" visible="true" />
+    <Element collapsed="false" type="model" name="Elliott - GE Starlord 1" visible="true" />
+    <Element collapsed="false" type="model" name="Elliott - GE Starlord 2" visible="true" />
+    <Element collapsed="false" type="model" name="Elliott - House" visible="true" />
+    <Element collapsed="false" type="model" name="Elliott - Icicles" visible="true" />
+    <Element collapsed="false" type="model" name="Elliott - Roof" visible="true" />
+    <Element collapsed="false" type="model" name="Elliott - Roof Garage L" visible="true" />
+    <Element collapsed="false" type="model" name="Elliott - Roof Garage R" visible="true" />
+    <Element collapsed="false" type="model" name="Elliott - Windows" visible="true" />
+    <Element collapsed="false" type="model" name="Eves GRP" visible="true" />
+    <Element collapsed="false" type="model" name="Flake - Spokes GRP" visible="true" />
+    <Element collapsed="false" type="model" name="Flakes Arms GRP" visible="true" />
+    <Element collapsed="false" type="model" name="Flakes GRP" visible="true" />
+    <Element collapsed="false" type="model" name="Flakes Outline All GRP" visible="true" />
+    <Element collapsed="false" type="model" name="Flakes Spokes All GRP" visible="true" />
+    <Element collapsed="false" type="model" name="Flames" visible="true" />
+    <Element collapsed="false" type="model" name="Fog" visible="true" />
+    <Element collapsed="false" type="model" name="GE Baby Grand Illusion Flower GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Baby Grand Illusion GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Baby Grand Illusion Hook CCW GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Baby Grand Illusion Hook CW GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Baby Grand Illusion Rings GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Baby Grand Illusion Snowflake Center GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Baby Grand Illusion Snowflake Filled GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Baby Grand Illusion Snowflake Spokes GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Baby Grand Illusion Spokes Even GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Baby Grand Illusion Spokes GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Baby Grand Illusion Spokes Odd GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Baby Grand Illusion Whirlwig Even GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Baby Grand Illusion Whirlwig Odd GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Flake A 1" visible="true" />
+    <Element collapsed="false" type="model" name="GE Flake A 2" visible="true" />
+    <Element collapsed="false" type="model" name="GE Flake A Spokes" visible="true" />
+    <Element collapsed="false" type="model" name="GE Flake Arms GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Flying Bat All GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Flying Bat Jr" visible="true" />
+    <Element collapsed="false" type="model" name="GE Flying Bat Jr-2" visible="true" />
+    <Element collapsed="false" type="model" name="GE Flying Bat Jr-3" visible="true" />
+    <Element collapsed="false" type="model" name="GE Flying Bat Jr-4" visible="true" />
+    <Element collapsed="false" type="model" name="GE Flying Bats Jr Eyes GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Flying Bats Wings Down GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Flying Bats Wings Up GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Leg Lamp 48T-158P" visible="true" />
+    <Element collapsed="false" type="model" name="GE MOAW Diamonds GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE MOAW GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE MOAW Hook CCW GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE MOAW Hook CW GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE MOAW Rings Even GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE MOAW Rings GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE MOAW Rings Odd GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE MOAW Sm Diamonds GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE MOAW Snowflake Spoke GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE MOAW Spokes Even GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE MOAW Spokes GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE MOAW Spokes Odd GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE MOAW Swag GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE MOAW Zig Zag GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Merry Christmas" visible="true" />
+    <Element collapsed="false" type="model" name="GE Preying Spider 150 1" visible="true" />
+    <Element collapsed="false" type="model" name="GE Preying Spider 150 2" visible="true" />
+    <Element collapsed="false" type="model" name="GE Preying Spider 150 3" visible="true" />
+    <Element collapsed="false" type="model" name="GE Preying Spider 150 4" visible="true" />
+    <Element collapsed="false" type="model" name="GE Preying Spider 150 Cross GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Preying Spider 150 GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Preying Spider 150 Leg GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Preying Spider 150 Mouth GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Preying Spider Body GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Preying Spider Crawly GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Preying Spider Eye GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Preying Spiders ALL GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Reel Max Arcs Even GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Reel Max Arcs Odd GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Reel Max Arrows GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Reel Max Bulbs GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Reel Max Bulbs II GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Reel Max Chevron Rings GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Reel Max Chevrons GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Reel Max Circles Inner GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Reel Max Circles Outer GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Reel Max GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Reel Max Inner Triangles GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Reel Max Inner Triangles II GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Reel Max Kites GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Reel Max Outer Triangles GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Reel Max Outer Triangles II GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Reel Max Spider Bodies GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Reel Max Spider Eyes GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Reel Max Spider Legs GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Reel Max Spider Mouths GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Reel Max Spiders All GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Reel Max Spokes GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Reel MaxChevrons II GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Rosa Grande  Spoke Mini GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Rosa Grande Feather Long Even GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Rosa Grande Feather Long GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Rosa Grande Feather Long Odd GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Rosa Grande Feather Short Even GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Rosa Grande Feather Short GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Rosa Grande Feather Short Odd GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Rosa Grande Flower GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Rosa Grande GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Rosa Grande Hook CCW GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Rosa Grande Hook CW GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Rosa Grande Outer Ball GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Rosa Grande Outer Ring GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Rosa Grande Ribbon GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Rosa Grande Ring GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Rosa Grande Snowflake Spoke GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Rosa Grande Spoke GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Rosa Grande Torch Long Even GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Rosa Grande Torch Long GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Rosa Grande Torch Long Odd GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Rosa Grande Torch Short Even GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Rosa Grande Torch Short GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Rosa Grande Torch Short Odd GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Rosa Grande Wavy GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Rosa Grande Web Ring GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Rosa Grande Web Spoke GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Rudolf Deer" visible="true" />
+    <Element collapsed="false" type="model" name="GE Rudolf Deer-2" visible="true" />
+    <Element collapsed="false" type="model" name="GE Rudolf Deer-3" visible="true" />
+    <Element collapsed="false" type="model" name="GE Rudolf Deer-4" visible="true" />
+    <Element collapsed="false" type="model" name="GE Rudolf Deer-5" visible="true" />
+    <Element collapsed="false" type="model" name="GE Santa Sleigh" visible="true" />
+    <Element collapsed="false" type="model" name="GE Starlord Cross GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Starlord Diamond GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Starlord Feather Even GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Starlord Feather Odd GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Starlord GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Starlord Plunger All GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Starlord Plunger LG GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Starlord Plunger SM GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Starlord Ribbon GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Starlord Spoke GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Starlord Square GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Starlord Star GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Starlord Z All GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Starlord Z Left GRP" visible="true" />
+    <Element collapsed="false" type="model" name="GE Starlord Z Right GRP" visible="true" />
+    <Element collapsed="false" type="model" name="Garage" visible="true" />
+    <Element collapsed="false" type="model" name="Garage Left Bottom" visible="true" />
+    <Element collapsed="false" type="model" name="Grand Illusion Hooks CW" visible="true" />
+    <Element collapsed="false" type="model" name="House Left" visible="true" />
+    <Element collapsed="false" type="model" name="House Outline" visible="true" />
+    <Element collapsed="false" type="model" name="House Right" visible="true" />
+    <Element collapsed="false" type="model" name="Icicles" visible="true" />
+    <Element collapsed="false" type="model" name="Icicles - Gutters" visible="true" />
+    <Element collapsed="false" type="model" name="Icicles - Top Entry" visible="true" />
+    <Element collapsed="false" type="model" name="Icicles - Top Left" visible="true" />
+    <Element collapsed="false" type="model" name="Icicles - Top Right" visible="true" />
+    <Element collapsed="false" type="model" name="Large Spiral Tree - 01" visible="true" />
+    <Element collapsed="false" type="model" name="Large Spiral Tree - 02" visible="true" />
+    <Element collapsed="false" type="model" name="Large Spiral Tree - 03" visible="true" />
+    <Element collapsed="false" type="model" name="Large Spiral Tree - 04" visible="true" />
+    <Element collapsed="false" type="model" name="Large Spiral Tree - 05" visible="true" />
+    <Element collapsed="false" type="model" name="Large Spiral Tree - 06" visible="true" />
+    <Element collapsed="false" type="model" name="Large Spiral Tree - 07" visible="true" />
+    <Element collapsed="false" type="model" name="Large Spiral Tree - 08" visible="true" />
+    <Element collapsed="false" type="model" name="Large Spiral Tree - 09" visible="true" />
+    <Element collapsed="false" type="model" name="Large Spiral Tree - 10" visible="true" />
+    <Element collapsed="false" type="model" name="Large Spiral Tree - 11" visible="true" />
+    <Element collapsed="false" type="model" name="Large Spiral Tree - 12" visible="true" />
+    <Element collapsed="false" type="model" name="Large Spiral Trees" visible="true" />
+    <Element collapsed="false" type="model" name="Matrix - C1" visible="true" />
+    <Element collapsed="false" type="model" name="Matrix - C2" visible="true" />
+    <Element collapsed="false" type="model" name="Matrix - C3" visible="true" />
+    <Element collapsed="false" type="model" name="Matrix - C4" visible="true" />
+    <Element collapsed="false" type="model" name="Matrix - C5" visible="true" />
+    <Element collapsed="false" type="model" name="Matrix - C6" visible="true" />
+    <Element collapsed="false" type="model" name="Matrix - Lantana" visible="true" />
+    <Element collapsed="false" type="model" name="Mega Tree" visible="true" />
+    <Element collapsed="false" type="model" name="Mega Tree GRP" visible="true" />
+    <Element collapsed="false" type="model" name="Projector" visible="true" />
+    <Element collapsed="false" type="model" name="Roof" visible="true" />
+    <Element collapsed="false" type="model" name="Roof  - Peak" visible="true" />
+    <Element collapsed="false" type="model" name="Roof - Garage Ridge" visible="true" />
+    <Element collapsed="false" type="model" name="Roof - House Left" visible="true" />
+    <Element collapsed="false" type="model" name="Roof - Left Ridge" visible="true" />
+    <Element collapsed="false" type="model" name="Roof - Line Right" visible="true" />
+    <Element collapsed="false" type="model" name="Roof - Middle Ridge" visible="true" />
+    <Element collapsed="false" type="model" name="Roof - Middle Ridge Line" visible="true" />
+    <Element collapsed="false" type="model" name="Roof - Right Small" visible="true" />
+    <Element collapsed="false" type="model" name="Roof - Top Center" visible="true" />
+    <Element collapsed="false" type="model" name="Roof - Top Left" visible="true" />
+    <Element collapsed="false" type="model" name="Shrub Center" visible="true" />
+    <Element collapsed="false" type="model" name="Shrub Left" visible="true" />
+    <Element collapsed="false" type="model" name="Shrub Right" visible="true" />
+    <Element collapsed="false" type="model" name="Singing Bulb - Center" visible="true" />
+    <Element collapsed="false" type="model" name="Singing Bulb - Left" visible="true" />
+    <Element collapsed="false" type="model" name="Singing Bulb - Right" visible="true" />
+    <Element collapsed="false" type="model" name="SingingTree" visible="true" />
+    <Element collapsed="false" type="model" name="Snowflakes" visible="true" />
+    <Element collapsed="false" type="model" name="Snowflakes - Circles All" visible="true" />
+    <Element collapsed="false" type="model" name="Spinners" visible="true" />
+    <Element collapsed="false" type="model" name="Spinners - All" visible="true" />
+    <Element collapsed="false" type="model" name="Stars" visible="true" />
+    <Element collapsed="false" type="model" name="Tombsone Small" visible="true" />
+    <Element collapsed="false" type="model" name="Tombsone Small-2" visible="true" />
+    <Element collapsed="false" type="model" name="Tombsone large" visible="true" />
+    <Element collapsed="false" type="model" name="Tombsone large-2" visible="true" />
+    <Element collapsed="false" type="model" name="Tombstones" visible="true" />
+    <Element collapsed="false" type="model" name="Toni - Penguin 1" visible="true" />
+    <Element collapsed="false" type="model" name="Toni - Penguin 2" visible="true" />
+    <Element collapsed="false" type="model" name="Tree - Oak" visible="true" />
+    <Element collapsed="false" type="model" name="Tree Topper" visible="true" />
+    <Element collapsed="false" type="model" name="Trees GRP" visible="true" />
+    <Element collapsed="false" type="model" name="Verts" visible="true" />
+    <Element collapsed="false" type="model" name="Wall - Bedroom" visible="true" />
+    <Element collapsed="false" type="model" name="Wall - Garage Top" visible="true" />
+    <Element collapsed="false" type="model" name="Wall - Middle Top" visible="true" />
+    <Element collapsed="false" type="model" name="Wall - Office" visible="true" />
+    <Element collapsed="false" type="model" name="Wall - Office Top" visible="true" />
+    <Element collapsed="false" type="model" name="Whole Scene" visible="true" />
+    <Element collapsed="false" type="model" name="Whole Scene - For fades" visible="true" />
+    <Element collapsed="false" type="model" name="Whole Scene Rosa Centered" visible="true" />
+    <Element collapsed="false" type="model" name="Whole Scene w Matrixes" visible="true" />
+    <Element collapsed="false" type="model" name="Window - Bottom Left" visible="true" />
+    <Element collapsed="false" type="model" name="Window - Play Room" visible="true" />
+    <Element collapsed="false" type="model" name="Windows" visible="true" />
+    <Element collapsed="false" type="model" name="GE Dark Helmet" visible="true" />
+  </DisplayElements>
+  <ElementEffects>
+    <Element type="timing" name="New Timing">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Matrixes">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Elliott - EFL Teddy">
+      <EffectLayer>
+        <Effect ref="0" name="State" startTime="0" endTime="6000" palette="0" />
+      </EffectLayer>
+      <EffectLayer />
+      <EffectLayer />
+      <EffectLayer>
+        <Effect ref="1" name="Faces" startTime="0" endTime="6000" palette="0" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="GE Evil Clown">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Grinch Talk">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Hanging Elf 4ft">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Singing Pumpkin">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Matrix-Garage Window">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Matrix - Entry">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Matrix - Downstairs Window">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Tune To">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="2nd floor far right">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Arch - 1">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Arch - 2">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Arch - 3">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Arch - 4">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Arches - All">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Arches - Bottom">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Arches - Middle">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Boscoyo ChromaStone 1">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Boscoyo ChromaStone 3">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Boscoyo ChromaStone 5">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Boscoyo Snowflake 24 - Left 1">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Boscoyo Snowflake 24 - Left 3">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Boscoyo Snowflake 24 - Middle 1">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Boscoyo Snowflake 24 - Middle 2">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Boscoyo Snowflake 24 - Middle 3">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Boscoyo Snowflake 24 - Middle 4">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Boscoyo Snowflake 24 - Right 1">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Boscoyo Snowflake 24 - Right 2">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Boscoyo Snowflake 24 - Right 3">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Boscoyo Snowflake 24 - Wall 1">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Boscoyo Snowflake 24 - Wall 2">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Boscoyo Snowflake 24 - Wall 3">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Boscoyo Snowflake 24 - Wall 4">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Boscoyo Snowflake 36 - Bottom Left">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Boscoyo Snowflake 36 - Bottom Right">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Boscoyo Snowflake 36 - Middle Left">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Boscoyo Snowflake 36 - Middle Right">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Boscoyo Snowflake 36 - Right">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Boscoyo Snowflake 36 - Top">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Boscoyo Snowflake 36 - Top Left">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Boscoyo Snowflake 36 - Top Right">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Candy Cane - 1">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Candy Cane - 2">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Candy Cane - 3">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Candy Cane - 4">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Canes">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Colum Shrubs">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Column Center">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Column Left">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Column Matrix C">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Column Matrix L">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Column Matrix R">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Column Matrixes">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Column Right">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Colums">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Downstairs Matrixes">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="EFL - Wings GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="EFL Wing - Left">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="EFL Wing - Right">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Elliott - BMOAW Left">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Elliott - BMOAW Right">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Elliott - Driveway">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Elliott - Flakes GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Elliott - GE Flake N 1">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Elliott - GE Flake N 2">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Elliott - GE Mini Grand Illusion">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Elliott - GE Reel Max 1">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Elliott - GE Reel Max 2">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Elliott - GE Rosa Grande 1">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Elliott - GE Starlord 1">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Elliott - GE Starlord 2">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Elliott - House">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Elliott - Icicles">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Elliott - Roof">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Elliott - Roof Garage L">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Elliott - Roof Garage R">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Elliott - Windows">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Eves GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Flake - Spokes GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Flakes Arms GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Flakes GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Flakes Outline All GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Flakes Spokes All GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Flames">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Fog">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Baby Grand Illusion Flower GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Baby Grand Illusion GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Baby Grand Illusion Hook CCW GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Baby Grand Illusion Hook CW GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Baby Grand Illusion Rings GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Baby Grand Illusion Snowflake Center GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Baby Grand Illusion Snowflake Filled GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Baby Grand Illusion Snowflake Spokes GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Baby Grand Illusion Spokes Even GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Baby Grand Illusion Spokes GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Baby Grand Illusion Spokes Odd GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Baby Grand Illusion Whirlwig Even GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Baby Grand Illusion Whirlwig Odd GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Flake A 1">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Flake A 2">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Flake A Spokes">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Flake Arms GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Flying Bat All GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Flying Bat Jr">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Flying Bat Jr-2">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Flying Bat Jr-3">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Flying Bat Jr-4">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Flying Bats Jr Eyes GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Flying Bats Wings Down GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Flying Bats Wings Up GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Leg Lamp 48T-158P">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE MOAW Diamonds GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE MOAW GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE MOAW Hook CCW GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE MOAW Hook CW GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE MOAW Rings Even GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE MOAW Rings GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE MOAW Rings Odd GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE MOAW Sm Diamonds GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE MOAW Snowflake Spoke GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE MOAW Spokes Even GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE MOAW Spokes GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE MOAW Spokes Odd GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE MOAW Swag GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE MOAW Zig Zag GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Merry Christmas">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Preying Spider 150 1">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Preying Spider 150 2">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Preying Spider 150 3">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Preying Spider 150 4">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Preying Spider 150 Cross GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Preying Spider 150 GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Preying Spider 150 Leg GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Preying Spider 150 Mouth GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Preying Spider Body GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Preying Spider Crawly GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Preying Spider Eye GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Preying Spiders ALL GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Reel Max Arcs Even GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Reel Max Arcs Odd GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Reel Max Arrows GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Reel Max Bulbs GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Reel Max Bulbs II GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Reel Max Chevron Rings GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Reel Max Chevrons GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Reel Max Circles Inner GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Reel Max Circles Outer GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Reel Max GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Reel Max Inner Triangles GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Reel Max Inner Triangles II GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Reel Max Kites GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Reel Max Outer Triangles GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Reel Max Outer Triangles II GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Reel Max Spider Bodies GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Reel Max Spider Eyes GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Reel Max Spider Legs GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Reel Max Spider Mouths GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Reel Max Spiders All GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Reel Max Spokes GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Reel MaxChevrons II GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Rosa Grande  Spoke Mini GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Rosa Grande Feather Long Even GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Rosa Grande Feather Long GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Rosa Grande Feather Long Odd GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Rosa Grande Feather Short Even GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Rosa Grande Feather Short GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Rosa Grande Feather Short Odd GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Rosa Grande Flower GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Rosa Grande GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Rosa Grande Hook CCW GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Rosa Grande Hook CW GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Rosa Grande Outer Ball GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Rosa Grande Outer Ring GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Rosa Grande Ribbon GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Rosa Grande Ring GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Rosa Grande Snowflake Spoke GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Rosa Grande Spoke GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Rosa Grande Torch Long Even GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Rosa Grande Torch Long GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Rosa Grande Torch Long Odd GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Rosa Grande Torch Short Even GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Rosa Grande Torch Short GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Rosa Grande Torch Short Odd GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Rosa Grande Wavy GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Rosa Grande Web Ring GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Rosa Grande Web Spoke GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Rudolf Deer">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Rudolf Deer-2">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Rudolf Deer-3">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Rudolf Deer-4">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Rudolf Deer-5">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Santa Sleigh">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Starlord Cross GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Starlord Diamond GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Starlord Feather Even GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Starlord Feather Odd GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Starlord GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Starlord Plunger All GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Starlord Plunger LG GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Starlord Plunger SM GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Starlord Ribbon GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Starlord Spoke GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Starlord Square GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Starlord Star GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Starlord Z All GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Starlord Z Left GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Starlord Z Right GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Garage">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Garage Left Bottom">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Grand Illusion Hooks CW">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="House Left">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="House Outline">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="House Right">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Icicles">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Icicles - Gutters">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Icicles - Top Entry">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Icicles - Top Left">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Icicles - Top Right">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Large Spiral Tree - 01">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Large Spiral Tree - 02">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Large Spiral Tree - 03">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Large Spiral Tree - 04">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Large Spiral Tree - 05">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Large Spiral Tree - 06">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Large Spiral Tree - 07">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Large Spiral Tree - 08">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Large Spiral Tree - 09">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Large Spiral Tree - 10">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Large Spiral Tree - 11">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Large Spiral Tree - 12">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Large Spiral Trees">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Matrix - C1">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Matrix - C2">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Matrix - C3">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Matrix - C4">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Matrix - C5">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Matrix - C6">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Matrix - Lantana">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Mega Tree">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Mega Tree GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Projector">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Roof">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Roof  - Peak">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Roof - Garage Ridge">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Roof - House Left">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Roof - Left Ridge">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Roof - Line Right">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Roof - Middle Ridge">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Roof - Middle Ridge Line">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Roof - Right Small">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Roof - Top Center">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Roof - Top Left">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Shrub Center">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Shrub Left">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Shrub Right">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Singing Bulb - Center">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Singing Bulb - Left">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Singing Bulb - Right">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="SingingTree">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Snowflakes">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Snowflakes - Circles All">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Spinners">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Spinners - All">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Stars">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Tombsone Small">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Tombsone Small-2">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Tombsone large">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Tombsone large-2">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Tombstones">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Toni - Penguin 1">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Toni - Penguin 2">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Tree - Oak">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Tree Topper">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Trees GRP">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Verts">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Wall - Bedroom">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Wall - Garage Top">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Wall - Middle Top">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Wall - Office">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Wall - Office Top">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Whole Scene">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Whole Scene - For fades">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Whole Scene Rosa Centered">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Whole Scene w Matrixes">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Window - Bottom Left">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Window - Play Room">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Windows">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Dark Helmet">
+      <EffectLayer />
+    </Element>
+  </ElementEffects>
+  <lastView>1</lastView>
+  <TimingTags>
+    <Tag number="0" position="-1" />
+    <Tag number="1" position="-1" />
+    <Tag number="2" position="-1" />
+    <Tag number="3" position="-1" />
+    <Tag number="4" position="-1" />
+    <Tag number="5" position="-1" />
+    <Tag number="6" position="-1" />
+    <Tag number="7" position="-1" />
+    <Tag number="8" position="-1" />
+    <Tag number="9" position="-1" />
+  </TimingTags>
+</xsequence>
