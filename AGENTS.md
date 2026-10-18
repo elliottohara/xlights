@@ -1,5 +1,10 @@
 # xLights Show Directory — Agent Notes
 
+## Latest Halloween playback deployment — October 18, 2026
+
+- The garage batch is now fully deployed: all 24 active sequences (25 playback filenames) and 20 media files verified on Master and the projector. Complete remote checksums, matching sequence IDs/frame timing, and every projector frame were verified. Master stayed running and is idle; existing playlists and schedule are preserved. This supersedes earlier pending-render/deployment status notes.
+- Latest evidence: `Halloween/garage-batch-upload-latest.json`; current manifest: `Halloween/current-show.json`. The concurrent rename to FPP-KULP-SELFIE-STATION changed only labels; render channel addresses were proved unchanged.
+
 ## Garage line on porch Genius port 8 — October 18, 2026
 
 - User moved the existing cable to **GENIUS-PORCH / 192.168.0.9, port 8**. Preserve the original physical chain: **Garage Left Bottom (73 RGB pixels), then Wall - Garage Top (30 RGB pixels), 103 total**, WS2811 at 30%. Wall - Garage Top has `ModelChain=">Garage Left Bottom"`. Both props move together. The old center-shrub cleanup had stripped this chain; the user clarified it is physically installed.

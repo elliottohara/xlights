@@ -2,7 +2,7 @@
 
 - Re-rendered from the canonical shared Halloween layout after restoring the garage line to outline, all-pixel and vertical groups. Native checks found no missing models, unexpected zero-node effects, impossible overlaps or effects beyond the end; authored effects and frame timing remain unchanged.
 - All 73 Garage Left Bottom pixels and all 30 Wall - Garage Top pixels light in one-second samples at their new porch Genius port 8 addresses. Tune To output is lit. Full batch evidence and recoverable previous renders: `Halloween/garage-batch-render-latest.json`.
-- This is a local render only; deployment remains pending. Master stayed running throughout and must remain running.
+- This batch is now deployed: Master and the projector have matching fresh sequences, with complete transfer checksums and matching frame counts/sequence IDs verified. Projector pixels match the rendered source. Required media verified on both players. Existing playlists, schedule and output routing preserved; Master stayed running. Evidence: `Halloween/garage-batch-upload-latest.json`.
 
 ## Shared Halloween show — October 18, 2026
 

@@ -1,0 +1,27 @@
+{
+  "backup": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch upload 20261018-164757",
+  "batch_render_report": "/Users/elliott.ohara/xlights/Halloween/garage-batch-render-latest.json",
+  "master": "192.168.0.19",
+  "remotes": [
+    "192.168.0.201"
+  ],
+  "master_must_remain_running": true,
+  "complete": true,
+  "master_complete": true,
+  "master_sequences": 25,
+  "master_media": 20,
+  "current_layout_equivalent_after_controller_rename": true,
+  "controller_label_updated_during_upload": "FPP-KULP-SELFIE-STATION",
+  "finished_at": "2026-10-18T17:08:02.360602-05:00",
+  "projector_sequences": 25,
+  "projector_media": 20,
+  "full_checksums_verified": true,
+  "projector_all_frames_verified": true,
+  "matching_sequence_ids_verified": true,
+  "playlist_and_schedule_preserved": true,
+  "output_addresses_preserved": true,
+  "output_routes_preserved_except_controller_label": true,
+  "master_kept_running": true,
+  "master_status": "idle",
+  "remote_inventory_verified": true
+}
