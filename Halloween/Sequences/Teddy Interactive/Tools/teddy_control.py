@@ -71,6 +71,7 @@ def worker():
     state = {'arms':old.get('arms','down'),'pid':os.getpid(),'last_request':old.get('last_request',''),
              'status':'starting','last_action':old.get('last_action',''),'sound_count':old.get('sound_count',0)}
     deadline=0; current=''; next_check=0; show_playing=True; last_red=0
+    last_saved=0; saved_signature=None
     while True:
         now=time.monotonic()
         try:
@@ -112,8 +113,11 @@ def worker():
                         current=hold;state['verify_after']=now+4
                     state.update(status='idle_pose',effect=hold)
             state['show_playing']=show_playing
-            state['heartbeat']=time.time()
-            atomic(STATE,state)
+            signature=tuple(state.get(k) for k in ('arms','last_request','status','last_action','sound_count','effect','show_playing'))
+            if signature!=saved_signature or now-last_saved>=5:
+                state['heartbeat']=time.time()
+                atomic(STATE,state)
+                saved_signature=signature;last_saved=now
         except Exception as error:
             state.update(status='error',error=str(error),heartbeat=time.time())
             atomic(STATE,state);log('ERROR '+str(error));time.sleep(1)

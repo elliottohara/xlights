@@ -234,8 +234,8 @@
   "controller_pixel_config_unchanged": true,
   "controller_script": {
     "name": "teddy_control.py",
-    "bytes": 6468,
-    "sha256": "52aae9d410e903e01a893fa6e7ade691b5847a118fca9de0dbb69304cb00ed90"
+    "bytes": 6772,
+    "sha256": "a2617e65e77f78ab3ba484926bf4498201784929e91b51cca4c5ecfafed53de8"
   },
   "complete": true
 }
