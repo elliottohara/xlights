@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Five-button Teddy controller. Only the named Teddy effects are modified.
 
-Install in FPP's scripts directory on the button Pi. The worker keeps the arm
-pose between gestures, prevents overlapping reactions, and yields its idle pose
+Install in FPP's scripts directory on the button Pi. The worker plays five-second arm
+routines, prevents overlapping reactions, and yields its idle pose
 to the main show. Buttons can still trigger a short reaction during a song.
 """
 import fcntl, json, os, signal, subprocess, sys, time, uuid
@@ -18,8 +18,8 @@ QUEUE = CONFIG / 'teddy-request.json'
 STATE = CONFIG / 'teddy-runtime.json'
 LOCK = HOME / 'tmp/teddy-worker.lock'
 LOG = HOME / 'logs/teddy-controls.log'
-ACTIONS = {'up', 'down', 'left', 'right', 'red'}
-OWNED = {'Teddy Arms Up', 'Teddy Arms Down'} | {
+ACTIONS = {'white', 'green', 'blue', 'yellow', 'red'}
+OWNED = {'Teddy '+color.title()+' Routine' for color in ACTIONS} | {'Teddy Arms Up', 'Teddy Arms Down'} | {
     'Teddy ' + expression + ' ' + pose
     for expression in ['Hold', 'Look Left', 'Look Right', 'Surprised']
     for pose in ['Down', 'Up']}
@@ -87,15 +87,9 @@ def worker():
             if now >= deadline and action in ACTIONS and request.get('id') != state['last_request']:
                 state['last_request']=request['id']
                 if time.time()-request.get('time',0) < 8:
-                    if action in ('up','down'):
-                        same_pose=state['arms']==action
-                        name=('Teddy Hold ' if same_pose else 'Teddy Arms ')+action.title()
-                        state['arms']=action; duration=1
-                    else:
-                        same_pose=False
-                        label={'left':'Look Left','right':'Look Right','red':'Surprised'}[action]
-                        name='Teddy '+label+' '+state['arms'].title(); duration=2
-                    start(name,loop=same_pose)
+                    name='Teddy '+action.title()+' Routine';duration=5
+                    state['arms']='down'
+                    start(name)
                     if action=='red' and now-last_red >= 2:
                         api(PI,'/api/command','Play Media',['dry-fart.mp3','1','0','1'])
                         state['sound_count']+=1;last_red=now
@@ -126,13 +120,14 @@ def worker():
 def main():
     action=sys.argv[1] if len(sys.argv)>1 else 'startup'
     if action=='--worker':return worker()
-    if action=='restart':
+    if action in ('restart','pause'):
         pid=read(STATE,{}).get('pid',0)
         try:
             command=Path('/proc/'+str(pid)+'/cmdline').read_bytes()
             if b'teddy_control.py' in command and b'--worker' in command:
                 os.kill(pid,signal.SIGTERM);time.sleep(.2)
         except (OSError,ProcessLookupError):pass
+        if action=='pause':return
     elif action in ACTIONS:
         atomic(QUEUE,{'id':uuid.uuid4().hex,'action':action,'time':time.time()})
     elif action!='startup':raise SystemExit('Unknown Teddy action')

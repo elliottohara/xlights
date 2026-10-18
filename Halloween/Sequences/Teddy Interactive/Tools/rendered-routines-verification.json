@@ -1,0 +1,75 @@
+{
+  "routines": [
+    {
+      "button": "white",
+      "duration_ms": 5000,
+      "sparse_ranges": [
+        [
+          214642,
+          1500
+        ]
+      ],
+      "arm_frames_differ": true,
+      "distinct_arm_pattern": true,
+      "scarf_verified": "white marquee",
+      "white_marquee_unique_frames": 5
+    },
+    {
+      "button": "green",
+      "duration_ms": 5000,
+      "sparse_ranges": [
+        [
+          214642,
+          1500
+        ]
+      ],
+      "arm_frames_differ": true,
+      "distinct_arm_pattern": true,
+      "scarf_verified": "#00FF00",
+      "white_marquee_unique_frames": null
+    },
+    {
+      "button": "blue",
+      "duration_ms": 5000,
+      "sparse_ranges": [
+        [
+          214642,
+          1500
+        ]
+      ],
+      "arm_frames_differ": true,
+      "distinct_arm_pattern": true,
+      "scarf_verified": "#0000FF",
+      "white_marquee_unique_frames": null
+    },
+    {
+      "button": "yellow",
+      "duration_ms": 5000,
+      "sparse_ranges": [
+        [
+          214642,
+          1500
+        ]
+      ],
+      "arm_frames_differ": true,
+      "distinct_arm_pattern": true,
+      "scarf_verified": "#FFFF00",
+      "white_marquee_unique_frames": null
+    },
+    {
+      "button": "red",
+      "duration_ms": 5000,
+      "sparse_ranges": [
+        [
+          214642,
+          1500
+        ]
+      ],
+      "arm_frames_differ": true,
+      "distinct_arm_pattern": true,
+      "scarf_verified": "#FF0000",
+      "white_marquee_unique_frames": null
+    }
+  ],
+  "all_five_passed": true
+}

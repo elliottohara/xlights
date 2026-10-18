@@ -1,92 +1,89 @@
 [
   {
-    "name": "Teddy Arms Up",
-    "duration_ms": 1000,
-    "arms": "down",
-    "gesture": "raise",
-    "xsq": "Halloween/Sequences/Teddy Interactive/Teddy Arms Up.xsq",
-    "eseq": "Halloween/Sequences/Teddy Interactive/Effects/Teddy Arms Up.eseq",
-    "bytes": 970
+    "name": "Teddy White Routine",
+    "duration_ms": 5000,
+    "xsq": "Halloween/Sequences/Teddy Interactive/Teddy White Routine.xsq",
+    "eseq": "Halloween/Sequences/Teddy Interactive/Effects/Teddy White Routine.eseq",
+    "bytes": 14621,
+    "button": "white",
+    "arm_pattern": [
+      "arms",
+      "mid",
+      "up",
+      "mid"
+    ],
+    "scarf": "white marquee"
   },
   {
-    "name": "Teddy Arms Down",
-    "duration_ms": 1000,
-    "arms": "down",
-    "gesture": "lower",
-    "xsq": "Halloween/Sequences/Teddy Interactive/Teddy Arms Down.xsq",
-    "eseq": "Halloween/Sequences/Teddy Interactive/Effects/Teddy Arms Down.eseq",
-    "bytes": 1104
+    "name": "Teddy Green Routine",
+    "duration_ms": 5000,
+    "xsq": "Halloween/Sequences/Teddy Interactive/Teddy Green Routine.xsq",
+    "eseq": "Halloween/Sequences/Teddy Interactive/Effects/Teddy Green Routine.eseq",
+    "bytes": 1837,
+    "button": "green",
+    "arm_pattern": [
+      "arms",
+      "leftmid",
+      "leftup",
+      "leftmid"
+    ],
+    "scarf": "#00FF00"
+  },
+  {
+    "name": "Teddy Blue Routine",
+    "duration_ms": 5000,
+    "xsq": "Halloween/Sequences/Teddy Interactive/Teddy Blue Routine.xsq",
+    "eseq": "Halloween/Sequences/Teddy Interactive/Effects/Teddy Blue Routine.eseq",
+    "bytes": 2261,
+    "button": "blue",
+    "arm_pattern": [
+      "arms",
+      "rightmid",
+      "rightup",
+      "rightmid"
+    ],
+    "scarf": "#0000FF"
+  },
+  {
+    "name": "Teddy Yellow Routine",
+    "duration_ms": 5000,
+    "xsq": "Halloween/Sequences/Teddy Interactive/Teddy Yellow Routine.xsq",
+    "eseq": "Halloween/Sequences/Teddy Interactive/Effects/Teddy Yellow Routine.eseq",
+    "bytes": 1967,
+    "button": "yellow",
+    "arm_pattern": [
+      "mid",
+      "up"
+    ],
+    "scarf": "#FFFF00"
+  },
+  {
+    "name": "Teddy Red Routine",
+    "duration_ms": 5000,
+    "xsq": "Halloween/Sequences/Teddy Interactive/Teddy Red Routine.xsq",
+    "eseq": "Halloween/Sequences/Teddy Interactive/Effects/Teddy Red Routine.eseq",
+    "bytes": 1758,
+    "button": "red",
+    "arm_pattern": [
+      "leanleft",
+      "leanright"
+    ],
+    "scarf": "#FF0000"
   },
   {
     "name": "Teddy Hold Down",
     "duration_ms": 6000,
-    "arms": "down",
-    "gesture": null,
     "xsq": "Halloween/Sequences/Teddy Interactive/Teddy Hold Down.xsq",
     "eseq": "Halloween/Sequences/Teddy Interactive/Effects/Teddy Hold Down.eseq",
-    "bytes": 1621
-  },
-  {
-    "name": "Teddy Look Left Down",
-    "duration_ms": 2000,
-    "arms": "down",
-    "gesture": "left",
-    "xsq": "Halloween/Sequences/Teddy Interactive/Teddy Look Left Down.xsq",
-    "eseq": "Halloween/Sequences/Teddy Interactive/Effects/Teddy Look Left Down.eseq",
-    "bytes": 653
-  },
-  {
-    "name": "Teddy Look Right Down",
-    "duration_ms": 2000,
-    "arms": "down",
-    "gesture": "right",
-    "xsq": "Halloween/Sequences/Teddy Interactive/Teddy Look Right Down.xsq",
-    "eseq": "Halloween/Sequences/Teddy Interactive/Effects/Teddy Look Right Down.eseq",
-    "bytes": 631
-  },
-  {
-    "name": "Teddy Surprised Down",
-    "duration_ms": 2000,
-    "arms": "down",
-    "gesture": "surprised",
-    "xsq": "Halloween/Sequences/Teddy Interactive/Teddy Surprised Down.xsq",
-    "eseq": "Halloween/Sequences/Teddy Interactive/Effects/Teddy Surprised Down.eseq",
-    "bytes": 685
+    "bytes": 1621,
+    "arms": "down"
   },
   {
     "name": "Teddy Hold Up",
     "duration_ms": 6000,
-    "arms": "up",
-    "gesture": null,
     "xsq": "Halloween/Sequences/Teddy Interactive/Teddy Hold Up.xsq",
     "eseq": "Halloween/Sequences/Teddy Interactive/Effects/Teddy Hold Up.eseq",
-    "bytes": 1881
-  },
-  {
-    "name": "Teddy Look Left Up",
-    "duration_ms": 2000,
-    "arms": "up",
-    "gesture": "left",
-    "xsq": "Halloween/Sequences/Teddy Interactive/Teddy Look Left Up.xsq",
-    "eseq": "Halloween/Sequences/Teddy Interactive/Effects/Teddy Look Left Up.eseq",
-    "bytes": 836
-  },
-  {
-    "name": "Teddy Look Right Up",
-    "duration_ms": 2000,
-    "arms": "up",
-    "gesture": "right",
-    "xsq": "Halloween/Sequences/Teddy Interactive/Teddy Look Right Up.xsq",
-    "eseq": "Halloween/Sequences/Teddy Interactive/Effects/Teddy Look Right Up.eseq",
-    "bytes": 813
-  },
-  {
-    "name": "Teddy Surprised Up",
-    "duration_ms": 2000,
-    "arms": "up",
-    "gesture": "surprised",
-    "xsq": "Halloween/Sequences/Teddy Interactive/Teddy Surprised Up.xsq",
-    "eseq": "Halloween/Sequences/Teddy Interactive/Effects/Teddy Surprised Up.eseq",
-    "bytes": 874
+    "bytes": 1881,
+    "arms": "up"
   }
 ]

@@ -1,89 +1,58 @@
 {
   "command_path_checks": [
     {
-      "action": "up",
-      "arms": "up",
-      "effect_verified": "Teddy Arms Up",
-      "sound_once_verified": false,
-      "after": "show"
+      "button": "white",
+      "effect": "Teddy White Routine",
+      "observed_at_start_and_after_4_seconds": true,
+      "finished_after_5_seconds": true,
+      "sound_once": false
     },
     {
-      "action": "left",
-      "arms": "up",
-      "effect_verified": "Teddy Look Left Up",
-      "sound_once_verified": false,
-      "after": "show"
+      "button": "green",
+      "effect": "Teddy Green Routine",
+      "observed_at_start_and_after_4_seconds": true,
+      "finished_after_5_seconds": true,
+      "sound_once": false
     },
     {
-      "action": "right",
-      "arms": "up",
-      "effect_verified": "Teddy Look Right Up",
-      "sound_once_verified": false,
-      "after": "show"
+      "button": "blue",
+      "effect": "Teddy Blue Routine",
+      "observed_at_start_and_after_4_seconds": true,
+      "finished_after_5_seconds": true,
+      "sound_once": false
     },
     {
-      "action": "red",
-      "arms": "up",
-      "effect_verified": "Teddy Surprised Up",
-      "sound_once_verified": true,
-      "after": "show"
+      "button": "yellow",
+      "effect": "Teddy Yellow Routine",
+      "observed_at_start_and_after_4_seconds": true,
+      "finished_after_5_seconds": true,
+      "sound_once": false
     },
     {
-      "action": "down",
-      "arms": "down",
-      "effect_verified": "Teddy Arms Down",
-      "sound_once_verified": false,
-      "after": "show"
-    },
-    {
-      "action": "red",
-      "arms": "down",
-      "effect_verified": "Teddy Surprised Down",
-      "sound_once_verified": true,
-      "after": "show"
+      "button": "red",
+      "effect": "Teddy Red Routine",
+      "observed_at_start_and_after_4_seconds": true,
+      "finished_after_5_seconds": true,
+      "sound_once": true
     }
   ],
   "gpio_readback_verified": true,
-  "input_levels": {
-    "P1-11": {
-      "available": false,
-      "reason": "This FPP GET route exposes only manually set output values; input levels require a physical-button check."
-    },
-    "P1-13": {
-      "available": false,
-      "reason": "This FPP GET route exposes only manually set output values; input levels require a physical-button check."
-    },
-    "P1-15": {
-      "available": false,
-      "reason": "This FPP GET route exposes only manually set output values; input levels require a physical-button check."
-    },
-    "P1-16": {
-      "available": false,
-      "reason": "This FPP GET route exposes only manually set output values; input levels require a physical-button check."
-    },
-    "P1-18": {
-      "available": false,
-      "reason": "This FPP GET route exposes only manually set output values; input levels require a physical-button check."
-    }
-  },
   "master_running": true,
   "physical_button_presses_verified": false,
+  "white_physical_input_unconfirmed": true,
+  "audio_output": "Sound Blaster Play! 3",
   "sound_audibility_verified": false,
   "controller_pixel_config_unchanged": true,
   "runtime": {
     "arms": "down",
-    "pid": 27294,
-    "last_request": "5a68e0c618824e7c969aaee31beadecf",
-    "status": "show",
-    "last_action": "left",
-    "sound_count": 4,
-    "effect": null,
-    "show_playing": true,
-    "heartbeat": 1792366010.584594
-  },
-  "gpio_kernel_ownership_verified": true,
-  "repeated_down_no_jump_verified": true,
-  "audio_decode_and_stream_open_verified": true,
-  "event_state_immediately_persisted": true,
-  "heartbeat_writes_throttled": true
+    "pid": 4798,
+    "last_request": "abc083c7ccfc4f7ca3116512ec7efb34",
+    "status": "idle_pose",
+    "last_action": "red",
+    "sound_count": 9,
+    "verify_after": 6882.84137842,
+    "effect": "Teddy Hold Down",
+    "show_playing": false,
+    "heartbeat": 1792367151.7480867
+  }
 }

@@ -1,49 +1,33 @@
 # Teddy Interactive — agent notes
 
-Deployed October 18, 2026. Authoring branch `codex/teddy-gpio-controls`, slot B / API 49914. Use the single Halloween show root; this folder is not a standalone show.
+## Five-second button routines — October 18, 2026
 
-## Controls
+User requested clearly visible movement for every button, lasting five seconds, with its scarf matching the button color and a marquee for White. Authoring branch `codex/teddy-five-second-routines`, slot B / API 49914. Use the canonical Halloween show folder.
 
-- White, P1-11 / GPIO17: arms up; retained pull-down wiring, rising edge.
-- Green, P1-13 / GPIO27: arms down; pull-up, rising edge.
-- Blue, P1-15 / GPIO22: look left and return to center; pull-up, rising edge.
-- Yellow, P1-18 / GPIO24: look right and return to center; pull-up, rising edge.
-- Red, P1-16 / GPIO23: raised eyebrows and open eyes plus `dry-fart.mp3` once; pull-up, rising edge.
-- Debounce both edges at 100 ms. Re-enable after 1100 ms, or 2200 ms for Red. Unnamed P1-10 legacy wing input is disabled. Previously disabled P1-23/24 are preserved.
+- White / P1-11 / GPIO17: both arms sweep down–middle–up–middle; moving white marquee on a dark gray scarf.
+- Green / P1-13 / GPIO27: left arm wave; green scarf.
+- Blue / P1-15 / GPIO22: right arm wave; blue scarf.
+- Yellow / P1-18 / GPIO24: both arms flap between middle and up; yellow scarf.
+- Red / P1-16 / GPIO23: arms alternate leaning left/right; red scarf, raised brows, and one fart sound.
 
-## Playback and isolation
+All routines run for 5000 ms at 25 ms per frame. Poses change every 250 ms. These use the existing `arms` states and `Bow Tie` submodel; no layout or channel changes. Native xLights authoring uses newSequence/addEffect/saveSequence/exportModelWithRender, never setEffectSettings or handwritten rendered frames. Native compressed ESEQ exports include only Teddy's 1500 channels at sparse zero-based offset 214642.
 
-FPPWINGS2 `192.168.0.133` is the button/audio controller. The detached Python worker launches through `teddy_controls.sh`, and a `FPPD_STARTED` preset restores it after startup. It remembers arm position in `config/teddy-runtime.json`; subsequent glances and eyebrow reactions use matching arms-up/down clips. Repeat arm commands hold the existing pose without jumping. Only one short reaction plays at a time; a newer press can replace the queued press while a reaction finishes.
+The Pi at 192.168.0.133 accepts the five physical rising edges and invokes color-named actions. Debounce is 100 ms, both edges; re-enable after 5100 ms prevents one held/rapidly repeated button from piling up routines. The worker allows the current five-second animation to finish, then handles the latest queued button. Red still attempts the fart once.
 
-FPP-Selfie-Station `192.168.0.213` plays the ten native compressed model effect sequences. Every ESEQ contains only Teddy's 1500 channels, zero-based sparse range 214642–216141 (user-facing start 214643). The pumpkin on the next port is excluded. Existing controller routing, RGB order, 20% brightness and physical wiring are preserved.
+The Selfie Station at 192.168.0.213 plays the clips. The worker changes only its explicit Teddy whitelist, leaving the pumpkin and physical output configuration untouched. It reads Master 192.168.0.19 status but never sends a command to Master. During the show it yields after five seconds; outside the show it returns to a neutral arms-down hold. FPPD_STARTED starts the worker after boot. The deploy helper pauses the worker and stops only its whitelisted effects before replacing files (a running hold keeps its file locked), skips identical uploads, waits for the local service after restart, and explicitly restarts the detached worker, which otherwise survives fppd re-exec with its previous Python code loaded.
 
-The worker reads Master status but never sends commands to Master. During a song, a button reaction briefly takes over Teddy, then yields to the song. When Master is idle, Teddy holds the selected arm pose with normal blinking. Idle poses are removed when the show begins, without stopping or restarting Master. Failures to read Master conservatively suppress the idle pose.
+## Sound and physical inputs
 
-## Native authoring
+User explicitly selected the Sound Blaster Play! 3 USB adapter for audio. Saved AudioOutput is stable ALSA ID `S3`, MediaBackend=pipewire-simple, PipeWireSinkName=fpp_group_default. The native AudioOutput setting handler applied the new graph. USB hardware was verified RUNNING with advancing hardware pointers during a test fart; speakers remained inaudible to the user, who suspects cabling. Leave Sound Blaster routing selected; actual sound remains unconfirmed.
 
-`Tools/build_teddy_controls.py` uses xLights `newSequence`, `addEffect`, `saveSequence`, and `exportModelWithRender`; no effect databases or rendered frames were authored by hand. Faces definition is `Teddy `, including the trailing space. Costume is `Teddy RedBow`, with the vendor arm masks, eye-direction states, and Brows/highbrows layered above it. Preserve Teddy's forced brown mouth and blue eyes.
+Physical input monitoring proved Red/Green/Blue/Yellow go low at rest and high on press. The previous falling-edge mapping was corrected. Installed FPP starts the delay on every rising edge, even when no rising command exists, suppressing a short press's falling action. White had no observed GPIO17 transitions in either prior physical test; its physical path still needs user attention. Software-triggered White can be verified independently. Do not SET a pin to test it; read-only pinctrl get is safe.
 
-Native clips use 25 ms frames and `eseqcompressed` export; uncompressed ESEQ requires 50 ms and prompts a blocking error. `newSequence` requires whole-second durations; fractional durations truncate to zero and open the wizard. Launch with `-q -b -s <checkout>/Halloween` to suppress the command-line notice. On relaunch, keep the layout XML newer than the task's identical autosave to avoid a recovery prompt.
+## Validation and tools
 
-## Validation
+Tools/build_teddy_controls.py authors all five routines plus the two neutral holds and exports native model MP4 previews. The library.json manifest defines the active deployment; old short gesture files are retained as historical sources and are no longer mapped to buttons.
 
-- All ten native exports decoded: exactly 500 pixels, 25 ms, correct sparse offset, nonblack frames.
-- Glances change only the expected four eye nodes and return to center. Surprise changes only the existing eyebrow nodes. Arm states differ as expected.
-- Native model video was visually inspected.
-- Live FPP script-command tests verified up, left, right, Red, down, and Red again; glances preserve arms-up, and each Red event increases the sound-play count by exactly one. FPP logs confirm the sound decoded and its audio stream opened.
-- All five GPIO lines are claimed by `FPPD-GPIO Input`, both edges, with the intended pull resistor, verified using read-only `gpioinfo`.
-- Repeated Down uses a held down pose, avoiding an unwanted up/down flash; after a reaction, the active main show regains Teddy.
-- Master stayed running and the Selfie Station pixel configuration read back unchanged.
-- Physical button presses and audible sound at the station still need the user's observation. The GPIO GET route in this build exposes manually set output values, not monitored input levels; do not SET an input to test it.
+Tools/verify_rendered_routines.py decodes native compressed outputs using libzstd, verifies 200 frames at 25 ms, exact sparse range, five distinct moving arm patterns, exact solid scarf colors, and moving neutral-color White marquee. Tools/verify_teddy_controls.py checks the real FPP script command path for all five, confirms each stays active beyond four seconds and finishes after five, preserves USB output, and leaves Master running and the physical pixel config unchanged. Physical illumination and sound require user observation.
 
-## Rebuild/deploy
+Launch a slot with -q -b -s <checkout>/Halloween. newSequence durationSecs must be whole seconds. Use eseqcompressed for 25 ms; uncompressed eseq requires 50 ms and opens a blocking error. Keep an identical task-created autosave older than the layout to avoid a startup recovery prompt.
 
-Open this checkout's Halloween show in the intended xLights instance, then set `XLIGHTS_API_PORT` and run `Tools/build_teddy_controls.py`. Run `Tools/deploy_teddy_controls.py` to upload effects/scripts, set the five mappings and the startup preset, and restart only the button Pi's service. Deployment preserves unrelated GPIO entries and presets, and refuses to overwrite another user's FPPD_STARTED command. Run `Tools/verify_teddy_controls.py` for live command-path checks; it deliberately reports physical presses/audibility as unverified.
-
-Rendered FSEQ/ESEQ files follow the repository's ignore rules. The source XSQs, builder, runtime/deployment scripts, manifest and verification records are retained here. Generated ESEQ files are installed on the Selfie Station and kept in the local Effects folder.
-
-## Physical button diagnosis — October 18, 2026
-
-User reported no response on the first physical test. Read-only `pinctrl get` monitoring established GPIO23 (Red), GPIO27 (Green), GPIO22 (Blue), and GPIO24 (Yellow) are low at rest and go high during a press. Corrected all four from falling to rising commands, retaining their input bias settings. The installed FPP GPIO handler starts the re-enable delay on every rising edge even with no rising commands; therefore a release within the delay was suppressed (especially Red at 2200 ms). White was already rising, but no GPIO17 transition was recorded in the first test; its physical path still needs confirmation. Restarted only the button Pi to load the correction. Master remained running.
-
-After correction, real button presses produced Red, Down, Right and Left worker events; the Red sound counter increased from 4 to 5. White still has no observed GPIO17 transition. Visual illumination and sound remain pending user confirmation.
+Final validation: all five rendered routines passed channel, color and moving-arm checks. All five deployed script actions remained visible in the running-effects API beyond four seconds and completed after five seconds, then returned to neutral. Red increased sound_count once. Five GPIO mappings and 5100 ms re-enable delays read back correctly. The deployed Python file matched the saved source byte-for-byte. Master remained running and Selfie Station pixel output settings matched the pre-deployment snapshot.

@@ -9,15 +9,15 @@
     "channelInputsEnabled": false,
     "channelOutputsEnabled": true,
     "current_playlist": {
-      "count": "20",
-      "description": "Halloween 2026 using current Halloween controller configuration. All selected sequences ready.",
+      "count": "0",
+      "description": "",
       "generated": false,
-      "index": "18",
-      "playlist": "Halloween 2026",
-      "type": "both"
+      "index": "0",
+      "playlist": "",
+      "type": ""
     },
-    "current_sequence": "Halloween 2026 - Zombie.fseq",
-    "current_song": "Halloween 2026 - Zombie_xTreme_Edit.mp3",
+    "current_sequence": "",
+    "current_song": "",
     "dateStr": "Sun Oct 18",
     "fppd": "running",
     "global_pause": {
@@ -27,8 +27,7 @@
     },
     "host_description": "Fpp Master",
     "host_name": "FPP-Master",
-    "media_playing": true,
-    "milliseconds_elapsed": 18460,
+    "media_playing": false,
     "mode": 2,
     "mode_name": "player",
     "multisync": true,
@@ -39,48 +38,38 @@
     "platform": "Raspberry Pi",
     "powerBad": false,
     "random": 0,
-    "repeat_mode": 0,
+    "repeat_mode": "0",
     "scheduler": {
-      "currentPlaylist": {
-        "playlistName": "Halloween 2026"
-      },
       "enabled": 1,
       "nextPlaylist": {
         "playlistName": "Halloween 2026",
         "scheduledStartTime": 1792367870,
         "scheduledStartTimeStr": "Sun Oct 18 @ 06:57 PM - (Everyday)"
       },
-      "status": "manual"
+      "status": "idle"
     },
-    "seconds_elapsed": "18",
-    "seconds_played": "18",
-    "seconds_remaining": "232",
+    "seconds_played": "0",
+    "seconds_remaining": "0",
     "sensors": [
       {
-        "formatted": "64.8",
+        "formatted": "58.9",
         "label": "CPU: ",
         "postfix": "",
         "prefix": "",
-        "value": 64.757,
+        "value": 58.913,
         "valueType": "Temperature"
       }
     ],
-    "status": 1,
-    "status_name": "playing",
+    "status": 0,
+    "status_name": "idle",
     "streamSlots": [
       {
         "isBackground": false,
-        "mediaFilename": "Halloween 2026 - Zombie_xTreme_Edit.mp3",
-        "minutesTotal": 4,
+        "mediaFilename": "",
         "nodeDescription": "FPP Media Stream 1",
         "nodeName": "fppd_stream_1",
-        "secondsElapsed": 18,
-        "secondsRemaining": 232,
-        "secondsTotal": 11,
         "slot": 1,
-        "status": "playing",
-        "subSecondsElapsed": 46,
-        "subSecondsRemaining": 72
+        "status": "idle"
       },
       {
         "isBackground": false,
@@ -115,19 +104,19 @@
         "status": "idle"
       }
     ],
-    "systemUptimeTotalSeconds": 624648,
-    "time": "Sun Oct 18 18:19:32 CDT 2026",
-    "timeStr": "06:19 PM",
-    "timeStrFull": "06:19:32 PM",
-    "time_elapsed": "00:18",
-    "time_remaining": "03:52",
-    "uptime": "01:56:50",
+    "systemUptimeTotalSeconds": 626180,
+    "time": "Sun Oct 18 18:45:03 CDT 2026",
+    "timeStr": "06:45 PM",
+    "timeStrFull": "06:45:03 PM",
+    "time_elapsed": "00:00",
+    "time_remaining": "00:00",
+    "uptime": "02:22:21",
     "uptimeDays": 0,
-    "uptimeHours": 1,
-    "uptimeMinutes": 56,
-    "uptimeSeconds": 50,
-    "uptimeStr": "0 days, 1 hours, 56 minutes, 50 seconds",
-    "uptimeTotalSeconds": 7010,
+    "uptimeHours": 2,
+    "uptimeMinutes": 22,
+    "uptimeSeconds": 21,
+    "uptimeStr": "0 days, 2 hours, 22 minutes, 21 seconds",
+    "uptimeTotalSeconds": 8541,
     "uuid": "M1-100000005ab99614",
     "version": "10.2-3-g00e5f727c",
     "volume": 49,
@@ -183,8 +172,8 @@
             "scope": "global",
             "dynamic": true,
             "label": "eth0",
-            "valid_life_time": 52863,
-            "preferred_life_time": 52863
+            "valid_life_time": 51331,
+            "preferred_life_time": 51331
           },
           {
             "family": "inet6",
@@ -194,8 +183,8 @@
             "dynamic": true,
             "mngtmpaddr": true,
             "noprefixroute": true,
-            "valid_life_time": 1780,
-            "preferred_life_time": 1780
+            "valid_life_time": 1691,
+            "preferred_life_time": 1691
           },
           {
             "family": "inet6",
@@ -205,8 +194,8 @@
             "dynamic": true,
             "mngtmpaddr": true,
             "noprefixroute": true,
-            "valid_life_time": 1796,
-            "preferred_life_time": 1796
+            "valid_life_time": 1748,
+            "preferred_life_time": 1748
           },
           {
             "family": "inet6",
@@ -270,16 +259,16 @@
       "channelOutputsEnabled": true,
       "uuid": "M1-100000005ab99614",
       "Utilization": {
-        "CPU": 58.8235294117647,
-        "Memory": 10.238119004961199,
-        "Uptime": "7 days 5:30",
+        "CPU": 3.448275862068968,
+        "Memory": 9.439552308691308,
+        "Uptime": "7 days 5:56",
         "Disk": {
           "Media": {
-            "Free": 6172360704,
+            "Free": 6172241920,
             "Total": 62582202368
           },
           "Root": {
-            "Free": 6172360704,
+            "Free": 6172241920,
             "Total": 62582202368
           }
         }
@@ -681,6 +670,195 @@
     "status": "OK"
   },
   "presets": {
-    "commands": []
-  }
+    "commands": [
+      {
+        "name": "FPPD_STARTED",
+        "presetSlot": 0,
+        "command": "Run Script",
+        "args": [
+          "teddy_controls.sh",
+          "startup",
+          ""
+        ],
+        "multisyncCommand": false,
+        "multisyncHosts": ""
+      }
+    ]
+  },
+  "gpio": [
+    {
+      "pin": "P1-10",
+      "enabled": false,
+      "mode": "gpio",
+      "desc": "Unused legacy wing trigger",
+      "debounceTime": 100,
+      "rising": [],
+      "falling": [],
+      "hold": []
+    },
+    {
+      "pin": "P1-11",
+      "enabled": true,
+      "mode": "gpio_pd",
+      "desc": "White - both arms sweep + marquee scarf",
+      "debounceTime": 100,
+      "rising": [
+        {
+          "command": "Run Script",
+          "args": [
+            "teddy_controls.sh",
+            "white",
+            ""
+          ],
+          "multisyncCommand": false,
+          "multisyncHosts": ""
+        }
+      ],
+      "falling": [],
+      "hold": [],
+      "holdTime": 0,
+      "debounceEdge": "both",
+      "reEnableMode": "timed",
+      "reEnableDelay": 5100,
+      "ledPin": ""
+    },
+    {
+      "pin": "P1-13",
+      "enabled": true,
+      "mode": "gpio_pu",
+      "desc": "Green - left wave + green scarf",
+      "debounceTime": 100,
+      "rising": [
+        {
+          "command": "Run Script",
+          "args": [
+            "teddy_controls.sh",
+            "green",
+            ""
+          ],
+          "multisyncCommand": false,
+          "multisyncHosts": ""
+        }
+      ],
+      "falling": [],
+      "hold": [],
+      "holdTime": 0,
+      "debounceEdge": "both",
+      "reEnableMode": "timed",
+      "reEnableDelay": 5100,
+      "ledPin": ""
+    },
+    {
+      "pin": "P1-15",
+      "enabled": true,
+      "mode": "gpio_pu",
+      "desc": "Blue - right wave + blue scarf",
+      "debounceTime": 100,
+      "rising": [
+        {
+          "command": "Run Script",
+          "args": [
+            "teddy_controls.sh",
+            "blue",
+            ""
+          ],
+          "multisyncCommand": false,
+          "multisyncHosts": ""
+        }
+      ],
+      "falling": [],
+      "hold": [],
+      "holdTime": 0,
+      "debounceEdge": "both",
+      "reEnableMode": "timed",
+      "reEnableDelay": 5100,
+      "ledPin": ""
+    },
+    {
+      "pin": "P1-16",
+      "enabled": true,
+      "mode": "gpio_pu",
+      "desc": "Red - alternating arms + red scarf + fart",
+      "debounceTime": 100,
+      "rising": [
+        {
+          "command": "Run Script",
+          "args": [
+            "teddy_controls.sh",
+            "red",
+            ""
+          ],
+          "multisyncCommand": false,
+          "multisyncHosts": ""
+        }
+      ],
+      "falling": [],
+      "hold": [],
+      "holdTime": 0,
+      "debounceEdge": "both",
+      "reEnableMode": "timed",
+      "reEnableDelay": 5100,
+      "ledPin": ""
+    },
+    {
+      "pin": "P1-18",
+      "enabled": true,
+      "mode": "gpio_pu",
+      "desc": "Yellow - flapping arms + yellow scarf",
+      "debounceTime": 100,
+      "rising": [
+        {
+          "command": "Run Script",
+          "args": [
+            "teddy_controls.sh",
+            "yellow",
+            ""
+          ],
+          "multisyncCommand": false,
+          "multisyncHosts": ""
+        }
+      ],
+      "falling": [],
+      "hold": [],
+      "holdTime": 0,
+      "debounceEdge": "both",
+      "reEnableMode": "timed",
+      "reEnableDelay": 5100,
+      "ledPin": ""
+    },
+    {
+      "pin": "P1-23",
+      "enabled": false,
+      "mode": "gpio",
+      "desc": "",
+      "debounceTime": 100,
+      "rising": {
+        "command": "FSEQ Effect Start",
+        "multisyncCommand": false,
+        "multisyncHosts": "",
+        "args": [
+          "butterfly-wings",
+          "false",
+          "false"
+        ]
+      }
+    },
+    {
+      "pin": "P1-24",
+      "enabled": false,
+      "mode": "gpio_pd",
+      "desc": "",
+      "debounceTime": 100,
+      "rising": {
+        "command": "FSEQ Effect Start",
+        "multisyncCommand": false,
+        "multisyncHosts": "",
+        "args": [
+          "butterfly-wings",
+          "false",
+          "false"
+        ]
+      }
+    }
+  ]
 }

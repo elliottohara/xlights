@@ -3,6 +3,7 @@ from pathlib import Path
 from urllib.request import Request,urlopen
 from urllib.parse import quote
 import json,hashlib,time,copy
+from teddy_control import OWNED
 
 ROOT=Path(__file__).resolve().parents[4]
 SONG=ROOT/'Halloween/Sequences/Teddy Interactive'
@@ -21,8 +22,13 @@ def cmd(ip,name,args):return request(ip,'/api/command',{'command':name,'args':ar
 
 def upload(ip,directory,name,data):
     path='/api/file/'+directory+'/'+quote(name,safe='')
-    result=request(ip,path,data,'POST',True)
-    actual=request(ip,path)
+    # Avoid rewriting unchanged effects, especially a currently running hold.
+    try:actual=request(ip,path)
+    except Exception:actual=None
+    if actual!=data:
+        result=request(ip,path,data,'POST',True)
+        actual=request(ip,path)
+    else:result={'status':'unchanged'}
     assert isinstance(actual,bytes) and actual==data,(name,result)
     return {'name':name,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()}
 
@@ -33,13 +39,19 @@ def main():
             'gpio':request(PI,'/api/configfile/gpio.json')}
     assert before['master']['fppd']=='running'
     (SONG/'Tools/deployment-before.json').write_text(json.dumps(before,indent=2)+'\n')
-    uploaded=[]
-    for file in sorted((SONG/'Effects').glob('*.eseq')):
-        uploaded.append(upload(TEDDY,'effects',file.name,file.read_bytes()))
-        print('Uploaded',file.name,flush=True)
     print(upload(PI,'scripts','teddy_control.py',(SONG/'Tools/teddy_control.py').read_bytes()),flush=True)
     wrapper=b'#!/bin/bash\nexec /usr/bin/python3 /home/fpp/media/scripts/teddy_control.py "$@"\n'
     print(upload(PI,'scripts','teddy_controls.sh',wrapper),flush=True)
+    # Release live mmap/file locks before replacing any managed effect.
+    cmd(PI,'Run Script',['teddy_controls.sh','pause',''])
+    time.sleep(.5)
+    for effect in request(TEDDY,'/api/fppd/effects').get('runningEffects',[]):
+        if effect['name'] in OWNED:cmd(TEDDY,'Effect Stop',[effect['name']])
+    uploaded=[]
+    for item in json.loads((SONG/'Tools/library.json').read_text()):
+        file=ROOT/item['eseq']
+        uploaded.append(upload(TEDDY,'effects',file.name,file.read_bytes()))
+        print('Uploaded',file.name,flush=True)
     presets=copy.deepcopy(before['presets'])
     existing=[c for c in presets.get('commands',[]) if c.get('name')=='FPPD_STARTED']
     assert not existing or all(c.get('command')=='Run Script' and c.get('args',[None])[0]=='teddy_controls.sh' for c in existing)
@@ -52,18 +64,18 @@ def main():
     # Physical buttons drive low at rest and high on press. FPP suppresses
     # the input after every rising edge, even when only falling has commands.
     mapping={
-        'P1-11':('White - Teddy arms up','up','gpio_pd','rising'),
-        'P1-13':('Green - Teddy arms down','down','gpio_pu','rising'),
-        'P1-15':('Blue - Teddy look left','left','gpio_pu','rising'),
-        'P1-16':('Red - Teddy surprise + fart','red','gpio_pu','rising'),
-        'P1-18':('Yellow - Teddy look right','right','gpio_pu','rising'),
+        'P1-11':('White - both arms sweep + marquee scarf','white','gpio_pd','rising'),
+        'P1-13':('Green - left wave + green scarf','green','gpio_pu','rising'),
+        'P1-15':('Blue - right wave + blue scarf','blue','gpio_pu','rising'),
+        'P1-16':('Red - alternating arms + red scarf + fart','red','gpio_pu','rising'),
+        'P1-18':('Yellow - flapping arms + yellow scarf','yellow','gpio_pu','rising'),
     }
     for t in gpio:
         if t['pin'] in mapping:
             desc,action,mode,edge=mapping[t['pin']]
             t.update(enabled=True,desc=desc,mode=mode,rising=[],falling=[],hold=[],holdTime=0,
                      debounceTime=100,debounceEdge='both',reEnableMode='timed',
-                     reEnableDelay=2200 if action=='red' else 1100,ledPin='')
+                     reEnableDelay=5100,ledPin='')
             t[edge]=[{'command':'Run Script','args':['teddy_controls.sh',action,''],
                      'multisyncCommand':False,'multisyncHosts':''}]
         elif t['pin']=='P1-10':
@@ -73,6 +85,14 @@ def main():
     assert request(PI,'/api/configfile/commandPresets.json')==presets
     assert request(TEDDY,'/api/channel/output/co-bbbStrings')==before['pixels']
     print('Restarting button Pi only',request(PI,'/api/system/fppd/restart'),flush=True)
+    for _ in range(25):
+        time.sleep(.5)
+        try:
+            if request(PI,'/api/system/status').get('fppd')=='running':break
+        except Exception:pass
+    else:raise RuntimeError('Button Pi service did not become ready')
+    # Detached workers survive fppd's re-exec; load the new Python code too.
+    print('Reloading Teddy worker',cmd(PI,'Run Script',['teddy_controls.sh','restart','']),flush=True)
     result={'pi':PI,'teddy':TEDDY,'uploaded':uploaded,'gpio':gpio,'startup_preset':True,
             'master_kept_running':True,'controller_pixel_config_unchanged':True}
     (SONG/'Tools/deployment-latest.json').write_text(json.dumps(result,indent=2)+'\n')
