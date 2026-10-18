@@ -1,0 +1,378 @@
+{
+  "date": "2026-10-18",
+  "physical_press_edges": {
+    "P1-16": "rising",
+    "P1-13": "rising",
+    "P1-15": "rising",
+    "P1-18": "rising"
+  },
+  "white_transition_seen": false,
+  "before": [
+    {
+      "pin": "P1-10",
+      "enabled": false,
+      "mode": "gpio",
+      "desc": "Unused legacy wing trigger",
+      "debounceTime": 100,
+      "rising": [],
+      "falling": [],
+      "hold": []
+    },
+    {
+      "pin": "P1-11",
+      "enabled": true,
+      "mode": "gpio_pd",
+      "desc": "White - Teddy arms up",
+      "debounceTime": 100,
+      "rising": [
+        {
+          "command": "Run Script",
+          "args": [
+            "teddy_controls.sh",
+            "up",
+            ""
+          ],
+          "multisyncCommand": false,
+          "multisyncHosts": ""
+        }
+      ],
+      "falling": [],
+      "hold": [],
+      "holdTime": 0,
+      "debounceEdge": "both",
+      "reEnableMode": "timed",
+      "reEnableDelay": 1100,
+      "ledPin": ""
+    },
+    {
+      "pin": "P1-13",
+      "enabled": true,
+      "mode": "gpio_pu",
+      "desc": "Green - Teddy arms down",
+      "debounceTime": 100,
+      "rising": [],
+      "falling": [
+        {
+          "command": "Run Script",
+          "args": [
+            "teddy_controls.sh",
+            "down",
+            ""
+          ],
+          "multisyncCommand": false,
+          "multisyncHosts": ""
+        }
+      ],
+      "hold": [],
+      "holdTime": 0,
+      "debounceEdge": "both",
+      "reEnableMode": "timed",
+      "reEnableDelay": 1100,
+      "ledPin": ""
+    },
+    {
+      "pin": "P1-15",
+      "enabled": true,
+      "mode": "gpio_pu",
+      "desc": "Blue - Teddy look left",
+      "debounceTime": 100,
+      "rising": [],
+      "falling": [
+        {
+          "command": "Run Script",
+          "args": [
+            "teddy_controls.sh",
+            "left",
+            ""
+          ],
+          "multisyncCommand": false,
+          "multisyncHosts": ""
+        }
+      ],
+      "hold": [],
+      "holdTime": 0,
+      "debounceEdge": "both",
+      "reEnableMode": "timed",
+      "reEnableDelay": 1100,
+      "ledPin": ""
+    },
+    {
+      "pin": "P1-16",
+      "enabled": true,
+      "mode": "gpio_pu",
+      "desc": "Red - Teddy surprise + fart",
+      "debounceTime": 100,
+      "rising": [],
+      "falling": [
+        {
+          "command": "Run Script",
+          "args": [
+            "teddy_controls.sh",
+            "red",
+            ""
+          ],
+          "multisyncCommand": false,
+          "multisyncHosts": ""
+        }
+      ],
+      "hold": [],
+      "holdTime": 0,
+      "debounceEdge": "both",
+      "reEnableMode": "timed",
+      "reEnableDelay": 2200,
+      "ledPin": ""
+    },
+    {
+      "pin": "P1-18",
+      "enabled": true,
+      "mode": "gpio_pu",
+      "desc": "Yellow - Teddy look right",
+      "debounceTime": 100,
+      "rising": [],
+      "falling": [
+        {
+          "command": "Run Script",
+          "args": [
+            "teddy_controls.sh",
+            "right",
+            ""
+          ],
+          "multisyncCommand": false,
+          "multisyncHosts": ""
+        }
+      ],
+      "hold": [],
+      "holdTime": 0,
+      "debounceEdge": "both",
+      "reEnableMode": "timed",
+      "reEnableDelay": 1100,
+      "ledPin": ""
+    },
+    {
+      "pin": "P1-23",
+      "enabled": false,
+      "mode": "gpio",
+      "desc": "",
+      "debounceTime": 100,
+      "rising": {
+        "command": "FSEQ Effect Start",
+        "multisyncCommand": false,
+        "multisyncHosts": "",
+        "args": [
+          "butterfly-wings",
+          "false",
+          "false"
+        ]
+      }
+    },
+    {
+      "pin": "P1-24",
+      "enabled": false,
+      "mode": "gpio_pd",
+      "desc": "",
+      "debounceTime": 100,
+      "rising": {
+        "command": "FSEQ Effect Start",
+        "multisyncCommand": false,
+        "multisyncHosts": "",
+        "args": [
+          "butterfly-wings",
+          "false",
+          "false"
+        ]
+      }
+    }
+  ],
+  "applied": [
+    {
+      "pin": "P1-10",
+      "enabled": false,
+      "mode": "gpio",
+      "desc": "Unused legacy wing trigger",
+      "debounceTime": 100,
+      "rising": [],
+      "falling": [],
+      "hold": []
+    },
+    {
+      "pin": "P1-11",
+      "enabled": true,
+      "mode": "gpio_pd",
+      "desc": "White - Teddy arms up",
+      "debounceTime": 100,
+      "rising": [
+        {
+          "command": "Run Script",
+          "args": [
+            "teddy_controls.sh",
+            "up",
+            ""
+          ],
+          "multisyncCommand": false,
+          "multisyncHosts": ""
+        }
+      ],
+      "falling": [],
+      "hold": [],
+      "holdTime": 0,
+      "debounceEdge": "both",
+      "reEnableMode": "timed",
+      "reEnableDelay": 1100,
+      "ledPin": ""
+    },
+    {
+      "pin": "P1-13",
+      "enabled": true,
+      "mode": "gpio_pu",
+      "desc": "Green - Teddy arms down",
+      "debounceTime": 100,
+      "rising": [
+        {
+          "command": "Run Script",
+          "args": [
+            "teddy_controls.sh",
+            "down",
+            ""
+          ],
+          "multisyncCommand": false,
+          "multisyncHosts": ""
+        }
+      ],
+      "falling": [],
+      "hold": [],
+      "holdTime": 0,
+      "debounceEdge": "both",
+      "reEnableMode": "timed",
+      "reEnableDelay": 1100,
+      "ledPin": ""
+    },
+    {
+      "pin": "P1-15",
+      "enabled": true,
+      "mode": "gpio_pu",
+      "desc": "Blue - Teddy look left",
+      "debounceTime": 100,
+      "rising": [
+        {
+          "command": "Run Script",
+          "args": [
+            "teddy_controls.sh",
+            "left",
+            ""
+          ],
+          "multisyncCommand": false,
+          "multisyncHosts": ""
+        }
+      ],
+      "falling": [],
+      "hold": [],
+      "holdTime": 0,
+      "debounceEdge": "both",
+      "reEnableMode": "timed",
+      "reEnableDelay": 1100,
+      "ledPin": ""
+    },
+    {
+      "pin": "P1-16",
+      "enabled": true,
+      "mode": "gpio_pu",
+      "desc": "Red - Teddy surprise + fart",
+      "debounceTime": 100,
+      "rising": [
+        {
+          "command": "Run Script",
+          "args": [
+            "teddy_controls.sh",
+            "red",
+            ""
+          ],
+          "multisyncCommand": false,
+          "multisyncHosts": ""
+        }
+      ],
+      "falling": [],
+      "hold": [],
+      "holdTime": 0,
+      "debounceEdge": "both",
+      "reEnableMode": "timed",
+      "reEnableDelay": 2200,
+      "ledPin": ""
+    },
+    {
+      "pin": "P1-18",
+      "enabled": true,
+      "mode": "gpio_pu",
+      "desc": "Yellow - Teddy look right",
+      "debounceTime": 100,
+      "rising": [
+        {
+          "command": "Run Script",
+          "args": [
+            "teddy_controls.sh",
+            "right",
+            ""
+          ],
+          "multisyncCommand": false,
+          "multisyncHosts": ""
+        }
+      ],
+      "falling": [],
+      "hold": [],
+      "holdTime": 0,
+      "debounceEdge": "both",
+      "reEnableMode": "timed",
+      "reEnableDelay": 1100,
+      "ledPin": ""
+    },
+    {
+      "pin": "P1-23",
+      "enabled": false,
+      "mode": "gpio",
+      "desc": "",
+      "debounceTime": 100,
+      "rising": {
+        "command": "FSEQ Effect Start",
+        "multisyncCommand": false,
+        "multisyncHosts": "",
+        "args": [
+          "butterfly-wings",
+          "false",
+          "false"
+        ]
+      }
+    },
+    {
+      "pin": "P1-24",
+      "enabled": false,
+      "mode": "gpio_pd",
+      "desc": "",
+      "debounceTime": 100,
+      "rising": {
+        "command": "FSEQ Effect Start",
+        "multisyncCommand": false,
+        "multisyncHosts": "",
+        "args": [
+          "butterfly-wings",
+          "false",
+          "false"
+        ]
+      }
+    }
+  ],
+  "first_test_runtime_events": [
+    "down",
+    "left",
+    "right"
+  ],
+  "second_test_pending": false,
+  "second_test_runtime_events": [
+    "red",
+    "down",
+    "right",
+    "left"
+  ],
+  "sound_count_before": 4,
+  "sound_count_after": 5,
+  "user_visual_and_audible_confirmation": "pending",
+  "master_fppd": "running"
+}

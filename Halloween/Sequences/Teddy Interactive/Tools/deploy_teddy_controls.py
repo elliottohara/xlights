@@ -49,12 +49,14 @@ def main():
         'multisyncCommand':False,'multisyncHosts':''})
     print('Startup preset',request(PI,'/api/configfile/commandPresets.json',presets),flush=True)
     gpio=copy.deepcopy(before['gpio'])
+    # Physical buttons drive low at rest and high on press. FPP suppresses
+    # the input after every rising edge, even when only falling has commands.
     mapping={
         'P1-11':('White - Teddy arms up','up','gpio_pd','rising'),
-        'P1-13':('Green - Teddy arms down','down','gpio_pu','falling'),
-        'P1-15':('Blue - Teddy look left','left','gpio_pu','falling'),
-        'P1-16':('Red - Teddy surprise + fart','red','gpio_pu','falling'),
-        'P1-18':('Yellow - Teddy look right','right','gpio_pu','falling'),
+        'P1-13':('Green - Teddy arms down','down','gpio_pu','rising'),
+        'P1-15':('Blue - Teddy look left','left','gpio_pu','rising'),
+        'P1-16':('Red - Teddy surprise + fart','red','gpio_pu','rising'),
+        'P1-18':('Yellow - Teddy look right','right','gpio_pu','rising'),
     }
     for t in gpio:
         if t['pin'] in mapping:

@@ -96,8 +96,7 @@
       "mode": "gpio_pu",
       "desc": "Green - Teddy arms down",
       "debounceTime": 100,
-      "rising": [],
-      "falling": [
+      "rising": [
         {
           "command": "Run Script",
           "args": [
@@ -109,6 +108,7 @@
           "multisyncHosts": ""
         }
       ],
+      "falling": [],
       "hold": [],
       "holdTime": 0,
       "debounceEdge": "both",
@@ -122,8 +122,7 @@
       "mode": "gpio_pu",
       "desc": "Blue - Teddy look left",
       "debounceTime": 100,
-      "rising": [],
-      "falling": [
+      "rising": [
         {
           "command": "Run Script",
           "args": [
@@ -135,6 +134,7 @@
           "multisyncHosts": ""
         }
       ],
+      "falling": [],
       "hold": [],
       "holdTime": 0,
       "debounceEdge": "both",
@@ -148,8 +148,7 @@
       "mode": "gpio_pu",
       "desc": "Red - Teddy surprise + fart",
       "debounceTime": 100,
-      "rising": [],
-      "falling": [
+      "rising": [
         {
           "command": "Run Script",
           "args": [
@@ -161,6 +160,7 @@
           "multisyncHosts": ""
         }
       ],
+      "falling": [],
       "hold": [],
       "holdTime": 0,
       "debounceEdge": "both",
@@ -174,8 +174,7 @@
       "mode": "gpio_pu",
       "desc": "Yellow - Teddy look right",
       "debounceTime": 100,
-      "rising": [],
-      "falling": [
+      "rising": [
         {
           "command": "Run Script",
           "args": [
@@ -187,6 +186,7 @@
           "multisyncHosts": ""
         }
       ],
+      "falling": [],
       "hold": [],
       "holdTime": 0,
       "debounceEdge": "both",
@@ -237,5 +237,6 @@
     "bytes": 6772,
     "sha256": "a2617e65e77f78ab3ba484926bf4498201784929e91b51cca4c5ecfafed53de8"
   },
-  "complete": true
+  "complete": true,
+  "physical_press_edge_correction": "2026-10-18"
 }

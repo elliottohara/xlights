@@ -5,10 +5,10 @@ Deployed October 18, 2026. Authoring branch `codex/teddy-gpio-controls`, slot B 
 ## Controls
 
 - White, P1-11 / GPIO17: arms up; retained pull-down wiring, rising edge.
-- Green, P1-13 / GPIO27: arms down; pull-up, falling edge.
-- Blue, P1-15 / GPIO22: look left and return to center; pull-up, falling edge.
-- Yellow, P1-18 / GPIO24: look right and return to center; pull-up, falling edge.
-- Red, P1-16 / GPIO23: raised eyebrows and open eyes plus `dry-fart.mp3` once; pull-up, falling edge.
+- Green, P1-13 / GPIO27: arms down; pull-up, rising edge.
+- Blue, P1-15 / GPIO22: look left and return to center; pull-up, rising edge.
+- Yellow, P1-18 / GPIO24: look right and return to center; pull-up, rising edge.
+- Red, P1-16 / GPIO23: raised eyebrows and open eyes plus `dry-fart.mp3` once; pull-up, rising edge.
 - Debounce both edges at 100 ms. Re-enable after 1100 ms, or 2200 ms for Red. Unnamed P1-10 legacy wing input is disabled. Previously disabled P1-23/24 are preserved.
 
 ## Playback and isolation
@@ -41,3 +41,9 @@ Native clips use 25 ms frames and `eseqcompressed` export; uncompressed ESEQ req
 Open this checkout's Halloween show in the intended xLights instance, then set `XLIGHTS_API_PORT` and run `Tools/build_teddy_controls.py`. Run `Tools/deploy_teddy_controls.py` to upload effects/scripts, set the five mappings and the startup preset, and restart only the button Pi's service. Deployment preserves unrelated GPIO entries and presets, and refuses to overwrite another user's FPPD_STARTED command. Run `Tools/verify_teddy_controls.py` for live command-path checks; it deliberately reports physical presses/audibility as unverified.
 
 Rendered FSEQ/ESEQ files follow the repository's ignore rules. The source XSQs, builder, runtime/deployment scripts, manifest and verification records are retained here. Generated ESEQ files are installed on the Selfie Station and kept in the local Effects folder.
+
+## Physical button diagnosis — October 18, 2026
+
+User reported no response on the first physical test. Read-only `pinctrl get` monitoring established GPIO23 (Red), GPIO27 (Green), GPIO22 (Blue), and GPIO24 (Yellow) are low at rest and go high during a press. Corrected all four from falling to rising commands, retaining their input bias settings. The installed FPP GPIO handler starts the re-enable delay on every rising edge even with no rising commands; therefore a release within the delay was suppressed (especially Red at 2200 ms). White was already rising, but no GPIO17 transition was recorded in the first test; its physical path still needs confirmation. Restarted only the button Pi to load the correction. Master remained running.
+
+After correction, real button presses produced Red, Down, Right and Left worker events; the Red sound counter increased from 4 to 5. White still has no observed GPIO17 transition. Visual illumination and sound remain pending user confirmation.
