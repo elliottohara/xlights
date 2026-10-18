@@ -53,5 +53,9 @@
   "rerender_required": false,
   "sequence_upload_required": false,
   "os_release": "Debian GNU/Linux 13 (trixie)",
-  "physical_observation": "Configuration, driver initialization and live DDP verified; user visual test not performed."
+  "physical_observation": "Configuration, driver initialization and live DDP verified; user visual test not performed.",
+  "browser_setup_completed": true,
+  "channel_outputs_page_verified_after_refresh": true,
+  "browser_evidence": "Backups/selfie-station-setup-complete.jpg",
+  "setup_completion_note": "Completed the upgraded native four-step wizard with the restored choices; the API completion flag alone had not prevented the Channel Outputs redirect."
 }

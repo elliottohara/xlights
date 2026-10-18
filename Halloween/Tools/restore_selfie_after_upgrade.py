@@ -96,6 +96,15 @@ for path,label in [('/api/channel/output/universeOutputs','routing'),('/api/sche
  assert api(MASTER,path)==json.loads((B/('master-'+label+'-before.json')).read_text())
 master_after=api(MASTER,'/api/system/status');assert master_after['fppd']=='running'
 save('status-after.json',status);save('master-status-after.json',master_after)
-record.update(complete=True,hostname_verified=True,regional_settings_verified=True,initial_setup_complete=True,pixel_outputs_readback_verified=True,ddp_input_verified=True,channel_inputs_enabled=True,pixel_output_module_enabled=True,pixel_driver_initialized=True,network_forwarding_enabled=False,old_grinch_effects_stopped=True,local_reboot_complete=True,master_kept_running=True,master_configuration_preserved=True,finished_at=datetime.now(ZoneInfo('America/Chicago')).isoformat(),warnings=status.get('warnings',[]))
+# A completion setting alone is insufficient on newer FPP builds: the native
+# wizard also records prompted settings and privacy choices. Verify a normal
+# configuration page rather than trusting only the completion flag.
+with urlopen('http://'+IP+'/channeloutputs.php',timeout=20) as page:
+    final_url=page.geturl()
+if 'initialSetup.php' in final_url:
+    record.update(complete=False,browser_setup_required=True,pixel_outputs_readback_verified=True,ddp_input_verified=True)
+    (SHOW/'selfie-station-setup-latest.json').write_text(json.dumps(record,indent=2)+'\n')
+    raise RuntimeError('Controller restored; finish the native setup wizard in the browser, then verify Channel Outputs after refresh.')
+record.update(complete=True,normal_configuration_page_verified=True,hostname_verified=True,regional_settings_verified=True,initial_setup_complete=True,pixel_outputs_readback_verified=True,ddp_input_verified=True,channel_inputs_enabled=True,pixel_output_module_enabled=True,pixel_driver_initialized=True,network_forwarding_enabled=False,old_grinch_effects_stopped=True,local_reboot_complete=True,master_kept_running=True,master_configuration_preserved=True,finished_at=datetime.now(ZoneInfo('America/Chicago')).isoformat(),warnings=status.get('warnings',[]))
 (SHOW/'selfie-station-setup-latest.json').write_text(json.dumps(record,indent=2)+'\n')
 print('COMPLETE: TEDDY 500 ON PORT 1, PUMPKIN 167 ON PORT 2, BOTH 20%; DDP RECEIVED; PIXEL DRIVER INITIALIZED; MASTER REMAINS RUNNING.',flush=True)
