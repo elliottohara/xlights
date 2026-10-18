@@ -6,7 +6,7 @@
   "finished_at": "2026-10-18T15:07:22.164786-05:00",
   "master": "192.168.0.19",
   "projector": "192.168.0.201",
-  "master_status": "idle",
+  "master_status": "stopped",
   "master_files_uploaded": 25,
   "projector_files_uploaded": 25,
   "playlist_and_schedule_preserved": true,
@@ -248,5 +248,24 @@
     "Sequences/Zombie/Tools/Halloween import - Shared Halloween.xjmap"
   ],
   "verification_record": "single-show-consolidation-latest.json",
-  "local_recovery_backup": "/Users/elliott.ohara/xlights/Halloween/Backups/Single Halloween show 20261018-141143"
+  "local_recovery_backup": "/Users/elliott.ohara/xlights/Halloween/Backups/Single Halloween show 20261018-141143",
+  "playback_refresh_required": true,
+  "controller_correction": {
+    "record": "garage-left-bottom-port8-latest.json",
+    "controller": "GENIUS-PORCH",
+    "port": 8,
+    "chain": [
+      {
+        "model": "Garage Left Bottom",
+        "pixels": 73
+      },
+      {
+        "model": "Wall - Garage Top",
+        "pixels": 30
+      }
+    ],
+    "total_pixels": 103,
+    "hardware_verified": true,
+    "native_controller_reference": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage Left Bottom Genius port8 20261018-151752/physical-output-reference-after.json"
+  }
 }

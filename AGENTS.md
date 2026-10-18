@@ -1,5 +1,12 @@
 # xLights Show Directory — Agent Notes
 
+## Garage line on porch Genius port 8 — October 18, 2026
+
+- User moved the existing cable to **GENIUS-PORCH / 192.168.0.9, port 8**. Preserve the original physical chain: **Garage Left Bottom (73 RGB pixels), then Wall - Garage Top (30 RGB pixels), 103 total**, WS2811 at 30%. Wall - Garage Top has `ModelChain=">Garage Left Bottom"`. Both props move together. The old center-shrub cleanup had stripped this chain; the user clarified it is physically installed.
+- User explicitly allows channel moves and re-rendering. Native allocation places the line at Genius-relative channel 7018, with Wall - Garage Top at 7237. Genius allocation is now 11250 channels; following controllers moved by 30 channels. All affected controller outputs and Master routes were uploaded and read back. Falcon .249 test settings and oak tombstone split were preserved.
+- This is the latest controller revision. **Master output service is stopped for layout testing; playback files still use the previous address generation and require fresh rendering/deployment before playback resumes.** Current layout authority remains the single Halloween root. The earlier single-show consolidation report documents the prior completed playback generation.
+- Evidence, original chain source, original/current layouts, network and live hardware snapshots: `Halloween/garage-left-bottom-port8-latest.json` and its backup. Fresh native port maps: `physical-output-reference-after.json` in that backup. Garage Left Bottom and Wall - Garage Top currently have no direct sequence effects or group memberships after the earlier shrub remap; restoring their choreography is separate from this physical-port correction.
+
 ## Current Halloween policy — October 18, 2026
 
 - User approved replacing per-song show folders with **one Halloween show folder** at `/Users/elliott.ohara/xlights/Halloween`. Open xLights with that folder, then open songs under `Sequences/<Song>/`. The standalone-song instructions below continue to apply to Christmas only.

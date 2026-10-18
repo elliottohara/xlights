@@ -1,0 +1,30 @@
+{
+  "backup": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage Left Bottom Genius port8 20261018-151752",
+  "model": "Garage Left Bottom",
+  "controller": "GENIUS-PORCH",
+  "ip": "192.168.0.9",
+  "port": 8,
+  "pixels": 73,
+  "brightness": 30,
+  "start_channel": 184999,
+  "relative_start": 7018,
+  "existing_sequence_effects": 0,
+  "complete": true,
+  "chain": [
+    {
+      "model": "Garage Left Bottom",
+      "pixels": 73
+    },
+    {
+      "model": "Wall - Garage Top",
+      "pixels": 30
+    }
+  ],
+  "total_pixels": 103,
+  "layout_chain_verified": true,
+  "playback_refresh_required": true,
+  "hardware_readback_verified": true,
+  "all_outputs_refreshed": true,
+  "master_service_stopped_for_layout_testing": true,
+  "original_chain_evidence": "Halloween/Backups/Controller corrections 20261013-184721/master-layout-before-named-channel-fix.xml"
+}
