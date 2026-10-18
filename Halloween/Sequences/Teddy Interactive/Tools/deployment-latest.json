@@ -41,18 +41,8 @@
   "gpio": [
     {
       "pin": "P1-10",
-      "enabled": false,
-      "mode": "gpio",
-      "desc": "Unused legacy wing trigger",
-      "debounceTime": 100,
-      "rising": [],
-      "falling": [],
-      "hold": []
-    },
-    {
-      "pin": "P1-11",
       "enabled": true,
-      "mode": "gpio_pd",
+      "mode": "gpio",
       "desc": "White - both arms sweep + marquee scarf",
       "debounceTime": 100,
       "rising": [
@@ -67,6 +57,21 @@
           "multisyncHosts": ""
         }
       ],
+      "falling": [],
+      "hold": [],
+      "holdTime": 0,
+      "debounceEdge": "both",
+      "reEnableMode": "timed",
+      "reEnableDelay": 5100,
+      "ledPin": ""
+    },
+    {
+      "pin": "P1-11",
+      "enabled": false,
+      "mode": "gpio_pd",
+      "desc": "Unused former White assignment",
+      "debounceTime": 100,
+      "rising": [],
       "falling": [],
       "hold": [],
       "holdTime": 0,
@@ -219,5 +224,6 @@
   "controller_pixel_config_unchanged": true,
   "runtime_sha256": "dfe90ff1aa74d5a9ca78d690cb2eb9a8d29cbc4ccb1d981d4d56dd393be5cd85",
   "routine_duration_ms": 5000,
-  "audio_output": "Sound Blaster Play! 3 (S3)"
+  "audio_output": "Sound Blaster Play! 3 (S3)",
+  "white_input_pin": "P1-10 / GPIO15"
 }

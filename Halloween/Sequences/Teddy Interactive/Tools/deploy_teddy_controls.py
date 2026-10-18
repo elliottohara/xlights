@@ -64,7 +64,7 @@ def main():
     # Physical buttons drive low at rest and high on press. FPP suppresses
     # the input after every rising edge, even when only falling has commands.
     mapping={
-        'P1-11':('White - both arms sweep + marquee scarf','white','gpio_pd','rising'),
+        'P1-10':('White - both arms sweep + marquee scarf','white','gpio','rising'),
         'P1-13':('Green - left wave + green scarf','green','gpio_pu','rising'),
         'P1-15':('Blue - right wave + blue scarf','blue','gpio_pu','rising'),
         'P1-16':('Red - alternating arms + red scarf + fart','red','gpio_pu','rising'),
@@ -78,8 +78,8 @@ def main():
                      reEnableDelay=5100,ledPin='')
             t[edge]=[{'command':'Run Script','args':['teddy_controls.sh',action,''],
                      'multisyncCommand':False,'multisyncHosts':''}]
-        elif t['pin']=='P1-10':
-            t.update(enabled=False,desc='Unused legacy wing trigger',rising=[],falling=[],hold=[])
+        elif t['pin']=='P1-11':
+            t.update(enabled=False,desc='Unused former White assignment',rising=[],falling=[],hold=[])
     print('GPIO',request(PI,'/api/configfile/gpio.json',gpio),flush=True)
     assert request(PI,'/api/configfile/gpio.json')==gpio
     assert request(PI,'/api/configfile/commandPresets.json')==presets

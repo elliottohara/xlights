@@ -29,15 +29,16 @@ for action in ['white','green','blue','yellow','red']:
  print('VERIFIED',action,flush=True)
 gpio=d.request(d.PI,'/api/configfile/gpio.json');enabled=[v for v in gpio if v.get('enabled')]
 assert len(enabled)==5
+expected_pins={'white':'P1-10','green':'P1-13','blue':'P1-15','red':'P1-16','yellow':'P1-18'}
 for v in enabled:
  assert len(v['rising'])==1 and not v['falling'] and v['reEnableMode']=='timed' and v['reEnableDelay']==5100
- assert v['rising'][0]['args'][1] in ['white','green','blue','yellow','red']
+ assert v['pin']==expected_pins[v['rising'][0]['args'][1]]
 master=d.request(d.MASTER,'/api/system/status');assert master['fppd']=='running'
 pixels=d.request(d.TEDDY,'/api/channel/output/co-bbbStrings')
 before=json.loads((TOOL/'deployment-before.json').read_text());assert pixels==before['pixels']
 audio=d.request(d.PI,'/api/settings/AudioOutput');assert audio['value']=='S3'
 report={'command_path_checks':results,'gpio_readback_verified':True,'master_running':True,
- 'physical_button_presses_verified':False,'white_physical_input_unconfirmed':True,
+ 'physical_button_presses_verified':False,'white_physical_input':'GPIO15 / P1-10',
  'audio_output':'Sound Blaster Play! 3','sound_audibility_verified':False,
  'controller_pixel_config_unchanged':True,'runtime':runtime()}
 (TOOL/'verification-latest.json').write_text(json.dumps(report,indent=2)+'\n')

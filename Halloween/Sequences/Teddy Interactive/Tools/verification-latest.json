@@ -39,7 +39,7 @@
   "gpio_readback_verified": true,
   "master_running": true,
   "physical_button_presses_verified": false,
-  "white_physical_input_unconfirmed": true,
+  "white_physical_input_unconfirmed": false,
   "audio_output": "Sound Blaster Play! 3",
   "sound_audibility_verified": false,
   "controller_pixel_config_unchanged": true,
@@ -54,5 +54,8 @@
     "effect": "Teddy Hold Down",
     "show_playing": false,
     "heartbeat": 1792367151.7480867
-  }
+  },
+  "white_physical_input": "GPIO15 / P1-10",
+  "white_visual_retest": "User confirmed White works now",
+  "white_physical_press_verified": true
 }
