@@ -1,0 +1,852 @@
+{
+  "started_at": "2026-10-18T16:34:06.281973-05:00",
+  "show_folder": "/Users/elliott.ohara/xlights/Halloween",
+  "backup": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406",
+  "layout_sha256": "7ab00c0500b63786b21323197a2673ffe83bb4bd174f13d64eb7cb8553f54283",
+  "network_sha256": "74a5089d1644b1e286262c7870f655b019276617c9efa20b6a929c7b69c71951",
+  "songs": {
+    "01 - Abracadabra": {
+      "xsq": "/Users/elliott.ohara/xlights/Halloween/Sequences/01 - Abracadabra/01 - Abracadabra.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/01 - Abracadabra/01 - Abracadabra.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/01 - Abracadabra/01 - Abracadabra.fseq",
+      "rendered": true,
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Native checks/01 - Abracadabra.html",
+      "native_critical_issues": {},
+      "fseq": {
+        "channels": 305940,
+        "frames": 8935,
+        "frame_ms": 25,
+        "bytes": 66836673
+      },
+      "fseq_sha256": "aff0d3ce5b99012e5278d4b5fc06a663cbab5af9f344c072a10032a6daa8f523",
+      "render_effects_unchanged": true,
+      "physical_lit_samples": {
+        "Garage Left Bottom": 214,
+        "Wall - Garage Top": 214,
+        "House Left": 214,
+        "Window - Bottom Left": 180,
+        "Lantana 11": 194,
+        "Column Left": 2
+      },
+      "rendered_at": "2026-10-18T16:35:03.255310-05:00"
+    },
+    "03 - This Is Halloween": {
+      "xsq": "/Users/elliott.ohara/xlights/Halloween/Sequences/03 - This Is Halloween/03 - This Is Halloween.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/03 - This Is Halloween/03 - This Is Halloween.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/03 - This Is Halloween/03 - This Is Halloween.fseq",
+      "rendered": true,
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Native checks/03 - This Is Halloween.html",
+      "native_critical_issues": {},
+      "fseq": {
+        "channels": 249627,
+        "frames": 3931,
+        "frame_ms": 50,
+        "bytes": 281157671
+      },
+      "fseq_sha256": "cb266fe75974e4d87d14bbee64b019086ba354f6142a0c1db4a5d3914239f741",
+      "render_effects_unchanged": true,
+      "physical_lit_samples": {
+        "Garage Left Bottom": 196,
+        "Wall - Garage Top": 191,
+        "House Left": 197,
+        "Window - Bottom Left": 181,
+        "Lantana 11": 174,
+        "Column Left": 0
+      },
+      "rendered_at": "2026-10-18T16:35:14.419810-05:00"
+    },
+    "12-The-Monster-_feat.-Rihanna_": {
+      "xsq": "/Users/elliott.ohara/xlights/Halloween/Sequences/12-The-Monster-_feat.-Rihanna_/12-The-Monster-_feat.-Rihanna_.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/12-The-Monster-_feat.-Rihanna_/12-The-Monster-_feat.-Rihanna_.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/12-The-Monster-_feat.-Rihanna_/12-The-Monster-_feat.-Rihanna_.fseq",
+      "rendered": true,
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Native checks/12-The-Monster-_feat.-Rihanna_.html",
+      "native_critical_issues": {},
+      "fseq": {
+        "channels": 268623,
+        "frames": 10007,
+        "frame_ms": 25,
+        "bytes": 192841707
+      },
+      "fseq_sha256": "49ea219d2af819cddb24ada09bb2e0699396aade0fbfd5c52002a67e208a4e27",
+      "render_effects_unchanged": true,
+      "physical_lit_samples": {
+        "Garage Left Bottom": 181,
+        "Wall - Garage Top": 151,
+        "House Left": 200,
+        "Window - Bottom Left": 110,
+        "Lantana 11": 68,
+        "Column Left": 64
+      },
+      "rendered_at": "2026-10-18T16:35:27.400737-05:00"
+    },
+    "Bad Romance (Extra Clean)": {
+      "xsq": "/Users/elliott.ohara/xlights/Halloween/Sequences/Bad Romance (Extra Clean)/Bad Romance (Extra Clean).xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/Bad Romance (Extra Clean)/Bad Romance (Extra Clean).xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/Bad Romance (Extra Clean)/Bad Romance (Extra Clean).fseq",
+      "rendered": true,
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Native checks/Bad Romance (Extra Clean).html",
+      "native_critical_issues": {},
+      "fseq": {
+        "channels": 265926,
+        "frames": 7265,
+        "frame_ms": 25,
+        "bytes": 152245973
+      },
+      "fseq_sha256": "65cb6bad950e85da51c704a2054c85ce8a0c4739025eda256f18d44bbcae201f",
+      "render_effects_unchanged": true,
+      "physical_lit_samples": {
+        "Garage Left Bottom": 74,
+        "Wall - Garage Top": 69,
+        "House Left": 85,
+        "Window - Bottom Left": 3,
+        "Lantana 11": 122,
+        "Column Left": 2
+      },
+      "rendered_at": "2026-10-18T16:35:40.884698-05:00"
+    },
+    "Dracula": {
+      "xsq": "/Users/elliott.ohara/xlights/Halloween/Sequences/Dracula/Dracula.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/Dracula/Dracula.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/Dracula/Dracula.fseq",
+      "rendered": true,
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Native checks/Dracula.html",
+      "native_critical_issues": {},
+      "fseq": {
+        "channels": 297432,
+        "frames": 8212,
+        "frame_ms": 25,
+        "bytes": 410090082
+      },
+      "fseq_sha256": "6977b0e1ebbb6896d7853b214313848c539bf378d9bab061b055c49ed5deaa2f",
+      "render_effects_unchanged": true,
+      "physical_lit_samples": {
+        "Garage Left Bottom": 194,
+        "Wall - Garage Top": 191,
+        "House Left": 175,
+        "Window - Bottom Left": 151,
+        "Lantana 11": 204,
+        "Column Left": 172
+      },
+      "rendered_at": "2026-10-18T16:35:54.077222-05:00"
+    },
+    "Ghostbusters": {
+      "xsq": "/Users/elliott.ohara/xlights/Halloween/Sequences/Ghostbusters/Ghostbusters.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/Ghostbusters/Ghostbusters.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/Ghostbusters/Ghostbusters.fseq",
+      "rendered": true,
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Native checks/Ghostbusters.html",
+      "native_critical_issues": {},
+      "fseq": {
+        "channels": 260634,
+        "frames": 6867,
+        "frame_ms": 25,
+        "bytes": 489490850
+      },
+      "fseq_sha256": "d627aec3b5a330cf9a2de62e8fdd0b165845194862d84f071b0485bfe2b7e629",
+      "render_effects_unchanged": true,
+      "physical_lit_samples": {
+        "Garage Left Bottom": 114,
+        "Wall - Garage Top": 104,
+        "House Left": 105,
+        "Window - Bottom Left": 121,
+        "Lantana 11": 117,
+        "Column Left": 120
+      },
+      "rendered_at": "2026-10-18T16:36:06.487279-05:00"
+    },
+    "Ghostbusters 2": {
+      "xsq": "/Users/elliott.ohara/xlights/Halloween/Sequences/Ghostbusters 2/Ghostbusters 2.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/Ghostbusters 2/Ghostbusters 2.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/Ghostbusters 2/Ghostbusters 2.fseq",
+      "rendered": true,
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Native checks/Ghostbusters 2.html",
+      "native_critical_issues": {},
+      "fseq": {
+        "channels": 260634,
+        "frames": 6867,
+        "frame_ms": 25,
+        "bytes": 493864812
+      },
+      "fseq_sha256": "5e40ee898ce680262d79f5ea95e2a8202f3d04e39080198f37ffc9fcb1d9679d",
+      "render_effects_unchanged": true,
+      "physical_lit_samples": {
+        "Garage Left Bottom": 114,
+        "Wall - Garage Top": 104,
+        "House Left": 105,
+        "Window - Bottom Left": 121,
+        "Lantana 11": 117,
+        "Column Left": 120
+      },
+      "rendered_at": "2026-10-18T16:36:19.003943-05:00"
+    },
+    "GreatestShowWorking 2": {
+      "xsq": "/Users/elliott.ohara/xlights/Halloween/Sequences/GreatestShowWorking 2/GreatestShowWorking 2.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/GreatestShowWorking 2/GreatestShowWorking 2.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/GreatestShowWorking 2/GreatestShowWorking 2.fseq",
+      "rendered": true,
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Native checks/GreatestShowWorking 2.html",
+      "native_critical_issues": {},
+      "fseq": {
+        "channels": 305940,
+        "frames": 5389,
+        "frame_ms": 50,
+        "bytes": 397990526
+      },
+      "fseq_sha256": "89837ee9dcab9b65443a10375f5555efb099577f996875b20cd5ada2b471fa41",
+      "render_effects_unchanged": true,
+      "physical_lit_samples": {
+        "Garage Left Bottom": 244,
+        "Wall - Garage Top": 243,
+        "House Left": 248,
+        "Window - Bottom Left": 244,
+        "Lantana 11": 241,
+        "Column Left": 244
+      },
+      "rendered_at": "2026-10-18T16:36:47.190544-05:00"
+    },
+    "Halfway To Hell": {
+      "xsq": "/Users/elliott.ohara/xlights/Halloween/Sequences/Halfway To Hell/Halfway To Hell.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/Halfway To Hell/Halfway To Hell.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/Halfway To Hell/Halfway To Hell.fseq",
+      "rendered": true,
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Native checks/Halfway To Hell.html",
+      "native_critical_issues": {},
+      "fseq": {
+        "channels": 255885,
+        "frames": 7137,
+        "frame_ms": 25,
+        "bytes": 102847103
+      },
+      "fseq_sha256": "e9647a691785dfe578f7f45eb6bee39bcf9e3b0328f0eea7bc1b887883dc7cc3",
+      "render_effects_unchanged": true,
+      "physical_lit_samples": {
+        "Garage Left Bottom": 152,
+        "Wall - Garage Top": 133,
+        "House Left": 149,
+        "Window - Bottom Left": 116,
+        "Lantana 11": 49,
+        "Column Left": 115
+      },
+      "rendered_at": "2026-10-18T16:36:58.732997-05:00"
+    },
+    "I Knew It I Knew You": {
+      "xsq": "/Users/elliott.ohara/xlights/Halloween/Sequences/I Knew It I Knew You/I Knew It I Knew You.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/I Knew It I Knew You/I Knew It I Knew You.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/I Knew It I Knew You/I Knew It I Knew You.fseq",
+      "rendered": true,
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Native checks/I Knew It I Knew You.html",
+      "native_critical_issues": {},
+      "fseq": {
+        "channels": 256062,
+        "frames": 7128,
+        "frame_ms": 25,
+        "bytes": 235640330
+      },
+      "fseq_sha256": "5fe8734ca5d948d17239249fe55260332c88001a2ec032af311497045b2bc73b",
+      "render_effects_unchanged": true,
+      "physical_lit_samples": {
+        "Garage Left Bottom": 171,
+        "Wall - Garage Top": 170,
+        "House Left": 171,
+        "Window - Bottom Left": 114,
+        "Lantana 11": 170,
+        "Column Left": 110
+      },
+      "rendered_at": "2026-10-18T16:34:54.542092-05:00"
+    },
+    "Insomnia": {
+      "xsq": "/Users/elliott.ohara/xlights/Halloween/Sequences/Insomnia/Insomnia.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/Insomnia/Insomnia.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/Insomnia/Insomnia.fseq",
+      "rendered": true,
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Native checks/Insomnia.html",
+      "native_critical_issues": {},
+      "fseq": {
+        "channels": 305940,
+        "frames": 8593,
+        "frame_ms": 25,
+        "bytes": 24993809
+      },
+      "fseq_sha256": "414cecb3db747ae2fd094a34567736479600d69aa41bb502179a16b6d8aea980",
+      "render_effects_unchanged": true,
+      "physical_lit_samples": {
+        "Garage Left Bottom": 88,
+        "Wall - Garage Top": 77,
+        "House Left": 77,
+        "Window - Bottom Left": 81,
+        "Lantana 11": 122,
+        "Column Left": 46
+      },
+      "rendered_at": "2026-10-18T16:37:08.223229-05:00"
+    },
+    "Monster Mash": {
+      "xsq": "/Users/elliott.ohara/xlights/Halloween/Sequences/Monster Mash/Monster Mash.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/Monster Mash/Monster Mash.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/Monster Mash/Monster Mash.fseq",
+      "rendered": true,
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Native checks/Monster Mash.html",
+      "native_critical_issues": {},
+      "fseq": {
+        "channels": 268677,
+        "frames": 7683,
+        "frame_ms": 25,
+        "bytes": 585572135
+      },
+      "fseq_sha256": "707594e5d8781c9c22a5e358e6d2f22f598e9f1dd7274449ee65df24c9225623",
+      "render_effects_unchanged": true,
+      "physical_lit_samples": {
+        "Garage Left Bottom": 127,
+        "Wall - Garage Top": 119,
+        "House Left": 119,
+        "Window - Bottom Left": 124,
+        "Lantana 11": 129,
+        "Column Left": 116
+      },
+      "rendered_at": "2026-10-18T16:37:21.632192-05:00"
+    },
+    "Skrillex Medley": {
+      "xsq": "/Users/elliott.ohara/xlights/Halloween/Sequences/Skrillex Medley/Skrillex Medley.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/Skrillex Medley/Skrillex Medley.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/Skrillex Medley/Skrillex Medley.fseq",
+      "rendered": true,
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Native checks/Skrillex Medley.html",
+      "native_critical_issues": {},
+      "fseq": {
+        "channels": 285681,
+        "frames": 8563,
+        "frame_ms": 25,
+        "bytes": 298863391
+      },
+      "fseq_sha256": "7c167feb32c335991bf199b92dfe7d365160be33f41336b0bc67abf667cab399",
+      "render_effects_unchanged": true,
+      "physical_lit_samples": {
+        "Garage Left Bottom": 120,
+        "Wall - Garage Top": 104,
+        "House Left": 132,
+        "Window - Bottom Left": 145,
+        "Lantana 11": 131,
+        "Column Left": 151
+      },
+      "rendered_at": "2026-10-18T16:37:35.628016-05:00"
+    },
+    "Something In The Way": {
+      "xsq": "/Users/elliott.ohara/xlights/Halloween/Sequences/Something In The Way/Something In The Way.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/Something In The Way/Something In The Way.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/Something In The Way/Something In The Way.fseq",
+      "rendered": true,
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Native checks/Something In The Way.html",
+      "native_critical_issues": {},
+      "fseq": {
+        "channels": 251430,
+        "frames": 9285,
+        "frame_ms": 25,
+        "bytes": 269056453
+      },
+      "fseq_sha256": "7da22e22174d571a52bb3feaed2607f32c92525d3ab5a4fdcc150c895a3ba883",
+      "render_effects_unchanged": true,
+      "physical_lit_samples": {
+        "Garage Left Bottom": 232,
+        "Wall - Garage Top": 232,
+        "House Left": 232,
+        "Window - Bottom Left": 213,
+        "Lantana 11": 233,
+        "Column Left": 232
+      },
+      "rendered_at": "2026-10-18T16:37:52.397024-05:00"
+    },
+    "The Dead Dance": {
+      "xsq": "/Users/elliott.ohara/xlights/Halloween/Sequences/The Dead Dance/The Dead Dance.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/The Dead Dance/The Dead Dance.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/The Dead Dance/The Dead Dance.fseq",
+      "rendered": true,
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Native checks/The Dead Dance.html",
+      "native_critical_issues": {},
+      "fseq": {
+        "channels": 305940,
+        "frames": 9140,
+        "frame_ms": 25,
+        "bytes": 230619056
+      },
+      "fseq_sha256": "f2a4cb7cf38306511ed1e9b9e15e0f7b3378b120e509ec9def0804c805788cad",
+      "render_effects_unchanged": true,
+      "physical_lit_samples": {
+        "Garage Left Bottom": 192,
+        "Wall - Garage Top": 187,
+        "House Left": 191,
+        "Window - Bottom Left": 190,
+        "Lantana 11": 215,
+        "Column Left": 47
+      },
+      "rendered_at": "2026-10-18T16:38:06.810424-05:00"
+    },
+    "The Devil Went Down to Georgia": {
+      "xsq": "/Users/elliott.ohara/xlights/Halloween/Sequences/The Devil Went Down to Georgia/The Devil Went Down to Georgia.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/The Devil Went Down to Georgia/The Devil Went Down to Georgia.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/The Devil Went Down to Georgia/The Devil Went Down to Georgia.fseq",
+      "rendered": true,
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Native checks/The Devil Went Down to Georgia.html",
+      "native_critical_issues": {},
+      "fseq": {
+        "channels": 297432,
+        "frames": 8616,
+        "frame_ms": 25,
+        "bytes": 881076294
+      },
+      "fseq_sha256": "8d963fb23fa4588e499001d227b0a5ec25028a922cf7dedb4b78e3826f4495c4",
+      "render_effects_unchanged": true,
+      "physical_lit_samples": {
+        "Garage Left Bottom": 199,
+        "Wall - Garage Top": 191,
+        "House Left": 202,
+        "Window - Bottom Left": 206,
+        "Lantana 11": 201,
+        "Column Left": 108
+      },
+      "rendered_at": "2026-10-18T16:38:25.774923-05:00"
+    },
+    "The Imperial March": {
+      "xsq": "/Users/elliott.ohara/xlights/Halloween/Sequences/The Imperial March/The Imperial March.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/The Imperial March/The Imperial March.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/The Imperial March/The Imperial March.fseq",
+      "rendered": true,
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Native checks/The Imperial March.html",
+      "native_critical_issues": {},
+      "fseq": {
+        "channels": 286497,
+        "frames": 7547,
+        "frame_ms": 25,
+        "bytes": 575725963
+      },
+      "fseq_sha256": "add6e83bd9110552ea5830ac9eb4961f6d805a24942da26f6b20142ac767cab7",
+      "render_effects_unchanged": true,
+      "physical_lit_samples": {
+        "Garage Left Bottom": 148,
+        "Wall - Garage Top": 102,
+        "House Left": 150,
+        "Window - Bottom Left": 25,
+        "Lantana 11": 123,
+        "Column Left": 37
+      },
+      "rendered_at": "2026-10-18T16:38:43.925291-05:00"
+    },
+    "Thriller Xtreme Remap": {
+      "xsq": "/Users/elliott.ohara/xlights/Halloween/Sequences/Thriller Xtreme Remap/Thriller Xtreme Remap.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/Thriller Xtreme Remap/Thriller Xtreme Remap.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/Thriller Xtreme Remap/Thriller Xtreme Remap.fseq",
+      "rendered": true,
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Native checks/Thriller Xtreme Remap.html",
+      "native_critical_issues": {},
+      "fseq": {
+        "channels": 298290,
+        "frames": 14318,
+        "frame_ms": 25,
+        "bytes": 926332295
+      },
+      "fseq_sha256": "2dec671ab948a3a3afa25e5561f05ff3546f63b3c9480403ba56ff2cbf50df74",
+      "render_effects_unchanged": true,
+      "physical_lit_samples": {
+        "Garage Left Bottom": 280,
+        "Wall - Garage Top": 281,
+        "House Left": 319,
+        "Window - Bottom Left": 306,
+        "Lantana 11": 297,
+        "Column Left": 258
+      },
+      "rendered_at": "2026-10-18T16:39:10.077443-05:00"
+    },
+    "Titanium": {
+      "xsq": "/Users/elliott.ohara/xlights/Halloween/Sequences/Titanium/Titanium.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/Titanium/Titanium.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/Titanium/Titanium.fseq",
+      "rendered": true,
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Native checks/Titanium.html",
+      "native_critical_issues": {},
+      "fseq": {
+        "channels": 147243,
+        "frames": 9802,
+        "frame_ms": 25,
+        "bytes": 154984400
+      },
+      "fseq_sha256": "71d8d6d0a5eab9240fd5cd94def110565e3c775543169830b0ec1cf75ea7a4f3",
+      "render_effects_unchanged": true,
+      "physical_lit_samples": {
+        "Garage Left Bottom": 196,
+        "Wall - Garage Top": 174,
+        "House Left": 194,
+        "Window - Bottom Left": 78,
+        "Lantana 11": 120,
+        "Column Left": 150
+      },
+      "rendered_at": "2026-10-18T16:39:23.561110-05:00"
+    },
+    "Titanium 2": {
+      "xsq": "/Users/elliott.ohara/xlights/Halloween/Sequences/Titanium 2/Titanium 2.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/Titanium 2/Titanium 2.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/Titanium 2/Titanium 2.fseq",
+      "rendered": true,
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Native checks/Titanium 2.html",
+      "native_critical_issues": {},
+      "fseq": {
+        "channels": 144792,
+        "frames": 9802,
+        "frame_ms": 25,
+        "bytes": 154778067
+      },
+      "fseq_sha256": "8880d4c4d25967a3c22e3f2d2e1b2cb18af426e5fbb9b5715aa365dab068083d",
+      "render_effects_unchanged": true,
+      "physical_lit_samples": {
+        "Garage Left Bottom": 196,
+        "Wall - Garage Top": 174,
+        "House Left": 194,
+        "Window - Bottom Left": 78,
+        "Lantana 11": 120,
+        "Column Left": 150
+      },
+      "rendered_at": "2026-10-18T16:39:36.614008-05:00"
+    },
+    "We Will Rock You": {
+      "xsq": "/Users/elliott.ohara/xlights/Halloween/Sequences/We Will Rock You/We Will Rock You.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/We Will Rock You/We Will Rock You.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/We Will Rock You/We Will Rock You.fseq",
+      "rendered": true,
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Native checks/We Will Rock You.html",
+      "native_critical_issues": {},
+      "fseq": {
+        "channels": 288210,
+        "frames": 7674,
+        "frame_ms": 25,
+        "bytes": 551071964
+      },
+      "fseq_sha256": "084f2f20008db9b33fea3d804a91a9478bd5bf22c74634a64b774ec4414d8a17",
+      "render_effects_unchanged": true,
+      "physical_lit_samples": {
+        "Garage Left Bottom": 182,
+        "Wall - Garage Top": 174,
+        "House Left": 181,
+        "Window - Bottom Left": 134,
+        "Lantana 11": 160,
+        "Column Left": 0
+      },
+      "rendered_at": "2026-10-18T16:39:59.147683-05:00"
+    },
+    "Zombie": {
+      "xsq": "/Users/elliott.ohara/xlights/Halloween/Sequences/Zombie/Zombie.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/Zombie/Zombie.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/Zombie/Zombie.fseq",
+      "rendered": true,
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Native checks/Zombie.html",
+      "native_critical_issues": {},
+      "fseq": {
+        "channels": 297432,
+        "frames": 10044,
+        "frame_ms": 25,
+        "bytes": 243902954
+      },
+      "fseq_sha256": "1e875aaa84b82f3d6089f8605efa06e1a6f138f2cda9299b1d9ed87d22fb0172",
+      "render_effects_unchanged": true,
+      "physical_lit_samples": {
+        "Garage Left Bottom": 172,
+        "Wall - Garage Top": 160,
+        "House Left": 189,
+        "Window - Bottom Left": 141,
+        "Lantana 11": 215,
+        "Column Left": 120
+      },
+      "rendered_at": "2026-10-18T16:40:18.968162-05:00"
+    },
+    "static halloween": {
+      "xsq": "/Users/elliott.ohara/xlights/Halloween/Sequences/static halloween/static halloween.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/static halloween/static halloween.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/static halloween/static halloween.fseq",
+      "rendered": true,
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Native checks/static halloween.html",
+      "native_critical_issues": {},
+      "fseq": {
+        "channels": 101805,
+        "frames": 1200,
+        "frame_ms": 25,
+        "bytes": 15061406
+      },
+      "fseq_sha256": "a6c86f28b844ee1ce91bc30722ba4dcb8b9df2cafeccefc64db06ad43c9d5a8f",
+      "render_effects_unchanged": true,
+      "physical_lit_samples": {
+        "Garage Left Bottom": 30,
+        "Wall - Garage Top": 30,
+        "House Left": 30,
+        "Window - Bottom Left": 30,
+        "Lantana 11": 30,
+        "Column Left": 30
+      },
+      "rendered_at": "2026-10-18T16:40:23.702889-05:00"
+    },
+    "tuneto-halloween": {
+      "xsq": "/Users/elliott.ohara/xlights/Halloween/Sequences/tuneto-halloween/tuneto-halloween.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/tuneto-halloween/tuneto-halloween.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Before/Sequences/tuneto-halloween/tuneto-halloween.fseq",
+      "rendered": true,
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/Native checks/tuneto-halloween.html",
+      "native_critical_issues": {},
+      "fseq": {
+        "channels": 36864,
+        "frames": 1200,
+        "frame_ms": 25,
+        "bytes": 22150613
+      },
+      "fseq_sha256": "6fe993f2552dc292a55528f426b9f5a850546dfe85709541d436654d9e4ac0d3",
+      "render_effects_unchanged": true,
+      "physical_lit_samples": {
+        "Garage Left Bottom": 0,
+        "Wall - Garage Top": 0,
+        "House Left": 0,
+        "Window - Bottom Left": 0,
+        "Lantana 11": 0,
+        "Column Left": 0
+      },
+      "rendered_at": "2026-10-18T16:40:27.741322-05:00"
+    }
+  },
+  "all_local_renders_complete": true,
+  "master_must_remain_running": true,
+  "uploads_performed": false,
+  "master_before": {
+    "fppd": "running",
+    "status": 0,
+    "status_name": "idle"
+  },
+  "physical_output_reference": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage batch render 20261018-163406/physical-output-reference.json",
+  "sample_addresses": {
+    "Garage Left Bottom": {
+      "name": "Garage Left Bottom",
+      "description": "",
+      "startchannel": 184999,
+      "universe": 6,
+      "universestartchannel": 7018,
+      "channels": 219,
+      "pixels": 73
+    },
+    "Wall - Garage Top": {
+      "name": "Wall - Garage Top",
+      "description": "",
+      "startchannel": 185218,
+      "universe": 6,
+      "universestartchannel": 7237,
+      "channels": 90,
+      "pixels": 30
+    },
+    "House Left": {
+      "name": "House Left",
+      "description": "",
+      "startchannel": 172675,
+      "universe": 4,
+      "universestartchannel": 2383,
+      "channels": 258,
+      "pixels": 86
+    },
+    "Window - Bottom Left": {
+      "name": "Window - Bottom Left",
+      "description": "",
+      "startchannel": 172273,
+      "universe": 4,
+      "universestartchannel": 1981,
+      "channels": 402,
+      "pixels": 134
+    },
+    "Lantana 11": {
+      "name": "Lantana 11",
+      "description": "",
+      "startchannel": 172093,
+      "universe": 4,
+      "universestartchannel": 1801,
+      "channels": 180,
+      "pixels": 60
+    },
+    "Column Left": {
+      "name": "Column Left",
+      "description": "",
+      "startchannel": 230633,
+      "universe": 8,
+      "universestartchannel": 13990,
+      "channels": 198,
+      "pixels": 66
+    }
+  },
+  "finished_at": "2026-10-18T16:40:27.846974-05:00",
+  "master_after": {
+    "fppd": "running",
+    "status": 0,
+    "status_name": "idle"
+  },
+  "pixel_coverage_verification": {
+    "01 - Abracadabra": {
+      "garage_pixels_lit": {
+        "Garage Left Bottom": 73,
+        "Wall - Garage Top": 30
+      },
+      "sign_lit_samples": 220
+    },
+    "03 - This Is Halloween": {
+      "garage_pixels_lit": {
+        "Garage Left Bottom": 73,
+        "Wall - Garage Top": 30
+      },
+      "sign_lit_samples": 197
+    },
+    "12-The-Monster-_feat.-Rihanna_": {
+      "garage_pixels_lit": {
+        "Garage Left Bottom": 73,
+        "Wall - Garage Top": 30
+      },
+      "sign_lit_samples": 248
+    },
+    "Bad Romance (Extra Clean)": {
+      "garage_pixels_lit": {
+        "Garage Left Bottom": 73,
+        "Wall - Garage Top": 30
+      },
+      "sign_lit_samples": 178
+    },
+    "Dracula": {
+      "garage_pixels_lit": {
+        "Garage Left Bottom": 73,
+        "Wall - Garage Top": 30
+      },
+      "sign_lit_samples": 206
+    },
+    "Ghostbusters": {
+      "garage_pixels_lit": {
+        "Garage Left Bottom": 73,
+        "Wall - Garage Top": 30
+      },
+      "sign_lit_samples": 170
+    },
+    "Ghostbusters 2": {
+      "garage_pixels_lit": {
+        "Garage Left Bottom": 73,
+        "Wall - Garage Top": 30
+      },
+      "sign_lit_samples": 170
+    },
+    "GreatestShowWorking 2": {
+      "garage_pixels_lit": {
+        "Garage Left Bottom": 73,
+        "Wall - Garage Top": 30
+      },
+      "sign_lit_samples": 122
+    },
+    "Halfway To Hell": {
+      "garage_pixels_lit": {
+        "Garage Left Bottom": 73,
+        "Wall - Garage Top": 30
+      },
+      "sign_lit_samples": 179
+    },
+    "I Knew It I Knew You": {
+      "garage_pixels_lit": {
+        "Garage Left Bottom": 73,
+        "Wall - Garage Top": 30
+      },
+      "sign_lit_samples": 179
+    },
+    "Insomnia": {
+      "garage_pixels_lit": {
+        "Garage Left Bottom": 73,
+        "Wall - Garage Top": 30
+      },
+      "sign_lit_samples": 215
+    },
+    "Monster Mash": {
+      "garage_pixels_lit": {
+        "Garage Left Bottom": 73,
+        "Wall - Garage Top": 30
+      },
+      "sign_lit_samples": 193
+    },
+    "Skrillex Medley": {
+      "garage_pixels_lit": {
+        "Garage Left Bottom": 73,
+        "Wall - Garage Top": 30
+      },
+      "sign_lit_samples": 180
+    },
+    "Something In The Way": {
+      "garage_pixels_lit": {
+        "Garage Left Bottom": 73,
+        "Wall - Garage Top": 30
+      },
+      "sign_lit_samples": 233
+    },
+    "The Dead Dance": {
+      "garage_pixels_lit": {
+        "Garage Left Bottom": 73,
+        "Wall - Garage Top": 30
+      },
+      "sign_lit_samples": 229
+    },
+    "The Devil Went Down to Georgia": {
+      "garage_pixels_lit": {
+        "Garage Left Bottom": 73,
+        "Wall - Garage Top": 30
+      },
+      "sign_lit_samples": 216
+    },
+    "The Imperial March": {
+      "garage_pixels_lit": {
+        "Garage Left Bottom": 73,
+        "Wall - Garage Top": 30
+      },
+      "sign_lit_samples": 189
+    },
+    "Thriller Xtreme Remap": {
+      "garage_pixels_lit": {
+        "Garage Left Bottom": 73,
+        "Wall - Garage Top": 30
+      },
+      "sign_lit_samples": 358
+    },
+    "Titanium": {
+      "garage_pixels_lit": {
+        "Garage Left Bottom": 73,
+        "Wall - Garage Top": 30
+      },
+      "sign_lit_samples": 246
+    },
+    "Titanium 2": {
+      "garage_pixels_lit": {
+        "Garage Left Bottom": 73,
+        "Wall - Garage Top": 30
+      },
+      "sign_lit_samples": 246
+    },
+    "We Will Rock You": {
+      "garage_pixels_lit": {
+        "Garage Left Bottom": 73,
+        "Wall - Garage Top": 30
+      },
+      "sign_lit_samples": 191
+    },
+    "Zombie": {
+      "garage_pixels_lit": {
+        "Garage Left Bottom": 73,
+        "Wall - Garage Top": 30
+      },
+      "sign_lit_samples": 252
+    },
+    "static halloween": {
+      "garage_pixels_lit": {
+        "Garage Left Bottom": 73,
+        "Wall - Garage Top": 30
+      },
+      "sign_lit_samples": 30
+    },
+    "tuneto-halloween": {
+      "garage_pixels_lit": {
+        "Garage Left Bottom": 0,
+        "Wall - Garage Top": 0
+      },
+      "sign_lit_samples": 30
+    }
+  },
+  "garage_all_103_pixels_verified": true,
+  "all_24_tune_to_signs_lit": true
+}
