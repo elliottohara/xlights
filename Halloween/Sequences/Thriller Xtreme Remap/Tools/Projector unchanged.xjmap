@@ -1,0 +1,16 @@
+{
+  "mappings": [
+    {
+      "model": "Projector",
+      "strand": "",
+      "node": "",
+      "mapping": "Projector",
+      "color": "#FFFFFF"
+    }
+  ],
+  "timingtracks": [],
+  "eraseexisting": false,
+  "importblendmode": true,
+  "importfacestosequence": false,
+  "importmedia": false
+}

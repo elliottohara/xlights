@@ -60,6 +60,13 @@ def launch(show_dir, timeout=600):
     PORT selects the instance: 49913 launches with -a; 49914 launches with -b
     and `open -n` (without -n, macOS just focuses the already-running copy
     instead of starting a second instance)."""
+    from pathlib import Path
+    requested = Path(show_dir).resolve()
+    for candidate in [requested, *requested.parents]:
+        policy = candidate / 'show-folder-policy.json'
+        if policy.exists() and json.loads(policy.read_text()).get('mode') == 'single':
+            show_dir = str(candidate)
+            break
     try:
         return wait_ready(timeout=10)
     except TimeoutError:
@@ -104,6 +111,14 @@ def save(path=None):
 
 
 def render_all():
+    # New scaffolded songs opt into the user's shared display defaults.
+    # Direct xl('renderAll') callers must apply these explicitly before rendering.
+    from pathlib import Path
+    opened = xl('getOpenSequence', timeout=15)
+    sequence = Path(opened['fullseq'])
+    if (sequence.parent / 'Tools/sequence_defaults.json').exists():
+        from apply_sequence_defaults import apply_defaults
+        apply_defaults(sequence)
     xl('renderAll', timeout=3600)
 
 

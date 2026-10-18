@@ -1,0 +1,267 @@
+{
+  "mappings": [
+    {
+      "model": "Import HD - Pixel Forest GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Pixel Forest GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import HD - GE Starlord Cross GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Starlord Cross GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import HD - GE Starlord Diamond GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Starlord Diamond GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import HD - GE Starlord Feather Even GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Starlord Feather Even GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import HD - GE Starlord Feather Odd GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Starlord Feather Odd GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import HD - GE Starlord GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Starlord GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import HD - GE Starlord Plunger All GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Starlord Plunger All GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import HD - GE Starlord Spoke GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Starlord Spoke GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import HD - GE Starlord Square GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Starlord Square GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import HD - GE Starlord Z Left GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Starlord Z Left GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import HD - Pixel Poles GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Pixel Poles GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import HD - GE Preying Spiders ALL GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Preying Spiders ALL GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import HD - GE Preying Spider 150 GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Preying Spider 150 GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import HD - GE Preying Spider 150 Cross GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Preying Spider 150 Cross GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import HD - GE Preying Spider 150 Leg GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Preying Spider 150 Leg GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import HD - GE Preying Spider 150 Mouth GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Preying Spider 150 Mouth GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import HD - GE Preying Spider Body GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Preying Spider Body GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import HD - GE Preying Spider Crawly GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Preying Spider Crawly GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import HD - GE Preying Spider Eye GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Preying Spider Eye GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import HD - GE Grand Illusion GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Grand Illusion GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import HD - GE Grand Illusion Whirliwig Odd GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Grand Illusion Whirliwig Odd GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import HD - GE Grand Illusion Whirliwig Even GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Grand Illusion Whirliwig Even GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import HD - GE Grand Illusion Hook CW GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Grand Illusion Hook CW GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import HD - GE Grand Illusion Snowflake Spokes GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Grand Illusion Snowflake Spokes GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import HD - GE Grand Illusion Spokes Even GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Grand Illusion Spokes Even GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import HD - GE Grand Illusion Snowflake Filled GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Grand Illusion Snowflake Filled GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import HD - GE MOAW GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE MOAW GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import HD - GE Rosa Grande GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import HD - GE Rosa Grande Feather Long Odd GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Feather Long Odd GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import HD - GE Rosa Grande Feather Short Even GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Feather Short Even GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import HD - GE Rosa Grande Torch Long Even GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Torch Long Even GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import HD - GE Rosa Grande Torch Long Odd GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Torch Long Odd GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import HD - GE Rosa Grande Ribbon GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Ribbon GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import HD - GE Rosa Grande Outer Ball GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Outer Ball GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import HD - GE Rosa Grande 1",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande 1",
+      "color": "#FFFFFF"
+    }
+  ],
+  "timingtracks": [
+    {
+      "name": "New Timing",
+      "enabled": false
+    },
+    {
+      "name": "Beats",
+      "enabled": false
+    },
+    {
+      "name": "Note Onsets",
+      "enabled": false
+    }
+  ],
+  "eraseexisting": false,
+  "importblendmode": true,
+  "importfacestosequence": false,
+  "importmedia": false
+}

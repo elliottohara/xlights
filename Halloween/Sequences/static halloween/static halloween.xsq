@@ -22,7 +22,6 @@
     <ColorPalette>C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=55</ColorPalette>
     <ColorPalette>C_BUTTON_Palette1=#FFB34D,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=55</ColorPalette>
     <ColorPalette>C_BUTTON_Palette1=#7300FF,C_BUTTON_Palette2=#A45AFF,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_SLIDER_Brightness=68</ColorPalette>
-    <ColorPalette>C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=12</ColorPalette>
     <ColorPalette>C_BUTTON_Palette1=#FF6508,C_BUTTON_Palette2=#7300FF,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_SLIDER_Brightness=63</ColorPalette>
     <ColorPalette>C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=45</ColorPalette>
     <ColorPalette>C_BUTTON_Palette1=#7300FF,C_BUTTON_Palette2=#FFB34D,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_SLIDER_Brightness=76</ColorPalette>
@@ -54,11 +53,8 @@
     <ColorPalette>C_BUTTON_Palette1=#FFB34D,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=63</ColorPalette>
     <ColorPalette>C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=81</ColorPalette>
     <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=76</ColorPalette>
-    <ColorPalette>C_BUTTON_Palette1=#76C82B,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=72</ColorPalette>
     <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=90</ColorPalette>
-    <ColorPalette>C_BUTTON_Palette1=#7300FF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=68</ColorPalette>
-    <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=81</ColorPalette>
-    <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1,C_SLIDER_Brightness=54</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1</ColorPalette>
     <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#FD8008,C_BUTTON_Palette3=#00FF00,C_BUTTON_Palette4=#0000FF,C_BUTTON_Palette5=#FFFF00,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#00FFFF,C_BUTTON_Palette8=#FF00FF,C_CHECKBOX_Palette1=1</ColorPalette>
     <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#FD8008,C_BUTTON_Palette3=#00FF00,C_BUTTON_Palette4=#0000FF,C_BUTTON_Palette5=#FFFF00,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#00FFFF,C_BUTTON_Palette8=#FF00FF,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette6=1</ColorPalette>
   </ColorPalettes>
@@ -96,11 +92,12 @@
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkFrequency=Slow,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_Phoneme=rest</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkFrequency=Slow,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Pumpkin face,E_CHOICE_Faces_Phoneme=rest,E_CHOICE_Faces_UseState=outline with stem</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkFrequency=Slow,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_Phoneme=rest,E_CHOICE_Faces_UseState=Teddy RedBow static</Effect>
+    <Effect>E_CHOICE_Text_Dir=none,E_CHOICE_Text_Effect=normal,E_CHOICE_Text_Font=Use OS Fonts,E_FILEPICKERCTRL_Text_File=,E_FONTPICKER_Text_Font=Arial 24,E_TEXTCTRL_Text=Tune to 87.9,E_TEXTCTRL_Text_Speed=10,T_CHOICE_LayerMethod=Effect 1</Effect>
     <Effect>B_CUSTOM_SubBuffer=0.00x60.00x102.00x105.00x0.00x0.00,E_CHECKBOX_TextNoRepeat=0,E_CHECKBOX_TextToCenter=0,E_CHECKBOX_Text_Color_PerWord=0,E_CHECKBOX_Text_PixelOffsets=0,E_CHOICE_Text_Count=none,E_CHOICE_Text_Dir=left,E_CHOICE_Text_Effect=normal,E_CHOICE_Text_Font=Use OS Fonts,E_FILEPICKERCTRL_Text_File=,E_FONTPICKER_Text_Font=italic 'marker felt' 18 utf-8,E_SLIDER_Text_XEnd=0,E_SLIDER_Text_XStart=0,E_SLIDER_Text_YEnd=0,E_SLIDER_Text_YStart=0,E_TEXTCTRL_Text=Happy Halloween!,E_TEXTCTRL_Text_Speed=10,T_CHECKBOX_Canvas=1,T_CHOICE_LayerMethod=Highlight,T_LayersSelected=Blend</Effect>
-    <Effect>E_CHECKBOX_SynchroniseWithAudio=0,E_CHECKBOX_Video_AspectRatio=0,E_CHECKBOX_Video_TransparentBlack=0,E_CHOICE_Video_DurationTreatment=Normal,E_FILEPICKERCTRL_Video_Filename=Media/Images-57b64d/jackolatern.mp4,E_TEXTCTRL_Duration=714:55.500,E_TEXTCTRL_SampleSpacing=0,E_TEXTCTRL_Video_CropBottom=0,E_TEXTCTRL_Video_CropLeft=0,E_TEXTCTRL_Video_CropRight=100,E_TEXTCTRL_Video_CropTop=100,E_TEXTCTRL_Video_Starttime=0.00,E_TEXTCTRL_Video_TransparentBlack=0</Effect>
+    <Effect>E_CHECKBOX_SynchroniseWithAudio=0,E_CHECKBOX_Video_AspectRatio=0,E_CHECKBOX_Video_TransparentBlack=0,E_CHOICE_Video_DurationTreatment=Normal,E_FILEPICKERCTRL_Video_Filename=Sequences/static halloween/Media/Images-57b64d/jackolatern.mp4,E_TEXTCTRL_Duration=714:55.500,E_TEXTCTRL_SampleSpacing=0,E_TEXTCTRL_Video_CropBottom=0,E_TEXTCTRL_Video_CropLeft=0,E_TEXTCTRL_Video_CropRight=100,E_TEXTCTRL_Video_CropTop=100,E_TEXTCTRL_Video_Starttime=0.00,E_TEXTCTRL_Video_TransparentBlack=0</Effect>
   </EffectDB>
   <SequenceMedia>
-    <Video path="Media/Images-57b64d/jackolatern.mp4" />
+    <Video path="Sequences/static halloween/Media/Images-57b64d/jackolatern.mp4" />
   </SequenceMedia>
   <DataLayers>
     <DataLayer lor_params="0" channel_offset="0" num_channels="0" num_frames="0" data="&lt;rendered: erase-mode>" source="&lt;auto-generated>" name="Nutcracker" />
@@ -113,7 +110,6 @@
     <Element collapsed="true" type="model" name="Garage" visible="true" />
     <Element collapsed="true" type="model" name="Windows" visible="true" />
     <Element collapsed="true" type="model" name="Colums" visible="true" />
-    <Element collapsed="true" type="model" name="Floods GRP" visible="true" />
     <Element collapsed="true" type="model" name="Garden Borders" visible="true" />
     <Element collapsed="true" type="model" name="Driveway Left" visible="true" />
     <Element collapsed="true" type="model" name="Driveway Right" visible="true" />
@@ -309,252 +305,229 @@
         <Effect ref="2" name="SingleStrand" startTime="0" endTime="30000" palette="4" />
       </EffectLayer>
     </Element>
-    <Element type="model" name="Floods GRP">
-      <EffectLayer>
-        <Effect ref="1" name="On" startTime="0" endTime="30000" palette="5" />
-      </EffectLayer>
-    </Element>
     <Element type="model" name="Garden Borders">
       <EffectLayer>
-        <Effect ref="3" name="Marquee" startTime="0" endTime="30000" palette="6" />
+        <Effect ref="3" name="Marquee" startTime="0" endTime="30000" palette="5" />
       </EffectLayer>
     </Element>
     <Element type="model" name="Driveway Left">
       <EffectLayer>
-        <Effect ref="4" name="Marquee" startTime="0" endTime="30000" palette="7" />
+        <Effect ref="4" name="Marquee" startTime="0" endTime="30000" palette="6" />
       </EffectLayer>
     </Element>
     <Element type="model" name="Driveway Right">
       <EffectLayer>
-        <Effect ref="4" name="Marquee" startTime="0" endTime="30000" palette="7" />
+        <Effect ref="4" name="Marquee" startTime="0" endTime="30000" palette="6" />
       </EffectLayer>
     </Element>
     <Element type="model" name="Shrubs">
       <EffectLayer>
-        <Effect ref="5" name="Twinkle" startTime="0" endTime="30000" palette="8" />
+        <Effect ref="5" name="Twinkle" startTime="0" endTime="30000" palette="7" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="6" name="Marquee" startTime="0" endTime="30000" palette="9" />
+        <Effect ref="6" name="Marquee" startTime="0" endTime="30000" palette="8" />
       </EffectLayer>
     </Element>
     <Element type="model" name="Rose Bush GRP">
       <EffectLayer>
-        <Effect ref="5" name="Twinkle" startTime="0" endTime="30000" palette="10" />
+        <Effect ref="5" name="Twinkle" startTime="0" endTime="30000" palette="9" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="6" name="Marquee" startTime="0" endTime="30000" palette="11" />
+        <Effect ref="6" name="Marquee" startTime="0" endTime="30000" palette="10" />
       </EffectLayer>
     </Element>
     <Element type="model" name="Lantanas">
       <EffectLayer>
-        <Effect ref="5" name="Twinkle" startTime="0" endTime="30000" palette="12" />
+        <Effect ref="5" name="Twinkle" startTime="0" endTime="30000" palette="11" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="6" name="Marquee" startTime="0" endTime="30000" palette="9" />
+        <Effect ref="6" name="Marquee" startTime="0" endTime="30000" palette="8" />
       </EffectLayer>
     </Element>
     <Element type="model" name="Tombstones">
       <EffectLayer>
-        <Effect ref="1" name="On" startTime="0" endTime="30000" palette="13" />
+        <Effect ref="1" name="On" startTime="0" endTime="30000" palette="12" />
       </EffectLayer>
     </Element>
     <Element type="model" name="Tree - Oak">
       <EffectLayer>
-        <Effect ref="7" name="Twinkle" startTime="0" endTime="30000" palette="14" />
+        <Effect ref="7" name="Twinkle" startTime="0" endTime="30000" palette="13" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Rosa Grande GRP">
       <EffectLayer>
-        <Effect ref="8" name="Pinwheel" startTime="0" endTime="30000" palette="15" />
+        <Effect ref="8" name="Pinwheel" startTime="0" endTime="30000" palette="14" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="9" name="Pinwheel" startTime="0" endTime="30000" palette="15" />
+        <Effect ref="9" name="Pinwheel" startTime="0" endTime="30000" palette="14" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Starlord GRP">
       <EffectLayer>
-        <Effect ref="10" name="Pinwheel" startTime="0" endTime="30000" palette="16" />
+        <Effect ref="10" name="Pinwheel" startTime="0" endTime="30000" palette="15" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="11" name="Pinwheel" startTime="0" endTime="30000" palette="16" />
+        <Effect ref="11" name="Pinwheel" startTime="0" endTime="30000" palette="15" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Reel Max GRP">
       <EffectLayer>
-        <Effect ref="12" name="Pinwheel" startTime="0" endTime="30000" palette="17" />
+        <Effect ref="12" name="Pinwheel" startTime="0" endTime="30000" palette="16" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="13" name="Pinwheel" startTime="0" endTime="30000" palette="17" />
+        <Effect ref="13" name="Pinwheel" startTime="0" endTime="30000" palette="16" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Rosa Grande Torch Long Even GRP">
       <EffectLayer>
-        <Effect ref="14" name="Pinwheel" startTime="0" endTime="30000" palette="18" />
+        <Effect ref="14" name="Pinwheel" startTime="0" endTime="30000" palette="17" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Rosa Grande Feather Long Odd GRP">
       <EffectLayer>
-        <Effect ref="15" name="Spirals" startTime="0" endTime="30000" palette="19" />
+        <Effect ref="15" name="Spirals" startTime="0" endTime="30000" palette="18" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Rosa Grande Spoke GRP">
       <EffectLayer>
-        <Effect ref="16" name="Fan" startTime="0" endTime="30000" palette="20" />
+        <Effect ref="16" name="Fan" startTime="0" endTime="30000" palette="19" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Rosa Grande Outer Ball GRP">
       <EffectLayer>
-        <Effect ref="17" name="SingleStrand" startTime="0" endTime="30000" palette="21" />
+        <Effect ref="17" name="SingleStrand" startTime="0" endTime="30000" palette="20" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Starlord Plunger All GRP">
       <EffectLayer>
-        <Effect ref="18" name="Spirals" startTime="0" endTime="30000" palette="22" />
+        <Effect ref="18" name="Spirals" startTime="0" endTime="30000" palette="21" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Starlord Spoke GRP">
       <EffectLayer>
-        <Effect ref="19" name="SingleStrand" startTime="0" endTime="30000" palette="23" />
+        <Effect ref="19" name="SingleStrand" startTime="0" endTime="30000" palette="22" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Starlord Cross GRP">
       <EffectLayer>
-        <Effect ref="20" name="SingleStrand" startTime="0" endTime="30000" palette="24" />
+        <Effect ref="20" name="SingleStrand" startTime="0" endTime="30000" palette="23" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Reel Max Spokes GRP">
       <EffectLayer>
-        <Effect ref="21" name="Spirals" startTime="0" endTime="30000" palette="25" />
+        <Effect ref="21" name="Spirals" startTime="0" endTime="30000" palette="24" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Reel Max Chevrons GRP">
       <EffectLayer>
-        <Effect ref="22" name="SingleStrand" startTime="0" endTime="30000" palette="25" />
+        <Effect ref="22" name="SingleStrand" startTime="0" endTime="30000" palette="24" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Reel Max Circles Outer GRP">
       <EffectLayer>
-        <Effect ref="23" name="SingleStrand" startTime="0" endTime="30000" palette="26" />
+        <Effect ref="23" name="SingleStrand" startTime="0" endTime="30000" palette="25" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Baby Grand Illusion Hook CW GRP">
       <EffectLayer>
-        <Effect ref="24" name="Fan" startTime="0" endTime="30000" palette="27" />
+        <Effect ref="24" name="Fan" startTime="0" endTime="30000" palette="26" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Baby Grand Illusion Spokes GRP">
       <EffectLayer>
-        <Effect ref="25" name="Spirals" startTime="0" endTime="30000" palette="28" />
+        <Effect ref="25" name="Spirals" startTime="0" endTime="30000" palette="27" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE MOAW Spokes GRP">
       <EffectLayer>
-        <Effect ref="26" name="SingleStrand" startTime="0" endTime="30000" palette="29" />
+        <Effect ref="26" name="SingleStrand" startTime="0" endTime="30000" palette="28" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE MOAW Diamonds GRP">
       <EffectLayer>
-        <Effect ref="27" name="Color Wash" startTime="0" endTime="30000" palette="30" />
+        <Effect ref="27" name="Color Wash" startTime="0" endTime="30000" palette="29" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE MOAW Swag GRP">
       <EffectLayer>
-        <Effect ref="28" name="Bars" startTime="0" endTime="30000" palette="31" />
+        <Effect ref="28" name="Bars" startTime="0" endTime="30000" palette="30" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Preying Spider Body GRP">
       <EffectLayer>
-        <Effect ref="1" name="On" startTime="0" endTime="30000" palette="32" />
+        <Effect ref="1" name="On" startTime="0" endTime="30000" palette="31" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Preying Spider 150 Leg GRP">
       <EffectLayer>
-        <Effect ref="2" name="SingleStrand" startTime="0" endTime="30000" palette="23" />
+        <Effect ref="2" name="SingleStrand" startTime="0" endTime="30000" palette="22" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Preying Spider Eye GRP">
       <EffectLayer>
-        <Effect ref="1" name="On" startTime="0" endTime="30000" palette="33" />
+        <Effect ref="1" name="On" startTime="0" endTime="30000" palette="32" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Preying Spider 150 Mouth GRP">
       <EffectLayer>
-        <Effect ref="1" name="On" startTime="0" endTime="30000" palette="34" />
+        <Effect ref="1" name="On" startTime="0" endTime="30000" palette="33" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Flying Bats Jr Eyes GRP">
       <EffectLayer>
-        <Effect ref="1" name="On" startTime="0" endTime="30000" palette="33" />
+        <Effect ref="1" name="On" startTime="0" endTime="30000" palette="32" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Flying Bats Wings Up GRP">
       <EffectLayer>
-        <Effect ref="29" name="On" startTime="0" endTime="2000" palette="35" />
-        <Effect ref="29" name="On" id="1" startTime="4000" endTime="6000" palette="35" />
-        <Effect ref="29" name="On" id="2" startTime="8000" endTime="10000" palette="35" />
-        <Effect ref="29" name="On" id="3" startTime="12000" endTime="14000" palette="35" />
-        <Effect ref="29" name="On" id="4" startTime="16000" endTime="18000" palette="35" />
-        <Effect ref="29" name="On" id="5" startTime="20000" endTime="22000" palette="35" />
-        <Effect ref="29" name="On" id="6" startTime="24000" endTime="26000" palette="35" />
-        <Effect ref="29" name="On" id="7" startTime="28000" endTime="30000" palette="35" />
+        <Effect ref="29" name="On" startTime="0" endTime="2000" palette="34" />
+        <Effect ref="29" name="On" id="1" startTime="4000" endTime="6000" palette="34" />
+        <Effect ref="29" name="On" id="2" startTime="8000" endTime="10000" palette="34" />
+        <Effect ref="29" name="On" id="3" startTime="12000" endTime="14000" palette="34" />
+        <Effect ref="29" name="On" id="4" startTime="16000" endTime="18000" palette="34" />
+        <Effect ref="29" name="On" id="5" startTime="20000" endTime="22000" palette="34" />
+        <Effect ref="29" name="On" id="6" startTime="24000" endTime="26000" palette="34" />
+        <Effect ref="29" name="On" id="7" startTime="28000" endTime="30000" palette="34" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Flying Bats Wings Down GRP">
       <EffectLayer>
-        <Effect ref="29" name="On" startTime="2000" endTime="4000" palette="35" />
-        <Effect ref="29" name="On" id="1" startTime="6000" endTime="8000" palette="35" />
-        <Effect ref="29" name="On" id="2" startTime="10000" endTime="12000" palette="35" />
-        <Effect ref="29" name="On" id="3" startTime="14000" endTime="16000" palette="35" />
-        <Effect ref="29" name="On" id="4" startTime="18000" endTime="20000" palette="35" />
-        <Effect ref="29" name="On" id="5" startTime="22000" endTime="24000" palette="35" />
-        <Effect ref="29" name="On" id="6" startTime="26000" endTime="28000" palette="35" />
+        <Effect ref="29" name="On" startTime="2000" endTime="4000" palette="34" />
+        <Effect ref="29" name="On" id="1" startTime="6000" endTime="8000" palette="34" />
+        <Effect ref="29" name="On" id="2" startTime="10000" endTime="12000" palette="34" />
+        <Effect ref="29" name="On" id="3" startTime="14000" endTime="16000" palette="34" />
+        <Effect ref="29" name="On" id="4" startTime="18000" endTime="20000" palette="34" />
+        <Effect ref="29" name="On" id="5" startTime="22000" endTime="24000" palette="34" />
+        <Effect ref="29" name="On" id="6" startTime="26000" endTime="28000" palette="34" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Evil Clown">
       <EffectLayer>
-        <Effect ref="30" name="Faces" startTime="0" endTime="30000" palette="36" />
+        <Effect ref="30" name="Faces" startTime="0" endTime="30000" palette="35" />
       </EffectLayer>
-      <SubModelEffectLayer name="Hair">
-        <Effect ref="1" name="On" startTime="0" endTime="30000" palette="37" />
-      </SubModelEffectLayer>
     </Element>
     <Element type="model" name="GE Singing Pumpkin">
       <EffectLayer>
-        <Effect ref="31" name="Faces" startTime="0" endTime="30000" palette="38" />
+        <Effect ref="31" name="Faces" startTime="0" endTime="30000" palette="36" />
       </EffectLayer>
-      <SubModelEffectLayer name="Stem">
-        <Effect ref="1" name="On" startTime="0" endTime="30000" palette="37" />
-      </SubModelEffectLayer>
     </Element>
     <Element type="model" name="GE Dark Helmet">
       <EffectLayer />
-      <SubModelEffectLayer name="Helmet Outside">
-        <Effect ref="1" name="On" startTime="0" endTime="30000" palette="39" />
-      </SubModelEffectLayer>
-      <SubModelEffectLayer name="Helmet Inside">
-        <Effect ref="1" name="On" startTime="0" endTime="30000" palette="16" />
-      </SubModelEffectLayer>
-      <SubModelEffectLayer name="Eyes">
-        <Effect ref="1" name="On" startTime="0" endTime="30000" palette="40" />
-      </SubModelEffectLayer>
-      <SubModelEffectLayer name="Mouth">
-        <Effect ref="1" name="On" startTime="0" endTime="30000" palette="41" />
-      </SubModelEffectLayer>
-      <SubModelEffectLayer name="Nose">
-        <Effect ref="1" name="On" startTime="0" endTime="30000" palette="7" />
-      </SubModelEffectLayer>
     </Element>
     <Element type="model" name="Elliott - EFL Teddy">
       <EffectLayer>
-        <Effect ref="32" name="Faces" startTime="0" endTime="30000" palette="38" />
+        <Effect ref="32" name="Faces" startTime="0" endTime="30000" palette="36" />
       </EffectLayer>
     </Element>
     <Element type="model" name="Tune To">
       <EffectLayer>
-        <Effect ref="33" name="Text" startTime="0" endTime="30300" palette="42" />
+        <Effect ref="33" name="Text" startTime="0" endTime="30000" palette="37" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="34" name="Video" startTime="0" endTime="30775" palette="43" />
+        <Effect ref="34" name="Text" startTime="0" endTime="30000" palette="38" />
+      </EffectLayer>
+      <EffectLayer>
+        <Effect ref="35" name="Video" startTime="0" endTime="30000" palette="39" />
       </EffectLayer>
     </Element>
   </ElementEffects>

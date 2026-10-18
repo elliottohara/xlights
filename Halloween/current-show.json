@@ -1,0 +1,252 @@
+{
+  "mode": "single",
+  "show_folder": ".",
+  "layout": "xlights_rgbeffects.xml",
+  "networks": "xlights_networks.xml",
+  "finished_at": "2026-10-18T15:07:22.164786-05:00",
+  "master": "192.168.0.19",
+  "projector": "192.168.0.201",
+  "master_status": "idle",
+  "master_files_uploaded": 25,
+  "projector_files_uploaded": 25,
+  "playlist_and_schedule_preserved": true,
+  "falcon_test_settings_preserved": true,
+  "songs": {
+    "01 - Abracadabra": {
+      "sequence": "Sequences/01 - Abracadabra/01 - Abracadabra.xsq",
+      "playback_files": [
+        "Halloween 2026 - 01 - Abracadabra.fseq"
+      ],
+      "frames": 8935,
+      "frame_ms": 25,
+      "fseq_sha256": "ce703cbdb38a81524c935abdda5f987e99b96d5bae99ef6ddfc227db8c00b368"
+    },
+    "03 - This Is Halloween": {
+      "sequence": "Sequences/03 - This Is Halloween/03 - This Is Halloween.xsq",
+      "playback_files": [
+        "Halloween 2026 - 03 - This Is Halloween.fseq"
+      ],
+      "frames": 3931,
+      "frame_ms": 50,
+      "fseq_sha256": "34b88ec4e58856932049120c81af9cb6f8062c71afaead17897abd9d57985e62"
+    },
+    "12-The-Monster-_feat.-Rihanna_": {
+      "sequence": "Sequences/12-The-Monster-_feat.-Rihanna_/12-The-Monster-_feat.-Rihanna_.xsq",
+      "playback_files": [
+        "Halloween 2026 - 12-The-Monster-_feat.-Rihanna_.fseq"
+      ],
+      "frames": 10007,
+      "frame_ms": 25,
+      "fseq_sha256": "8013a6b50b9e0243faa3d33b6417bc4c6d61e42cbb863c38018407e5fb0dc063"
+    },
+    "Bad Romance (Extra Clean)": {
+      "sequence": "Sequences/Bad Romance (Extra Clean)/Bad Romance (Extra Clean).xsq",
+      "playback_files": [
+        "Halloween 2026 - Bad Romance (Extra Clean).fseq"
+      ],
+      "frames": 7265,
+      "frame_ms": 25,
+      "fseq_sha256": "b720b0a7fa098f7297e353666039b2f196c441f94e89ebeee51ef21eb639b6fc"
+    },
+    "Dracula": {
+      "sequence": "Sequences/Dracula/Dracula.xsq",
+      "playback_files": [
+        "Halloween 2026 - Dracula.fseq"
+      ],
+      "frames": 8212,
+      "frame_ms": 25,
+      "fseq_sha256": "f7c7dc77d10ac274940f48486949f4df236fb1d4859a22bf38b3ecafa85a186b"
+    },
+    "Ghostbusters": {
+      "sequence": "Sequences/Ghostbusters/Ghostbusters.xsq",
+      "playback_files": [
+        "Halloween 2026 - Ghostbusters.fseq"
+      ],
+      "frames": 6867,
+      "frame_ms": 25,
+      "fseq_sha256": "5e17b6a119414a362cbc5b092813fb420f8dcc96f3e6dc595f0309efe3d82232"
+    },
+    "Ghostbusters 2": {
+      "sequence": "Sequences/Ghostbusters 2/Ghostbusters 2.xsq",
+      "playback_files": [
+        "Halloween 2026 - Ghostbusters 2.fseq"
+      ],
+      "frames": 6867,
+      "frame_ms": 25,
+      "fseq_sha256": "1b89ff2cec415dba5135275109ef8d2fc21fdd42c8ccd801e907657d754df2bc"
+    },
+    "GreatestShowWorking 2": {
+      "sequence": "Sequences/GreatestShowWorking 2/GreatestShowWorking 2.xsq",
+      "playback_files": [
+        "Halloween 2026 - GreatestShowWorking 2.fseq"
+      ],
+      "frames": 5389,
+      "frame_ms": 50,
+      "fseq_sha256": "a4bbefb991c0a94931333ecd9bca4d415de3f30481c47f712184ee49b36dc35a"
+    },
+    "Halfway To Hell": {
+      "sequence": "Sequences/Halfway To Hell/Halfway To Hell.xsq",
+      "playback_files": [
+        "Halloween 2026 - Halfway To Hell.fseq"
+      ],
+      "frames": 7137,
+      "frame_ms": 25,
+      "fseq_sha256": "72ce06908d6b6a71f980d613f414a227b692351c5428a216e2ef334b722e2d51"
+    },
+    "I Knew It I Knew You": {
+      "sequence": "Sequences/I Knew It I Knew You/I Knew It I Knew You.xsq",
+      "playback_files": [
+        "Halloween 2026 - I Knew It I Knew You.fseq"
+      ],
+      "frames": 7128,
+      "frame_ms": 25,
+      "fseq_sha256": "de548521bc71f4a90e5c04e6007ad0415dacf09befbf9b0aa65b8d5b5bd6fe71"
+    },
+    "Insomnia": {
+      "sequence": "Sequences/Insomnia/Insomnia.xsq",
+      "playback_files": [
+        "Halloween 2026 - Insomnia.fseq"
+      ],
+      "frames": 8593,
+      "frame_ms": 25,
+      "fseq_sha256": "b3e3af00e21db497feece099eb67fa7f6a06726dbbecf25c39679515f9dbcb16"
+    },
+    "Monster Mash": {
+      "sequence": "Sequences/Monster Mash/Monster Mash.xsq",
+      "playback_files": [
+        "Halloween 2026 - Monster Mash.fseq"
+      ],
+      "frames": 7683,
+      "frame_ms": 25,
+      "fseq_sha256": "ecf2dfdd27ddc37c106e6caeb949d7dfc496cb83a96a9a5017bbb709957e11ab"
+    },
+    "Skrillex Medley": {
+      "sequence": "Sequences/Skrillex Medley/Skrillex Medley.xsq",
+      "playback_files": [
+        "Halloween 2026 - Skrillex Medley.fseq"
+      ],
+      "frames": 8563,
+      "frame_ms": 25,
+      "fseq_sha256": "7525f110aafa0b871469ffe472678ab6f45aaf9b5f248da60f3175f01bfec959"
+    },
+    "Something In The Way": {
+      "sequence": "Sequences/Something In The Way/Something In The Way.xsq",
+      "playback_files": [
+        "Halloween 2026 - Something In The Way.fseq"
+      ],
+      "frames": 9285,
+      "frame_ms": 25,
+      "fseq_sha256": "445b87f34d54d403ec397615b423cd6d7bbff86df7723dccc241de1f0211f86b"
+    },
+    "The Dead Dance": {
+      "sequence": "Sequences/The Dead Dance/The Dead Dance.xsq",
+      "playback_files": [
+        "Halloween 2026 - The Dead Dance.fseq"
+      ],
+      "frames": 9140,
+      "frame_ms": 25,
+      "fseq_sha256": "a5a5fcc577b1493849aac2e36280ea7a1a12ad5a305b785dd8d354927d15dd05"
+    },
+    "The Devil Went Down to Georgia": {
+      "sequence": "Sequences/The Devil Went Down to Georgia/The Devil Went Down to Georgia.xsq",
+      "playback_files": [
+        "Halloween 2026 - The Devil Went Down to Georgia.fseq"
+      ],
+      "frames": 8616,
+      "frame_ms": 25,
+      "fseq_sha256": "77510c6f3a40ea3a77a54967e7ee181b827dbea11d5550a3b641ce0b2ec1c423"
+    },
+    "The Imperial March": {
+      "sequence": "Sequences/The Imperial March/The Imperial March.xsq",
+      "playback_files": [
+        "Halloween 2026 - The Imperial March.fseq"
+      ],
+      "frames": 7547,
+      "frame_ms": 25,
+      "fseq_sha256": "073dfef5ade9f40d7d74d72be655d7e4014efc77904887ae7c38982187d8012d"
+    },
+    "Thriller Xtreme Remap": {
+      "sequence": "Sequences/Thriller Xtreme Remap/Thriller Xtreme Remap.xsq",
+      "playback_files": [
+        "Halloween 2026 - Thriller.fseq"
+      ],
+      "frames": 14318,
+      "frame_ms": 25,
+      "fseq_sha256": "5b0dc12586c8c5f80476ccb02b21444fa210a00c0a854322aac5acc079a93275"
+    },
+    "Titanium": {
+      "sequence": "Sequences/Titanium/Titanium.xsq",
+      "playback_files": [
+        "Halloween 2026 - Titanium.fseq"
+      ],
+      "frames": 9802,
+      "frame_ms": 25,
+      "fseq_sha256": "013abec7d927fef5a144c0b359b1bced5e9e85d16212a826c6487913f61076ab"
+    },
+    "Titanium 2": {
+      "sequence": "Sequences/Titanium 2/Titanium 2.xsq",
+      "playback_files": [
+        "Halloween 2026 - Titanium 2.fseq"
+      ],
+      "frames": 9802,
+      "frame_ms": 25,
+      "fseq_sha256": "02f80444bebc97d9e6c0f04555ac919da8decd589b28b62207ad94cc7b3955e4"
+    },
+    "We Will Rock You": {
+      "sequence": "Sequences/We Will Rock You/We Will Rock You.xsq",
+      "playback_files": [
+        "Halloween 2026 - We Will Rock You.fseq"
+      ],
+      "frames": 7674,
+      "frame_ms": 25,
+      "fseq_sha256": "02730c1a91dc22f01e25cca586a45573f33d2a42c93ce4cf163a6ab778779011"
+    },
+    "Zombie": {
+      "sequence": "Sequences/Zombie/Zombie.xsq",
+      "playback_files": [
+        "Halloween 2026 - Zombie.fseq"
+      ],
+      "frames": 10044,
+      "frame_ms": 25,
+      "fseq_sha256": "a5f26a0529709aea1ad8435ccb5698ee9cb2262b8617b83d39694dfeb2eaae79"
+    },
+    "static halloween": {
+      "sequence": "Sequences/static halloween/static halloween.xsq",
+      "playback_files": [
+        "Halloween 2026 - static halloween.fseq",
+        "Halloween 2026 - static halloween refined.fseq"
+      ],
+      "frames": 1200,
+      "frame_ms": 25,
+      "fseq_sha256": "6b384aa1894c175273c69dccf686747c25733d6c6b55cd70d7d1e7dd7e4d7158"
+    },
+    "tuneto-halloween": {
+      "sequence": "Sequences/tuneto-halloween/tuneto-halloween.xsq",
+      "playback_files": [
+        "Halloween 2026 - tuneto-halloween.fseq"
+      ],
+      "frames": 1200,
+      "frame_ms": 25,
+      "fseq_sha256": "c88c26a096c951a5de7b089d72584863ae4d337cb7029945510a31e578f0c287"
+    }
+  },
+  "current_import_maps": [
+    "Sequences/Dracula/Tools/Halloween import - Shared Halloween.xjmap",
+    "Sequences/Halfway To Hell/Tools/Vendor to Halloween - Shared Halloween.xjmap",
+    "Sequences/I Knew It I Knew You/Tools/Vendor to Halloween - Shared Halloween.xjmap",
+    "Sequences/Something In The Way/Tools/Vendor to Halloween - Shared Halloween.xjmap",
+    "Sequences/Thriller Xtreme Remap/Tools/Base to Halloween retry - Shared Halloween.xjmap",
+    "Sequences/Thriller Xtreme Remap/Tools/HD to Halloween - Shared Halloween.xjmap",
+    "Sequences/Thriller Xtreme Remap/Tools/Projector unchanged - Shared Halloween.xjmap",
+    "Sequences/Thriller Xtreme Remap/Tools/HD ZIP to Halloween - Shared Halloween.xjmap",
+    "Sequences/Thriller Xtreme Remap/Tools/Preserve existing windows - Shared Halloween.xjmap",
+    "Sequences/Thriller Xtreme Remap/Tools/Faces to Halloween - Shared Halloween.xjmap",
+    "Sequences/Thriller Xtreme Remap/Tools/Base ZIP to Halloween - Shared Halloween.xjmap",
+    "Sequences/Thriller Xtreme Remap/Tools/Base to Halloween - Shared Halloween.xjmap",
+    "Sequences/Thriller Xtreme Remap/Tools/HD to Halloween retry - Shared Halloween.xjmap",
+    "Sequences/Thriller Xtreme Remap/Tools/Preserve projector and faces - Shared Halloween.xjmap",
+    "Sequences/Zombie/Tools/Halloween import - Shared Halloween.xjmap"
+  ],
+  "verification_record": "single-show-consolidation-latest.json",
+  "local_recovery_backup": "/Users/elliott.ohara/xlights/Halloween/Backups/Single Halloween show 20261018-141143"
+}

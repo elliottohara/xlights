@@ -48,10 +48,33 @@ Working notes for \`${SHOW}/Sequences/${SONG}/${SONG}.xsq\`. Read alongside the 
 
 - Song scripts: \`${SHOW}/Sequences/${SONG}/Tools/\`
 - Shared API client: \`Tools/xlights_api.py\` (import via \`sys.path\` to the repo \`Tools/\` folder)
+- Display defaults: \`Tools/sequence_defaults.json\`. Before rendering, mirror Projector choreography onto Tune To and overlay white “Tune to 87.9” on a black backing strip. Apply with \`Tools/finalize_sequence.py\`; the shared \`xlights_api.render_all()\` wrapper also applies this automatically. Keep singers visible throughout the song with resting mouths between lyrics.
 
 ## Session / status
 
 - Scaffolded; sequence file not created yet.
+EOF
+
+cat > "$SEQ_DIR/Tools/sequence_defaults.json" <<'EOF'
+{
+  "tune_to": {
+    "enabled": true,
+    "mirror": "Projector",
+    "frequency": "87.9",
+    "band_percent": 30
+  }
+}
+EOF
+
+cat > "$SEQ_DIR/Tools/finalize_sequence.py" <<'EOF'
+"""Apply this song's shared display defaults before a direct native render."""
+from pathlib import Path
+import sys
+root=Path(__file__).resolve().parents[4]
+song=Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(root/'Tools'))
+from apply_sequence_defaults import apply_defaults
+print(apply_defaults(song/(song.name+'.xsq')))
 EOF
 
 # Keep empty dirs visible to git
@@ -69,5 +92,9 @@ touch \
 echo "Created: $SEQ_DIR"
 echo "Next:"
 echo "  1. Put media in: $SEQ_DIR/Media/"
-echo "  2. Create ${SONG}.xsq via xLights API (save to that path)"
+if [[ -f "$SHOW_DIR/show-folder-policy.json" ]]; then
+  echo "  2. Open the shared show $SHOW_DIR and create ${SONG}.xsq (save to the song folder)"
+else
+  echo "  2. Create ${SONG}.xsq via xLights API (save to that path)"
+fi
 echo "  3. Keep notes in: $SEQ_DIR/AGENT NOTES.md"

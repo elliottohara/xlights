@@ -1,3 +1,12 @@
+## Shared Halloween show — October 18, 2026
+
+- Shared-show deployment completed: fresh playback uploaded to Master and Projector, with full Master checksums and every Projector frame verified. Final controller addresses read back; existing playlist/schedule preserved; Master returned to idle.
+- Open xLights with `/Users/elliott.ohara/xlights/Halloween` as the show folder, then open this song’s XSQ. The song directory now organizes sequences and media; its separate layout/network configuration was retired. This section supersedes older standalone-show launch instructions below.
+- Song-specific groups, submodels, face/state definitions and view were merged into the shared Halloween layout. Conflicting names were separated and all affected effect references updated. Timing, layer order, palettes, blending and render settings were verified against the backed-up sequence; native checks and a fresh render completed.
+- Cleared obsolete rows for removed floods/flakes/bulbs and empty mapping groups where present, and trimmed effect tails beyond the song’s final frame. Hidden arches remain available by explicit user instruction. Native render-style recommendations are retained in the check report; purchased render styles were preserved.
+- Reusable vendor packages/maps and media remain in this song folder. Earlier one-off layout/import scripts describe historical layouts: do not rerun them against the shared show without adapting their scope and aliases.
+- Consolidation, mapping aliases, native checks, original layouts/XSQs/renders and deployment progress: `/Users/elliott.ohara/xlights/Halloween/single-show-consolidation-latest.json`; backup: `/Users/elliott.ohara/xlights/Halloween/Backups/Single Halloween show 20261018-141143`. User authorized the full show upload; consult progress for actual transfer completion.
+
 # static halloween — Sequence Agent Notes
 
 Working notes for `Halloween/Sequences/static halloween/static halloween.xsq`. Read alongside the root `AGENTS.md`.
@@ -126,3 +135,48 @@ Working notes for `Halloween/Sequences/static halloween/static halloween.xsq`. R
 - Kulp01 (.253) remains unreachable; user is aware and will fix it in the morning. This did not block deployment.
 - Runtime workaround: xLights initially could not follow shared config symlinks on slot startup. Used identical regular copies to launch, then restored relative symlinks before commit; no config changes.
 - Unrelated pre-existing slot A Holy Forever/network/media work was preserved in stash `96308ab8c550e5654c7e7271ea99267c80a22bc8` before this task; restore after parking the slot. Do not drop this stash until its contents are verified restored.
+
+
+## Radio station sign — October 16, 2026
+
+- Added a full-duration white “Tune to 87.9” Text effect through the native xLights API. Existing effects and timing outside Tune To verified unchanged.
+- Authored in permanent slot B on codex/halloween-tune-to-879; original files and renders backed up in Halloween/Backups/Tune to 879 20261016.
+- Rendered sign pixels inspected and corrected FSEQ uploaded to FPP Master under the existing playback filenames, including the refined overnight display. Playlist, schedule and controller routing preserved.
+
+## Full-show deployment — October 17, 2026
+
+Physical model routing/positions synchronized to the current Halloween master, preserving sequence-specific groups and submodels. Singing props excluded from decorative groups and direct non-Faces effects removed; lyric Faces and projector content preserved. Re-rendered and verified FSEQ uploaded under existing playback filename Halloween 2026 - static halloween.fseq. Controller output readbacks, FPP Master DDP routing (including Genius Roof), and Tune To range verified. Playlist and schedule retained. Recoverable local and remote backups: /Users/elliott.ohara/xlights/Halloween/Backups/Full render deployment 20261017-163501
+
+## Full-show deployment — October 17, 2026
+
+Physical model routing/positions synchronized to the current Halloween master, preserving sequence-specific groups and submodels. Singing props excluded from decorative groups and direct non-Faces effects removed; lyric Faces and projector content preserved. Re-rendered and verified FSEQ uploaded under existing playback filename Halloween 2026 - static halloween refined.fseq. Controller output readbacks, FPP Master DDP routing (including Genius Roof), and Tune To range verified. Playlist and schedule retained. Recoverable local and remote backups: /Users/elliott.ohara/xlights/Halloween/Backups/Full render deployment 20261017-163501
+
+
+## Column Left wiring correction — October 18, 2026
+
+- User corrected the physical location to Kulp 1601 (`FPP-KULP16-01`, 192.168.0.253), port 14. Port 16 remains Evil Clown. Column Left remains 66 pixels at 30% brightness. Falcon 1602 keeps its physical 16 x 500-pixel test configuration.
+- User explicitly allowed channel repacking and re-rendering. Propagated xLights native routing changes from the master while preserving this song's groups, views, geometry and submodel definitions. Existing effects, palettes, layers and timing tracks verified unchanged.
+- Re-rendered locally for the new channel ranges. Column Left output: 66 of 66 pixels light in half-second samples. Native allocation/evidence/backups: `Halloween/column-left-port14-native-latest.json`. Hardware and live FPP deployment are tracked separately; do not assume they completed from this render note.
+
+
+## House Left porch wiring — October 18, 2026
+
+- User confirmed House Left is after Window - Bottom Left on FPP-KULP08-FrontPorch (192.168.0.250), port 3: 134 window pixels followed by 86 House Left pixels, with House Left at 30% brightness. Native xLights allocation and exact chain verified.
+- Propagated only routing fields from the master; song-specific groups, submodels, effects, palettes, layers and timing tracks are preserved. Re-rendered for the new addresses. Hardware/live deployment is recorded separately in Halloween/house-left-porch-port3-latest.json. Falcon 1602 test strings are preserved.
+
+- House Left controller outputs are now uploaded and verified for physical testing: porch Kulp port 3 is Window - Bottom Left (134 pixels) then House Left (86 pixels, 30%). The affected Kulp services restarted successfully; Falcon 1602 test settings are unchanged. User explicitly deferred further sequence transfers until physical testing is complete. The earlier deployment was interrupted partway through; consult Halloween/house-left-porch-port3-latest.json and its per-file progress before resuming. Master playback service remains intentionally stopped. Do not upload I Knew It I Knew You without its separate approval.
+
+
+## Eleventh Lantana — October 18, 2026
+
+- Local layout corrected to 11 x 60-pixel lantanas: porch Kulp port 1 = 01–08; port 2 = 09–11. New Lantana 11 matches Lantana 07 with 20 leading nulls. Native routing propagated; custom geometry/groups and sequence effects preserved. Existing renders now require re-rendering before deployment. No hardware or playback uploads performed. See Halloween/lantana-eleven-layout-latest.json.
+
+
+## All floods removed — October 18, 2026
+
+- User confirmed there are no physical floods. Removed all eight flood models, their empty groups/views, and flood-only sequence rows. Non-flood model definitions and effect rows are preserved. Native routing recalculated; existing renders/output references are stale. No sequence rendering or transfers: user is still correcting/testing the layout. See Halloween/remove-all-floods-latest.json for backups and hardware status.
+
+
+## Hidden flakes and bulbs disconnected — October 18, 2026
+
+- User kept the arches but removed the four hidden GE Flake N/A props and Singing Bulb Left/Right from the oak-tree Kulp. Live ports 9/10/19/20 cleared and read back; other physical outputs and arches unchanged. The six inactive models now have No Controller and no port assignment. Definitions, groups, song-specific models and sequence effects remain preserved. Native layout allocation was recalculated; older output-address plans/renders are stale. No sequences rendered or sent. Evidence: Halloween/disconnect-hidden-flakes-bulbs-latest.json.

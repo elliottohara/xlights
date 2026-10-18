@@ -1,0 +1,30 @@
+{
+  "mappings": [
+    {
+      "model": "Matrix - Entry",
+      "strand": "",
+      "node": "",
+      "mapping": "Matrix - Entry",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Matrix-Garage Window",
+      "strand": "",
+      "node": "",
+      "mapping": "Matrix-Garage Window",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Matrix - Downstairs Window",
+      "strand": "",
+      "node": "",
+      "mapping": "Matrix - Downstairs Window",
+      "color": "#FFFFFF"
+    }
+  ],
+  "timingtracks": [],
+  "eraseexisting": true,
+  "importblendmode": true,
+  "importfacestosequence": false,
+  "importmedia": false
+}

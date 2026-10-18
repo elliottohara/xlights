@@ -1,0 +1,325 @@
+{
+  "mappings": [
+    {
+      "model": "Map - All House",
+      "strand": "",
+      "node": "",
+      "mapping": "All House",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - All House (CENTERED ON LARGE PROP)",
+      "strand": "",
+      "node": "",
+      "mapping": "All House (CENTERED ON LARGE PROP)",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - House Outline",
+      "strand": "",
+      "node": "",
+      "mapping": "House Outline",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Bats",
+      "strand": "",
+      "node": "",
+      "mapping": "Bats",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Spiders",
+      "strand": "",
+      "node": "",
+      "mapping": "Spiders",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Tombs",
+      "strand": "",
+      "node": "",
+      "mapping": "Tombs",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Spiders (every 1)",
+      "strand": "",
+      "node": "",
+      "mapping": "Spiders (every 1)",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Spiders (every 2)",
+      "strand": "",
+      "node": "",
+      "mapping": "Spiders (every 2)",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Bats (every 1)",
+      "strand": "",
+      "node": "",
+      "mapping": "Bats (every 1)",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Bats (every 2)",
+      "strand": "",
+      "node": "",
+      "mapping": "Bats (every 2)",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Large Spiders",
+      "strand": "",
+      "node": "",
+      "mapping": "Large Spiders",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Left Third",
+      "strand": "",
+      "node": "",
+      "mapping": "Left Third",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Middle Third",
+      "strand": "",
+      "node": "",
+      "mapping": "Middle Third",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Right Third",
+      "strand": "",
+      "node": "",
+      "mapping": "Right Third",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Spinners",
+      "strand": "",
+      "node": "",
+      "mapping": "Spinners",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Icicles",
+      "strand": "",
+      "node": "",
+      "mapping": "Icicles",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Arches",
+      "strand": "",
+      "node": "",
+      "mapping": "Arches",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Large Webs",
+      "strand": "",
+      "node": "",
+      "mapping": "Large Webs",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Matrix - Windows Only",
+      "strand": "",
+      "node": "",
+      "mapping": "Matrix - Windows Only",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Matrix - Garage",
+      "strand": "",
+      "node": "",
+      "mapping": "Matrix - Garage",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Eerie Tree",
+      "strand": "",
+      "node": "",
+      "mapping": "Eerie Tree",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Mega Topper",
+      "strand": "",
+      "node": "",
+      "mapping": "Mega Topper",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Mega Tree",
+      "strand": "",
+      "node": "",
+      "mapping": "Mega Tree",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Pixel Field 2025",
+      "strand": "",
+      "node": "",
+      "mapping": "Pixel Field 2025",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - MH Dimmers",
+      "strand": "",
+      "node": "",
+      "mapping": "MH Dimmers",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Large House Prop",
+      "strand": "",
+      "node": "",
+      "mapping": "Large House Prop",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Tomb 8",
+      "strand": "",
+      "node": "",
+      "mapping": "Tomb 8",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Tomb 4",
+      "strand": "",
+      "node": "",
+      "mapping": "Tomb 4",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Tomb 1",
+      "strand": "",
+      "node": "",
+      "mapping": "Tomb 1",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Tomb 2",
+      "strand": "",
+      "node": "",
+      "mapping": "Tomb 2",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Tomb 3",
+      "strand": "",
+      "node": "",
+      "mapping": "Tomb 3",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Tomb 5",
+      "strand": "",
+      "node": "",
+      "mapping": "Tomb 5",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Tomb 6",
+      "strand": "",
+      "node": "",
+      "mapping": "Tomb 6",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Tomb 7",
+      "strand": "",
+      "node": "",
+      "mapping": "Tomb 7",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - All House (place on bottom)",
+      "strand": "",
+      "node": "",
+      "mapping": "All House (place on bottom)",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - All (last group no faces)",
+      "strand": "",
+      "node": "",
+      "mapping": "All (last group no faces)",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Large Spider",
+      "strand": "",
+      "node": "",
+      "mapping": "Large Spider",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Large Spider-2",
+      "strand": "",
+      "node": "",
+      "mapping": "Large Spider-2",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "GE Evil Clown",
+      "strand": "",
+      "node": "",
+      "mapping": "Singing Prop 3 (Right w. Bow)",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Elliott - EFL Teddy",
+      "strand": "",
+      "node": "",
+      "mapping": "Singing Prop 2 (Left w Tooth)",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "GE Singing Pumpkin",
+      "strand": "",
+      "node": "",
+      "mapping": "Singing Prop 1 (Center)",
+      "color": "#FFFFFF"
+    }
+  ],
+  "timingtracks": [
+    {
+      "name": "Beat Count",
+      "enabled": true
+    },
+    {
+      "name": "Beat Count_2",
+      "enabled": true
+    },
+    {
+      "name": "Section",
+      "enabled": true
+    },
+    {
+      "name": "Preacher",
+      "enabled": true
+    },
+    {
+      "name": "Main",
+      "enabled": true
+    },
+    {
+      "name": "Backing",
+      "enabled": true
+    }
+  ],
+  "eraseexisting": false,
+  "importblendmode": true,
+  "importfacestosequence": false,
+  "importmedia": true,
+  "videodir": "/Users/elliott.ohara/xlights/Halloween/Sequences/Halfway To Hell/Media/Vendor",
+  "shaderdir": "/Users/elliott.ohara/xlights/Halloween/Sequences/Halfway To Hell/Media/Shaders",
+  "facesdir": "/Users/elliott.ohara/xlights/Halloween/Sequences/Halfway To Hell/Media/Faces",
+  "imagedir": "/Users/elliott.ohara/xlights/Halloween/Sequences/Halfway To Hell/Media/Images"
+}

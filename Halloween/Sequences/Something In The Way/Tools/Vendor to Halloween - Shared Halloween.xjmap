@@ -1,0 +1,549 @@
+{
+  "mappings": [
+    {
+      "model": "Map - Matrix",
+      "strand": "",
+      "node": "",
+      "mapping": "Matrix",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Window Matrix GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Window Matrix GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Pixel Forest GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Pixel Forest GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Icicles GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Icicles GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Eaves GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Eaves GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Verts GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Verts GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Windows GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Windows GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Arches Triple GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Arches Triple GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Patio Arches GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Patio Arches GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Mini Trees GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Mini Trees GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - Pixel Poles GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Pixel Poles GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Rosa Tomb GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Tomb GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Rosa Tomb Outline GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Tomb Outline GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Rosa Tomb Tombstone Lower GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Tomb Tombstone Lower GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Rosa Tomb Bat Body GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Tomb Bat Body GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Rosa Tomb Eyes GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Tomb Eyes GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Rosa Tomb Spokes GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Tomb Spokes GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Rosa Tomb Paddles GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Tomb Paddles GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Rosa Tomb Warp GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Tomb Warp GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Rosa Tomb Gourds GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Tomb Gourds GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Triune Cross Matrix GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Triune Cross Matrix GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Triune Tombstone Cross GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Triune Tombstone Cross GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE 8x8 Web GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE 8x8 Web GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Coro Web Ring 1 GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Coro Web Ring 1 GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Coro Web Spokes GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Coro Web Spokes GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Preying Spider 150 Cross GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Preying Spider 150 Cross GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Preying Spider 150 Leg GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Preying Spider 150 Leg GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Preying Spider 150 Mouth GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Preying Spider 150 Mouth GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Preying Spider 350 Cross GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Preying Spider 350 Cross GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Preying Spider 350 Leg GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Preying Spider 350 Leg GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Preying Spider 350 Mouth GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Preying Spider 350 Mouth GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Preying Spider Body GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Preying Spider Body GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Preying Spider Crawly GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Preying Spider Crawly GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Preying Spider Eye GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Preying Spider Eye GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Grand Illusion GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Grand Illusion GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Grand Illusion Hook CCW GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Grand Illusion Hook CCW GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Rosa Grande GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Rosa Grande Torch Long Even GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Torch Long Even GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Rosa Grande Snowflake Spoke GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Snowflake Spoke GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Squared GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Squared GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Squared Are U Jelly GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Squared Are U Jelly GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Squared Tinkle Sprinke GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Squared Tinkle Sprinke GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Squared No Frills GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Squared No Frills GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Squared WhatsThatSmell GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Squared WhatsThatSmell GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Squared BoomBah GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Squared BoomBah GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Squared FizzleMyDizzle GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Squared FizzleMyDizzle GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Squared Spokes GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Squared Spokes GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Dragonfly GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Dragonfly GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Dragonfly Crusher GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Dragonfly Crusher GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Dragonfly Dirty Sanchez GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Dragonfly Dirty Sanchez GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Dragonfly Shameful GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Dragonfly Shameful GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Dragonfly Spokes GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Dragonfly Spokes GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Dragonfly Arches GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Dragonfly Arches GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Fuzion GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Fuzion GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Fuzion Pretty Flake GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Fuzion Pretty Flake GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Fuzion Wishful GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Fuzion Wishful GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Fuzion Lantern GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Fuzion Lantern GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Fuzion Spazz GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Fuzion Spazz GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Fuzion Triangle Lg GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Fuzion Triangle Lg GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE King Diamond GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE King Diamond GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE King Diamond Get The Point GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE King Diamond Get The Point GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE King Diamond Resolution GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE King Diamond Resolution GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE King Diamond Spike GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE King Diamond Spike GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE King Diamond Missing The Point GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE King Diamond Missing The Point GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE King Diamond Cone GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE King Diamond Cone GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE King Diamond Cone Sm GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE King Diamond Cone Sm GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Elliott - EFL Teddy",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Spooky Tree C 2",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Spooky Tree Branch GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Spooky Tree Branch GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "GE Evil Clown",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Mega Skull 1",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "GE Singing Pumpkin",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Mega Skull 2",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Rosa Grande Splice GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Splice GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Rosa Grande Spirit GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Spirit GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Map - GE Rosa Grande Avil GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Avil GRP",
+      "color": "#FFFFFF"
+    }
+  ],
+  "timingtracks": [
+    {
+      "name": "New Timing",
+      "enabled": true
+    },
+    {
+      "name": "SomethingInTheWayvocalsCmajor105bpm428hz",
+      "enabled": true
+    },
+    {
+      "name": "Bars",
+      "enabled": true
+    },
+    {
+      "name": "Beats",
+      "enabled": true
+    },
+    {
+      "name": "Drums",
+      "enabled": true
+    },
+    {
+      "name": "Bass",
+      "enabled": true
+    }
+  ],
+  "eraseexisting": false,
+  "importblendmode": true,
+  "importfacestosequence": false,
+  "importmedia": true,
+  "videodir": "/Users/elliott.ohara/xlights/Halloween/Sequences/Something In The Way/Media/Vendor",
+  "shaderdir": "/Users/elliott.ohara/xlights/Halloween/Sequences/Something In The Way/Media/Shaders",
+  "facesdir": "/Users/elliott.ohara/xlights/Halloween/Sequences/Something In The Way/Media/Faces",
+  "imagedir": "/Users/elliott.ohara/xlights/Halloween/Sequences/Something In The Way/Media/Images"
+}

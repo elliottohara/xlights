@@ -1,0 +1,499 @@
+{
+  "mappings": [
+    {
+      "model": "Import Base - All Pixels GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "All Pixels GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Matrix 1",
+      "strand": "",
+      "node": "",
+      "mapping": "Matrix 1",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Matrix 2",
+      "strand": "",
+      "node": "",
+      "mapping": "Matrix 2",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Icicles GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Icicles GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Eaves GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Eaves GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Verts GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Verts GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Windows GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Windows GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Patio Arches GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Patio Arches GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Yard Outline GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Yard Outline GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Arches GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Arches GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Mini Trees GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Mini Trees GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Pixel Tombs GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Pixel Tombs GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Pixel Tomb RIP GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Pixel Tomb RIP GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - tomb RIP",
+      "strand": "",
+      "node": "",
+      "mapping": "tomb RIP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Pixel poles",
+      "strand": "",
+      "node": "",
+      "mapping": "Pixel poles",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - GE Letters GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Letters GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - GE Mega Reel",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Mega Reel",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - GE MegaReel Spokes GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE MegaReel Spokes GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - GE MegaReel Triangles GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE MegaReel Triangles GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Floods GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Floods GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - PixelTomb 7",
+      "strand": "",
+      "node": "",
+      "mapping": "PixelTomb 7/RIP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - PixelTomb 6",
+      "strand": "",
+      "node": "",
+      "mapping": "PixelTomb 6/RIP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - PixelTomb 5",
+      "strand": "",
+      "node": "",
+      "mapping": "PixelTomb 5/RIP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - PixelTomb 4",
+      "strand": "",
+      "node": "",
+      "mapping": "PixelTomb 4/RIP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - PixelTomb 3",
+      "strand": "",
+      "node": "",
+      "mapping": "PixelTomb 3/RIP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - PixelTomb 2",
+      "strand": "",
+      "node": "",
+      "mapping": "PixelTomb 2/RIP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - PixelTomb 1",
+      "strand": "",
+      "node": "",
+      "mapping": "PixelTomb 1/RIP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Yard Right",
+      "strand": "",
+      "node": "",
+      "mapping": "Yard Right",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Icicles 8",
+      "strand": "",
+      "node": "",
+      "mapping": "Icicles 8",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Icicles 7",
+      "strand": "",
+      "node": "",
+      "mapping": "Icicles 7",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Icicles 6",
+      "strand": "",
+      "node": "",
+      "mapping": "Icicles 6",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Icicles 5",
+      "strand": "",
+      "node": "",
+      "mapping": "Icicles 5",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Icicles 4",
+      "strand": "",
+      "node": "",
+      "mapping": "Icicles 4",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Icicles 3",
+      "strand": "",
+      "node": "",
+      "mapping": "Icicles 3",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Icicles 2",
+      "strand": "",
+      "node": "",
+      "mapping": "Icicles 2",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Icicles 1",
+      "strand": "",
+      "node": "",
+      "mapping": "Icicles 1",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Yard Left",
+      "strand": "",
+      "node": "",
+      "mapping": "Yard Left",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Roof Vert Right 3",
+      "strand": "",
+      "node": "",
+      "mapping": "Roof Vert Right 3",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Roof Hor Right 2",
+      "strand": "",
+      "node": "",
+      "mapping": "Roof Hor Right 2",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Roof Hor Right 1",
+      "strand": "",
+      "node": "",
+      "mapping": "Roof Hor Right 1",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Roof Vert Left 1",
+      "strand": "",
+      "node": "",
+      "mapping": "Roof Vert Left 1",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Roof Hor Left 1",
+      "strand": "",
+      "node": "",
+      "mapping": "Roof Hor Left 1",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Eave Lower 1",
+      "strand": "",
+      "node": "",
+      "mapping": "Eave Lower 1",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Eave Lower 2",
+      "strand": "",
+      "node": "",
+      "mapping": "Eave Lower 2",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Eave Upper 1",
+      "strand": "",
+      "node": "",
+      "mapping": "Eave Upper 1",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Eave Upper 2",
+      "strand": "",
+      "node": "",
+      "mapping": "Eave Upper 2",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Eave Upper 3",
+      "strand": "",
+      "node": "",
+      "mapping": "Eave Upper 3",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Eave Upper 4",
+      "strand": "",
+      "node": "",
+      "mapping": "Eave Upper 4",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Eave Upper 5",
+      "strand": "",
+      "node": "",
+      "mapping": "Eave Upper 5",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Eave Upper 6",
+      "strand": "",
+      "node": "",
+      "mapping": "Eave Upper 6",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Arch 1",
+      "strand": "",
+      "node": "",
+      "mapping": "Arch 1",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Arch 2",
+      "strand": "",
+      "node": "",
+      "mapping": "Arch 2",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Arch 3",
+      "strand": "",
+      "node": "",
+      "mapping": "Arch 3",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Arch 4",
+      "strand": "",
+      "node": "",
+      "mapping": "Arch 4",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Window 4",
+      "strand": "",
+      "node": "",
+      "mapping": "Window 4",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Window 1",
+      "strand": "",
+      "node": "",
+      "mapping": "Window 1",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Window 2",
+      "strand": "",
+      "node": "",
+      "mapping": "Window 2",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Garage Left",
+      "strand": "",
+      "node": "",
+      "mapping": "Garage Left",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Garage Top",
+      "strand": "",
+      "node": "",
+      "mapping": "Garage Top",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Garage Right",
+      "strand": "",
+      "node": "",
+      "mapping": "Garage Right",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - House Vert Upper L",
+      "strand": "",
+      "node": "",
+      "mapping": "House Vert Upper L",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - House Vert C1",
+      "strand": "",
+      "node": "",
+      "mapping": "House Vert C1",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - House Vert C2",
+      "strand": "",
+      "node": "",
+      "mapping": "House Vert C2",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - House Vert Upper R",
+      "strand": "",
+      "node": "",
+      "mapping": "House Vert Upper R",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - House Vert Lower R",
+      "strand": "",
+      "node": "",
+      "mapping": "House Vert Lower R",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - House Vert Lower L",
+      "strand": "",
+      "node": "",
+      "mapping": "House Vert Lower L",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Base - Window 3",
+      "strand": "",
+      "node": "",
+      "mapping": "Window 3",
+      "color": "#FFFFFF"
+    }
+  ],
+  "timingtracks": [
+    {
+      "name": "New Timing",
+      "enabled": false
+    },
+    {
+      "name": "Beats",
+      "enabled": false
+    },
+    {
+      "name": "Note Onsets",
+      "enabled": false
+    },
+    {
+      "name": "Description",
+      "enabled": false
+    }
+  ],
+  "eraseexisting": true,
+  "importblendmode": true,
+  "importfacestosequence": false,
+  "importmedia": true,
+  "videodir": "/Users/elliott.ohara/xlights/Halloween/Sequences/Thriller Xtreme Remap/Media/VendorVideos",
+  "shaderdir": "/Users/elliott.ohara/xlights/Halloween/Sequences/Thriller Xtreme Remap/Media/VendorShaders",
+  "imagedir": "/Users/elliott.ohara/xlights/Halloween/Sequences/Thriller Xtreme Remap/Media/VendorImages",
+  "facesdir": "/Users/elliott.ohara/xlights/Halloween/Sequences/Thriller Xtreme Remap/Media/VendorFaces"
+}

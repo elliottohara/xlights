@@ -1,0 +1,65 @@
+{
+  "mappings": [
+    {
+      "model": "Flood House Left",
+      "strand": "",
+      "node": "",
+      "mapping": "MH Dimmers/Strand 1/Node 1",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Flood Column Left",
+      "strand": "",
+      "node": "",
+      "mapping": "MH Dimmers/Strand 1/Node 2",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Flood Tree",
+      "strand": "",
+      "node": "",
+      "mapping": "MH Dimmers/Strand 1/Node 3",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Flood Column Center",
+      "strand": "",
+      "node": "",
+      "mapping": "MH Dimmers/Strand 1/Node 4",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Flood Roof",
+      "strand": "",
+      "node": "",
+      "mapping": "MH Dimmers/Strand 1/Node 5",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Flood Column Right",
+      "strand": "",
+      "node": "",
+      "mapping": "MH Dimmers/Strand 1/Node 6",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Flood house - large",
+      "strand": "",
+      "node": "",
+      "mapping": "MH Dimmers/Strand 1/Node 7",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Flood House Right",
+      "strand": "",
+      "node": "",
+      "mapping": "MH Dimmers/Strand 1/Node 8",
+      "color": "#FFFFFF"
+    }
+  ],
+  "timingtracks": [],
+  "eraseexisting": false,
+  "importblendmode": true,
+  "importmedia": true,
+  "importfacestosequence": false
+}

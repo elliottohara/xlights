@@ -1,0 +1,37 @@
+{
+  "mappings": [
+    {
+      "model": "Projector",
+      "strand": "",
+      "node": "",
+      "mapping": "Projector",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "GE Singing Pumpkin",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Singing Pumpkin",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "GE Evil Clown",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Evil Clown",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Elliott - EFL Teddy",
+      "strand": "",
+      "node": "",
+      "mapping": "Elliott - EFL Teddy",
+      "color": "#FFFFFF"
+    }
+  ],
+  "timingtracks": [],
+  "eraseexisting": true,
+  "importblendmode": true,
+  "importfacestosequence": false,
+  "importmedia": false
+}

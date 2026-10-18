@@ -1,0 +1,885 @@
+{
+  "mappings": [
+    {
+      "model": "Import Xtreme - Matrix 1",
+      "strand": "",
+      "node": "",
+      "mapping": "Matrix 1",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - Floods GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Floods GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - Widow Matrix GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Widow Matrix GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - Pixel Forest GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Pixel Forest GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - Icicles GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Icicles GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - Eaves GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Eaves GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - House Verts GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "House Verts GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - Windows GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Windows GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - Patio Arches GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Patio Arches GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - Canes GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Canes GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - Twig Trees GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Twig Trees GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - Pixel Poles GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Pixel Poles GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE SpinArchy Elite GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE SpinArchy Elite GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE SpinArchy Elite Arch GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE SpinArchy Elite Arch GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE SpinArchy Short Spoke GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE SpinArchy Short Spoke GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - Stars GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Stars GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - Mini Trees GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Mini Trees GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - Flakes GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Flakes GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - Flakes Arms GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Flakes Arms GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - Flakes Outline All GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Flakes Outline All GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - Flakes Leaf GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "Flakes Leaf GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Grand Illusion GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Grand Illusion GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Grand Illusion Flower GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Grand Illusion Flower GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Grand Illusion Whirliwig GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Grand Illusion Whirliwig GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Grand Illusion Whirliwig Odd GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Grand Illusion Whirliwig Odd GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Grand Illusion Whirliwig Even GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Grand Illusion Whirliwig Even GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Grand Illusion Hook CCW GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Grand Illusion Hook CCW GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Grand Illusion Hook CW GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Grand Illusion Hook CW GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Grand Illusion Rings GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Grand Illusion Rings GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Grand Illusion Snowflake Spokes GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Grand Illusion Snowflake Spokes GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Grand Illusion Spokes Even GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Grand Illusion Spokes Even GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Grand Illusion Spokes Odd GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Grand Illusion Spokes Odd GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Grand Illusion Snowflake Center GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Grand Illusion Snowflake Center GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Grand Illusion Snowflake Filled GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Grand Illusion Snowflake Filled GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Rosa Grande GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Rosa Grande Rotundra GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Rotundra GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Rosa Grande Smoozy GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Smoozy GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Rosa Grande Superfly GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Superfly GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Rosa Grande Splice GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Splice GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Rosa Grande Spirit GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Spirit GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Rosa Grande Avil GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Avil GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Rosa Grande Flower GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Flower GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Rosa Grande Hook CCW GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Hook CCW GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Rosa Grande Hook CW GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Hook CW GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Rosa Grande Feather Long Even GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Feather Long Even GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Rosa Grande Feather Long Odd GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Feather Long Odd GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Rosa Grande Feather Short Odd GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Feather Short Odd GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Rosa Grande Feather Long GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Feather Long GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Rosa Grande Feather Short Even GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Feather Short Even GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Rosa Grande Torch Long Even GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Torch Long Even GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Rosa Grande Torch Long Odd GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Torch Long Odd GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Rosa Grande Torch Short Even GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Torch Short Even GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Rosa Grande Torch Short Odd GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Torch Short Odd GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Rosa Grande Ribbon GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Ribbon GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Rosa Grande Outer Ball GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Outer Ball GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Rosa Grande Ring GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Ring GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Rosa Grande Outer Ring GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Outer Ring GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Rosa Grande Spoke GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Spoke GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Rosa Grande  Spoke Mini GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande  Spoke Mini GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Rosa Grande Snowflake Spoke GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Snowflake Spoke GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Rosa Grande Wavy GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Wavy GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Rosa Grande Web Ring GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Web Ring GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Rosa Grande Web Spoke GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Rosa Grande Web Spoke GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Starlord GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Starlord GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Starlord Diamond GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Starlord Diamond GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Starlord Feather Even GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Starlord Feather Even GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Starlord Feather Odd GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Starlord Feather Odd GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Starlord Spoke GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Starlord Spoke GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Starlord Square GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Starlord Square GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Starlord Ribbon GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Starlord Ribbon GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Starlord Plunger All GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Starlord Plunger All GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Starlord Plunger LG GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Starlord Plunger LG GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Starlord Plunger SM GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Starlord Plunger SM GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Starlord Z All GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Starlord Z All GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Starlord Z Right GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Starlord Z Right GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Starlord Z Left GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Starlord Z Left GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Starlord Star GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Starlord Star GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Starlord Cross GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Starlord Cross GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Squared GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Squared GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Squared Flake Arm GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Squared Flake Arm GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Squared Are U Jelly GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Squared Are U Jelly GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Squared Heart Attack GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Squared Heart Attack GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Squared Tinkle Sprinke GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Squared Tinkle Sprinke GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Squared No Frills GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Squared No Frills GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Squared WhatsThatSmell GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Squared WhatsThatSmell GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Squared Purdy GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Squared Purdy GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Squared BoomBah GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Squared BoomBah GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Squared FizzleMyDizzle GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Squared FizzleMyDizzle GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Squared Spokes GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Squared Spokes GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE King Diamond GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE King Diamond GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE King Diamon Get The Point GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE King Diamon Get The Point GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE King Diamond Resolution GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE King Diamond Resolution GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE King Diamond Spike GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE King Diamond Spike GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE King Diamond Missing The Point GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE King Diamond Missing The Point GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE King Diamond Cone GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE King Diamond Cone GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE King Diamond Cone Lg All GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE King Diamond Cone Lg All GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE King Diamond Cone Sm GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE King Diamond Cone Sm GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE King Diamond Spiral GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE King Diamond Spiral GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Shape Shifter GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Shape Shifter GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Shape Shifter Wonder GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Shape Shifter Wonder GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Shape Shifter Barbie GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Shape Shifter Barbie GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Shape Shifter Champagne GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Shape Shifter Champagne GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Shape Shifter Crank It Up GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Shape Shifter Crank It Up GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Shape Shifter Ring GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Shape Shifter Ring GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Shape Shifter Between The Lantern",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Shape Shifter Between The Lantern",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Shape Shifter Lantern GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Shape Shifter Lantern GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Shape Shifter Slink GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Shape Shifter Slink GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Shape Shifter Spoke GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Shape Shifter Spoke GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Shape Shifter Hook GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Shape Shifter Hook GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Space Oddesy GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Space Oddesy GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Space Odyssey I AM BRAD GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Space Odyssey I AM BRAD GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Space Odyssey Jason Walks GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Space Odyssey Jason Walks GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Space Odyssey I Dont Feel So Good GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Space Odyssey I Dont Feel So Good GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Space Oddesy Points All GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Space Oddesy Points All GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Space Oddesy Outlines GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Space Oddesy Outlines GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Space Oddesy Triangle Lg GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Space Oddesy Triangle Lg GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Space Oddesy Triangle Sm GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Space Oddesy Triangle Sm GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Import Xtreme - GE Space Oddesy Spokes GRP",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Space Oddesy Spokes GRP",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Elliott - EFL Teddy",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Singing Tree 500 Node",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "GE Evil Clown",
+      "strand": "",
+      "node": "",
+      "mapping": "Singing Bulb 350 1",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "GE Singing Pumpkin",
+      "strand": "",
+      "node": "",
+      "mapping": "Singing Bulb 350 2",
+      "color": "#FFFFFF"
+    }
+  ],
+  "timingtracks": [
+    {
+      "name": "Beats",
+      "enabled": true
+    },
+    {
+      "name": "Bars",
+      "enabled": true
+    },
+    {
+      "name": "Main_Vocal",
+      "enabled": true
+    },
+    {
+      "name": "Winds",
+      "enabled": true
+    },
+    {
+      "name": "Ha",
+      "enabled": true
+    },
+    {
+      "name": "Backup_Vocal",
+      "enabled": true
+    }
+  ],
+  "eraseexisting": false,
+  "importblendmode": true,
+  "importfacestosequence": false,
+  "importmedia": true,
+  "videodir": "/Users/elliott.ohara/xlights/Halloween/Sequences/I Knew It I Knew You/Media/VendorVideos",
+  "imagedir": "/Users/elliott.ohara/xlights/Halloween/Sequences/I Knew It I Knew You/Media/VendorImages",
+  "shaderdir": "/Users/elliott.ohara/xlights/Halloween/Sequences/I Knew It I Knew You/Media/VendorShaders",
+  "facesdir": "/Users/elliott.ohara/xlights/Halloween/Sequences/I Knew It I Knew You/Media/VendorFaces"
+}

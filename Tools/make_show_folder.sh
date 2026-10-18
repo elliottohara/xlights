@@ -37,6 +37,14 @@ if [[ ! -f "$SHOW_DIR/xlights_rgbeffects.xml" ]]; then
   exit 1
 fi
 
+# A consolidated show owns its layout and routing centrally. Keep song
+# directories for organization without creating independent show copies.
+if [[ -f "$SHOW_DIR/show-folder-policy.json" ]]; then
+  echo "This show uses one shared layout: $SHOW_DIR"
+  echo "Song folder retained for sequences/media: $SEQ_DIR"
+  exit 0
+fi
+
 # Per-sequence layout copy (the one file that is allowed to diverge).
 if [[ -f "$SEQ_DIR/xlights_rgbeffects.xml" && "$REFRESH" != "--refresh-layout" ]]; then
   echo "kept existing per-sequence layout (use --refresh-layout to re-copy master)"

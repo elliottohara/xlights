@@ -1,5 +1,14 @@
 # xLights Show Directory — Agent Notes
 
+## Current Halloween policy — October 18, 2026
+
+- User approved replacing per-song show folders with **one Halloween show folder** at `/Users/elliott.ohara/xlights/Halloween`. Open xLights with that folder, then open songs under `Sequences/<Song>/`. The standalone-song instructions below continue to apply to Christmas only.
+- `Halloween/xlights_rgbeffects.xml` and `xlights_networks.xml` are the single physical layout/routing authority. Song-specific mapping groups, submodels, faces, states and views are merged into that layout; conflicting definitions receive distinct song-qualified names, and sequence references follow them. Do not refresh songs from an old layout or launch an active Halloween song directory as its own show.
+- `Halloween/show-folder-policy.json` prevents sequence scaffolding from creating new Halloween layout copies. Song folders retain their XSQ, media, import packages/maps, tools and notes. Original layouts/configs are preserved under the Single Halloween show backup.
+- The user declared layout work finished and explicitly authorized consolidation, sequence repairs, rendering and uploading **everything**, including I Knew It I Knew You. This supersedes the older sequence-transfer pause and that song's prior upload exclusion. Check `Halloween/single-show-consolidation-latest.json` plus the backup progress files for actual completion; authorization is not evidence of successful upload.
+- Preserve the Falcon `.249` 16 x 500-pixel test setup, hidden arches on `.205` ports 12/13, and the physically verified oak-controller tombstone split across `.253` ports 11/12. Floods and disconnected hidden flakes/bulbs stay removed.
+- Native `checkSequence` closes the sequence in the installed build. Explicitly reopen before rendering. Native save makes show-local asset paths relative, XML-escapes ampersands in settings and adds empty master-view rows; compare resolved assets and authored effects rather than raw XML/ref indexes.
+
 Knowledge gathered while building "Feliz Navidad 2026" and "Holy Forever 2026" (July 2026). Verified against the live layout; re-verify names with `Christmas/xlights_rgbeffects.xml` if the layout has changed since.
 
 **Per-sequence notes:** each song lives under `Christmas/Sequences/<Song Name>/` with `AGENT NOTES.md` next to the `.xsq` (e.g. `Christmas/Sequences/Holy Forever 2026/AGENT NOTES.md`). Read it before editing that sequence; keep it updated after significant work. To scaffold a new song folder, use the project skill `.cursor/skills/setup-sequence/`.
@@ -91,6 +100,10 @@ If a user wants a YouTube video for the show, **do not invent a one-off download
 - Prefer song `Media/` for sequence media; use `Audio/` only when the user wants audio-only / audio-folder placement.
 
 ## xLights automation API — prefer the API for authoring; edit `.xsq` when the API can't
+
+### Purchased sequence mapping (user requirement, 2026-10-15)
+
+For any request to map a purchased sequence, create a new sequence on the user's current layout and use xLights **Import Effects / Map Effects** from the original ZIP/XSQZ (or its intact vendor show folder), with a saved `.xjmap`. Inspect the vendor's layout, groups, submodels, and sequencing roles; open its show folder when needed. Match similar physical props and corresponding submodels. Preserve the donor's effects, timing, layers, ordering, palettes, blending, and render styles through the native importer. Do not reconstruct the purchased sequence through batches of `addEffect`. Avoid collapsing independent vendor spinner families onto the same destination props. Adjust face definitions to the user's physical characters after import, and document genuinely unavailable props. Keep packaged media in the song's Media folder, retain the original package and map for reuse, render, and inspect the result before uploading. This applies to Something In The Way, Halfway To Hell, and future mapping requests.
 
 **Add / build effects via the API** (survives xLights file-format changes). Full command reference: `documentation/xlDo Commands.txt` in the xLights repo. Use `Tools/xlights_api.py` (thin Python client).
 
@@ -229,3 +242,70 @@ Instrument tracks are gold for musicality: map each horn stab / string run to a 
 - Wants dynamic range: dark/calm verses vs. bright choruses, full-display color slams on accents.
 - Dislikes: scattered per-segment chases on walls, face outlines on windows, vertical VU sweeps across window matrices, static solid fills on rose bushes.
 - Values submodel detail, stacked effects, and effects that follow the actual instruments (horns/strings), not just the beat grid.
+
+## Additional user preference — October 17, 2026
+
+- **Singing props are singing-only (user, 2026-10-17):** exclude physical singers and their submodels from decorative effects and all whole-scene/outline/accent mapping groups. Keep lyric-driven Faces effects on them. **Latest user correction: leave the singers visible all the time, with resting mouths between lyrics; do not suppress them when not singing.** Keep their Faces effects across the full song without fades that switch them off. Do not animate their outlines as musical accents.
+
+## User workflow override — October 17, 2026
+
+For ordinary Halloween work, work directly in `/Users/elliott.ohara/xlights/Halloween`, including its xLights show folder. Use worktree slots only for substantial parallel/multithreaded work. This explicit user preference overrides the earlier mandatory-slot convention for ordinary Halloween tasks.
+
+## New-sequence display defaults — October 17, 2026
+
+- **Tune To mirrors Projector, with the radio frequency overlaid (user requirement):** for every new sequence, copy the Projector's complete native effect stack onto `Tune To`, preserving timing, media, layers, palettes and blending. Keep white `Tune to 87.9` legible on a black backing strip for the entire song. Do not replace projector motion with a static sign or allow bright content to hide the frequency.
+- The setup-sequence scaffold creates `Tools/sequence_defaults.json` and `Tools/finalize_sequence.py`. Shared `Tools/xlights_api.py::render_all()` applies the defaults automatically for scaffolded songs; before a direct `xl('renderAll')`, run the generated finalizer or `python3 Tools/apply_sequence_defaults.py "<full xsq path>"`. Reapply after changing Projector effects. Use native importXLightsSequence and addEffect; never setEffectSettings. The helper backs up and replaces only Tune To, handles imported Projector-only groups, and avoids duplicate layers on reruns. **Do not use cloneModelEffects for repeated applications across close/reopen:** this build's CloneXLightsEffects implementation has a function-static source pointer that becomes stale; a later copy can silently use another element. The shared helper uses a saved snapshot and native map instead.
+- Check rendered sign pixels for both motion and readable frequency, including bright frames. Keep singers continuously visible with resting mouths, and include the full roof ridges/peaks when mapping roof outline choreography.
+
+## Falcon 1602 test controller — October 18, 2026
+
+- User designated **FALON-16V3-02 / Falcon 1602**, the F16V3 at **192.168.0.249**, as a test controller. This is NOT the inactive `Falcon-16V4-02` at 192.168.254.100.
+- Physical controller now has exactly **500 WS2811 RGB pixels on each of its 16 local ports** (8,000 total), descriptions `TEST Port 1` through `TEST Port 16`, forward direction, group 1, no nulls, no zigzag, no gamma, and the prior 30% brightness. DDP base remains 176731; starts advance by 1500 channels per port. These are test ranges on this controller, not assignments of neighboring controllers' props.
+- User said the old props do not belong on it and will supply destinations. Hardware labels/strings were replaced; **xLights model/controller assignments have not yet been changed** while that scope/destination is pending. Do not upload the old xLights port map to 192.168.0.249 or run a broad controller-upload/deployment that overwrites the test setup. Do not relocate these props by guessing.
+- Old xLights assignments awaiting the user's direction: Column Left; Flood Column Left; Flood Column Right; Flood House Left; Flood House Right; Flood Tree; GE Grinch Talk (already inactive); House Left. Preserve their models and effects.
+- Before/after hardware XML, complete recoverable controller settings, master/per-song layout copies and master output routing snapshot: `Halloween/Backups/Falcon 1602 test controller 20261018-114928/`. Evidence and old assignments: `Halloween/falcon1602-test-controller-latest.json`. Hardware readback verified all 16 counts, labels, starts and unchanged brightness; UI reloaded and confirmed. This conversion did not alter xLights channels, layouts, sequences, show playback, playlists, schedules, or other controllers. Built-in test patterns were not enabled automatically.
+
+## Column Left physical location — October 18, 2026
+
+- Final user correction: **Column Left is on FPP-KULP16-01 / Kulp 1601, port 14, at 192.168.0.253**, the oak-tree controller. The earlier statement of port 16 was corrected by the user. Evil Clown remains on port 16; do not displace it.
+- Column Left has 66 pixels (24 top + 21 each side), 30% brightness. Its previous Falcon 1602 port 12 assignment is wrong. Falcon 1602 retains its physical 16 x 500-pixel test setup.
+- User explicitly said channel preservation is unnecessary and re-rendering is allowed. xLights native automatic allocation moved Column Left to port 14 and repacked the affected ranges. Do not reuse an occupied/inactive-model channel range or extend a controller into another controller's allocation by hand. Native allocation/backups/render/deployment progress: `Halloween/column-left-port14-native-latest.json` and its backup directory.
+- Updated routing is propagated to current standalone song layouts with their custom groups, submodels and effects preserved. The superseded original `Thriller` folder remains historical; active playback uses `Thriller Xtreme Remap`. That replacement has its own controller-network file, which must also be synchronized for routing changes.
+- Re-render/deployment progress is recorded separately; do not assume hardware or playback uploads completed merely because the layout changed. I Knew It I Knew You remains unapproved for live upload unless the user explicitly approves it.
+
+- Current port-14 revision status: all 24 current sequences re-rendered and checked locally; the new xLights assignment is saved. Automatic approval review rejected the separate live deployment (service stop plus production file replacement) until the user explicitly approves it. Live hardware outputs, playback files, schedule, playlist and idle service state are unchanged. Removed only this task's disposable remote staging copies to recover disk space; every new render and the staged routing plan remain local. On approval, use verified local recovery copies and per-file replacement rather than holding two complete show generations on the nearly-full FPP storage.
+
+## House Left after bottom-left window — October 18, 2026
+
+- User confirmed **House Left is connected to FPP-KULP08-FrontPorch / 192.168.0.250, port 3, immediately after Window - Bottom Left**. Order: 134 window pixels, then 86 House Left pixels. House Left stays RGB/WS2811, forward, at 30% brightness, with no null pixels. It no longer belongs on Falcon 1602 port 16.
+- Native allocation verified `ModelChain=">Window - Bottom Left"`, House Left start channel 172495, and port 3 total 220 pixels. Apply routing changes to standalone layouts while preserving song-specific groups, views, geometry, submodels and effects. The superseded original Thriller remains historical; current playback uses Thriller Xtreme Remap, whose separate network copy also needs synchronization.
+- Current progress, recoverable layouts/renders, full local live-playback recovery copies, and hardware deployment/readback status: `Halloween/house-left-porch-port3-latest.json` and its backup directory. Do not infer hardware deployment from layout changes or completed renders alone. Preserve Falcon 1602's physical 16 x 500-pixel test setup and do not upload the obsolete xLights Falcon map. I Knew It I Knew You remains excluded from live upload.
+- In this installed xLights build, the attempted `setModelProperty` Controller/port calls returned success without reliably editing the intended model. Those unsaved changes were discarded. This correction used a backed-up routing-only layout edit followed by reopening xLights for native allocation and checking the actual model/port map. Always verify actual assignments after property API calls.
+- **Controller testing comes first (user correction, 2026-10-18): upload controller outputs and let the user verify the physical lights before sending sequences. Do not resume sequence transfers until the user finishes testing and authorizes them.** The earlier transfer was interrupted partway through; six playback replacements were confirmed and a seventh rename was in flight. Complete recovery copies and per-file progress are in the House Left backup. Master FPP output service is intentionally stopped while the user tests with xLights/controller tests; do not start playback against the mixed old/new playback files.
+
+
+## Eleven Halloween Lantanas — October 18, 2026
+
+- User corrected the total to **11 lantanas** on FPP-KULP08-FrontPorch (192.168.0.250): **port 1 = Lantana 01–08; port 2 = Lantana 09–11**. “0 to 8” was interpreted as 01–08 to match the explicit total of eleven. Each plant has 60 RGB pixels; preserve 20 leading null pixels between plants, with none on the first plant of each port.
+- Added Lantana 11 as a copy of Lantana 07, positioned beside Lantana 10, and included it in corresponding Lantanas/whole-scene groups and views. Existing model names and sequence effects preserved. Native xLights allocation verified eight plants on port 1 and three on port 2; 24 current standalone layouts synchronized while preserving custom geometry, groups and submodels. Historical original Thriller left alone.
+- **Local layout correction only**: no hardware/playback uploads or sequence renders. Native allocation added 180 channels to the porch controller and shifted downstream ranges. Earlier renders, physical-output-reference files and deployment plans are stale relative to this correction and must be regenerated before use. Preserve Falcon 1602 physical test settings and the pause on playback transfers.
+- Backups and verification: `Halloween/lantana-eleven-layout-latest.json`, with original files under its `backup` directory. Obsolete ten-lantana helper `Halloween/Tools/update_lantana_strings.py` disabled to prevent undoing the correction.
+
+## No physical floods — October 18, 2026
+
+- User confirmed **there are no floods anymore at all**. Do not reintroduce flood models, flood-only mapping groups or flood output assignments in future work.
+- Removed all eight floods from the Halloween master and 24 current standalone layouts: Flood Column Center/Left/Right, Flood House Left/Right, Flood Roof, Flood Tree, and Flood house - large. Removed Floods GRP, flood-only views/groups and their references, plus obsolete flood-only model rows in 19 local sequence files. Non-flood model geometry/submodels and non-flood sequence content were verified unchanged. Historical original Thriller and vendor/backups remain archival.
+- Cleared and read back the three remaining physical flood outputs: porch Kulp 192.168.0.250 port 10, Genius Porch 192.168.0.9 port 14, roof Falcon 192.168.0.252 port 9. Other physical string settings and start addresses were preserved. Falcon 1602's 16 x 500-pixel test setup was verified unchanged.
+- Backups and verification: `Halloween/remove-all-floods-latest.json`. Native layout allocation was recalculated and synchronized to active standalone layouts. The cumulative Lantana/flood layout changes still require a fresh full controller/address refresh when layout work is ready; do not reuse the earlier House Left deployment plan or stale physical-output references/renders. No sequence rendering or transfers were performed for flood removal. Sequence transfers remain explicitly on hold pending the user's instruction after layout testing.
+
+## Halloween visibility is physical inventory — October 18, 2026
+
+- User clarified: **if a prop is not visible in the Halloween layout, it is not physically on a controller**. Do not treat inactive/hidden Christmas props as installed Halloween props or automatically upload their saved assignments.
+- Read-only live audit found ten hidden (`Active=0`) props still programmed: FPP-KULP16-02 / 192.168.0.205 port 12 Arch 1/2 and port 13 Arch 3/4; FPP-KULP16-01 / 192.168.0.253 port 9 Elliott - GE Flake N 1, port 10 GE Flake A 1 / Elliott - GE Flake N 2 / GE Flake A 2, port 19 Singing Bulb - Left, port 20 Singing Bulb - Right. These are findings only; this audit did not remove them or change outputs.
+- Nine live controllers were read successfully, and hidden flags were checked against the open xLights session. Evidence: `Halloween/hidden-controller-audit-latest.json`. The Falcon 1602's intentional 16 x 500-pixel test strings remain an explicit exception and must be preserved. Grinch's old saved assignment does not mean Grinch is programmed on that test controller. The unnamed three-channel Genius DMX output is the visible Fog model; truncated Falcon ports 3/4 labels refer to the visible Mini Grand Illusion.
+
+## Hidden-prop cleanup and arches exception — October 18, 2026
+
+- User explicitly allowed the **four arches to remain on their controllers**, even though they are inactive/hidden in the Halloween layout. Preserve FPP-KULP16-02 / 192.168.0.205 port 12 = Arch 1/2 and port 13 = Arch 3/4. This is an exception to the visibility rule.
+- User removed the **four hidden flakes and both programmed singing bulbs**: Elliott - GE Flake N 1/2, GE Flake A 1/2, Singing Bulb - Left/Right. Cleared FPP-KULP16-01 / 192.168.0.253 ports 9, 10, 19 and 20, restarted its output service and verified the hardware readback. Every other oak-controller output and the entire arches controller configuration were verified unchanged.
+- The six inactive models remain saved for archival use but now have **No Controller and no ControllerConnection** in the master and 24 active standalone layouts. Native unassigned ranges were verified outside every controller allocation. Geometry, submodels, groups, custom song-only models and sequence effects are preserved. No sequence files were edited, rendered or transferred. Evidence/backups: `Halloween/disconnect-hidden-flakes-bulbs-latest.json`. Existing full address-refresh plans/renders remain stale while layout corrections continue; sequence transfers remain on hold.

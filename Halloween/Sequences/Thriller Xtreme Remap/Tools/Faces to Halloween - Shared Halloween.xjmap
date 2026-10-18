@@ -1,0 +1,63 @@
+{
+  "mappings": [
+    {
+      "model": "GE Singing Pumpkin",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Singing Pumpkin",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "Elliott - EFL Teddy",
+      "strand": "",
+      "node": "",
+      "mapping": "Elliott - EFL Teddy",
+      "color": "#FFFFFF"
+    },
+    {
+      "model": "GE Evil Clown",
+      "strand": "",
+      "node": "",
+      "mapping": "GE Evil Clown",
+      "color": "#FFFFFF"
+    }
+  ],
+  "timingtracks": [
+    {
+      "name": "New Timing",
+      "enabled": false
+    },
+    {
+      "name": "Skull",
+      "enabled": true
+    },
+    {
+      "name": "Round",
+      "enabled": true
+    },
+    {
+      "name": "Horns",
+      "enabled": true
+    },
+    {
+      "name": "Flat",
+      "enabled": true
+    },
+    {
+      "name": "Beats",
+      "enabled": false
+    },
+    {
+      "name": "Note Onsets",
+      "enabled": false
+    },
+    {
+      "name": "Description",
+      "enabled": false
+    }
+  ],
+  "eraseexisting": false,
+  "importblendmode": true,
+  "importfacestosequence": false,
+  "importmedia": false
+}

@@ -1,0 +1,9 @@
+{
+  "mode": "single",
+  "show_folder": ".",
+  "sequence_root": "Sequences",
+  "layout": "xlights_rgbeffects.xml",
+  "networks": "xlights_networks.xml",
+  "note": "Open Halloween as the xLights show folder. Song folders contain sequences and assets, not independent layout copies.",
+  "sequence_manifest": "current-show.json"
+}
