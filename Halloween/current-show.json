@@ -267,5 +267,39 @@
     "total_pixels": 103,
     "hardware_verified": true,
     "native_controller_reference": "/Users/elliott.ohara/xlights/Halloween/Backups/Garage Left Bottom Genius port8 20261018-151752/physical-output-reference-after.json"
+  },
+  "garage_group_memberships": {
+    "updated_at": "2026-10-18T16:20:28.734498-05:00",
+    "models": [
+      "Garage Left Bottom",
+      "Wall - Garage Top"
+    ],
+    "groups": [
+      "Elliott - House",
+      "Elliott - House [I-Knew-It-I-Knew-You]",
+      "House Outline",
+      "Import Xtreme - House Verts GRP",
+      "Map - All House",
+      "Map - All House (CENTERED ON LARGE PROP)",
+      "Map - All House (place on bottom)",
+      "Map - House Outline",
+      "Map - Verts GRP",
+      "Verts",
+      "Whole Scene",
+      "Whole Scene - For fades",
+      "Whole Scene - For fades [01-Abracadabra]",
+      "Whole Scene - For fades [I-Knew-It-I-Knew-You]",
+      "Whole Scene - For fades [Thriller-Xtreme-Remap]",
+      "Whole Scene Rosa Centered",
+      "Whole Scene Rosa Centered [01-Abracadabra]",
+      "Whole Scene Rosa Centered [I-Knew-It-I-Knew-You]",
+      "Whole Scene Rosa Centered [Thriller-Xtreme-Remap]",
+      "Whole Scene [01-Abracadabra]",
+      "Whole Scene w Matrixes",
+      "Whole Scene w Matrixes [01-Abracadabra]",
+      "Whole Scene w Matrixes [I-Knew-It-I-Knew-You]",
+      "Whole Scene w Matrixes [Thriller-Xtreme-Remap]"
+    ],
+    "rerender_required": true
   }
 }
