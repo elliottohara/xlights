@@ -1,0 +1,12 @@
+{
+  "backup": "/Users/elliott.ohara/xlights/Halloween/Backups/Rename selfie station 20261018-165859",
+  "ip": "192.168.0.213",
+  "old_xlights_name": "FPP-LEFT-YARD",
+  "name": "FPP-KULP-SELFIE-STATION",
+  "xlights_renamed_and_verified": true,
+  "master_label_updated": true,
+  "master_kept_running": true,
+  "device_hostname_verified": true,
+  "device_hostname": "FPP-Selfie-Station",
+  "post_upgrade_setup_report": "/Users/elliott.ohara/xlights/Halloween/selfie-station-setup-latest.json"
+}

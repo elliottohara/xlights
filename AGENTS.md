@@ -1,5 +1,10 @@
 # xLights Show Directory — Agent Notes
 
+## Selfie Station post-upgrade setup — October 18, 2026
+
+- Restored `.213` after its Debian 13 / FPP 10.2 upgrade: regional/wizard preferences matched Master (America/Chicago, Fahrenheit, US), hostname FPP-Selfie-Station, port 1 Teddy 500 RGB pixels at absolute channel 214643, port 2 Singing Pumpkin 167 at 216143, both WS2811 and 20%. Other pixel ports remain empty; old Grinch/flood configuration and running Grinch effects are cleared. Rebooted only this controller. Pixel driver initialized both correct ranges and live DDP reception passed without errors. Master stayed running; its routes, playlist and schedule were preserved. No render/address changes were required. Evidence: `Halloween/selfie-station-setup-latest.json`.
+- In this FPP build, status `channelOutputsEnabled` calls `HasUniverseOutputs()` and describes network forwarding. False is expected on this pixel receiver. Verify the enabled BBB module, successful pixel-driver initialization and input data rather than enabling network forwarding to change that flag. Physical illumination still needs the user’s observation.
+
 ## Latest Halloween playback deployment — October 18, 2026
 
 - The garage batch is now fully deployed: all 24 active sequences (25 playback filenames) and 20 media files verified on Master and the projector. Complete remote checksums, matching sequence IDs/frame timing, and every projector frame were verified. Master stayed running and is idle; existing playlists and schedule are preserved. This supersedes earlier pending-render/deployment status notes.

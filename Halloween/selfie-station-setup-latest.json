@@ -1,0 +1,57 @@
+{
+  "backup": "/Users/elliott.ohara/xlights/Halloween/Backups/Selfie station post-upgrade setup 20261018-174338",
+  "ip": "192.168.0.213",
+  "name": "FPP-KULP-SELFIE-STATION",
+  "version": "10.2",
+  "cape_serial_verified": true,
+  "ports": [
+    {
+      "port": 1,
+      "model": "Elliott - EFL Teddy",
+      "pixels": 500,
+      "start_channel": 214643,
+      "brightness": 20
+    },
+    {
+      "port": 2,
+      "model": "GE Singing Pumpkin",
+      "pixels": 167,
+      "start_channel": 216143,
+      "brightness": 20
+    }
+  ],
+  "master_must_remain_running": true,
+  "settings_changed": [
+    "Locale",
+    "Latitude",
+    "Longitude",
+    "ShareCrashData",
+    "FetchVendorLogos",
+    "SendVendorSerial",
+    "statsPublish",
+    "TimeZone",
+    "LegalJurisdiction",
+    "HostDescription"
+  ],
+  "complete": true,
+  "hostname_verified": true,
+  "regional_settings_verified": true,
+  "initial_setup_complete": true,
+  "pixel_outputs_readback_verified": true,
+  "ddp_input_verified": true,
+  "channel_inputs_enabled": true,
+  "pixel_output_module_enabled": true,
+  "pixel_driver_initialized": true,
+  "network_forwarding_enabled": false,
+  "old_grinch_effects_stopped": true,
+  "local_reboot_complete": true,
+  "master_kept_running": true,
+  "master_configuration_preserved": true,
+  "finished_at": "2026-10-18T17:46:59.446375-05:00",
+  "warnings": [],
+  "original_post_upgrade_snapshot": "/Users/elliott.ohara/xlights/Halloween/Backups/Selfie station post-upgrade setup 20261018-174310",
+  "rerender_required": false,
+  "sequence_upload_required": false,
+  "os_release": "Debian GNU/Linux 13 (trixie)",
+  "physical_observation": "Configuration, driver initialization and live DDP verified; user visual test not performed."
+}

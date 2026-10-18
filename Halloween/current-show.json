@@ -572,5 +572,11 @@
   "local_batch_render_finished_at": "2026-10-18T16:40:27.846974-05:00",
   "master_must_remain_running": true,
   "latest_deployment": "garage-batch-upload-latest.json",
-  "deployed_at": "2026-10-18T17:08:02.360602-05:00"
+  "deployed_at": "2026-10-18T17:08:02.360602-05:00",
+  "selfie_station_setup": {
+    "ip": "192.168.0.213",
+    "report": "selfie-station-setup-latest.json",
+    "complete": true,
+    "verified_at": "2026-10-18T17:46:59.446375-05:00"
+  }
 }
