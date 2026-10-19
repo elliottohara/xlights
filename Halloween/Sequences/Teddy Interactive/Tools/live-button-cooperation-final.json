@@ -1,0 +1,891 @@
+{
+  "start": 1792374218.8118238,
+  "before": {
+    "arms": "down",
+    "pid": 8231,
+    "last_request": "a4c78d6352cf4a26b489076f39deb114",
+    "status": "show",
+    "last_action": "green",
+    "sound_count": 20,
+    "effect": null,
+    "show_playing": true,
+    "heartbeat": 1792374214.3061407
+  },
+  "held_state": {
+    "arms": "down",
+    "pid": 8231,
+    "last_request": "a4c78d6352cf4a26b489076f39deb114",
+    "status": "speech",
+    "last_action": "green",
+    "sound_count": 20,
+    "effect": null,
+    "show_playing": true,
+    "heartbeat": 1792374218.8745909
+  },
+  "held_effects": [],
+  "routine_started_after_lock_release": true,
+  "effect_start_at": 1792374220.409102,
+  "timeline": [
+    {
+      "at": 1792374220.409115,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374220.5091887,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374220.60919,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374220.7091856,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374220.8091848,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374220.909191,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374221.009183,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374221.1091833,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374221.2091856,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374221.3091936,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374221.4091861,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374221.509185,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374221.6091912,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374221.7091851,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374221.8091877,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374221.9091892,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374222.0091918,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374222.1091857,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374222.2091868,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374222.309188,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374222.4091866,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374222.5091858,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374222.609189,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374222.7091856,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374222.809186,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374222.9091861,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374223.0091865,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374223.1091852,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374223.2091825,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374223.3091843,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374223.4091866,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374223.5091815,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374223.6091914,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374223.7092025,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374223.8092036,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374223.9092019,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374224.0092018,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374224.1092038,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374224.2092004,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374224.3092048,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374224.4091988,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    },
+    {
+      "at": 1792374224.5091999,
+      "effects": [
+        {
+          "id": 0,
+          "name": "Teddy Green Routine"
+        }
+      ],
+      "runtime": {
+        "arms": "down",
+        "pid": 8231,
+        "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+        "status": "gesture",
+        "last_action": "green",
+        "sound_count": 20,
+        "effect": "Teddy Green Routine",
+        "show_playing": true,
+        "heartbeat": 1792374220.2666166
+      }
+    }
+  ],
+  "routine_after_four_seconds": [
+    {
+      "id": 0,
+      "name": "Teddy Green Routine"
+    }
+  ],
+  "after": {
+    "arms": "down",
+    "pid": 8231,
+    "last_request": "d62ea512ccee4cdba626551c4b4ac635",
+    "status": "show",
+    "last_action": "green",
+    "sound_count": 20,
+    "effect": null,
+    "show_playing": true,
+    "heartbeat": 1792374225.4130852
+  },
+  "after_effects": [],
+  "success": true,
+  "master_running": true,
+  "finished": 1792374226.1616764
+}

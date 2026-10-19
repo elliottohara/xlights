@@ -1,0 +1,12 @@
+{
+  "start_reply": "Effect Started",
+  "after_seven_seconds": [
+    {
+      "id": 0,
+      "name": "Teddy Hold Down"
+    }
+  ],
+  "stop_reply": "Effect Stopped",
+  "after_stop": [],
+  "success": true
+}

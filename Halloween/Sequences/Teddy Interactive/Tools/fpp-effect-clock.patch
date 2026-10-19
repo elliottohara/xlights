@@ -1,0 +1,75 @@
+--- src/effects.cpp
++++ src/effects.cpp
+@@ -19,6 +19,7 @@
+ #include <algorithm>
+ #include <array>
+ #include <cstdint>
++#include <chrono>
+ #include <cstring>
+ #include <fnmatch.h>
+ #include <functional>
+@@ -48,7 +49,8 @@
+ public:
+     FPPeffect() :
+         fp(nullptr),
+-        currentFrame(0) {}
++        currentFrame(0),
++        nextFrameTime(0) {}
+     ~FPPeffect() {
+         if (fp)
+             delete fp;
+@@ -59,6 +61,7 @@
+     int loop;
+     int background;
+     uint32_t currentFrame;
++    long long nextFrameTime;
+ };
+ 
+ static int effectCount = 0;
+@@ -387,6 +390,7 @@
+     }
+ 
+     effects[effectID]->currentFrame = 0;
++    effects[effectID]->nextFrameTime = 0;
+     BringEffectToFront(effectID);
+     return 1;
+ }
+@@ -422,12 +426,27 @@
+     }
+ 
+     e = effects[effectID];
++    // Bridged packets may force additional compositor passes. Advance by
++    // elapsed monotonic time, not by the number of output updates.
++    const long long now = std::chrono::duration_cast<std::chrono::microseconds>(
++        std::chrono::steady_clock::now().time_since_epoch()).count();
++    const long long step = std::max(1, e->fp->getStepTime()) * 1000LL;
++    if (e->nextFrameTime == 0) {
++        e->nextFrameTime = now + step;
++    } else if (now >= e->nextFrameTime) {
++        const auto advance = 1 + (now - e->nextFrameTime) / step;
++        e->currentFrame += advance;
++        e->nextFrameTime += advance * step;
++    }
++    const uint32_t frameCount = e->fp->getNumFrames();
++    if (e->loop && frameCount) {
++        e->currentFrame %= frameCount;
++    }
+     FSEQFile::FrameData* d = e->fp->getFrame(e->currentFrame);
+     if (d == nullptr && e->loop) {
+         e->currentFrame = 0;
+         d = e->fp->getFrame(e->currentFrame);
+     }
+-    e->currentFrame++;
+     if (d) {
+         d->readFrame((uint8_t*)channelData, FPPD_MAX_CHANNELS);
+         delete d;
+@@ -484,6 +503,9 @@
+             if ((!skipBackground) ||
+                 (skipBackground && (!effects[id]->background))) {
+                 dataRead |= OverlayEffect(id, channelData);
++            } else {
++                // Paused background effects resume on their held frame.
++                effects[id]->nextFrameTime = 0;
+             }
+         }
+     }

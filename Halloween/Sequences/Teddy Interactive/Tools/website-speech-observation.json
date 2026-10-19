@@ -1,0 +1,1678 @@
+{
+  "samples": [
+    {
+      "at": "2026-10-19T02:12:12.911348+00:00",
+      "effects": {
+        "Message": "",
+        "Status": "OK",
+        "respCode": 200,
+        "runningEffects": []
+      },
+      "streamSlots": [
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 1",
+          "nodeName": "fppd_stream_1",
+          "slot": 1,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 2",
+          "nodeName": "fppd_stream_2",
+          "slot": 2,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 3",
+          "nodeName": "fppd_stream_3",
+          "slot": 3,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 4",
+          "nodeName": "fppd_stream_4",
+          "slot": 4,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 5",
+          "nodeName": "fppd_stream_5",
+          "slot": 5,
+          "status": "idle"
+        }
+      ],
+      "worker": {
+        "status": "show",
+        "last_action": "green",
+        "effect": null,
+        "sound_count": 20
+      }
+    },
+    {
+      "at": "2026-10-19T02:12:16.437704+00:00",
+      "effects": {
+        "Message": "",
+        "Status": "OK",
+        "respCode": 200,
+        "runningEffects": []
+      },
+      "streamSlots": [
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 1",
+          "nodeName": "fppd_stream_1",
+          "slot": 1,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 2",
+          "nodeName": "fppd_stream_2",
+          "slot": 2,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 3",
+          "nodeName": "fppd_stream_3",
+          "slot": 3,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 4",
+          "nodeName": "fppd_stream_4",
+          "slot": 4,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 5",
+          "nodeName": "fppd_stream_5",
+          "slot": 5,
+          "status": "idle"
+        }
+      ],
+      "worker": {
+        "status": "speech",
+        "last_action": "green",
+        "effect": null,
+        "sound_count": 20
+      }
+    },
+    {
+      "at": "2026-10-19T02:12:16.673360+00:00",
+      "effects": {
+        "Message": "",
+        "Status": "OK",
+        "respCode": 200,
+        "runningEffects": []
+      },
+      "streamSlots": [
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 1",
+          "nodeName": "fppd_stream_1",
+          "slot": 1,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 2",
+          "nodeName": "fppd_stream_2",
+          "slot": 2,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 3",
+          "nodeName": "fppd_stream_3",
+          "slot": 3,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 4",
+          "nodeName": "fppd_stream_4",
+          "slot": 4,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 5",
+          "nodeName": "fppd_stream_5",
+          "slot": 5,
+          "status": "idle"
+        }
+      ],
+      "worker": {
+        "status": "show",
+        "last_action": "green",
+        "effect": null,
+        "sound_count": 20
+      }
+    },
+    {
+      "at": "2026-10-19T02:12:19.491077+00:00",
+      "effects": {
+        "Message": "",
+        "Status": "OK",
+        "respCode": 200,
+        "runningEffects": []
+      },
+      "streamSlots": [
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 1",
+          "nodeName": "fppd_stream_1",
+          "slot": 1,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 2",
+          "nodeName": "fppd_stream_2",
+          "slot": 2,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 3",
+          "nodeName": "fppd_stream_3",
+          "slot": 3,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 4",
+          "nodeName": "fppd_stream_4",
+          "slot": 4,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 5",
+          "nodeName": "fppd_stream_5",
+          "slot": 5,
+          "status": "idle"
+        }
+      ],
+      "worker": {
+        "status": "speech",
+        "last_action": "green",
+        "effect": null,
+        "sound_count": 20
+      }
+    },
+    {
+      "at": "2026-10-19T02:12:19.727723+00:00",
+      "effects": {
+        "Message": "",
+        "Status": "OK",
+        "respCode": 200,
+        "runningEffects": []
+      },
+      "streamSlots": [
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 1",
+          "nodeName": "fppd_stream_1",
+          "slot": 1,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 2",
+          "nodeName": "fppd_stream_2",
+          "slot": 2,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 3",
+          "nodeName": "fppd_stream_3",
+          "slot": 3,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 4",
+          "nodeName": "fppd_stream_4",
+          "slot": 4,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 5",
+          "nodeName": "fppd_stream_5",
+          "slot": 5,
+          "status": "idle"
+        }
+      ],
+      "worker": {
+        "status": "show",
+        "last_action": "green",
+        "effect": null,
+        "sound_count": 20
+      }
+    },
+    {
+      "at": "2026-10-19T02:12:22.790719+00:00",
+      "effects": {
+        "Message": "",
+        "Status": "OK",
+        "respCode": 200,
+        "runningEffects": []
+      },
+      "streamSlots": [
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 1",
+          "nodeName": "fppd_stream_1",
+          "slot": 1,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 2",
+          "nodeName": "fppd_stream_2",
+          "slot": 2,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 3",
+          "nodeName": "fppd_stream_3",
+          "slot": 3,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 4",
+          "nodeName": "fppd_stream_4",
+          "slot": 4,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 5",
+          "nodeName": "fppd_stream_5",
+          "slot": 5,
+          "status": "idle"
+        }
+      ],
+      "worker": {
+        "status": "speech",
+        "last_action": "green",
+        "effect": null,
+        "sound_count": 20
+      }
+    },
+    {
+      "at": "2026-10-19T02:12:23.466658+00:00",
+      "effects": {
+        "Message": "",
+        "Status": "OK",
+        "respCode": 200,
+        "runningEffects": [
+          {
+            "id": 0,
+            "name": "ofls-speech-c2c4a426-253"
+          }
+        ]
+      },
+      "streamSlots": [
+        {
+          "isBackground": false,
+          "mediaFilename": "ofls-speech-c2c4a426-253.mp3",
+          "minutesTotal": 0,
+          "nodeDescription": "FPP Media Stream 1",
+          "nodeName": "fppd_stream_1",
+          "secondsElapsed": 0,
+          "secondsRemaining": 0,
+          "secondsTotal": 0,
+          "slot": 1,
+          "status": "playing",
+          "subSecondsElapsed": 0,
+          "subSecondsRemaining": 0
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 2",
+          "nodeName": "fppd_stream_2",
+          "slot": 2,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 3",
+          "nodeName": "fppd_stream_3",
+          "slot": 3,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 4",
+          "nodeName": "fppd_stream_4",
+          "slot": 4,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 5",
+          "nodeName": "fppd_stream_5",
+          "slot": 5,
+          "status": "idle"
+        }
+      ],
+      "worker": {
+        "status": "speech",
+        "last_action": "green",
+        "effect": null,
+        "sound_count": 20
+      }
+    },
+    {
+      "at": "2026-10-19T02:12:30.856207+00:00",
+      "effects": {
+        "Message": "",
+        "Status": "OK",
+        "respCode": 200,
+        "runningEffects": [
+          {
+            "id": 0,
+            "name": "ofls-speech-c2c4a426-253"
+          }
+        ]
+      },
+      "streamSlots": [
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 1",
+          "nodeName": "fppd_stream_1",
+          "slot": 1,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 2",
+          "nodeName": "fppd_stream_2",
+          "slot": 2,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 3",
+          "nodeName": "fppd_stream_3",
+          "slot": 3,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 4",
+          "nodeName": "fppd_stream_4",
+          "slot": 4,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 5",
+          "nodeName": "fppd_stream_5",
+          "slot": 5,
+          "status": "idle"
+        }
+      ],
+      "worker": {
+        "status": "speech",
+        "last_action": "green",
+        "effect": null,
+        "sound_count": 20
+      }
+    },
+    {
+      "at": "2026-10-19T02:12:31.559409+00:00",
+      "effects": {
+        "Message": "",
+        "Status": "OK",
+        "respCode": 200,
+        "runningEffects": []
+      },
+      "streamSlots": [
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 1",
+          "nodeName": "fppd_stream_1",
+          "slot": 1,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 2",
+          "nodeName": "fppd_stream_2",
+          "slot": 2,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 3",
+          "nodeName": "fppd_stream_3",
+          "slot": 3,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 4",
+          "nodeName": "fppd_stream_4",
+          "slot": 4,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 5",
+          "nodeName": "fppd_stream_5",
+          "slot": 5,
+          "status": "idle"
+        }
+      ],
+      "worker": {
+        "status": "speech",
+        "last_action": "green",
+        "effect": null,
+        "sound_count": 20
+      }
+    },
+    {
+      "at": "2026-10-19T02:12:31.798316+00:00",
+      "effects": {
+        "Message": "",
+        "Status": "OK",
+        "respCode": 200,
+        "runningEffects": []
+      },
+      "streamSlots": [
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 1",
+          "nodeName": "fppd_stream_1",
+          "slot": 1,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 2",
+          "nodeName": "fppd_stream_2",
+          "slot": 2,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 3",
+          "nodeName": "fppd_stream_3",
+          "slot": 3,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 4",
+          "nodeName": "fppd_stream_4",
+          "slot": 4,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 5",
+          "nodeName": "fppd_stream_5",
+          "slot": 5,
+          "status": "idle"
+        }
+      ],
+      "worker": {
+        "status": "show",
+        "last_action": "green",
+        "effect": null,
+        "sound_count": 20
+      }
+    },
+    {
+      "at": "2026-10-19T02:12:34.612102+00:00",
+      "effects": {
+        "Message": "",
+        "Status": "OK",
+        "respCode": 200,
+        "runningEffects": []
+      },
+      "streamSlots": [
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 1",
+          "nodeName": "fppd_stream_1",
+          "slot": 1,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 2",
+          "nodeName": "fppd_stream_2",
+          "slot": 2,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 3",
+          "nodeName": "fppd_stream_3",
+          "slot": 3,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 4",
+          "nodeName": "fppd_stream_4",
+          "slot": 4,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 5",
+          "nodeName": "fppd_stream_5",
+          "slot": 5,
+          "status": "idle"
+        }
+      ],
+      "worker": {
+        "status": "speech",
+        "last_action": "green",
+        "effect": null,
+        "sound_count": 20
+      }
+    },
+    {
+      "at": "2026-10-19T02:12:35.073039+00:00",
+      "effects": {
+        "Message": "",
+        "Status": "OK",
+        "respCode": 200,
+        "runningEffects": []
+      },
+      "streamSlots": [
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 1",
+          "nodeName": "fppd_stream_1",
+          "slot": 1,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 2",
+          "nodeName": "fppd_stream_2",
+          "slot": 2,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 3",
+          "nodeName": "fppd_stream_3",
+          "slot": 3,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 4",
+          "nodeName": "fppd_stream_4",
+          "slot": 4,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 5",
+          "nodeName": "fppd_stream_5",
+          "slot": 5,
+          "status": "idle"
+        }
+      ],
+      "worker": {
+        "status": "show",
+        "last_action": "green",
+        "effect": null,
+        "sound_count": 20
+      }
+    },
+    {
+      "at": "2026-10-19T02:12:41.420844+00:00",
+      "effects": {
+        "Message": "",
+        "Status": "OK",
+        "respCode": 200,
+        "runningEffects": []
+      },
+      "streamSlots": [
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 1",
+          "nodeName": "fppd_stream_1",
+          "slot": 1,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 2",
+          "nodeName": "fppd_stream_2",
+          "slot": 2,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 3",
+          "nodeName": "fppd_stream_3",
+          "slot": 3,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 4",
+          "nodeName": "fppd_stream_4",
+          "slot": 4,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 5",
+          "nodeName": "fppd_stream_5",
+          "slot": 5,
+          "status": "idle"
+        }
+      ],
+      "worker": {
+        "status": "speech",
+        "last_action": "green",
+        "effect": null,
+        "sound_count": 20
+      }
+    },
+    {
+      "at": "2026-10-19T02:12:41.635709+00:00",
+      "effects": {
+        "Message": "",
+        "Status": "OK",
+        "respCode": 200,
+        "runningEffects": []
+      },
+      "streamSlots": [
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 1",
+          "nodeName": "fppd_stream_1",
+          "slot": 1,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 2",
+          "nodeName": "fppd_stream_2",
+          "slot": 2,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 3",
+          "nodeName": "fppd_stream_3",
+          "slot": 3,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 4",
+          "nodeName": "fppd_stream_4",
+          "slot": 4,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 5",
+          "nodeName": "fppd_stream_5",
+          "slot": 5,
+          "status": "idle"
+        }
+      ],
+      "worker": {
+        "status": "show",
+        "last_action": "green",
+        "effect": null,
+        "sound_count": 20
+      }
+    },
+    {
+      "at": "2026-10-19T02:12:44.603039+00:00",
+      "effects": {
+        "Message": "",
+        "Status": "OK",
+        "respCode": 200,
+        "runningEffects": []
+      },
+      "streamSlots": [
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 1",
+          "nodeName": "fppd_stream_1",
+          "slot": 1,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 2",
+          "nodeName": "fppd_stream_2",
+          "slot": 2,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 3",
+          "nodeName": "fppd_stream_3",
+          "slot": 3,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 4",
+          "nodeName": "fppd_stream_4",
+          "slot": 4,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 5",
+          "nodeName": "fppd_stream_5",
+          "slot": 5,
+          "status": "idle"
+        }
+      ],
+      "worker": {
+        "status": "speech",
+        "last_action": "green",
+        "effect": null,
+        "sound_count": 20
+      }
+    },
+    {
+      "at": "2026-10-19T02:12:44.844630+00:00",
+      "effects": {
+        "Message": "",
+        "Status": "OK",
+        "respCode": 200,
+        "runningEffects": []
+      },
+      "streamSlots": [
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 1",
+          "nodeName": "fppd_stream_1",
+          "slot": 1,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 2",
+          "nodeName": "fppd_stream_2",
+          "slot": 2,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 3",
+          "nodeName": "fppd_stream_3",
+          "slot": 3,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 4",
+          "nodeName": "fppd_stream_4",
+          "slot": 4,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 5",
+          "nodeName": "fppd_stream_5",
+          "slot": 5,
+          "status": "idle"
+        }
+      ],
+      "worker": {
+        "status": "show",
+        "last_action": "green",
+        "effect": null,
+        "sound_count": 20
+      }
+    },
+    {
+      "at": "2026-10-19T02:12:47.884173+00:00",
+      "effects": {
+        "Message": "",
+        "Status": "OK",
+        "respCode": 200,
+        "runningEffects": []
+      },
+      "streamSlots": [
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 1",
+          "nodeName": "fppd_stream_1",
+          "slot": 1,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 2",
+          "nodeName": "fppd_stream_2",
+          "slot": 2,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 3",
+          "nodeName": "fppd_stream_3",
+          "slot": 3,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 4",
+          "nodeName": "fppd_stream_4",
+          "slot": 4,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 5",
+          "nodeName": "fppd_stream_5",
+          "slot": 5,
+          "status": "idle"
+        }
+      ],
+      "worker": {
+        "status": "speech",
+        "last_action": "green",
+        "effect": null,
+        "sound_count": 20
+      }
+    },
+    {
+      "at": "2026-10-19T02:12:48.358041+00:00",
+      "effects": {
+        "Message": "",
+        "Status": "OK",
+        "respCode": 200,
+        "runningEffects": []
+      },
+      "streamSlots": [
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 1",
+          "nodeName": "fppd_stream_1",
+          "slot": 1,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 2",
+          "nodeName": "fppd_stream_2",
+          "slot": 2,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 3",
+          "nodeName": "fppd_stream_3",
+          "slot": 3,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 4",
+          "nodeName": "fppd_stream_4",
+          "slot": 4,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 5",
+          "nodeName": "fppd_stream_5",
+          "slot": 5,
+          "status": "idle"
+        }
+      ],
+      "worker": {
+        "status": "show",
+        "last_action": "green",
+        "effect": null,
+        "sound_count": 20
+      }
+    },
+    {
+      "at": "2026-10-19T02:12:51.436757+00:00",
+      "effects": {
+        "Message": "",
+        "Status": "OK",
+        "respCode": 200,
+        "runningEffects": []
+      },
+      "streamSlots": [
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 1",
+          "nodeName": "fppd_stream_1",
+          "slot": 1,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 2",
+          "nodeName": "fppd_stream_2",
+          "slot": 2,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 3",
+          "nodeName": "fppd_stream_3",
+          "slot": 3,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 4",
+          "nodeName": "fppd_stream_4",
+          "slot": 4,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 5",
+          "nodeName": "fppd_stream_5",
+          "slot": 5,
+          "status": "idle"
+        }
+      ],
+      "worker": {
+        "status": "speech",
+        "last_action": "green",
+        "effect": null,
+        "sound_count": 20
+      }
+    },
+    {
+      "at": "2026-10-19T02:12:51.676445+00:00",
+      "effects": {
+        "Message": "",
+        "Status": "OK",
+        "respCode": 200,
+        "runningEffects": []
+      },
+      "streamSlots": [
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 1",
+          "nodeName": "fppd_stream_1",
+          "slot": 1,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 2",
+          "nodeName": "fppd_stream_2",
+          "slot": 2,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 3",
+          "nodeName": "fppd_stream_3",
+          "slot": 3,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 4",
+          "nodeName": "fppd_stream_4",
+          "slot": 4,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 5",
+          "nodeName": "fppd_stream_5",
+          "slot": 5,
+          "status": "idle"
+        }
+      ],
+      "worker": {
+        "status": "show",
+        "last_action": "green",
+        "effect": null,
+        "sound_count": 20
+      }
+    },
+    {
+      "at": "2026-10-19T02:12:54.743380+00:00",
+      "effects": {
+        "Message": "",
+        "Status": "OK",
+        "respCode": 200,
+        "runningEffects": []
+      },
+      "streamSlots": [
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 1",
+          "nodeName": "fppd_stream_1",
+          "slot": 1,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 2",
+          "nodeName": "fppd_stream_2",
+          "slot": 2,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 3",
+          "nodeName": "fppd_stream_3",
+          "slot": 3,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 4",
+          "nodeName": "fppd_stream_4",
+          "slot": 4,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 5",
+          "nodeName": "fppd_stream_5",
+          "slot": 5,
+          "status": "idle"
+        }
+      ],
+      "worker": {
+        "status": "speech",
+        "last_action": "green",
+        "effect": null,
+        "sound_count": 20
+      }
+    },
+    {
+      "at": "2026-10-19T02:12:54.974155+00:00",
+      "effects": {
+        "Message": "",
+        "Status": "OK",
+        "respCode": 200,
+        "runningEffects": []
+      },
+      "streamSlots": [
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 1",
+          "nodeName": "fppd_stream_1",
+          "slot": 1,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 2",
+          "nodeName": "fppd_stream_2",
+          "slot": 2,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 3",
+          "nodeName": "fppd_stream_3",
+          "slot": 3,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 4",
+          "nodeName": "fppd_stream_4",
+          "slot": 4,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 5",
+          "nodeName": "fppd_stream_5",
+          "slot": 5,
+          "status": "idle"
+        }
+      ],
+      "worker": {
+        "status": "show",
+        "last_action": "green",
+        "effect": null,
+        "sound_count": 20
+      }
+    },
+    {
+      "at": "2026-10-19T02:12:58.263464+00:00",
+      "effects": {
+        "Message": "",
+        "Status": "OK",
+        "respCode": 200,
+        "runningEffects": []
+      },
+      "streamSlots": [
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 1",
+          "nodeName": "fppd_stream_1",
+          "slot": 1,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 2",
+          "nodeName": "fppd_stream_2",
+          "slot": 2,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 3",
+          "nodeName": "fppd_stream_3",
+          "slot": 3,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 4",
+          "nodeName": "fppd_stream_4",
+          "slot": 4,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 5",
+          "nodeName": "fppd_stream_5",
+          "slot": 5,
+          "status": "idle"
+        }
+      ],
+      "worker": {
+        "status": "speech",
+        "last_action": "green",
+        "effect": null,
+        "sound_count": 20
+      }
+    },
+    {
+      "at": "2026-10-19T02:12:58.478828+00:00",
+      "effects": {
+        "Message": "",
+        "Status": "OK",
+        "respCode": 200,
+        "runningEffects": []
+      },
+      "streamSlots": [
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 1",
+          "nodeName": "fppd_stream_1",
+          "slot": 1,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 2",
+          "nodeName": "fppd_stream_2",
+          "slot": 2,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 3",
+          "nodeName": "fppd_stream_3",
+          "slot": 3,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 4",
+          "nodeName": "fppd_stream_4",
+          "slot": 4,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 5",
+          "nodeName": "fppd_stream_5",
+          "slot": 5,
+          "status": "idle"
+        }
+      ],
+      "worker": {
+        "status": "show",
+        "last_action": "green",
+        "effect": null,
+        "sound_count": 20
+      }
+    },
+    {
+      "at": "2026-10-19T02:13:01.330342+00:00",
+      "effects": {
+        "Message": "",
+        "Status": "OK",
+        "respCode": 200,
+        "runningEffects": []
+      },
+      "streamSlots": [
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 1",
+          "nodeName": "fppd_stream_1",
+          "slot": 1,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 2",
+          "nodeName": "fppd_stream_2",
+          "slot": 2,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 3",
+          "nodeName": "fppd_stream_3",
+          "slot": 3,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 4",
+          "nodeName": "fppd_stream_4",
+          "slot": 4,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 5",
+          "nodeName": "fppd_stream_5",
+          "slot": 5,
+          "status": "idle"
+        }
+      ],
+      "worker": {
+        "status": "speech",
+        "last_action": "green",
+        "effect": null,
+        "sound_count": 20
+      }
+    },
+    {
+      "at": "2026-10-19T02:13:01.761381+00:00",
+      "effects": {
+        "Message": "",
+        "Status": "OK",
+        "respCode": 200,
+        "runningEffects": []
+      },
+      "streamSlots": [
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 1",
+          "nodeName": "fppd_stream_1",
+          "slot": 1,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 2",
+          "nodeName": "fppd_stream_2",
+          "slot": 2,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 3",
+          "nodeName": "fppd_stream_3",
+          "slot": 3,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 4",
+          "nodeName": "fppd_stream_4",
+          "slot": 4,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 5",
+          "nodeName": "fppd_stream_5",
+          "slot": 5,
+          "status": "idle"
+        }
+      ],
+      "worker": {
+        "status": "show",
+        "last_action": "green",
+        "effect": null,
+        "sound_count": 20
+      }
+    },
+    {
+      "at": "2026-10-19T02:13:04.467554+00:00",
+      "effects": {
+        "Message": "",
+        "Status": "OK",
+        "respCode": 200,
+        "runningEffects": []
+      },
+      "streamSlots": [
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 1",
+          "nodeName": "fppd_stream_1",
+          "slot": 1,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 2",
+          "nodeName": "fppd_stream_2",
+          "slot": 2,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 3",
+          "nodeName": "fppd_stream_3",
+          "slot": 3,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 4",
+          "nodeName": "fppd_stream_4",
+          "slot": 4,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 5",
+          "nodeName": "fppd_stream_5",
+          "slot": 5,
+          "status": "idle"
+        }
+      ],
+      "worker": {
+        "status": "speech",
+        "last_action": "green",
+        "effect": null,
+        "sound_count": 20
+      }
+    },
+    {
+      "at": "2026-10-19T02:13:04.933044+00:00",
+      "effects": {
+        "Message": "",
+        "Status": "OK",
+        "respCode": 200,
+        "runningEffects": []
+      },
+      "streamSlots": [
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 1",
+          "nodeName": "fppd_stream_1",
+          "slot": 1,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 2",
+          "nodeName": "fppd_stream_2",
+          "slot": 2,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 3",
+          "nodeName": "fppd_stream_3",
+          "slot": 3,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 4",
+          "nodeName": "fppd_stream_4",
+          "slot": 4,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 5",
+          "nodeName": "fppd_stream_5",
+          "slot": 5,
+          "status": "idle"
+        }
+      ],
+      "worker": {
+        "status": "show",
+        "last_action": "green",
+        "effect": null,
+        "sound_count": 20
+      }
+    },
+    {
+      "at": "2026-10-19T02:13:07.763460+00:00",
+      "effects": {
+        "Message": "",
+        "Status": "OK",
+        "respCode": 200,
+        "runningEffects": []
+      },
+      "streamSlots": [
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 1",
+          "nodeName": "fppd_stream_1",
+          "slot": 1,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 2",
+          "nodeName": "fppd_stream_2",
+          "slot": 2,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 3",
+          "nodeName": "fppd_stream_3",
+          "slot": 3,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 4",
+          "nodeName": "fppd_stream_4",
+          "slot": 4,
+          "status": "idle"
+        },
+        {
+          "isBackground": false,
+          "mediaFilename": "",
+          "nodeDescription": "FPP Media Stream 5",
+          "nodeName": "fppd_stream_5",
+          "slot": 5,
+          "status": "idle"
+        }
+      ],
+      "worker": {
+        "status": "speech",
+        "last_action": "green",
+        "effect": null,
+        "sound_count": 20
+      }
+    }
+  ],
+  "master": {
+    "fppd": "running",
+    "status_name": "playing",
+    "current_sequence": "Halloween 2026 - Halfway To Hell.fseq"
+  }
+}

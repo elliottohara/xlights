@@ -5,7 +5,7 @@ Install in FPP's scripts directory on the button Pi. The worker plays five-secon
 routines, prevents overlapping reactions, and yields its idle pose
 to the main show. Buttons can still trigger a short reaction during a song.
 """
-import fcntl, json, os, signal, subprocess, sys, time, uuid
+import fcntl, json, os, pwd, signal, subprocess, sys, time, uuid
 from pathlib import Path
 from urllib.request import Request, urlopen
 
@@ -17,6 +17,7 @@ CONFIG = HOME / 'config'
 QUEUE = CONFIG / 'teddy-request.json'
 STATE = CONFIG / 'teddy-runtime.json'
 LOCK = HOME / 'tmp/teddy-worker.lock'
+INTERACTION_LOCK = HOME / 'tmp/teddy-interaction.lock'
 LOG = HOME / 'logs/teddy-controls.log'
 ACTIONS = {'white', 'green', 'blue', 'yellow', 'red'}
 OWNED = {'Teddy '+color.title()+' Routine' for color in ACTIONS} | {'Teddy Arms Up', 'Teddy Arms Down'} | {
@@ -63,10 +64,27 @@ def start(name, loop=False):
         [name,'214643',str(loop).lower(),'false','true',''])
     stop_owned(name)
 
+def acquire_interaction(handle):
+    try:
+        fcntl.flock(handle, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        return True
+    except BlockingIOError:
+        return False
+
+def release_interaction(handle):
+    fcntl.flock(handle, fcntl.LOCK_UN)
+
 def worker():
     lock = LOCK.open('a')
     try:fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
     except BlockingIOError:return
+    interaction = INTERACTION_LOCK.open('a')
+    # The FPP script may run as root; the speech service runs as fpp.
+    if os.geteuid() == 0:
+        account = pwd.getpwnam('fpp')
+        os.fchown(interaction.fileno(), account.pw_uid, account.pw_gid)
+    os.fchmod(interaction.fileno(), 0o660)
+    interaction_owned = False
     old = read(STATE,{})
     state = {'arms':old.get('arms','down'),'pid':os.getpid(),'last_request':old.get('last_request',''),
              'status':'starting','last_action':old.get('last_action',''),'sound_count':old.get('sound_count',0)}
@@ -81,19 +99,34 @@ def worker():
                     show_playing=bool(master.get('current_sequence') or master.get('media_playing') or master.get('status_name') not in ('idle','Idle'))
                 except Exception:show_playing=True
                 next_check=now+1
+            # The speech bridge holds this same flock until voice and mouth finish.
+            # Keep the latest button queued, and never start an idle hold over speech.
+            if interaction_owned and now >= deadline:
+                release_interaction(interaction)
+                interaction_owned = False
+            if not interaction_owned:
+                interaction_owned = acquire_interaction(interaction)
+            if not interaction_owned:
+                state.update(status='speech', effect=None, show_playing=show_playing)
+                if state.get('heartbeat', 0) < time.time()-5 or saved_signature != ('speech',):
+                    state['heartbeat']=time.time()
+                    atomic(STATE,state)
+                    saved_signature=('speech',)
+                time.sleep(.075)
+                continue
             request=read(QUEUE,{})
             action=request.get('action')
             # One short reaction at a time; keep only the most recent queued press.
             if now >= deadline and action in ACTIONS and request.get('id') != state['last_request']:
                 state['last_request']=request['id']
-                if time.time()-request.get('time',0) < 8:
+                if time.time()-request.get('time',0) < 30:
                     name='Teddy '+action.title()+' Routine';duration=5
                     state['arms']='down'
                     start(name)
                     if action=='red' and now-last_red >= 2:
                         api(PI,'/api/command','Play Media',['dry-fart.mp3','1','0','1'])
                         state['sound_count']+=1;last_red=now
-                    current=name;deadline=now+duration
+                    current=name;deadline=time.monotonic()+duration+.1
                     state.update(last_action=action,status='gesture',effect=name)
                     log('button='+action+' effect='+name)
             if now >= deadline:
@@ -112,7 +145,13 @@ def worker():
                 state['heartbeat']=time.time()
                 atomic(STATE,state)
                 saved_signature=signature;last_saved=now
+            if now >= deadline and interaction_owned:
+                release_interaction(interaction)
+                interaction_owned = False
         except Exception as error:
+            if interaction_owned:
+                release_interaction(interaction)
+                interaction_owned = False
             state.update(status='error',error=str(error),heartbeat=time.time())
             atomic(STATE,state);log('ERROR '+str(error));time.sleep(1)
         time.sleep(.075)

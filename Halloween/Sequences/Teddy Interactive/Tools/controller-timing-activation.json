@@ -1,0 +1,13 @@
+{
+  "selfie_controller_restarted": true,
+  "master_running": true,
+  "pixel_config_unchanged": true,
+  "library_sha256": "7390cb590f1dcb87460f71210343dd4103680151737dbbed1e3888230ca6f49e",
+  "backup": "/home/fpp/media/backups/ofls-speech-timing-20261018",
+  "status": {
+    "fppd": "running",
+    "status_name": "idle",
+    "bridging": true,
+    "channelInputsEnabled": true
+  }
+}

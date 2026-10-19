@@ -1,0 +1,51 @@
+{
+  "path": "/Users/elliott.ohara/xlights-worktrees/slot-b/Halloween/Sequences/Teddy Interactive/Effects/bear-calibration.eseq",
+  "start_channel": 214643,
+  "channel_count": 1500,
+  "frames": 400,
+  "frame_ms": 25,
+  "distinct_shapes": 10,
+  "changes_outside_mouth": 0,
+  "samples": [
+    {
+      "shape": "rest",
+      "lit": 698
+    },
+    {
+      "shape": "AI",
+      "lit": 730
+    },
+    {
+      "shape": "E",
+      "lit": 718
+    },
+    {
+      "shape": "etc",
+      "lit": 706
+    },
+    {
+      "shape": "FV",
+      "lit": 728
+    },
+    {
+      "shape": "L",
+      "lit": 718
+    },
+    {
+      "shape": "MBP",
+      "lit": 702
+    },
+    {
+      "shape": "O",
+      "lit": 712
+    },
+    {
+      "shape": "U",
+      "lit": 694
+    },
+    {
+      "shape": "WQ",
+      "lit": 708
+    }
+  ]
+}
