@@ -1017,8 +1017,9 @@
     <Effect>B_CHOICE_BufferStyle=Per Model Single Line,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Left-Right,E_CHOICE_Fade_Type=From Head,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_SingleStrand_FX=Blink,E_CHOICE_SingleStrand_FX_Palette=Default,E_CHOICE_SingleStrand_TimingTrack=,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=25,E_SLIDER_FX_Intensity=128,E_SLIDER_FX_Speed=128,E_SLIDER_Number_Chases=1,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Offset=0.0,E_TEXTCTRL_Chase_Rotations=1.0,T_CHECKBOX_Canvas=0,T_CHECKBOX_LayerMorph=0,T_CHOICE_LayerMethod=Normal,T_SLIDER_EffectLayerMix=0,T_TEXTCTRL_Fadeout=0.50</Effect>
     <Effect>B_CHOICE_BufferStyle=Per Model Per Preview,B_CHOICE_PerPreviewCamera=2D,E_CHECKBOX_Shockwave_Blend_Edges=1,E_CHECKBOX_Shockwave_Scale=1,E_CHOICE_Shockwave_TimingTrack=,E_NOTEBOOK_Shockwave=Position,E_SLIDER_Shockwave_Accel=0,E_SLIDER_Shockwave_CenterX=50,E_SLIDER_Shockwave_CenterY=50,E_SLIDER_Shockwave_Cycles=1,E_SLIDER_Shockwave_End_Radius=100,E_SLIDER_Shockwave_End_Width=10,E_SLIDER_Shockwave_Start_Radius=1,E_SLIDER_Shockwave_Start_Width=25,T_CHECKBOX_Canvas=0,T_CHECKBOX_LayerMorph=0,T_CHOICE_LayerMethod=Normal,T_SLIDER_EffectLayerMix=0</Effect>
     <Effect>B_CHOICE_BufferStyle=Per Model Single Line,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Left-Right,E_CHOICE_Fade_Type=From Head,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_SingleStrand_FX=Blink,E_CHOICE_SingleStrand_FX_Palette=Default,E_CHOICE_SingleStrand_TimingTrack=,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=25,E_SLIDER_FX_Intensity=128,E_SLIDER_FX_Speed=128,E_SLIDER_Number_Chases=1,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Offset=0.0,E_TEXTCTRL_Chase_Rotations=1.0,T_CHECKBOX_Canvas=0,T_CHECKBOX_LayerMorph=0,T_CHOICE_LayerMethod=Normal,T_SLIDER_EffectLayerMix=0,T_TEXTCTRL_Fadeout=0.00</Effect>
-    <Effect>B_CUSTOM_SubBuffer=0x0x100x30,E_CHOICE_Text_Dir=none,E_CHOICE_Text_Effect=normal,E_CHOICE_Text_Font=Use OS Fonts,E_FILEPICKERCTRL_Text_File=,E_FONTPICKER_Text_Font=Arial 14,E_SLIDER_Text_XStart=0,E_SLIDER_Text_YStart=0,E_TEXTCTRL_Text=Tune to 87.9,E_TEXTCTRL_Text_Speed=0,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
+    <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/tune-to-website.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
     <Effect>B_CUSTOM_SubBuffer=0x0x100x30,E_TEXTCTRL_Eff_On_End=100,E_TEXTCTRL_Eff_On_Start=100,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
+    <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/projector-website-qr.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
   </EffectDB>
   <SequenceMedia>
     <Video path="Sequences/I Knew It I Knew You/Media/VendorVideos/I knew you_parachute.mp4" />
@@ -1159,6 +1160,7 @@
     <Element collapsed="false" type="timing" name="Winds" visible="true" views="" active="false" />
     <Element collapsed="false" type="timing" name="Ha" visible="true" views="" active="false" />
     <Element collapsed="true" type="timing" name="Backup_Vocal" visible="true" views="" active="false" />
+    <Element collapsed="false" type="model" name="Projector" visible="true" />
   </DisplayElements>
   <ElementEffects>
     <Element type="model" name="Import Xtreme - Matrix 1">
@@ -6828,8 +6830,9 @@
     </Element>
     <Element type="model" name="Tune To">
       <EffectLayer>
-        <Effect ref="752" name="Text" startTime="0" endTime="178200" palette="244" />
+        <Effect ref="752" name="Pictures" startTime="0" endTime="178200" palette="244" />
       </EffectLayer>
+      <EffectLayer />
       <EffectLayer>
         <Effect ref="753" name="On" startTime="0" endTime="178200" palette="245" />
       </EffectLayer>
@@ -8840,6 +8843,13 @@
         <Effect label="AI" startTime="166575" endTime="166850" />
         <Effect label="etc" startTime="169100" endTime="169150" />
         <Effect label="AI" startTime="169150" endTime="169425" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="Projector">
+      <EffectLayer>
+        <Effect ref="754" name="Pictures" startTime="10000" endTime="25000" palette="244" />
+        <Effect ref="754" name="Pictures" id="1" startTime="70000" endTime="85000" palette="244" />
+        <Effect ref="754" name="Pictures" id="2" startTime="130000" endTime="145000" palette="244" />
       </EffectLayer>
     </Element>
   </ElementEffects>

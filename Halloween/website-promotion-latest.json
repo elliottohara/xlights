@@ -1,0 +1,2673 @@
+{
+  "started_at": "2026-10-18T20:18:13.152163-05:00",
+  "backup": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813",
+  "branch": "website-radio-projector-promotion",
+  "slot": "A",
+  "source_show": "/Users/elliott.ohara/xlights/Halloween",
+  "url": "https://oharafamilylightshow.com/",
+  "domain": "oharafamilylightshow.com",
+  "fm": "87.9",
+  "qr_duration_ms": 15000,
+  "qr_interval_ms": 60000,
+  "qr_first_ms": 10000,
+  "layout_sha256": "b8e5491696fda585932c1986c560b38b9d2a225d97eefa269f3a93a6184ae51b",
+  "network_sha256": "5f28db876102a8d0cfcc330c20a65903a7c9e3a214602bfff2c61255a5ddb49e",
+  "songs": {
+    "tuneto-halloween": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/tuneto-halloween/tuneto-halloween.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/tuneto-halloween/tuneto-halloween.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/tuneto-halloween/tuneto-halloween.fseq",
+      "playback_files": [
+        "Halloween 2026 - tuneto-halloween.fseq"
+      ],
+      "expected": {
+        "channels": 36864,
+        "frames": 1200,
+        "frame_ms": 25,
+        "id": "1792359627666681",
+        "bytes": 22150613
+      },
+      "qr_windows_ms": [
+        [
+          10000,
+          25000
+        ]
+      ],
+      "removed_radio_text": [
+        {
+          "layer": 3,
+          "attributes": {
+            "ref": "1",
+            "name": "Text",
+            "startTime": "50",
+            "endTime": "29950",
+            "palette": "1"
+          }
+        },
+        {
+          "layer": 4,
+          "attributes": {
+            "ref": "2",
+            "name": "Text",
+            "startTime": "0",
+            "endTime": "29900",
+            "palette": "2"
+          }
+        }
+      ],
+      "added_rows": [
+        "Projector"
+      ],
+      "preserved_other_effects": true,
+      "authored_at": "2026-10-18T20:22:25.539027-05:00",
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Native checks/tuneto-halloween.html",
+      "native_critical_issues": {},
+      "rendered": true,
+      "fseq": {
+        "channels": 184320,
+        "frames": 1200,
+        "frame_ms": 25,
+        "id": "1792372949716382",
+        "bytes": 12845374
+      },
+      "fseq_sha256": "759a7333316f1010d8a30511e609090ca624d623d79ec9d8bf438db6f9eeb1ec",
+      "rendered_at": "2026-10-18T20:22:29.804066-05:00"
+    },
+    "static halloween": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/static halloween/static halloween.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/static halloween/static halloween.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/static halloween/static halloween.fseq",
+      "playback_files": [
+        "Halloween 2026 - static halloween.fseq",
+        "Halloween 2026 - static halloween refined.fseq"
+      ],
+      "expected": {
+        "channels": 101805,
+        "frames": 1200,
+        "frame_ms": 25,
+        "id": "1792359623633188",
+        "bytes": 15061406
+      },
+      "qr_windows_ms": [
+        [
+          10000,
+          25000
+        ]
+      ],
+      "removed_radio_text": [
+        {
+          "layer": 0,
+          "attributes": {
+            "ref": "33",
+            "name": "Text",
+            "startTime": "0",
+            "endTime": "30000",
+            "palette": "37"
+          }
+        }
+      ],
+      "added_rows": [
+        "Projector"
+      ],
+      "preserved_other_effects": true,
+      "authored_at": "2026-10-18T20:22:32.073236-05:00",
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Native checks/static halloween.html",
+      "native_critical_issues": {},
+      "rendered": true,
+      "fseq": {
+        "channels": 249261,
+        "frames": 1200,
+        "frame_ms": 25,
+        "id": "1792372957720460",
+        "bytes": 27928854
+      },
+      "fseq_sha256": "7b67d643523d784f0d2045156adcdbef7781db34fa8b6cd9eea5425be24805c2",
+      "rendered_at": "2026-10-18T20:22:37.866393-05:00"
+    },
+    "01 - Abracadabra": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/01 - Abracadabra/01 - Abracadabra.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/01 - Abracadabra/01 - Abracadabra.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/01 - Abracadabra/01 - Abracadabra.fseq",
+      "playback_files": [
+        "Halloween 2026 - 01 - Abracadabra.fseq"
+      ],
+      "expected": {
+        "channels": 305940,
+        "frames": 8935,
+        "frame_ms": 25,
+        "id": "1792359302807722",
+        "bytes": 66836673
+      },
+      "qr_windows_ms": [
+        [
+          10000,
+          25000
+        ],
+        [
+          70000,
+          85000
+        ],
+        [
+          130000,
+          145000
+        ],
+        [
+          190000,
+          205000
+        ]
+      ],
+      "removed_radio_text": [
+        {
+          "layer": 1,
+          "attributes": {
+            "ref": "400",
+            "name": "Text",
+            "startTime": "0",
+            "endTime": "223375",
+            "palette": "9"
+          }
+        }
+      ],
+      "added_rows": [],
+      "preserved_other_effects": true,
+      "authored_at": "2026-10-18T20:22:40.016600-05:00",
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Native checks/01 - Abracadabra.html",
+      "native_critical_issues": {},
+      "rendered": true,
+      "fseq": {
+        "channels": 305940,
+        "frames": 8935,
+        "frame_ms": 25,
+        "id": "1792372967560620",
+        "bytes": 75973568
+      },
+      "fseq_sha256": "006728b76e03ef7fd76c2076c6026b400e7078bb0b7f10eeb7f173e791cb5e39",
+      "rendered_at": "2026-10-18T20:22:49.231469-05:00"
+    },
+    "03 - This Is Halloween": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/03 - This Is Halloween/03 - This Is Halloween.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/03 - This Is Halloween/03 - This Is Halloween.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/03 - This Is Halloween/03 - This Is Halloween.fseq",
+      "playback_files": [
+        "Halloween 2026 - 03 - This Is Halloween.fseq"
+      ],
+      "expected": {
+        "channels": 249627,
+        "frames": 3931,
+        "frame_ms": 50,
+        "id": "1792359313564303",
+        "bytes": 281157671
+      },
+      "qr_windows_ms": [
+        [
+          10000,
+          25000
+        ],
+        [
+          70000,
+          85000
+        ],
+        [
+          130000,
+          145000
+        ]
+      ],
+      "removed_radio_text": [
+        {
+          "layer": 0,
+          "attributes": {
+            "ref": "341",
+            "name": "Text",
+            "startTime": "0",
+            "endTime": "196550",
+            "palette": "83"
+          }
+        }
+      ],
+      "added_rows": [],
+      "preserved_other_effects": true,
+      "authored_at": "2026-10-18T20:22:51.408801-05:00",
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Native checks/03 - This Is Halloween.html",
+      "native_critical_issues": {},
+      "rendered": true,
+      "fseq": {
+        "channels": 249627,
+        "frames": 3931,
+        "frame_ms": 50,
+        "id": "1792372980944815",
+        "bytes": 214095517
+      },
+      "fseq_sha256": "918828bdbd1ef7dca1d1f4453499c90bb63b225f192b370cefec3b352058bf3f",
+      "rendered_at": "2026-10-18T20:23:01.730705-05:00"
+    },
+    "12-The-Monster-_feat.-Rihanna_": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/12-The-Monster-_feat.-Rihanna_/12-The-Monster-_feat.-Rihanna_.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/12-The-Monster-_feat.-Rihanna_/12-The-Monster-_feat.-Rihanna_.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/12-The-Monster-_feat.-Rihanna_/12-The-Monster-_feat.-Rihanna_.fseq",
+      "playback_files": [
+        "Halloween 2026 - 12-The-Monster-_feat.-Rihanna_.fseq"
+      ],
+      "expected": {
+        "channels": 268623,
+        "frames": 10007,
+        "frame_ms": 25,
+        "id": "1792359326620240",
+        "bytes": 192841707
+      },
+      "qr_windows_ms": [
+        [
+          10000,
+          25000
+        ],
+        [
+          70000,
+          85000
+        ],
+        [
+          130000,
+          145000
+        ],
+        [
+          190000,
+          205000
+        ]
+      ],
+      "removed_radio_text": [
+        {
+          "layer": 0,
+          "attributes": {
+            "ref": "53",
+            "name": "Text",
+            "startTime": "2500",
+            "endTime": "250175",
+            "palette": "31"
+          }
+        }
+      ],
+      "added_rows": [],
+      "preserved_other_effects": true,
+      "authored_at": "2026-10-18T20:23:03.571474-05:00",
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Native checks/12-The-Monster-_feat.-Rihanna_.html",
+      "native_critical_issues": {},
+      "rendered": true,
+      "fseq": {
+        "channels": 268623,
+        "frames": 10007,
+        "frame_ms": 25,
+        "id": "1792372994828672",
+        "bytes": 151007671
+      },
+      "fseq_sha256": "6fdc116c713eebdb69c1023d39a4b7d159dcd98ce2f23572878e15f4cbbd7fef",
+      "rendered_at": "2026-10-18T20:23:15.427600-05:00"
+    },
+    "Bad Romance (Extra Clean)": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/Bad Romance (Extra Clean)/Bad Romance (Extra Clean).xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/Bad Romance (Extra Clean)/Bad Romance (Extra Clean).xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/Bad Romance (Extra Clean)/Bad Romance (Extra Clean).fseq",
+      "playback_files": [
+        "Halloween 2026 - Bad Romance (Extra Clean).fseq"
+      ],
+      "expected": {
+        "channels": 265926,
+        "frames": 7265,
+        "frame_ms": 25,
+        "id": "1792359340248169",
+        "bytes": 152245973
+      },
+      "qr_windows_ms": [
+        [
+          10000,
+          25000
+        ],
+        [
+          70000,
+          85000
+        ],
+        [
+          130000,
+          145000
+        ]
+      ],
+      "removed_radio_text": [
+        {
+          "layer": 0,
+          "attributes": {
+            "ref": "205",
+            "name": "Text",
+            "startTime": "100",
+            "endTime": "178800",
+            "palette": "3"
+          }
+        }
+      ],
+      "added_rows": [],
+      "preserved_other_effects": true,
+      "authored_at": "2026-10-18T20:23:16.918775-05:00",
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Native checks/Bad Romance (Extra Clean).html",
+      "native_critical_issues": {},
+      "rendered": true,
+      "fseq": {
+        "channels": 265926,
+        "frames": 7265,
+        "frame_ms": 25,
+        "id": "1792373008653583",
+        "bytes": 136670404
+      },
+      "fseq_sha256": "3984370eca246ab7f855d053b170279c2ea4ec6f558d72b9ed2d72df430cd018",
+      "rendered_at": "2026-10-18T20:23:29.211695-05:00"
+    },
+    "Dracula": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/Dracula/Dracula.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/Dracula/Dracula.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/Dracula/Dracula.fseq",
+      "playback_files": [
+        "Halloween 2026 - Dracula.fseq"
+      ],
+      "expected": {
+        "channels": 297432,
+        "frames": 8212,
+        "frame_ms": 25,
+        "id": "1792359352827141",
+        "bytes": 410090082
+      },
+      "qr_windows_ms": [
+        [
+          10000,
+          25000
+        ],
+        [
+          70000,
+          85000
+        ],
+        [
+          130000,
+          145000
+        ],
+        [
+          190000,
+          205000
+        ]
+      ],
+      "removed_radio_text": [
+        {
+          "layer": 1,
+          "attributes": {
+            "ref": "631",
+            "name": "Text",
+            "startTime": "0",
+            "endTime": "205300",
+            "palette": "408"
+          }
+        }
+      ],
+      "added_rows": [],
+      "preserved_other_effects": true,
+      "authored_at": "2026-10-18T20:23:30.900584-05:00",
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Native checks/Dracula.html",
+      "native_critical_issues": {},
+      "rendered": true,
+      "fseq": {
+        "channels": 297432,
+        "frames": 8212,
+        "frame_ms": 25,
+        "id": "1792373021613079",
+        "bytes": 335085119
+      },
+      "fseq_sha256": "2a69c4bd2cf0721f7f2607d1270faabc28493c82e0d330c8d0fe97378ea34d03",
+      "rendered_at": "2026-10-18T20:23:42.631109-05:00"
+    },
+    "Ghostbusters": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/Ghostbusters/Ghostbusters.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/Ghostbusters/Ghostbusters.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/Ghostbusters/Ghostbusters.fseq",
+      "playback_files": [
+        "Halloween 2026 - Ghostbusters.fseq"
+      ],
+      "expected": {
+        "channels": 260634,
+        "frames": 6867,
+        "frame_ms": 25,
+        "id": "1792359364975254",
+        "bytes": 489490850
+      },
+      "qr_windows_ms": [
+        [
+          10000,
+          25000
+        ],
+        [
+          70000,
+          85000
+        ],
+        [
+          130000,
+          145000
+        ]
+      ],
+      "removed_radio_text": [
+        {
+          "layer": 1,
+          "attributes": {
+            "ref": "82",
+            "name": "Text",
+            "startTime": "0",
+            "endTime": "169800",
+            "palette": "65"
+          }
+        }
+      ],
+      "added_rows": [],
+      "preserved_other_effects": true,
+      "authored_at": "2026-10-18T20:23:43.903586-05:00",
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Native checks/Ghostbusters.html",
+      "native_critical_issues": {},
+      "rendered": true,
+      "fseq": {
+        "channels": 260634,
+        "frames": 6867,
+        "frame_ms": 25,
+        "id": "1792373033865924",
+        "bytes": 380493362
+      },
+      "fseq_sha256": "cef8fad8b7d160ddd894faefb798efbeaa42ee17201972a506911a6d3c69b832",
+      "rendered_at": "2026-10-18T20:23:55.051175-05:00"
+    },
+    "Ghostbusters 2": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/Ghostbusters 2/Ghostbusters 2.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/Ghostbusters 2/Ghostbusters 2.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/Ghostbusters 2/Ghostbusters 2.fseq",
+      "playback_files": [
+        "Halloween 2026 - Ghostbusters 2.fseq"
+      ],
+      "expected": {
+        "channels": 260634,
+        "frames": 6867,
+        "frame_ms": 25,
+        "id": "1792359377467388",
+        "bytes": 493864812
+      },
+      "qr_windows_ms": [
+        [
+          10000,
+          25000
+        ],
+        [
+          70000,
+          85000
+        ],
+        [
+          130000,
+          145000
+        ]
+      ],
+      "removed_radio_text": [
+        {
+          "layer": 0,
+          "attributes": {
+            "ref": "81",
+            "name": "Text",
+            "startTime": "0",
+            "endTime": "169800",
+            "palette": "64"
+          }
+        }
+      ],
+      "added_rows": [],
+      "preserved_other_effects": true,
+      "authored_at": "2026-10-18T20:23:56.370889-05:00",
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Native checks/Ghostbusters 2.html",
+      "native_critical_issues": {},
+      "rendered": true,
+      "fseq": {
+        "channels": 260634,
+        "frames": 6867,
+        "frame_ms": 25,
+        "id": "1792373046969463",
+        "bytes": 380411445
+      },
+      "fseq_sha256": "50361464c80a7e9b048a7edfd10a6adabcc785878be49c90cfd20249c1682c5f",
+      "rendered_at": "2026-10-18T20:24:08.240646-05:00"
+    },
+    "GreatestShowWorking 2": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/GreatestShowWorking 2/GreatestShowWorking 2.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/GreatestShowWorking 2/GreatestShowWorking 2.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/GreatestShowWorking 2/GreatestShowWorking 2.fseq",
+      "playback_files": [
+        "Halloween 2026 - GreatestShowWorking 2.fseq"
+      ],
+      "expected": {
+        "channels": 305940,
+        "frames": 5389,
+        "frame_ms": 50,
+        "id": "1792359406050442",
+        "bytes": 397990526
+      },
+      "qr_windows_ms": [
+        [
+          10000,
+          25000
+        ],
+        [
+          70000,
+          85000
+        ],
+        [
+          130000,
+          145000
+        ],
+        [
+          190000,
+          205000
+        ],
+        [
+          250000,
+          265000
+        ]
+      ],
+      "removed_radio_text": [
+        {
+          "layer": 1,
+          "attributes": {
+            "ref": "93",
+            "name": "Text",
+            "startTime": "0",
+            "endTime": "120300",
+            "palette": "0"
+          }
+        }
+      ],
+      "added_rows": [],
+      "preserved_other_effects": true,
+      "authored_at": "2026-10-18T20:24:09.857271-05:00",
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Native checks/GreatestShowWorking 2.html",
+      "native_critical_issues": {},
+      "rendered": true,
+      "fseq": {
+        "channels": 305940,
+        "frames": 5389,
+        "frame_ms": 50,
+        "id": "1792373077283734",
+        "bytes": 348577599
+      },
+      "fseq_sha256": "984aa184c0420a099f66178938adfc147dec26f94d89282c2cd9aa072665c710",
+      "rendered_at": "2026-10-18T20:24:38.283782-05:00"
+    },
+    "Halfway To Hell": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/Halfway To Hell/Halfway To Hell.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/Halfway To Hell/Halfway To Hell.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/Halfway To Hell/Halfway To Hell.fseq",
+      "playback_files": [
+        "Halloween 2026 - Halfway To Hell.fseq"
+      ],
+      "expected": {
+        "channels": 255885,
+        "frames": 7137,
+        "frame_ms": 25,
+        "id": "1792359418258570",
+        "bytes": 102847103
+      },
+      "qr_windows_ms": [
+        [
+          10000,
+          25000
+        ],
+        [
+          70000,
+          85000
+        ],
+        [
+          130000,
+          145000
+        ]
+      ],
+      "removed_radio_text": [
+        {
+          "layer": 2,
+          "attributes": {
+            "ref": "127",
+            "name": "Text",
+            "startTime": "0",
+            "endTime": "178425",
+            "palette": "40"
+          }
+        }
+      ],
+      "added_rows": [
+        "Projector"
+      ],
+      "preserved_other_effects": true,
+      "authored_at": "2026-10-18T20:24:39.856726-05:00",
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Native checks/Halfway To Hell.html",
+      "native_critical_issues": {},
+      "rendered": true,
+      "fseq": {
+        "channels": 255885,
+        "frames": 7137,
+        "frame_ms": 25,
+        "id": "1792373090321493",
+        "bytes": 94819034
+      },
+      "fseq_sha256": "310a4d1a1c3e43934a47e5784e6d0b0c369bf57ef9040fa6967f563dbe205f56",
+      "rendered_at": "2026-10-18T20:24:50.805793-05:00"
+    },
+    "I Knew It I Knew You": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/I Knew It I Knew You/I Knew It I Knew You.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/I Knew It I Knew You/I Knew It I Knew You.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/I Knew It I Knew You/I Knew It I Knew You.fseq",
+      "playback_files": [
+        "Halloween 2026 - I Knew It I Knew You.fseq"
+      ],
+      "expected": {
+        "channels": 256062,
+        "frames": 7128,
+        "frame_ms": 25,
+        "id": "1792359293704604",
+        "bytes": 235640330
+      },
+      "qr_windows_ms": [
+        [
+          10000,
+          25000
+        ],
+        [
+          70000,
+          85000
+        ],
+        [
+          130000,
+          145000
+        ]
+      ],
+      "removed_radio_text": [
+        {
+          "layer": 0,
+          "attributes": {
+            "ref": "752",
+            "name": "Text",
+            "startTime": "0",
+            "endTime": "178200",
+            "palette": "244"
+          }
+        }
+      ],
+      "added_rows": [
+        "Projector"
+      ],
+      "preserved_other_effects": true,
+      "authored_at": "2026-10-18T20:24:52.468945-05:00",
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Native checks/I Knew It I Knew You.html",
+      "native_critical_issues": {},
+      "rendered": true,
+      "fseq": {
+        "channels": 256062,
+        "frames": 7128,
+        "frame_ms": 25,
+        "id": "1792373112955997",
+        "bytes": 196877811
+      },
+      "fseq_sha256": "66fdf018f5ba95fdac9b5751d7ed1906f48ea442653a883607b34a940341d3ba",
+      "rendered_at": "2026-10-18T20:25:13.805225-05:00"
+    },
+    "Insomnia": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/Insomnia/Insomnia.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/Insomnia/Insomnia.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/Insomnia/Insomnia.fseq",
+      "playback_files": [
+        "Halloween 2026 - Insomnia.fseq"
+      ],
+      "expected": {
+        "channels": 305940,
+        "frames": 8593,
+        "frame_ms": 25,
+        "id": "1792359427914183",
+        "bytes": 24993809
+      },
+      "qr_windows_ms": [
+        [
+          10000,
+          25000
+        ],
+        [
+          70000,
+          85000
+        ],
+        [
+          130000,
+          145000
+        ],
+        [
+          190000,
+          205000
+        ]
+      ],
+      "removed_radio_text": [
+        {
+          "layer": 0,
+          "attributes": {
+            "ref": "73",
+            "name": "Text",
+            "startTime": "0",
+            "endTime": "214825",
+            "palette": "22"
+          }
+        }
+      ],
+      "added_rows": [],
+      "preserved_other_effects": true,
+      "authored_at": "2026-10-18T20:25:15.564062-05:00",
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Native checks/Insomnia.html",
+      "native_critical_issues": {},
+      "rendered": true,
+      "fseq": {
+        "channels": 305940,
+        "frames": 8593,
+        "frame_ms": 25,
+        "id": "1792373123847721",
+        "bytes": 35036196
+      },
+      "fseq_sha256": "5495eb4e5b13122e39ec7ecbb26b3e3728fb2d92a476edd98b47a8881c57224c",
+      "rendered_at": "2026-10-18T20:25:24.103489-05:00"
+    },
+    "Monster Mash": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/Monster Mash/Monster Mash.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/Monster Mash/Monster Mash.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/Monster Mash/Monster Mash.fseq",
+      "playback_files": [
+        "Halloween 2026 - Monster Mash.fseq"
+      ],
+      "expected": {
+        "channels": 268677,
+        "frames": 7683,
+        "frame_ms": 25,
+        "id": "1792359439885988",
+        "bytes": 585572135
+      },
+      "qr_windows_ms": [
+        [
+          10000,
+          25000
+        ],
+        [
+          70000,
+          85000
+        ],
+        [
+          130000,
+          145000
+        ]
+      ],
+      "removed_radio_text": [
+        {
+          "layer": 1,
+          "attributes": {
+            "ref": "68",
+            "name": "Text",
+            "startTime": "0",
+            "endTime": "192075",
+            "palette": "42"
+          }
+        }
+      ],
+      "added_rows": [],
+      "preserved_other_effects": true,
+      "authored_at": "2026-10-18T20:25:25.530152-05:00",
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Native checks/Monster Mash.html",
+      "native_critical_issues": {},
+      "rendered": true,
+      "fseq": {
+        "channels": 268677,
+        "frames": 7683,
+        "frame_ms": 25,
+        "id": "1792373135242044",
+        "bytes": 439135201
+      },
+      "fseq_sha256": "c2a9b4c3cb0fa354f4695d0492743520b1ee300fbdf038df4b81251484c7ca32",
+      "rendered_at": "2026-10-18T20:25:36.545707-05:00"
+    },
+    "Skrillex Medley": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/Skrillex Medley/Skrillex Medley.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/Skrillex Medley/Skrillex Medley.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/Skrillex Medley/Skrillex Medley.fseq",
+      "playback_files": [
+        "Halloween 2026 - Skrillex Medley.fseq"
+      ],
+      "expected": {
+        "channels": 285681,
+        "frames": 8563,
+        "frame_ms": 25,
+        "id": "1792359454483055",
+        "bytes": 298863391
+      },
+      "qr_windows_ms": [
+        [
+          10000,
+          25000
+        ],
+        [
+          70000,
+          85000
+        ],
+        [
+          130000,
+          145000
+        ],
+        [
+          190000,
+          205000
+        ]
+      ],
+      "removed_radio_text": [
+        {
+          "layer": 1,
+          "attributes": {
+            "ref": "348",
+            "name": "Text",
+            "startTime": "0",
+            "endTime": "210600",
+            "palette": "18"
+          }
+        }
+      ],
+      "added_rows": [],
+      "preserved_other_effects": true,
+      "authored_at": "2026-10-18T20:25:38.226683-05:00",
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Native checks/Skrillex Medley.html",
+      "native_critical_issues": {},
+      "rendered": true,
+      "fseq": {
+        "channels": 285681,
+        "frames": 8563,
+        "frame_ms": 25,
+        "id": "1792373150048570",
+        "bytes": 272408452
+      },
+      "fseq_sha256": "42179f864955eb1da3349002bab4fbf40629e6925c67c33942fe7caa5043728d",
+      "rendered_at": "2026-10-18T20:25:51.082661-05:00"
+    },
+    "Something In The Way": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/Something In The Way/Something In The Way.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/Something In The Way/Something In The Way.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/Something In The Way/Something In The Way.fseq",
+      "playback_files": [
+        "Halloween 2026 - Something In The Way.fseq"
+      ],
+      "expected": {
+        "channels": 251430,
+        "frames": 9285,
+        "frame_ms": 25,
+        "id": "1792359471492992",
+        "bytes": 269056453
+      },
+      "qr_windows_ms": [
+        [
+          10000,
+          25000
+        ],
+        [
+          70000,
+          85000
+        ],
+        [
+          130000,
+          145000
+        ],
+        [
+          190000,
+          205000
+        ]
+      ],
+      "removed_radio_text": [
+        {
+          "layer": 1,
+          "attributes": {
+            "ref": "118",
+            "name": "Text",
+            "startTime": "0",
+            "endTime": "232125",
+            "palette": "29"
+          }
+        }
+      ],
+      "added_rows": [
+        "Projector"
+      ],
+      "preserved_other_effects": true,
+      "authored_at": "2026-10-18T20:25:52.734293-05:00",
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Native checks/Something In The Way.html",
+      "native_critical_issues": {},
+      "rendered": true,
+      "fseq": {
+        "channels": 251430,
+        "frames": 9285,
+        "frame_ms": 25,
+        "id": "1792373168763231",
+        "bytes": 234381817
+      },
+      "fseq_sha256": "ba7ceb8527e26b34ed34da7352a70ae580a1358e38ef5cbf80617a8bd009bf12",
+      "rendered_at": "2026-10-18T20:26:09.546057-05:00"
+    },
+    "The Dead Dance": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/The Dead Dance/The Dead Dance.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/The Dead Dance/The Dead Dance.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/The Dead Dance/The Dead Dance.fseq",
+      "playback_files": [
+        "Halloween 2026 - The Dead Dance.fseq"
+      ],
+      "expected": {
+        "channels": 305940,
+        "frames": 9140,
+        "frame_ms": 25,
+        "id": "1792359486000566",
+        "bytes": 230619056
+      },
+      "qr_windows_ms": [
+        [
+          10000,
+          25000
+        ],
+        [
+          70000,
+          85000
+        ],
+        [
+          130000,
+          145000
+        ],
+        [
+          190000,
+          205000
+        ]
+      ],
+      "removed_radio_text": [
+        {
+          "layer": 0,
+          "attributes": {
+            "ref": "307",
+            "name": "Text",
+            "startTime": "0",
+            "endTime": "228500",
+            "palette": "36"
+          }
+        }
+      ],
+      "added_rows": [],
+      "preserved_other_effects": true,
+      "authored_at": "2026-10-18T20:26:11.297863-05:00",
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Native checks/The Dead Dance.html",
+      "native_critical_issues": {},
+      "rendered": true,
+      "fseq": {
+        "channels": 305940,
+        "frames": 9140,
+        "frame_ms": 25,
+        "id": "1792373183019338",
+        "bytes": 152992634
+      },
+      "fseq_sha256": "54def972bba86e3de94e304f72fe0ef0be93ac705be9875d538229d287520f0d",
+      "rendered_at": "2026-10-18T20:26:23.584191-05:00"
+    },
+    "The Devil Went Down to Georgia": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/The Devil Went Down to Georgia/The Devil Went Down to Georgia.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/The Devil Went Down to Georgia/The Devil Went Down to Georgia.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/The Devil Went Down to Georgia/The Devil Went Down to Georgia.fseq",
+      "playback_files": [
+        "Halloween 2026 - The Devil Went Down to Georgia.fseq"
+      ],
+      "expected": {
+        "channels": 297432,
+        "frames": 8616,
+        "frame_ms": 25,
+        "id": "1792359503380671",
+        "bytes": 881076294
+      },
+      "qr_windows_ms": [
+        [
+          10000,
+          25000
+        ],
+        [
+          70000,
+          85000
+        ],
+        [
+          130000,
+          145000
+        ],
+        [
+          190000,
+          205000
+        ]
+      ],
+      "removed_radio_text": [
+        {
+          "layer": 0,
+          "attributes": {
+            "ref": "260",
+            "name": "Text",
+            "startTime": "2400",
+            "endTime": "215400",
+            "palette": "69"
+          }
+        }
+      ],
+      "added_rows": [],
+      "preserved_other_effects": true,
+      "authored_at": "2026-10-18T20:26:25.516346-05:00",
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Native checks/The Devil Went Down to Georgia.html",
+      "native_critical_issues": {},
+      "rendered": true,
+      "fseq": {
+        "channels": 297432,
+        "frames": 8616,
+        "frame_ms": 25,
+        "id": "1792373200999948",
+        "bytes": 628588345
+      },
+      "fseq_sha256": "870a49ae27f2d4a5592740e57bb8dc559d3cdcb299397012ab6a97c73cdaa44d",
+      "rendered_at": "2026-10-18T20:26:42.773328-05:00"
+    },
+    "The Imperial March": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/The Imperial March/The Imperial March.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/The Imperial March/The Imperial March.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/The Imperial March/The Imperial March.fseq",
+      "playback_files": [
+        "Halloween 2026 - The Imperial March.fseq"
+      ],
+      "expected": {
+        "channels": 286497,
+        "frames": 7547,
+        "frame_ms": 25,
+        "id": "1792359522102672",
+        "bytes": 575725963
+      },
+      "qr_windows_ms": [
+        [
+          10000,
+          25000
+        ],
+        [
+          70000,
+          85000
+        ],
+        [
+          130000,
+          145000
+        ]
+      ],
+      "removed_radio_text": [
+        {
+          "layer": 1,
+          "attributes": {
+            "ref": "278",
+            "name": "Text",
+            "startTime": "0",
+            "endTime": "188675",
+            "palette": "10"
+          }
+        }
+      ],
+      "added_rows": [],
+      "preserved_other_effects": true,
+      "authored_at": "2026-10-18T20:26:44.319851-05:00",
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Native checks/The Imperial March.html",
+      "native_critical_issues": {},
+      "rendered": true,
+      "fseq": {
+        "channels": 286497,
+        "frames": 7547,
+        "frame_ms": 25,
+        "id": "1792373220236118",
+        "bytes": 422796801
+      },
+      "fseq_sha256": "91e9ada2fe27d0fc7691dd29055fde42e4b005653f66eb0326a177995fdcf1cf",
+      "rendered_at": "2026-10-18T20:27:01.713820-05:00"
+    },
+    "Thriller Xtreme Remap": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/Thriller Xtreme Remap/Thriller Xtreme Remap.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/Thriller Xtreme Remap/Thriller Xtreme Remap.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/Thriller Xtreme Remap/Thriller Xtreme Remap.fseq",
+      "playback_files": [
+        "Halloween 2026 - Thriller.fseq"
+      ],
+      "expected": {
+        "channels": 298290,
+        "frames": 14318,
+        "frame_ms": 25,
+        "id": "1792359545921938",
+        "bytes": 926332295
+      },
+      "qr_windows_ms": [
+        [
+          10000,
+          25000
+        ],
+        [
+          70000,
+          85000
+        ],
+        [
+          130000,
+          145000
+        ],
+        [
+          190000,
+          205000
+        ],
+        [
+          250000,
+          265000
+        ],
+        [
+          310000,
+          325000
+        ]
+      ],
+      "removed_radio_text": [
+        {
+          "layer": 0,
+          "attributes": {
+            "ref": "15",
+            "name": "Text",
+            "startTime": "0",
+            "endTime": "357950",
+            "palette": "5"
+          }
+        }
+      ],
+      "added_rows": [],
+      "preserved_other_effects": true,
+      "authored_at": "2026-10-18T20:27:06.535055-05:00",
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Native checks/Thriller Xtreme Remap.html",
+      "native_critical_issues": {},
+      "rendered": true,
+      "fseq": {
+        "channels": 298290,
+        "frames": 14318,
+        "frame_ms": 25,
+        "id": "1792373247019817",
+        "bytes": 572909292
+      },
+      "fseq_sha256": "f83619c5019bcdbe964af605a0c5b5868e71bc150a9d782a1cbc14ee31f60f75",
+      "rendered_at": "2026-10-18T20:27:29.019120-05:00"
+    },
+    "Titanium": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/Titanium/Titanium.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/Titanium/Titanium.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/Titanium/Titanium.fseq",
+      "playback_files": [
+        "Halloween 2026 - Titanium.fseq"
+      ],
+      "expected": {
+        "channels": 147243,
+        "frames": 9802,
+        "frame_ms": 25,
+        "id": "1792372959718986",
+        "bytes": 174274907
+      },
+      "qr_windows_ms": [
+        [
+          10000,
+          25000
+        ],
+        [
+          70000,
+          85000
+        ],
+        [
+          130000,
+          145000
+        ],
+        [
+          190000,
+          205000
+        ]
+      ],
+      "removed_radio_text": [
+        {
+          "layer": 2,
+          "attributes": {
+            "ref": "82",
+            "name": "Text",
+            "startTime": "0",
+            "endTime": "245050",
+            "palette": "32"
+          }
+        }
+      ],
+      "added_rows": [
+        "Projector"
+      ],
+      "preserved_other_effects": true,
+      "authored_at": "2026-10-18T20:27:30.753099-05:00",
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Native checks/Titanium.html",
+      "native_critical_issues": {},
+      "rendered": true,
+      "fseq": {
+        "channels": 294699,
+        "frames": 9802,
+        "frame_ms": 25,
+        "id": "1792373263480419",
+        "bytes": 186669325
+      },
+      "fseq_sha256": "6bc932d41158772a8c7daabdac2aa8de28de483eb6054892c5ccebf4f57addaf",
+      "rendered_at": "2026-10-18T20:27:44.213078-05:00"
+    },
+    "Titanium 2": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/Titanium 2/Titanium 2.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/Titanium 2/Titanium 2.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/Titanium 2/Titanium 2.fseq",
+      "playback_files": [
+        "Halloween 2026 - Titanium 2.fseq"
+      ],
+      "expected": {
+        "channels": 147243,
+        "frames": 9802,
+        "frame_ms": 25,
+        "id": "1792372977899225",
+        "bytes": 173896428
+      },
+      "qr_windows_ms": [
+        [
+          10000,
+          25000
+        ],
+        [
+          70000,
+          85000
+        ],
+        [
+          130000,
+          145000
+        ],
+        [
+          190000,
+          205000
+        ]
+      ],
+      "removed_radio_text": [
+        {
+          "layer": 1,
+          "attributes": {
+            "ref": "78",
+            "name": "Text",
+            "startTime": "0",
+            "endTime": "245050",
+            "palette": "32"
+          }
+        }
+      ],
+      "added_rows": [
+        "Projector"
+      ],
+      "preserved_other_effects": true,
+      "authored_at": "2026-10-18T20:27:45.837867-05:00",
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Native checks/Titanium 2.html",
+      "native_critical_issues": {},
+      "rendered": true,
+      "fseq": {
+        "channels": 294699,
+        "frames": 9802,
+        "frame_ms": 25,
+        "id": "1792373278363597",
+        "bytes": 186669234
+      },
+      "fseq_sha256": "9a13ca462b15f0cff15dfa0dd0bb42563e5ed9c6b5f611a7b8670ec21c8ece92",
+      "rendered_at": "2026-10-18T20:27:59.068785-05:00"
+    },
+    "We Will Rock You": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/We Will Rock You/We Will Rock You.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/We Will Rock You/We Will Rock You.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/We Will Rock You/We Will Rock You.fseq",
+      "playback_files": [
+        "Halloween 2026 - We Will Rock You.fseq"
+      ],
+      "expected": {
+        "channels": 288210,
+        "frames": 7674,
+        "frame_ms": 25,
+        "id": "1792359597255293",
+        "bytes": 551071964
+      },
+      "qr_windows_ms": [
+        [
+          10000,
+          25000
+        ],
+        [
+          70000,
+          85000
+        ],
+        [
+          130000,
+          145000
+        ]
+      ],
+      "removed_radio_text": [
+        {
+          "layer": 0,
+          "attributes": {
+            "ref": "418",
+            "name": "Text",
+            "startTime": "0",
+            "endTime": "191850",
+            "palette": "19"
+          }
+        }
+      ],
+      "added_rows": [],
+      "preserved_other_effects": true,
+      "authored_at": "2026-10-18T20:28:01.003693-05:00",
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Native checks/We Will Rock You.html",
+      "native_critical_issues": {},
+      "rendered": true,
+      "fseq": {
+        "channels": 288210,
+        "frames": 7674,
+        "frame_ms": 25,
+        "id": "1792373301310553",
+        "bytes": 479141784
+      },
+      "fseq_sha256": "95ccf28607f186f03b72e2164c51d52b99a80508c44331a4dbaea12c324017eb",
+      "rendered_at": "2026-10-18T20:28:22.903232-05:00"
+    },
+    "Zombie": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/Zombie/Zombie.xsq",
+      "baseline_xsq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/Zombie/Zombie.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Before/Sequences/Zombie/Zombie.fseq",
+      "playback_files": [
+        "Halloween 2026 - Zombie.fseq"
+      ],
+      "expected": {
+        "channels": 297432,
+        "frames": 10044,
+        "frame_ms": 25,
+        "id": "1792359618033221",
+        "bytes": 243902954
+      },
+      "qr_windows_ms": [
+        [
+          10000,
+          25000
+        ],
+        [
+          70000,
+          85000
+        ],
+        [
+          130000,
+          145000
+        ],
+        [
+          190000,
+          205000
+        ]
+      ],
+      "removed_radio_text": [
+        {
+          "layer": 1,
+          "attributes": {
+            "ref": "539",
+            "name": "Text",
+            "startTime": "0",
+            "endTime": "251100",
+            "palette": "178"
+          }
+        }
+      ],
+      "added_rows": [],
+      "preserved_other_effects": true,
+      "authored_at": "2026-10-18T20:28:24.822895-05:00",
+      "native_check": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Native checks/Zombie.html",
+      "native_critical_issues": {},
+      "rendered": true,
+      "fseq": {
+        "channels": 297432,
+        "frames": 10044,
+        "frame_ms": 25,
+        "id": "1792373321827144",
+        "bytes": 225172142
+      },
+      "fseq_sha256": "2bb734a57acf229db1660d7121b96d962f9281029d78411bccb3c674a67162ad",
+      "rendered_at": "2026-10-18T20:28:42.703576-05:00"
+    }
+  },
+  "complete": true,
+  "master_before": {
+    "MQTT": {
+      "configured": false,
+      "connected": false
+    },
+    "branch": "v10.2",
+    "bridging": false,
+    "channelInputsEnabled": false,
+    "channelOutputsEnabled": true,
+    "current_playlist": {
+      "count": "20",
+      "description": "Halloween 2026 using current Halloween controller configuration. All selected sequences ready.",
+      "generated": false,
+      "index": "3",
+      "playlist": "Halloween 2026",
+      "type": "both"
+    },
+    "current_sequence": "Halloween 2026 - 03 - This Is Halloween.fseq",
+    "current_song": "Halloween 2026 - 03 - This Is Halloween.mp3",
+    "dateStr": "Sun Oct 18",
+    "fppd": "running",
+    "global_pause": {
+      "active": false,
+      "configured": false,
+      "duration_ms": 0
+    },
+    "host_description": "Fpp Master",
+    "host_name": "FPP-Master",
+    "media_playing": true,
+    "milliseconds_elapsed": 66480,
+    "mode": 2,
+    "mode_name": "player",
+    "multisync": true,
+    "next_playlist": {
+      "playlist": "Halloween Overnight",
+      "start_time": "Sun Oct 18 @ 10:30 PM - (Everyday)"
+    },
+    "platform": "Raspberry Pi",
+    "powerBad": false,
+    "random": 0,
+    "repeat_mode": 1,
+    "scheduler": {
+      "currentPlaylist": {
+        "actualEndTime": 1792380600,
+        "actualEndTimeStr": "Sun Oct 18 @ 10:30 PM",
+        "actualStartTime": 1792367870,
+        "actualStartTimeStr": "Sun Oct 18 @ 06:57 PM",
+        "currentTime": 1792372693,
+        "currentTimeStr": "Sun Oct 18 @ 08:18 PM",
+        "playlistName": "Halloween 2026",
+        "scheduledEndTime": 1792380600,
+        "scheduledEndTimeStr": "Sun Oct 18 @ 10:30 PM",
+        "scheduledStartTime": 1792367870,
+        "scheduledStartTimeStr": "Sun Oct 18 @ 06:57 PM",
+        "secondsRemaining": 7907,
+        "stopType": 1,
+        "stopTypeStr": "Hard"
+      },
+      "enabled": 1,
+      "nextPlaylist": {
+        "playlistName": "Halloween Overnight",
+        "scheduledStartTime": 1792380600,
+        "scheduledStartTimeStr": "Sun Oct 18 @ 10:30 PM - (Everyday)"
+      },
+      "status": "playing"
+    },
+    "seconds_elapsed": "66",
+    "seconds_played": "66",
+    "seconds_remaining": "130",
+    "sensors": [
+      {
+        "formatted": "65.7",
+        "label": "CPU: ",
+        "postfix": "",
+        "prefix": "",
+        "value": 65.731,
+        "valueType": "Temperature"
+      }
+    ],
+    "status": 1,
+    "status_name": "playing",
+    "streamSlots": [
+      {
+        "isBackground": false,
+        "mediaFilename": "Halloween 2026 - 03 - This Is Halloween.mp3",
+        "minutesTotal": 3,
+        "nodeDescription": "FPP Media Stream 1",
+        "nodeName": "fppd_stream_1",
+        "secondsElapsed": 66,
+        "secondsRemaining": 130,
+        "secondsTotal": 16,
+        "slot": 1,
+        "status": "playing",
+        "subSecondsElapsed": 48,
+        "subSecondsRemaining": 11
+      },
+      {
+        "isBackground": false,
+        "mediaFilename": "",
+        "nodeDescription": "FPP Media Stream 2",
+        "nodeName": "fppd_stream_2",
+        "slot": 2,
+        "status": "idle"
+      },
+      {
+        "isBackground": false,
+        "mediaFilename": "",
+        "nodeDescription": "FPP Media Stream 3",
+        "nodeName": "fppd_stream_3",
+        "slot": 3,
+        "status": "idle"
+      },
+      {
+        "isBackground": false,
+        "mediaFilename": "",
+        "nodeDescription": "FPP Media Stream 4",
+        "nodeName": "fppd_stream_4",
+        "slot": 4,
+        "status": "idle"
+      },
+      {
+        "isBackground": false,
+        "mediaFilename": "",
+        "nodeDescription": "FPP Media Stream 5",
+        "nodeName": "fppd_stream_5",
+        "slot": 5,
+        "status": "idle"
+      }
+    ],
+    "systemUptimeTotalSeconds": 631769,
+    "time": "Sun Oct 18 20:18:13 CDT 2026",
+    "timeStr": "08:18 PM",
+    "timeStrFull": "08:18:13 PM",
+    "time_elapsed": "01:06",
+    "time_remaining": "02:10",
+    "uptime": "03:55:31",
+    "uptimeDays": 0,
+    "uptimeHours": 3,
+    "uptimeMinutes": 55,
+    "uptimeSeconds": 31,
+    "uptimeStr": "0 days, 3 hours, 55 minutes, 31 seconds",
+    "uptimeTotalSeconds": 14131,
+    "uuid": "M1-100000005ab99614",
+    "version": "10.2-3-g00e5f727c",
+    "volume": 49,
+    "warningInfo": [
+      {
+        "id": 27,
+        "message": "Cannot Ping DDP Channel Data Target 192.168.0.239 FPP-LEFT-YARD"
+      },
+      {
+        "id": 27,
+        "message": "Cannot Ping DDP Channel Data Target 192.168.0.213 FPP-LEFT-YARD"
+      }
+    ],
+    "warnings": [
+      "Cannot Ping DDP Channel Data Target 192.168.0.239 FPP-LEFT-YARD",
+      "Cannot Ping DDP Channel Data Target 192.168.0.213 FPP-LEFT-YARD"
+    ],
+    "wifi": [
+      {
+        "interface": "wlan0",
+        "link": 0,
+        "level": 0,
+        "unit": "dBm",
+        "noise": 0,
+        "desc": "weak"
+      }
+    ],
+    "interfaces": [
+      {
+        "ifindex": 2,
+        "ifname": "eth0",
+        "flags": [
+          "BROADCAST",
+          "MULTICAST",
+          "UP",
+          "LOWER_UP"
+        ],
+        "mtu": 1500,
+        "qdisc": "fq",
+        "operstate": "UP",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "ether",
+        "address": "d8:3a:dd:6b:76:0e",
+        "broadcast": "ff:ff:ff:ff:ff:ff",
+        "addr_info": [
+          {
+            "family": "inet",
+            "local": "192.168.0.19",
+            "prefixlen": 24,
+            "metric": 1024,
+            "broadcast": "192.168.0.255",
+            "scope": "global",
+            "dynamic": true,
+            "label": "eth0",
+            "valid_life_time": 84533,
+            "preferred_life_time": 84533
+          },
+          {
+            "family": "inet6",
+            "local": "fde0:e973:8f23:41df:da3a:ddff:fe6b:760e",
+            "prefixlen": 64,
+            "scope": "global",
+            "dynamic": true,
+            "mngtmpaddr": true,
+            "noprefixroute": true,
+            "valid_life_time": 1696,
+            "preferred_life_time": 1696
+          },
+          {
+            "family": "inet6",
+            "local": "fdb2:c553:f40d:8123:da3a:ddff:fe6b:760e",
+            "prefixlen": 64,
+            "scope": "global",
+            "dynamic": true,
+            "mngtmpaddr": true,
+            "noprefixroute": true,
+            "valid_life_time": 1723,
+            "preferred_life_time": 1723
+          },
+          {
+            "family": "inet6",
+            "local": "fe80::da3a:ddff:fe6b:760e",
+            "prefixlen": 64,
+            "scope": "link",
+            "protocol": "kernel_ll",
+            "valid_life_time": 4294967295,
+            "preferred_life_time": 4294967295
+          }
+        ]
+      },
+      {
+        "ifindex": 3,
+        "ifname": "wlan0",
+        "flags": [
+          "BROADCAST",
+          "MULTICAST"
+        ],
+        "mtu": 1500,
+        "qdisc": "noop",
+        "operstate": "DOWN",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "ether",
+        "address": "d8:3a:dd:6b:76:0f",
+        "broadcast": "ff:ff:ff:ff:ff:ff",
+        "addr_info": [],
+        "wifi": {
+          "interface": "wlan0",
+          "link": 0,
+          "level": 0,
+          "unit": "dBm",
+          "noise": 0,
+          "desc": "weak"
+        }
+      }
+    ],
+    "rebootFlag": 0,
+    "restartFlag": 0,
+    "bootDelayActive": 0,
+    "advancedView": {
+      "HostName": "FPP-Master",
+      "HostDescription": "Fpp Master",
+      "Platform": "Raspberry Pi",
+      "Variant": "Pi 4",
+      "SubPlatform": "Raspberry Pi 4 Model B Rev 1.5",
+      "backgroundColor": "",
+      "Mode": "player",
+      "Logo": "Raspberry_Pi_4.svg",
+      "Version": "10.2-3-g00e5f727c",
+      "Branch": "v10.2",
+      "multisync": true,
+      "OSVersion": "v2026-09 (32bit)",
+      "OSRelease": "Raspbian GNU/Linux 13 (trixie)",
+      "channelRanges": "170292-287093",
+      "majorVersion": 10,
+      "minorVersion": 2,
+      "typeId": 13,
+      "channelInputsEnabled": false,
+      "channelOutputsEnabled": true,
+      "uuid": "M1-100000005ab99614",
+      "Utilization": {
+        "CPU": 10.884353741496597,
+        "Memory": 10.481599520859982,
+        "Uptime": "7 days 7:29",
+        "Disk": {
+          "Media": {
+            "Free": 6171590656,
+            "Total": 62582202368
+          },
+          "Root": {
+            "Free": 6171590656,
+            "Total": 62582202368
+          }
+        }
+      },
+      "Kernel": "6.18.52-v8+",
+      "LocalGitVersion": "00e5f727c",
+      "RemoteGitVersion": "00e5f727c",
+      "UpgradeSource": "github.com",
+      "IPs": [
+        "192.168.0.19"
+      ]
+    },
+    "pluginHeaderIndicators": [],
+    "fppdRestartBlocked": {
+      "blocked": false
+    }
+  },
+  "controllers": [
+    {
+      "name": "FPPProjector",
+      "desc": "Elliott Garage Projector",
+      "type": "Ethernet",
+      "vendor": "FPP",
+      "model": "Virtual Matrix",
+      "variant": "",
+      "protocol": "DDP",
+      "id": 100,
+      "startchannel": 1,
+      "channels": 147456,
+      "managed": true,
+      "autolayout": false,
+      "canvisualise": true,
+      "active": true,
+      "ip": "192.168.0.201",
+      "controllercap": {
+        "pixelports": 0,
+        "serialports": 1,
+        "supportspanels": true,
+        "supportsvirtualmatrix": true,
+        "smartremotecount": 0,
+        "smartremotetypes": [],
+        "pixelprotocols": [],
+        "serialprotocols": [
+          "DMX-Open",
+          "DMX-Pro",
+          "GenericSerial",
+          "LOR",
+          "Pixelnet-Lynx",
+          "Pixelnet-Open",
+          "Renard"
+        ]
+      }
+    },
+    {
+      "name": "Falcon-16V4-02",
+      "desc": "2nd Floor Face of house",
+      "type": "Ethernet",
+      "vendor": "Falcon",
+      "model": "F16V4",
+      "variant": "16 + 16 Local Ports",
+      "protocol": "DDP",
+      "id": 2,
+      "startchannel": 147457,
+      "channels": 3888,
+      "managed": true,
+      "autolayout": true,
+      "canvisualise": true,
+      "active": false,
+      "ip": "192.168.254.100",
+      "controllercap": {
+        "pixelports": 32,
+        "serialports": 1,
+        "supportspanels": false,
+        "supportsvirtualmatrix": false,
+        "smartremotecount": 0,
+        "smartremotetypes": [],
+        "pixelprotocols": [
+          "ws2811",
+          "apa102",
+          "apa109",
+          "lpd6803",
+          "lpd8806",
+          "sm16716",
+          "tls3001",
+          "tm1814",
+          "tm1829",
+          "ucs8903",
+          "ucs8903 16 bit",
+          "ucs8904",
+          "ucs8904 16 bit",
+          "ws2801",
+          "ws2811",
+          "ws2811 slow",
+          "dmx512p",
+          "dmx512p-4",
+          "sj1221",
+          "sm16825",
+          "sm16825 16 bit"
+        ],
+        "serialprotocols": [
+          "dmx",
+          "renard"
+        ]
+      }
+    },
+    {
+      "name": "FPP-MEGA-TREE",
+      "desc": "",
+      "type": "Ethernet",
+      "vendor": "KulpLights",
+      "model": "K32",
+      "variant": "K32A-B",
+      "protocol": "DDP",
+      "id": 3,
+      "startchannel": 151345,
+      "channels": 18948,
+      "managed": true,
+      "autolayout": true,
+      "canvisualise": true,
+      "active": false,
+      "ip": "192.168.0.126",
+      "controllercap": {
+        "pixelports": 48,
+        "serialports": 2,
+        "supportspanels": false,
+        "supportsvirtualmatrix": false,
+        "smartremotecount": 6,
+        "smartremotetypes": [
+          "falcon_v1",
+          "fpp_v2",
+          "falcon_v4"
+        ],
+        "pixelprotocols": [
+          "ws2811"
+        ],
+        "serialprotocols": [
+          "DMX-Open",
+          "DMX-Pro",
+          "GenericSerial",
+          "LOR",
+          "Pixelnet-Lynx",
+          "Pixelnet-Open",
+          "Renard"
+        ]
+      }
+    },
+    {
+      "name": "FPP-KULP08-FrontPorch",
+      "desc": "",
+      "type": "Ethernet",
+      "vendor": "KulpLights",
+      "model": "K8",
+      "variant": "K8-B",
+      "protocol": "DDP",
+      "id": 4,
+      "startchannel": 170293,
+      "channels": 6873,
+      "managed": true,
+      "autolayout": true,
+      "canvisualise": true,
+      "active": true,
+      "ip": "192.168.0.250",
+      "controllercap": {
+        "pixelports": 20,
+        "serialports": 2,
+        "supportspanels": false,
+        "supportsvirtualmatrix": false,
+        "smartremotecount": 6,
+        "smartremotetypes": [
+          "falcon_v1",
+          "fpp_v2",
+          "falcon_v4"
+        ],
+        "pixelprotocols": [
+          "ws2811"
+        ],
+        "serialprotocols": [
+          "DMX-Open",
+          "DMX-Pro",
+          "GenericSerial",
+          "LOR",
+          "Pixelnet-Lynx",
+          "Pixelnet-Open",
+          "Renard"
+        ]
+      }
+    },
+    {
+      "name": "FALON-16V3-02",
+      "desc": "Front Raised Bed",
+      "type": "Ethernet",
+      "vendor": "Falcon",
+      "model": "F16V3",
+      "variant": "No Expansion Boards",
+      "protocol": "DDP",
+      "id": 5,
+      "startchannel": 177166,
+      "channels": 816,
+      "managed": true,
+      "autolayout": true,
+      "canvisualise": true,
+      "active": true,
+      "ip": "192.168.0.249",
+      "controllercap": {
+        "pixelports": 16,
+        "serialports": 4,
+        "supportspanels": false,
+        "supportsvirtualmatrix": false,
+        "smartremotecount": 3,
+        "smartremotetypes": [
+          "falcon_v1"
+        ],
+        "pixelprotocols": [
+          "ws2811",
+          "tm18xx",
+          "lx1203",
+          "ws2801",
+          "tls3001",
+          "lpd6803",
+          "gece",
+          "lpd8806",
+          "apa102",
+          "ucs2903",
+          "tm1814a"
+        ],
+        "serialprotocols": [
+          "dmx",
+          "renard",
+          "pixelnet"
+        ]
+      }
+    },
+    {
+      "name": "GENIUS-PORCH",
+      "desc": "Elliott Porch",
+      "type": "Ethernet",
+      "vendor": "Experience Lights",
+      "model": "Genius Pixel 16",
+      "variant": "",
+      "protocol": "DDP",
+      "id": 6,
+      "startchannel": 177982,
+      "channels": 11250,
+      "managed": true,
+      "autolayout": false,
+      "canvisualise": true,
+      "active": true,
+      "ip": "192.168.0.9",
+      "controllercap": {
+        "pixelports": 24,
+        "serialports": 2,
+        "supportspanels": false,
+        "supportsvirtualmatrix": false,
+        "smartremotecount": 6,
+        "smartremotetypes": [
+          "falcon_v2"
+        ],
+        "pixelprotocols": [
+          "ws2811"
+        ],
+        "serialprotocols": [
+          "dmx"
+        ]
+      }
+    },
+    {
+      "name": "FPP-KULP16-02",
+      "desc": "FPP Face of house controller",
+      "type": "Ethernet",
+      "vendor": "KulpLights",
+      "model": "K16",
+      "variant": "K16A-B 1.x",
+      "protocol": "DDP",
+      "id": 10,
+      "startchannel": 189232,
+      "channels": 19248,
+      "managed": true,
+      "autolayout": true,
+      "canvisualise": true,
+      "active": true,
+      "ip": "192.168.0.205",
+      "controllercap": {
+        "pixelports": 32,
+        "serialports": 2,
+        "supportspanels": false,
+        "supportsvirtualmatrix": false,
+        "smartremotecount": 6,
+        "smartremotetypes": [
+          "falcon_v1",
+          "fpp_v2",
+          "falcon_v4"
+        ],
+        "pixelprotocols": [
+          "ws2811"
+        ],
+        "serialprotocols": [
+          "DMX-Open",
+          "DMX-Pro",
+          "GenericSerial",
+          "LOR",
+          "Pixelnet-Lynx",
+          "Pixelnet-Open",
+          "Renard"
+        ]
+      }
+    },
+    {
+      "name": "FALCON-48V2-01",
+      "desc": "Toni Yard",
+      "type": "Ethernet",
+      "vendor": "Falcon",
+      "model": "F48",
+      "variant": "",
+      "protocol": "DDP",
+      "id": 12,
+      "startchannel": 208480,
+      "channels": 1,
+      "managed": true,
+      "autolayout": true,
+      "canvisualise": true,
+      "active": false,
+      "ip": "192.168.0.151",
+      "controllercap": {
+        "pixelports": 48,
+        "serialports": 4,
+        "supportspanels": false,
+        "supportsvirtualmatrix": false,
+        "smartremotecount": 3,
+        "smartremotetypes": [
+          "falcon_v1"
+        ],
+        "pixelprotocols": [
+          "ws2811",
+          "tm18xx",
+          "lx1203",
+          "ws2801",
+          "tls3001",
+          "lpd6803",
+          "gece",
+          "lpd8806",
+          "apa102",
+          "ucs2903",
+          "tm1814a"
+        ],
+        "serialprotocols": [
+          "dmx",
+          "renard",
+          "pixelnet"
+        ]
+      }
+    },
+    {
+      "name": "FPP-KULP32-01",
+      "desc": "Eves controller",
+      "type": "Ethernet",
+      "vendor": "KulpLights",
+      "model": "F32-B",
+      "variant": "No Serial",
+      "protocol": "DDP",
+      "id": 7,
+      "startchannel": 208481,
+      "channels": 6162,
+      "managed": true,
+      "autolayout": false,
+      "canvisualise": true,
+      "active": true,
+      "ip": "192.168.0.238",
+      "controllercap": {
+        "pixelports": 48,
+        "serialports": 0,
+        "supportspanels": false,
+        "supportsvirtualmatrix": false,
+        "smartremotecount": 6,
+        "smartremotetypes": [
+          "falcon_v1",
+          "fpp_v2",
+          "falcon_v4"
+        ],
+        "pixelprotocols": [
+          "ws2811"
+        ],
+        "serialprotocols": [
+          "dmx",
+          "pixelnet"
+        ]
+      }
+    },
+    {
+      "name": "FPP-KULP-SELFIE-STATION",
+      "desc": "Left Yard",
+      "type": "Ethernet",
+      "vendor": "KulpLights",
+      "model": "K8",
+      "variant": "K8-B",
+      "protocol": "DDP",
+      "id": 9,
+      "startchannel": 214643,
+      "channels": 2001,
+      "managed": true,
+      "autolayout": true,
+      "canvisualise": true,
+      "active": true,
+      "ip": "192.168.0.213",
+      "controllercap": {
+        "pixelports": 20,
+        "serialports": 2,
+        "supportspanels": false,
+        "supportsvirtualmatrix": false,
+        "smartremotecount": 6,
+        "smartremotetypes": [
+          "falcon_v1",
+          "fpp_v2",
+          "falcon_v4"
+        ],
+        "pixelprotocols": [
+          "ws2811"
+        ],
+        "serialprotocols": [
+          "DMX-Open",
+          "DMX-Pro",
+          "GenericSerial",
+          "LOR",
+          "Pixelnet-Lynx",
+          "Pixelnet-Open",
+          "Renard"
+        ]
+      }
+    },
+    {
+      "name": "FPP-KULP16-01",
+      "desc": "",
+      "type": "Ethernet",
+      "vendor": "KulpLights",
+      "model": "K16",
+      "variant": "K16A-B 1.x",
+      "protocol": "DDP",
+      "id": 8,
+      "startchannel": 216644,
+      "channels": 17637,
+      "managed": true,
+      "autolayout": true,
+      "canvisualise": true,
+      "active": true,
+      "ip": "192.168.0.253",
+      "controllercap": {
+        "pixelports": 32,
+        "serialports": 2,
+        "supportspanels": false,
+        "supportsvirtualmatrix": false,
+        "smartremotecount": 6,
+        "smartremotetypes": [
+          "falcon_v1",
+          "fpp_v2",
+          "falcon_v4"
+        ],
+        "pixelprotocols": [
+          "ws2811"
+        ],
+        "serialprotocols": [
+          "DMX-Open",
+          "DMX-Pro",
+          "GenericSerial",
+          "LOR",
+          "Pixelnet-Lynx",
+          "Pixelnet-Open",
+          "Renard"
+        ]
+      }
+    },
+    {
+      "name": "FPP-Master",
+      "desc": "",
+      "type": "Ethernet",
+      "vendor": "",
+      "model": "",
+      "variant": "",
+      "protocol": "DDP",
+      "id": 13,
+      "startchannel": 234281,
+      "channels": 1,
+      "managed": true,
+      "autolayout": true,
+      "canvisualise": false,
+      "active": true,
+      "ip": "192.168.0.19",
+      "controllercap": {}
+    },
+    {
+      "name": "FPP-TUNETO",
+      "desc": "Tune To Sign",
+      "type": "Ethernet",
+      "vendor": "FPP",
+      "model": "LED Panels",
+      "variant": "",
+      "protocol": "DDP",
+      "id": 300,
+      "startchannel": 234282,
+      "channels": 36864,
+      "managed": true,
+      "autolayout": true,
+      "canvisualise": true,
+      "active": true,
+      "ip": "192.168.0.245",
+      "controllercap": {
+        "pixelports": 0,
+        "serialports": 1,
+        "supportspanels": true,
+        "supportsvirtualmatrix": false,
+        "smartremotecount": 0,
+        "smartremotetypes": [],
+        "pixelprotocols": [],
+        "serialprotocols": [
+          "DMX-Open",
+          "DMX-Pro",
+          "GenericSerial",
+          "LOR",
+          "Pixelnet-Lynx",
+          "Pixelnet-Open",
+          "Renard"
+        ]
+      }
+    },
+    {
+      "name": "Falcon_F16V4_621D",
+      "desc": "",
+      "type": "Ethernet",
+      "vendor": "Falcon",
+      "model": "F16V4",
+      "variant": "16 + 16 Local Ports",
+      "protocol": "DDP",
+      "id": 1,
+      "startchannel": 271146,
+      "channels": 11049,
+      "managed": true,
+      "autolayout": true,
+      "canvisualise": true,
+      "active": true,
+      "ip": "192.168.0.252",
+      "controllercap": {
+        "pixelports": 32,
+        "serialports": 1,
+        "supportspanels": false,
+        "supportsvirtualmatrix": false,
+        "smartremotecount": 0,
+        "smartremotetypes": [],
+        "pixelprotocols": [
+          "ws2811",
+          "apa102",
+          "apa109",
+          "lpd6803",
+          "lpd8806",
+          "sm16716",
+          "tls3001",
+          "tm1814",
+          "tm1829",
+          "ucs8903",
+          "ucs8903 16 bit",
+          "ucs8904",
+          "ucs8904 16 bit",
+          "ws2801",
+          "ws2811",
+          "ws2811 slow",
+          "dmx512p",
+          "dmx512p-4",
+          "sj1221",
+          "sm16825",
+          "sm16825 16 bit"
+        ],
+        "serialprotocols": [
+          "dmx",
+          "renard"
+        ]
+      }
+    },
+    {
+      "name": "Genius Roof",
+      "desc": "18 roof snowflakes; port 4 unused; photo-inferred wiring",
+      "type": "Ethernet",
+      "vendor": "Experience Lights",
+      "model": "Genius Pro 16 Port",
+      "variant": "",
+      "protocol": "DDP",
+      "id": 11,
+      "startchannel": 282195,
+      "channels": 4899,
+      "managed": true,
+      "autolayout": true,
+      "canvisualise": true,
+      "active": true,
+      "ip": "192.168.0.78",
+      "controllercap": {
+        "pixelports": 24,
+        "serialports": 2,
+        "supportspanels": false,
+        "supportsvirtualmatrix": false,
+        "smartremotecount": 6,
+        "smartremotetypes": [
+          "falcon_v2"
+        ],
+        "pixelprotocols": [
+          "ws2811"
+        ],
+        "serialprotocols": [
+          "dmx"
+        ]
+      }
+    }
+  ],
+  "all_local_renders_complete": true,
+  "master_after_render": {
+    "MQTT": {
+      "configured": false,
+      "connected": false
+    },
+    "branch": "v10.2",
+    "bridging": false,
+    "channelInputsEnabled": false,
+    "channelOutputsEnabled": true,
+    "current_playlist": {
+      "count": "20",
+      "description": "Halloween 2026 using current Halloween controller configuration. All selected sequences ready.",
+      "generated": false,
+      "index": "6",
+      "playlist": "Halloween 2026",
+      "type": "both"
+    },
+    "current_sequence": "Halloween 2026 - Ghostbusters.fseq",
+    "current_song": "Halloween 2026 - PENTATONIX - GHOSTBUSTERS (LYRICS).mp4",
+    "dateStr": "Sun Oct 18",
+    "fppd": "running",
+    "global_pause": {
+      "active": false,
+      "configured": false,
+      "duration_ms": 0
+    },
+    "host_description": "Fpp Master",
+    "host_name": "FPP-Master",
+    "media_playing": true,
+    "milliseconds_elapsed": 65590,
+    "mode": 2,
+    "mode_name": "player",
+    "multisync": true,
+    "next_playlist": {
+      "playlist": "Halloween Overnight",
+      "start_time": "Sun Oct 18 @ 10:30 PM - (Everyday)"
+    },
+    "platform": "Raspberry Pi",
+    "powerBad": false,
+    "random": 0,
+    "repeat_mode": 1,
+    "scheduler": {
+      "currentPlaylist": {
+        "actualEndTime": 1792380600,
+        "actualEndTimeStr": "Sun Oct 18 @ 10:30 PM",
+        "actualStartTime": 1792367870,
+        "actualStartTimeStr": "Sun Oct 18 @ 06:57 PM",
+        "currentTime": 1792373322,
+        "currentTimeStr": "Sun Oct 18 @ 08:28 PM",
+        "playlistName": "Halloween 2026",
+        "scheduledEndTime": 1792380600,
+        "scheduledEndTimeStr": "Sun Oct 18 @ 10:30 PM",
+        "scheduledStartTime": 1792367870,
+        "scheduledStartTimeStr": "Sun Oct 18 @ 06:57 PM",
+        "secondsRemaining": 7278,
+        "stopType": 1,
+        "stopTypeStr": "Hard"
+      },
+      "enabled": 1,
+      "nextPlaylist": {
+        "playlistName": "Halloween Overnight",
+        "scheduledStartTime": 1792380600,
+        "scheduledStartTimeStr": "Sun Oct 18 @ 10:30 PM - (Everyday)"
+      },
+      "status": "playing"
+    },
+    "seconds_elapsed": "65",
+    "seconds_played": "65",
+    "seconds_remaining": "106",
+    "sensors": [
+      {
+        "formatted": "71.1",
+        "label": "CPU: ",
+        "postfix": "",
+        "prefix": "",
+        "value": 71.088,
+        "valueType": "Temperature"
+      }
+    ],
+    "status": 1,
+    "status_name": "playing",
+    "streamSlots": [
+      {
+        "isBackground": false,
+        "mediaFilename": "Halloween 2026 - PENTATONIX - GHOSTBUSTERS (LYRICS).mp4",
+        "minutesTotal": 2,
+        "nodeDescription": "FPP Media Stream 1",
+        "nodeName": "fppd_stream_1",
+        "secondsElapsed": 65,
+        "secondsRemaining": 106,
+        "secondsTotal": 51,
+        "slot": 1,
+        "status": "playing",
+        "subSecondsElapsed": 59,
+        "subSecondsRemaining": 8
+      },
+      {
+        "isBackground": false,
+        "mediaFilename": "",
+        "nodeDescription": "FPP Media Stream 2",
+        "nodeName": "fppd_stream_2",
+        "slot": 2,
+        "status": "idle"
+      },
+      {
+        "isBackground": false,
+        "mediaFilename": "",
+        "nodeDescription": "FPP Media Stream 3",
+        "nodeName": "fppd_stream_3",
+        "slot": 3,
+        "status": "idle"
+      },
+      {
+        "isBackground": false,
+        "mediaFilename": "",
+        "nodeDescription": "FPP Media Stream 4",
+        "nodeName": "fppd_stream_4",
+        "slot": 4,
+        "status": "idle"
+      },
+      {
+        "isBackground": false,
+        "mediaFilename": "",
+        "nodeDescription": "FPP Media Stream 5",
+        "nodeName": "fppd_stream_5",
+        "slot": 5,
+        "status": "idle"
+      }
+    ],
+    "systemUptimeTotalSeconds": 632399,
+    "time": "Sun Oct 18 20:28:42 CDT 2026",
+    "timeStr": "08:28 PM",
+    "timeStrFull": "08:28:42 PM",
+    "time_elapsed": "01:05",
+    "time_remaining": "01:46",
+    "uptime": "04:06:00",
+    "uptimeDays": 0,
+    "uptimeHours": 4,
+    "uptimeMinutes": 6,
+    "uptimeSeconds": 0,
+    "uptimeStr": "0 days, 4 hours, 6 minutes, 0 seconds",
+    "uptimeTotalSeconds": 14760,
+    "uuid": "M1-100000005ab99614",
+    "version": "10.2-3-g00e5f727c",
+    "volume": 49,
+    "warningInfo": [
+      {
+        "id": 27,
+        "message": "Cannot Ping DDP Channel Data Target 192.168.0.239 FPP-LEFT-YARD"
+      },
+      {
+        "id": 27,
+        "message": "Cannot Ping DDP Channel Data Target 192.168.0.213 FPP-LEFT-YARD"
+      },
+      {
+        "id": 0,
+        "message": "Sequence playback cannot keep up with the media; skipping frames to stay in sync"
+      }
+    ],
+    "warnings": [
+      "Cannot Ping DDP Channel Data Target 192.168.0.239 FPP-LEFT-YARD",
+      "Cannot Ping DDP Channel Data Target 192.168.0.213 FPP-LEFT-YARD",
+      "Sequence playback cannot keep up with the media; skipping frames to stay in sync"
+    ],
+    "wifi": [
+      {
+        "interface": "wlan0",
+        "link": 0,
+        "level": 0,
+        "unit": "dBm",
+        "noise": 0,
+        "desc": "weak"
+      }
+    ],
+    "interfaces": [
+      {
+        "ifindex": 2,
+        "ifname": "eth0",
+        "flags": [
+          "BROADCAST",
+          "MULTICAST",
+          "UP",
+          "LOWER_UP"
+        ],
+        "mtu": 1500,
+        "qdisc": "fq",
+        "operstate": "UP",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "ether",
+        "address": "d8:3a:dd:6b:76:0e",
+        "broadcast": "ff:ff:ff:ff:ff:ff",
+        "addr_info": [
+          {
+            "family": "inet",
+            "local": "192.168.0.19",
+            "prefixlen": 24,
+            "metric": 1024,
+            "broadcast": "192.168.0.255",
+            "scope": "global",
+            "dynamic": true,
+            "label": "eth0",
+            "valid_life_time": 83904,
+            "preferred_life_time": 83904
+          },
+          {
+            "family": "inet6",
+            "local": "fde0:e973:8f23:41df:da3a:ddff:fe6b:760e",
+            "prefixlen": 64,
+            "scope": "global",
+            "dynamic": true,
+            "mngtmpaddr": true,
+            "noprefixroute": true,
+            "valid_life_time": 1789,
+            "preferred_life_time": 1789
+          },
+          {
+            "family": "inet6",
+            "local": "fdb2:c553:f40d:8123:da3a:ddff:fe6b:760e",
+            "prefixlen": 64,
+            "scope": "global",
+            "dynamic": true,
+            "mngtmpaddr": true,
+            "noprefixroute": true,
+            "valid_life_time": 1720,
+            "preferred_life_time": 1720
+          },
+          {
+            "family": "inet6",
+            "local": "fe80::da3a:ddff:fe6b:760e",
+            "prefixlen": 64,
+            "scope": "link",
+            "protocol": "kernel_ll",
+            "valid_life_time": 4294967295,
+            "preferred_life_time": 4294967295
+          }
+        ]
+      },
+      {
+        "ifindex": 3,
+        "ifname": "wlan0",
+        "flags": [
+          "BROADCAST",
+          "MULTICAST"
+        ],
+        "mtu": 1500,
+        "qdisc": "noop",
+        "operstate": "DOWN",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "ether",
+        "address": "d8:3a:dd:6b:76:0f",
+        "broadcast": "ff:ff:ff:ff:ff:ff",
+        "addr_info": [],
+        "wifi": {
+          "interface": "wlan0",
+          "link": 0,
+          "level": 0,
+          "unit": "dBm",
+          "noise": 0,
+          "desc": "weak"
+        }
+      }
+    ],
+    "rebootFlag": 0,
+    "restartFlag": 0,
+    "bootDelayActive": 0,
+    "advancedView": {
+      "HostName": "FPP-Master",
+      "HostDescription": "Fpp Master",
+      "Platform": "Raspberry Pi",
+      "Variant": "Pi 4",
+      "SubPlatform": "Raspberry Pi 4 Model B Rev 1.5",
+      "backgroundColor": "",
+      "Mode": "player",
+      "Logo": "Raspberry_Pi_4.svg",
+      "Version": "10.2-3-g00e5f727c",
+      "Branch": "v10.2",
+      "multisync": true,
+      "OSVersion": "v2026-09 (32bit)",
+      "OSRelease": "Raspbian GNU/Linux 13 (trixie)",
+      "channelRanges": "170292-287093",
+      "majorVersion": 10,
+      "minorVersion": 2,
+      "typeId": 13,
+      "channelInputsEnabled": false,
+      "channelOutputsEnabled": true,
+      "uuid": "M1-100000005ab99614",
+      "Utilization": {
+        "CPU": 38.80597014925373,
+        "Memory": 10.7132456076259,
+        "Uptime": "7 days 7:39",
+        "Disk": {
+          "Media": {
+            "Free": 6133075968,
+            "Total": 62582202368
+          },
+          "Root": {
+            "Free": 6133075968,
+            "Total": 62582202368
+          }
+        }
+      },
+      "Kernel": "6.18.52-v8+",
+      "LocalGitVersion": "00e5f727c",
+      "RemoteGitVersion": "00e5f727c",
+      "UpgradeSource": "github.com",
+      "IPs": [
+        "192.168.0.19"
+      ]
+    },
+    "pluginHeaderIndicators": [],
+    "fppdRestartBlocked": {
+      "blocked": false
+    }
+  },
+  "deployment_complete": true,
+  "master_kept_running": true,
+  "playlist_schedule_routing_preserved": true,
+  "master_uploads": 25,
+  "projector_uploads": 25,
+  "deployed_at": "2026-10-19T05:39:34.728578-05:00",
+  "authoring_source_show": "/Users/elliott.ohara/xlights-worktrees/slot-a/Halloween",
+  "all_24_qr_decodes_verified": true,
+  "all_24_signs_and_84_qr_intervals_pixel_verified": true,
+  "pixel_verification_summary": {
+    "sequences": 24,
+    "sign_pixel_samples": 4876,
+    "qr_pixel_samples": 252,
+    "qr_appearances": 84
+  },
+  "all_original_effects_preserved_except_replaced_radio_text": true,
+  "baseline_commit": "5db49cdf6bb31bb98e2a4d70176787de8ec79422",
+  "finished_at": "2026-10-19T05:40:50.397668-05:00",
+  "master_recovery_copies": "/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Verified Master originals"
+}

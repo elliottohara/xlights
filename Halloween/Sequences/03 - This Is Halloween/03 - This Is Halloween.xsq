@@ -100,7 +100,6 @@
     <ColorPalette>C_BUTTON_Palette1=#BC9D80,C_BUTTON_Palette2=#4370CF,C_BUTTON_Palette3=#00FF00,C_BUTTON_Palette4=#1E171F,C_BUTTON_Palette5=#523D64,C_BUTTON_Palette6=#DA6339,C_BUTTON_Palette7=#D3A047,C_BUTTON_Palette8=#FFECA7,C_CHECKBOX_Palette8=1,C_SLIDER_Color_HueAdjust=14</ColorPalette>
     <ColorPalette>C_BUTTON_Palette1=#F3F7FA,C_BUTTON_Palette2=#A64417,C_BUTTON_Palette3=#BC9D80,C_BUTTON_Palette4=#1E171F,C_BUTTON_Palette5=#523D64,C_BUTTON_Palette6=#DA6339,C_BUTTON_Palette7=#D3A047,C_BUTTON_Palette8=#FFECA7,C_CHECKBOX_Palette2=1</ColorPalette>
     <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1</ColorPalette>
-    <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#FF0000,C_BUTTON_Palette3=#00FF00,C_BUTTON_Palette4=#0000FF,C_BUTTON_Palette5=#FFFF00,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#00FFFF,C_BUTTON_Palette8=#FF00FF,C_CHECKBOX_Palette1=1</ColorPalette>
     <ColorPalette>C_BUTTON_Palette1=#BC9D80,C_BUTTON_Palette2=#4370CF,C_BUTTON_Palette3=#00FF00,C_BUTTON_Palette4=#1E171F,C_BUTTON_Palette5=#523D64,C_BUTTON_Palette6=#DA6339,C_BUTTON_Palette7=#D3A047,C_BUTTON_Palette8=#FFECA7,C_CHECKBOX_Palette3=1,C_CHECKBOX_Palette7=1,C_CHECKBOX_Palette8=1</ColorPalette>
   </ColorPalettes>
   <EffectDB>
@@ -445,7 +444,7 @@
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=Round,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
     <Effect>E_CHOICE_VUMeter_TimingTrack=Skull,E_CHOICE_VUMeter_Type=Timing Event Color,E_FILEPICKERCTRL_SVGFile=</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Pumpkin face,E_CHOICE_Faces_TimingTrack=Skull,E_CHOICE_Faces_UseState=outline with stem,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
-    <Effect>B_CUSTOM_SubBuffer=43.00x-7.00x100.00x36.00x0.00x0.00,E_CHECKBOX_Text_Color_PerWord=0,E_CHECKBOX_Text_PixelOffsets=0,E_CHOICE_Text_Count=none,E_CHOICE_Text_Dir=none,E_CHOICE_Text_Effect=normal,E_CHOICE_Text_Font=Use OS Fonts,E_FILEPICKERCTRL_Text_File=Sequences/03 - This Is Halloween/Media/Christmas-f4a98e/tuneto.txt,E_FONTPICKER_Text_Font=.applesystemuifont 18 utf-8,E_SLIDER_Text_XEnd=0,E_SLIDER_Text_XStart=0,E_SLIDER_Text_YEnd=0,E_SLIDER_Text_YStart=0,E_TEXTCTRL_Text=,E_TEXTCTRL_Text_Speed=10</Effect>
+    <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/tune-to-website.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
     <Effect>E_CHECKBOX_SynchroniseWithAudio=0,E_CHECKBOX_Video_AspectRatio=0,E_CHECKBOX_Video_TransparentBlack=0,E_CHOICE_Video_DurationTreatment=Normal,E_FILEPICKERCTRL_Video_Filename=Sequences/03 - This Is Halloween/Media/Videos-0a9e08/The Nightmare Before Christmas (This Is Halloween Scene).mp4,E_TEXTCTRL_Duration=3:08.433,E_TEXTCTRL_SampleSpacing=0,E_TEXTCTRL_Video_CropBottom=0,E_TEXTCTRL_Video_CropLeft=0,E_TEXTCTRL_Video_CropRight=100,E_TEXTCTRL_Video_CropTop=100,E_TEXTCTRL_Video_Starttime=0,E_TEXTCTRL_Video_TransparentBlack=0,T_TEXTCTRL_Fadein=.5,T_TEXTCTRL_Fadeout=1</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Warewolf [03-This-Is-Halloween],E_CHOICE_Faces_TimingTrack=Flat,T_TEXTCTRL_Fadein=.5,T_TEXTCTRL_Fadeout=.5</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Mummy [03-This-Is-Halloween],E_CHOICE_Faces_TimingTrack=Flat,T_TEXTCTRL_Fadein=.5,T_TEXTCTRL_Fadeout=.5</Effect>
@@ -457,6 +456,7 @@
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=witch [03-This-Is-Halloween],E_CHOICE_Faces_TimingTrack=Flat,T_TEXTCTRL_Fadein=.5,T_TEXTCTRL_Fadeout=.5</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=warewolf [03-This-Is-Halloween],E_CHOICE_Faces_TimingTrack=Flat,T_TEXTCTRL_Fadein=.5,T_TEXTCTRL_Fadeout=.5</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Frankenstein [03-This-Is-Halloween],E_CHOICE_Faces_TimingTrack=Flat,T_TEXTCTRL_Fadein=.5,T_TEXTCTRL_Fadeout=.5</Effect>
+    <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/projector-website-qr.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
     <Effect>E_CHECKBOX_Shockwave_Blend_Edges=1,E_CHECKBOX_Shockwave_Scale=0,E_NOTEBOOK_Shockwave=Position,E_SLIDER_Shockwave_Accel=0,E_SLIDER_Shockwave_CenterX=50,E_SLIDER_Shockwave_End_Radius=33,E_SLIDER_Shockwave_End_Width=24,E_SLIDER_Shockwave_Start_Radius=1,E_SLIDER_Shockwave_Start_Width=5,E_VALUECURVE_Shockwave_CenterY=Active=TRUE|Id=ID_VALUECURVE_Shockwave_CenterY|Type=Ramp|Min=0.00|Max=100.00|P2=100.00|RV=TRUE|</Effect>
     <Effect>E_CHECKBOX_Shockwave_Blend_Edges=1,E_CHECKBOX_Shockwave_Scale=0,E_NOTEBOOK_Shockwave=Position,E_SLIDER_Shockwave_Accel=0,E_SLIDER_Shockwave_CenterX=50,E_SLIDER_Shockwave_End_Radius=29,E_SLIDER_Shockwave_End_Width=35,E_SLIDER_Shockwave_Start_Radius=1,E_SLIDER_Shockwave_Start_Width=5,E_VALUECURVE_Shockwave_CenterY=Active=TRUE|Id=ID_VALUECURVE_Shockwave_CenterY|Type=Ramp|Min=0.00|Max=100.00|P1=100.00|RV=TRUE|</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_TimingTrack=Horns,E_CHOICE_Faces_UseState=Teddy RedBow static,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
@@ -3123,8 +3123,9 @@
     </Element>
     <Element type="model" name="Tune To">
       <EffectLayer>
-        <Effect ref="341" name="Text" startTime="0" endTime="196550" palette="83" />
+        <Effect ref="341" name="Pictures" startTime="0" endTime="196550" palette="82" />
       </EffectLayer>
+      <EffectLayer />
       <EffectLayer>
         <Effect ref="342" name="Video" startTime="0" endTime="188400" palette="57" />
       </EffectLayer>
@@ -3153,6 +3154,11 @@
       </EffectLayer>
     </Element>
     <Element type="model" name="Projector">
+      <EffectLayer>
+        <Effect ref="353" name="Pictures" startTime="10000" endTime="25000" palette="82" />
+        <Effect ref="353" name="Pictures" id="1" startTime="70000" endTime="85000" palette="82" />
+        <Effect ref="353" name="Pictures" id="2" startTime="130000" endTime="145000" palette="82" />
+      </EffectLayer>
       <EffectLayer>
         <Effect ref="342" name="Video" startTime="0" endTime="188400" palette="57" />
       </EffectLayer>
@@ -4798,39 +4804,39 @@
     </Element>
     <Element type="model" name="Rose Bush Bank 1">
       <EffectLayer>
-        <Effect ref="353" name="Shockwave" startTime="14550" endTime="15650" palette="84" />
-        <Effect ref="353" name="Shockwave" id="1" startTime="18800" endTime="19900" palette="84" />
-        <Effect ref="354" name="Shockwave" id="2" startTime="143450" endTime="144200" palette="4" />
-        <Effect ref="354" name="Shockwave" id="3" startTime="149200" endTime="149900" palette="4" />
-        <Effect ref="354" name="Shockwave" id="4" startTime="153500" endTime="154250" palette="4" />
+        <Effect ref="354" name="Shockwave" startTime="14550" endTime="15650" palette="83" />
+        <Effect ref="354" name="Shockwave" id="1" startTime="18800" endTime="19900" palette="83" />
+        <Effect ref="355" name="Shockwave" id="2" startTime="143450" endTime="144200" palette="4" />
+        <Effect ref="355" name="Shockwave" id="3" startTime="149200" endTime="149900" palette="4" />
+        <Effect ref="355" name="Shockwave" id="4" startTime="153500" endTime="154250" palette="4" />
       </EffectLayer>
     </Element>
     <Element type="model" name="Rose Bush Bank 2">
       <EffectLayer>
-        <Effect ref="353" name="Shockwave" startTime="15250" endTime="16350" palette="84" />
-        <Effect ref="353" name="Shockwave" id="1" startTime="18100" endTime="19200" palette="84" />
-        <Effect ref="354" name="Shockwave" id="2" startTime="144200" endTime="144900" palette="4" />
-        <Effect ref="354" name="Shockwave" id="3" startTime="147100" endTime="147750" palette="4" />
-        <Effect ref="354" name="Shockwave" id="4" startTime="149900" endTime="150650" palette="4" />
-        <Effect ref="354" name="Shockwave" id="5" startTime="152800" endTime="153500" palette="4" />
-        <Effect ref="354" name="Shockwave" id="6" startTime="154250" endTime="154950" palette="4" />
+        <Effect ref="354" name="Shockwave" startTime="15250" endTime="16350" palette="83" />
+        <Effect ref="354" name="Shockwave" id="1" startTime="18100" endTime="19200" palette="83" />
+        <Effect ref="355" name="Shockwave" id="2" startTime="144200" endTime="144900" palette="4" />
+        <Effect ref="355" name="Shockwave" id="3" startTime="147100" endTime="147750" palette="4" />
+        <Effect ref="355" name="Shockwave" id="4" startTime="149900" endTime="150650" palette="4" />
+        <Effect ref="355" name="Shockwave" id="5" startTime="152800" endTime="153500" palette="4" />
+        <Effect ref="355" name="Shockwave" id="6" startTime="154250" endTime="154950" palette="4" />
       </EffectLayer>
     </Element>
     <Element type="model" name="Rose Bush Bank 3">
       <EffectLayer>
-        <Effect ref="353" name="Shockwave" startTime="16000" endTime="17400" palette="84" />
-        <Effect ref="353" name="Shockwave" id="1" startTime="17400" endTime="18450" palette="84" />
-        <Effect ref="354" name="Shockwave" id="2" startTime="144900" endTime="145650" palette="4" />
-        <Effect ref="354" name="Shockwave" id="3" startTime="146350" endTime="147100" palette="4" />
-        <Effect ref="354" name="Shockwave" id="4" startTime="150650" endTime="151350" palette="4" />
-        <Effect ref="354" name="Shockwave" id="5" startTime="152050" endTime="152800" palette="4" />
+        <Effect ref="354" name="Shockwave" startTime="16000" endTime="17400" palette="83" />
+        <Effect ref="354" name="Shockwave" id="1" startTime="17400" endTime="18450" palette="83" />
+        <Effect ref="355" name="Shockwave" id="2" startTime="144900" endTime="145650" palette="4" />
+        <Effect ref="355" name="Shockwave" id="3" startTime="146350" endTime="147100" palette="4" />
+        <Effect ref="355" name="Shockwave" id="4" startTime="150650" endTime="151350" palette="4" />
+        <Effect ref="355" name="Shockwave" id="5" startTime="152050" endTime="152800" palette="4" />
       </EffectLayer>
     </Element>
     <Element type="model" name="Rose Bush Bank 4">
       <EffectLayer>
-        <Effect ref="353" name="Shockwave" startTime="16700" endTime="17750" palette="84" />
-        <Effect ref="354" name="Shockwave" id="1" startTime="145650" endTime="146350" palette="4" />
-        <Effect ref="354" name="Shockwave" id="2" startTime="151350" endTime="152050" palette="4" />
+        <Effect ref="354" name="Shockwave" startTime="16700" endTime="17750" palette="83" />
+        <Effect ref="355" name="Shockwave" id="1" startTime="145650" endTime="146350" palette="4" />
+        <Effect ref="355" name="Shockwave" id="2" startTime="151350" endTime="152050" palette="4" />
       </EffectLayer>
     </Element>
     <Element type="model" name="Elliott - EFL Teddy">
@@ -4838,27 +4844,27 @@
       <EffectLayer />
       <EffectLayer />
       <EffectLayer>
-        <Effect ref="355" name="Faces" startTime="20350" endTime="28900" palette="82" />
-        <Effect ref="355" name="Faces" id="1" startTime="31850" endTime="34600" palette="82" />
-        <Effect ref="355" name="Faces" id="2" startTime="37550" endTime="38600" palette="82" />
-        <Effect ref="355" name="Faces" id="3" startTime="40450" endTime="43300" palette="82" />
-        <Effect ref="355" name="Faces" id="4" startTime="48400" endTime="59750" palette="82" />
-        <Effect ref="355" name="Faces" id="5" startTime="61150" endTime="66650" palette="82" />
-        <Effect ref="355" name="Faces" id="6" startTime="72700" endTime="80500" palette="82" />
-        <Effect ref="355" name="Faces" id="7" startTime="92800" endTime="95700" palette="82" />
-        <Effect ref="355" name="Faces" id="8" startTime="97750" endTime="100550" palette="82" />
-        <Effect ref="355" name="Faces" id="9" startTime="111600" endTime="111800" palette="82" />
-        <Effect ref="355" name="Faces" id="10" startTime="120650" endTime="126150" palette="82" />
-        <Effect ref="355" name="Faces" id="11" startTime="134950" endTime="137600" palette="82" />
-        <Effect ref="355" name="Faces" id="12" startTime="142200" endTime="146250" palette="82" />
-        <Effect ref="355" name="Faces" id="13" startTime="155100" endTime="160800" palette="82" />
-        <Effect ref="355" name="Faces" id="14" startTime="162300" endTime="180350" palette="82" />
+        <Effect ref="356" name="Faces" startTime="20350" endTime="28900" palette="82" />
+        <Effect ref="356" name="Faces" id="1" startTime="31850" endTime="34600" palette="82" />
+        <Effect ref="356" name="Faces" id="2" startTime="37550" endTime="38600" palette="82" />
+        <Effect ref="356" name="Faces" id="3" startTime="40450" endTime="43300" palette="82" />
+        <Effect ref="356" name="Faces" id="4" startTime="48400" endTime="59750" palette="82" />
+        <Effect ref="356" name="Faces" id="5" startTime="61150" endTime="66650" palette="82" />
+        <Effect ref="356" name="Faces" id="6" startTime="72700" endTime="80500" palette="82" />
+        <Effect ref="356" name="Faces" id="7" startTime="92800" endTime="95700" palette="82" />
+        <Effect ref="356" name="Faces" id="8" startTime="97750" endTime="100550" palette="82" />
+        <Effect ref="356" name="Faces" id="9" startTime="111600" endTime="111800" palette="82" />
+        <Effect ref="356" name="Faces" id="10" startTime="120650" endTime="126150" palette="82" />
+        <Effect ref="356" name="Faces" id="11" startTime="134950" endTime="137600" palette="82" />
+        <Effect ref="356" name="Faces" id="12" startTime="142200" endTime="146250" palette="82" />
+        <Effect ref="356" name="Faces" id="13" startTime="155100" endTime="160800" palette="82" />
+        <Effect ref="356" name="Faces" id="14" startTime="162300" endTime="180350" palette="82" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Dark Helmet">
       <EffectLayer>
-        <Effect ref="356" name="Faces" startTime="103500" endTime="105600" palette="82" />
-        <Effect ref="357" name="Faces" id="1" startTime="106450" endTime="111600" palette="82" />
+        <Effect ref="357" name="Faces" startTime="103500" endTime="105600" palette="82" />
+        <Effect ref="358" name="Faces" id="1" startTime="106450" endTime="111600" palette="82" />
       </EffectLayer>
     </Element>
     <Element type="model" name="Arches - Middle">

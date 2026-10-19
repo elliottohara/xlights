@@ -386,7 +386,7 @@
     <Effect>B_CHOICE_BufferStyle=Per Model Per Preview,B_CHOICE_PerPreviewCamera=2D,E_CHOICE_State_Color=Graduate,E_CHOICE_State_Mode=Default,E_CHOICE_State_StateDefinition=BAT WINGS,E_CHOICE_State_TimingTrack=Cymbals,E_SLIDER_State_Fade_Time=0</Effect>
     <Effect>B_CHOICE_BufferStyle=Per Model Per Preview,B_CHOICE_PerPreviewCamera=2D,E_CHOICE_State_Color=Graduate,E_CHOICE_State_Mode=Default,E_CHOICE_State_StateDefinition=BAT WINGS,E_CHOICE_State_TimingTrack=Metronome,E_SLIDER_State_Fade_Time=0,T_TEXTCTRL_Fadeout=.25</Effect>
     <Effect>B_CHOICE_BufferStyle=Overlay - Scaled,B_SLIDER_Blur=2,E_CHECKBOX_Meteors_UseMusic=0,E_CHOICE_Meteors_Effect=Down,E_CHOICE_Meteors_Type=Palette,E_SLIDER_Meteors_Count=20,E_SLIDER_Meteors_Length=25,E_SLIDER_Meteors_Speed=29,E_SLIDER_Meteors_Swirl_Intensity=0,E_SLIDER_Meteors_WamupFrames=54,T_TEXTCTRL_Fadein=1,T_TEXTCTRL_Fadeout=0.25</Effect>
-    <Effect>E_CHECKBOX_Text_Color_PerWord=0,E_CHECKBOX_Text_PixelOffsets=0,E_CHOICE_Text_Count=none,E_CHOICE_Text_Dir=none,E_CHOICE_Text_Effect=normal,E_CHOICE_Text_Font=Use OS Fonts,E_FILEPICKERCTRL_Text_File=Sequences/The Dead Dance/Media/Christmas-f4a98e/tuneto.txt,E_FONTPICKER_Text_Font=italic 'gill sans' 36 utf-8,E_SLIDER_Text_XEnd=0,E_SLIDER_Text_XStart=0,E_SLIDER_Text_YEnd=0,E_SLIDER_Text_YStart=0,E_TEXTCTRL_Text=,E_TEXTCTRL_Text_Speed=10</Effect>
+    <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/tune-to-website.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
     <Effect>E_CHOICE_Warp_Treatment_APPLYLAST=constant,E_CHOICE_Warp_Type=mirror,E_SLIDER_Warp_X=50,E_SLIDER_Warp_Y=50,E_TEXTCTRL1=The warp effect distorts the pixels in the layers below it. The Canvas option in Layer Blending must be enabled for it to work.,E_TEXTCTRL_Warp_X=50,E_TEXTCTRL_Warp_Y=50,T_CHECKBOX_Canvas=1,T_TEXTCTRL_Fadeout=.25</Effect>
     <Effect>B_CHOICE_BufferStyle=Per Preview,E_CHECKBOX_Pinwheel_Rotation=1,E_CHOICE_Pinwheel_3D=3D,E_CHOICE_Pinwheel_Style=New Render Method,E_SLIDER_PinwheelXC=0,E_SLIDER_PinwheelYC=0,E_SLIDER_Pinwheel_ArmSize=100,E_SLIDER_Pinwheel_Arms=4,E_SLIDER_Pinwheel_Offset=0,E_SLIDER_Pinwheel_Speed=8,E_SLIDER_Pinwheel_Thickness=50,E_VALUECURVE_Pinwheel_Twist=Active=TRUE|Id=ID_VALUECURVE_Pinwheel_Twist|Type=Square|Min=-360.00|Max=360.00|P1=122.40|P2=-122.40|P3=2.00|RV=TRUE|,T_TEXTCTRL_Fadein=.25,T_TEXTCTRL_Fadeout=.25</Effect>
     <Effect>B_VALUECURVE_Zoom=Active=TRUE|Id=ID_VALUECURVE_Zoom|Type=Ramp|Min=0.00|Max=30.00|P1=10.00|RV=TRUE|,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale Keep Aspect Ratio,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=Sequences/The Dead Dance/Media/Vendor/Images/Dead Doll.png,E_TEXTCTRL_Pictures_FrameRateAdj=1.0,E_TEXTCTRL_Pictures_Speed=1.0,E_TEXTCTRL_Pictures_TransparentBlack=0</Effect>
@@ -414,6 +414,7 @@
     <Effect>E_CHECKBOX_SynchroniseWithAudio=0,E_CHECKBOX_Video_AspectRatio=0,E_CHECKBOX_Video_TransparentBlack=0,E_CHOICE_Video_DurationTreatment=Manual and Loop,E_FILEPICKERCTRL_Video_Filename=Sequences/The Dead Dance/Media/Vendor/Videos/Slowmotion Dancing 2.mp4,E_TEXTCTRL_Duration=0:08.000,E_TEXTCTRL_SampleSpacing=0,E_TEXTCTRL_Video_CropBottom=0,E_TEXTCTRL_Video_CropLeft=0,E_TEXTCTRL_Video_CropRight=100,E_TEXTCTRL_Video_CropTop=100,E_TEXTCTRL_Video_Speed=0.50,E_TEXTCTRL_Video_Starttime=0,E_TEXTCTRL_Video_TransparentBlack=0,T_TEXTCTRL_Fadein=.25,T_TEXTCTRL_Fadeout=2</Effect>
     <Effect>E_CHECKBOX_SynchroniseWithAudio=0,E_CHECKBOX_Video_AspectRatio=0,E_CHECKBOX_Video_TransparentBlack=0,E_CHOICE_Video_DurationTreatment=Normal,E_FILEPICKERCTRL_Video_Filename=Sequences/The Dead Dance/Media/Vendor/Videos/Dancers 4.mp4,E_TEXTCTRL_Duration=0:30.041,E_TEXTCTRL_SampleSpacing=0,E_TEXTCTRL_Video_CropBottom=0,E_TEXTCTRL_Video_CropLeft=0,E_TEXTCTRL_Video_CropRight=100,E_TEXTCTRL_Video_CropTop=100,E_TEXTCTRL_Video_Starttime=0.00,E_TEXTCTRL_Video_TransparentBlack=0,T_TEXTCTRL_Fadein=.25,T_TEXTCTRL_Fadeout=.5</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_TimingTrack=Gaga,E_CHOICE_Faces_UseState=Teddy RedBow static,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
+    <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/projector-website-qr.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
     <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=Sequences/The Dead Dance/Media/Voting/occasional-voting.gif,E_TEXTCTRL_Pictures_FrameRateAdj=1.0,E_TEXTCTRL_Pictures_Speed=1.0,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
   </EffectDB>
   <SequenceMedia>
@@ -2356,8 +2357,9 @@
     </Element>
     <Element type="model" name="Tune To">
       <EffectLayer>
-        <Effect ref="307" name="Text" startTime="0" endTime="228500" palette="36" />
+        <Effect ref="307" name="Pictures" startTime="0" endTime="228500" palette="50" />
       </EffectLayer>
+      <EffectLayer />
       <EffectLayer>
         <Effect ref="308" name="Warp" startTime="194550" endTime="195350" palette="4" />
       </EffectLayer>
@@ -7494,7 +7496,13 @@
     </Element>
     <Element type="model" name="Projector">
       <EffectLayer>
-        <Effect ref="335" name="Pictures" startTime="109700" endTime="125700" palette="50" />
+        <Effect ref="335" name="Pictures" startTime="10000" endTime="25000" palette="50" />
+        <Effect ref="335" name="Pictures" id="1" startTime="70000" endTime="85000" palette="50" />
+        <Effect ref="335" name="Pictures" id="2" startTime="130000" endTime="145000" palette="50" />
+        <Effect ref="335" name="Pictures" id="3" startTime="190000" endTime="205000" palette="50" />
+      </EffectLayer>
+      <EffectLayer>
+        <Effect ref="336" name="Pictures" startTime="109700" endTime="125700" palette="50" />
       </EffectLayer>
       <EffectLayer />
     </Element>

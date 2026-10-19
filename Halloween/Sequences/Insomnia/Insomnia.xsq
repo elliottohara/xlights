@@ -39,7 +39,6 @@
     <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#B93ED3,C_BUTTON_Palette3=#00FF00,C_BUTTON_Palette4=#0000FF,C_BUTTON_Palette5=#FFFF00,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#00FFFF,C_BUTTON_Palette8=#FF00FF,C_CHECKBOX_Palette2=1</ColorPalette>
     <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#B93ED3,C_BUTTON_Palette3=#00FF00,C_BUTTON_Palette4=#0000FF,C_BUTTON_Palette5=#FFFF00,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#00FFFF,C_BUTTON_Palette8=#FF00FF,C_CHECKBOX_Palette3=1</ColorPalette>
     <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1</ColorPalette>
-    <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#FF0000,C_BUTTON_Palette3=#00FF00,C_BUTTON_Palette4=#0000FF,C_BUTTON_Palette5=#FFFF00,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#00FFFF,C_BUTTON_Palette8=#FF00FF,C_CHECKBOX_Palette1=1</ColorPalette>
   </ColorPalettes>
   <EffectDB>
     <Effect>E_CHOICE_VUMeter_TimingTrack=floods,E_CHOICE_VUMeter_Type=Timing Event Pulse Color,E_FILEPICKERCTRL_SVGFile=,E_SLIDER_VUMeter_Bars=6,E_SLIDER_VUMeter_YOffset=0</Effect>
@@ -114,8 +113,9 @@
     <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=Sequences/Insomnia/Media/Voting/occasional-voting.gif,E_TEXTCTRL_Pictures_FrameRateAdj=1.0,E_TEXTCTRL_Pictures_Speed=1.0,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
     <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=1,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=Sequences/Insomnia/Media/Images-57b64d/red eye.gif,E_TEXTCTRL_Pictures_FrameRateAdj=1.0,E_TEXTCTRL_Pictures_Speed=1.0,E_TEXTCTRL_Pictures_TransparentBlack=0,T_TEXTCTRL_Fadein=1.00,T_TEXTCTRL_Fadeout=2.00,X_Effect_RenderDisabled=True</Effect>
     <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=1,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesEndXC=0,E_SLIDER_PicturesEndYC=0,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=Sequences/Insomnia/Media/Images-57b64d/red eye.gif,E_TEXTCTRL_Pictures_FrameRateAdj=1.0,E_TEXTCTRL_Pictures_Speed=1.0,E_TEXTCTRL_Pictures_TransparentBlack=0,T_SLIDER_In_Transition_Adjust=50,T_SLIDER_Out_Transition_Adjust=50,T_TEXTCTRL_Fadein=1.00,T_TEXTCTRL_Fadeout=2.00,X_Effect_RenderDisabled=True</Effect>
+    <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/projector-website-qr.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
     <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=1,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesEndXC=0,E_SLIDER_PicturesEndYC=0,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=Sequences/Insomnia/Media/Images-57b64d/red eye.gif,E_TEXTCTRL_Pictures_FrameRateAdj=1.0,E_TEXTCTRL_Pictures_Speed=1.0,E_TEXTCTRL_Pictures_TransparentBlack=0,T_TEXTCTRL_Fadein=1.00,T_TEXTCTRL_Fadeout=2.00,X_Effect_RenderDisabled=True</Effect>
-    <Effect>E_CHECKBOX_Text_Color_PerWord=0,E_CHECKBOX_Text_PixelOffsets=0,E_CHOICE_Text_Count=none,E_CHOICE_Text_Dir=none,E_CHOICE_Text_Effect=normal,E_CHOICE_Text_Font=Use OS Fonts,E_FILEPICKERCTRL_Text_File=Sequences/Insomnia/Media/Christmas-f4a98e/tuneto.txt,E_FONTPICKER_Text_Font=italic 'gill sans' 36 utf-8,E_SLIDER_Text_XEnd=0,E_SLIDER_Text_XStart=0,E_SLIDER_Text_YEnd=0,E_SLIDER_Text_YStart=0,E_TEXTCTRL_Text=,E_TEXTCTRL_Text_Speed=10</Effect>
+    <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/tune-to-website.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=Lyrics,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_TimingTrack=Lyrics,E_CHOICE_Faces_UseState=Teddy RedBow static,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Pumpkin face,E_CHOICE_Faces_TimingTrack=Lyrics,E_CHOICE_Faces_UseState=outline with stem,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
@@ -1821,7 +1821,13 @@
     </Element>
     <Element type="model" name="Projector">
       <EffectLayer>
-        <Effect ref="72" name="Pictures" startTime="168150" endTime="183300" palette="9" />
+        <Effect ref="72" name="Pictures" startTime="10000" endTime="25000" palette="21" />
+        <Effect ref="72" name="Pictures" id="1" startTime="70000" endTime="85000" palette="21" />
+        <Effect ref="72" name="Pictures" id="2" startTime="130000" endTime="145000" palette="21" />
+        <Effect ref="72" name="Pictures" id="3" startTime="190000" endTime="205000" palette="21" />
+      </EffectLayer>
+      <EffectLayer>
+        <Effect ref="73" name="Pictures" startTime="168150" endTime="183300" palette="9" />
       </EffectLayer>
       <EffectLayer>
         <Effect ref="70" name="Pictures" startTime="126400" endTime="127700" palette="9" />
@@ -2166,8 +2172,9 @@
     </Element>
     <Element type="model" name="Tune To">
       <EffectLayer>
-        <Effect ref="73" name="Text" startTime="0" endTime="214825" palette="22" />
+        <Effect ref="74" name="Pictures" startTime="0" endTime="214825" palette="21" />
       </EffectLayer>
+      <EffectLayer />
       <EffectLayer>
         <Effect ref="70" name="Pictures" startTime="168150" endTime="183300" palette="9" />
       </EffectLayer>
@@ -2270,10 +2277,10 @@
     </Element>
     <Element type="model" name="GE Evil Clown">
       <EffectLayer>
-        <Effect ref="74" name="Faces" startTime="30625" endTime="42350" palette="21" />
-        <Effect ref="74" name="Faces" id="1" startTime="134500" endTime="136800" palette="21" />
-        <Effect ref="74" name="Faces" id="2" startTime="152425" endTime="154625" palette="21" />
-        <Effect ref="74" name="Faces" id="3" startTime="167525" endTime="169800" palette="21" />
+        <Effect ref="75" name="Faces" startTime="30625" endTime="42350" palette="21" />
+        <Effect ref="75" name="Faces" id="1" startTime="134500" endTime="136800" palette="21" />
+        <Effect ref="75" name="Faces" id="2" startTime="152425" endTime="154625" palette="21" />
+        <Effect ref="75" name="Faces" id="3" startTime="167525" endTime="169800" palette="21" />
       </EffectLayer>
     </Element>
     <Element type="model" name="Elliott - EFL Teddy">
@@ -2281,7 +2288,7 @@
       <EffectLayer />
       <EffectLayer />
       <EffectLayer>
-        <Effect ref="75" name="Faces" startTime="78825" endTime="133075" palette="21" />
+        <Effect ref="76" name="Faces" startTime="78825" endTime="133075" palette="21" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Franken Monster (2)">
@@ -2295,10 +2302,10 @@
     </Element>
     <Element type="model" name="GE Singing Pumpkin">
       <EffectLayer>
-        <Effect ref="76" name="Faces" startTime="44050" endTime="44850" palette="21" />
-        <Effect ref="76" name="Faces" id="1" startTime="47675" endTime="49825" palette="21" />
-        <Effect ref="76" name="Faces" id="2" startTime="182675" endTime="185475" palette="21" />
-        <Effect ref="76" name="Faces" id="3" startTime="197800" endTime="200600" palette="21" />
+        <Effect ref="77" name="Faces" startTime="44050" endTime="44850" palette="21" />
+        <Effect ref="77" name="Faces" id="1" startTime="47675" endTime="49825" palette="21" />
+        <Effect ref="77" name="Faces" id="2" startTime="182675" endTime="185475" palette="21" />
+        <Effect ref="77" name="Faces" id="3" startTime="197800" endTime="200600" palette="21" />
       </EffectLayer>
     </Element>
     <Element type="model" name="2nd floor far right">

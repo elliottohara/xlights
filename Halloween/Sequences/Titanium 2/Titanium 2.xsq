@@ -130,10 +130,11 @@
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Tree [01-Abracadabra],E_CHOICE_Faces_TimingTrack=Lyrics</Effect>
     <Effect>E_CHECKBOX_Shockwave_Blend_Edges=1,E_CHECKBOX_Shockwave_Scale=0,E_NOTEBOOK_Shockwave=Position,E_SLIDER_Shockwave_Accel=0,E_SLIDER_Shockwave_CenterX=50,E_SLIDER_Shockwave_CenterY=50,E_SLIDER_Shockwave_End_Radius=18,E_SLIDER_Shockwave_End_Width=10,E_SLIDER_Shockwave_Start_Radius=1,E_SLIDER_Shockwave_Start_Width=5,X_Effect_Locked=True</Effect>
     <Effect>E_CHECKBOX_Shockwave_Blend_Edges=1,E_CHECKBOX_Shockwave_Scale=0,E_NOTEBOOK_Shockwave=Position,E_SLIDER_Shockwave_Accel=0,E_SLIDER_Shockwave_CenterX=50,E_SLIDER_Shockwave_CenterY=50,E_SLIDER_Shockwave_End_Radius=24,E_SLIDER_Shockwave_End_Width=10,E_SLIDER_Shockwave_Start_Radius=1,E_SLIDER_Shockwave_Start_Width=17,X_Effect_Locked=True</Effect>
-    <Effect>E_CHOICE_Text_Dir=none,E_CHOICE_Text_Effect=normal,E_CHOICE_Text_Font=Use OS Fonts,E_FILEPICKERCTRL_Text_File=,E_FONTPICKER_Text_Font=Arial 24,E_TEXTCTRL_Text=Tune to 87.9,E_TEXTCTRL_Text_Speed=10,T_CHOICE_LayerMethod=Effect 1</Effect>
+    <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/tune-to-website.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=Titanium - Aligned Lead</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Titanium - Aligned Chorus</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Pumpkin face,E_CHOICE_Faces_TimingTrack=Titanium - Aligned Chorus,E_CHOICE_Faces_UseState=outline with stem</Effect>
+    <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/projector-website-qr.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
   </EffectDB>
   <SequenceMedia />
   <DataLayers>
@@ -211,6 +212,7 @@
     <Element collapsed="false" type="model" name="GE Singing Pumpkin" visible="true" />
     <Element collapsed="false" type="timing" name="Titanium - Aligned Lead" visible="true" views="" active="false" />
     <Element collapsed="false" type="timing" name="Titanium - Aligned Chorus" visible="true" views="" active="false" />
+    <Element collapsed="false" type="model" name="Projector" visible="true" />
   </DisplayElements>
   <ElementEffects>
     <Element type="model" name="Whole Scene w Matrixes [01-Abracadabra]">
@@ -5267,10 +5269,11 @@
       </EffectLayer>
     </Element>
     <Element type="model" name="Tune To">
-      <EffectLayer />
       <EffectLayer>
-        <Effect ref="78" name="Text" startTime="0" endTime="245050" palette="32" />
+        <Effect ref="78" name="Pictures" startTime="0" endTime="245050" palette="32" />
       </EffectLayer>
+      <EffectLayer />
+      <EffectLayer />
     </Element>
     <Element type="model" name="GE Evil Clown">
       <EffectLayer>
@@ -6795,6 +6798,14 @@
         <Effect label="E" startTime="227900" endTime="228800" />
         <Effect label="U" startTime="228800" endTime="230550" />
         <Effect label="MBP" startTime="230550" endTime="231000" />
+      </EffectLayer>
+    </Element>
+    <Element type="model" name="Projector">
+      <EffectLayer>
+        <Effect ref="82" name="Pictures" startTime="10000" endTime="25000" palette="32" />
+        <Effect ref="82" name="Pictures" id="1" startTime="70000" endTime="85000" palette="32" />
+        <Effect ref="82" name="Pictures" id="2" startTime="130000" endTime="145000" palette="32" />
+        <Effect ref="82" name="Pictures" id="3" startTime="190000" endTime="205000" palette="32" />
       </EffectLayer>
     </Element>
   </ElementEffects>

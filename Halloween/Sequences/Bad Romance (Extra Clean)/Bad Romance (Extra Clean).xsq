@@ -248,7 +248,7 @@
     <Effect>E_0FILEPICKERCTRL_IFS=Sequences/Bad Romance (Extra Clean)/Media/Shaders-597f90/RGBLaserGlobe_125.fs,E_CHOICE_SHADERXYZZY_uColMode=Shader Defaults ,E_SLIDER_SHADERXYZZY_uDisperse=101,E_SLIDER_SHADERXYZZY_uIntensity=200,E_SLIDER_SHADERXYZZY_uOffsetX=0,E_SLIDER_SHADERXYZZY_uOffsetY=-11,E_SLIDER_Shader_Speed=100,E_TEXTCTRL_Shader_LeadIn=0,E_TEXTCTRL_Shader_Offset_X=0,E_TEXTCTRL_Shader_Offset_Y=0,E_TEXTCTRL_Shader_Zoom=100,T_CHECKBOX_Canvas=1</Effect>
     <Effect>E_0FILEPICKERCTRL_IFS=Sequences/Bad Romance (Extra Clean)/Media/Shaders-597f90/RGBLaserGlobe_126.fs,E_CHOICE_SHADERXYZZY_uColMode=Shader Defaults ,E_SLIDER_SHADERXYZZY_uDisperse=101,E_SLIDER_SHADERXYZZY_uIntensity=200,E_SLIDER_SHADERXYZZY_uOffsetX=0,E_SLIDER_SHADERXYZZY_uOffsetY=-11,E_SLIDER_Shader_Speed=100,E_TEXTCTRL_Shader_LeadIn=0,E_TEXTCTRL_Shader_Offset_X=0,E_TEXTCTRL_Shader_Offset_Y=0,E_TEXTCTRL_Shader_Zoom=100,T_CHECKBOX_Canvas=1</Effect>
     <Effect>E_0FILEPICKERCTRL_IFS=Sequences/Bad Romance (Extra Clean)/Media/Shaders-597f90/RGBLaserGlobe_127.fs,E_CHOICE_SHADERXYZZY_uColMode=Shader Defaults ,E_SLIDER_SHADERXYZZY_uDisperse=101,E_SLIDER_SHADERXYZZY_uIntensity=200,E_SLIDER_SHADERXYZZY_uOffsetX=0,E_SLIDER_SHADERXYZZY_uOffsetY=-11,E_SLIDER_Shader_Speed=100,E_TEXTCTRL_Shader_LeadIn=0,E_TEXTCTRL_Shader_Offset_X=0,E_TEXTCTRL_Shader_Offset_Y=0,E_TEXTCTRL_Shader_Zoom=100,T_CHECKBOX_Canvas=1</Effect>
-    <Effect>E_CHECKBOX_Text_Color_PerWord=0,E_CHECKBOX_Text_PixelOffsets=0,E_CHOICE_Text_Count=none,E_CHOICE_Text_Dir=none,E_CHOICE_Text_Effect=normal,E_CHOICE_Text_Font=Use OS Fonts,E_FILEPICKERCTRL_Text_File=Sequences/Bad Romance (Extra Clean)/Media/Christmas-f4a98e/tuneto.txt,E_FONTPICKER_Text_Font=italic 'gill sans' 36 utf-8,E_SLIDER_Text_XEnd=0,E_SLIDER_Text_XStart=0,E_SLIDER_Text_YEnd=0,E_SLIDER_Text_YStart=0,E_TEXTCTRL_Text=,E_TEXTCTRL_Text_Speed=10</Effect>
+    <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/tune-to-website.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
     <Effect>T_TEXTCTRL_Fadein=15,T_TEXTCTRL_Fadeout=5</Effect>
     <Effect>T_TEXTCTRL_Fadein=5,T_TEXTCTRL_Fadeout=5</Effect>
     <Effect>T_TEXTCTRL_Fadein=15</Effect>
@@ -273,6 +273,7 @@
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Dracula [Bad-Romance-Extra-Clean],E_CHOICE_Faces_TimingTrack=Lyrics (Backup),T_TEXTCTRL_Fadeout=.2</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Dracula [Bad-Romance-Extra-Clean],E_CHOICE_Faces_TimingTrack=Lyrics (Main),T_TEXTCTRL_Fadeout=.2</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Dracula [Bad-Romance-Extra-Clean],E_CHOICE_Faces_TimingTrack=Lyrics (Backup),T_TEXTCTRL_Fadein=.2,T_TEXTCTRL_Fadeout=.2</Effect>
+    <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/projector-website-qr.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Pumpkin face,E_CHOICE_Faces_TimingTrack=Lyrics (Main),E_CHOICE_Faces_UseState=outline with stem,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Pumpkin face,E_CHOICE_Faces_TimingTrack=Lyrics (Backup),E_CHOICE_Faces_UseState=outline with stem,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=Lyrics (Main),T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
@@ -2491,8 +2492,9 @@
     </Element>
     <Element type="model" name="Tune To">
       <EffectLayer>
-        <Effect ref="205" name="Text" startTime="100" endTime="178800" palette="3" />
+        <Effect ref="205" name="Pictures" startTime="0" endTime="181625" palette="23" />
       </EffectLayer>
+      <EffectLayer />
       <EffectLayer>
         <Effect ref="37" name="Shader" startTime="9250" endTime="10275" palette="9" />
         <Effect ref="38" name="Shader" id="1" startTime="10275" endTime="11300" palette="9" />
@@ -2803,6 +2805,11 @@
       </EffectLayer>
     </Element>
     <Element type="model" name="Projector">
+      <EffectLayer>
+        <Effect ref="230" name="Pictures" startTime="10000" endTime="25000" palette="23" />
+        <Effect ref="230" name="Pictures" id="1" startTime="70000" endTime="85000" palette="23" />
+        <Effect ref="230" name="Pictures" id="2" startTime="130000" endTime="145000" palette="23" />
+      </EffectLayer>
       <EffectLayer>
         <Effect ref="37" name="Shader" startTime="9250" endTime="10275" palette="9" />
         <Effect ref="38" name="Shader" id="1" startTime="10275" endTime="11300" palette="9" />
@@ -4725,20 +4732,20 @@
     </Element>
     <Element type="model" name="GE Singing Pumpkin">
       <EffectLayer>
-        <Effect ref="230" name="Faces" startTime="175" endTime="33575" palette="23" />
-        <Effect ref="231" name="Faces" id="1" startTime="53375" endTime="53875" palette="23" />
-        <Effect ref="231" name="Faces" id="2" startTime="61650" endTime="65250" palette="23" />
-        <Effect ref="230" name="Faces" id="3" startTime="114375" endTime="137975" palette="23" />
+        <Effect ref="231" name="Faces" startTime="175" endTime="33575" palette="23" />
+        <Effect ref="232" name="Faces" id="1" startTime="53375" endTime="53875" palette="23" />
+        <Effect ref="232" name="Faces" id="2" startTime="61650" endTime="65250" palette="23" />
+        <Effect ref="231" name="Faces" id="3" startTime="114375" endTime="137975" palette="23" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Evil Clown">
       <EffectLayer>
-        <Effect ref="232" name="Faces" startTime="74025" endTime="114325" palette="23" />
-        <Effect ref="232" name="Faces" id="1" startTime="138575" endTime="153575" palette="23" />
-        <Effect ref="232" name="Faces" id="2" startTime="156750" endTime="158800" palette="23" />
-        <Effect ref="232" name="Faces" id="3" startTime="160750" endTime="162775" palette="23" />
-        <Effect ref="232" name="Faces" id="4" startTime="164800" endTime="166900" palette="23" />
-        <Effect ref="232" name="Faces" id="5" startTime="170625" endTime="178825" palette="23" />
+        <Effect ref="233" name="Faces" startTime="74025" endTime="114325" palette="23" />
+        <Effect ref="233" name="Faces" id="1" startTime="138575" endTime="153575" palette="23" />
+        <Effect ref="233" name="Faces" id="2" startTime="156750" endTime="158800" palette="23" />
+        <Effect ref="233" name="Faces" id="3" startTime="160750" endTime="162775" palette="23" />
+        <Effect ref="233" name="Faces" id="4" startTime="164800" endTime="166900" palette="23" />
+        <Effect ref="233" name="Faces" id="5" startTime="170625" endTime="178825" palette="23" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Rosa Grande GRP">
@@ -6062,11 +6069,11 @@
       <EffectLayer />
       <EffectLayer />
       <EffectLayer>
-        <Effect ref="233" name="Faces" startTime="33700" endTime="63050" palette="23" />
-        <Effect ref="233" name="Faces" id="1" startTime="66100" endTime="73400" palette="23" />
-        <Effect ref="234" name="Faces" id="2" startTime="80850" endTime="82875" palette="23" />
-        <Effect ref="234" name="Faces" id="3" startTime="145400" endTime="147525" palette="23" />
-        <Effect ref="234" name="Faces" id="4" startTime="153475" endTime="169350" palette="23" />
+        <Effect ref="234" name="Faces" startTime="33700" endTime="63050" palette="23" />
+        <Effect ref="234" name="Faces" id="1" startTime="66100" endTime="73400" palette="23" />
+        <Effect ref="235" name="Faces" id="2" startTime="80850" endTime="82875" palette="23" />
+        <Effect ref="235" name="Faces" id="3" startTime="145400" endTime="147525" palette="23" />
+        <Effect ref="235" name="Faces" id="4" startTime="153475" endTime="169350" palette="23" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Dark Helmet">

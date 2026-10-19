@@ -6,7 +6,7 @@
   "finished_at": "2026-10-18T15:07:22.164786-05:00",
   "master": "192.168.0.19",
   "projector": "192.168.0.201",
-  "master_status": "idle",
+  "master_status": "playing",
   "master_files_uploaded": 25,
   "projector_files_uploaded": 25,
   "playlist_and_schedule_preserved": true,
@@ -19,18 +19,19 @@
       ],
       "frames": 8935,
       "frame_ms": 25,
-      "fseq_sha256": "aff0d3ce5b99012e5278d4b5fc06a663cbab5af9f344c072a10032a6daa8f523",
+      "fseq_sha256": "006728b76e03ef7fd76c2076c6026b400e7078bb0b7f10eeb7f173e791cb5e39",
       "local_render": {
         "fseq": {
           "channels": 305940,
           "frames": 8935,
           "frame_ms": 25,
-          "bytes": 66836673
+          "id": "1792372967560620",
+          "bytes": 75973568
         },
-        "fseq_sha256": "aff0d3ce5b99012e5278d4b5fc06a663cbab5af9f344c072a10032a6daa8f523",
-        "rendered_at": "2026-10-18T16:35:03.255310-05:00"
+        "fseq_sha256": "006728b76e03ef7fd76c2076c6026b400e7078bb0b7f10eeb7f173e791cb5e39",
+        "rendered_at": "2026-10-18T20:22:49.231469-05:00"
       },
-      "deployed_at": "2026-10-18T17:08:02.360602-05:00"
+      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
     },
     "03 - This Is Halloween": {
       "sequence": "Sequences/03 - This Is Halloween/03 - This Is Halloween.xsq",
@@ -39,18 +40,19 @@
       ],
       "frames": 3931,
       "frame_ms": 50,
-      "fseq_sha256": "cb266fe75974e4d87d14bbee64b019086ba354f6142a0c1db4a5d3914239f741",
+      "fseq_sha256": "918828bdbd1ef7dca1d1f4453499c90bb63b225f192b370cefec3b352058bf3f",
       "local_render": {
         "fseq": {
           "channels": 249627,
           "frames": 3931,
           "frame_ms": 50,
-          "bytes": 281157671
+          "id": "1792372980944815",
+          "bytes": 214095517
         },
-        "fseq_sha256": "cb266fe75974e4d87d14bbee64b019086ba354f6142a0c1db4a5d3914239f741",
-        "rendered_at": "2026-10-18T16:35:14.419810-05:00"
+        "fseq_sha256": "918828bdbd1ef7dca1d1f4453499c90bb63b225f192b370cefec3b352058bf3f",
+        "rendered_at": "2026-10-18T20:23:01.730705-05:00"
       },
-      "deployed_at": "2026-10-18T17:08:02.360602-05:00"
+      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
     },
     "12-The-Monster-_feat.-Rihanna_": {
       "sequence": "Sequences/12-The-Monster-_feat.-Rihanna_/12-The-Monster-_feat.-Rihanna_.xsq",
@@ -59,18 +61,19 @@
       ],
       "frames": 10007,
       "frame_ms": 25,
-      "fseq_sha256": "49ea219d2af819cddb24ada09bb2e0699396aade0fbfd5c52002a67e208a4e27",
+      "fseq_sha256": "6fdc116c713eebdb69c1023d39a4b7d159dcd98ce2f23572878e15f4cbbd7fef",
       "local_render": {
         "fseq": {
           "channels": 268623,
           "frames": 10007,
           "frame_ms": 25,
-          "bytes": 192841707
+          "id": "1792372994828672",
+          "bytes": 151007671
         },
-        "fseq_sha256": "49ea219d2af819cddb24ada09bb2e0699396aade0fbfd5c52002a67e208a4e27",
-        "rendered_at": "2026-10-18T16:35:27.400737-05:00"
+        "fseq_sha256": "6fdc116c713eebdb69c1023d39a4b7d159dcd98ce2f23572878e15f4cbbd7fef",
+        "rendered_at": "2026-10-18T20:23:15.427600-05:00"
       },
-      "deployed_at": "2026-10-18T17:08:02.360602-05:00"
+      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
     },
     "Bad Romance (Extra Clean)": {
       "sequence": "Sequences/Bad Romance (Extra Clean)/Bad Romance (Extra Clean).xsq",
@@ -79,18 +82,19 @@
       ],
       "frames": 7265,
       "frame_ms": 25,
-      "fseq_sha256": "65cb6bad950e85da51c704a2054c85ce8a0c4739025eda256f18d44bbcae201f",
+      "fseq_sha256": "3984370eca246ab7f855d053b170279c2ea4ec6f558d72b9ed2d72df430cd018",
       "local_render": {
         "fseq": {
           "channels": 265926,
           "frames": 7265,
           "frame_ms": 25,
-          "bytes": 152245973
+          "id": "1792373008653583",
+          "bytes": 136670404
         },
-        "fseq_sha256": "65cb6bad950e85da51c704a2054c85ce8a0c4739025eda256f18d44bbcae201f",
-        "rendered_at": "2026-10-18T16:35:40.884698-05:00"
+        "fseq_sha256": "3984370eca246ab7f855d053b170279c2ea4ec6f558d72b9ed2d72df430cd018",
+        "rendered_at": "2026-10-18T20:23:29.211695-05:00"
       },
-      "deployed_at": "2026-10-18T17:08:02.360602-05:00"
+      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
     },
     "Dracula": {
       "sequence": "Sequences/Dracula/Dracula.xsq",
@@ -99,18 +103,19 @@
       ],
       "frames": 8212,
       "frame_ms": 25,
-      "fseq_sha256": "6977b0e1ebbb6896d7853b214313848c539bf378d9bab061b055c49ed5deaa2f",
+      "fseq_sha256": "2a69c4bd2cf0721f7f2607d1270faabc28493c82e0d330c8d0fe97378ea34d03",
       "local_render": {
         "fseq": {
           "channels": 297432,
           "frames": 8212,
           "frame_ms": 25,
-          "bytes": 410090082
+          "id": "1792373021613079",
+          "bytes": 335085119
         },
-        "fseq_sha256": "6977b0e1ebbb6896d7853b214313848c539bf378d9bab061b055c49ed5deaa2f",
-        "rendered_at": "2026-10-18T16:35:54.077222-05:00"
+        "fseq_sha256": "2a69c4bd2cf0721f7f2607d1270faabc28493c82e0d330c8d0fe97378ea34d03",
+        "rendered_at": "2026-10-18T20:23:42.631109-05:00"
       },
-      "deployed_at": "2026-10-18T17:08:02.360602-05:00"
+      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
     },
     "Ghostbusters": {
       "sequence": "Sequences/Ghostbusters/Ghostbusters.xsq",
@@ -119,18 +124,19 @@
       ],
       "frames": 6867,
       "frame_ms": 25,
-      "fseq_sha256": "d627aec3b5a330cf9a2de62e8fdd0b165845194862d84f071b0485bfe2b7e629",
+      "fseq_sha256": "cef8fad8b7d160ddd894faefb798efbeaa42ee17201972a506911a6d3c69b832",
       "local_render": {
         "fseq": {
           "channels": 260634,
           "frames": 6867,
           "frame_ms": 25,
-          "bytes": 489490850
+          "id": "1792373033865924",
+          "bytes": 380493362
         },
-        "fseq_sha256": "d627aec3b5a330cf9a2de62e8fdd0b165845194862d84f071b0485bfe2b7e629",
-        "rendered_at": "2026-10-18T16:36:06.487279-05:00"
+        "fseq_sha256": "cef8fad8b7d160ddd894faefb798efbeaa42ee17201972a506911a6d3c69b832",
+        "rendered_at": "2026-10-18T20:23:55.051175-05:00"
       },
-      "deployed_at": "2026-10-18T17:08:02.360602-05:00"
+      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
     },
     "Ghostbusters 2": {
       "sequence": "Sequences/Ghostbusters 2/Ghostbusters 2.xsq",
@@ -139,18 +145,19 @@
       ],
       "frames": 6867,
       "frame_ms": 25,
-      "fseq_sha256": "5e40ee898ce680262d79f5ea95e2a8202f3d04e39080198f37ffc9fcb1d9679d",
+      "fseq_sha256": "50361464c80a7e9b048a7edfd10a6adabcc785878be49c90cfd20249c1682c5f",
       "local_render": {
         "fseq": {
           "channels": 260634,
           "frames": 6867,
           "frame_ms": 25,
-          "bytes": 493864812
+          "id": "1792373046969463",
+          "bytes": 380411445
         },
-        "fseq_sha256": "5e40ee898ce680262d79f5ea95e2a8202f3d04e39080198f37ffc9fcb1d9679d",
-        "rendered_at": "2026-10-18T16:36:19.003943-05:00"
+        "fseq_sha256": "50361464c80a7e9b048a7edfd10a6adabcc785878be49c90cfd20249c1682c5f",
+        "rendered_at": "2026-10-18T20:24:08.240646-05:00"
       },
-      "deployed_at": "2026-10-18T17:08:02.360602-05:00"
+      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
     },
     "GreatestShowWorking 2": {
       "sequence": "Sequences/GreatestShowWorking 2/GreatestShowWorking 2.xsq",
@@ -159,18 +166,19 @@
       ],
       "frames": 5389,
       "frame_ms": 50,
-      "fseq_sha256": "89837ee9dcab9b65443a10375f5555efb099577f996875b20cd5ada2b471fa41",
+      "fseq_sha256": "984aa184c0420a099f66178938adfc147dec26f94d89282c2cd9aa072665c710",
       "local_render": {
         "fseq": {
           "channels": 305940,
           "frames": 5389,
           "frame_ms": 50,
-          "bytes": 397990526
+          "id": "1792373077283734",
+          "bytes": 348577599
         },
-        "fseq_sha256": "89837ee9dcab9b65443a10375f5555efb099577f996875b20cd5ada2b471fa41",
-        "rendered_at": "2026-10-18T16:36:47.190544-05:00"
+        "fseq_sha256": "984aa184c0420a099f66178938adfc147dec26f94d89282c2cd9aa072665c710",
+        "rendered_at": "2026-10-18T20:24:38.283782-05:00"
       },
-      "deployed_at": "2026-10-18T17:08:02.360602-05:00"
+      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
     },
     "Halfway To Hell": {
       "sequence": "Sequences/Halfway To Hell/Halfway To Hell.xsq",
@@ -179,18 +187,19 @@
       ],
       "frames": 7137,
       "frame_ms": 25,
-      "fseq_sha256": "e9647a691785dfe578f7f45eb6bee39bcf9e3b0328f0eea7bc1b887883dc7cc3",
+      "fseq_sha256": "310a4d1a1c3e43934a47e5784e6d0b0c369bf57ef9040fa6967f563dbe205f56",
       "local_render": {
         "fseq": {
           "channels": 255885,
           "frames": 7137,
           "frame_ms": 25,
-          "bytes": 102847103
+          "id": "1792373090321493",
+          "bytes": 94819034
         },
-        "fseq_sha256": "e9647a691785dfe578f7f45eb6bee39bcf9e3b0328f0eea7bc1b887883dc7cc3",
-        "rendered_at": "2026-10-18T16:36:58.732997-05:00"
+        "fseq_sha256": "310a4d1a1c3e43934a47e5784e6d0b0c369bf57ef9040fa6967f563dbe205f56",
+        "rendered_at": "2026-10-18T20:24:50.805793-05:00"
       },
-      "deployed_at": "2026-10-18T17:08:02.360602-05:00"
+      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
     },
     "I Knew It I Knew You": {
       "sequence": "Sequences/I Knew It I Knew You/I Knew It I Knew You.xsq",
@@ -199,18 +208,19 @@
       ],
       "frames": 7128,
       "frame_ms": 25,
-      "fseq_sha256": "5fe8734ca5d948d17239249fe55260332c88001a2ec032af311497045b2bc73b",
+      "fseq_sha256": "66fdf018f5ba95fdac9b5751d7ed1906f48ea442653a883607b34a940341d3ba",
       "local_render": {
         "fseq": {
           "channels": 256062,
           "frames": 7128,
           "frame_ms": 25,
-          "bytes": 235640330
+          "id": "1792373112955997",
+          "bytes": 196877811
         },
-        "fseq_sha256": "5fe8734ca5d948d17239249fe55260332c88001a2ec032af311497045b2bc73b",
-        "rendered_at": "2026-10-18T16:34:54.542092-05:00"
+        "fseq_sha256": "66fdf018f5ba95fdac9b5751d7ed1906f48ea442653a883607b34a940341d3ba",
+        "rendered_at": "2026-10-18T20:25:13.805225-05:00"
       },
-      "deployed_at": "2026-10-18T17:08:02.360602-05:00"
+      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
     },
     "Insomnia": {
       "sequence": "Sequences/Insomnia/Insomnia.xsq",
@@ -219,18 +229,19 @@
       ],
       "frames": 8593,
       "frame_ms": 25,
-      "fseq_sha256": "414cecb3db747ae2fd094a34567736479600d69aa41bb502179a16b6d8aea980",
+      "fseq_sha256": "5495eb4e5b13122e39ec7ecbb26b3e3728fb2d92a476edd98b47a8881c57224c",
       "local_render": {
         "fseq": {
           "channels": 305940,
           "frames": 8593,
           "frame_ms": 25,
-          "bytes": 24993809
+          "id": "1792373123847721",
+          "bytes": 35036196
         },
-        "fseq_sha256": "414cecb3db747ae2fd094a34567736479600d69aa41bb502179a16b6d8aea980",
-        "rendered_at": "2026-10-18T16:37:08.223229-05:00"
+        "fseq_sha256": "5495eb4e5b13122e39ec7ecbb26b3e3728fb2d92a476edd98b47a8881c57224c",
+        "rendered_at": "2026-10-18T20:25:24.103489-05:00"
       },
-      "deployed_at": "2026-10-18T17:08:02.360602-05:00"
+      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
     },
     "Monster Mash": {
       "sequence": "Sequences/Monster Mash/Monster Mash.xsq",
@@ -239,18 +250,19 @@
       ],
       "frames": 7683,
       "frame_ms": 25,
-      "fseq_sha256": "707594e5d8781c9c22a5e358e6d2f22f598e9f1dd7274449ee65df24c9225623",
+      "fseq_sha256": "c2a9b4c3cb0fa354f4695d0492743520b1ee300fbdf038df4b81251484c7ca32",
       "local_render": {
         "fseq": {
           "channels": 268677,
           "frames": 7683,
           "frame_ms": 25,
-          "bytes": 585572135
+          "id": "1792373135242044",
+          "bytes": 439135201
         },
-        "fseq_sha256": "707594e5d8781c9c22a5e358e6d2f22f598e9f1dd7274449ee65df24c9225623",
-        "rendered_at": "2026-10-18T16:37:21.632192-05:00"
+        "fseq_sha256": "c2a9b4c3cb0fa354f4695d0492743520b1ee300fbdf038df4b81251484c7ca32",
+        "rendered_at": "2026-10-18T20:25:36.545707-05:00"
       },
-      "deployed_at": "2026-10-18T17:08:02.360602-05:00"
+      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
     },
     "Skrillex Medley": {
       "sequence": "Sequences/Skrillex Medley/Skrillex Medley.xsq",
@@ -259,18 +271,19 @@
       ],
       "frames": 8563,
       "frame_ms": 25,
-      "fseq_sha256": "7c167feb32c335991bf199b92dfe7d365160be33f41336b0bc67abf667cab399",
+      "fseq_sha256": "42179f864955eb1da3349002bab4fbf40629e6925c67c33942fe7caa5043728d",
       "local_render": {
         "fseq": {
           "channels": 285681,
           "frames": 8563,
           "frame_ms": 25,
-          "bytes": 298863391
+          "id": "1792373150048570",
+          "bytes": 272408452
         },
-        "fseq_sha256": "7c167feb32c335991bf199b92dfe7d365160be33f41336b0bc67abf667cab399",
-        "rendered_at": "2026-10-18T16:37:35.628016-05:00"
+        "fseq_sha256": "42179f864955eb1da3349002bab4fbf40629e6925c67c33942fe7caa5043728d",
+        "rendered_at": "2026-10-18T20:25:51.082661-05:00"
       },
-      "deployed_at": "2026-10-18T17:08:02.360602-05:00"
+      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
     },
     "Something In The Way": {
       "sequence": "Sequences/Something In The Way/Something In The Way.xsq",
@@ -279,18 +292,19 @@
       ],
       "frames": 9285,
       "frame_ms": 25,
-      "fseq_sha256": "7da22e22174d571a52bb3feaed2607f32c92525d3ab5a4fdcc150c895a3ba883",
+      "fseq_sha256": "ba7ceb8527e26b34ed34da7352a70ae580a1358e38ef5cbf80617a8bd009bf12",
       "local_render": {
         "fseq": {
           "channels": 251430,
           "frames": 9285,
           "frame_ms": 25,
-          "bytes": 269056453
+          "id": "1792373168763231",
+          "bytes": 234381817
         },
-        "fseq_sha256": "7da22e22174d571a52bb3feaed2607f32c92525d3ab5a4fdcc150c895a3ba883",
-        "rendered_at": "2026-10-18T16:37:52.397024-05:00"
+        "fseq_sha256": "ba7ceb8527e26b34ed34da7352a70ae580a1358e38ef5cbf80617a8bd009bf12",
+        "rendered_at": "2026-10-18T20:26:09.546057-05:00"
       },
-      "deployed_at": "2026-10-18T17:08:02.360602-05:00"
+      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
     },
     "The Dead Dance": {
       "sequence": "Sequences/The Dead Dance/The Dead Dance.xsq",
@@ -299,18 +313,19 @@
       ],
       "frames": 9140,
       "frame_ms": 25,
-      "fseq_sha256": "f2a4cb7cf38306511ed1e9b9e15e0f7b3378b120e509ec9def0804c805788cad",
+      "fseq_sha256": "54def972bba86e3de94e304f72fe0ef0be93ac705be9875d538229d287520f0d",
       "local_render": {
         "fseq": {
           "channels": 305940,
           "frames": 9140,
           "frame_ms": 25,
-          "bytes": 230619056
+          "id": "1792373183019338",
+          "bytes": 152992634
         },
-        "fseq_sha256": "f2a4cb7cf38306511ed1e9b9e15e0f7b3378b120e509ec9def0804c805788cad",
-        "rendered_at": "2026-10-18T16:38:06.810424-05:00"
+        "fseq_sha256": "54def972bba86e3de94e304f72fe0ef0be93ac705be9875d538229d287520f0d",
+        "rendered_at": "2026-10-18T20:26:23.584191-05:00"
       },
-      "deployed_at": "2026-10-18T17:08:02.360602-05:00"
+      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
     },
     "The Devil Went Down to Georgia": {
       "sequence": "Sequences/The Devil Went Down to Georgia/The Devil Went Down to Georgia.xsq",
@@ -319,18 +334,19 @@
       ],
       "frames": 8616,
       "frame_ms": 25,
-      "fseq_sha256": "8d963fb23fa4588e499001d227b0a5ec25028a922cf7dedb4b78e3826f4495c4",
+      "fseq_sha256": "870a49ae27f2d4a5592740e57bb8dc559d3cdcb299397012ab6a97c73cdaa44d",
       "local_render": {
         "fseq": {
           "channels": 297432,
           "frames": 8616,
           "frame_ms": 25,
-          "bytes": 881076294
+          "id": "1792373200999948",
+          "bytes": 628588345
         },
-        "fseq_sha256": "8d963fb23fa4588e499001d227b0a5ec25028a922cf7dedb4b78e3826f4495c4",
-        "rendered_at": "2026-10-18T16:38:25.774923-05:00"
+        "fseq_sha256": "870a49ae27f2d4a5592740e57bb8dc559d3cdcb299397012ab6a97c73cdaa44d",
+        "rendered_at": "2026-10-18T20:26:42.773328-05:00"
       },
-      "deployed_at": "2026-10-18T17:08:02.360602-05:00"
+      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
     },
     "The Imperial March": {
       "sequence": "Sequences/The Imperial March/The Imperial March.xsq",
@@ -339,18 +355,19 @@
       ],
       "frames": 7547,
       "frame_ms": 25,
-      "fseq_sha256": "add6e83bd9110552ea5830ac9eb4961f6d805a24942da26f6b20142ac767cab7",
+      "fseq_sha256": "91e9ada2fe27d0fc7691dd29055fde42e4b005653f66eb0326a177995fdcf1cf",
       "local_render": {
         "fseq": {
           "channels": 286497,
           "frames": 7547,
           "frame_ms": 25,
-          "bytes": 575725963
+          "id": "1792373220236118",
+          "bytes": 422796801
         },
-        "fseq_sha256": "add6e83bd9110552ea5830ac9eb4961f6d805a24942da26f6b20142ac767cab7",
-        "rendered_at": "2026-10-18T16:38:43.925291-05:00"
+        "fseq_sha256": "91e9ada2fe27d0fc7691dd29055fde42e4b005653f66eb0326a177995fdcf1cf",
+        "rendered_at": "2026-10-18T20:27:01.713820-05:00"
       },
-      "deployed_at": "2026-10-18T17:08:02.360602-05:00"
+      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
     },
     "Thriller Xtreme Remap": {
       "sequence": "Sequences/Thriller Xtreme Remap/Thriller Xtreme Remap.xsq",
@@ -359,18 +376,19 @@
       ],
       "frames": 14318,
       "frame_ms": 25,
-      "fseq_sha256": "2dec671ab948a3a3afa25e5561f05ff3546f63b3c9480403ba56ff2cbf50df74",
+      "fseq_sha256": "f83619c5019bcdbe964af605a0c5b5868e71bc150a9d782a1cbc14ee31f60f75",
       "local_render": {
         "fseq": {
           "channels": 298290,
           "frames": 14318,
           "frame_ms": 25,
-          "bytes": 926332295
+          "id": "1792373247019817",
+          "bytes": 572909292
         },
-        "fseq_sha256": "2dec671ab948a3a3afa25e5561f05ff3546f63b3c9480403ba56ff2cbf50df74",
-        "rendered_at": "2026-10-18T16:39:10.077443-05:00"
+        "fseq_sha256": "f83619c5019bcdbe964af605a0c5b5868e71bc150a9d782a1cbc14ee31f60f75",
+        "rendered_at": "2026-10-18T20:27:29.019120-05:00"
       },
-      "deployed_at": "2026-10-18T17:08:02.360602-05:00"
+      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
     },
     "Titanium": {
       "sequence": "Sequences/Titanium/Titanium.xsq",
@@ -379,18 +397,19 @@
       ],
       "frames": 9802,
       "frame_ms": 25,
-      "fseq_sha256": "2504571b9d7cce3e5083020fb4ae4673f213b1e8f6c353fd97fefa6a1ca56605",
+      "fseq_sha256": "6bc932d41158772a8c7daabdac2aa8de28de483eb6054892c5ccebf4f57addaf",
       "local_render": {
         "fseq": {
-          "channels": 147243,
+          "channels": 294699,
           "frames": 9802,
           "frame_ms": 25,
-          "bytes": 174274907
+          "id": "1792373263480419",
+          "bytes": 186669325
         },
-        "fseq_sha256": "2504571b9d7cce3e5083020fb4ae4673f213b1e8f6c353fd97fefa6a1ca56605",
-        "rendered_at": "2026-10-18T20:22:40.552573-05:00"
+        "fseq_sha256": "6bc932d41158772a8c7daabdac2aa8de28de483eb6054892c5ccebf4f57addaf",
+        "rendered_at": "2026-10-18T20:27:44.213078-05:00"
       },
-      "deployed_at": "2026-10-18T20:25:14.689492-05:00",
+      "deployed_at": "2026-10-19T05:39:34.728578-05:00",
       "latest_deployment": "titanium-singing-repair-latest.json",
       "singing_repair": {
         "lead": "GE Evil Clown",
@@ -411,18 +430,19 @@
       ],
       "frames": 9802,
       "frame_ms": 25,
-      "fseq_sha256": "1a494a8080e9d489fd3282b8c2073f5439b9515c769620ead2b3d88d20d577fe",
+      "fseq_sha256": "9a13ca462b15f0cff15dfa0dd0bb42563e5ed9c6b5f611a7b8670ec21c8ece92",
       "local_render": {
         "fseq": {
-          "channels": 147243,
+          "channels": 294699,
           "frames": 9802,
           "frame_ms": 25,
-          "bytes": 173896428
+          "id": "1792373278363597",
+          "bytes": 186669234
         },
-        "fseq_sha256": "1a494a8080e9d489fd3282b8c2073f5439b9515c769620ead2b3d88d20d577fe",
-        "rendered_at": "2026-10-18T20:22:58.821796-05:00"
+        "fseq_sha256": "9a13ca462b15f0cff15dfa0dd0bb42563e5ed9c6b5f611a7b8670ec21c8ece92",
+        "rendered_at": "2026-10-18T20:27:59.068785-05:00"
       },
-      "deployed_at": "2026-10-18T20:25:14.689492-05:00",
+      "deployed_at": "2026-10-19T05:39:34.728578-05:00",
       "latest_deployment": "titanium-singing-repair-latest.json",
       "singing_repair": {
         "lead": "GE Evil Clown",
@@ -443,18 +463,19 @@
       ],
       "frames": 7674,
       "frame_ms": 25,
-      "fseq_sha256": "084f2f20008db9b33fea3d804a91a9478bd5bf22c74634a64b774ec4414d8a17",
+      "fseq_sha256": "95ccf28607f186f03b72e2164c51d52b99a80508c44331a4dbaea12c324017eb",
       "local_render": {
         "fseq": {
           "channels": 288210,
           "frames": 7674,
           "frame_ms": 25,
-          "bytes": 551071964
+          "id": "1792373301310553",
+          "bytes": 479141784
         },
-        "fseq_sha256": "084f2f20008db9b33fea3d804a91a9478bd5bf22c74634a64b774ec4414d8a17",
-        "rendered_at": "2026-10-18T16:39:59.147683-05:00"
+        "fseq_sha256": "95ccf28607f186f03b72e2164c51d52b99a80508c44331a4dbaea12c324017eb",
+        "rendered_at": "2026-10-18T20:28:22.903232-05:00"
       },
-      "deployed_at": "2026-10-18T17:08:02.360602-05:00"
+      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
     },
     "Zombie": {
       "sequence": "Sequences/Zombie/Zombie.xsq",
@@ -463,18 +484,19 @@
       ],
       "frames": 10044,
       "frame_ms": 25,
-      "fseq_sha256": "1e875aaa84b82f3d6089f8605efa06e1a6f138f2cda9299b1d9ed87d22fb0172",
+      "fseq_sha256": "2bb734a57acf229db1660d7121b96d962f9281029d78411bccb3c674a67162ad",
       "local_render": {
         "fseq": {
           "channels": 297432,
           "frames": 10044,
           "frame_ms": 25,
-          "bytes": 243902954
+          "id": "1792373321827144",
+          "bytes": 225172142
         },
-        "fseq_sha256": "1e875aaa84b82f3d6089f8605efa06e1a6f138f2cda9299b1d9ed87d22fb0172",
-        "rendered_at": "2026-10-18T16:40:18.968162-05:00"
+        "fseq_sha256": "2bb734a57acf229db1660d7121b96d962f9281029d78411bccb3c674a67162ad",
+        "rendered_at": "2026-10-18T20:28:42.703576-05:00"
       },
-      "deployed_at": "2026-10-18T17:08:02.360602-05:00"
+      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
     },
     "static halloween": {
       "sequence": "Sequences/static halloween/static halloween.xsq",
@@ -484,18 +506,19 @@
       ],
       "frames": 1200,
       "frame_ms": 25,
-      "fseq_sha256": "a6c86f28b844ee1ce91bc30722ba4dcb8b9df2cafeccefc64db06ad43c9d5a8f",
+      "fseq_sha256": "7b67d643523d784f0d2045156adcdbef7781db34fa8b6cd9eea5425be24805c2",
       "local_render": {
         "fseq": {
-          "channels": 101805,
+          "channels": 249261,
           "frames": 1200,
           "frame_ms": 25,
-          "bytes": 15061406
+          "id": "1792372957720460",
+          "bytes": 27928854
         },
-        "fseq_sha256": "a6c86f28b844ee1ce91bc30722ba4dcb8b9df2cafeccefc64db06ad43c9d5a8f",
-        "rendered_at": "2026-10-18T16:40:23.702889-05:00"
+        "fseq_sha256": "7b67d643523d784f0d2045156adcdbef7781db34fa8b6cd9eea5425be24805c2",
+        "rendered_at": "2026-10-18T20:22:37.866393-05:00"
       },
-      "deployed_at": "2026-10-18T17:08:02.360602-05:00"
+      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
     },
     "tuneto-halloween": {
       "sequence": "Sequences/tuneto-halloween/tuneto-halloween.xsq",
@@ -504,18 +527,19 @@
       ],
       "frames": 1200,
       "frame_ms": 25,
-      "fseq_sha256": "6fe993f2552dc292a55528f426b9f5a850546dfe85709541d436654d9e4ac0d3",
+      "fseq_sha256": "759a7333316f1010d8a30511e609090ca624d623d79ec9d8bf438db6f9eeb1ec",
       "local_render": {
         "fseq": {
-          "channels": 36864,
+          "channels": 184320,
           "frames": 1200,
           "frame_ms": 25,
-          "bytes": 22150613
+          "id": "1792372949716382",
+          "bytes": 12845374
         },
-        "fseq_sha256": "6fe993f2552dc292a55528f426b9f5a850546dfe85709541d436654d9e4ac0d3",
-        "rendered_at": "2026-10-18T16:40:27.741322-05:00"
+        "fseq_sha256": "759a7333316f1010d8a30511e609090ca624d623d79ec9d8bf438db6f9eeb1ec",
+        "rendered_at": "2026-10-18T20:22:29.804066-05:00"
       },
-      "deployed_at": "2026-10-18T17:08:02.360602-05:00"
+      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
     }
   },
   "current_import_maps": [
@@ -595,12 +619,21 @@
   "all_local_renders_current": true,
   "local_batch_render_finished_at": "2026-10-18T16:40:27.846974-05:00",
   "master_must_remain_running": true,
-  "latest_deployment": "titanium-singing-repair-latest.json",
-  "deployed_at": "2026-10-18T20:25:14.689492-05:00",
+  "latest_deployment": "website-promotion-latest.json",
+  "deployed_at": "2026-10-19T05:39:34.728578-05:00",
   "selfie_station_setup": {
     "ip": "192.168.0.213",
     "report": "selfie-station-setup-latest.json",
     "complete": true,
     "verified_at": "2026-10-18T17:46:59.446375-05:00"
+  },
+  "website_promotion": {
+    "url": "https://oharafamilylightshow.com/",
+    "fm": "87.9",
+    "equal_radio_prominence": true,
+    "qr_duration_ms": 15000,
+    "qr_interval_ms": 60000,
+    "qr_appearances": 84,
+    "sequences": 24
   }
 }

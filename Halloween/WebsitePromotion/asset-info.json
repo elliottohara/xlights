@@ -1,0 +1,20 @@
+{
+  "url": "https://oharafamilylightshow.com/",
+  "modules": 29,
+  "scale": 4,
+  "quiet_zone_modules": 4,
+  "qr_bounds": [
+    54,
+    20,
+    148,
+    148
+  ],
+  "projector_dimensions": [
+    256,
+    192
+  ],
+  "sign_dimensions": [
+    192,
+    64
+  ]
+}

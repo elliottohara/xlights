@@ -77,12 +77,11 @@
     <ColorPalette>C_BUTTON_Palette1=#8000FF,C_BUTTON_Palette2=Active=TRUE|Id=ID_BUTTON_Palette2|Values=x=0.100^c=red;x=0.300^c=rgb(0@ 128@ 255);x=0.500^c=rgb(128@ 255@ 0);x=0.700^c=blue;x=0.900^c=rgb(255@ 128@ 0)|,C_BUTTON_Palette3=#00FF00,C_BUTTON_Palette4=#0000FF,C_BUTTON_Palette5=#FFFF00,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#0080FF,C_BUTTON_Palette8=#FF00FF,C_CHECKBOX_Palette4=1,C_SLIDER_Contrast=2</ColorPalette>
     <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#FF0000,C_BUTTON_Palette3=Active=TRUE|Id=ID_BUTTON_Palette3|Values=x=0.075^c=yellow;x=0.250^c=rgb(0@ 128@ 255);x=0.450^c=rgb(0@ 128@ 0);x=0.650^c=rgb(255@ 128@ 0);x=0.875^c=blue|,C_BUTTON_Palette4=#0000FF,C_BUTTON_Palette5=#FFFF00,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#00FFFF,C_BUTTON_Palette8=#FF00FF,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1,C_CHECKBOX_Palette4=1</ColorPalette>
     <ColorPalette>C_BUTTON_Palette1=#8000FF,C_BUTTON_Palette2=Active=TRUE|Id=ID_BUTTON_Palette2|Values=x=0.100^c=red;x=0.300^c=rgb(0@ 255@ 128);x=0.500^c=rgb(128@ 255@ 0);x=0.675^c=rgb(128@ 128@ 64);x=0.900^c=rgb(255@ 128@ 0)|,C_BUTTON_Palette3=#00FF00,C_BUTTON_Palette4=#0000FF,C_BUTTON_Palette5=#FFFF00,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#0080FF,C_BUTTON_Palette8=#FF00FF,C_CHECKBOX_Palette2=1,C_SLIDER_Contrast=2</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1</ColorPalette>
     <ColorPalette>C_BUTTON_Palette1=Active=TRUE|Id=ID_BUTTON_Palette1|Values=x=0.130^c=#0000ff;x=0.250^c=#0080ff;x=0.430^c=#8000ff;x=0.630^c=#000080;x=0.820^c=#8000ff|,C_BUTTON_Palette2=#FF8040,C_BUTTON_Palette3=#00FF00,C_BUTTON_Palette4=#0080FF,C_BUTTON_Palette5=#FFFF00,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#00FFFF,C_BUTTON_Palette8=#FF00FF,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette4=1</ColorPalette>
     <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#FF0000,C_BUTTON_Palette3=#00FF00,C_BUTTON_Palette4=#0000FF,C_BUTTON_Palette5=#FFFF00,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#00FFFF,C_BUTTON_Palette8=#FF00FF</ColorPalette>
     <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#FF0000,C_BUTTON_Palette3=#00FF00,C_BUTTON_Palette4=#0000FF,C_BUTTON_Palette5=#FFFF00,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#00FFFF,C_BUTTON_Palette8=#FF00FF,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1</ColorPalette>
     <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#FF0000,C_BUTTON_Palette3=#00FF00,C_BUTTON_Palette4=#0000FF,C_BUTTON_Palette5=#FFFF00,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#00FFFF,C_BUTTON_Palette8=#FF00FF,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_SLIDER_Contrast=2</ColorPalette>
-    <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1</ColorPalette>
-    <ColorPalette>C_BUTTON_Palette1=Active=TRUE|Id=ID_BUTTON_Palette1|Values=x=0.130^c=#0000ff;x=0.250^c=#0080ff;x=0.430^c=#8000ff;x=0.630^c=#000080;x=0.820^c=#8000ff|,C_BUTTON_Palette2=#FF8040,C_BUTTON_Palette3=#FFFFFF,C_BUTTON_Palette4=#0080FF,C_BUTTON_Palette5=#FFFF00,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#00FFFF,C_BUTTON_Palette8=#FF00FF</ColorPalette>
     <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#FF0000,C_BUTTON_Palette3=#400040,C_BUTTON_Palette4=#FF0000,C_BUTTON_Palette5=#FFFF00,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#00FFFF,C_BUTTON_Palette8=#FF00FF,C_CHECKBOX_Palette2=1</ColorPalette>
   </ColorPalettes>
   <EffectDB>
@@ -159,6 +158,7 @@
     <Effect>B_CUSTOM_SubBuffer=-0.22x-0.71x56.14x100.12x0.00x0.00,B_VALUECURVE_Blur=Active=TRUE|Id=ID_VALUECURVE_Blur|Min=1.00|Max=15.00|P1=1.00|RV=TRUE|,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=ScaryPumpkin [Ghostbusters],E_CHOICE_Faces_TimingTrack=layer 2</Effect>
     <Effect>B_CUSTOM_SubBuffer=42.65x-0.71x100.11x102.48,B_VALUECURVE_Blur=Active=TRUE|Id=ID_VALUECURVE_Blur|Min=1.00|Max=15.00|P1=1.00|RV=TRUE|,E_CHECKBOX_Faces_Outline=0,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=ScaryPumpkin [Ghostbusters],E_CHOICE_Faces_TimingTrack=New Timing</Effect>
     <Effect>B_CUSTOM_SubBuffer=43.26x-0.71x100.11x103.07x0.00x0.00,B_VALUECURVE_Blur=Active=TRUE|Id=ID_VALUECURVE_Blur|Min=1.00|Max=15.00|P1=1.00|RV=TRUE|,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=ScaryPumpkin [Ghostbusters],E_CHOICE_Faces_TimingTrack=layer 3</Effect>
+    <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/projector-website-qr.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
     <Effect>B_CUSTOM_SubBuffer=-0.42x-0.71x100.11x100.71x0.00x0.00,B_VALUECURVE_Blur=Active=TRUE|Id=ID_VALUECURVE_Blur|Min=1.00|Max=15.00|P1=1.00|RV=TRUE|,E_CHECKBOX_SynchroniseWithAudio=0,E_CHECKBOX_Video_AspectRatio=0,E_CHECKBOX_Video_TransparentBlack=0,E_CHOICE_Video_DurationTreatment=Normal,E_FILEPICKERCTRL_Video_Filename=Sequences/Ghostbusters/Media/Videos-154b7c/THE REAL GHOSTBUSTERS Cartoon Intro.mp4,E_TEXTCTRL_Duration=1:06.584,E_TEXTCTRL_SampleSpacing=0,E_TEXTCTRL_Video_CropBottom=0,E_TEXTCTRL_Video_CropLeft=0,E_TEXTCTRL_Video_CropRight=100,E_TEXTCTRL_Video_CropTop=100,E_TEXTCTRL_Video_Starttime=0.01,E_TEXTCTRL_Video_TransparentBlack=0,T_TEXTCTRL_Fadein=8,T_TEXTCTRL_Fadeout=1</Effect>
     <Effect>B_CUSTOM_SubBuffer=-0.42x-0.71x100.11x100.71,B_VALUECURVE_Blur=Active=TRUE|Id=ID_VALUECURVE_Blur|Min=1.00|Max=15.00|P1=1.00|RV=TRUE|,E_CHECKBOX_SynchroniseWithAudio=0,E_CHECKBOX_Video_AspectRatio=0,E_CHECKBOX_Video_TransparentBlack=0,E_CHOICE_Video_DurationTreatment=Normal,E_FILEPICKERCTRL_Video_Filename=Sequences/Ghostbusters/Media/Videos-154b7c/Halloween Display - Background Video for Holmes' Haunted Homes.mp4,E_TEXTCTRL_Duration=2:48.468,E_TEXTCTRL_Video_CropBottom=0,E_TEXTCTRL_Video_CropLeft=0,E_TEXTCTRL_Video_CropRight=100,E_TEXTCTRL_Video_CropTop=100,E_TEXTCTRL_Video_Starttime=0.01,E_TEXTCTRL_Video_TransparentBlack=0,T_TEXTCTRL_Fadein=.5,T_TEXTCTRL_Fadeout=.5</Effect>
     <Effect>B_CUSTOM_SubBuffer=-0.42x-0.71x100.11x100.71,B_VALUECURVE_Blur=Active=TRUE|Id=ID_VALUECURVE_Blur|Min=1.00|Max=15.00|P1=1.00|RV=TRUE|,E_CHECKBOX_SynchroniseWithAudio=0,E_CHECKBOX_Video_AspectRatio=0,E_CHECKBOX_Video_TransparentBlack=0,E_CHOICE_Video_DurationTreatment=Normal,E_FILEPICKERCTRL_Video_Filename=Sequences/Ghostbusters/Media/Videos-154b7c/Slimer and The Real Ghostbusters intro 3 (1988) Best Quality.mp4,E_TEXTCTRL_Duration=0:56.110,E_TEXTCTRL_Video_CropBottom=0,E_TEXTCTRL_Video_CropLeft=0,E_TEXTCTRL_Video_CropRight=100,E_TEXTCTRL_Video_CropTop=100,E_TEXTCTRL_Video_Starttime=26.89,E_TEXTCTRL_Video_TransparentBlack=0,T_TEXTCTRL_Fadein=.5,T_TEXTCTRL_Fadeout=.2</Effect>
@@ -167,8 +167,8 @@
     <Effect>E_CHECKBOX_SynchroniseWithAudio=0,E_CHECKBOX_Video_AspectRatio=0,E_CHECKBOX_Video_TransparentBlack=0,E_CHOICE_Video_DurationTreatment=Normal,E_FILEPICKERCTRL_Video_Filename=Sequences/Ghostbusters/Media/Videos-154b7c/Slimer and The Real Ghostbusters intro 3 (1988) Best Quality.mp4,E_TEXTCTRL_Duration=1:01.094,E_TEXTCTRL_SampleSpacing=0,E_TEXTCTRL_Video_CropBottom=0,E_TEXTCTRL_Video_CropLeft=0,E_TEXTCTRL_Video_CropRight=100,E_TEXTCTRL_Video_CropTop=100,E_TEXTCTRL_Video_Starttime=4.29,E_TEXTCTRL_Video_TransparentBlack=0,T_TEXTCTRL_Fadein=1,T_TEXTCTRL_Fadeout=.5</Effect>
     <Effect>B_CUSTOM_SubBuffer=-0.42x-0.71x100.11x100.71x0.00x0.00,B_VALUECURVE_Blur=Active=TRUE|Id=ID_VALUECURVE_Blur|Min=1.00|Max=15.00|P1=1.00|RV=TRUE|,E_CHECKBOX_SynchroniseWithAudio=0,E_CHECKBOX_Video_AspectRatio=0,E_CHECKBOX_Video_TransparentBlack=0,E_CHOICE_Video_DurationTreatment=Normal,E_FILEPICKERCTRL_Video_Filename=Sequences/Ghostbusters/Media/Videos-154b7c/After Effects Templates Halloween Background Parallax.mp4,E_TEXTCTRL_Duration=0:56.109,E_TEXTCTRL_SampleSpacing=0,E_TEXTCTRL_Video_CropBottom=0,E_TEXTCTRL_Video_CropLeft=0,E_TEXTCTRL_Video_CropRight=100,E_TEXTCTRL_Video_CropTop=100,E_TEXTCTRL_Video_Starttime=0.01,E_TEXTCTRL_Video_TransparentBlack=0,T_TEXTCTRL_Fadein=1,T_TEXTCTRL_Fadeout=2</Effect>
     <Effect>B_CHOICE_BufferStyle=Single Line,E_CHECKBOX_Marquee_PixelOffsets=0,E_CHECKBOX_Marquee_Reverse=1,E_CHECKBOX_Marquee_WrapX=0,E_NOTEBOOK_Marquee=Settings,E_SLIDER_MarqueeXC=0,E_SLIDER_MarqueeYC=0,E_SLIDER_Marquee_Band_Size=1,E_SLIDER_Marquee_ScaleX=100,E_SLIDER_Marquee_ScaleY=100,E_SLIDER_Marquee_Skip_Size=18,E_SLIDER_Marquee_Speed=14,E_SLIDER_Marquee_Stagger=0,E_SLIDER_Marquee_Start=10,E_SLIDER_Marquee_Thickness=33</Effect>
+    <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/tune-to-website.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
     <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=Sequences/Ghostbusters/Media/Voting/occasional-voting.gif,E_TEXTCTRL_Pictures_FrameRateAdj=1.0,E_TEXTCTRL_Pictures_Speed=1.0,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
-    <Effect>B_CUSTOM_SubBuffer=0.00x33.00x100.00x133.00x0.00x0.00,E_CHECKBOX_Text_Color_PerWord=0,E_CHECKBOX_Text_PixelOffsets=0,E_CHOICE_Text_Count=none,E_CHOICE_Text_Dir=none,E_CHOICE_Text_Effect=normal,E_CHOICE_Text_Font=Use OS Fonts,E_FILEPICKERCTRL_Text_File=Sequences/Ghostbusters/Media/Christmas-f4a98e/tuneto.txt,E_FONTPICKER_Text_Font=italic 'marker felt' 18 utf-8,E_SLIDER_Text_XEnd=0,E_SLIDER_Text_XStart=0,E_SLIDER_Text_YEnd=0,E_SLIDER_Text_YStart=0,E_TEXTCTRL_Text=,E_TEXTCTRL_Text_Speed=10</Effect>
     <Effect>B_CUSTOM_SubBuffer=-0.42x-0.71x100.11x100.71x0.00x0.00,B_VALUECURVE_Blur=Active=TRUE|Id=ID_VALUECURVE_Blur|Min=1.00|Max=15.00|P1=1.00|RV=TRUE|,E_CHECKBOX_SynchroniseWithAudio=0,E_CHECKBOX_Video_AspectRatio=0,E_CHECKBOX_Video_TransparentBlack=0,E_CHOICE_Video_DurationTreatment=Normal,E_FILEPICKERCTRL_Video_Filename=Sequences/Ghostbusters/Media/Videos-154b7c/THE REAL GHOSTBUSTERS Cartoon Intro.mp4,E_TEXTCTRL_Duration=1:06.584,E_TEXTCTRL_SampleSpacing=0,E_TEXTCTRL_Video_CropBottom=0,E_TEXTCTRL_Video_CropLeft=0,E_TEXTCTRL_Video_CropRight=100,E_TEXTCTRL_Video_CropTop=100,E_TEXTCTRL_Video_Starttime=3.1,E_TEXTCTRL_Video_TransparentBlack=0,T_TEXTCTRL_Fadein=1,T_TEXTCTRL_Fadeout=1</Effect>
     <Effect>B_CUSTOM_SubBuffer=-0.42x-0.71x100.11x100.71x0.00x0.00,B_VALUECURVE_Blur=Active=TRUE|Id=ID_VALUECURVE_Blur|Min=1.00|Max=15.00|P1=1.00|RV=TRUE|,E_CHECKBOX_SynchroniseWithAudio=0,E_CHECKBOX_Video_AspectRatio=0,E_CHECKBOX_Video_TransparentBlack=0,E_CHOICE_Video_DurationTreatment=Normal,E_FILEPICKERCTRL_Video_Filename=Sequences/Ghostbusters/Media/Videos-154b7c/Halloween Display - Background Video for Holmes' Haunted Homes.mp4,E_TEXTCTRL_Duration=2:48.468,E_TEXTCTRL_SampleSpacing=0,E_TEXTCTRL_Video_CropBottom=0,E_TEXTCTRL_Video_CropLeft=0,E_TEXTCTRL_Video_CropRight=100,E_TEXTCTRL_Video_CropTop=100,E_TEXTCTRL_Video_Starttime=0.01,E_TEXTCTRL_Video_TransparentBlack=0,T_TEXTCTRL_Fadein=.5,T_TEXTCTRL_Fadeout=.5</Effect>
     <Effect>B_CUSTOM_SubBuffer=-0.42x-0.71x100.11x100.71x0.00x0.00,B_VALUECURVE_Blur=Active=TRUE|Id=ID_VALUECURVE_Blur|Min=1.00|Max=15.00|P1=1.00|RV=TRUE|,E_CHECKBOX_SynchroniseWithAudio=0,E_CHECKBOX_Video_AspectRatio=0,E_CHECKBOX_Video_TransparentBlack=0,E_CHOICE_Video_DurationTreatment=Normal,E_FILEPICKERCTRL_Video_Filename=Sequences/Ghostbusters/Media/Videos-154b7c/Slimer and The Real Ghostbusters intro 3 (1988) Best Quality.mp4,E_TEXTCTRL_Duration=1:01.094,E_TEXTCTRL_SampleSpacing=0,E_TEXTCTRL_Video_CropBottom=0,E_TEXTCTRL_Video_CropLeft=0,E_TEXTCTRL_Video_CropRight=100,E_TEXTCTRL_Video_CropTop=100,E_TEXTCTRL_Video_Starttime=26.89,E_TEXTCTRL_Video_TransparentBlack=0,T_TEXTCTRL_Fadein=.5,T_TEXTCTRL_Fadeout=.2</Effect>
@@ -1765,15 +1765,20 @@
     </Element>
     <Element type="model" name="Projector">
       <EffectLayer>
-        <Effect ref="73" name="Video" startTime="18050" endTime="77500" palette="60" />
-        <Effect ref="74" name="Video" id="1" startTime="77500" endTime="94050" palette="61" />
-        <Effect ref="75" name="Video" id="2" startTime="94600" endTime="108550" palette="61" />
-        <Effect ref="76" name="Video" id="3" startTime="111150" endTime="127700" palette="62" />
-        <Effect ref="77" name="Video" id="4" startTime="127700" endTime="134400" palette="62" />
-        <Effect ref="78" name="Video" id="5" startTime="143200" endTime="169550" palette="63" />
+        <Effect ref="73" name="Pictures" startTime="10000" endTime="25000" palette="60" />
+        <Effect ref="73" name="Pictures" id="1" startTime="70000" endTime="85000" palette="60" />
+        <Effect ref="73" name="Pictures" id="2" startTime="130000" endTime="145000" palette="60" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="79" name="Video" startTime="0" endTime="18050" palette="61" />
+        <Effect ref="74" name="Video" startTime="18050" endTime="77500" palette="61" />
+        <Effect ref="75" name="Video" id="1" startTime="77500" endTime="94050" palette="62" />
+        <Effect ref="76" name="Video" id="2" startTime="94600" endTime="108550" palette="62" />
+        <Effect ref="77" name="Video" id="3" startTime="111150" endTime="127700" palette="63" />
+        <Effect ref="78" name="Video" id="4" startTime="127700" endTime="134400" palette="63" />
+        <Effect ref="79" name="Video" id="5" startTime="143200" endTime="169550" palette="64" />
+      </EffectLayer>
+      <EffectLayer>
+        <Effect ref="80" name="Video" startTime="0" endTime="18050" palette="62" />
       </EffectLayer>
     </Element>
     <Element type="model" name="Window - Bottom Left">
@@ -1787,7 +1792,7 @@
     </Element>
     <Element type="model" name="Column Left">
       <EffectLayer>
-        <Effect ref="80" name="Marquee" startTime="20100" endTime="25800" palette="55" />
+        <Effect ref="81" name="Marquee" startTime="20100" endTime="25800" palette="55" />
         <Effect ref="60" name="Fill" id="1" startTime="53200" endTime="61450" palette="46" />
       </EffectLayer>
       <EffectLayer>
@@ -1796,7 +1801,7 @@
     </Element>
     <Element type="model" name="Column Right">
       <EffectLayer>
-        <Effect ref="80" name="Marquee" startTime="20100" endTime="25800" palette="55" />
+        <Effect ref="81" name="Marquee" startTime="20100" endTime="25800" palette="55" />
         <Effect ref="60" name="Fill" id="1" startTime="53200" endTime="61450" palette="46" />
       </EffectLayer>
       <EffectLayer>
@@ -1808,7 +1813,7 @@
         <Effect ref="60" name="Fill" startTime="53200" endTime="61450" palette="46" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="80" name="Marquee" startTime="20100" endTime="25800" palette="55" />
+        <Effect ref="81" name="Marquee" startTime="20100" endTime="25800" palette="55" />
         <Effect ref="61" name="SingleStrand" id="1" startTime="53200" endTime="61450" palette="56" />
       </EffectLayer>
     </Element>
@@ -2186,18 +2191,19 @@
     </Element>
     <Element type="model" name="Tune To">
       <EffectLayer>
-        <Effect ref="81" name="Pictures" startTime="46350" endTime="62350" palette="64" />
+        <Effect ref="82" name="Pictures" startTime="0" endTime="171675" palette="60" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="82" name="Text" startTime="0" endTime="169800" palette="65" />
+        <Effect ref="83" name="Pictures" startTime="46350" endTime="62350" palette="60" />
       </EffectLayer>
+      <EffectLayer />
       <EffectLayer>
-        <Effect ref="83" name="Video" startTime="20975" endTime="77475" palette="60" />
-        <Effect ref="84" name="Video" id="1" startTime="77500" endTime="94050" palette="61" />
-        <Effect ref="85" name="Video" id="2" startTime="94600" endTime="108550" palette="61" />
-        <Effect ref="76" name="Video" id="3" startTime="111150" endTime="127700" palette="62" />
-        <Effect ref="86" name="Marquee" id="4" startTime="135950" endTime="143200" palette="66" />
-        <Effect ref="78" name="Video" id="5" startTime="143200" endTime="169550" palette="63" />
+        <Effect ref="84" name="Video" startTime="20975" endTime="77475" palette="61" />
+        <Effect ref="85" name="Video" id="1" startTime="77500" endTime="94050" palette="62" />
+        <Effect ref="86" name="Video" id="2" startTime="94600" endTime="108550" palette="62" />
+        <Effect ref="77" name="Video" id="3" startTime="111150" endTime="127700" palette="63" />
+        <Effect ref="87" name="Marquee" id="4" startTime="135950" endTime="143200" palette="65" />
+        <Effect ref="79" name="Video" id="5" startTime="143200" endTime="169550" palette="64" />
       </EffectLayer>
       <EffectLayer />
       <EffectLayer />
@@ -2212,49 +2218,49 @@
     </Element>
     <Element type="model" name="GE Evil Clown">
       <EffectLayer>
-        <Effect ref="87" name="Faces" startTime="11850" endTime="13900" palette="64" />
-        <Effect ref="87" name="Faces" id="1" startTime="15200" endTime="18700" palette="64" />
-        <Effect ref="87" name="Faces" id="2" startTime="24350" endTime="25900" palette="64" />
-        <Effect ref="87" name="Faces" id="3" startTime="27500" endTime="35350" palette="64" />
-        <Effect ref="87" name="Faces" id="4" startTime="39000" endTime="40650" palette="64" />
-        <Effect ref="87" name="Faces" id="5" startTime="44400" endTime="51300" palette="64" />
-        <Effect ref="87" name="Faces" id="6" startTime="53750" endTime="59550" palette="64" />
-        <Effect ref="87" name="Faces" id="7" startTime="62900" endTime="70200" palette="64" />
-        <Effect ref="87" name="Faces" id="8" startTime="72700" endTime="74300" palette="64" />
-        <Effect ref="87" name="Faces" id="9" startTime="78100" endTime="92550" palette="64" />
-        <Effect ref="87" name="Faces" id="10" startTime="95550" endTime="100300" palette="64" />
-        <Effect ref="87" name="Faces" id="11" startTime="103950" endTime="114050" palette="64" />
-        <Effect ref="87" name="Faces" id="12" startTime="115350" endTime="118300" palette="64" />
-        <Effect ref="87" name="Faces" id="13" startTime="120000" endTime="122950" palette="64" />
-        <Effect ref="87" name="Faces" id="14" startTime="125300" endTime="134550" palette="64" />
-        <Effect ref="87" name="Faces" id="15" startTime="137700" endTime="138200" palette="64" />
-        <Effect ref="87" name="Faces" id="16" startTime="139650" endTime="140450" palette="64" />
-        <Effect ref="87" name="Faces" id="17" startTime="141900" endTime="142650" palette="64" />
-        <Effect ref="87" name="Faces" id="18" startTime="151800" endTime="167100" palette="64" />
-        <Effect ref="87" name="Faces" id="19" startTime="168650" endTime="169200" palette="64" />
+        <Effect ref="88" name="Faces" startTime="11850" endTime="13900" palette="60" />
+        <Effect ref="88" name="Faces" id="1" startTime="15200" endTime="18700" palette="60" />
+        <Effect ref="88" name="Faces" id="2" startTime="24350" endTime="25900" palette="60" />
+        <Effect ref="88" name="Faces" id="3" startTime="27500" endTime="35350" palette="60" />
+        <Effect ref="88" name="Faces" id="4" startTime="39000" endTime="40650" palette="60" />
+        <Effect ref="88" name="Faces" id="5" startTime="44400" endTime="51300" palette="60" />
+        <Effect ref="88" name="Faces" id="6" startTime="53750" endTime="59550" palette="60" />
+        <Effect ref="88" name="Faces" id="7" startTime="62900" endTime="70200" palette="60" />
+        <Effect ref="88" name="Faces" id="8" startTime="72700" endTime="74300" palette="60" />
+        <Effect ref="88" name="Faces" id="9" startTime="78100" endTime="92550" palette="60" />
+        <Effect ref="88" name="Faces" id="10" startTime="95550" endTime="100300" palette="60" />
+        <Effect ref="88" name="Faces" id="11" startTime="103950" endTime="114050" palette="60" />
+        <Effect ref="88" name="Faces" id="12" startTime="115350" endTime="118300" palette="60" />
+        <Effect ref="88" name="Faces" id="13" startTime="120000" endTime="122950" palette="60" />
+        <Effect ref="88" name="Faces" id="14" startTime="125300" endTime="134550" palette="60" />
+        <Effect ref="88" name="Faces" id="15" startTime="137700" endTime="138200" palette="60" />
+        <Effect ref="88" name="Faces" id="16" startTime="139650" endTime="140450" palette="60" />
+        <Effect ref="88" name="Faces" id="17" startTime="141900" endTime="142650" palette="60" />
+        <Effect ref="88" name="Faces" id="18" startTime="151800" endTime="167100" palette="60" />
+        <Effect ref="88" name="Faces" id="19" startTime="168650" endTime="169200" palette="60" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Singing Pumpkin">
       <EffectLayer>
-        <Effect ref="88" name="Faces" startTime="10500" endTime="11950" palette="64" />
-        <Effect ref="88" name="Faces" id="1" startTime="25800" endTime="27500" palette="64" />
-        <Effect ref="88" name="Faces" id="2" startTime="34100" endTime="35600" palette="64" />
-        <Effect ref="88" name="Faces" id="3" startTime="42950" endTime="44450" palette="64" />
-        <Effect ref="88" name="Faces" id="4" startTime="51200" endTime="52900" palette="64" />
-        <Effect ref="88" name="Faces" id="5" startTime="67150" endTime="78100" palette="64" />
-        <Effect ref="88" name="Faces" id="6" startTime="80400" endTime="82550" palette="64" />
-        <Effect ref="88" name="Faces" id="7" startTime="84250" endTime="85850" palette="64" />
-        <Effect ref="88" name="Faces" id="8" startTime="92450" endTime="93950" palette="64" />
-        <Effect ref="88" name="Faces" id="9" startTime="100350" endTime="102200" palette="64" />
-        <Effect ref="88" name="Faces" id="10" startTime="104950" endTime="107350" palette="64" />
-        <Effect ref="88" name="Faces" id="11" startTime="108600" endTime="110050" palette="64" />
-        <Effect ref="88" name="Faces" id="12" startTime="113100" endTime="115050" palette="64" />
-        <Effect ref="88" name="Faces" id="13" startTime="117450" endTime="119250" palette="64" />
-        <Effect ref="88" name="Faces" id="14" startTime="121450" endTime="134250" palette="64" />
-        <Effect ref="88" name="Faces" id="15" startTime="151750" endTime="153500" palette="64" />
-        <Effect ref="88" name="Faces" id="16" startTime="154900" endTime="156700" palette="64" />
-        <Effect ref="88" name="Faces" id="17" startTime="158850" endTime="160150" palette="64" />
-        <Effect ref="88" name="Faces" id="18" startTime="168650" endTime="169200" palette="64" />
+        <Effect ref="89" name="Faces" startTime="10500" endTime="11950" palette="60" />
+        <Effect ref="89" name="Faces" id="1" startTime="25800" endTime="27500" palette="60" />
+        <Effect ref="89" name="Faces" id="2" startTime="34100" endTime="35600" palette="60" />
+        <Effect ref="89" name="Faces" id="3" startTime="42950" endTime="44450" palette="60" />
+        <Effect ref="89" name="Faces" id="4" startTime="51200" endTime="52900" palette="60" />
+        <Effect ref="89" name="Faces" id="5" startTime="67150" endTime="78100" palette="60" />
+        <Effect ref="89" name="Faces" id="6" startTime="80400" endTime="82550" palette="60" />
+        <Effect ref="89" name="Faces" id="7" startTime="84250" endTime="85850" palette="60" />
+        <Effect ref="89" name="Faces" id="8" startTime="92450" endTime="93950" palette="60" />
+        <Effect ref="89" name="Faces" id="9" startTime="100350" endTime="102200" palette="60" />
+        <Effect ref="89" name="Faces" id="10" startTime="104950" endTime="107350" palette="60" />
+        <Effect ref="89" name="Faces" id="11" startTime="108600" endTime="110050" palette="60" />
+        <Effect ref="89" name="Faces" id="12" startTime="113100" endTime="115050" palette="60" />
+        <Effect ref="89" name="Faces" id="13" startTime="117450" endTime="119250" palette="60" />
+        <Effect ref="89" name="Faces" id="14" startTime="121450" endTime="134250" palette="60" />
+        <Effect ref="89" name="Faces" id="15" startTime="151750" endTime="153500" palette="60" />
+        <Effect ref="89" name="Faces" id="16" startTime="154900" endTime="156700" palette="60" />
+        <Effect ref="89" name="Faces" id="17" startTime="158850" endTime="160150" palette="60" />
+        <Effect ref="89" name="Faces" id="18" startTime="168650" endTime="169200" palette="60" />
       </EffectLayer>
     </Element>
     <Element type="timing" name="50ms Metronome">
@@ -12754,12 +12760,12 @@
       <EffectLayer />
       <EffectLayer />
       <EffectLayer>
-        <Effect ref="89" name="Faces" startTime="550" endTime="10600" palette="64" />
-        <Effect ref="89" name="Faces" id="1" startTime="12250" endTime="110050" palette="64" />
-        <Effect ref="89" name="Faces" id="2" startTime="111700" endTime="117550" palette="64" />
-        <Effect ref="89" name="Faces" id="3" startTime="118800" endTime="125550" palette="64" />
-        <Effect ref="89" name="Faces" id="4" startTime="127900" endTime="129050" palette="64" />
-        <Effect ref="89" name="Faces" id="5" startTime="130300" endTime="169200" palette="64" />
+        <Effect ref="90" name="Faces" startTime="550" endTime="10600" palette="60" />
+        <Effect ref="90" name="Faces" id="1" startTime="12250" endTime="110050" palette="60" />
+        <Effect ref="90" name="Faces" id="2" startTime="111700" endTime="117550" palette="60" />
+        <Effect ref="90" name="Faces" id="3" startTime="118800" endTime="125550" palette="60" />
+        <Effect ref="90" name="Faces" id="4" startTime="127900" endTime="129050" palette="60" />
+        <Effect ref="90" name="Faces" id="5" startTime="130300" endTime="169200" palette="60" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Dark Helmet">

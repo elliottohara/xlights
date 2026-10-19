@@ -1,5 +1,12 @@
 # xLights Show Directory — Agent Notes
 
+## Website and radio promotion — October 18, 2026
+
+- Give `oharafamilylightshow.com` equal prominence with `87.9 FM` on Tune To. All 24 active Halloween sequences now show both throughout playback. Preserve this website messaging when refreshing defaults or mapping future songs.
+- Projector cards use a stationary, high-contrast QR for `https://oharafamilylightshow.com/`, with a four-module white border and the written address. Hold each card for 15 seconds, beginning at 10 seconds and repeating every 60 seconds; retain song visuals between cards. Thirty-second utility sequences show the QR from 10–25 seconds.
+- All 24 native renders passed sign/QR pixel checks and QR decoding, and all 25 playback filenames were verified on Master and Projector. The current layout, song repairs, playlist, schedule, routes and AV configuration were preserved. Master stayed running. Evidence: `Halloween/website-promotion-latest.json`; reusable artwork: `Halloween/WebsitePromotion/`.
+- To free staging space, only this task's Master recovery links were relocated after complete checksum verification. All 25 original files are retained at `/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813/Verified Master originals/`; older backups and active files were preserved. Projector recovery copies remain on the projector.
+
 ## Titanium singing and snowflake repair — October 18, 2026
 
 - Both Titanium variants now have an aligned full-song Evil Clown lead; Teddy, Singing Pumpkin and Dark Helmet sing the choruses/refrains. All four remain visible, resting between lyrics. This supersedes Titanium’s old split cast.

@@ -686,6 +686,7 @@
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=Lyrics,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Pumpkin face,E_CHOICE_Faces_TimingTrack=Lyrics,E_CHOICE_Faces_UseState=outline with stem,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
     <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=Sequences/Zombie/Media/Voting/occasional-voting.gif,E_TEXTCTRL_Pictures_FrameRateAdj=1.0,E_TEXTCTRL_Pictures_Speed=1.0,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
+    <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/projector-website-qr.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
     <Effect>E_CHOICE_Kaleidoscope_Type=8-Fold,E_SLIDER_Kaleidoscope_Rotation=80,E_SLIDER_Kaleidoscope_Size=78,E_SLIDER_Kaleidoscope_X=50,E_SLIDER_Kaleidoscope_Y=50,T_CHECKBOX_Canvas=1,T_CHECKBOX_LayerMorph=0,T_CHOICE_LayerMethod=Normal,T_SLIDER_EffectLayerMix=0,T_TEXTCTRL_Fadein=0.25,T_TEXTCTRL_Fadeout=.75</Effect>
     <Effect>E_CHECKBOX_Shockwave_Blend_Edges=1,E_CHECKBOX_Shockwave_FilterRegex=0,E_CHECKBOX_Shockwave_Scale=0,E_CHOICE_Shockwave_TimingTrack=Toms,E_NOTEBOOK_Shockwave=Position,E_SLIDER_Shockwave_Accel=-10,E_SLIDER_Shockwave_CenterX=50,E_SLIDER_Shockwave_CenterY=50,E_SLIDER_Shockwave_Cycles=1,E_SLIDER_Shockwave_Duration=5000,E_SLIDER_Shockwave_End_Radius=90,E_SLIDER_Shockwave_End_Width=21,E_SLIDER_Shockwave_Start_Radius=18,E_SLIDER_Shockwave_Start_Width=82,E_TEXTCTRL_Shockwave_FilterLabel=,T_CHECKBOX_Canvas=0,T_CHECKBOX_LayerMorph=0,T_CHOICE_LayerMethod=1 reveals 2,T_SLIDER_EffectLayerMix=0</Effect>
     <Effect>E_CHECKBOX_Shape_FadeAway=1,E_CHECKBOX_Shape_FireTiming=0,E_CHECKBOX_Shape_HoldColour=1,E_CHECKBOX_Shape_RandomInitial=1,E_CHECKBOX_Shape_RandomLocation=1,E_CHECKBOX_Shape_UseMusic=0,E_CHECKBOX_Shapes_RandomMovement=0,E_CHOICE_Shape_ObjectToDraw=Triangle,E_FILEPICKERCTRL_SVG=,E_NOTEBOOK=Size,E_SLIDER_Shape_Growth=10,E_SLIDER_Shape_Lifetime=5,E_SLIDER_Shape_Rotation=0,E_SLIDER_Shape_StartSize=1,E_SLIDER_Shape_Thickness=1,E_SLIDER_Shapes_Direction=90,E_SLIDER_Shapes_Velocity=0,E_TEXTCTRL_Shape_Count=5,T_CHECKBOX_Canvas=0,T_CHECKBOX_LayerMorph=0,T_CHOICE_LayerMethod=1 reveals 2,T_SLIDER_EffectLayerMix=0,T_TEXTCTRL_Fadein=0.75,T_TEXTCTRL_Fadeout=1.00</Effect>
@@ -739,7 +740,7 @@
     <Effect>B_CHOICE_BufferStyle=Per Preview,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_NOTEBOOK=Start Position,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=Sequences/Zombie/Media/Vendor/Images/Zombie.png,E_TEXTCTRL_Pictures_FrameRateAdj=1.0,E_TEXTCTRL_Pictures_Speed=1.0,E_TEXTCTRL_Pictures_TransparentBlack=0,T_CHECKBOX_Canvas=0,T_CHECKBOX_LayerMorph=0,T_CHOICE_LayerMethod=Normal,T_SLIDER_EffectLayerMix=0,T_TEXTCTRL_Fadein=0.25,T_TEXTCTRL_Fadeout=0.25</Effect>
     <Effect>B_CHOICE_BufferStyle=Per Preview,B_CHOICE_PerPreviewCamera=2D,E_CHECKBOX_Shockwave_Blend_Edges=1,E_CHECKBOX_Shockwave_FilterRegex=0,E_CHECKBOX_Shockwave_Scale=1,E_CHOICE_Shockwave_TimingTrack=Toms,E_NOTEBOOK_Shockwave=Options,E_SLIDER_Shockwave_Accel=0,E_SLIDER_Shockwave_CenterX=50,E_SLIDER_Shockwave_CenterY=50,E_SLIDER_Shockwave_Cycles=1,E_SLIDER_Shockwave_Duration=750,E_SLIDER_Shockwave_End_Radius=50,E_SLIDER_Shockwave_End_Width=10,E_SLIDER_Shockwave_Start_Radius=1,E_SLIDER_Shockwave_Start_Width=5,E_TEXTCTRL_Shockwave_FilterLabel=,T_CHECKBOX_Canvas=0,T_CHECKBOX_LayerMorph=0,T_CHOICE_LayerMethod=Shadow 2 on 1,T_SLIDER_EffectLayerMix=0</Effect>
     <Effect>B_CHOICE_BufferStyle=Per Preview,E_CHECKBOX_FIRETIMING=0,E_CHECKBOX_Fireworks_Gravity=1,E_CHECKBOX_Fireworks_HoldColour=1,E_CHECKBOX_Fireworks_UseMusic=0,E_SLIDER_Fireworks_Count=50,E_SLIDER_Fireworks_Explosions=18,E_SLIDER_Fireworks_Fade=50,E_SLIDER_Fireworks_Velocity=2,E_SLIDER_Fireworks_XLocation=-1,E_SLIDER_Fireworks_XVelocity=0,E_SLIDER_Fireworks_YLocation=-1,E_SLIDER_Fireworks_YVelocity=0,T_CHECKBOX_Canvas=0,T_CHECKBOX_LayerMorph=0,T_CHOICE_LayerMethod=Normal,T_SLIDER_EffectLayerMix=0,T_TEXTCTRL_Fadein=0.50,T_TEXTCTRL_Fadeout=0.75</Effect>
-    <Effect>E_CHOICE_Text_Dir=none,E_CHOICE_Text_Effect=normal,E_CHOICE_Text_Font=Use OS Fonts,E_FILEPICKERCTRL_Text_File=,E_FONTPICKER_Text_Font=Arial 24,E_TEXTCTRL_Text=Tune to 87.9,E_TEXTCTRL_Text_Speed=10,T_CHOICE_LayerMethod=Effect 1</Effect>
+    <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/tune-to-website.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
   </EffectDB>
   <SequenceMedia>
     <Video path="Sequences/Zombie/Media/Vendor/ImportedMedia/Zombie edited/Videos/zombie_dance_3d.mp4" />
@@ -4157,93 +4158,99 @@
     </Element>
     <Element type="model" name="Projector">
       <EffectLayer>
-        <Effect ref="486" name="Kaleidoscope" startTime="275" endTime="11750" palette="1" />
-        <Effect ref="487" name="Shockwave" id="1" startTime="49350" endTime="70500" palette="179" />
-        <Effect ref="488" name="Shape" id="2" startTime="94075" endTime="99700" palette="4" />
-        <Effect ref="489" name="Kaleidoscope" id="3" startTime="118575" endTime="130550" palette="61" />
-        <Effect ref="487" name="Shockwave" id="4" startTime="162275" endTime="185950" palette="179" />
-        <Effect ref="490" name="Pictures" id="5" startTime="192075" endTime="197625" palette="79" />
-        <Effect ref="491" name="Warp" id="6" startTime="243800" endTime="249275" palette="20" />
+        <Effect ref="486" name="Pictures" startTime="10000" endTime="25000" palette="178" />
+        <Effect ref="486" name="Pictures" id="1" startTime="70000" endTime="85000" palette="178" />
+        <Effect ref="486" name="Pictures" id="2" startTime="130000" endTime="145000" palette="178" />
+        <Effect ref="486" name="Pictures" id="3" startTime="190000" endTime="205000" palette="178" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="492" name="Warp" startTime="275" endTime="11750" palette="1" />
-        <Effect ref="493" name="Tendril" id="1" startTime="13250" endTime="25125" palette="11" />
-        <Effect ref="494" name="Tendril" id="2" startTime="25125" endTime="28100" palette="11" />
-        <Effect ref="495" name="Tendril" id="3" startTime="28100" endTime="31075" palette="11" />
-        <Effect ref="496" name="Tendril" id="4" startTime="31075" endTime="34000" palette="74" />
-        <Effect ref="495" name="Tendril" id="5" startTime="34000" endTime="36900" palette="11" />
-        <Effect ref="496" name="Tendril" id="6" startTime="36900" endTime="39850" palette="74" />
-        <Effect ref="497" name="Tendril" id="7" startTime="39850" endTime="42750" palette="11" />
-        <Effect ref="498" name="Lightning" id="8" startTime="42750" endTime="49350" palette="13" />
-        <Effect ref="499" name="Warp" id="9" startTime="49350" endTime="60325" palette="14" />
-        <Effect ref="500" name="Kaleidoscope" id="10" startTime="60325" endTime="70500" palette="14" />
-        <Effect ref="501" name="Kaleidoscope" id="11" startTime="70500" endTime="82425" palette="4" />
+        <Effect ref="487" name="Kaleidoscope" startTime="275" endTime="11750" palette="1" />
+        <Effect ref="488" name="Shockwave" id="1" startTime="49350" endTime="70500" palette="179" />
+        <Effect ref="489" name="Shape" id="2" startTime="94075" endTime="99700" palette="4" />
+        <Effect ref="490" name="Kaleidoscope" id="3" startTime="118575" endTime="130550" palette="61" />
+        <Effect ref="488" name="Shockwave" id="4" startTime="162275" endTime="185950" palette="179" />
+        <Effect ref="491" name="Pictures" id="5" startTime="192075" endTime="197625" palette="79" />
+        <Effect ref="492" name="Warp" id="6" startTime="243800" endTime="249275" palette="20" />
+      </EffectLayer>
+      <EffectLayer>
+        <Effect ref="493" name="Warp" startTime="275" endTime="11750" palette="1" />
+        <Effect ref="494" name="Tendril" id="1" startTime="13250" endTime="25125" palette="11" />
+        <Effect ref="495" name="Tendril" id="2" startTime="25125" endTime="28100" palette="11" />
+        <Effect ref="496" name="Tendril" id="3" startTime="28100" endTime="31075" palette="11" />
+        <Effect ref="497" name="Tendril" id="4" startTime="31075" endTime="34000" palette="74" />
+        <Effect ref="496" name="Tendril" id="5" startTime="34000" endTime="36900" palette="11" />
+        <Effect ref="497" name="Tendril" id="6" startTime="36900" endTime="39850" palette="74" />
+        <Effect ref="498" name="Tendril" id="7" startTime="39850" endTime="42750" palette="11" />
+        <Effect ref="499" name="Lightning" id="8" startTime="42750" endTime="49350" palette="13" />
+        <Effect ref="500" name="Warp" id="9" startTime="49350" endTime="60325" palette="14" />
+        <Effect ref="501" name="Kaleidoscope" id="10" startTime="60325" endTime="70500" palette="14" />
+        <Effect ref="502" name="Kaleidoscope" id="11" startTime="70500" endTime="82425" palette="4" />
         <Effect ref="160" name="Warp" id="12" startTime="82425" endTime="94075" palette="33" />
-        <Effect ref="502" name="Fireworks" id="13" startTime="94075" endTime="99700" palette="4" />
-        <Effect ref="503" name="Shape" id="14" startTime="105675" endTime="111450" palette="5" />
-        <Effect ref="504" name="Spirals" id="15" startTime="118575" endTime="130550" palette="61" />
-        <Effect ref="505" name="Spirals" id="16" startTime="130550" endTime="142125" palette="17" />
-        <Effect ref="506" name="Spirals" id="17" startTime="142125" endTime="152925" palette="6" />
-        <Effect ref="499" name="Warp" id="18" startTime="162275" endTime="173250" palette="14" />
-        <Effect ref="500" name="Kaleidoscope" id="19" startTime="173250" endTime="185950" palette="14" />
-        <Effect ref="501" name="Kaleidoscope" id="20" startTime="185950" endTime="195350" palette="4" />
+        <Effect ref="503" name="Fireworks" id="13" startTime="94075" endTime="99700" palette="4" />
+        <Effect ref="504" name="Shape" id="14" startTime="105675" endTime="111450" palette="5" />
+        <Effect ref="505" name="Spirals" id="15" startTime="118575" endTime="130550" palette="61" />
+        <Effect ref="506" name="Spirals" id="16" startTime="130550" endTime="142125" palette="17" />
+        <Effect ref="507" name="Spirals" id="17" startTime="142125" endTime="152925" palette="6" />
+        <Effect ref="500" name="Warp" id="18" startTime="162275" endTime="173250" palette="14" />
+        <Effect ref="501" name="Kaleidoscope" id="19" startTime="173250" endTime="185950" palette="14" />
+        <Effect ref="502" name="Kaleidoscope" id="20" startTime="185950" endTime="195350" palette="4" />
         <Effect ref="165" name="Warp" id="21" startTime="232825" endTime="243800" palette="20" />
-        <Effect ref="507" name="Spirals" id="22" startTime="243800" endTime="249275" palette="76" />
+        <Effect ref="508" name="Spirals" id="22" startTime="243800" endTime="249275" palette="76" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="508" name="Shader" startTime="275" endTime="11750" palette="1" />
-        <Effect ref="495" name="Tendril" id="1" startTime="25125" endTime="28100" palette="11" />
-        <Effect ref="496" name="Tendril" id="2" startTime="28100" endTime="31075" palette="74" />
-        <Effect ref="495" name="Tendril" id="3" startTime="31075" endTime="34000" palette="11" />
-        <Effect ref="496" name="Tendril" id="4" startTime="34000" endTime="36900" palette="74" />
-        <Effect ref="495" name="Tendril" id="5" startTime="36900" endTime="39850" palette="11" />
-        <Effect ref="496" name="Tendril" id="6" startTime="39850" endTime="42750" palette="74" />
-        <Effect ref="509" name="Lightning" id="7" startTime="42750" endTime="49350" palette="3" />
-        <Effect ref="510" name="Spirals" id="8" startTime="49350" endTime="60325" palette="14" />
-        <Effect ref="511" name="Spirals" id="9" startTime="60325" endTime="70500" palette="14" />
-        <Effect ref="512" name="Pinwheel" id="10" startTime="70500" endTime="82425" palette="4" />
-        <Effect ref="513" name="Spirals" id="11" startTime="82425" endTime="89400" palette="33" />
-        <Effect ref="514" name="Spirals" id="12" startTime="89400" endTime="94075" palette="33" />
-        <Effect ref="515" name="Shockwave" id="13" startTime="94075" endTime="99700" palette="4" />
-        <Effect ref="516" name="Fireworks" id="14" startTime="105675" endTime="111450" palette="5" />
-        <Effect ref="517" name="Spirals" id="15" startTime="130550" endTime="142125" palette="17" />
-        <Effect ref="518" name="Spirals" id="16" startTime="142125" endTime="152925" palette="18" />
-        <Effect ref="510" name="Spirals" id="17" startTime="162275" endTime="173250" palette="14" />
-        <Effect ref="519" name="Spirals" id="18" startTime="173250" endTime="185950" palette="14" />
-        <Effect ref="512" name="Pinwheel" id="19" startTime="185950" endTime="195350" palette="4" />
-        <Effect ref="520" name="Shape" id="20" startTime="197625" endTime="203525" palette="78" />
-        <Effect ref="521" name="Video" id="21" startTime="203525" endTime="221525" palette="70" />
-        <Effect ref="505" name="Spirals" id="22" startTime="221525" endTime="232825" palette="17" />
-        <Effect ref="522" name="Spirals" id="23" startTime="232825" endTime="243800" palette="29" />
+        <Effect ref="509" name="Shader" startTime="275" endTime="11750" palette="1" />
+        <Effect ref="496" name="Tendril" id="1" startTime="25125" endTime="28100" palette="11" />
+        <Effect ref="497" name="Tendril" id="2" startTime="28100" endTime="31075" palette="74" />
+        <Effect ref="496" name="Tendril" id="3" startTime="31075" endTime="34000" palette="11" />
+        <Effect ref="497" name="Tendril" id="4" startTime="34000" endTime="36900" palette="74" />
+        <Effect ref="496" name="Tendril" id="5" startTime="36900" endTime="39850" palette="11" />
+        <Effect ref="497" name="Tendril" id="6" startTime="39850" endTime="42750" palette="74" />
+        <Effect ref="510" name="Lightning" id="7" startTime="42750" endTime="49350" palette="3" />
+        <Effect ref="511" name="Spirals" id="8" startTime="49350" endTime="60325" palette="14" />
+        <Effect ref="512" name="Spirals" id="9" startTime="60325" endTime="70500" palette="14" />
+        <Effect ref="513" name="Pinwheel" id="10" startTime="70500" endTime="82425" palette="4" />
+        <Effect ref="514" name="Spirals" id="11" startTime="82425" endTime="89400" palette="33" />
+        <Effect ref="515" name="Spirals" id="12" startTime="89400" endTime="94075" palette="33" />
+        <Effect ref="516" name="Shockwave" id="13" startTime="94075" endTime="99700" palette="4" />
+        <Effect ref="517" name="Fireworks" id="14" startTime="105675" endTime="111450" palette="5" />
+        <Effect ref="518" name="Spirals" id="15" startTime="130550" endTime="142125" palette="17" />
+        <Effect ref="519" name="Spirals" id="16" startTime="142125" endTime="152925" palette="18" />
+        <Effect ref="511" name="Spirals" id="17" startTime="162275" endTime="173250" palette="14" />
+        <Effect ref="520" name="Spirals" id="18" startTime="173250" endTime="185950" palette="14" />
+        <Effect ref="513" name="Pinwheel" id="19" startTime="185950" endTime="195350" palette="4" />
+        <Effect ref="521" name="Shape" id="20" startTime="197625" endTime="203525" palette="78" />
+        <Effect ref="522" name="Video" id="21" startTime="203525" endTime="221525" palette="70" />
+        <Effect ref="506" name="Spirals" id="22" startTime="221525" endTime="232825" palette="17" />
+        <Effect ref="523" name="Spirals" id="23" startTime="232825" endTime="243800" palette="29" />
         <Effect ref="179" name="Spirals" id="24" startTime="243800" endTime="249275" palette="20" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="523" name="Spirals" startTime="49350" endTime="60325" palette="14" />
-        <Effect ref="524" name="Spirals" id="1" startTime="60325" endTime="70500" palette="180" />
-        <Effect ref="525" name="Pinwheel" id="2" startTime="70500" endTime="82425" palette="4" />
-        <Effect ref="526" name="Spirals" id="3" startTime="82425" endTime="89400" palette="33" />
-        <Effect ref="527" name="Spirals" id="4" startTime="89400" endTime="94075" palette="33" />
-        <Effect ref="528" name="Video" id="5" startTime="99700" endTime="105675" palette="79" />
-        <Effect ref="528" name="Video" id="6" startTime="111450" endTime="118575" palette="79" />
-        <Effect ref="529" name="Spirals" id="7" startTime="130550" endTime="142125" palette="17" />
-        <Effect ref="530" name="Spirals" id="8" startTime="142125" endTime="152925" palette="26" />
-        <Effect ref="523" name="Spirals" id="9" startTime="162275" endTime="173250" palette="14" />
-        <Effect ref="524" name="Spirals" id="10" startTime="173250" endTime="186000" palette="180" />
-        <Effect ref="531" name="Pinwheel" id="11" startTime="186000" endTime="195350" palette="4" />
+        <Effect ref="524" name="Spirals" startTime="49350" endTime="60325" palette="14" />
+        <Effect ref="525" name="Spirals" id="1" startTime="60325" endTime="70500" palette="180" />
+        <Effect ref="526" name="Pinwheel" id="2" startTime="70500" endTime="82425" palette="4" />
+        <Effect ref="527" name="Spirals" id="3" startTime="82425" endTime="89400" palette="33" />
+        <Effect ref="528" name="Spirals" id="4" startTime="89400" endTime="94075" palette="33" />
+        <Effect ref="529" name="Video" id="5" startTime="99700" endTime="105675" palette="79" />
+        <Effect ref="529" name="Video" id="6" startTime="111450" endTime="118575" palette="79" />
+        <Effect ref="530" name="Spirals" id="7" startTime="130550" endTime="142125" palette="17" />
+        <Effect ref="531" name="Spirals" id="8" startTime="142125" endTime="152925" palette="26" />
+        <Effect ref="524" name="Spirals" id="9" startTime="162275" endTime="173250" palette="14" />
+        <Effect ref="525" name="Spirals" id="10" startTime="173250" endTime="186000" palette="180" />
+        <Effect ref="532" name="Pinwheel" id="11" startTime="186000" endTime="195350" palette="4" />
         <Effect ref="187" name="Fireworks" id="12" startTime="197625" endTime="203525" palette="80" />
-        <Effect ref="517" name="Spirals" id="13" startTime="221525" endTime="232825" palette="17" />
-        <Effect ref="532" name="Spirals" id="14" startTime="232825" endTime="243800" palette="35" />
+        <Effect ref="518" name="Spirals" id="13" startTime="221525" endTime="232825" palette="17" />
+        <Effect ref="533" name="Spirals" id="14" startTime="232825" endTime="243800" palette="35" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="533" name="Spirals" startTime="130550" endTime="142125" palette="17" />
-        <Effect ref="534" name="Pinwheel" id="1" startTime="152950" endTime="163050" palette="6" />
+        <Effect ref="534" name="Spirals" startTime="130550" endTime="142125" palette="17" />
+        <Effect ref="535" name="Pinwheel" id="1" startTime="152950" endTime="163050" palette="6" />
         <Effect ref="190" name="Shape" id="2" startTime="185950" endTime="192075" palette="17" />
-        <Effect ref="535" name="Shader" id="3" startTime="197625" endTime="203525" palette="6" />
+        <Effect ref="536" name="Shader" id="3" startTime="197625" endTime="203525" palette="6" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="536" name="Pictures" startTime="11750" endTime="13250" palette="79" />
-        <Effect ref="537" name="Shockwave" id="1" startTime="152950" endTime="163050" palette="57" />
-        <Effect ref="538" name="Fireworks" id="2" startTime="185950" endTime="192075" palette="27" />
+        <Effect ref="537" name="Pictures" startTime="11750" endTime="13250" palette="79" />
+        <Effect ref="538" name="Shockwave" id="1" startTime="152950" endTime="163050" palette="57" />
+        <Effect ref="539" name="Fireworks" id="2" startTime="185950" endTime="192075" palette="27" />
       </EffectLayer>
       <EffectLayer>
         <Effect ref="99" name="Off" startTime="11750" endTime="13250" palette="83" />
@@ -4349,10 +4356,11 @@
       <EffectLayer />
     </Element>
     <Element type="model" name="Tune To">
-      <EffectLayer />
       <EffectLayer>
-        <Effect ref="539" name="Text" startTime="0" endTime="251100" palette="178" />
+        <Effect ref="540" name="Pictures" startTime="0" endTime="251100" palette="178" />
       </EffectLayer>
+      <EffectLayer />
+      <EffectLayer />
     </Element>
     <Element type="model" name="Wall - Bedroom">
       <EffectLayer />

@@ -186,3 +186,12 @@ Physical model routing/positions synchronized to the current Halloween master, p
 ## Hidden flakes and bulbs disconnected — October 18, 2026
 
 - User kept the arches but removed the four hidden GE Flake N/A props and Singing Bulb Left/Right from the oak-tree Kulp. Live ports 9/10/19/20 cleared and read back; other physical outputs and arches unchanged. The six inactive models now have No Controller and no port assignment. Definitions, groups, song-specific models and sequence effects remain preserved. Native layout allocation was recalculated; older output-address plans/renders are stale. No sequences rendered or sent. Evidence: Halloween/disconnect-hidden-flakes-bulbs-latest.json.
+
+
+## Website and radio promotion — October 18, 2026
+
+- Tune To now carries `oharafamilylightshow.com` and `TUNE TO 87.9 FM` throughout the sequence, using readable opaque text bands over the retained sign visuals. Superseded radio-only Text effects were removed.
+- Projector website QR cards hold still for 15 seconds at 10–25 seconds. The QR points to `https://oharafamilylightshow.com/`; song visuals resume between cards.
+- Native rendering and original-effect preservation checks passed. Actual sign pixels and every QR interval were checked; a QR extracted from this render decoded to the correct URL.
+- Deployed to Master and Projector under the existing playback filenames with complete remote checksum and sequence metadata checks. Master kept running; playlists, schedule, routing and AV settings were preserved.
+- Evidence and recoverable originals: `Halloween/website-promotion-latest.json`, `/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813`.

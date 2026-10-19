@@ -469,9 +469,10 @@
     <Effect>B_CHOICE_BufferStyle=Per Model Per Preview,B_CHOICE_PerPreviewCamera=2D,E_CHOICE_State_Color=Graduate,E_CHOICE_State_Mode=Default,E_CHOICE_State_StateDefinition=BAT WINGS,E_CHOICE_State_TimingTrack=Metronome,E_SLIDER_State_Fade_Time=0</Effect>
     <Effect>B_CHOICE_BufferStyle=Overlay - Centered,E_CHECKBOX_Twinkle_ReRandom=0,E_CHECKBOX_Twinkle_Strobe=0,E_CHOICE_Twinkle_Style=New Render Method,E_SLIDER_Twinkle_Count=8,E_SLIDER_Twinkle_Steps=30</Effect>
     <Effect>B_CHOICE_BufferStyle=Overlay - Centered,E_CHECKBOX_Pinwheel_Rotation=1,E_CHOICE_Pinwheel_3D=3D,E_CHOICE_Pinwheel_Style=New Render Method,E_SLIDER_PinwheelXC=0,E_SLIDER_PinwheelYC=-100,E_SLIDER_Pinwheel_ArmSize=219,E_SLIDER_Pinwheel_Arms=2,E_SLIDER_Pinwheel_Offset=0,E_SLIDER_Pinwheel_Speed=10,E_SLIDER_Pinwheel_Thickness=8,E_VALUECURVE_Pinwheel_Twist=Active=TRUE|Id=ID_VALUECURVE_Pinwheel_Twist|Type=Square|Min=-360.00|Max=360.00|P1=-122.40|P2=122.40|P3=2.00|RV=TRUE|</Effect>
+    <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/tune-to-website.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
     <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=Sequences/01 - Abracadabra/Media/Voting/occasional-voting.gif,E_TEXTCTRL_Pictures_FrameRateAdj=1.0,E_TEXTCTRL_Pictures_Speed=1.0,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
-    <Effect>E_CHECKBOX_TextNoRepeat=0,E_CHECKBOX_TextToCenter=0,E_CHECKBOX_Text_Color_PerWord=0,E_CHECKBOX_Text_PixelOffsets=0,E_CHOICE_Text_Count=none,E_CHOICE_Text_Dir=wavey,E_CHOICE_Text_Effect=normal,E_CHOICE_Text_Font=Use OS Fonts,E_FILEPICKERCTRL_Text_File=Sequences/01 - Abracadabra/Media/Christmas-f4a98e/tuneto.txt,E_FONTPICKER_Text_Font=medium italic futura 36 utf-8,E_SLIDER_Text_XEnd=0,E_SLIDER_Text_XStart=0,E_SLIDER_Text_YEnd=0,E_SLIDER_Text_YStart=0,E_TEXTCTRL_Text=,E_TEXTCTRL_Text_Speed=10</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_TimingTrack=Abracadabra,E_CHOICE_Faces_UseState=Teddy RedBow static,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
+    <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/projector-website-qr.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
   </EffectDB>
   <SequenceMedia>
     <Video path="Sequences/01 - Abracadabra/Media/Vendor/Videos/Halloween Fire.mp4" />
@@ -4721,11 +4722,12 @@
     </Element>
     <Element type="model" name="Tune To">
       <EffectLayer>
-        <Effect ref="399" name="Pictures" startTime="60325" endTime="76325" palette="49" />
+        <Effect ref="399" name="Pictures" startTime="0" endTime="223375" palette="49" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="400" name="Text" startTime="0" endTime="223375" palette="9" />
+        <Effect ref="400" name="Pictures" startTime="60325" endTime="76325" palette="49" />
       </EffectLayer>
+      <EffectLayer />
       <EffectLayer>
         <Effect ref="171" name="Shader" startTime="35950" endTime="38350" palette="9" />
         <Effect ref="6" name="Video" id="1" startTime="87850" endTime="90725" palette="2" />
@@ -7665,6 +7667,12 @@
       <EffectLayer />
     </Element>
     <Element type="model" name="Projector">
+      <EffectLayer>
+        <Effect ref="402" name="Pictures" startTime="10000" endTime="25000" palette="49" />
+        <Effect ref="402" name="Pictures" id="1" startTime="70000" endTime="85000" palette="49" />
+        <Effect ref="402" name="Pictures" id="2" startTime="130000" endTime="145000" palette="49" />
+        <Effect ref="402" name="Pictures" id="3" startTime="190000" endTime="205000" palette="49" />
+      </EffectLayer>
       <EffectLayer />
     </Element>
     <Element type="model" name="Roof  - Peak">

@@ -1048,6 +1048,7 @@
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_TimingTrack=Lead Lyrics,E_CHOICE_Faces_UseState=Teddy RedBow static,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=Lead Lyrics,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Pumpkin face,E_CHOICE_Faces_TimingTrack=Male Chorus,E_CHOICE_Faces_UseState=outline with stem,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
+    <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/projector-website-qr.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
     <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=Sequences/Dracula/Media/Voting/occasional-voting.gif,E_TEXTCTRL_Pictures_FrameRateAdj=1.0,E_TEXTCTRL_Pictures_Speed=1.0,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
     <Effect>E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_NOTEBOOK=Start Position,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=Sequences/Dracula/Media/Embedded/Image/Dracula sunlight.jpeg,E_TEXTCTRL_Pictures_FrameRateAdj=1.0,E_TEXTCTRL_Pictures_Speed=1.0,E_TEXTCTRL_Pictures_TransparentBlack=0,T_CHECKBOX_Canvas=0,T_CHECKBOX_LayerMorph=0,T_CHOICE_LayerMethod=Normal,T_SLIDER_EffectLayerMix=0,T_TEXTCTRL_Fadein=0.50,T_TEXTCTRL_Fadeout=0.50</Effect>
     <Effect>E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_NOTEBOOK=End Position,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=Sequences/Dracula/Media/Embedded/Image/Dracula Car club.jpg,E_TEXTCTRL_Pictures_FrameRateAdj=1.0,E_TEXTCTRL_Pictures_Speed=1.0,E_TEXTCTRL_Pictures_TransparentBlack=0,T_CHECKBOX_Canvas=0,T_CHECKBOX_LayerMorph=0,T_CHOICE_LayerMethod=Normal,T_CHOICE_Out_Transition_Type=Zoom,T_SLIDER_EffectLayerMix=0,T_TEXTCTRL_Fadein=2.00,T_TEXTCTRL_Fadeout=0.25</Effect>
@@ -1061,7 +1062,7 @@
     <Effect>E_CHECKBOX_Faces_Outline=0,E_CHECKBOX_Faces_PixelOffsets=0,E_CHECKBOX_Faces_SuppressShimmer=0,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHECKBOX_Faces_TransparentBlack=0,E_CHECKBOX_Faces_WrapX=0,E_CHOICE_Faces_Direction=none,E_CHOICE_Faces_EyeBlinkDuration=Normal,E_CHOICE_Faces_EyeBlinkFrequency=Fast,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Dracula Rock,E_CHOICE_Faces_Scaling=Default (from face),E_CHOICE_Faces_TimingTrack=Lead Lyrics,E_NOTEBOOK=Start Position,E_SLIDER_FacesXC=0,E_SLIDER_FacesYC=-2,E_SLIDER_Faces_EndScale=100,E_SLIDER_Faces_StartScale=100,E_TEXTCTRL_Faces_FrameRateAdj=1.0,E_TEXTCTRL_Faces_Speed=1.0,E_TEXTCTRL_Faces_TransparentBlack=0,T_CHECKBOX_Canvas=0,T_CHECKBOX_LayerMorph=0,T_CHOICE_LayerMethod=Normal,T_SLIDER_EffectLayerMix=0,T_TEXTCTRL_Fadein=0.25,T_TEXTCTRL_Fadeout=1.50</Effect>
     <Effect>B_CHOICE_BufferStyle=Single Line,E_CHECKBOX_Marquee_PixelOffsets=0,E_CHECKBOX_Marquee_Reverse=0,E_CHECKBOX_Marquee_WrapX=0,E_CHECKBOX_Marquee_WrapY=0,E_NOTEBOOK_Marquee=Settings,E_SLIDER_MarqueeXC=0,E_SLIDER_MarqueeYC=0,E_SLIDER_Marquee_Band_Size=12,E_SLIDER_Marquee_ScaleX=100,E_SLIDER_Marquee_ScaleY=100,E_SLIDER_Marquee_Skip_Size=70,E_SLIDER_Marquee_Speed=3,E_SLIDER_Marquee_Stagger=15,E_SLIDER_Marquee_Start=0,E_SLIDER_Marquee_Thickness=91,T_CHECKBOX_Canvas=0,T_CHECKBOX_LayerMorph=0,T_CHOICE_LayerMethod=Normal,T_SLIDER_EffectLayerMix=0,T_TEXTCTRL_Fadein=0.25,T_TEXTCTRL_Fadeout=0.25</Effect>
     <Effect>E_CHECKBOX_Fire_GrowWithMusic=1,E_CHOICE_Fire_Location=Bottom,E_CHOICE_Fire_Style=New Render Method,E_SLIDER_Fire_HueShift=50,T_CHECKBOX_Canvas=0,T_CHECKBOX_LayerMorph=0,T_CHOICE_LayerMethod=Normal,T_SLIDER_EffectLayerMix=0,T_TEXTCTRL_Fadein=0.50,T_TEXTCTRL_Fadeout=0.25</Effect>
-    <Effect>E_CHOICE_Text_Dir=none,E_CHOICE_Text_Effect=normal,E_CHOICE_Text_Font=Use OS Fonts,E_FILEPICKERCTRL_Text_File=,E_FONTPICKER_Text_Font=Arial 24,E_TEXTCTRL_Text=Tune to 87.9,E_TEXTCTRL_Text_Speed=10,T_CHOICE_LayerMethod=Effect 1</Effect>
+    <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/tune-to-website.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
   </EffectDB>
   <SequenceMedia />
   <FaceDefinitions>
@@ -7347,27 +7348,33 @@
     </Element>
     <Element type="model" name="Projector">
       <EffectLayer>
-        <Effect ref="618" name="Pictures" startTime="98550" endTime="114550" palette="408" />
+        <Effect ref="618" name="Pictures" startTime="10000" endTime="25000" palette="408" />
+        <Effect ref="618" name="Pictures" id="1" startTime="70000" endTime="85000" palette="408" />
+        <Effect ref="618" name="Pictures" id="2" startTime="130000" endTime="145000" palette="408" />
+        <Effect ref="618" name="Pictures" id="3" startTime="190000" endTime="205000" palette="408" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="619" name="Pictures" startTime="41600" endTime="45500" palette="383" />
-        <Effect ref="620" name="Pictures" id="1" startTime="72125" endTime="78425" palette="383" />
-        <Effect ref="621" name="Pictures" id="2" startTime="93550" endTime="106575" palette="383" />
-        <Effect ref="622" name="Pictures" id="3" startTime="145700" endTime="150925" palette="383" />
-        <Effect ref="623" name="Pictures" id="4" startTime="160300" endTime="169175" palette="383" />
-        <Effect ref="624" name="Pictures" id="5" startTime="190075" endTime="198425" palette="383" />
+        <Effect ref="619" name="Pictures" startTime="98550" endTime="114550" palette="408" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="625" name="Pictures" startTime="39000" endTime="42075" palette="383" />
-        <Effect ref="626" name="Pictures" id="1" startTime="84150" endTime="94075" palette="383" />
-        <Effect ref="627" name="Pictures" id="2" startTime="134775" endTime="146225" palette="383" />
+        <Effect ref="620" name="Pictures" startTime="41600" endTime="45500" palette="383" />
+        <Effect ref="621" name="Pictures" id="1" startTime="72125" endTime="78425" palette="383" />
+        <Effect ref="622" name="Pictures" id="2" startTime="93550" endTime="106575" palette="383" />
+        <Effect ref="623" name="Pictures" id="3" startTime="145700" endTime="150925" palette="383" />
+        <Effect ref="624" name="Pictures" id="4" startTime="160300" endTime="169175" palette="383" />
+        <Effect ref="625" name="Pictures" id="5" startTime="190075" endTime="198425" palette="383" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="628" name="Faces" startTime="0" endTime="205300" palette="409" />
+        <Effect ref="626" name="Pictures" startTime="39000" endTime="42075" palette="383" />
+        <Effect ref="627" name="Pictures" id="1" startTime="84150" endTime="94075" palette="383" />
+        <Effect ref="628" name="Pictures" id="2" startTime="134775" endTime="146225" palette="383" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="629" name="Marquee" startTime="0" endTime="9000" palette="410" />
-        <Effect ref="630" name="Fire" id="1" startTime="117025" endTime="120175" palette="35" />
+        <Effect ref="629" name="Faces" startTime="0" endTime="205300" palette="409" />
+      </EffectLayer>
+      <EffectLayer>
+        <Effect ref="630" name="Marquee" startTime="0" endTime="9000" palette="410" />
+        <Effect ref="631" name="Fire" id="1" startTime="117025" endTime="120175" palette="35" />
       </EffectLayer>
     </Element>
     <Element type="model" name="Roof  - Peak">
@@ -7470,10 +7477,11 @@
       <EffectLayer />
     </Element>
     <Element type="model" name="Tune To">
-      <EffectLayer />
       <EffectLayer>
-        <Effect ref="631" name="Text" startTime="0" endTime="205300" palette="408" />
+        <Effect ref="632" name="Pictures" startTime="0" endTime="205300" palette="408" />
       </EffectLayer>
+      <EffectLayer />
+      <EffectLayer />
     </Element>
     <Element type="model" name="Wall - Bedroom">
       <EffectLayer />
