@@ -1,3 +1,10 @@
+## Projector shutdown diagnosis — October 18, 2026
+
+- At 19:38:57, Master's `PLAYLIST_STOPPED` power preset sent the projector's CEC `off` command immediately before this song started. Pi playback and HDMI output continued while the physical projector entered standby. User also confirmed no picture or sound during the following Thriller.
+- Both sequence data and audio are present. Deployed projector FSEQ ID `1792359522102672` matches the verified 7547-frame, 25-ms render; a fresh MP3 checksum matches the source. Star Wars clips are embedded in the rendered FSEQ. Projector visuals end at 178.725 seconds in the authored sequence.
+- Woke the projector and verified fresh CEC power-on replies. Replaced only the stop preset's direct-off action with `aurzen-cec-playlist-stopped.sh`, which keeps power on during active show playback. Original CEC script, Master playlists/schedule, and AV settings preserved. Native preset test passed during playback; no services stopped or restarted.
+- Physical picture and speaker sound after recovery still await user confirmation. The earlier speaker-silence issue is not yet proven solved. Evidence: `Halloween/imperial-march-projector-latest.json`.
+
 ## Garage layout batch render — October 18, 2026
 
 - Re-rendered from the canonical shared Halloween layout after restoring the garage line to outline, all-pixel and vertical groups. Native checks found no missing models, unexpected zero-node effects, impossible overlaps or effects beyond the end; authored effects and frame timing remain unchanged.
