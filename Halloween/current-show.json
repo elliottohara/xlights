@@ -379,18 +379,30 @@
       ],
       "frames": 9802,
       "frame_ms": 25,
-      "fseq_sha256": "71d8d6d0a5eab9240fd5cd94def110565e3c775543169830b0ec1cf75ea7a4f3",
+      "fseq_sha256": "2504571b9d7cce3e5083020fb4ae4673f213b1e8f6c353fd97fefa6a1ca56605",
       "local_render": {
         "fseq": {
           "channels": 147243,
           "frames": 9802,
           "frame_ms": 25,
-          "bytes": 154984400
+          "bytes": 174274907
         },
-        "fseq_sha256": "71d8d6d0a5eab9240fd5cd94def110565e3c775543169830b0ec1cf75ea7a4f3",
-        "rendered_at": "2026-10-18T16:39:23.561110-05:00"
+        "fseq_sha256": "2504571b9d7cce3e5083020fb4ae4673f213b1e8f6c353fd97fefa6a1ca56605",
+        "rendered_at": "2026-10-18T20:22:40.552573-05:00"
       },
-      "deployed_at": "2026-10-18T17:08:02.360602-05:00"
+      "deployed_at": "2026-10-18T20:25:14.689492-05:00",
+      "latest_deployment": "titanium-singing-repair-latest.json",
+      "singing_repair": {
+        "lead": "GE Evil Clown",
+        "chorus": [
+          "Elliott - EFL Teddy",
+          "GE Singing Pumpkin",
+          "GE Dark Helmet"
+        ],
+        "aligned_words": 212,
+        "snowflakes": 18,
+        "evidence": "titanium-singing-repair-latest.json"
+      }
     },
     "Titanium 2": {
       "sequence": "Sequences/Titanium 2/Titanium 2.xsq",
@@ -399,18 +411,30 @@
       ],
       "frames": 9802,
       "frame_ms": 25,
-      "fseq_sha256": "8880d4c4d25967a3c22e3f2d2e1b2cb18af426e5fbb9b5715aa365dab068083d",
+      "fseq_sha256": "1a494a8080e9d489fd3282b8c2073f5439b9515c769620ead2b3d88d20d577fe",
       "local_render": {
         "fseq": {
-          "channels": 144792,
+          "channels": 147243,
           "frames": 9802,
           "frame_ms": 25,
-          "bytes": 154778067
+          "bytes": 173896428
         },
-        "fseq_sha256": "8880d4c4d25967a3c22e3f2d2e1b2cb18af426e5fbb9b5715aa365dab068083d",
-        "rendered_at": "2026-10-18T16:39:36.614008-05:00"
+        "fseq_sha256": "1a494a8080e9d489fd3282b8c2073f5439b9515c769620ead2b3d88d20d577fe",
+        "rendered_at": "2026-10-18T20:22:58.821796-05:00"
       },
-      "deployed_at": "2026-10-18T17:08:02.360602-05:00"
+      "deployed_at": "2026-10-18T20:25:14.689492-05:00",
+      "latest_deployment": "titanium-singing-repair-latest.json",
+      "singing_repair": {
+        "lead": "GE Evil Clown",
+        "chorus": [
+          "Elliott - EFL Teddy",
+          "GE Singing Pumpkin",
+          "GE Dark Helmet"
+        ],
+        "aligned_words": 212,
+        "snowflakes": 18,
+        "evidence": "titanium-singing-repair-latest.json"
+      }
     },
     "We Will Rock You": {
       "sequence": "Sequences/We Will Rock You/We Will Rock You.xsq",
@@ -571,8 +595,8 @@
   "all_local_renders_current": true,
   "local_batch_render_finished_at": "2026-10-18T16:40:27.846974-05:00",
   "master_must_remain_running": true,
-  "latest_deployment": "garage-batch-upload-latest.json",
-  "deployed_at": "2026-10-18T17:08:02.360602-05:00",
+  "latest_deployment": "titanium-singing-repair-latest.json",
+  "deployed_at": "2026-10-18T20:25:14.689492-05:00",
   "selfie_station_setup": {
     "ip": "192.168.0.213",
     "report": "selfie-station-setup-latest.json",

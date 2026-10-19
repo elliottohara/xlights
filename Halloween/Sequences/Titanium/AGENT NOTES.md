@@ -1,3 +1,12 @@
+## Titanium singing repair and snowflake shaders — October 18, 2026
+
+- Repaired both Titanium playback variants. Evil Clown sings the complete lyric throughout; Teddy, Singing Pumpkin and Dark Helmet join the chorus/build/refrain sections. All four remain visible with resting mouths between their lines. This supersedes the older per-character handoff cast.
+- Aligned all 212 existing lyric words to the actual M4A using cached Whisper audio attention alignment. Preserved authored phrase onsets and held-note releases; retimed the original detailed phonemes to measured word boundaries. Combined Lyrics and Lyrics2 into `Titanium - Aligned Lead`; derived `Titanium - Aligned Chorus` with 23 chorus/refrain phrases. Original timing tracks retained.
+- Moved the seven whole-scene Shader effects, preserving their layer order, settings, timing and palettes, to the new song-specific `Titanium - Whole Scene with Snowflakes` group. It contains the original scene and all 18 connected Boscoyo snowflakes. Existing groups, model definitions, geometry and controller routing are unchanged. Other songs are unaffected.
+- Native sequence checks and 9802-frame / 25-ms renders passed. Rendered mouth checks show Clown moves during verses and choruses, while the three backing characters rest during verses and sing during choruses. Every pixel on all 18 flakes lights in shader samples; contact sheet visually inspected. Non-character choreography outside the seven moved shaders verified unchanged.
+- Atomically deployed both existing playback filenames to Master (.19) and Projector (.201), with complete remote SHA-256 checksums, sequence IDs, frame counts and unchanged source audio verified. Other pixel controllers receive DDP from Master and do not need local sequence copies. Master stayed running and playing; playlists, schedule and output routes were read back unchanged. No FPP services restarted.
+- Evidence: `Halloween/titanium-singing-repair-latest.json`; recovery copies: `Halloween/Backups/Titanium singing repair 20261018/`. Repeatable repair, render, pixel verification and upload tools live under `Halloween/Sequences/Titanium/Tools/`.
+
 ## Garage layout batch render — October 18, 2026
 
 - Re-rendered from the canonical shared Halloween layout after restoring the garage line to outline, all-pixel and vertical groups. Native checks found no missing models, unexpected zero-node effects, impossible overlaps or effects beyond the end; authored effects and frame timing remain unchanged.
