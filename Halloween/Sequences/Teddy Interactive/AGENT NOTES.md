@@ -1,5 +1,11 @@
 # Teddy Interactive — agent notes
 
+## Talking speech integration — October 18, 2026
+
+Authored on `codex/teddy-speech-integration`, slot B / port 49914. Speech uses the existing split setup: pixel/effect output on Selfie Station .213, Sound Blaster S3 audio and button inputs on .133. Preserve Player/DDP operation, the pumpkin, all GPIO assignments and Master playback. Website PRs #49 and #51 were reviewed, merged and deployed.
+
+The button worker cooperates through Linux flock at `/home/fpp/media/tmp/teddy-interaction.lock`. It holds the lock through each five-second gesture and defers the latest button/idle pose while speech holds it. No commands go to Master. Native calibration uses 25ms frames and ten one-second mouth holds in rest, AI, E, etc, FV, L, MBP, O, U, WQ order, exported only for Teddy. The calibration, cooperating worker and dedicated speech service are deployed. Messages are enabled while the show and calibrated prop are online; physical speaker and perceptual lip-sync verification remain pending. The lock is owned by fpp:fpp with mode 0660, including when the worker runs as root.
+
 ## Five-second button routines — October 18, 2026
 
 User requested clearly visible movement for every button, lasting five seconds, with its scarf matching the button color and a marquee for White. Authoring branch `codex/teddy-five-second-routines`, slot B / API 49914. Use the canonical Halloween show folder.
@@ -35,3 +41,17 @@ Final validation: all five rendered routines passed channel, color and moving-ar
 ## White input correction — October 18, 2026
 
 An all-input read-only monitor found White presses on GPIO15 (physical header pin 10), not GPIO17 (header pin 11). Moved the existing White action unchanged to P1-10, preserving the plain gpio mode originally used on that pin. Disabled the unused P1-11 mapping. Other buttons, five-second timing, Sound Blaster audio, and pixel outputs were unchanged. Restarted only the button Pi to load the new input; Master remained running. The user confirmed: “Yes, White works now.” The worker logged a physical White press and ran Teddy White Routine. All five pin mappings read back correctly and Master was still running.
+
+### Effect timing under live DDP
+
+Live verification found a native five-second effect ended near 3.9 seconds because the installed FPP advanced a frame for every compositor pass, including forced DDP updates. Installed a narrowly scoped monotonic-clock timing patch in Selfie Station .213 only; effects keep their authored timing, restart from frame zero, and paused background effects retain their position. Native compilation was staged and memory limited before activation. Restarted only Selfie Station; Master stayed playing and pixel/output config, routes, schedule and GPIO were unchanged. Original source, object and library are recoverable at `/home/fpp/media/backups/ofls-speech-timing-20261018/`. The patch is saved in `Tools/fpp-effect-clock.patch`. An FPP update may replace it; recheck actual effect duration before enabling speech after an update.
+
+The final live cooperation check passed: a Green button queued while another process held the speech lock, began after release, remained active after four seconds and finished after five, then yielded to the ongoing show. No Red sound was triggered. `Tools/live-button-cooperation-final.json` records the result. Native calibration: 400 frames, 25ms, sparse start 214642, 1500 channels, ten distinct shapes, no nonmouth differences. Actual speaker sound and perceptual lip sync still require observation.
+
+### Website speech deployment and test
+
+The audio Pi runs Node 20.19.2 and the verified website bridge at source head `93a9ddcc5124361e227b70f7073903066a9fc99f` in `/opt/ofls-bridge`. Its independent `ofls-speech-bridge.service` is active and enabled as user fpp. Root-only `/etc/ofls-speech-bridge.env` selects speech role, pixels .213, audio localhost on .133, model `Elliott - EFL Teddy`, native `bear-calibration`, Kevin voice and the shared interaction lock. No frame-time override or guessed AV offset is set. The dedicated speech HMAC was delivered encrypted; transient plaintext upload was removed. Never print credentials or use the show bridge HMAC here.
+
+Successful cloud apply: run 39187794284. Guarded activation: run 39188807507 required a fresh calibrated heartbeat before setting mode auto. On the live `/live/` page, message `c2c4a426-2530-4b38-82b8-f2037b35f6b9` generated a 7672ms Kevin MP3 and matching effect. Both exact files were observed playing together; the worker yielded with status speech, both outputs returned idle and the worker returned to show. The website receipt became spoken. Master stayed running and playing. This verifies delivery/playback, not physical speaker audibility or perceived alignment. Evidence: `Tools/website-speech-observation.json` and `Tools/speech-local-deployment.json`.
+
+To close messages without affecting the show, run the website repository's `Talking prop control` workflow with mode off. To stop speech locally, stop only `ofls-speech-bridge.service` on .133; the existing button worker and Master remain independent. Preserve the native timing patch and run the live duration/loop checks after an FPP upgrade before reopening messages. The five-second button and lock regression tests are in Tools/test_worker_lock.py and Tools/test_worker_scheduler.py.
