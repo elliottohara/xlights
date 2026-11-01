@@ -72,11 +72,13 @@
   },
   {
     "name": "Teddy Hold Down",
-    "duration_ms": 6000,
-    "xsq": "Halloween/Sequences/Teddy Interactive/Teddy Hold Down.xsq",
+    "duration_ms": 8000,
+    "xsq": "Halloween/Sequences/Teddy Interactive/Teddy Default.xsq",
     "eseq": "Halloween/Sequences/Teddy Interactive/Effects/Teddy Hold Down.eseq",
-    "bytes": 1621,
-    "arms": "down"
+    "bytes": 2136,
+    "arms": "down",
+    "exported_from": "Teddy Default",
+    "sha256": "1d9d5ca3d01d3e1eb92c32f253f1d2c1b21981fd4d78c7aff0f0e65249bfe913"
   },
   {
     "name": "Teddy Hold Up",

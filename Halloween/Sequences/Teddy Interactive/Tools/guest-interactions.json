@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "model": "Elliott - EFL Teddy",
+  "start_channel": 214643,
+  "channels": 1500,
+  "frame_ms": 25,
+  "default_effect": "Teddy Default",
+  "default_background_alias": "Teddy Hold Down",
+  "events": {
+    "idle": "Teddy Default",
+    "wake": "Teddy Wake Hello",
+    "farewell": "Teddy Goodbye",
+    "thinking": "Teddy Thinking"
+  },
+  "effects": [
+    {
+      "name": "Teddy Default",
+      "event": "idle",
+      "duration_ms": 8000,
+      "xsq": "Halloween/Sequences/Teddy Interactive/Teddy Default.xsq",
+      "eseq": "Halloween/Sequences/Teddy Interactive/Effects/Teddy Default.eseq",
+      "preview": "Halloween/Sequences/Teddy Interactive/Preview/Teddy Default.mp4",
+      "sha256": "1d9d5ca3d01d3e1eb92c32f253f1d2c1b21981fd4d78c7aff0f0e65249bfe913",
+      "loop": true,
+      "description": "Brown Teddy, red bow, resting mouth, arms down and two gentle blinks."
+    },
+    {
+      "name": "Teddy Wake Hello",
+      "event": "wake",
+      "duration_ms": 5000,
+      "xsq": "Halloween/Sequences/Teddy Interactive/Teddy Wake Hello.xsq",
+      "eseq": "Halloween/Sequences/Teddy Interactive/Effects/Teddy Wake Hello.eseq",
+      "preview": "Halloween/Sequences/Teddy Interactive/Preview/Teddy Wake Hello.mp4",
+      "sha256": "598cedae6f15c9d8a0cdf65c2daa71f353386902c5b5d66d73c2c19cda4bbf58",
+      "loop": false,
+      "arm": "left",
+      "return_to": "Teddy Default",
+      "neutral_hold_ms": 500
+    },
+    {
+      "name": "Teddy Goodbye",
+      "event": "farewell",
+      "duration_ms": 2000,
+      "xsq": "Halloween/Sequences/Teddy Interactive/Teddy Goodbye.xsq",
+      "eseq": "Halloween/Sequences/Teddy Interactive/Effects/Teddy Goodbye.eseq",
+      "preview": "Halloween/Sequences/Teddy Interactive/Preview/Teddy Goodbye.mp4",
+      "sha256": "35435ec99215daed664ad9addfd19270b9f3c7a55ca74ea179def022dc3d80e7",
+      "loop": false,
+      "arm": "right",
+      "return_to": "Teddy Default",
+      "neutral_hold_ms": 250
+    },
+    {
+      "name": "Teddy Thinking",
+      "event": "thinking",
+      "duration_ms": 6000,
+      "xsq": "Halloween/Sequences/Teddy Interactive/Teddy Thinking.xsq",
+      "eseq": "Halloween/Sequences/Teddy Interactive/Effects/Teddy Thinking.eseq",
+      "preview": "Halloween/Sequences/Teddy Interactive/Preview/Teddy Thinking.mp4",
+      "sha256": "b481205516c2c587e45dd6136bf6d244ac49ffbef1c6dee9686330106afd248c",
+      "loop": true,
+      "return_to": "Teddy Default",
+      "neutral_hold_ms": 500,
+      "description": "Moving white marquee over a deep-red bow; default face and arms."
+    }
+  ]
+}

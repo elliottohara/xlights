@@ -1,0 +1,61 @@
+{
+  "effects_uploaded_and_readback_verified": [
+    {
+      "name": "Teddy Default.eseq",
+      "bytes": 2136,
+      "sha256": "1d9d5ca3d01d3e1eb92c32f253f1d2c1b21981fd4d78c7aff0f0e65249bfe913"
+    },
+    {
+      "name": "Teddy Wake Hello.eseq",
+      "bytes": 1587,
+      "sha256": "598cedae6f15c9d8a0cdf65c2daa71f353386902c5b5d66d73c2c19cda4bbf58"
+    },
+    {
+      "name": "Teddy Goodbye.eseq",
+      "bytes": 788,
+      "sha256": "35435ec99215daed664ad9addfd19270b9f3c7a55ca74ea179def022dc3d80e7"
+    },
+    {
+      "name": "Teddy Thinking.eseq",
+      "bytes": 11761,
+      "sha256": "b481205516c2c587e45dd6136bf6d244ac49ffbef1c6dee9686330106afd248c"
+    },
+    {
+      "name": "Teddy Hold Down.eseq",
+      "bytes": 2136,
+      "sha256": "1d9d5ca3d01d3e1eb92c32f253f1d2c1b21981fd4d78c7aff0f0e65249bfe913"
+    }
+  ],
+  "backup": "/Users/elliott.ohara/xlights-worktrees/slot-a/Halloween/Backups/Teddy guest interactions 20261101/Controller before",
+  "master_running": true,
+  "pixel_outputs_unchanged": true,
+  "gpio_and_startup_presets_unchanged": true,
+  "fpp_services_restarted": false,
+  "pi_presence_config_updated": true,
+  "pi": "192.168.0.30",
+  "pi_presence_config_path": "/home/yardhost/.ofls-yard-presence.json",
+  "pi_config_hot_reloaded_without_restart": true,
+  "pi_presence_effects": {
+    "effect_wake": "Teddy Wake Hello",
+    "effect_thinking": "Teddy Thinking",
+    "effect_idle": "Teddy Goodbye",
+    "thinking_loop": true,
+    "idle_blink": true,
+    "enabled": true,
+    "dry_run": false
+  },
+  "actual_pi_hook_rehearsal": {
+    "all_passed": true,
+    "hello_active_after_4_seconds": true,
+    "hello_finished_after_5_seconds": true,
+    "thinking_loop_observed_after_6_seconds": true,
+    "thinking_stops_for_speech": true,
+    "goodbye_active_after_1_second": true,
+    "goodbye_completed_before_controller_cleanup": true,
+    "background_hold_continues": true
+  },
+  "final_running_effects": [
+    "Teddy Hold Down"
+  ],
+  "physical_appearance": "awaiting user observation"
+}

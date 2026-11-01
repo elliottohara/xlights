@@ -1,5 +1,25 @@
 # Teddy Interactive — agent notes
 
+## Seamless guest interactions — November 1, 2026
+
+User requested a default look, thinking marquee on the bow tie, hello with one arm, and goodbye with the opposite arm, all returning smoothly to the default. Authored in permanent slot A / API 49913 on `codex/teddy-guest-interactions`, against the current single Halloween layout. No layout, channel, GPIO, speaker, microphone or speech-code changes.
+
+- `Teddy Default.eseq`: 8-second loop, original brown body/blue eyes/shaded red bow, resting mouth, arms down, two gentle blinks. Its first and last frames match exactly.
+- `Teddy Wake Hello.eseq`: 5 seconds, existing model-left arm states, down/middle/up waves, then down; the other arm stays down.
+- `Teddy Thinking.eseq`: 6-second loop, white moving marquee over a deep-red bow; overlay fades in/out for 0.5 seconds. Only bow pixels and normal blinks change.
+- `Teddy Goodbye.eseq`: 2 seconds, model-right arm wave, then down. Fits the existing Pi controller's 2.5-second farewell cleanup, so no runtime source patch is required.
+
+Every interaction has at least 250ms of the exact default at each end. All four were natively authored with addEffect/exportModelWithRender, compressed at 25ms, sparse range 214642 + 1500 channels (Teddy only). Native model MP4 previews and editable XSQ sources are alongside the effects.
+
+The guest-interaction Pi is **yardhost@192.168.0.30**, not the older button/audio Pi `.133`. Its existing `~/.ofls-yard-presence.json` hot-loaded `effect_wake=Teddy Wake Hello`, `effect_thinking=Teddy Thinking`, `effect_idle=Teddy Goodbye`, with enabled=true, dry_run=false, thinking_loop=true, idle_blink=true. Lights remain on `.213`. The conversation service was not restarted. Before-settings backup: `/home/yardhost/ofls-yard-host/backups/teddy-guest-interactions-20261101/`.
+
+The existing `.133` button worker still manages the background and its shared speech lock. `Teddy Hold Down.eseq` is now a byte-identical alias of `Teddy Default.eseq`; its library entry points to the Default XSQ. This preserves existing boot, speech cooperation and show-yield behavior. Only this worker was briefly paused/restarted to release its mapped hold file. No FPP service was stopped/restarted; Master stayed running. Original controller effects/output/GPIO/preset snapshots are retained in the task's Halloween backup.
+
+`Tools/build_teddy_guest_interactions.py` builds all four and refreshes the alias/library entry. **After rebuilding the older button library with build_teddy_controls.py, rerun this builder** so the new default isn't replaced by the historical hold. `verify_teddy_guest_interactions.py` verifies exact boundary frames, real per-arm motion, bow-only motion, duration and sparse channels. `deploy_teddy_guest_interactions.py` uploads/checksums files on `.213` and records the manifest on `.133`. Run `configure_teddy_guest_interactions.py` as yardhost on `.30` to apply the saved cue choices through its authenticated local API (credentials remain on the Pi).
+
+Validation: all rendered pixel checks passed. A lights-only rehearsal invoked the actual installed Pi hooks: hello remained active beyond four seconds and ended after five; thinking stayed active past its six-second loop and stopped on speaking; goodbye played completely and ended before cleanup. The default hold remained active underneath and was the sole final effect. All uploads were read back exactly; physical pixel config, GPIO and startup presets were unchanged. Physical appearance still needs the user's observation. Evidence: `Tools/guest-interactions.json`, `guest-interactions-verification.json`, `guest-interactions-deployment.json`.
+
+
 ## Talking speech integration — October 18, 2026
 
 Authored on `codex/teddy-speech-integration`, slot B / port 49914. Speech uses the existing split setup: pixel/effect output on Selfie Station .213, Sound Blaster S3 audio and button inputs on .133. Preserve Player/DDP operation, the pumpkin, all GPIO assignments and Master playback. Website PRs #49 and #51 were reviewed, merged and deployed.
