@@ -16,6 +16,7 @@ HOME = Path('/home/fpp/media')
 CONFIG = HOME / 'config'
 QUEUE = CONFIG / 'teddy-request.json'
 STATE = CONFIG / 'teddy-runtime.json'
+DISABLED = CONFIG / 'teddy-controls-disabled.json'
 LOCK = HOME / 'tmp/teddy-worker.lock'
 INTERACTION_LOCK = HOME / 'tmp/teddy-interaction.lock'
 LOG = HOME / 'logs/teddy-controls.log'
@@ -158,6 +159,9 @@ def worker():
 
 def main():
     action=sys.argv[1] if len(sys.argv)>1 else 'startup'
+    if action != 'pause' and read(DISABLED,{}).get('disabled'):
+        log('Teddy controls retired; request ignored')
+        return
     if action=='--worker':return worker()
     if action in ('restart','pause'):
         pid=read(STATE,{}).get('pid',0)

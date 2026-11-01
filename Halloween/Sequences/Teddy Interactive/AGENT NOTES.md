@@ -1,5 +1,22 @@
 # Teddy Interactive — agent notes
 
+## Legacy button controller retired; continuous default — November 1, 2026
+
+**Supersedes the background-worker ownership and button instructions below.** User reported Teddy going completely dark even while idle, then explicitly requested that the old button controller do nothing to Teddy anymore.
+
+The old controller **192.168.0.133** is retired from all Teddy control: five Teddy GPIO actions are disabled, Teddy startup presets removed, its worker stopped, `teddy_controls.sh` replaced by an inert entry point, and `config/teddy-controls-disabled.json` set to disabled. The worker source checks this flag before accepting startup, restart, color actions or direct --worker invocations. The old deploy helper refuses to reactivate a retired controller. Do not restore/re-enable these controls without a new user request.
+
+That box's dedicated `ofls-speech-bridge.service` was confirmed to target the Teddy model on `.213`, then stopped and disabled as part of the user's request for no Teddy control from this box. The former public website speech bridge on `.133` is therefore retired too. FPP itself stays running; unrelated hardware/audio configuration is preserved. The current conversation/microphone/voice/viseme controller remains **yardhost Pi .30**, with its new interaction settings enabled and unchanged.
+
+The old worker removed its default hold whenever Master started a song. Live status confirmed Master playing with no Teddy effect before this repair. A **Teddy-only `background.eseq`** is now installed and running directly on Selfie Station **.213**. It is byte-identical to `Teddy Default.eseq`, sparse offset 214642, 1500 channels, and runs continuously through main-show playback beneath later interaction effects. Native FPP InitEffects starts this filename automatically at boot, so no worker or FPP restart is required. Other props, outputs, playlists and schedules are unchanged. The file contains no all-dark frames; only the eyes close during its normal blinks.
+
+Build and verify tools now emit/check the persistent background alias. `deploy_teddy_guest_interactions.py` now contacts only `.213` plus read-only Master status, keeps the background visible during future replacement, and never contacts `.133`. Run the existing configure helper on `.30` to select interaction clips.
+
+Validation: native files/readback hashes and unchanged pixel-output configuration passed; all five old live button-script invocations were inert; worker runtime stayed retired; old speech service is inactive/disabled; new Pi remains awake with camera active; `background` remains running while Master plays. Eight legacy invocation paths and the legacy deploy guard were tested, and the existing lock/scheduler regressions passed. Physical appearance still needs the user's observation. No FPP service restart, Master stop/restart, voice-code replacement, layout or routing changes.
+
+Sources/evidence: Tools/legacy-controller-retirement.json, legacy-controller-live-verification.json, continuous-default-deployment.json, continuous-default-verification.json. Recoverable old scripts/GPIO/startup settings: task backup `Halloween/Backups/Teddy button controller retirement 20261101/`.
+
+
 ## Seamless guest interactions — November 1, 2026
 
 User requested a default look, thinking marquee on the bow tie, hello with one arm, and goodbye with the opposite arm, all returning smoothly to the default. Authored in permanent slot A / API 49913 on `codex/teddy-guest-interactions`, against the current single Halloween layout. No layout, channel, GPIO, speaker, microphone or speech-code changes.

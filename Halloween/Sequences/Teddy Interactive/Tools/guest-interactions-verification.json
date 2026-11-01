@@ -12,6 +12,7 @@
       "duration_ms": 8000,
       "exact_default_boundaries": true,
       "neutral_holds_ms": 250,
+      "minimum_lit_pixels": 358,
       "left_arm_poses": 1,
       "right_arm_poses": 1,
       "marquee_unique_frames": null
@@ -22,6 +23,7 @@
       "duration_ms": 5000,
       "exact_default_boundaries": true,
       "neutral_holds_ms": 250,
+      "minimum_lit_pixels": 358,
       "left_arm_poses": 3,
       "right_arm_poses": 1,
       "marquee_unique_frames": null
@@ -32,6 +34,7 @@
       "duration_ms": 2000,
       "exact_default_boundaries": true,
       "neutral_holds_ms": 250,
+      "minimum_lit_pixels": 366,
       "left_arm_poses": 1,
       "right_arm_poses": 3,
       "marquee_unique_frames": null
@@ -42,6 +45,7 @@
       "duration_ms": 6000,
       "exact_default_boundaries": true,
       "neutral_holds_ms": 250,
+      "minimum_lit_pixels": 358,
       "left_arm_poses": 1,
       "right_arm_poses": 1,
       "marquee_unique_frames": 41

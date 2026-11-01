@@ -2,6 +2,7 @@
 from pathlib import Path
 from urllib.request import Request,urlopen
 from urllib.parse import quote
+from urllib.error import HTTPError
 import json,hashlib,time,copy
 from teddy_control import OWNED
 
@@ -33,6 +34,12 @@ def upload(ip,directory,name,data):
     return {'name':name,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()}
 
 def main():
+    try:retired=request(PI,'/api/configfile/teddy-controls-disabled.json')
+    except HTTPError as error:
+        if error.code!=404:raise
+        retired={}
+    if isinstance(retired,dict) and retired.get('disabled'):
+        raise RuntimeError('The old Teddy button controller was retired by the user; deployment is disabled.')
     before={'master':request(MASTER,'/api/system/status'),
             'pixels':request(TEDDY,'/api/channel/output/co-bbbStrings'),
             'presets':request(PI,'/api/configfile/commandPresets.json'),

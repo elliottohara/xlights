@@ -38,6 +38,8 @@ def main():
         assert all(f==default for f in frames[:10]),(event,'start hold mismatch')
         assert all(f==default for f in frames[-10:]),(event,'end hold mismatch')
         assert frames[0]==frames[-1]==default,(event,'handoff mismatch')
+        minimum_lit=min(sum(any(f[i:i+3]) for i in range(0,len(f),3)) for f in frames)
+        assert minimum_lit>=300,(event,'body must stay illuminated')
         left_poses=len({pixels(f,left) for f in frames})
         right_poses=len({pixels(f,right) for f in frames})
         if event=='wake':assert left_poses==3 and right_poses==1
@@ -51,9 +53,11 @@ def main():
         else:marquee=None
         results.append(dict(event=event,frames=len(frames),duration_ms=len(frames)*25,
                             exact_default_boundaries=True,neutral_holds_ms=250,
+                            minimum_lit_pixels=minimum_lit,
                             left_arm_poses=left_poses,right_arm_poses=right_poses,
                             marquee_unique_frames=marquee))
     assert (SONG/'Effects/Teddy Hold Down.eseq').read_bytes()==(SONG/'Effects/Teddy Default.eseq').read_bytes()
+    assert (SONG/'Effects/background.eseq').read_bytes()==(SONG/'Effects/Teddy Default.eseq').read_bytes()
     report=dict(all_passed=True,model=manifest['model'],channels=1500,
                 sparse_offset=214642,frame_ms=25,background_alias_matches=True,clips=results)
     (SONG/'Tools/guest-interactions-verification.json').write_text(json.dumps(report,indent=2)+'\n')

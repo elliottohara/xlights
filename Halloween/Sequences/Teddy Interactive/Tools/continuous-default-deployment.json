@@ -1,0 +1,17 @@
+{
+  "background_effect": "background",
+  "source": "Teddy Default.eseq",
+  "sha256": "1d9d5ca3d01d3e1eb92c32f253f1d2c1b21981fd4d78c7aff0f0e65249bfe913",
+  "scope": {
+    "start_channel": 214643,
+    "channels": 1500
+  },
+  "boot": "Native FPP InitEffects automatically starts background.eseq",
+  "legacy_worker_does_not_own_this_name": true,
+  "fpp_restart": false,
+  "master_kept_running": true,
+  "backup": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy continuous default 20261101",
+  "verification_pending": false,
+  "legacy_button_controller_retired": true,
+  "physical_appearance": "awaiting user observation"
+}

@@ -1,0 +1,40 @@
+{
+  "effects_uploaded_and_readback_verified": [
+    {
+      "name": "Teddy Default.eseq",
+      "bytes": 2136,
+      "sha256": "1d9d5ca3d01d3e1eb92c32f253f1d2c1b21981fd4d78c7aff0f0e65249bfe913"
+    },
+    {
+      "name": "Teddy Wake Hello.eseq",
+      "bytes": 1587,
+      "sha256": "598cedae6f15c9d8a0cdf65c2daa71f353386902c5b5d66d73c2c19cda4bbf58"
+    },
+    {
+      "name": "Teddy Goodbye.eseq",
+      "bytes": 788,
+      "sha256": "35435ec99215daed664ad9addfd19270b9f3c7a55ca74ea179def022dc3d80e7"
+    },
+    {
+      "name": "Teddy Thinking.eseq",
+      "bytes": 11761,
+      "sha256": "b481205516c2c587e45dd6136bf6d244ac49ffbef1c6dee9686330106afd248c"
+    },
+    {
+      "name": "Teddy Hold Down.eseq",
+      "bytes": 2136,
+      "sha256": "1d9d5ca3d01d3e1eb92c32f253f1d2c1b21981fd4d78c7aff0f0e65249bfe913"
+    },
+    {
+      "name": "background.eseq",
+      "bytes": 2136,
+      "sha256": "1d9d5ca3d01d3e1eb92c32f253f1d2c1b21981fd4d78c7aff0f0e65249bfe913"
+    }
+  ],
+  "continuous_native_background": true,
+  "boot": "Native FPP InitEffects automatically starts background.eseq",
+  "old_button_controller_contacted": false,
+  "master_kept_running": true,
+  "pixel_outputs_unchanged": true,
+  "fpp_services_restarted": false
+}

@@ -1,0 +1,21 @@
+{
+  "five_stale_button_actions_are_inert": true,
+  "worker_status": "retired",
+  "new_pi": {
+    "available": true,
+    "enabled": true,
+    "state": "awake",
+    "camera_active": true,
+    "microphone_active": false
+  },
+  "effects": [
+    {
+      "id": 0,
+      "name": "background"
+    }
+  ],
+  "master": {
+    "fppd": "running",
+    "status": "playing"
+  }
+}

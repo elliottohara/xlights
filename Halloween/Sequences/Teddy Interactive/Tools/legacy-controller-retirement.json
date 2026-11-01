@@ -1,0 +1,22 @@
+{
+  "old_controller": "192.168.0.133",
+  "disabled_buttons": [
+    "P1-10",
+    "P1-13",
+    "P1-15",
+    "P1-16",
+    "P1-18"
+  ],
+  "startup_actions_removed": true,
+  "entry_script_is_noop": true,
+  "persistent_disabled_flag": true,
+  "dedicated_old_speech_bridge": {
+    "worker_running": false,
+    "is-active": "inactive",
+    "is-enabled": "disabled"
+  },
+  "master_kept_running": true,
+  "old_controller_fpp_kept_running": true,
+  "pixel_outputs_unchanged": true,
+  "backup": "/Users/elliott.ohara/xlights-worktrees/slot-a/Halloween/Backups/Teddy button controller retirement 20261101"
+}
