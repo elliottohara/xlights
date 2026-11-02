@@ -1,5 +1,10 @@
 # xLights Show Directory — Agent Notes
 
+## Single-use Teddy greetings ready — November 2, 2026
+
+- User approved personal greeting generation and private Pi/S3 storage. Pi `.30` now uses **single-use greetings**: after a successful greeting, retire its audio/timing, persist its used-text/cache-key history, and prepare different wording plus fresh Polly audio in the background. Keep unused clips ready. Never reintroduce consumed greetings during refresh or restore; consent revocation removes the new text history.
+- Eight ready clips (six personal openers) for the two approved guests and the encrypted private S3 backup are verified. Actual backup/restore and a real Bedrock/Polly replacement rehearsal passed. Source `07e0912` / PR #123; 258 tests and 82 subtests passed. Master and Teddy's independent idle remain running. Current evidence: `Halloween/teddy-greeting-cache-latest.json`. Earlier empty-cache/approval-pending notes are superseded.
+
 ## Teddy independent idle and Pi sync — November 2, 2026
 
 - Teddy's persistent effect on Selfie Station `.213` is **`Teddy Interactive Idle`**, byte-identical to the native Default. Its local `FPPD_STARTED` preset starts this loop. Do not replace it with the generic `background` effect: the existing, unchanged show playlists intentionally stop that name, which previously darkened Teddy at 22:30. Native startup and legacy-stop checks passed without restarting any FPP service.

@@ -1,7 +1,7 @@
 {
   "schema": "grok-teddy-setup.v1",
-  "updated_at": "2026-11-02T08:32:40.648449-06:00",
-  "status": "pi_and_idle_updated_personalized_cache_and_cloud_reply_pending",
+  "updated_at": "2026-11-02T13:26:40.264901-06:00",
+  "status": "pi_idle_and_personalized_greetings_ready_cloud_reply_pending",
   "backup": "/Users/elliott.ohara/xlights/Halloween/Backups/GrokBot setup 20261102-0818",
   "grok_coordination": {
     "channel": "https://github.com/oharafamily/oharafamilylightshow/issues/62",
@@ -108,11 +108,15 @@
   },
   "personalized_greetings": {
     "cache_enabled": true,
-    "cache_entries": 0,
-    "ready": false,
-    "polly_generation_approval": "pending",
-    "private_s3_backup_approval": "pending",
-    "guest_names_synthesized": false
+    "cache_entries": 8,
+    "personal_entries": 6,
+    "ready": true,
+    "single_use": true,
+    "polly_generation_approval": "approved",
+    "private_s3_backup_approval": "approved",
+    "private_s3_backup_verified": true,
+    "source_revision": "07e0912",
+    "report": "Halloween/teddy-greeting-cache-latest.json"
   },
   "preserved": {
     "master_running": true,
@@ -128,5 +132,82 @@
     "system_sleep_prevented": true,
     "display_sleep_prevented": true,
     "independent_of_chat_process": true
+  },
+  "superseded_by": "Halloween/teddy-personal-greeting-cycle-latest.json",
+  "current_runtime_verification": {
+    "schema": "teddy-single-use-greetings.v1",
+    "ready": true,
+    "source_revision": "07e0912",
+    "pull_request": "https://github.com/oharafamily/oharafamilylightshow/pull/123",
+    "ready_clips": 8,
+    "personal_clips": 6,
+    "guest_count": 2,
+    "single_use_enabled": true,
+    "private_backup_enabled": true,
+    "verified_remote_audio_and_timing_files": 16,
+    "encrypted_backup": "AES256",
+    "verified_modules": 53,
+    "hash_mismatches": [],
+    "health": {
+      "interactions": {
+        "available": true,
+        "enabled": true,
+        "state": "awake",
+        "camera_active": true,
+        "microphone_active": false
+      },
+      "master": {
+        "fppd": "running",
+        "status_name": "idle",
+        "uptime": "14 days, 22:02:52"
+      },
+      "effects": {
+        "Message": "",
+        "Status": "OK",
+        "respCode": 200,
+        "runningEffects": [
+          {
+            "id": 1,
+            "name": "Teddy Interactive Idle"
+          }
+        ]
+      }
+    },
+    "usage_history_preserved": true,
+    "install": {
+      "enabled": true,
+      "activated_at": "2026-11-02T19:18:22.371949+00:00",
+      "source_revision": "07e0912",
+      "pull_request": 123,
+      "backup": "/home/yardhost/ofls-yard-host/backups/single-use-enable-20261102-191819",
+      "tests_passed": 258,
+      "subtests_passed": 82,
+      "s3_backup_enabled": true,
+      "final_backup": "/home/yardhost/ofls-yard-host/backups/single-use-final-20261102-192316"
+    },
+    "backup_verification": {
+      "single_use_enabled": true,
+      "backup_verified": true,
+      "backup_entries": 8,
+      "verified_audio_and_timing_objects": 16,
+      "encryption": "AES256",
+      "anonymous_audio_http": 403,
+      "stale_audio_objects": 0,
+      "restore_verified": true,
+      "restored_entries": 8,
+      "used_history_preserved_on_restore": true,
+      "consumed_keys_tracked": 1
+    },
+    "real_service_rehearsal": {
+      "real_polly_replacements": 1,
+      "new_personal_replacements": 1,
+      "used_audio_removed": true,
+      "used_timing_removed": true,
+      "used_greeting_not_reintroduced": true,
+      "background_refresh_requested": true,
+      "ready_entries": 8,
+      "production_cache_unchanged": true,
+      "physical_playback_skipped": true
+    }
   }
 }
