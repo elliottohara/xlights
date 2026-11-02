@@ -1,5 +1,12 @@
 # xLights Show Directory — Agent Notes
 
+## Real camera arrivals reach personal Teddy greetings — November 2, 2026
+
+- User's next test proved the old lights-feedback sentence was still spoken. The active visit recorded `returning_live_fallback`: SFace recognized the guest at score **0.592** against its existing **0.50** cutoff, but the separate unconfigured greeting default was **0.80**, bypassing all eight ready clips. Earlier successful model/audio checks did not cover this actual arrival gate.
+- Source `0366e0e` (PR #125, CI passed) is installed on Pi `.30`. SFace greetings now default to the already configured recognition cutoff; explicit greeting overrides and the legacy patch-recognizer default are preserved. The face recognizer and its cutoff remain unchanged. Cache misses now use the authored Christmas-gift story and a personal Christmas-memory question instead of the old lights question; logs record gate skips and selected welcome source.
+- Exact installed runtime: 272 tests and 82 subtests passed, one optional Node test skipped. A rehearsal at the recorded 0.592 score traversed the complete returning-visitor path, loaded three distinct real prepared personal audio/timing pairs, selected Christmas memory first, and retired only private copied clips. No physical output/cloud call or production consumption occurred. Final verification matched all 54 module hashes, eight ready clips/six personal openings and all 16 encrypted private S3 audio/timing objects. Usage history and cooldowns are preserved.
+- Only Teddy conversation/cache services were cycled; Master and `Teddy Interactive Idle` remained running. Evidence: `Halloween/teddy-reciprocity-latest.json`; Pi rollback source/metadata: `/home/yardhost/ofls-yard-host/backups/arrival-enable-20261102-210114/`. A new physical test is still needed to confirm the user's experience.
+
 ## Teddy shares stories and asks personal questions — November 2, 2026
 
 - User's field test found show-feedback questions instead of the intended personal conversation. The old greeting writer did not receive the repository's authored Teddy persona. Pi `.30` now uses the shared `docs/teddy-personality.md` source, installed at `/home/yardhost/ofls-yard-host/data/teddy-personality.md` through `YARD_TEDDY_PERSONALITY_PATH`, for both cached openers and live replies. Preserve this configured source when refreshing cloud knowledge packs.
