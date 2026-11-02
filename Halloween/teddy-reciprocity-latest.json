@@ -1,6 +1,6 @@
 {
   "schema": "teddy-reciprocity-deployment.v1",
-  "updated_at": "2026-11-02T15:02:55.127451-06:00",
+  "updated_at": "2026-11-02T15:17:07.883256-06:00",
   "status": "camera_arrival_fix_installed_and_verified",
   "host": "192.168.0.30",
   "source_revision": "0366e0eb2301771c4e1f5901fa7ba8e13c447ef0",
@@ -254,5 +254,7 @@
     "launchd_label": "com.ohara.xlights.keepawake",
     "verified_active": true
   },
-  "next_step": "User observes a real greeting, reply continuity, speaker sound and perceived mouth alignment."
+  "next_step": "User observes a real greeting, reply continuity, speaker sound and perceived mouth alignment.",
+  "superseded_by": "Halloween/teddy-warm-welcomes-latest.json",
+  "user_observation_after_arrival_fix": "Previous camera-arrival fix was better; greeting still began with bare name and fact."
 }

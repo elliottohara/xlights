@@ -1,9 +1,9 @@
 {
   "schema": "teddy-greeting-cache-deployment.v1",
-  "updated_at": "2026-11-02T15:02:55.127451-06:00",
-  "status": "ready_single_use_personal_greetings_on_real_camera_arrivals",
+  "updated_at": "2026-11-02T15:17:07.883256-06:00",
+  "status": "ready_single_use_warm_time_aware_greetings",
   "host": "192.168.0.30",
-  "source_revision": "0366e0eb2301771c4e1f5901fa7ba8e13c447ef0",
+  "source_revision": "056a4bf33e0b8737c7c8954f4c75da969f0816f2",
   "pull_request": "https://github.com/oharafamily/oharafamilylightshow/pull/125",
   "source_worktree": "/private/tmp/ofls-teddy-reciprocity",
   "cache_enabled": true,
@@ -24,13 +24,13 @@
       "passed": 22
     },
     "github_ci": "passed",
-    "github_actions_run": "https://github.com/oharafamily/oharafamilylightshow/actions/runs/41524495570",
+    "github_actions_run": "https://github.com/oharafamily/oharafamilylightshow/actions/runs/41526529432",
     "current_local": {
       "passed": 252,
       "subtests_passed": 82
     },
     "current_pi": {
-      "passed": 272,
+      "passed": 283,
       "skipped": 1,
       "subtests_passed": 82,
       "skip_reason": "Optional Node/browser-signing test unavailable in native Pi test PATH",
@@ -42,13 +42,13 @@
     "webcam_open": true,
     "local_speaker_configured": true,
     "mouth_animation_enabled": true,
-    "verified_runtime_hashes": 54
+    "verified_runtime_hashes": 55
   },
   "master": {
     "after": {
       "fppd": "running",
       "status_name": "idle",
-      "uptime": "14 days, 23:39:18"
+      "uptime": "14 days, 23:52:59"
     },
     "stop_or_restart_commands_issued": false
   },
@@ -67,15 +67,15 @@
     "pi_backup": "/home/yardhost/ofls-yard-host/backups/greeting-cache-enable-20261101-190303",
     "rollback": "/home/yardhost/ofls-yard-host/backups/greeting-cache-enable-20261101-190303/rollback.py",
     "pi_evidence": "/home/yardhost/.local/state/ofls-yard-host/greeting-cache-candidate-20261101/final-result.json",
-    "current_pi_backup": "/home/yardhost/ofls-yard-host/backups/arrival-enable-20261102-210114"
+    "current_pi_backup": "/home/yardhost/ofls-yard-host/backups/warm-enable-20261102-211428"
   },
   "s3_backup_configured": true,
   "grok_coordination_completed": false,
   "next_steps": [
-    "User observes a real greeting, reply continuity, speaker sound and perceived mouth alignment."
+    "User observes a real warm greeting and conversation; physical mouth alignment is not inferred from software checks."
   ],
   "personal_conversation_openers": 6,
-  "current_report": "Halloween/teddy-reciprocity-latest.json",
+  "current_report": "Halloween/teddy-warm-welcomes-latest.json",
   "previous_source_revision": "6ffdb63cb12482106e85757aad871b983c225b7e",
   "historical_pending_approvals": [
     {
@@ -97,35 +97,32 @@
   "single_use_enabled": true,
   "private_s3_backup_verified": true,
   "pending_approvals": [],
-  "backup": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy camera arrival repair 20261102-150255",
+  "backup": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy warm welcomes 20261102-151707",
   "verification": {
-    "schema": "teddy-reciprocity-verification.v1",
-    "verified_at": "2026-11-02T21:02:00.255980+00:00",
+    "schema": "teddy-warm-verification.v1",
     "ready": true,
-    "source_revision": "0366e0eb2301771c4e1f5901fa7ba8e13c447ef0",
+    "verified_at": "2026-11-02T21:15:41.941872+00:00",
+    "source_revision": "056a4bf33e0b8737c7c8954f4c75da969f0816f2",
     "pull_request": "https://github.com/oharafamily/oharafamilylightshow/pull/125",
-    "runtime_revision": "050ddbbecb355e80826ad75c50cbba12dae68eb6+single-use-796857a+refill-07e0912+reciprocity-f2911f7+arrival-0366e0e",
-    "verified_modules": 54,
+    "runtime_revision": "050ddbbecb355e80826ad75c50cbba12dae68eb6+single-use-796857a+refill-07e0912+reciprocity-f2911f7+arrival-0366e0e+warm-056a4bf",
+    "verified_modules": 55,
     "hash_mismatches": [],
-    "persona_sha256": "58d1f968cd528e04913000d2deb5624f91aef89da289de6701d206a5dbe2e925",
-    "persona_path": "/home/yardhost/ofls-yard-host/data/teddy-personality.md",
-    "authored_topics": [
-      "christmas_memory",
-      "holiday_tradition",
-      "making_things"
-    ],
+    "persona_sha256": "50f7668777336ebcc4f54c0d2f591c988e4271f51393fcd137e7e58d1c9bee04",
+    "local_time_period": "afternoon",
     "ready_clips": 8,
     "personal_clips": 6,
     "guest_count": 2,
-    "guests_with_christmas_memory_opener": 2,
+    "layout_counts": {
+      "question_first": 2,
+      "share_first": 4
+    },
+    "actual_prepared_example": "Welcome back, Elliott! It's nice to chat this afternoon! Which holiday tradition do you look forward to the most? Miss Heather gets a new prop for the light show every year.",
     "single_use_enabled": true,
     "used_history_preserved": true,
-    "cooldowns_unchanged_at_verification": true,
     "private_backup_verified": true,
     "verified_remote_audio_and_timing_files": 16,
-    "encrypted_backup": "AES256",
+    "encryption": "AES256",
     "stale_current_audio_or_timing_objects": 0,
-    "cache_refresh_service": "Result=success\nActiveState=inactive",
     "health": {
       "available": true,
       "enabled": true,
@@ -136,104 +133,45 @@
     "master": {
       "fppd": "running",
       "status_name": "idle",
-      "uptime": "14 days, 23:39:18"
+      "uptime": "14 days, 23:52:59"
     },
     "effects": [
       "Teddy Interactive Idle"
     ],
-    "physical_playback_skipped": true,
-    "authored_persona_install": {
-      "schema": "teddy-reciprocity-install.v1",
-      "status": "installed",
-      "backup": "/home/yardhost/ofls-yard-host/backups/reciprocity-enable-20261102-200502",
-      "source_revision": "f2911f7",
-      "pull_request": 125,
-      "module_sha256": {
-        "config.py": "e295393cfc34aebc63e623f2c6c7c36a2a5b2c5bdf29a4f53019afd2acdefb03",
-        "knowledge_pack.py": "a0532bea32af1b2587cec8179ea20528498006e012ef8d862bccfebfcf32f38f",
-        "bedrock_session.py": "e5dc91c1e105a4110c6113dc5771bf9881bc955ca5a67b9f321bf16a1ad9a999",
-        "greeting_cache/personal.py": "ffde73e4ef84539c46fce09484fffe84aa8a3328bda7d4e0aadb844a0167694d"
-      },
-      "persona_sha256": "58d1f968cd528e04913000d2deb5624f91aef89da289de6701d206a5dbe2e925",
-      "ready_clips_at_activation": 8,
-      "used_history_and_cooldowns_preserved": true,
-      "master_before": {
-        "fppd": "running",
-        "status_name": "idle",
-        "uptime": "14 days, 22:42:21"
-      },
-      "master_after": {
-        "fppd": "running",
-        "status_name": "idle",
-        "uptime": "14 days, 22:42:26"
-      },
-      "fpp_services_restarted": false
-    },
-    "authored_persona_install_module_sha256": {
-      "config.py": "e295393cfc34aebc63e623f2c6c7c36a2a5b2c5bdf29a4f53019afd2acdefb03",
-      "knowledge_pack.py": "a0532bea32af1b2587cec8179ea20528498006e012ef8d862bccfebfcf32f38f",
-      "bedrock_session.py": "e5dc91c1e105a4110c6113dc5771bf9881bc955ca5a67b9f321bf16a1ad9a999",
-      "greeting_cache/personal.py": "ffde73e4ef84539c46fce09484fffe84aa8a3328bda7d4e0aadb844a0167694d"
-    },
-    "changed_module_sha256": {
-      "config.py": "7567f1ec706327c89ef288fbbf346616b9314f73fcbfe50b0b6e1ba6f9575cf4",
-      "visit.py": "df217e595afdce4a030ba506ec522af595a1e311cbbe720af1e2fc772d953d3b",
-      "greeting_cache/service.py": "7995f542e577f46f5d11257a642416129b9c29c40481b74d3eb19e54e09f6daf"
-    },
     "install": {
-      "schema": "teddy-arrival-install.v1",
+      "schema": "teddy-warm-install.v1",
       "status": "installed",
-      "installed_at": "2026-11-02T21:01:20.134413+00:00",
-      "source_revision": "0366e0eb2301771c4e1f5901fa7ba8e13c447ef0",
-      "backup": "/home/yardhost/ofls-yard-host/backups/arrival-enable-20261102-210114",
+      "source_revision": "056a4bf33e0b8737c7c8954f4c75da969f0816f2",
+      "backup": "/home/yardhost/ofls-yard-host/backups/warm-enable-20261102-211428",
       "module_sha256": {
-        "config.py": "7567f1ec706327c89ef288fbbf346616b9314f73fcbfe50b0b6e1ba6f9575cf4",
-        "visit.py": "df217e595afdce4a030ba506ec522af595a1e311cbbe720af1e2fc772d953d3b",
-        "greeting_cache/service.py": "7995f542e577f46f5d11257a642416129b9c29c40481b74d3eb19e54e09f6daf"
+        "visit.py": "048b83bd8bba8a53590690f04f6ca1e083081b4f84f35d961784c1442d860d97",
+        "greeting_cache/personal.py": "978fa602f92fa61c2ee23546a3652565416e157b0c90f8655503cd368088c3d5",
+        "greeting_cache/service.py": "318cb55b4df11df2b96777593aaf3262b1d591148911e7dbb2c89aea64ff8678",
+        "greeting_cache/usage.py": "f103d8457e4ba15fc6d08aca9028e1b077efd66868cbbc81d93b156e2278cfaa",
+        "greeting_cache/style.py": "5a28efbe6ad310ec4aef293c1c551475f0fb79b02f57528584920a31754255b6"
       },
-      "effective_settings": {
-        "recognizer": "sface",
-        "recognition_cutoff": 0.5,
-        "greeting_cutoff": 0.5,
-        "single_use": true
-      },
-      "runtime_revision": "050ddbbecb355e80826ad75c50cbba12dae68eb6+single-use-796857a+refill-07e0912+reciprocity-f2911f7+arrival-0366e0e",
+      "persona_sha256": "50f7668777336ebcc4f54c0d2f591c988e4271f51393fcd137e7e58d1c9bee04",
+      "runtime_revision": "050ddbbecb355e80826ad75c50cbba12dae68eb6+single-use-796857a+refill-07e0912+reciprocity-f2911f7+arrival-0366e0e+warm-056a4bf",
+      "ready_clips_at_activation": 8,
+      "personal_clips_at_activation": 6,
+      "local_time_period": "afternoon",
+      "usage_history_and_cooldowns_preserved": true,
       "all_module_hashes_match": true,
-      "verified_module_count": 54,
-      "cache_files_unchanged_during_install": true,
-      "usage_history_preserved": true,
-      "environment_unchanged": true,
-      "ready_clip_count": 8,
+      "verified_module_count": 55,
       "master_before": {
         "fppd": "running",
         "status_name": "idle",
-        "uptime": "14 days, 23:38:32"
+        "uptime": "14 days, 23:51:46"
       },
       "master_after": {
         "fppd": "running",
         "status_name": "idle",
-        "uptime": "14 days, 23:38:38"
+        "uptime": "14 days, 23:51:51"
       },
       "fpp_services_restarted": false,
       "physical_audio_test_triggered": false
     },
-    "arrival_rehearsal": {
-      "schema": "teddy-real-arrival-rehearsal.v1",
-      "passed": true,
-      "recorded_arrival_score": 0.592,
-      "recognition_cutoff_unchanged": 0.5,
-      "effective_greeting_cutoff": 0.5,
-      "real_saved_personal_clips_selected": 3,
-      "distinct_questions": 3,
-      "first_asks_christmas_memory": true,
-      "no_live_fallback_used": true,
-      "audio_and_mouth_timing_loaded": true,
-      "single_use_retirement_verified": true,
-      "production_manifest_unchanged": true,
-      "physical_audio_played": false,
-      "real_guest_data_sent_to_aws": false,
-      "private_rehearsal_path": "/home/yardhost/.local/state/ofls-yard-host/arrival-rehearsal-20261102-205917"
-    }
+    "physical_audio_test_triggered": false
   },
   "authorization": {
     "polly_and_private_s3": "Explicit yyes in this chat",

@@ -1,5 +1,12 @@
 # xLights Show Directory — Agent Notes
 
+## Warm, varied, time-aware Teddy welcomes — November 2, 2026
+
+- User confirmed the arrival fix was better, then requested a real hello before the fact and question. Pi `.30` now starts authored personal clips with one of six varied name greetings and a local-time welcome (morning, afternoon, evening or **tonight**), then varies fact-first/question-first order. Keep the exact authored share and one initial question; the next follow-up waits for the visitor's answer. Do not restore the bare-name-plus-fact format.
+- Plans include the current local time period. Old-period audio cannot play after a boundary: the visit uses a warm current-time personal fallback and requests background preparation. Single-use retirement/replacement remains enabled. Question repetition is checked independently of the hello, so changing the salutation/time cannot revive a used question.
+- Source `056a4bf` / draft PR #125 is installed, CI passed. Exact runtime: 283 tests and 82 subtests passed, one optional Node test skipped. Boundary/ordering/no-repeat checks passed; the real 0.592 arrival path selected three distinct prepared warm clips in a private-copy rehearsal. Eight ready clips/six personal openings (four fact-first, two question-first), all 55 runtime module hashes and all 16 encrypted private S3 audio/timing objects are verified. Latest usage history and cooldowns were preserved.
+- Master, `Teddy Interactive Idle`, voice/microphone/speaker settings, show layout/routing/playlists and old-button retirement are preserved. Computer keep-awake remains active. Current evidence: `Halloween/teddy-warm-welcomes-latest.json`; Pi rollback `/home/yardhost/ofls-yard-host/backups/warm-enable-20261102-211428/`. New style still awaits the user's physical observation.
+
 ## Real camera arrivals reach personal Teddy greetings — November 2, 2026
 
 - User's next test proved the old lights-feedback sentence was still spoken. The active visit recorded `returning_live_fallback`: SFace recognized the guest at score **0.592** against its existing **0.50** cutoff, but the separate unconfigured greeting default was **0.80**, bypassing all eight ready clips. Earlier successful model/audio checks did not cover this actual arrival gate.

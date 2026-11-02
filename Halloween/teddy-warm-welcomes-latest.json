@@ -1,0 +1,161 @@
+{
+  "schema": "teddy-warm-welcomes-deployment.v1",
+  "updated_at": "2026-11-02T15:17:07.883256-06:00",
+  "status": "installed_and_verified_ready_for_physical_test",
+  "host": "192.168.0.30",
+  "source_revision": "056a4bf33e0b8737c7c8954f4c75da969f0816f2",
+  "pull_request": "https://github.com/oharafamily/oharafamilylightshow/pull/125",
+  "pull_request_status": "draft, CI passed, installed on Pi",
+  "backup": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy warm welcomes 20261102-151707",
+  "user_observation_before_this_update": "Previous camera-arrival fix was better; greeting still began with bare name and fact.",
+  "behavior": {
+    "warm_varied_name_greeting": true,
+    "hello_variants": 6,
+    "local_time_periods": [
+      "morning",
+      "afternoon",
+      "evening",
+      "night"
+    ],
+    "night_wording": "tonight",
+    "question_first_and_fact_first": true,
+    "one_opening_question_then_followup_after_visitor_answer": true,
+    "authored_fact_preserved_verbatim": true,
+    "new_time_period_invalidates_old_audio": true,
+    "current_time_warm_fallback_and_background_refresh_on_stale_plan": true,
+    "different_hello_cannot_reintroduce_used_question": true,
+    "single_use_retirement_and_background_replacement_preserved": true
+  },
+  "tests": {
+    "exact_runtime": {
+      "passed": 283,
+      "skipped": 1,
+      "subtests_passed": 82,
+      "skip_reason": "Optional Node/browser-signing test unavailable in native Pi test PATH"
+    },
+    "github_ci": "passed",
+    "github_actions_run": "https://github.com/oharafamily/oharafamilylightshow/actions/runs/41526529432",
+    "actual_camera_score_rehearsal": {
+      "score": 0.592,
+      "distinct_cached_clips": 3,
+      "warm_time_aware_hellos": true,
+      "single_use_retirement": true,
+      "fallback_used": false
+    }
+  },
+  "preparation": {
+    "schema": "teddy-warm-preparation.v1",
+    "ready": true,
+    "prepared_at": "2026-11-02T21:12:42.841223+00:00",
+    "stage": "/home/yardhost/.local/state/ofls-yard-host/warm-prepared-20261102-211228",
+    "local_time_period": "afternoon",
+    "ready_clips": 8,
+    "personal_clips": 6,
+    "guest_count": 2,
+    "layout_counts": {
+      "question_first": 2,
+      "share_first": 4
+    },
+    "private_audio_and_visemes_verified": true,
+    "real_arrival_score_rehearsal": {
+      "score": 0.592,
+      "distinct_cached_clips": 3,
+      "warm_time_aware_hellos": true,
+      "single_use_retirement": true,
+      "fallback_used": false
+    },
+    "production_manifest_unchanged": true,
+    "physical_output_triggered": false
+  },
+  "verification": {
+    "schema": "teddy-warm-verification.v1",
+    "ready": true,
+    "verified_at": "2026-11-02T21:15:41.941872+00:00",
+    "source_revision": "056a4bf33e0b8737c7c8954f4c75da969f0816f2",
+    "pull_request": "https://github.com/oharafamily/oharafamilylightshow/pull/125",
+    "runtime_revision": "050ddbbecb355e80826ad75c50cbba12dae68eb6+single-use-796857a+refill-07e0912+reciprocity-f2911f7+arrival-0366e0e+warm-056a4bf",
+    "verified_modules": 55,
+    "hash_mismatches": [],
+    "persona_sha256": "50f7668777336ebcc4f54c0d2f591c988e4271f51393fcd137e7e58d1c9bee04",
+    "local_time_period": "afternoon",
+    "ready_clips": 8,
+    "personal_clips": 6,
+    "guest_count": 2,
+    "layout_counts": {
+      "question_first": 2,
+      "share_first": 4
+    },
+    "actual_prepared_example": "Welcome back, Elliott! It's nice to chat this afternoon! Which holiday tradition do you look forward to the most? Miss Heather gets a new prop for the light show every year.",
+    "single_use_enabled": true,
+    "used_history_preserved": true,
+    "private_backup_verified": true,
+    "verified_remote_audio_and_timing_files": 16,
+    "encryption": "AES256",
+    "stale_current_audio_or_timing_objects": 0,
+    "health": {
+      "available": true,
+      "enabled": true,
+      "state": "awake",
+      "camera_active": true,
+      "microphone_active": false
+    },
+    "master": {
+      "fppd": "running",
+      "status_name": "idle",
+      "uptime": "14 days, 23:52:59"
+    },
+    "effects": [
+      "Teddy Interactive Idle"
+    ],
+    "install": {
+      "schema": "teddy-warm-install.v1",
+      "status": "installed",
+      "source_revision": "056a4bf33e0b8737c7c8954f4c75da969f0816f2",
+      "backup": "/home/yardhost/ofls-yard-host/backups/warm-enable-20261102-211428",
+      "module_sha256": {
+        "visit.py": "048b83bd8bba8a53590690f04f6ca1e083081b4f84f35d961784c1442d860d97",
+        "greeting_cache/personal.py": "978fa602f92fa61c2ee23546a3652565416e157b0c90f8655503cd368088c3d5",
+        "greeting_cache/service.py": "318cb55b4df11df2b96777593aaf3262b1d591148911e7dbb2c89aea64ff8678",
+        "greeting_cache/usage.py": "f103d8457e4ba15fc6d08aca9028e1b077efd66868cbbc81d93b156e2278cfaa",
+        "greeting_cache/style.py": "5a28efbe6ad310ec4aef293c1c551475f0fb79b02f57528584920a31754255b6"
+      },
+      "persona_sha256": "50f7668777336ebcc4f54c0d2f591c988e4271f51393fcd137e7e58d1c9bee04",
+      "runtime_revision": "050ddbbecb355e80826ad75c50cbba12dae68eb6+single-use-796857a+refill-07e0912+reciprocity-f2911f7+arrival-0366e0e+warm-056a4bf",
+      "ready_clips_at_activation": 8,
+      "personal_clips_at_activation": 6,
+      "local_time_period": "afternoon",
+      "usage_history_and_cooldowns_preserved": true,
+      "all_module_hashes_match": true,
+      "verified_module_count": 55,
+      "master_before": {
+        "fppd": "running",
+        "status_name": "idle",
+        "uptime": "14 days, 23:51:46"
+      },
+      "master_after": {
+        "fppd": "running",
+        "status_name": "idle",
+        "uptime": "14 days, 23:51:51"
+      },
+      "fpp_services_restarted": false,
+      "physical_audio_test_triggered": false
+    },
+    "physical_audio_test_triggered": false
+  },
+  "preserved": {
+    "recognition_cutoff": 0.5,
+    "greeting_cutoff": 0.5,
+    "explicit_cutoff_overrides": true,
+    "usage_history_and_cooldowns": true,
+    "master_running": true,
+    "teddy_interactive_idle": true,
+    "voice_microphone_and_speaker_configuration": true,
+    "layout_outputs_routes_songs_playlists_and_schedule": true,
+    "old_button_retirement": true
+  },
+  "mac_awake": {
+    "launchd_label": "com.ohara.xlights.keepawake",
+    "verified_active": true
+  },
+  "next_step": "User observes a real warm greeting and conversation; physical mouth alignment is not inferred from software checks."
+}
