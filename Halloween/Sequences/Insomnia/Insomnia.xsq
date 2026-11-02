@@ -113,9 +113,8 @@
     <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=Sequences/Insomnia/Media/Voting/occasional-voting.gif,E_TEXTCTRL_Pictures_FrameRateAdj=1.0,E_TEXTCTRL_Pictures_Speed=1.0,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
     <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=1,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=Sequences/Insomnia/Media/Images-57b64d/red eye.gif,E_TEXTCTRL_Pictures_FrameRateAdj=1.0,E_TEXTCTRL_Pictures_Speed=1.0,E_TEXTCTRL_Pictures_TransparentBlack=0,T_TEXTCTRL_Fadein=1.00,T_TEXTCTRL_Fadeout=2.00,X_Effect_RenderDisabled=True</Effect>
     <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=1,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesEndXC=0,E_SLIDER_PicturesEndYC=0,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=Sequences/Insomnia/Media/Images-57b64d/red eye.gif,E_TEXTCTRL_Pictures_FrameRateAdj=1.0,E_TEXTCTRL_Pictures_Speed=1.0,E_TEXTCTRL_Pictures_TransparentBlack=0,T_SLIDER_In_Transition_Adjust=50,T_SLIDER_Out_Transition_Adjust=50,T_TEXTCTRL_Fadein=1.00,T_TEXTCTRL_Fadeout=2.00,X_Effect_RenderDisabled=True</Effect>
-    <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/projector-website-qr.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
     <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=1,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesEndXC=0,E_SLIDER_PicturesEndYC=0,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=Sequences/Insomnia/Media/Images-57b64d/red eye.gif,E_TEXTCTRL_Pictures_FrameRateAdj=1.0,E_TEXTCTRL_Pictures_Speed=1.0,E_TEXTCTRL_Pictures_TransparentBlack=0,T_TEXTCTRL_Fadein=1.00,T_TEXTCTRL_Fadeout=2.00,X_Effect_RenderDisabled=True</Effect>
-    <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/tune-to-website.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
+    <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/TuneToReadable-v2/stationary-qr.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=Lyrics,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_TimingTrack=Lyrics,E_CHOICE_Faces_UseState=Teddy RedBow static,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Pumpkin face,E_CHOICE_Faces_TimingTrack=Lyrics,E_CHOICE_Faces_UseState=outline with stem,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
@@ -1820,14 +1819,9 @@
       </EffectLayer>
     </Element>
     <Element type="model" name="Projector">
+      <EffectLayer />
       <EffectLayer>
-        <Effect ref="72" name="Pictures" startTime="10000" endTime="25000" palette="21" />
-        <Effect ref="72" name="Pictures" id="1" startTime="70000" endTime="85000" palette="21" />
-        <Effect ref="72" name="Pictures" id="2" startTime="130000" endTime="145000" palette="21" />
-        <Effect ref="72" name="Pictures" id="3" startTime="190000" endTime="205000" palette="21" />
-      </EffectLayer>
-      <EffectLayer>
-        <Effect ref="73" name="Pictures" startTime="168150" endTime="183300" palette="9" />
+        <Effect ref="72" name="Pictures" startTime="168150" endTime="183300" palette="9" />
       </EffectLayer>
       <EffectLayer>
         <Effect ref="70" name="Pictures" startTime="126400" endTime="127700" palette="9" />
@@ -2171,116 +2165,17 @@
       </EffectLayer>
     </Element>
     <Element type="model" name="Tune To">
-      <EffectLayer>
-        <Effect ref="74" name="Pictures" startTime="0" endTime="214825" palette="21" />
-      </EffectLayer>
       <EffectLayer />
       <EffectLayer>
-        <Effect ref="70" name="Pictures" startTime="168150" endTime="183300" palette="9" />
-      </EffectLayer>
-      <EffectLayer>
-        <Effect ref="70" name="Pictures" startTime="126400" endTime="127700" palette="9" />
-        <Effect ref="70" name="Pictures" id="1" startTime="128725" endTime="132750" palette="9" />
-        <Effect ref="70" name="Pictures" id="2" startTime="136725" endTime="137700" palette="9" />
-        <Effect ref="70" name="Pictures" id="3" startTime="138100" endTime="138350" palette="9" />
-        <Effect ref="70" name="Pictures" id="4" startTime="138350" endTime="138550" palette="9" />
-        <Effect ref="70" name="Pictures" id="5" startTime="138550" endTime="138900" palette="9" />
-        <Effect ref="70" name="Pictures" id="6" startTime="138900" endTime="139150" palette="9" />
-        <Effect ref="70" name="Pictures" id="7" startTime="139150" endTime="139450" palette="9" />
-        <Effect ref="70" name="Pictures" id="8" startTime="139450" endTime="139750" palette="9" />
-        <Effect ref="70" name="Pictures" id="9" startTime="139750" endTime="140150" palette="9" />
-        <Effect ref="70" name="Pictures" id="10" startTime="140150" endTime="140400" palette="9" />
-        <Effect ref="70" name="Pictures" id="11" startTime="140400" endTime="140700" palette="9" />
-        <Effect ref="70" name="Pictures" id="12" startTime="140700" endTime="141100" palette="9" />
-        <Effect ref="70" name="Pictures" id="13" startTime="141100" endTime="141350" palette="9" />
-        <Effect ref="70" name="Pictures" id="14" startTime="141350" endTime="141575" palette="9" />
-        <Effect ref="70" name="Pictures" id="15" startTime="141575" endTime="141900" palette="9" />
-        <Effect ref="70" name="Pictures" id="16" startTime="141900" endTime="142050" palette="9" />
-        <Effect ref="70" name="Pictures" id="17" startTime="142050" endTime="142275" palette="9" />
-        <Effect ref="70" name="Pictures" id="18" startTime="142275" endTime="142700" palette="9" />
-        <Effect ref="70" name="Pictures" id="19" startTime="142700" endTime="142950" palette="9" />
-        <Effect ref="70" name="Pictures" id="20" startTime="142950" endTime="143200" palette="9" />
-        <Effect ref="70" name="Pictures" id="21" startTime="143200" endTime="143600" palette="9" />
-        <Effect ref="70" name="Pictures" id="22" startTime="143600" endTime="143900" palette="9" />
-        <Effect ref="70" name="Pictures" id="23" startTime="143900" endTime="144200" palette="9" />
-        <Effect ref="70" name="Pictures" id="24" startTime="144200" endTime="144425" palette="9" />
-        <Effect ref="70" name="Pictures" id="25" startTime="144425" endTime="144725" palette="9" />
-        <Effect ref="70" name="Pictures" id="26" startTime="144725" endTime="145025" palette="9" />
-        <Effect ref="70" name="Pictures" id="27" startTime="145825" endTime="146075" palette="9" />
-        <Effect ref="70" name="Pictures" id="28" startTime="146075" endTime="146425" palette="9" />
-        <Effect ref="70" name="Pictures" id="29" startTime="146425" endTime="146775" palette="9" />
-        <Effect ref="70" name="Pictures" id="30" startTime="146775" endTime="147000" palette="9" />
-        <Effect ref="70" name="Pictures" id="31" startTime="147000" endTime="147375" palette="9" />
-        <Effect ref="70" name="Pictures" id="32" startTime="147375" endTime="147700" palette="9" />
-        <Effect ref="70" name="Pictures" id="33" startTime="147700" endTime="147950" palette="9" />
-        <Effect ref="70" name="Pictures" id="34" startTime="147950" endTime="148325" palette="9" />
-        <Effect ref="70" name="Pictures" id="35" startTime="148325" endTime="148675" palette="9" />
-        <Effect ref="70" name="Pictures" id="36" startTime="148675" endTime="148925" palette="9" />
-        <Effect ref="70" name="Pictures" id="37" startTime="148925" endTime="149125" palette="9" />
-        <Effect ref="70" name="Pictures" id="38" startTime="149125" endTime="149600" palette="9" />
-        <Effect ref="70" name="Pictures" id="39" startTime="149600" endTime="149850" palette="9" />
-        <Effect ref="70" name="Pictures" id="40" startTime="149850" endTime="150225" palette="9" />
-        <Effect ref="70" name="Pictures" id="41" startTime="150225" endTime="150550" palette="9" />
-        <Effect ref="70" name="Pictures" id="42" startTime="150550" endTime="150775" palette="9" />
-        <Effect ref="70" name="Pictures" id="43" startTime="150775" endTime="151150" palette="9" />
-        <Effect ref="70" name="Pictures" id="44" startTime="151150" endTime="151500" palette="9" />
-        <Effect ref="70" name="Pictures" id="45" startTime="151500" endTime="151725" palette="9" />
-        <Effect ref="70" name="Pictures" id="46" startTime="151725" endTime="152100" palette="9" />
-        <Effect ref="70" name="Pictures" id="47" startTime="152100" endTime="152450" palette="9" />
-        <Effect ref="70" name="Pictures" id="48" startTime="152450" endTime="152650" palette="9" />
-        <Effect ref="70" name="Pictures" id="49" startTime="152650" endTime="152850" palette="9" />
-        <Effect ref="70" name="Pictures" id="50" startTime="152850" endTime="153025" palette="9" />
-        <Effect ref="70" name="Pictures" id="51" startTime="153150" endTime="155000" palette="9" />
-        <Effect ref="70" name="Pictures" id="52" startTime="155000" endTime="156850" palette="9" />
-        <Effect ref="70" name="Pictures" id="53" startTime="156850" endTime="158700" palette="9" />
-        <Effect ref="70" name="Pictures" id="54" startTime="158700" endTime="160550" palette="9" />
-        <Effect ref="70" name="Pictures" id="55" startTime="160550" endTime="162400" palette="9" />
-        <Effect ref="70" name="Pictures" id="56" startTime="162400" endTime="164250" palette="9" />
-        <Effect ref="70" name="Pictures" id="57" startTime="164250" endTime="166100" palette="9" />
-        <Effect ref="70" name="Pictures" id="58" startTime="166100" endTime="168150" palette="9" />
-        <Effect ref="70" name="Pictures" id="59" startTime="168150" endTime="183300" palette="9" />
-      </EffectLayer>
-      <EffectLayer>
-        <Effect ref="70" name="Pictures" startTime="144550" endTime="144850" palette="9" />
-        <Effect ref="70" name="Pictures" id="1" startTime="144850" endTime="145150" palette="9" />
-        <Effect ref="70" name="Pictures" id="2" startTime="155000" endTime="156850" palette="9" />
-        <Effect ref="70" name="Pictures" id="3" startTime="158700" endTime="160550" palette="9" />
-        <Effect ref="70" name="Pictures" id="4" startTime="162400" endTime="164250" palette="9" />
-        <Effect ref="70" name="Pictures" id="5" startTime="166100" endTime="168150" palette="9" />
-        <Effect ref="70" name="Pictures" id="6" startTime="168150" endTime="183300" palette="9" />
-        <Effect ref="70" name="Pictures" id="7" startTime="183300" endTime="210475" palette="9" />
-      </EffectLayer>
-      <EffectLayer>
-        <Effect ref="70" name="Pictures" startTime="145600" endTime="146350" palette="9" />
-        <Effect ref="70" name="Pictures" id="1" startTime="153150" endTime="168150" palette="9" />
-        <Effect ref="70" name="Pictures" id="2" startTime="168175" endTime="183300" palette="9" />
-        <Effect ref="70" name="Pictures" id="3" startTime="183300" endTime="210425" palette="9" />
-      </EffectLayer>
-      <EffectLayer>
-        <Effect ref="70" name="Pictures" startTime="1650" endTime="5700" palette="9" />
-        <Effect ref="70" name="Pictures" id="1" startTime="5700" endTime="9300" palette="9" />
-        <Effect ref="70" name="Pictures" id="2" startTime="9300" endTime="12900" palette="9" />
-        <Effect ref="70" name="Pictures" id="3" startTime="12900" endTime="16950" palette="9" />
-        <Effect ref="70" name="Pictures" id="4" startTime="16950" endTime="20575" palette="9" />
-        <Effect ref="70" name="Pictures" id="5" startTime="20575" endTime="24700" palette="9" />
-        <Effect ref="71" name="Pictures" id="6" startTime="24700" endTime="28100" palette="9" />
-        <Effect ref="70" name="Pictures" id="7" startTime="76500" endTime="137700" palette="9" />
-        <Effect ref="70" name="Pictures" id="8" startTime="145600" endTime="146350" palette="9" />
-        <Effect ref="70" name="Pictures" id="9" startTime="153150" endTime="168150" palette="9" />
-        <Effect ref="70" name="Pictures" id="10" startTime="168150" endTime="183300" palette="9" />
-      </EffectLayer>
-      <EffectLayer>
-        <Effect ref="70" name="Pictures" startTime="1125" endTime="28100" palette="9" />
-        <Effect ref="70" name="Pictures" id="1" startTime="137675" endTime="138100" palette="9" />
-        <Effect ref="70" name="Pictures" id="2" startTime="168150" endTime="183250" palette="9" />
+        <Effect ref="73" name="Pictures" startTime="0" endTime="214825" palette="21" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Evil Clown">
       <EffectLayer>
-        <Effect ref="75" name="Faces" startTime="30625" endTime="42350" palette="21" />
-        <Effect ref="75" name="Faces" id="1" startTime="134500" endTime="136800" palette="21" />
-        <Effect ref="75" name="Faces" id="2" startTime="152425" endTime="154625" palette="21" />
-        <Effect ref="75" name="Faces" id="3" startTime="167525" endTime="169800" palette="21" />
+        <Effect ref="74" name="Faces" startTime="30625" endTime="42350" palette="21" />
+        <Effect ref="74" name="Faces" id="1" startTime="134500" endTime="136800" palette="21" />
+        <Effect ref="74" name="Faces" id="2" startTime="152425" endTime="154625" palette="21" />
+        <Effect ref="74" name="Faces" id="3" startTime="167525" endTime="169800" palette="21" />
       </EffectLayer>
     </Element>
     <Element type="model" name="Elliott - EFL Teddy">
@@ -2288,7 +2183,7 @@
       <EffectLayer />
       <EffectLayer />
       <EffectLayer>
-        <Effect ref="76" name="Faces" startTime="78825" endTime="133075" palette="21" />
+        <Effect ref="75" name="Faces" startTime="78825" endTime="133075" palette="21" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Franken Monster (2)">
@@ -2302,10 +2197,10 @@
     </Element>
     <Element type="model" name="GE Singing Pumpkin">
       <EffectLayer>
-        <Effect ref="77" name="Faces" startTime="44050" endTime="44850" palette="21" />
-        <Effect ref="77" name="Faces" id="1" startTime="47675" endTime="49825" palette="21" />
-        <Effect ref="77" name="Faces" id="2" startTime="182675" endTime="185475" palette="21" />
-        <Effect ref="77" name="Faces" id="3" startTime="197800" endTime="200600" palette="21" />
+        <Effect ref="76" name="Faces" startTime="44050" endTime="44850" palette="21" />
+        <Effect ref="76" name="Faces" id="1" startTime="47675" endTime="49825" palette="21" />
+        <Effect ref="76" name="Faces" id="2" startTime="182675" endTime="185475" palette="21" />
+        <Effect ref="76" name="Faces" id="3" startTime="197800" endTime="200600" palette="21" />
       </EffectLayer>
     </Element>
     <Element type="model" name="2nd floor far right">

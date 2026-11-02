@@ -248,7 +248,7 @@
     <Effect>E_0FILEPICKERCTRL_IFS=Sequences/Bad Romance (Extra Clean)/Media/Shaders-597f90/RGBLaserGlobe_125.fs,E_CHOICE_SHADERXYZZY_uColMode=Shader Defaults ,E_SLIDER_SHADERXYZZY_uDisperse=101,E_SLIDER_SHADERXYZZY_uIntensity=200,E_SLIDER_SHADERXYZZY_uOffsetX=0,E_SLIDER_SHADERXYZZY_uOffsetY=-11,E_SLIDER_Shader_Speed=100,E_TEXTCTRL_Shader_LeadIn=0,E_TEXTCTRL_Shader_Offset_X=0,E_TEXTCTRL_Shader_Offset_Y=0,E_TEXTCTRL_Shader_Zoom=100,T_CHECKBOX_Canvas=1</Effect>
     <Effect>E_0FILEPICKERCTRL_IFS=Sequences/Bad Romance (Extra Clean)/Media/Shaders-597f90/RGBLaserGlobe_126.fs,E_CHOICE_SHADERXYZZY_uColMode=Shader Defaults ,E_SLIDER_SHADERXYZZY_uDisperse=101,E_SLIDER_SHADERXYZZY_uIntensity=200,E_SLIDER_SHADERXYZZY_uOffsetX=0,E_SLIDER_SHADERXYZZY_uOffsetY=-11,E_SLIDER_Shader_Speed=100,E_TEXTCTRL_Shader_LeadIn=0,E_TEXTCTRL_Shader_Offset_X=0,E_TEXTCTRL_Shader_Offset_Y=0,E_TEXTCTRL_Shader_Zoom=100,T_CHECKBOX_Canvas=1</Effect>
     <Effect>E_0FILEPICKERCTRL_IFS=Sequences/Bad Romance (Extra Clean)/Media/Shaders-597f90/RGBLaserGlobe_127.fs,E_CHOICE_SHADERXYZZY_uColMode=Shader Defaults ,E_SLIDER_SHADERXYZZY_uDisperse=101,E_SLIDER_SHADERXYZZY_uIntensity=200,E_SLIDER_SHADERXYZZY_uOffsetX=0,E_SLIDER_SHADERXYZZY_uOffsetY=-11,E_SLIDER_Shader_Speed=100,E_TEXTCTRL_Shader_LeadIn=0,E_TEXTCTRL_Shader_Offset_X=0,E_TEXTCTRL_Shader_Offset_Y=0,E_TEXTCTRL_Shader_Zoom=100,T_CHECKBOX_Canvas=1</Effect>
-    <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/tune-to-website.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
+    <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/TuneToReadable-v2/stationary-qr.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
     <Effect>T_TEXTCTRL_Fadein=15,T_TEXTCTRL_Fadeout=5</Effect>
     <Effect>T_TEXTCTRL_Fadein=5,T_TEXTCTRL_Fadeout=5</Effect>
     <Effect>T_TEXTCTRL_Fadein=15</Effect>
@@ -273,7 +273,6 @@
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Dracula [Bad-Romance-Extra-Clean],E_CHOICE_Faces_TimingTrack=Lyrics (Backup),T_TEXTCTRL_Fadeout=.2</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Dracula [Bad-Romance-Extra-Clean],E_CHOICE_Faces_TimingTrack=Lyrics (Main),T_TEXTCTRL_Fadeout=.2</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Dracula [Bad-Romance-Extra-Clean],E_CHOICE_Faces_TimingTrack=Lyrics (Backup),T_TEXTCTRL_Fadein=.2,T_TEXTCTRL_Fadeout=.2</Effect>
-    <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/projector-website-qr.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Pumpkin face,E_CHOICE_Faces_TimingTrack=Lyrics (Main),E_CHOICE_Faces_UseState=outline with stem,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Pumpkin face,E_CHOICE_Faces_TimingTrack=Lyrics (Backup),E_CHOICE_Faces_UseState=outline with stem,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=Lyrics (Main),T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
@@ -2491,116 +2490,9 @@
       </EffectLayer>
     </Element>
     <Element type="model" name="Tune To">
-      <EffectLayer>
-        <Effect ref="205" name="Pictures" startTime="0" endTime="181625" palette="23" />
-      </EffectLayer>
       <EffectLayer />
       <EffectLayer>
-        <Effect ref="37" name="Shader" startTime="9250" endTime="10275" palette="9" />
-        <Effect ref="38" name="Shader" id="1" startTime="10275" endTime="11300" palette="9" />
-        <Effect ref="39" name="Shader" id="2" startTime="11300" endTime="12800" palette="9" />
-        <Effect ref="40" name="Shader" id="3" startTime="12800" endTime="13300" palette="9" />
-        <Effect ref="41" name="Shader" id="4" startTime="13300" endTime="14800" palette="9" />
-        <Effect ref="42" name="Shader" id="5" startTime="14800" endTime="15325" palette="17" />
-        <Effect ref="43" name="Shader" id="6" startTime="15325" endTime="16325" palette="9" />
-        <Effect ref="44" name="Shader" id="7" startTime="16325" endTime="16825" palette="9" />
-        <Effect ref="45" name="Shader" id="8" startTime="16825" endTime="17325" palette="17" />
-        <Effect ref="46" name="Shockwave" id="9" startTime="21375" endTime="21850" palette="3" />
-        <Effect ref="46" name="Shockwave" id="10" startTime="21850" endTime="22350" palette="3" />
-        <Effect ref="46" name="Shockwave" id="11" startTime="22350" endTime="22875" palette="3" />
-        <Effect ref="46" name="Shockwave" id="12" startTime="22875" endTime="23375" palette="3" />
-        <Effect ref="46" name="Shockwave" id="13" startTime="23375" endTime="23900" palette="3" />
-        <Effect ref="47" name="Lightning" id="14" startTime="41750" endTime="43550" palette="3" />
-        <Effect ref="48" name="Lightning" id="15" startTime="43750" endTime="44125" palette="0" />
-        <Effect ref="49" name="Lightning" id="16" startTime="44175" endTime="44550" palette="4" />
-        <Effect ref="50" name="Lightning" id="17" startTime="44625" endTime="45575" palette="8" />
-        <Effect ref="47" name="Lightning" id="18" startTime="45775" endTime="47600" palette="3" />
-        <Effect ref="47" name="Lightning" id="19" startTime="47600" endTime="49600" palette="3" />
-        <Effect ref="47" name="Lightning" id="20" startTime="57875" endTime="59700" palette="3" />
-        <Effect ref="48" name="Lightning" id="21" startTime="59900" endTime="60275" palette="0" />
-        <Effect ref="49" name="Lightning" id="22" startTime="60325" endTime="60700" palette="4" />
-        <Effect ref="50" name="Lightning" id="23" startTime="60750" endTime="61700" palette="8" />
-        <Effect ref="47" name="Lightning" id="24" startTime="61900" endTime="63725" palette="3" />
-        <Effect ref="47" name="Lightning" id="25" startTime="63725" endTime="65725" palette="3" />
-        <Effect ref="46" name="Shockwave" id="26" startTime="65725" endTime="66225" palette="0" />
-        <Effect ref="46" name="Shockwave" id="27" startTime="66225" endTime="66750" palette="0" />
-        <Effect ref="46" name="Shockwave" id="28" startTime="66750" endTime="67250" palette="0" />
-        <Effect ref="46" name="Shockwave" id="29" startTime="67250" endTime="67750" palette="0" />
-        <Effect ref="46" name="Shockwave" id="30" startTime="67750" endTime="68250" palette="0" />
-        <Effect ref="46" name="Shockwave" id="31" startTime="68250" endTime="68750" palette="0" />
-        <Effect ref="46" name="Shockwave" id="32" startTime="68750" endTime="69275" palette="0" />
-        <Effect ref="46" name="Shockwave" id="33" startTime="69275" endTime="69775" palette="0" />
-        <Effect ref="46" name="Shockwave" id="34" startTime="69775" endTime="70275" palette="0" />
-        <Effect ref="46" name="Shockwave" id="35" startTime="70275" endTime="70775" palette="0" />
-        <Effect ref="46" name="Shockwave" id="36" startTime="70775" endTime="71275" palette="0" />
-        <Effect ref="46" name="Shockwave" id="37" startTime="71275" endTime="71775" palette="0" />
-        <Effect ref="46" name="Shockwave" id="38" startTime="71775" endTime="72300" palette="0" />
-        <Effect ref="46" name="Shockwave" id="39" startTime="72300" endTime="72800" palette="0" />
-        <Effect ref="46" name="Shockwave" id="40" startTime="72800" endTime="73300" palette="0" />
-        <Effect ref="51" name="Shader" id="41" startTime="89925" endTime="90950" palette="9" />
-        <Effect ref="52" name="Shader" id="42" startTime="90950" endTime="91950" palette="9" />
-        <Effect ref="53" name="Shader" id="43" startTime="91950" endTime="93475" palette="9" />
-        <Effect ref="54" name="Shader" id="44" startTime="93475" endTime="93975" palette="9" />
-        <Effect ref="55" name="Shader" id="45" startTime="93975" endTime="95475" palette="9" />
-        <Effect ref="56" name="Shader" id="46" startTime="95475" endTime="96000" palette="9" />
-        <Effect ref="57" name="Shader" id="47" startTime="96000" endTime="97000" palette="9" />
-        <Effect ref="58" name="Shader" id="48" startTime="97000" endTime="97500" palette="9" />
-        <Effect ref="59" name="Shader" id="49" startTime="97500" endTime="98000" palette="9" />
-        <Effect ref="60" name="Shader" id="50" startTime="98000" endTime="99025" palette="9" />
-        <Effect ref="61" name="Shader" id="51" startTime="99025" endTime="100025" palette="9" />
-        <Effect ref="62" name="Shader" id="52" startTime="100025" endTime="101525" palette="9" />
-        <Effect ref="63" name="Shader" id="53" startTime="101525" endTime="102025" palette="9" />
-        <Effect ref="64" name="Shader" id="54" startTime="102025" endTime="103550" palette="9" />
-        <Effect ref="65" name="Shader" id="55" startTime="103550" endTime="104050" palette="9" />
-        <Effect ref="66" name="Shader" id="56" startTime="104050" endTime="105075" palette="9" />
-        <Effect ref="67" name="Shader" id="57" startTime="105075" endTime="105575" palette="9" />
-        <Effect ref="68" name="Shader" id="58" startTime="105575" endTime="106075" palette="9" />
-        <Effect ref="47" name="Lightning" id="59" startTime="106275" endTime="108100" palette="3" />
-        <Effect ref="48" name="Lightning" id="60" startTime="108300" endTime="108675" palette="3" />
-        <Effect ref="49" name="Lightning" id="61" startTime="108725" endTime="109100" palette="4" />
-        <Effect ref="50" name="Lightning" id="62" startTime="109175" endTime="110100" palette="3" />
-        <Effect ref="47" name="Lightning" id="63" startTime="110300" endTime="112125" palette="3" />
-        <Effect ref="47" name="Lightning" id="64" startTime="112125" endTime="114150" palette="3" />
-        <Effect ref="89" name="Shader" id="65" startTime="114200" endTime="122250" palette="18" />
-        <Effect ref="47" name="Lightning" id="66" startTime="122425" endTime="124225" palette="3" />
-        <Effect ref="48" name="Lightning" id="67" startTime="124425" endTime="124800" palette="0" />
-        <Effect ref="49" name="Lightning" id="68" startTime="124850" endTime="125225" palette="4" />
-        <Effect ref="50" name="Lightning" id="69" startTime="125300" endTime="126250" palette="8" />
-        <Effect ref="47" name="Lightning" id="70" startTime="126450" endTime="128250" palette="3" />
-        <Effect ref="47" name="Lightning" id="71" startTime="128250" endTime="130275" palette="3" />
-        <Effect ref="46" name="Shockwave" id="72" startTime="130275" endTime="130800" palette="6" />
-        <Effect ref="46" name="Shockwave" id="73" startTime="130800" endTime="131300" palette="6" />
-        <Effect ref="46" name="Shockwave" id="74" startTime="131300" endTime="131800" palette="6" />
-        <Effect ref="46" name="Shockwave" id="75" startTime="131800" endTime="132300" palette="6" />
-        <Effect ref="46" name="Shockwave" id="76" startTime="132300" endTime="132800" palette="6" />
-        <Effect ref="46" name="Shockwave" id="77" startTime="132800" endTime="133300" palette="6" />
-        <Effect ref="46" name="Shockwave" id="78" startTime="133300" endTime="133800" palette="6" />
-        <Effect ref="46" name="Shockwave" id="79" startTime="133800" endTime="134325" palette="6" />
-        <Effect ref="46" name="Shockwave" id="80" startTime="134325" endTime="134825" palette="6" />
-        <Effect ref="46" name="Shockwave" id="81" startTime="134825" endTime="135325" palette="6" />
-        <Effect ref="46" name="Shockwave" id="82" startTime="135325" endTime="135825" palette="6" />
-        <Effect ref="46" name="Shockwave" id="83" startTime="135825" endTime="136325" palette="6" />
-        <Effect ref="46" name="Shockwave" id="84" startTime="136325" endTime="136825" palette="6" />
-        <Effect ref="46" name="Shockwave" id="85" startTime="136825" endTime="137350" palette="6" />
-        <Effect ref="46" name="Shockwave" id="86" startTime="137350" endTime="137850" palette="6" />
-        <Effect ref="70" name="Shader" id="87" startTime="154475" endTime="155500" palette="9" />
-        <Effect ref="71" name="Shader" id="88" startTime="155500" endTime="156500" palette="9" />
-        <Effect ref="72" name="Shader" id="89" startTime="156500" endTime="158025" palette="9" />
-        <Effect ref="73" name="Shader" id="90" startTime="158025" endTime="158525" palette="9" />
-        <Effect ref="74" name="Shader" id="91" startTime="158525" endTime="160025" palette="9" />
-        <Effect ref="75" name="Shader" id="92" startTime="160025" endTime="160525" palette="9" />
-        <Effect ref="76" name="Shader" id="93" startTime="160525" endTime="161550" palette="9" />
-        <Effect ref="77" name="Shader" id="94" startTime="161550" endTime="162050" palette="9" />
-        <Effect ref="78" name="Shader" id="95" startTime="162050" endTime="162550" palette="9" />
-        <Effect ref="79" name="Shader" id="96" startTime="162550" endTime="163550" palette="9" />
-        <Effect ref="80" name="Shader" id="97" startTime="163550" endTime="164575" palette="9" />
-        <Effect ref="81" name="Shader" id="98" startTime="164575" endTime="166075" palette="9" />
-        <Effect ref="82" name="Shader" id="99" startTime="166075" endTime="166600" palette="9" />
-        <Effect ref="83" name="Shader" id="100" startTime="166600" endTime="168100" palette="9" />
-        <Effect ref="84" name="Shader" id="101" startTime="168100" endTime="168600" palette="9" />
-        <Effect ref="85" name="Shader" id="102" startTime="168600" endTime="169600" palette="9" />
-        <Effect ref="86" name="Shader" id="103" startTime="169600" endTime="170125" palette="9" />
-        <Effect ref="87" name="Shader" id="104" startTime="170125" endTime="170625" palette="9" />
+        <Effect ref="205" name="Pictures" startTime="0" endTime="181625" palette="23" />
       </EffectLayer>
     </Element>
     <Element type="model" name="Fog">
@@ -2805,11 +2697,7 @@
       </EffectLayer>
     </Element>
     <Element type="model" name="Projector">
-      <EffectLayer>
-        <Effect ref="230" name="Pictures" startTime="10000" endTime="25000" palette="23" />
-        <Effect ref="230" name="Pictures" id="1" startTime="70000" endTime="85000" palette="23" />
-        <Effect ref="230" name="Pictures" id="2" startTime="130000" endTime="145000" palette="23" />
-      </EffectLayer>
+      <EffectLayer />
       <EffectLayer>
         <Effect ref="37" name="Shader" startTime="9250" endTime="10275" palette="9" />
         <Effect ref="38" name="Shader" id="1" startTime="10275" endTime="11300" palette="9" />
@@ -4732,20 +4620,20 @@
     </Element>
     <Element type="model" name="GE Singing Pumpkin">
       <EffectLayer>
-        <Effect ref="231" name="Faces" startTime="175" endTime="33575" palette="23" />
-        <Effect ref="232" name="Faces" id="1" startTime="53375" endTime="53875" palette="23" />
-        <Effect ref="232" name="Faces" id="2" startTime="61650" endTime="65250" palette="23" />
-        <Effect ref="231" name="Faces" id="3" startTime="114375" endTime="137975" palette="23" />
+        <Effect ref="230" name="Faces" startTime="175" endTime="33575" palette="23" />
+        <Effect ref="231" name="Faces" id="1" startTime="53375" endTime="53875" palette="23" />
+        <Effect ref="231" name="Faces" id="2" startTime="61650" endTime="65250" palette="23" />
+        <Effect ref="230" name="Faces" id="3" startTime="114375" endTime="137975" palette="23" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Evil Clown">
       <EffectLayer>
-        <Effect ref="233" name="Faces" startTime="74025" endTime="114325" palette="23" />
-        <Effect ref="233" name="Faces" id="1" startTime="138575" endTime="153575" palette="23" />
-        <Effect ref="233" name="Faces" id="2" startTime="156750" endTime="158800" palette="23" />
-        <Effect ref="233" name="Faces" id="3" startTime="160750" endTime="162775" palette="23" />
-        <Effect ref="233" name="Faces" id="4" startTime="164800" endTime="166900" palette="23" />
-        <Effect ref="233" name="Faces" id="5" startTime="170625" endTime="178825" palette="23" />
+        <Effect ref="232" name="Faces" startTime="74025" endTime="114325" palette="23" />
+        <Effect ref="232" name="Faces" id="1" startTime="138575" endTime="153575" palette="23" />
+        <Effect ref="232" name="Faces" id="2" startTime="156750" endTime="158800" palette="23" />
+        <Effect ref="232" name="Faces" id="3" startTime="160750" endTime="162775" palette="23" />
+        <Effect ref="232" name="Faces" id="4" startTime="164800" endTime="166900" palette="23" />
+        <Effect ref="232" name="Faces" id="5" startTime="170625" endTime="178825" palette="23" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Rosa Grande GRP">
@@ -6069,11 +5957,11 @@
       <EffectLayer />
       <EffectLayer />
       <EffectLayer>
-        <Effect ref="234" name="Faces" startTime="33700" endTime="63050" palette="23" />
-        <Effect ref="234" name="Faces" id="1" startTime="66100" endTime="73400" palette="23" />
-        <Effect ref="235" name="Faces" id="2" startTime="80850" endTime="82875" palette="23" />
-        <Effect ref="235" name="Faces" id="3" startTime="145400" endTime="147525" palette="23" />
-        <Effect ref="235" name="Faces" id="4" startTime="153475" endTime="169350" palette="23" />
+        <Effect ref="233" name="Faces" startTime="33700" endTime="63050" palette="23" />
+        <Effect ref="233" name="Faces" id="1" startTime="66100" endTime="73400" palette="23" />
+        <Effect ref="234" name="Faces" id="2" startTime="80850" endTime="82875" palette="23" />
+        <Effect ref="234" name="Faces" id="3" startTime="145400" endTime="147525" palette="23" />
+        <Effect ref="234" name="Faces" id="4" startTime="153475" endTime="169350" palette="23" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Dark Helmet">

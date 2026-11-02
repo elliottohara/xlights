@@ -262,7 +262,6 @@
     <ColorPalette>C_BUTTON_Palette1=#79b8ff,C_BUTTON_Palette2=#ffffff,C_BUTTON_Palette3=#2e429c,C_BUTTON_Palette4=#025bd0,C_BUTTON_Palette5=#9c802d,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#8dff78,C_BUTTON_Palette8=#803ef7,C_CHECKBOXBRIGHTNESSLEVEL=0,C_CHECKBOX_Chroma=0,C_CHECKBOX_MusicSparkles=0,C_CHECKBOX_Palette1=0,C_CHECKBOX_Palette2=0,C_CHECKBOX_Palette3=0,C_CHECKBOX_Palette4=1,C_CHECKBOX_Palette5=0,C_CHECKBOX_Palette6=0,C_CHECKBOX_Palette7=0,C_CHECKBOX_Palette8=0,C_SLIDER_SparkleFrequency=0</ColorPalette>
     <ColorPalette>C_BUTTON_Palette1=#79b8ff,C_BUTTON_Palette2=#ffffff,C_BUTTON_Palette3=#2e429c,C_BUTTON_Palette4=#f7ed3d,C_BUTTON_Palette5=#9c802d,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#8dff78,C_BUTTON_Palette8=#803ef7,C_CHECKBOXBRIGHTNESSLEVEL=0,C_CHECKBOX_Chroma=0,C_CHECKBOX_MusicSparkles=0,C_CHECKBOX_Palette4=1,C_SLIDER_SparkleFrequency=0</ColorPalette>
     <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1</ColorPalette>
-    <ColorPalette>C_BUTTON_Palette1=#000000,C_CHECKBOX_Palette1=1</ColorPalette>
   </ColorPalettes>
   <EffectDB>
     <Effect>E_CHECKBOX_SynchroniseWithAudio=0,E_CHECKBOX_Video_AspectRatio=0,E_CHECKBOX_Video_TransparentBlack=0,E_CHOICE_Video_DurationTreatment=Normal,E_FILEPICKERCTRL_Video_Filename=Sequences/I Knew It I Knew You/Media/VendorVideos/Iknewit_Matrix.mov,E_TEXTCTRL_Duration=2:58.175,E_TEXTCTRL_SampleSpacing=0,E_TEXTCTRL_Video_CropBottom=0,E_TEXTCTRL_Video_CropLeft=0,E_TEXTCTRL_Video_CropRight=100,E_TEXTCTRL_Video_CropTop=100,E_TEXTCTRL_Video_Starttime=0.00,E_TEXTCTRL_Video_TransparentBlack=0,T_CHECKBOX_Canvas=0,T_CHECKBOX_LayerMorph=0,T_CHOICE_LayerMethod=Normal,T_SLIDER_EffectLayerMix=0,T_TEXTCTRL_Fadeout=1</Effect>
@@ -1017,9 +1016,7 @@
     <Effect>B_CHOICE_BufferStyle=Per Model Single Line,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Left-Right,E_CHOICE_Fade_Type=From Head,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_SingleStrand_FX=Blink,E_CHOICE_SingleStrand_FX_Palette=Default,E_CHOICE_SingleStrand_TimingTrack=,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=25,E_SLIDER_FX_Intensity=128,E_SLIDER_FX_Speed=128,E_SLIDER_Number_Chases=1,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Offset=0.0,E_TEXTCTRL_Chase_Rotations=1.0,T_CHECKBOX_Canvas=0,T_CHECKBOX_LayerMorph=0,T_CHOICE_LayerMethod=Normal,T_SLIDER_EffectLayerMix=0,T_TEXTCTRL_Fadeout=0.50</Effect>
     <Effect>B_CHOICE_BufferStyle=Per Model Per Preview,B_CHOICE_PerPreviewCamera=2D,E_CHECKBOX_Shockwave_Blend_Edges=1,E_CHECKBOX_Shockwave_Scale=1,E_CHOICE_Shockwave_TimingTrack=,E_NOTEBOOK_Shockwave=Position,E_SLIDER_Shockwave_Accel=0,E_SLIDER_Shockwave_CenterX=50,E_SLIDER_Shockwave_CenterY=50,E_SLIDER_Shockwave_Cycles=1,E_SLIDER_Shockwave_End_Radius=100,E_SLIDER_Shockwave_End_Width=10,E_SLIDER_Shockwave_Start_Radius=1,E_SLIDER_Shockwave_Start_Width=25,T_CHECKBOX_Canvas=0,T_CHECKBOX_LayerMorph=0,T_CHOICE_LayerMethod=Normal,T_SLIDER_EffectLayerMix=0</Effect>
     <Effect>B_CHOICE_BufferStyle=Per Model Single Line,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Left-Right,E_CHOICE_Fade_Type=From Head,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_SingleStrand_FX=Blink,E_CHOICE_SingleStrand_FX_Palette=Default,E_CHOICE_SingleStrand_TimingTrack=,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=25,E_SLIDER_FX_Intensity=128,E_SLIDER_FX_Speed=128,E_SLIDER_Number_Chases=1,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Offset=0.0,E_TEXTCTRL_Chase_Rotations=1.0,T_CHECKBOX_Canvas=0,T_CHECKBOX_LayerMorph=0,T_CHOICE_LayerMethod=Normal,T_SLIDER_EffectLayerMix=0,T_TEXTCTRL_Fadeout=0.00</Effect>
-    <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/tune-to-website.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
-    <Effect>B_CUSTOM_SubBuffer=0x0x100x30,E_TEXTCTRL_Eff_On_End=100,E_TEXTCTRL_Eff_On_Start=100,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
-    <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/projector-website-qr.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
+    <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/TuneToReadable-v2/stationary-qr.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
   </EffectDB>
   <SequenceMedia>
     <Video path="Sequences/I Knew It I Knew You/Media/VendorVideos/I knew you_parachute.mp4" />
@@ -6829,225 +6826,9 @@
       </EffectLayer>
     </Element>
     <Element type="model" name="Tune To">
-      <EffectLayer>
-        <Effect ref="752" name="Pictures" startTime="0" endTime="178200" palette="244" />
-      </EffectLayer>
       <EffectLayer />
       <EffectLayer>
-        <Effect ref="753" name="On" startTime="0" endTime="178200" palette="245" />
-      </EffectLayer>
-      <EffectLayer>
-        <Effect ref="0" name="Video" startTime="0" endTime="178150" palette="0" />
-      </EffectLayer>
-      <EffectLayer>
-        <Effect ref="1" name="Off" startTime="0" endTime="178150" palette="1" />
-      </EffectLayer>
-      <EffectLayer>
-        <Effect ref="2" name="Sketch" startTime="425" endTime="6875" palette="2" />
-        <Effect ref="3" name="Sketch" id="1" startTime="8825" endTime="11400" palette="2" />
-        <Effect ref="4" name="Pictures" id="2" startTime="46250" endTime="52050" palette="3" />
-        <Effect ref="5" name="Pictures" id="3" startTime="92725" endTime="98525" palette="3" />
-        <Effect ref="6" name="Shockwave" id="4" startTime="139775" endTime="144950" palette="4" />
-        <Effect ref="7" name="Shockwave" id="5" startTime="144950" endTime="150125" palette="4" />
-        <Effect ref="8" name="Pictures" id="6" startTime="150125" endTime="155275" palette="3" />
-      </EffectLayer>
-      <EffectLayer>
-        <Effect ref="9" name="Sketch" startTime="8825" endTime="11400" palette="2" />
-        <Effect ref="10" name="Meteors" id="1" startTime="98500" endTime="103675" palette="5" />
-        <Effect ref="11" name="Meteors" id="2" startTime="103675" endTime="108850" palette="6" />
-        <Effect ref="12" name="Warp" id="3" startTime="116575" endTime="121725" palette="7" />
-        <Effect ref="13" name="Ripple" id="4" startTime="126225" endTime="127500" palette="8" />
-        <Effect ref="14" name="Ripple" id="5" startTime="127500" endTime="129450" palette="8" />
-        <Effect ref="15" name="Shockwave" id="6" startTime="139775" endTime="144950" palette="9" />
-        <Effect ref="10" name="Meteors" id="7" startTime="155250" endTime="160425" palette="5" />
-        <Effect ref="11" name="Meteors" id="8" startTime="160425" endTime="165625" palette="10" />
-      </EffectLayer>
-      <EffectLayer>
-        <Effect ref="16" name="Sketch" startTime="8825" endTime="11400" palette="2" />
-        <Effect ref="17" name="Off" id="1" startTime="22375" endTime="26250" palette="11" />
-        <Effect ref="18" name="Sketch" id="2" startTime="52700" endTime="57875" palette="12" />
-        <Effect ref="19" name="Pictures" id="3" startTime="57875" endTime="62375" palette="13" />
-        <Effect ref="20" name="Sketch" id="4" startTime="62375" endTime="67525" palette="12" />
-        <Effect ref="21" name="Off" id="5" startTime="68825" endTime="72700" palette="11" />
-        <Effect ref="22" name="Ripple" id="6" startTime="98500" endTime="101075" palette="14" />
-        <Effect ref="23" name="Ripple" id="7" startTime="101075" endTime="103675" palette="14" />
-        <Effect ref="24" name="Ripple" id="8" startTime="103675" endTime="106250" palette="15" />
-        <Effect ref="23" name="Ripple" id="9" startTime="106250" endTime="108850" palette="14" />
-        <Effect ref="25" name="Shape" id="10" startTime="108850" endTime="111400" palette="16" />
-        <Effect ref="26" name="Shape" id="11" startTime="111400" endTime="113975" palette="16" />
-        <Effect ref="27" name="Shape" id="12" startTime="113975" endTime="116575" palette="16" />
-        <Effect ref="28" name="Galaxy" id="13" startTime="116575" endTime="121725" palette="7" />
-        <Effect ref="29" name="Pinwheel" id="14" startTime="126225" endTime="129450" palette="17" />
-        <Effect ref="30" name="Kaleidoscope" id="15" startTime="139775" endTime="150125" palette="9" />
-        <Effect ref="22" name="Ripple" id="16" startTime="155275" endTime="157825" palette="15" />
-        <Effect ref="23" name="Ripple" id="17" startTime="157825" endTime="160425" palette="14" />
-        <Effect ref="24" name="Ripple" id="18" startTime="160425" endTime="163000" palette="18" />
-        <Effect ref="23" name="Ripple" id="19" startTime="163000" endTime="165625" palette="18" />
-      </EffectLayer>
-      <EffectLayer>
-        <Effect ref="31" name="Sketch" startTime="8825" endTime="11400" palette="2" />
-        <Effect ref="32" name="Ripple" id="1" startTime="21075" endTime="26250" palette="11" />
-        <Effect ref="33" name="Pinwheel" id="2" startTime="27550" endTime="32050" palette="11" />
-        <Effect ref="34" name="Ripple" id="3" startTime="33950" endTime="36550" palette="19" />
-        <Effect ref="35" name="Ripple" id="4" startTime="36550" endTime="39150" palette="8" />
-        <Effect ref="36" name="Sketch" id="5" startTime="62375" endTime="67525" palette="12" />
-        <Effect ref="37" name="Ripple" id="6" startTime="67525" endTime="72700" palette="11" />
-        <Effect ref="33" name="Pinwheel" id="7" startTime="72700" endTime="78500" palette="11" />
-        <Effect ref="38" name="Ripple" id="8" startTime="81725" endTime="83025" palette="19" />
-        <Effect ref="35" name="Ripple" id="9" startTime="83025" endTime="85625" palette="8" />
-        <Effect ref="39" name="Ripple" id="10" startTime="98500" endTime="101075" palette="20" />
-        <Effect ref="40" name="Ripple" id="11" startTime="101075" endTime="103675" palette="20" />
-        <Effect ref="41" name="Ripple" id="12" startTime="103675" endTime="106250" palette="21" />
-        <Effect ref="40" name="Ripple" id="13" startTime="106250" endTime="108850" palette="20" />
-        <Effect ref="42" name="Shockwave" id="14" startTime="108850" endTime="111400" palette="22" />
-        <Effect ref="43" name="Shockwave" id="15" startTime="111400" endTime="113975" palette="22" />
-        <Effect ref="44" name="Shape" id="16" startTime="113975" endTime="116575" palette="16" />
-        <Effect ref="45" name="Galaxy" id="17" startTime="116575" endTime="121725" palette="7" />
-        <Effect ref="46" name="Pinwheel" id="18" startTime="126225" endTime="129450" palette="23" />
-        <Effect ref="35" name="Ripple" id="19" startTime="129475" endTime="132075" palette="8" />
-        <Effect ref="47" name="Warp" id="20" startTime="139775" endTime="150125" palette="9" />
-        <Effect ref="39" name="Ripple" id="21" startTime="155275" endTime="157825" palette="20" />
-        <Effect ref="40" name="Ripple" id="22" startTime="157825" endTime="160425" palette="20" />
-        <Effect ref="41" name="Ripple" id="23" startTime="160425" endTime="163000" palette="18" />
-        <Effect ref="40" name="Ripple" id="24" startTime="163000" endTime="165625" palette="18" />
-      </EffectLayer>
-      <EffectLayer>
-        <Effect ref="48" name="Sketch" startTime="8825" endTime="11400" palette="2" />
-        <Effect ref="49" name="Ripple" id="1" startTime="21075" endTime="26250" palette="24" />
-        <Effect ref="50" name="Galaxy" id="2" startTime="27550" endTime="32050" palette="25" />
-        <Effect ref="51" name="Warp" id="3" startTime="33950" endTime="35900" palette="19" />
-        <Effect ref="52" name="Ripple" id="4" startTime="36550" endTime="39800" palette="8" />
-        <Effect ref="53" name="Sketch" id="5" startTime="65600" endTime="67525" palette="12" />
-        <Effect ref="54" name="Ripple" id="6" startTime="67525" endTime="72700" palette="24" />
-        <Effect ref="50" name="Galaxy" id="7" startTime="74000" endTime="78500" palette="26" />
-        <Effect ref="51" name="Warp" id="8" startTime="80400" endTime="82375" palette="19" />
-        <Effect ref="52" name="Ripple" id="9" startTime="83025" endTime="86275" palette="8" />
-        <Effect ref="55" name="Ripple" id="10" startTime="99475" endTime="102075" palette="27" />
-        <Effect ref="56" name="Ripple" id="11" startTime="102075" endTime="104675" palette="28" />
-        <Effect ref="56" name="Ripple" id="12" startTime="104675" endTime="107200" palette="29" />
-        <Effect ref="56" name="Ripple" id="13" startTime="107200" endTime="109875" palette="29" />
-        <Effect ref="57" name="Shape" id="14" startTime="110125" endTime="111400" palette="16" />
-        <Effect ref="58" name="Shape" id="15" startTime="111400" endTime="113975" palette="16" />
-        <Effect ref="59" name="Shape" id="16" startTime="113975" endTime="116575" palette="16" />
-        <Effect ref="60" name="Galaxy" id="17" startTime="116575" endTime="121725" palette="7" />
-        <Effect ref="61" name="Warp" id="18" startTime="121725" endTime="126875" palette="7" />
-        <Effect ref="52" name="Ripple" id="19" startTime="129475" endTime="132725" palette="8" />
-        <Effect ref="62" name="Off" id="20" startTime="139775" endTime="150125" palette="9" />
-        <Effect ref="56" name="Ripple" id="21" startTime="156225" endTime="160425" palette="28" />
-        <Effect ref="56" name="Ripple" id="22" startTime="161425" endTime="165625" palette="29" />
-      </EffectLayer>
-      <EffectLayer>
-        <Effect ref="63" name="Sketch" startTime="8825" endTime="11400" palette="2" />
-        <Effect ref="64" name="Galaxy" id="1" startTime="23650" endTime="26250" palette="11" />
-        <Effect ref="65" name="Galaxy" id="2" startTime="27550" endTime="32050" palette="19" />
-        <Effect ref="66" name="Ripple" id="3" startTime="36550" endTime="39800" palette="8" />
-        <Effect ref="67" name="Ripple" id="4" startTime="68175" endTime="72700" palette="30" />
-        <Effect ref="68" name="Galaxy" id="5" startTime="73350" endTime="78500" palette="19" />
-        <Effect ref="66" name="Ripple" id="6" startTime="83025" endTime="86275" palette="8" />
-        <Effect ref="69" name="Ripple" id="7" startTime="99475" endTime="102075" palette="28" />
-        <Effect ref="69" name="Ripple" id="8" startTime="102075" endTime="104675" palette="28" />
-        <Effect ref="69" name="Ripple" id="9" startTime="104675" endTime="107200" palette="29" />
-        <Effect ref="69" name="Ripple" id="10" startTime="107200" endTime="109875" palette="29" />
-        <Effect ref="70" name="Shockwave" id="11" startTime="110125" endTime="111400" palette="22" />
-        <Effect ref="71" name="Shockwave" id="12" startTime="111400" endTime="113975" palette="22" />
-        <Effect ref="72" name="Galaxy" id="13" startTime="116575" endTime="121725" palette="31" />
-        <Effect ref="28" name="Galaxy" id="14" startTime="121725" endTime="126875" palette="7" />
-        <Effect ref="66" name="Ripple" id="15" startTime="129475" endTime="132725" palette="8" />
-        <Effect ref="73" name="Wave" id="16" startTime="139775" endTime="144950" palette="32" />
-        <Effect ref="74" name="Wave" id="17" startTime="144950" endTime="150125" palette="33" />
-        <Effect ref="69" name="Ripple" id="18" startTime="156225" endTime="160425" palette="28" />
-        <Effect ref="69" name="Ripple" id="19" startTime="161425" endTime="165625" palette="29" />
-      </EffectLayer>
-      <EffectLayer>
-        <Effect ref="75" name="Sketch" startTime="8825" endTime="11400" palette="2" />
-        <Effect ref="76" name="Galaxy" id="1" startTime="23650" endTime="26250" palette="19" />
-        <Effect ref="77" name="Shockwave" id="2" startTime="27550" endTime="32050" palette="34" />
-        <Effect ref="78" name="Ripple" id="3" startTime="36550" endTime="39800" palette="35" />
-        <Effect ref="79" name="Ripple" id="4" startTime="68175" endTime="72700" palette="30" />
-        <Effect ref="77" name="Shockwave" id="5" startTime="72700" endTime="78500" palette="36" />
-        <Effect ref="78" name="Ripple" id="6" startTime="83025" endTime="86275" palette="35" />
-        <Effect ref="80" name="Ripple" id="7" startTime="99475" endTime="102075" palette="37" />
-        <Effect ref="80" name="Ripple" id="8" startTime="102075" endTime="104675" palette="37" />
-        <Effect ref="80" name="Ripple" id="9" startTime="104675" endTime="107200" palette="29" />
-        <Effect ref="80" name="Ripple" id="10" startTime="107200" endTime="109875" palette="29" />
-        <Effect ref="81" name="Shape" id="11" startTime="111400" endTime="113975" palette="16" />
-        <Effect ref="82" name="Shockwave" id="12" startTime="113975" endTime="116575" palette="22" />
-        <Effect ref="83" name="Galaxy" id="13" startTime="116575" endTime="121725" palette="31" />
-        <Effect ref="45" name="Galaxy" id="14" startTime="121725" endTime="126875" palette="7" />
-        <Effect ref="78" name="Ripple" id="15" startTime="129475" endTime="132725" palette="35" />
-        <Effect ref="84" name="Wave" id="16" startTime="139775" endTime="144950" palette="38" />
-        <Effect ref="85" name="Wave" id="17" startTime="144950" endTime="150125" palette="39" />
-        <Effect ref="80" name="Ripple" id="18" startTime="156225" endTime="160425" palette="37" />
-        <Effect ref="80" name="Ripple" id="19" startTime="161425" endTime="165625" palette="29" />
-      </EffectLayer>
-      <EffectLayer>
-        <Effect ref="86" name="Sketch" startTime="8825" endTime="11400" palette="2" />
-        <Effect ref="87" name="Ripple" id="1" startTime="36550" endTime="39800" palette="40" />
-        <Effect ref="88" name="Butterfly" id="2" startTime="52050" endTime="57875" palette="41" />
-        <Effect ref="88" name="Butterfly" id="3" startTime="62375" endTime="67525" palette="41" />
-        <Effect ref="89" name="Ripple" id="4" startTime="68825" endTime="72700" palette="42" />
-        <Effect ref="87" name="Ripple" id="5" startTime="83025" endTime="86275" palette="40" />
-        <Effect ref="90" name="Ripple" id="6" startTime="99475" endTime="102075" palette="27" />
-        <Effect ref="90" name="Ripple" id="7" startTime="102075" endTime="104675" palette="27" />
-        <Effect ref="90" name="Ripple" id="8" startTime="104675" endTime="107200" palette="29" />
-        <Effect ref="90" name="Ripple" id="9" startTime="107200" endTime="109875" palette="29" />
-        <Effect ref="91" name="Shockwave" id="10" startTime="111400" endTime="113975" palette="22" />
-        <Effect ref="92" name="Shockwave" id="11" startTime="113975" endTime="116575" palette="22" />
-        <Effect ref="93" name="Galaxy" id="12" startTime="116575" endTime="121725" palette="31" />
-        <Effect ref="60" name="Galaxy" id="13" startTime="121725" endTime="126875" palette="7" />
-        <Effect ref="87" name="Ripple" id="14" startTime="129475" endTime="132725" palette="40" />
-        <Effect ref="94" name="Wave" id="15" startTime="139775" endTime="144950" palette="43" />
-        <Effect ref="95" name="Wave" id="16" startTime="144950" endTime="150125" palette="44" />
-        <Effect ref="90" name="Ripple" id="17" startTime="156225" endTime="160425" palette="27" />
-        <Effect ref="90" name="Ripple" id="18" startTime="161425" endTime="165625" palette="29" />
-      </EffectLayer>
-      <EffectLayer>
-        <Effect ref="96" name="Shape" startTime="425" endTime="21075" palette="2" />
-        <Effect ref="97" name="Ripple" id="1" startTime="36550" endTime="39800" palette="45" />
-        <Effect ref="98" name="Pictures" id="2" startTime="52050" endTime="57875" palette="46" />
-        <Effect ref="99" name="Pictures" id="3" startTime="62375" endTime="67525" palette="46" />
-        <Effect ref="100" name="Ripple" id="4" startTime="68825" endTime="72700" palette="42" />
-        <Effect ref="101" name="Video" id="5" startTime="78525" endTime="83025" palette="11" />
-        <Effect ref="97" name="Ripple" id="6" startTime="83025" endTime="86275" palette="45" />
-        <Effect ref="102" name="Pinwheel" id="7" startTime="98500" endTime="103675" palette="47" />
-        <Effect ref="102" name="Pinwheel" id="8" startTime="103675" endTime="108850" palette="47" />
-        <Effect ref="103" name="Shockwave" id="9" startTime="113975" endTime="116575" palette="22" />
-        <Effect ref="102" name="Pinwheel" id="10" startTime="116575" endTime="121725" palette="17" />
-        <Effect ref="72" name="Galaxy" id="11" startTime="121725" endTime="126875" palette="31" />
-        <Effect ref="97" name="Ripple" id="12" startTime="129475" endTime="132725" palette="45" />
-        <Effect ref="102" name="Pinwheel" id="13" startTime="155250" endTime="160425" palette="47" />
-        <Effect ref="102" name="Pinwheel" id="14" startTime="160425" endTime="165625" palette="48" />
-        <Effect ref="104" name="Video" id="15" startTime="165625" endTime="173375" palette="49" />
-      </EffectLayer>
-      <EffectLayer>
-        <Effect ref="105" name="Shape" startTime="425" endTime="21075" palette="2" />
-        <Effect ref="106" name="Pictures" id="1" startTime="32675" endTime="36550" palette="19" />
-        <Effect ref="107" name="Video" id="2" startTime="39150" endTime="46900" palette="3" />
-        <Effect ref="108" name="Galaxy" id="3" startTime="70100" endTime="72700" palette="11" />
-        <Effect ref="107" name="Video" id="4" startTime="85625" endTime="93375" palette="3" />
-        <Effect ref="109" name="Pinwheel" id="5" startTime="98500" endTime="103675" palette="50" />
-        <Effect ref="109" name="Pinwheel" id="6" startTime="103675" endTime="108850" palette="50" />
-        <Effect ref="110" name="Meteors" id="7" startTime="108850" endTime="116575" palette="6" />
-        <Effect ref="109" name="Pinwheel" id="8" startTime="116575" endTime="121725" palette="23" />
-        <Effect ref="83" name="Galaxy" id="9" startTime="121725" endTime="126875" palette="31" />
-        <Effect ref="107" name="Video" id="10" startTime="132075" endTime="139775" palette="3" />
-        <Effect ref="109" name="Pinwheel" id="11" startTime="155250" endTime="160425" palette="50" />
-        <Effect ref="109" name="Pinwheel" id="12" startTime="160425" endTime="165625" palette="51" />
-      </EffectLayer>
-      <EffectLayer>
-        <Effect ref="111" name="Ripple" startTime="425" endTime="21075" palette="1" />
-        <Effect ref="112" name="Galaxy" id="1" startTime="70100" endTime="72700" palette="52" />
-        <Effect ref="93" name="Galaxy" id="2" startTime="121725" endTime="126875" palette="31" />
-      </EffectLayer>
-      <EffectLayer>
-        <Effect ref="113" name="Pictures" startTime="6225" endTime="8825" palette="2" />
-        <Effect ref="114" name="Video" id="1" startTime="12050" endTime="15925" palette="2" />
-        <Effect ref="115" name="Video" id="2" startTime="15925" endTime="21075" palette="2" />
-        <Effect ref="102" name="Pinwheel" id="3" startTime="121725" endTime="126875" palette="17" />
-      </EffectLayer>
-      <EffectLayer>
-        <Effect ref="116" name="Pictures" startTime="10450" endTime="12700" palette="2" />
-        <Effect ref="109" name="Pinwheel" id="1" startTime="121725" endTime="126875" palette="23" />
+        <Effect ref="752" name="Pictures" startTime="0" endTime="178200" palette="244" />
       </EffectLayer>
     </Element>
     <Element type="timing" name="Beats">
@@ -8846,11 +8627,7 @@
       </EffectLayer>
     </Element>
     <Element type="model" name="Projector">
-      <EffectLayer>
-        <Effect ref="754" name="Pictures" startTime="10000" endTime="25000" palette="244" />
-        <Effect ref="754" name="Pictures" id="1" startTime="70000" endTime="85000" palette="244" />
-        <Effect ref="754" name="Pictures" id="2" startTime="130000" endTime="145000" palette="244" />
-      </EffectLayer>
+      <EffectLayer />
     </Element>
   </ElementEffects>
   <lastView>0</lastView>

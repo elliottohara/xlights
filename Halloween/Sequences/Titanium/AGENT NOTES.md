@@ -1,3 +1,10 @@
+## Seven photo-counted tombstones — October 19, 2026
+
+- The seven physical tombstones, left to right, have 26, 13, 20, 26, 27, 19 and 18 RGB pixels (149 total). The first four are on oak Kulp `.253` port 11; the last three are on port 12. The new final prop reuses `Tombsone Small-2` and belongs to the tombstone/whole-scene mapping families.
+- This sequence was natively checked and re-rendered with the clean shared layout. The second tombstone's old 50-pixel count, third's 19-pixel count and sixth's 21-pixel count were corrected; the sixth's two excess pixels had reached the newly added prop. Native allocation also moves Column Left, Dark Helmet, Evil Clown and Right Wing by 60 channels within the oak controller. The controller's existing 17,637-channel capacity keeps all other controllers and Master's routes unchanged.
+- Deployed under the existing playback filename(s) to Master and Projector with complete remote checksum and metadata verification. Authored effects, frame timing, website/radio bands and QR cards were preserved; native pixel checks and all 24 QR decodes passed. Master stayed running. Playlists, schedule, routes and AV settings were preserved; only the oak pixel service restarted, and its prior test mode was restored.
+- Evidence and recovery copies: `Halloween/tombstone-photo-repair-latest.json` and `/Users/elliott.ohara/xlights/Halloween/Backups/Photo tombstones 20261019-094124`. Software readback and native pixel verification are complete; actual physical illumination remains for the user's observation.
+
 ## Titanium singing repair and snowflake shaders — October 18, 2026
 
 - Repaired both Titanium playback variants. Evil Clown sings the complete lyric throughout; Teddy, Singing Pumpkin and Dark Helmet join the chorus/build/refrain sections. All four remain visible with resting mouths between their lines. This supersedes the older per-character handoff cast.
@@ -201,3 +208,37 @@ Physical model routing/positions synchronized to the current Halloween master, p
 - Native rendering and original-effect preservation checks passed. Actual sign pixels and every QR interval were checked; a QR extracted from this render decoded to the correct URL.
 - Deployed to Master and Projector under the existing playback filenames with complete remote checksum and sequence metadata checks. Master kept running; playlists, schedule, routing and AV settings were preserved.
 - Evidence and recoverable originals: `Halloween/website-promotion-latest.json`, `/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813`.
+
+
+## Opening shockwaves on snowflakes and tombstones — October 19, 2026
+
+- User requested moving the beginning's rose-bush shockwaves in the open Titanium sequence to snowflakes and tombstones. Saved the live sequence first to preserve current edits.
+- Moved 90 opening effects (0.475–15.700 seconds) off Rose Bush Banks 1–4 onto four staggered banks spanning all 18 connected snowflakes and all seven tombstones. The original two layers, hit times and palettes are retained; radii/widths are scaled for each prop. Later rose effects and all other choreography, lyrics, Faces, website/QR effects, layout and routing are semantically verified unchanged.
+- Native check and full render passed. Every snowflake pixel and all 149 tombstone pixels animate during the opening; all nine roses remain dark in that interval. Full-song sign samples and all QR cards match the prior render.
+- Saved/rendered locally and left Titanium open on API port 49914 for review. Titanium 2 and live playback files were not edited/deployed. Master was not controlled.
+- Evidence: `Halloween/titanium-opening-flakes-tombstones-latest.json`; recoverable files and exact plan: `/Users/elliott.ohara/xlights/Halloween/Backups/Titanium opening flakes and tombstones 20261019-104311`.
+
+
+## Individual opening notes — October 19, 2026
+
+- User corrected the opening: use different individual snowflakes/tombstones for different notes, without firing banks together. This supersedes the earlier four-bank assignment above.
+- Assigned the 45 original opening note events to individual props, rotating through 18 connected snowflakes and seven tombstones. Each note retains both original wave layers, its timing/palettes and the scaled prop geometry. Removed the former 562 bank effects; authored 90 effects for the 45 individual hits.
+- Native check/render passed. Every note lights its assigned prop; per-frame checks prove no other opening prop lights for that note and at most two props light together where the original notes overlap. All nine roses remain dark in the opening. Later effects, lyrics/singers, full-song sign, QR cards, layout/routing are preserved.
+- Saved/rendered locally and left Titanium open for review; no deployment. Evidence: `Halloween/titanium-opening-flakes-tombstones-latest.json`; recovery: `/Users/elliott.ohara/xlights/Halloween/Backups/Titanium individual opening notes 20261019-105141`.
+
+
+## Fixed QR on Tune To; projector song visuals — October 19, 2026
+
+- User explicitly removed distracting projector QR cards across all Halloween songs. QR now stays in the same location on Tune To for the entire sequence; voting invitations retain exactly the same QR square and radio text. Bold white website/radio lettering on black replaces the old sign treatment.
+- Removed only the projector QR effects; existing song-specific projector media/effects and all other choreography, singers, lyric timing, layout and routing were preserved.
+- The previously empty projector now uses song-timed native visuals from this sequence. Titanium variants use individual opening note rings, verse rings and coordinated chorus shaders; Abracadabra follows its authored matrix/whole-scene effects.
+- Native checks/rendering, actual sign pixels across the entire song, fixed QR placement and QR decoding passed. Live installation status is tracked in `Halloween/projector-sign-refresh-latest.json`; do not infer upload from local completion. Master must remain running.
+- Recovery and verification: `/Users/elliott.ohara/xlights/Halloween/Backups/Titanium projector show and readable sign 20261019-110024`.
+- Fixed-sign playback deployment completed: all existing filenames verified on Master and Projector with complete SHA-256 checksums and matching native sequence metadata. Master remained running; playlists, schedule, routes, media and AV settings were preserved. Evidence: `Halloween/projector-sign-refresh-latest.json`.
+
+
+## Vader is white — October 19, 2026
+
+- User requested white instead of red. Only forced colors in the shared `Vader` face definition changed; mouth/outline ranges, lyric timing, visibility, current QR/sign treatment and channel routing were preserved. Any separately requested Titanium choreography change is described below.
+- Full native rendering and every-frame face checks found only neutral white/gray RGB values on every lit Vader pixel. Fixed QR/sign pixels and QR decoding passed. Updated files were deployed to Master and Projector with complete checksums and native metadata verified; Master stayed running. Evidence: `Halloween/vader-white-latest.json`.
+- Titanium second verse (91.900–122.400 seconds) now follows the opening: 90 note events rotate individual snowflakes and tombstones using the same per-note pattern, with at most two overlapping props. Original rose-bank pulses and the all-flake build in that window were removed; projector rings follow the new assignments. The preceding whole-yard/projector Ripple now ends at 91.900 instead of 93.800 seconds so it does not spill onto those notes. First-verse choreography and all other effects/lyrics are preserved. Native per-frame checks prove every assigned note lights its prop and the roses stay dark. Evidence: `Halloween/titanium-second-verse-latest.json`.

@@ -1,3 +1,10 @@
+## Seven photo-counted tombstones — October 19, 2026
+
+- The seven physical tombstones, left to right, have 26, 13, 20, 26, 27, 19 and 18 RGB pixels (149 total). The first four are on oak Kulp `.253` port 11; the last three are on port 12. The new final prop reuses `Tombsone Small-2` and belongs to the tombstone/whole-scene mapping families.
+- This sequence was natively checked and re-rendered with the clean shared layout. The second tombstone's old 50-pixel count, third's 19-pixel count and sixth's 21-pixel count were corrected; the sixth's two excess pixels had reached the newly added prop. Native allocation also moves Column Left, Dark Helmet, Evil Clown and Right Wing by 60 channels within the oak controller. The controller's existing 17,637-channel capacity keeps all other controllers and Master's routes unchanged.
+- Deployed under the existing playback filename(s) to Master and Projector with complete remote checksum and metadata verification. Authored effects, frame timing, website/radio bands and QR cards were preserved; native pixel checks and all 24 QR decodes passed. Master stayed running. Playlists, schedule, routes and AV settings were preserved; only the oak pixel service restarted, and its prior test mode was restored.
+- Evidence and recovery copies: `Halloween/tombstone-photo-repair-latest.json` and `/Users/elliott.ohara/xlights/Halloween/Backups/Photo tombstones 20261019-094124`. Software readback and native pixel verification are complete; actual physical illumination remains for the user's observation.
+
 ## Garage layout batch render — October 18, 2026
 
 - Re-rendered from the canonical shared Halloween layout after restoring the garage line to outline, all-pixel and vertical groups. Native checks found no missing models, unexpected zero-node effects, impossible overlaps or effects beyond the end; authored effects and frame timing remain unchanged.
@@ -101,3 +108,12 @@ Physical model routing/positions synchronized to the current Halloween master, p
 - Native rendering and original-effect preservation checks passed. Actual sign pixels and every QR interval were checked; a QR extracted from this render decoded to the correct URL.
 - Deployed to Master and Projector under the existing playback filenames with complete remote checksum and sequence metadata checks. Master kept running; playlists, schedule, routing and AV settings were preserved.
 - Evidence and recoverable originals: `Halloween/website-promotion-latest.json`, `/Users/elliott.ohara/xlights/Halloween/Backups/Website promotion 20261018-201813`.
+
+
+## Fixed QR on Tune To; projector song visuals — October 19, 2026
+
+- User explicitly removed distracting projector QR cards across all Halloween songs. QR now stays in the same location on Tune To for the entire sequence; voting invitations retain exactly the same QR square and radio text. Bold white website/radio lettering on black replaces the old sign treatment.
+- Removed only the projector QR effects; existing song-specific projector media/effects and all other choreography, singers, lyric timing, layout and routing were preserved.
+- Native checks/rendering, actual sign pixels across the entire song, fixed QR placement and QR decoding passed. Live installation status is tracked in `Halloween/projector-sign-refresh-latest.json`; do not infer upload from local completion. Master must remain running.
+- Recovery and verification: `/Users/elliott.ohara/xlights/Halloween/Backups/Titanium projector show and readable sign 20261019-110024`.
+- Fixed-sign playback deployment completed: all existing filenames verified on Master and Projector with complete SHA-256 checksums and matching native sequence metadata. Master remained running; playlists, schedule, routes, media and AV settings were preserved. Evidence: `Halloween/projector-sign-refresh-latest.json`.

@@ -386,56 +386,15 @@
     <Effect>B_CHOICE_BufferStyle=Per Model Per Preview,B_CHOICE_PerPreviewCamera=2D,E_CHOICE_State_Color=Graduate,E_CHOICE_State_Mode=Default,E_CHOICE_State_StateDefinition=BAT WINGS,E_CHOICE_State_TimingTrack=Cymbals,E_SLIDER_State_Fade_Time=0</Effect>
     <Effect>B_CHOICE_BufferStyle=Per Model Per Preview,B_CHOICE_PerPreviewCamera=2D,E_CHOICE_State_Color=Graduate,E_CHOICE_State_Mode=Default,E_CHOICE_State_StateDefinition=BAT WINGS,E_CHOICE_State_TimingTrack=Metronome,E_SLIDER_State_Fade_Time=0,T_TEXTCTRL_Fadeout=.25</Effect>
     <Effect>B_CHOICE_BufferStyle=Overlay - Scaled,B_SLIDER_Blur=2,E_CHECKBOX_Meteors_UseMusic=0,E_CHOICE_Meteors_Effect=Down,E_CHOICE_Meteors_Type=Palette,E_SLIDER_Meteors_Count=20,E_SLIDER_Meteors_Length=25,E_SLIDER_Meteors_Speed=29,E_SLIDER_Meteors_Swirl_Intensity=0,E_SLIDER_Meteors_WamupFrames=54,T_TEXTCTRL_Fadein=1,T_TEXTCTRL_Fadeout=0.25</Effect>
-    <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/tune-to-website.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
-    <Effect>E_CHOICE_Warp_Treatment_APPLYLAST=constant,E_CHOICE_Warp_Type=mirror,E_SLIDER_Warp_X=50,E_SLIDER_Warp_Y=50,E_TEXTCTRL1=The warp effect distorts the pixels in the layers below it. The Canvas option in Layer Blending must be enabled for it to work.,E_TEXTCTRL_Warp_X=50,E_TEXTCTRL_Warp_Y=50,T_CHECKBOX_Canvas=1,T_TEXTCTRL_Fadeout=.25</Effect>
-    <Effect>B_CHOICE_BufferStyle=Per Preview,E_CHECKBOX_Pinwheel_Rotation=1,E_CHOICE_Pinwheel_3D=3D,E_CHOICE_Pinwheel_Style=New Render Method,E_SLIDER_PinwheelXC=0,E_SLIDER_PinwheelYC=0,E_SLIDER_Pinwheel_ArmSize=100,E_SLIDER_Pinwheel_Arms=4,E_SLIDER_Pinwheel_Offset=0,E_SLIDER_Pinwheel_Speed=8,E_SLIDER_Pinwheel_Thickness=50,E_VALUECURVE_Pinwheel_Twist=Active=TRUE|Id=ID_VALUECURVE_Pinwheel_Twist|Type=Square|Min=-360.00|Max=360.00|P1=122.40|P2=-122.40|P3=2.00|RV=TRUE|,T_TEXTCTRL_Fadein=.25,T_TEXTCTRL_Fadeout=.25</Effect>
-    <Effect>B_VALUECURVE_Zoom=Active=TRUE|Id=ID_VALUECURVE_Zoom|Type=Ramp|Min=0.00|Max=30.00|P1=10.00|RV=TRUE|,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale Keep Aspect Ratio,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=Sequences/The Dead Dance/Media/Vendor/Images/Dead Doll.png,E_TEXTCTRL_Pictures_FrameRateAdj=1.0,E_TEXTCTRL_Pictures_Speed=1.0,E_TEXTCTRL_Pictures_TransparentBlack=0</Effect>
-    <Effect>E_CHECKBOX_SynchroniseWithAudio=0,E_CHECKBOX_Video_AspectRatio=0,E_CHECKBOX_Video_TransparentBlack=0,E_CHOICE_Video_DurationTreatment=Manual,E_FILEPICKERCTRL_Video_Filename=Sequences/The Dead Dance/Media/Vendor/Videos/Mirror Cry 2_1.mp4,E_TEXTCTRL_Duration=0:05.033,E_TEXTCTRL_SampleSpacing=0,E_TEXTCTRL_Video_CropBottom=0,E_TEXTCTRL_Video_CropLeft=0,E_TEXTCTRL_Video_CropRight=100,E_TEXTCTRL_Video_CropTop=100,E_TEXTCTRL_Video_Speed=0.56,E_TEXTCTRL_Video_Starttime=0,E_TEXTCTRL_Video_TransparentBlack=0,T_TEXTCTRL_Fadein=.5,T_TEXTCTRL_Fadeout=2</Effect>
-    <Effect>E_CHECKBOX_SynchroniseWithAudio=0,E_CHECKBOX_Video_AspectRatio=0,E_CHECKBOX_Video_TransparentBlack=0,E_CHOICE_Video_DurationTreatment=Normal,E_FILEPICKERCTRL_Video_Filename=Sequences/The Dead Dance/Media/Vendor/Videos/Pawn.mp4,E_TEXTCTRL_Duration=0:05.041,E_TEXTCTRL_SampleSpacing=0,E_TEXTCTRL_Video_CropBottom=0,E_TEXTCTRL_Video_CropLeft=0,E_TEXTCTRL_Video_CropRight=100,E_TEXTCTRL_Video_CropTop=100,E_TEXTCTRL_Video_Starttime=0.00,E_TEXTCTRL_Video_TransparentBlack=0,T_TEXTCTRL_Fadein=2,T_TEXTCTRL_Fadeout=.5</Effect>
-    <Effect>E_CHECKBOX_SynchroniseWithAudio=0,E_CHECKBOX_Video_AspectRatio=0,E_CHECKBOX_Video_TransparentBlack=0,E_CHOICE_Video_DurationTreatment=Normal,E_FILEPICKERCTRL_Video_Filename=Sequences/The Dead Dance/Media/Vendor/Videos/Creepy Dolly Walking.mp4,E_TEXTCTRL_Duration=0:30.041,E_TEXTCTRL_SampleSpacing=0,E_TEXTCTRL_Video_CropBottom=0,E_TEXTCTRL_Video_CropLeft=0,E_TEXTCTRL_Video_CropRight=100,E_TEXTCTRL_Video_CropTop=100,E_TEXTCTRL_Video_Starttime=1,E_TEXTCTRL_Video_TransparentBlack=0,T_TEXTCTRL_Fadein=.2,T_TEXTCTRL_Fadeout=.25</Effect>
-    <Effect>E_CHECKBOX_SynchroniseWithAudio=0,E_CHECKBOX_Video_AspectRatio=0,E_CHECKBOX_Video_TransparentBlack=0,E_CHOICE_Video_DurationTreatment=Manual,E_FILEPICKERCTRL_Video_Filename=Sequences/The Dead Dance/Media/Vendor/Videos/Shock Move 2.mp4,E_TEXTCTRL_Duration=0:05.033,E_TEXTCTRL_SampleSpacing=0,E_TEXTCTRL_Video_CropBottom=0,E_TEXTCTRL_Video_CropLeft=0,E_TEXTCTRL_Video_CropRight=100,E_TEXTCTRL_Video_CropTop=100,E_TEXTCTRL_Video_Speed=0.56,E_TEXTCTRL_Video_Starttime=0,E_TEXTCTRL_Video_TransparentBlack=0,T_TEXTCTRL_Fadein=.5,T_TEXTCTRL_Fadeout=2.5</Effect>
-    <Effect>E_CHECKBOX_SynchroniseWithAudio=0,E_CHECKBOX_Video_AspectRatio=0,E_CHECKBOX_Video_TransparentBlack=0,E_CHOICE_Video_DurationTreatment=Normal,E_FILEPICKERCTRL_Video_Filename=Sequences/The Dead Dance/Media/Vendor/Videos/Dancers 3.mp4,E_TEXTCTRL_Duration=0:30.041,E_TEXTCTRL_SampleSpacing=0,E_TEXTCTRL_Video_CropBottom=0,E_TEXTCTRL_Video_CropLeft=0,E_TEXTCTRL_Video_CropRight=100,E_TEXTCTRL_Video_CropTop=100,E_TEXTCTRL_Video_Starttime=0,E_TEXTCTRL_Video_TransparentBlack=0,T_TEXTCTRL_Fadein=.5,T_TEXTCTRL_Fadeout=2</Effect>
-    <Effect>E_CHECKBOX_SynchroniseWithAudio=0,E_CHECKBOX_Video_AspectRatio=0,E_CHECKBOX_Video_TransparentBlack=0,E_CHOICE_Video_DurationTreatment=Normal,E_FILEPICKERCTRL_Video_Filename=Sequences/The Dead Dance/Media/Vendor/Videos/Dancers 4.mp4,E_TEXTCTRL_Duration=0:30.041,E_TEXTCTRL_SampleSpacing=0,E_TEXTCTRL_Video_CropBottom=0,E_TEXTCTRL_Video_CropLeft=0,E_TEXTCTRL_Video_CropRight=100,E_TEXTCTRL_Video_CropTop=100,E_TEXTCTRL_Video_Starttime=0.00,E_TEXTCTRL_Video_TransparentBlack=0,T_TEXTCTRL_Fadein=.25,T_TEXTCTRL_Fadeout=.25</Effect>
-    <Effect>E_CHECKBOX_SynchroniseWithAudio=0,E_CHECKBOX_Video_AspectRatio=0,E_CHECKBOX_Video_TransparentBlack=0,E_CHOICE_Video_DurationTreatment=Normal,E_FILEPICKERCTRL_Video_Filename=Sequences/The Dead Dance/Media/Vendor/Videos/Creature of the Night.mp4,E_TEXTCTRL_Duration=0:05.041,E_TEXTCTRL_SampleSpacing=0,E_TEXTCTRL_Video_CropBottom=0,E_TEXTCTRL_Video_CropLeft=0,E_TEXTCTRL_Video_CropRight=100,E_TEXTCTRL_Video_CropTop=100,E_TEXTCTRL_Video_Starttime=0.00,E_TEXTCTRL_Video_TransparentBlack=0,T_TEXTCTRL_Fadein=.25,T_TEXTCTRL_Fadeout=.25</Effect>
-    <Effect>E_CHECKBOX_SynchroniseWithAudio=0,E_CHECKBOX_Video_AspectRatio=0,E_CHECKBOX_Video_TransparentBlack=0,E_CHOICE_Video_DurationTreatment=Normal,E_FILEPICKERCTRL_Video_Filename=Sequences/The Dead Dance/Media/Vendor/Videos/Ballroom 1.mp4,E_TEXTCTRL_Duration=0:05.041,E_TEXTCTRL_SampleSpacing=0,E_TEXTCTRL_Video_CropBottom=0,E_TEXTCTRL_Video_CropLeft=0,E_TEXTCTRL_Video_CropRight=100,E_TEXTCTRL_Video_CropTop=100,E_TEXTCTRL_Video_Starttime=0.00,E_TEXTCTRL_Video_TransparentBlack=0,T_TEXTCTRL_Fadein=.25,T_TEXTCTRL_Fadeout=.25</Effect>
-    <Effect>E_CHECKBOX_SynchroniseWithAudio=0,E_CHECKBOX_Video_AspectRatio=0,E_CHECKBOX_Video_TransparentBlack=0,E_CHOICE_Video_DurationTreatment=Normal,E_FILEPICKERCTRL_Video_Filename=Sequences/The Dead Dance/Media/Vendor/Videos/Haunting Mirror.mp4,E_TEXTCTRL_Duration=0:09.041,E_TEXTCTRL_SampleSpacing=0,E_TEXTCTRL_Video_CropBottom=0,E_TEXTCTRL_Video_CropLeft=0,E_TEXTCTRL_Video_CropRight=100,E_TEXTCTRL_Video_CropTop=100,E_TEXTCTRL_Video_Starttime=0.00,E_TEXTCTRL_Video_TransparentBlack=0,T_TEXTCTRL_Fadein=.25,T_TEXTCTRL_Fadeout=.25</Effect>
-    <Effect>E_CHECKBOX_SynchroniseWithAudio=0,E_CHECKBOX_Video_AspectRatio=0,E_CHECKBOX_Video_TransparentBlack=0,E_CHOICE_Video_DurationTreatment=Normal,E_FILEPICKERCTRL_Video_Filename=Sequences/The Dead Dance/Media/Vendor/Videos/Hallway Fog.mp4,E_TEXTCTRL_Duration=0:30.041,E_TEXTCTRL_SampleSpacing=0,E_TEXTCTRL_Video_CropBottom=0,E_TEXTCTRL_Video_CropLeft=0,E_TEXTCTRL_Video_CropRight=100,E_TEXTCTRL_Video_CropTop=100,E_TEXTCTRL_Video_Starttime=0.00,E_TEXTCTRL_Video_TransparentBlack=0,T_TEXTCTRL_Fadein=.25,T_TEXTCTRL_Fadeout=.25</Effect>
-    <Effect>E_CHECKBOX_SynchroniseWithAudio=0,E_CHECKBOX_Video_AspectRatio=0,E_CHECKBOX_Video_TransparentBlack=0,E_CHOICE_Video_DurationTreatment=Manual,E_FILEPICKERCTRL_Video_Filename=Sequences/The Dead Dance/Media/Vendor/Videos/Shock Move 2.mp4,E_TEXTCTRL_Duration=0:05.033,E_TEXTCTRL_SampleSpacing=0,E_TEXTCTRL_Video_CropBottom=0,E_TEXTCTRL_Video_CropLeft=0,E_TEXTCTRL_Video_CropRight=100,E_TEXTCTRL_Video_CropTop=100,E_TEXTCTRL_Video_Speed=0.56,E_TEXTCTRL_Video_Starttime=0,E_TEXTCTRL_Video_TransparentBlack=0,T_TEXTCTRL_Fadein=.2,T_TEXTCTRL_Fadeout=2</Effect>
-    <Effect>E_CHECKBOX_SynchroniseWithAudio=0,E_CHECKBOX_Video_AspectRatio=0,E_CHECKBOX_Video_TransparentBlack=0,E_CHOICE_Video_DurationTreatment=Manual and Loop,E_FILEPICKERCTRL_Video_Filename=Sequences/The Dead Dance/Media/Vendor/Videos/Slowmotion Dancing.mp4,E_TEXTCTRL_Duration=0:08.000,E_TEXTCTRL_SampleSpacing=0,E_TEXTCTRL_Video_CropBottom=0,E_TEXTCTRL_Video_CropLeft=0,E_TEXTCTRL_Video_CropRight=100,E_TEXTCTRL_Video_CropTop=100,E_TEXTCTRL_Video_Speed=0.50,E_TEXTCTRL_Video_Starttime=0,E_TEXTCTRL_Video_TransparentBlack=0,T_TEXTCTRL_Fadein=.25,T_TEXTCTRL_Fadeout=2</Effect>
-    <Effect>E_CHECKBOX_SynchroniseWithAudio=0,E_CHECKBOX_Video_AspectRatio=0,E_CHECKBOX_Video_TransparentBlack=0,E_CHOICE_Video_DurationTreatment=Normal,E_FILEPICKERCTRL_Video_Filename=Sequences/The Dead Dance/Media/Vendor/Videos/Dead Dance Skeletons.mp4,E_TEXTCTRL_Duration=0:07.041,E_TEXTCTRL_SampleSpacing=0,E_TEXTCTRL_Video_CropBottom=0,E_TEXTCTRL_Video_CropLeft=0,E_TEXTCTRL_Video_CropRight=100,E_TEXTCTRL_Video_CropTop=100,E_TEXTCTRL_Video_Starttime=1,E_TEXTCTRL_Video_TransparentBlack=0,T_TEXTCTRL_Fadein=.25,T_TEXTCTRL_Fadeout=.5</Effect>
-    <Effect>B_CHOICE_BufferStyle=Per Preview,B_CHOICE_BufferTransform=Flip Horizontal,E_CHECKBOX_Pinwheel_Rotation=1,E_CHOICE_Pinwheel_3D=3D,E_CHOICE_Pinwheel_Style=New Render Method,E_SLIDER_PinwheelXC=0,E_SLIDER_PinwheelYC=0,E_SLIDER_Pinwheel_ArmSize=100,E_SLIDER_Pinwheel_Arms=4,E_SLIDER_Pinwheel_Offset=0,E_SLIDER_Pinwheel_Speed=8,E_SLIDER_Pinwheel_Thickness=50,E_VALUECURVE_Pinwheel_Twist=Active=TRUE|Id=ID_VALUECURVE_Pinwheel_Twist|Type=Square|Min=-360.00|Max=360.00|P1=122.40|P2=-122.40|P3=2.00|RV=TRUE|,T_TEXTCTRL_Fadein=.25,T_TEXTCTRL_Fadeout=.25</Effect>
-    <Effect>E_CHECKBOX_SynchroniseWithAudio=0,E_CHECKBOX_Video_AspectRatio=0,E_CHECKBOX_Video_TransparentBlack=0,E_CHOICE_Video_DurationTreatment=Normal,E_FILEPICKERCTRL_Video_Filename=Sequences/The Dead Dance/Media/Vendor/Videos/Queen.mp4,E_TEXTCTRL_Duration=0:05.041,E_TEXTCTRL_SampleSpacing=0,E_TEXTCTRL_Video_CropBottom=0,E_TEXTCTRL_Video_CropLeft=0,E_TEXTCTRL_Video_CropRight=100,E_TEXTCTRL_Video_CropTop=100,E_TEXTCTRL_Video_Starttime=0.00,E_TEXTCTRL_Video_TransparentBlack=0,T_TEXTCTRL_Fadein=.5,T_TEXTCTRL_Fadeout=2</Effect>
-    <Effect>E_CHECKBOX_FadeWithDistance=0,E_CHECKBOX_Meteors_UseMusic=1,E_CHOICE_Meteors_Effect=Explode,E_CHOICE_Meteors_Type=Range,E_SLIDER_Meteors_Count=10,E_SLIDER_Meteors_Length=5,E_SLIDER_Meteors_Speed=50,E_SLIDER_Meteors_Swirl_Intensity=0,E_SLIDER_Meteors_WamupFrames=0,E_TEXTCTRL_Meteors_XOffset=0,E_TEXTCTRL_Meteors_YOffset=-100,T_CHOICE_LayerMethod=Additive,T_TEXTCTRL_Fadein=1</Effect>
-    <Effect>E_CHOICE_Warp_Treatment_APPLYLAST=out,E_CHOICE_Warp_Type=circle reveal,E_SLIDER_Warp_X=50,E_SLIDER_Warp_Y=50,E_TEXTCTRL1=The warp effect distorts the pixels in the layers below it. The Canvas option in Layer Blending must be enabled for it to work.,E_TEXTCTRL_Warp_X=50,E_TEXTCTRL_Warp_Y=50,E_VALUECURVE_Warp_X=Active=TRUE|Id=ID_VALUECURVE_Warp_X|Min=0.00|Max=100.00|P1=50.00|RV=TRUE|,E_VALUECURVE_Warp_Y=Active=TRUE|Id=ID_VALUECURVE_Warp_Y|Min=0.00|Max=100.00|P1=50.00|RV=TRUE|,T_CHECKBOX_Canvas=1</Effect>
-    <Effect>E_CHECKBOX_SynchroniseWithAudio=0,E_CHECKBOX_Video_AspectRatio=0,E_CHECKBOX_Video_TransparentBlack=0,E_CHOICE_Video_DurationTreatment=Manual,E_FILEPICKERCTRL_Video_Filename=Sequences/The Dead Dance/Media/Vendor/Videos/Haunting Mirror.mp4,E_TEXTCTRL_Duration=0:09.041,E_TEXTCTRL_SampleSpacing=0,E_TEXTCTRL_Video_CropBottom=0,E_TEXTCTRL_Video_CropLeft=0,E_TEXTCTRL_Video_CropRight=100,E_TEXTCTRL_Video_CropTop=100,E_TEXTCTRL_Video_Speed=0.50,E_TEXTCTRL_Video_Starttime=0.00,E_TEXTCTRL_Video_TransparentBlack=0,T_TEXTCTRL_Fadein=.5,T_TEXTCTRL_Fadeout=4</Effect>
-    <Effect>E_CHECKBOX_SynchroniseWithAudio=0,E_CHECKBOX_Video_AspectRatio=0,E_CHECKBOX_Video_TransparentBlack=0,E_CHOICE_Video_DurationTreatment=Normal,E_FILEPICKERCTRL_Video_Filename=Sequences/The Dead Dance/Media/Vendor/Videos/Dead Dance Skeletons.mp4,E_TEXTCTRL_Duration=0:07.041,E_TEXTCTRL_SampleSpacing=0,E_TEXTCTRL_Video_CropBottom=0,E_TEXTCTRL_Video_CropLeft=0,E_TEXTCTRL_Video_CropRight=100,E_TEXTCTRL_Video_CropTop=100,E_TEXTCTRL_Video_Starttime=1,E_TEXTCTRL_Video_TransparentBlack=0,T_TEXTCTRL_Fadein=.25,T_TEXTCTRL_Fadeout=.2</Effect>
-    <Effect>E_CHECKBOX_SynchroniseWithAudio=0,E_CHECKBOX_Video_AspectRatio=0,E_CHECKBOX_Video_TransparentBlack=0,E_CHOICE_Video_DurationTreatment=Normal,E_FILEPICKERCTRL_Video_Filename=Sequences/The Dead Dance/Media/Vendor/Videos/Dead Dance Skeletons.mp4,E_TEXTCTRL_Duration=0:07.041,E_TEXTCTRL_SampleSpacing=0,E_TEXTCTRL_Video_CropBottom=0,E_TEXTCTRL_Video_CropLeft=0,E_TEXTCTRL_Video_CropRight=100,E_TEXTCTRL_Video_CropTop=100,E_TEXTCTRL_Video_Starttime=1,E_TEXTCTRL_Video_TransparentBlack=0,T_TEXTCTRL_Fadein=.25,T_TEXTCTRL_Fadeout=1</Effect>
-    <Effect>E_CHECKBOX_SynchroniseWithAudio=0,E_CHECKBOX_Video_AspectRatio=0,E_CHECKBOX_Video_TransparentBlack=0,E_CHOICE_Video_DurationTreatment=Normal,E_FILEPICKERCTRL_Video_Filename=Sequences/The Dead Dance/Media/Vendor/Videos/Dancefloor.mp4,E_TEXTCTRL_Duration=0:05.041,E_TEXTCTRL_SampleSpacing=0,E_TEXTCTRL_Video_CropBottom=0,E_TEXTCTRL_Video_CropLeft=0,E_TEXTCTRL_Video_CropRight=100,E_TEXTCTRL_Video_CropTop=100,E_TEXTCTRL_Video_Starttime=0,E_TEXTCTRL_Video_TransparentBlack=0,T_TEXTCTRL_Fadein=.25,T_TEXTCTRL_Fadeout=.5</Effect>
-    <Effect>E_CHECKBOX_SynchroniseWithAudio=0,E_CHECKBOX_Video_AspectRatio=0,E_CHECKBOX_Video_TransparentBlack=0,E_CHOICE_Video_DurationTreatment=Manual and Loop,E_FILEPICKERCTRL_Video_Filename=Sequences/The Dead Dance/Media/Vendor/Videos/Slowmotion Dancing 2.mp4,E_TEXTCTRL_Duration=0:08.000,E_TEXTCTRL_SampleSpacing=0,E_TEXTCTRL_Video_CropBottom=0,E_TEXTCTRL_Video_CropLeft=0,E_TEXTCTRL_Video_CropRight=100,E_TEXTCTRL_Video_CropTop=100,E_TEXTCTRL_Video_Speed=0.50,E_TEXTCTRL_Video_Starttime=0,E_TEXTCTRL_Video_TransparentBlack=0,T_TEXTCTRL_Fadein=.25,T_TEXTCTRL_Fadeout=2</Effect>
-    <Effect>E_CHECKBOX_SynchroniseWithAudio=0,E_CHECKBOX_Video_AspectRatio=0,E_CHECKBOX_Video_TransparentBlack=0,E_CHOICE_Video_DurationTreatment=Normal,E_FILEPICKERCTRL_Video_Filename=Sequences/The Dead Dance/Media/Vendor/Videos/Dancers 4.mp4,E_TEXTCTRL_Duration=0:30.041,E_TEXTCTRL_SampleSpacing=0,E_TEXTCTRL_Video_CropBottom=0,E_TEXTCTRL_Video_CropLeft=0,E_TEXTCTRL_Video_CropRight=100,E_TEXTCTRL_Video_CropTop=100,E_TEXTCTRL_Video_Starttime=0.00,E_TEXTCTRL_Video_TransparentBlack=0,T_TEXTCTRL_Fadein=.25,T_TEXTCTRL_Fadeout=.5</Effect>
+    <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/TuneToReadable-v2/stationary-qr.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_TimingTrack=Gaga,E_CHOICE_Faces_UseState=Teddy RedBow static,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
-    <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/projector-website-qr.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
     <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=Sequences/The Dead Dance/Media/Voting/occasional-voting.gif,E_TEXTCTRL_Pictures_FrameRateAdj=1.0,E_TEXTCTRL_Pictures_Speed=1.0,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
   </EffectDB>
   <SequenceMedia>
-    <Video path="Sequences/The Dead Dance/Media/Vendor/Videos/Ballroom 1.mp4" />
-    <Video path="Sequences/The Dead Dance/Media/Vendor/Videos/Creature of the Night.mp4" />
-    <Video path="Sequences/The Dead Dance/Media/Vendor/Videos/Creepy Dolly Walking.mp4" />
     <Video path="Sequences/The Dead Dance/Media/Vendor/Videos/Creepy Eyes.mp4" />
     <Video path="Sequences/The Dead Dance/Media/Vendor/Videos/Dancefloor.mp4" />
-    <Video path="Sequences/The Dead Dance/Media/Vendor/Videos/Dancers 3.mp4" />
-    <Video path="Sequences/The Dead Dance/Media/Vendor/Videos/Dancers 4.mp4" />
     <Video path="Sequences/The Dead Dance/Media/Vendor/Videos/Dancing Pumpkin_1.mp4" />
-    <Video path="Sequences/The Dead Dance/Media/Vendor/Videos/Dead Dance Skeletons.mp4" />
     <Video path="Sequences/The Dead Dance/Media/Vendor/Videos/Halloween Cat Eyes Blinking_1.mp4" />
-    <Video path="Sequences/The Dead Dance/Media/Vendor/Videos/Hallway Fog.mp4" />
-    <Video path="Sequences/The Dead Dance/Media/Vendor/Videos/Haunting Mirror.mp4" />
-    <Video path="Sequences/The Dead Dance/Media/Vendor/Videos/Mirror Cry 2_1.mp4" />
-    <Video path="Sequences/The Dead Dance/Media/Vendor/Videos/Pawn.mp4" />
-    <Video path="Sequences/The Dead Dance/Media/Vendor/Videos/Queen.mp4" />
-    <Video path="Sequences/The Dead Dance/Media/Vendor/Videos/Shock Move 2.mp4" />
-    <Video path="Sequences/The Dead Dance/Media/Vendor/Videos/Slowmotion Dancing 2.mp4" />
-    <Video path="Sequences/The Dead Dance/Media/Vendor/Videos/Slowmotion Dancing.mp4" />
   </SequenceMedia>
   <DataLayers>
     <DataLayer lor_params="0" channel_offset="0" num_channels="0" num_frames="0" data="&lt;rendered: erase-mode>" source="&lt;auto-generated>" name="Nutcracker" />
@@ -2356,63 +2315,10 @@
       </EffectLayer>
     </Element>
     <Element type="model" name="Tune To">
+      <EffectLayer />
       <EffectLayer>
         <Effect ref="307" name="Pictures" startTime="0" endTime="228500" palette="50" />
       </EffectLayer>
-      <EffectLayer />
-      <EffectLayer>
-        <Effect ref="308" name="Warp" startTime="194550" endTime="195350" palette="4" />
-      </EffectLayer>
-      <EffectLayer>
-        <Effect ref="309" name="Pinwheel" startTime="194550" endTime="195350" palette="4" />
-      </EffectLayer>
-      <EffectLayer>
-        <Effect ref="310" name="Pictures" startTime="8000" endTime="8125" palette="0" />
-        <Effect ref="310" name="Pictures" id="1" startTime="8125" endTime="8250" palette="0" />
-        <Effect ref="310" name="Pictures" id="2" startTime="8250" endTime="8375" palette="0" />
-        <Effect ref="310" name="Pictures" id="3" startTime="11950" endTime="12075" palette="0" />
-        <Effect ref="310" name="Pictures" id="4" startTime="12075" endTime="12200" palette="0" />
-        <Effect ref="310" name="Pictures" id="5" startTime="12200" endTime="12350" palette="0" />
-        <Effect ref="310" name="Pictures" id="6" startTime="15825" endTime="15950" palette="0" />
-        <Effect ref="310" name="Pictures" id="7" startTime="15950" endTime="16075" palette="0" />
-        <Effect ref="310" name="Pictures" id="8" startTime="16075" endTime="16175" palette="0" />
-        <Effect ref="310" name="Pictures" id="9" startTime="19775" endTime="19900" palette="0" />
-        <Effect ref="310" name="Pictures" id="10" startTime="19900" endTime="20025" palette="0" />
-        <Effect ref="310" name="Pictures" id="11" startTime="20025" endTime="20125" palette="0" />
-        <Effect ref="311" name="Video" id="12" startTime="23625" endTime="31475" palette="0" />
-        <Effect ref="312" name="Video" id="13" startTime="34600" endTime="39275" palette="1" />
-        <Effect ref="313" name="Video" id="14" startTime="39275" endTime="50450" palette="23" />
-        <Effect ref="314" name="Video" id="15" startTime="50450" endTime="54900" palette="0" />
-        <Effect ref="315" name="Video" id="16" startTime="54900" endTime="70500" palette="0" />
-        <Effect ref="316" name="Video" id="17" startTime="70500" endTime="86075" palette="24" />
-        <Effect ref="317" name="Video" id="18" startTime="86075" endTime="90000" palette="24" />
-        <Effect ref="318" name="Video" id="19" startTime="90000" endTime="93925" palette="24" />
-        <Effect ref="319" name="Video" id="20" startTime="93925" endTime="101725" palette="24" />
-        <Effect ref="320" name="Video" id="21" startTime="101725" endTime="112975" palette="24" />
-        <Effect ref="321" name="Video" id="22" startTime="112975" endTime="117325" palette="0" />
-        <Effect ref="322" name="Video" id="23" startTime="117325" endTime="132950" palette="23" />
-        <Effect ref="316" name="Video" id="24" startTime="132950" endTime="148550" palette="24" />
-        <Effect ref="323" name="Video" id="25" startTime="148550" endTime="151675" palette="23" />
-        <Effect ref="324" name="Pinwheel" id="26" startTime="194550" endTime="195350" palette="4" />
-      </EffectLayer>
-      <EffectLayer>
-        <Effect ref="325" name="Video" startTime="31475" endTime="35550" palette="1" />
-        <Effect ref="326" name="Meteors" id="1" startTime="151225" endTime="156350" palette="3" />
-        <Effect ref="326" name="Meteors" id="2" startTime="159025" endTime="164150" palette="3" />
-        <Effect ref="326" name="Meteors" id="3" startTime="166825" endTime="171975" palette="3" />
-        <Effect ref="327" name="Warp" id="4" startTime="191000" endTime="195350" palette="23" />
-        <Effect ref="328" name="Video" id="5" startTime="218650" endTime="228500" palette="24" />
-      </EffectLayer>
-      <EffectLayer>
-        <Effect ref="329" name="Video" startTime="156350" endTime="159225" palette="23" />
-        <Effect ref="329" name="Video" id="1" startTime="164150" endTime="167050" palette="23" />
-        <Effect ref="330" name="Video" id="2" startTime="171975" endTime="175875" palette="23" />
-        <Effect ref="331" name="Video" id="3" startTime="175875" endTime="179750" palette="23" />
-        <Effect ref="332" name="Video" id="4" startTime="179750" endTime="195350" palette="23" />
-        <Effect ref="322" name="Video" id="5" startTime="195350" endTime="210975" palette="23" />
-        <Effect ref="333" name="Video" id="6" startTime="210975" endTime="218650" palette="24" />
-      </EffectLayer>
-      <EffectLayer />
     </Element>
     <Element type="timing" name="Metronome2">
       <EffectLayer>
@@ -7130,14 +7036,14 @@
       <EffectLayer />
       <EffectLayer />
       <EffectLayer>
-        <Effect ref="334" name="Faces" startTime="8375" endTime="29625" palette="50" />
-        <Effect ref="334" name="Faces" id="1" startTime="31950" endTime="36675" palette="50" />
-        <Effect ref="334" name="Faces" id="2" startTime="38300" endTime="44775" palette="50" />
-        <Effect ref="334" name="Faces" id="3" startTime="46125" endTime="52625" palette="50" />
-        <Effect ref="334" name="Faces" id="4" startTime="86525" endTime="91075" palette="50" />
-        <Effect ref="334" name="Faces" id="5" startTime="94350" endTime="107200" palette="50" />
-        <Effect ref="334" name="Faces" id="6" startTime="108500" endTime="116950" palette="50" />
-        <Effect ref="334" name="Faces" id="7" startTime="176100" endTime="192350" palette="50" />
+        <Effect ref="308" name="Faces" startTime="8375" endTime="29625" palette="50" />
+        <Effect ref="308" name="Faces" id="1" startTime="31950" endTime="36675" palette="50" />
+        <Effect ref="308" name="Faces" id="2" startTime="38300" endTime="44775" palette="50" />
+        <Effect ref="308" name="Faces" id="3" startTime="46125" endTime="52625" palette="50" />
+        <Effect ref="308" name="Faces" id="4" startTime="86525" endTime="91075" palette="50" />
+        <Effect ref="308" name="Faces" id="5" startTime="94350" endTime="107200" palette="50" />
+        <Effect ref="308" name="Faces" id="6" startTime="108500" endTime="116950" palette="50" />
+        <Effect ref="308" name="Faces" id="7" startTime="176100" endTime="192350" palette="50" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Franken Monster (2)">
@@ -7495,14 +7401,9 @@
       <EffectLayer />
     </Element>
     <Element type="model" name="Projector">
+      <EffectLayer />
       <EffectLayer>
-        <Effect ref="335" name="Pictures" startTime="10000" endTime="25000" palette="50" />
-        <Effect ref="335" name="Pictures" id="1" startTime="70000" endTime="85000" palette="50" />
-        <Effect ref="335" name="Pictures" id="2" startTime="130000" endTime="145000" palette="50" />
-        <Effect ref="335" name="Pictures" id="3" startTime="190000" endTime="205000" palette="50" />
-      </EffectLayer>
-      <EffectLayer>
-        <Effect ref="336" name="Pictures" startTime="109700" endTime="125700" palette="50" />
+        <Effect ref="309" name="Pictures" startTime="109700" endTime="125700" palette="50" />
       </EffectLayer>
       <EffectLayer />
     </Element>

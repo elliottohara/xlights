@@ -105,8 +105,7 @@
     <Effect>E_CHECKBOX_Shockwave_Blend_Edges=1,E_CHECKBOX_Shockwave_Scale=0,E_NOTEBOOK_Shockwave=Position,E_SLIDER_Shockwave_Accel=0,E_SLIDER_Shockwave_CenterX=50,E_SLIDER_Shockwave_CenterY=50,E_SLIDER_Shockwave_End_Radius=250,E_SLIDER_Shockwave_End_Width=91,E_SLIDER_Shockwave_Start_Radius=0,E_SLIDER_Shockwave_Start_Width=55,T_TEXTCTRL_Fadeout=.5</Effect>
     <Effect>E_CHECKBOX_Shockwave_Blend_Edges=1,E_CHECKBOX_Shockwave_Scale=0,E_NOTEBOOK_Shockwave=Position,E_SLIDER_Shockwave_Accel=0,E_SLIDER_Shockwave_CenterX=50,E_SLIDER_Shockwave_CenterY=50,E_SLIDER_Shockwave_End_Radius=250,E_SLIDER_Shockwave_End_Width=91,E_SLIDER_Shockwave_Start_Radius=0,E_SLIDER_Shockwave_Start_Width=55,T_SLIDER_Out_Transition_Adjust=50,T_TEXTCTRL_Fadeout=.5</Effect>
     <Effect>B_CHOICE_BufferStyle=Per Model Default,E_CHECKBOX_Shockwave_Blend_Edges=1,E_CHECKBOX_Shockwave_Scale=0,E_NOTEBOOK_Shockwave=Position,E_SLIDER_Shockwave_Accel=0,E_SLIDER_Shockwave_CenterX=50,E_SLIDER_Shockwave_CenterY=50,E_SLIDER_Shockwave_End_Radius=0,E_SLIDER_Shockwave_End_Width=10,E_SLIDER_Shockwave_Start_Radius=0,E_SLIDER_Shockwave_Start_Width=91</Effect>
-    <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/tune-to-website.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
-    <Effect>E_0FILEPICKERCTRL_IFS=Sequences/12-The-Monster-_feat.-Rihanna_/Media/Shaders-597f90/Black Cherry Cosmos.fs,E_SLIDER_SHADERXYZZY_mouseX=0,E_SLIDER_SHADERXYZZY_mouseY=0,E_SLIDER_Shader_Speed=100,E_TEXTCTRL_Shader_LeadIn=0,E_TEXTCTRL_Shader_Offset_X=0,E_TEXTCTRL_Shader_Offset_Y=0,E_TEXTCTRL_Shader_Zoom=0,T_CHECKBOX_Canvas=1,T_TEXTCTRL_Fadein=.5,T_TEXTCTRL_Fadeout=2</Effect>
+    <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/TuneToReadable-v2/stationary-qr.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=IT [12-The-Monster-feat-Rihanna],E_CHOICE_Faces_TimingTrack=Lyrics 3,T_TEXTCTRL_Fadein=.5,T_TEXTCTRL_Fadeout=.5</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=IT [12-The-Monster-feat-Rihanna],E_CHOICE_Faces_TimingTrack=Lyrics 3,T_TEXTCTRL_Fadein=.2,T_TEXTCTRL_Fadeout=.2</Effect>
     <Effect>E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=IT [12-The-Monster-feat-Rihanna],E_CHOICE_Faces_TimingTrack=Lyrics 2,T_TEXTCTRL_Fadein=.2</Effect>
@@ -121,8 +120,8 @@
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Dracula [12-The-Monster-feat-Rihanna],E_CHOICE_Faces_TimingTrack=Lyrics 1,T_TEXTCTRL_Fadein=1,T_TEXTCTRL_Fadeout=1</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Dracula [12-The-Monster-feat-Rihanna],E_CHOICE_Faces_TimingTrack=Lyrics 1,T_TEXTCTRL_Fadein=.5,T_TEXTCTRL_Fadeout=.5</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Dracula [12-The-Monster-feat-Rihanna],E_CHOICE_Faces_TimingTrack=Lyrics 1,T_TEXTCTRL_Fadein=.5,T_TEXTCTRL_Fadeout=1</Effect>
-    <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/projector-website-qr.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
     <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=Sequences/12-The-Monster-_feat.-Rihanna_/Media/Voting/occasional-voting.gif,E_TEXTCTRL_Pictures_FrameRateAdj=1.0,E_TEXTCTRL_Pictures_Speed=1.0,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
+    <Effect>E_0FILEPICKERCTRL_IFS=Sequences/12-The-Monster-_feat.-Rihanna_/Media/Shaders-597f90/Black Cherry Cosmos.fs,E_SLIDER_SHADERXYZZY_mouseX=0,E_SLIDER_SHADERXYZZY_mouseY=0,E_SLIDER_Shader_Speed=100,E_TEXTCTRL_Shader_LeadIn=0,E_TEXTCTRL_Shader_Offset_X=0,E_TEXTCTRL_Shader_Offset_Y=0,E_TEXTCTRL_Shader_Zoom=0,T_CHECKBOX_Canvas=1,T_TEXTCTRL_Fadein=.5,T_TEXTCTRL_Fadeout=2</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_TimingTrack=Lyrics 2,E_CHOICE_Faces_UseState=Teddy RedBow static,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Pumpkin face,E_CHOICE_Faces_TimingTrack=Lyrics 3,E_CHOICE_Faces_UseState=outline with stem,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Pumpkin face,E_CHOICE_Faces_TimingTrack=Lyrics 2,E_CHOICE_Faces_UseState=outline with stem,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
@@ -1710,137 +1709,19 @@
       </EffectLayer>
     </Element>
     <Element type="model" name="Tune To">
+      <EffectLayer />
       <EffectLayer>
         <Effect ref="53" name="Pictures" startTime="0" endTime="250175" palette="31" />
       </EffectLayer>
-      <EffectLayer />
-      <EffectLayer>
-        <Effect ref="32" name="VU Meter" startTime="18825" endTime="19925" palette="16" />
-        <Effect ref="32" name="VU Meter" id="1" startTime="19925" endTime="21025" palette="17" />
-        <Effect ref="32" name="VU Meter" id="2" startTime="21025" endTime="23200" palette="18" />
-        <Effect ref="32" name="VU Meter" id="3" startTime="23200" endTime="24275" palette="16" />
-        <Effect ref="32" name="VU Meter" id="4" startTime="24275" endTime="25400" palette="17" />
-        <Effect ref="32" name="VU Meter" id="5" startTime="25400" endTime="27575" palette="18" />
-        <Effect ref="32" name="VU Meter" id="6" startTime="27575" endTime="28650" palette="16" />
-        <Effect ref="32" name="VU Meter" id="7" startTime="28650" endTime="29750" palette="17" />
-        <Effect ref="32" name="VU Meter" id="8" startTime="29750" endTime="31925" palette="18" />
-        <Effect ref="32" name="VU Meter" id="9" startTime="31925" endTime="32475" palette="16" />
-        <Effect ref="32" name="VU Meter" id="10" startTime="33550" endTime="34100" palette="17" />
-        <Effect ref="32" name="VU Meter" id="11" startTime="34100" endTime="36275" palette="18" />
-        <Effect ref="32" name="VU Meter" id="12" startTime="36275" endTime="37375" palette="16" />
-        <Effect ref="32" name="VU Meter" id="13" startTime="37375" endTime="38475" palette="17" />
-        <Effect ref="32" name="VU Meter" id="14" startTime="38475" endTime="40650" palette="18" />
-        <Effect ref="32" name="VU Meter" id="15" startTime="40650" endTime="41750" palette="16" />
-        <Effect ref="32" name="VU Meter" id="16" startTime="41750" endTime="42825" palette="17" />
-        <Effect ref="32" name="VU Meter" id="17" startTime="42825" endTime="45025" palette="18" />
-        <Effect ref="32" name="VU Meter" id="18" startTime="45025" endTime="46100" palette="16" />
-        <Effect ref="32" name="VU Meter" id="19" startTime="46100" endTime="47200" palette="17" />
-        <Effect ref="32" name="VU Meter" id="20" startTime="49400" endTime="50475" palette="16" />
-        <Effect ref="32" name="VU Meter" id="21" startTime="50475" endTime="51575" palette="17" />
-        <Effect ref="33" name="On" id="22" startTime="71200" endTime="72300" palette="19" />
-        <Effect ref="33" name="On" id="23" startTime="72300" endTime="73375" palette="20" />
-        <Effect ref="33" name="On" id="24" startTime="73375" endTime="75575" palette="21" />
-        <Effect ref="33" name="On" id="25" startTime="75575" endTime="76650" palette="19" />
-        <Effect ref="33" name="On" id="26" startTime="76650" endTime="77750" palette="20" />
-        <Effect ref="33" name="On" id="27" startTime="77750" endTime="79925" palette="21" />
-        <Effect ref="33" name="On" id="28" startTime="79925" endTime="81025" palette="19" />
-        <Effect ref="33" name="On" id="29" startTime="81025" endTime="82125" palette="20" />
-        <Effect ref="33" name="On" id="30" startTime="82125" endTime="84300" palette="21" />
-        <Effect ref="33" name="On" id="31" startTime="84300" endTime="85375" palette="19" />
-        <Effect ref="33" name="On" id="32" startTime="85375" endTime="86475" palette="20" />
-        <Effect ref="33" name="On" id="33" startTime="86475" endTime="88675" palette="21" />
-        <Effect ref="32" name="VU Meter" id="34" startTime="88675" endTime="89750" palette="16" />
-        <Effect ref="32" name="VU Meter" id="35" startTime="89750" endTime="90825" palette="17" />
-        <Effect ref="32" name="VU Meter" id="36" startTime="90825" endTime="93025" palette="18" />
-        <Effect ref="32" name="VU Meter" id="37" startTime="93025" endTime="94100" palette="16" />
-        <Effect ref="32" name="VU Meter" id="38" startTime="94100" endTime="95200" palette="17" />
-        <Effect ref="32" name="VU Meter" id="39" startTime="95200" endTime="97375" palette="18" />
-        <Effect ref="32" name="VU Meter" id="40" startTime="97375" endTime="98475" palette="16" />
-        <Effect ref="32" name="VU Meter" id="41" startTime="98475" endTime="99575" palette="17" />
-        <Effect ref="32" name="VU Meter" id="42" startTime="99575" endTime="101750" palette="18" />
-        <Effect ref="32" name="VU Meter" id="43" startTime="101750" endTime="102825" palette="16" />
-        <Effect ref="32" name="VU Meter" id="44" startTime="102825" endTime="103950" palette="17" />
-        <Effect ref="32" name="VU Meter" id="45" startTime="103950" endTime="106100" palette="18" />
-        <Effect ref="32" name="VU Meter" id="46" startTime="106100" endTime="107200" palette="16" />
-        <Effect ref="32" name="VU Meter" id="47" startTime="107200" endTime="108300" palette="17" />
-        <Effect ref="32" name="VU Meter" id="48" startTime="108300" endTime="109375" palette="18" />
-        <Effect ref="34" name="VU Meter" id="49" startTime="109675" endTime="110300" palette="22" />
-        <Effect ref="32" name="VU Meter" id="50" startTime="110475" endTime="111550" palette="16" />
-        <Effect ref="32" name="VU Meter" id="51" startTime="111550" endTime="112650" palette="17" />
-        <Effect ref="32" name="VU Meter" id="52" startTime="112650" endTime="114825" palette="18" />
-        <Effect ref="35" name="VU Meter" id="53" startTime="114825" endTime="115925" palette="16" />
-        <Effect ref="32" name="VU Meter" id="54" startTime="115925" endTime="117025" palette="17" />
-        <Effect ref="32" name="VU Meter" id="55" startTime="117550" endTime="119200" palette="18" />
-        <Effect ref="36" name="VU Meter" id="56" startTime="119750" endTime="120300" palette="16" />
-        <Effect ref="32" name="VU Meter" id="57" startTime="120300" endTime="121400" palette="17" />
-        <Effect ref="37" name="VU Meter" id="58" startTime="121400" endTime="123025" palette="18" />
-        <Effect ref="33" name="On" id="59" startTime="141025" endTime="142100" palette="19" />
-        <Effect ref="33" name="On" id="60" startTime="142100" endTime="143200" palette="20" />
-        <Effect ref="33" name="On" id="61" startTime="143200" endTime="145375" palette="21" />
-        <Effect ref="33" name="On" id="62" startTime="145375" endTime="146475" palette="19" />
-        <Effect ref="33" name="On" id="63" startTime="146475" endTime="147550" palette="20" />
-        <Effect ref="33" name="On" id="64" startTime="147550" endTime="149750" palette="21" />
-        <Effect ref="33" name="On" id="65" startTime="149750" endTime="150850" palette="19" />
-        <Effect ref="33" name="On" id="66" startTime="150850" endTime="151950" palette="20" />
-        <Effect ref="33" name="On" id="67" startTime="151950" endTime="154125" palette="21" />
-        <Effect ref="33" name="On" id="68" startTime="154125" endTime="155200" palette="19" />
-        <Effect ref="33" name="On" id="69" startTime="155200" endTime="156300" palette="20" />
-        <Effect ref="33" name="On" id="70" startTime="156300" endTime="158500" palette="21" />
-        <Effect ref="32" name="VU Meter" id="71" startTime="158500" endTime="159575" palette="16" />
-        <Effect ref="32" name="VU Meter" id="72" startTime="159575" endTime="160700" palette="17" />
-        <Effect ref="32" name="VU Meter" id="73" startTime="160700" endTime="162850" palette="18" />
-        <Effect ref="32" name="VU Meter" id="74" startTime="162850" endTime="163925" palette="16" />
-        <Effect ref="32" name="VU Meter" id="75" startTime="163925" endTime="165025" palette="17" />
-        <Effect ref="32" name="VU Meter" id="76" startTime="165025" endTime="167200" palette="18" />
-        <Effect ref="32" name="VU Meter" id="77" startTime="167200" endTime="168275" palette="16" />
-        <Effect ref="32" name="VU Meter" id="78" startTime="168275" endTime="169375" palette="17" />
-        <Effect ref="32" name="VU Meter" id="79" startTime="169375" endTime="171575" palette="18" />
-        <Effect ref="32" name="VU Meter" id="80" startTime="171575" endTime="171850" palette="16" />
-        <Effect ref="38" name="VU Meter" id="81" startTime="172125" endTime="172650" palette="16" />
-        <Effect ref="32" name="VU Meter" id="82" startTime="172650" endTime="173750" palette="17" />
-        <Effect ref="32" name="VU Meter" id="83" startTime="173750" endTime="175925" palette="18" />
-        <Effect ref="32" name="VU Meter" id="84" startTime="175925" endTime="177025" palette="16" />
-        <Effect ref="32" name="VU Meter" id="85" startTime="177025" endTime="178100" palette="17" />
-        <Effect ref="32" name="VU Meter" id="86" startTime="178100" endTime="179750" palette="18" />
-        <Effect ref="32" name="VU Meter" id="87" startTime="180325" endTime="181400" palette="16" />
-        <Effect ref="32" name="VU Meter" id="88" startTime="181400" endTime="182500" palette="17" />
-        <Effect ref="32" name="VU Meter" id="89" startTime="182500" endTime="184675" palette="18" />
-        <Effect ref="32" name="VU Meter" id="90" startTime="184675" endTime="185750" palette="16" />
-        <Effect ref="32" name="VU Meter" id="91" startTime="185750" endTime="186875" palette="17" />
-        <Effect ref="32" name="VU Meter" id="92" startTime="186875" endTime="189025" palette="18" />
-        <Effect ref="32" name="VU Meter" id="93" startTime="189575" endTime="190125" palette="16" />
-        <Effect ref="32" name="VU Meter" id="94" startTime="190125" endTime="191225" palette="17" />
-        <Effect ref="33" name="On" id="95" startTime="230500" endTime="231600" palette="19" />
-        <Effect ref="33" name="On" id="96" startTime="231600" endTime="232675" palette="20" />
-        <Effect ref="33" name="On" id="97" startTime="232675" endTime="234850" palette="21" />
-        <Effect ref="33" name="On" id="98" startTime="234850" endTime="235950" palette="19" />
-        <Effect ref="33" name="On" id="99" startTime="235950" endTime="237025" palette="20" />
-        <Effect ref="33" name="On" id="100" startTime="237025" endTime="239225" palette="21" />
-        <Effect ref="33" name="On" id="101" startTime="239225" endTime="240300" palette="19" />
-        <Effect ref="33" name="On" id="102" startTime="240300" endTime="241400" palette="20" />
-        <Effect ref="33" name="On" id="103" startTime="241400" endTime="243575" palette="21" />
-        <Effect ref="33" name="On" id="104" startTime="243575" endTime="244675" palette="19" />
-        <Effect ref="33" name="On" id="105" startTime="244675" endTime="245750" palette="20" />
-        <Effect ref="33" name="On" id="106" startTime="245750" endTime="247975" palette="21" />
-      </EffectLayer>
-      <EffectLayer />
-      <EffectLayer>
-        <Effect ref="54" name="Shader" startTime="71125" endTime="88600" palette="23" />
-        <Effect ref="39" name="Shader" id="1" startTime="141025" endTime="158500" palette="23" />
-        <Effect ref="39" name="Shader" id="2" startTime="230500" endTime="247975" palette="23" />
-      </EffectLayer>
-      <EffectLayer />
-      <EffectLayer />
-      <EffectLayer />
     </Element>
     <Element type="model" name="Matrix - Entry">
       <EffectLayer>
-        <Effect ref="55" name="Faces" startTime="96825" endTime="101775" palette="5" />
-        <Effect ref="56" name="Faces" id="1" startTime="215200" endTime="216300" palette="5" />
-        <Effect ref="56" name="Faces" id="2" startTime="219925" endTime="220650" palette="5" />
-        <Effect ref="56" name="Faces" id="3" startTime="223925" endTime="225025" palette="5" />
-        <Effect ref="57" name="Faces" id="4" startTime="225700" endTime="228850" palette="5" />
-        <Effect ref="58" name="Faces" id="5" startTime="228850" endTime="231375" palette="5" />
+        <Effect ref="54" name="Faces" startTime="96825" endTime="101775" palette="5" />
+        <Effect ref="55" name="Faces" id="1" startTime="215200" endTime="216300" palette="5" />
+        <Effect ref="55" name="Faces" id="2" startTime="219925" endTime="220650" palette="5" />
+        <Effect ref="55" name="Faces" id="3" startTime="223925" endTime="225025" palette="5" />
+        <Effect ref="56" name="Faces" id="4" startTime="225700" endTime="228850" palette="5" />
+        <Effect ref="57" name="Faces" id="5" startTime="228850" endTime="231375" palette="5" />
       </EffectLayer>
       <EffectLayer />
     </Element>
@@ -1962,33 +1843,28 @@
     </Element>
     <Element type="model" name="Matrix-Garage Window">
       <EffectLayer>
-        <Effect ref="59" name="Faces" startTime="71200" endTime="90425" palette="5" />
-        <Effect ref="60" name="Faces" id="1" startTime="141000" endTime="159475" palette="32" />
-        <Effect ref="61" name="Faces" id="2" startTime="215200" endTime="216300" palette="5" />
-        <Effect ref="62" name="Faces" id="3" startTime="219925" endTime="220650" palette="5" />
-        <Effect ref="62" name="Faces" id="4" startTime="223925" endTime="225025" palette="5" />
-        <Effect ref="63" name="Faces" id="5" startTime="225700" endTime="228850" palette="5" />
-        <Effect ref="64" name="Faces" id="6" startTime="228850" endTime="230950" palette="5" />
-        <Effect ref="65" name="Faces" id="7" startTime="230950" endTime="250175" palette="5" />
+        <Effect ref="58" name="Faces" startTime="71200" endTime="90425" palette="5" />
+        <Effect ref="59" name="Faces" id="1" startTime="141000" endTime="159475" palette="32" />
+        <Effect ref="60" name="Faces" id="2" startTime="215200" endTime="216300" palette="5" />
+        <Effect ref="61" name="Faces" id="3" startTime="219925" endTime="220650" palette="5" />
+        <Effect ref="61" name="Faces" id="4" startTime="223925" endTime="225025" palette="5" />
+        <Effect ref="62" name="Faces" id="5" startTime="225700" endTime="228850" palette="5" />
+        <Effect ref="63" name="Faces" id="6" startTime="228850" endTime="230950" palette="5" />
+        <Effect ref="64" name="Faces" id="7" startTime="230950" endTime="250175" palette="5" />
       </EffectLayer>
     </Element>
     <Element type="model" name="Matrix - Downstairs Window">
       <EffectLayer>
-        <Effect ref="66" name="Faces" startTime="17775" endTime="53700" palette="5" />
-        <Effect ref="67" name="Faces" id="1" startTime="87200" endTime="97875" palette="5" />
-        <Effect ref="68" name="Faces" id="2" startTime="101000" endTime="124150" palette="5" />
-        <Effect ref="67" name="Faces" id="3" startTime="157775" endTime="195900" palette="5" />
+        <Effect ref="65" name="Faces" startTime="17775" endTime="53700" palette="5" />
+        <Effect ref="66" name="Faces" id="1" startTime="87200" endTime="97875" palette="5" />
+        <Effect ref="67" name="Faces" id="2" startTime="101000" endTime="124150" palette="5" />
+        <Effect ref="66" name="Faces" id="3" startTime="157775" endTime="195900" palette="5" />
       </EffectLayer>
     </Element>
     <Element type="model" name="Projector">
+      <EffectLayer />
       <EffectLayer>
-        <Effect ref="69" name="Pictures" startTime="10000" endTime="25000" palette="31" />
-        <Effect ref="69" name="Pictures" id="1" startTime="70000" endTime="85000" palette="31" />
-        <Effect ref="69" name="Pictures" id="2" startTime="130000" endTime="145000" palette="31" />
-        <Effect ref="69" name="Pictures" id="3" startTime="190000" endTime="205000" palette="31" />
-      </EffectLayer>
-      <EffectLayer>
-        <Effect ref="70" name="Pictures" startTime="120100" endTime="136100" palette="31" />
+        <Effect ref="68" name="Pictures" startTime="120100" endTime="136100" palette="31" />
       </EffectLayer>
       <EffectLayer />
       <EffectLayer />
@@ -2102,7 +1978,7 @@
         <Effect ref="33" name="On" id="106" startTime="245750" endTime="247975" palette="21" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="54" name="Shader" startTime="71125" endTime="88600" palette="23" />
+        <Effect ref="69" name="Shader" startTime="71125" endTime="88600" palette="23" />
         <Effect ref="39" name="Shader" id="1" startTime="141025" endTime="158500" palette="23" />
         <Effect ref="39" name="Shader" id="2" startTime="230500" endTime="247975" palette="23" />
       </EffectLayer>
@@ -5796,74 +5672,74 @@
       <EffectLayer />
       <EffectLayer />
       <EffectLayer>
-        <Effect ref="71" name="Faces" startTime="50" endTime="4375" palette="31" />
-        <Effect ref="71" name="Faces" id="1" startTime="4425" endTime="8625" palette="31" />
-        <Effect ref="71" name="Faces" id="2" startTime="8800" endTime="13050" palette="31" />
-        <Effect ref="71" name="Faces" id="3" startTime="13250" endTime="17600" palette="31" />
-        <Effect ref="71" name="Faces" id="4" startTime="52475" endTime="56500" palette="31" />
-        <Effect ref="71" name="Faces" id="5" startTime="56825" endTime="60875" palette="31" />
-        <Effect ref="71" name="Faces" id="6" startTime="61175" endTime="65225" palette="31" />
-        <Effect ref="71" name="Faces" id="7" startTime="65650" endTime="69850" palette="31" />
-        <Effect ref="71" name="Faces" id="8" startTime="122225" endTime="126300" palette="31" />
-        <Effect ref="71" name="Faces" id="9" startTime="126650" endTime="130700" palette="31" />
-        <Effect ref="71" name="Faces" id="10" startTime="130925" endTime="135050" palette="31" />
-        <Effect ref="71" name="Faces" id="11" startTime="135350" endTime="139675" palette="31" />
-        <Effect ref="71" name="Faces" id="12" startTime="194250" endTime="198600" palette="31" />
-        <Effect ref="71" name="Faces" id="13" startTime="198600" endTime="202975" palette="31" />
-        <Effect ref="71" name="Faces" id="14" startTime="202975" endTime="207250" palette="31" />
-        <Effect ref="71" name="Faces" id="15" startTime="207300" endTime="211675" palette="31" />
-        <Effect ref="71" name="Faces" id="16" startTime="211675" endTime="215775" palette="31" />
-        <Effect ref="71" name="Faces" id="17" startTime="216075" endTime="220125" palette="31" />
-        <Effect ref="71" name="Faces" id="18" startTime="220400" endTime="224500" palette="31" />
-        <Effect ref="71" name="Faces" id="19" startTime="224775" endTime="229125" palette="31" />
+        <Effect ref="70" name="Faces" startTime="50" endTime="4375" palette="31" />
+        <Effect ref="70" name="Faces" id="1" startTime="4425" endTime="8625" palette="31" />
+        <Effect ref="70" name="Faces" id="2" startTime="8800" endTime="13050" palette="31" />
+        <Effect ref="70" name="Faces" id="3" startTime="13250" endTime="17600" palette="31" />
+        <Effect ref="70" name="Faces" id="4" startTime="52475" endTime="56500" palette="31" />
+        <Effect ref="70" name="Faces" id="5" startTime="56825" endTime="60875" palette="31" />
+        <Effect ref="70" name="Faces" id="6" startTime="61175" endTime="65225" palette="31" />
+        <Effect ref="70" name="Faces" id="7" startTime="65650" endTime="69850" palette="31" />
+        <Effect ref="70" name="Faces" id="8" startTime="122225" endTime="126300" palette="31" />
+        <Effect ref="70" name="Faces" id="9" startTime="126650" endTime="130700" palette="31" />
+        <Effect ref="70" name="Faces" id="10" startTime="130925" endTime="135050" palette="31" />
+        <Effect ref="70" name="Faces" id="11" startTime="135350" endTime="139675" palette="31" />
+        <Effect ref="70" name="Faces" id="12" startTime="194250" endTime="198600" palette="31" />
+        <Effect ref="70" name="Faces" id="13" startTime="198600" endTime="202975" palette="31" />
+        <Effect ref="70" name="Faces" id="14" startTime="202975" endTime="207250" palette="31" />
+        <Effect ref="70" name="Faces" id="15" startTime="207300" endTime="211675" palette="31" />
+        <Effect ref="70" name="Faces" id="16" startTime="211675" endTime="215775" palette="31" />
+        <Effect ref="70" name="Faces" id="17" startTime="216075" endTime="220125" palette="31" />
+        <Effect ref="70" name="Faces" id="18" startTime="220400" endTime="224500" palette="31" />
+        <Effect ref="70" name="Faces" id="19" startTime="224775" endTime="229125" palette="31" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Singing Pumpkin">
       <EffectLayer>
-        <Effect ref="72" name="Faces" startTime="17500" endTime="18375" palette="31" />
-        <Effect ref="72" name="Faces" id="1" startTime="39050" endTime="39275" palette="31" />
-        <Effect ref="73" name="Faces" id="2" startTime="69850" endTime="71550" palette="31" />
-        <Effect ref="72" name="Faces" id="3" startTime="72025" endTime="73775" palette="31" />
-        <Effect ref="72" name="Faces" id="4" startTime="74225" endTime="76125" palette="31" />
-        <Effect ref="72" name="Faces" id="5" startTime="76300" endTime="78300" palette="31" />
-        <Effect ref="72" name="Faces" id="6" startTime="78300" endTime="78575" palette="31" />
-        <Effect ref="73" name="Faces" id="7" startTime="78575" endTime="80500" palette="31" />
-        <Effect ref="72" name="Faces" id="8" startTime="80700" endTime="82575" palette="31" />
-        <Effect ref="72" name="Faces" id="9" startTime="82825" endTime="84775" palette="31" />
-        <Effect ref="72" name="Faces" id="10" startTime="85050" endTime="86950" palette="31" />
-        <Effect ref="72" name="Faces" id="11" startTime="87350" endTime="88950" palette="31" />
-        <Effect ref="73" name="Faces" id="12" startTime="139675" endTime="141500" palette="31" />
-        <Effect ref="72" name="Faces" id="13" startTime="141800" endTime="143775" palette="31" />
-        <Effect ref="72" name="Faces" id="14" startTime="144025" endTime="145950" palette="31" />
-        <Effect ref="72" name="Faces" id="15" startTime="146175" endTime="148125" palette="31" />
-        <Effect ref="72" name="Faces" id="16" startTime="148200" endTime="148300" palette="31" />
-        <Effect ref="73" name="Faces" id="17" startTime="148300" endTime="150300" palette="31" />
-        <Effect ref="72" name="Faces" id="18" startTime="150575" endTime="152500" palette="31" />
-        <Effect ref="72" name="Faces" id="19" startTime="152775" endTime="154700" palette="31" />
-        <Effect ref="72" name="Faces" id="20" startTime="154950" endTime="157000" palette="31" />
-        <Effect ref="72" name="Faces" id="21" startTime="157075" endTime="159050" palette="31" />
-        <Effect ref="72" name="Faces" id="22" startTime="215500" endTime="216075" palette="31" />
-        <Effect ref="72" name="Faces" id="23" startTime="220125" endTime="220425" palette="31" />
-        <Effect ref="72" name="Faces" id="24" startTime="224175" endTime="224775" palette="31" />
-        <Effect ref="73" name="Faces" id="25" startTime="229125" endTime="230825" palette="31" />
-        <Effect ref="72" name="Faces" id="26" startTime="231325" endTime="233075" palette="31" />
-        <Effect ref="72" name="Faces" id="27" startTime="233325" endTime="235125" palette="31" />
-        <Effect ref="72" name="Faces" id="28" startTime="235525" endTime="237275" palette="31" />
-        <Effect ref="72" name="Faces" id="29" startTime="237625" endTime="237775" palette="31" />
-        <Effect ref="73" name="Faces" id="30" startTime="237775" endTime="239875" palette="31" />
-        <Effect ref="72" name="Faces" id="31" startTime="240025" endTime="241775" palette="31" />
-        <Effect ref="72" name="Faces" id="32" startTime="242175" endTime="243975" palette="31" />
-        <Effect ref="72" name="Faces" id="33" startTime="244375" endTime="246000" palette="31" />
-        <Effect ref="72" name="Faces" id="34" startTime="246475" endTime="248825" palette="31" />
+        <Effect ref="71" name="Faces" startTime="17500" endTime="18375" palette="31" />
+        <Effect ref="71" name="Faces" id="1" startTime="39050" endTime="39275" palette="31" />
+        <Effect ref="72" name="Faces" id="2" startTime="69850" endTime="71550" palette="31" />
+        <Effect ref="71" name="Faces" id="3" startTime="72025" endTime="73775" palette="31" />
+        <Effect ref="71" name="Faces" id="4" startTime="74225" endTime="76125" palette="31" />
+        <Effect ref="71" name="Faces" id="5" startTime="76300" endTime="78300" palette="31" />
+        <Effect ref="71" name="Faces" id="6" startTime="78300" endTime="78575" palette="31" />
+        <Effect ref="72" name="Faces" id="7" startTime="78575" endTime="80500" palette="31" />
+        <Effect ref="71" name="Faces" id="8" startTime="80700" endTime="82575" palette="31" />
+        <Effect ref="71" name="Faces" id="9" startTime="82825" endTime="84775" palette="31" />
+        <Effect ref="71" name="Faces" id="10" startTime="85050" endTime="86950" palette="31" />
+        <Effect ref="71" name="Faces" id="11" startTime="87350" endTime="88950" palette="31" />
+        <Effect ref="72" name="Faces" id="12" startTime="139675" endTime="141500" palette="31" />
+        <Effect ref="71" name="Faces" id="13" startTime="141800" endTime="143775" palette="31" />
+        <Effect ref="71" name="Faces" id="14" startTime="144025" endTime="145950" palette="31" />
+        <Effect ref="71" name="Faces" id="15" startTime="146175" endTime="148125" palette="31" />
+        <Effect ref="71" name="Faces" id="16" startTime="148200" endTime="148300" palette="31" />
+        <Effect ref="72" name="Faces" id="17" startTime="148300" endTime="150300" palette="31" />
+        <Effect ref="71" name="Faces" id="18" startTime="150575" endTime="152500" palette="31" />
+        <Effect ref="71" name="Faces" id="19" startTime="152775" endTime="154700" palette="31" />
+        <Effect ref="71" name="Faces" id="20" startTime="154950" endTime="157000" palette="31" />
+        <Effect ref="71" name="Faces" id="21" startTime="157075" endTime="159050" palette="31" />
+        <Effect ref="71" name="Faces" id="22" startTime="215500" endTime="216075" palette="31" />
+        <Effect ref="71" name="Faces" id="23" startTime="220125" endTime="220425" palette="31" />
+        <Effect ref="71" name="Faces" id="24" startTime="224175" endTime="224775" palette="31" />
+        <Effect ref="72" name="Faces" id="25" startTime="229125" endTime="230825" palette="31" />
+        <Effect ref="71" name="Faces" id="26" startTime="231325" endTime="233075" palette="31" />
+        <Effect ref="71" name="Faces" id="27" startTime="233325" endTime="235125" palette="31" />
+        <Effect ref="71" name="Faces" id="28" startTime="235525" endTime="237275" palette="31" />
+        <Effect ref="71" name="Faces" id="29" startTime="237625" endTime="237775" palette="31" />
+        <Effect ref="72" name="Faces" id="30" startTime="237775" endTime="239875" palette="31" />
+        <Effect ref="71" name="Faces" id="31" startTime="240025" endTime="241775" palette="31" />
+        <Effect ref="71" name="Faces" id="32" startTime="242175" endTime="243975" palette="31" />
+        <Effect ref="71" name="Faces" id="33" startTime="244375" endTime="246000" palette="31" />
+        <Effect ref="71" name="Faces" id="34" startTime="246475" endTime="248825" palette="31" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Evil Clown">
       <EffectLayer>
-        <Effect ref="74" name="Faces" startTime="18375" endTime="52800" palette="31" />
-        <Effect ref="74" name="Faces" id="1" startTime="87700" endTime="97375" palette="31" />
-        <Effect ref="75" name="Faces" id="2" startTime="97375" endTime="101175" palette="31" />
-        <Effect ref="74" name="Faces" id="3" startTime="101175" endTime="123400" palette="31" />
-        <Effect ref="74" name="Faces" id="4" startTime="158225" endTime="195425" palette="31" />
+        <Effect ref="73" name="Faces" startTime="18375" endTime="52800" palette="31" />
+        <Effect ref="73" name="Faces" id="1" startTime="87700" endTime="97375" palette="31" />
+        <Effect ref="74" name="Faces" id="2" startTime="97375" endTime="101175" palette="31" />
+        <Effect ref="73" name="Faces" id="3" startTime="101175" endTime="123400" palette="31" />
+        <Effect ref="73" name="Faces" id="4" startTime="158225" endTime="195425" palette="31" />
       </EffectLayer>
     </Element>
     <Element type="model" name="Arch - 1">

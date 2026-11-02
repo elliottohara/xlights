@@ -3,10 +3,296 @@
   "show_folder": ".",
   "layout": "xlights_rgbeffects.xml",
   "networks": "xlights_networks.xml",
-  "finished_at": "2026-10-18T15:07:22.164786-05:00",
+  "finished_at": "2026-10-19T10:09:04.681650-05:00",
   "master": "192.168.0.19",
   "projector": "192.168.0.201",
-  "master_status": "playing",
+  "master_status": {
+    "MQTT": {
+      "configured": false,
+      "connected": false
+    },
+    "branch": "v10.2",
+    "bridging": false,
+    "channelInputsEnabled": false,
+    "channelOutputsEnabled": true,
+    "current_playlist": {
+      "count": "0",
+      "description": "",
+      "generated": false,
+      "index": "0",
+      "playlist": "",
+      "type": ""
+    },
+    "current_sequence": "",
+    "current_song": "",
+    "dateStr": "Sat Oct 31",
+    "fppd": "running",
+    "global_pause": {
+      "active": false,
+      "configured": false,
+      "duration_ms": 0
+    },
+    "host_description": "Fpp Master",
+    "host_name": "FPP-Master",
+    "media_playing": false,
+    "mode": 2,
+    "mode_name": "player",
+    "multisync": true,
+    "next_playlist": {
+      "playlist": "Halloween 2026",
+      "start_time": "Sat Oct 31 @ 06:45 PM - (Everyday)"
+    },
+    "platform": "Raspberry Pi",
+    "powerBad": false,
+    "random": 0,
+    "repeat_mode": "0",
+    "scheduler": {
+      "enabled": 1,
+      "nextPlaylist": {
+        "playlistName": "Halloween 2026",
+        "scheduledStartTime": 1793490327,
+        "scheduledStartTimeStr": "Sat Oct 31 @ 06:45 PM - (Everyday)"
+      },
+      "status": "idle"
+    },
+    "seconds_played": "0",
+    "seconds_remaining": "0",
+    "sensors": [
+      {
+        "formatted": "58.4",
+        "label": "CPU: ",
+        "postfix": "",
+        "prefix": "",
+        "value": 58.426,
+        "valueType": "Temperature"
+      }
+    ],
+    "status": 0,
+    "status_name": "idle",
+    "streamSlots": [
+      {
+        "isBackground": false,
+        "mediaFilename": "",
+        "nodeDescription": "FPP Media Stream 1",
+        "nodeName": "fppd_stream_1",
+        "slot": 1,
+        "status": "idle"
+      },
+      {
+        "isBackground": false,
+        "mediaFilename": "",
+        "nodeDescription": "FPP Media Stream 2",
+        "nodeName": "fppd_stream_2",
+        "slot": 2,
+        "status": "idle"
+      },
+      {
+        "isBackground": false,
+        "mediaFilename": "",
+        "nodeDescription": "FPP Media Stream 3",
+        "nodeName": "fppd_stream_3",
+        "slot": 3,
+        "status": "idle"
+      },
+      {
+        "isBackground": false,
+        "mediaFilename": "",
+        "nodeDescription": "FPP Media Stream 4",
+        "nodeName": "fppd_stream_4",
+        "slot": 4,
+        "status": "idle"
+      },
+      {
+        "isBackground": false,
+        "mediaFilename": "",
+        "nodeDescription": "FPP Media Stream 5",
+        "nodeName": "fppd_stream_5",
+        "slot": 5,
+        "status": "idle"
+      }
+    ],
+    "systemUptimeTotalSeconds": 1720282,
+    "time": "Sat Oct 31 10:40:06 CDT 2026",
+    "timeStr": "10:40 AM",
+    "timeStrFull": "10:40:06 AM",
+    "time_elapsed": "00:00",
+    "time_remaining": "00:00",
+    "uptime": "12 days, 18:17:24",
+    "uptimeDays": 12,
+    "uptimeHours": 18,
+    "uptimeMinutes": 17,
+    "uptimeSeconds": 24,
+    "uptimeStr": "12 days, 18 hours, 17 minutes, 24 seconds",
+    "uptimeTotalSeconds": 1102644,
+    "uuid": "M1-100000005ab99614",
+    "version": "10.2-3-g00e5f727c",
+    "volume": 49,
+    "warningInfo": [
+      {
+        "id": 27,
+        "message": "Cannot Ping DDP Channel Data Target 192.168.0.239 FPP-LEFT-YARD"
+      },
+      {
+        "id": 27,
+        "message": "Cannot Ping DDP Channel Data Target 192.168.0.213 FPP-LEFT-YARD"
+      }
+    ],
+    "warnings": [
+      "Cannot Ping DDP Channel Data Target 192.168.0.239 FPP-LEFT-YARD",
+      "Cannot Ping DDP Channel Data Target 192.168.0.213 FPP-LEFT-YARD"
+    ],
+    "wifi": [
+      {
+        "interface": "wlan0",
+        "link": 0,
+        "level": 0,
+        "unit": "dBm",
+        "noise": 0,
+        "desc": "weak"
+      }
+    ],
+    "interfaces": [
+      {
+        "ifindex": 2,
+        "ifname": "eth0",
+        "flags": [
+          "BROADCAST",
+          "MULTICAST",
+          "UP",
+          "LOWER_UP"
+        ],
+        "mtu": 1500,
+        "qdisc": "fq",
+        "operstate": "UP",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "ether",
+        "address": "d8:3a:dd:6b:76:0e",
+        "broadcast": "ff:ff:ff:ff:ff:ff",
+        "addr_info": [
+          {
+            "family": "inet",
+            "local": "192.168.0.19",
+            "prefixlen": 24,
+            "metric": 1024,
+            "broadcast": "192.168.0.255",
+            "scope": "global",
+            "dynamic": true,
+            "label": "eth0",
+            "valid_life_time": 61146,
+            "preferred_life_time": 61146
+          },
+          {
+            "family": "inet6",
+            "local": "fde0:e973:8f23:41df:da3a:ddff:fe6b:760e",
+            "prefixlen": 64,
+            "scope": "global",
+            "dynamic": true,
+            "mngtmpaddr": true,
+            "noprefixroute": true,
+            "valid_life_time": 1671,
+            "preferred_life_time": 1671
+          },
+          {
+            "family": "inet6",
+            "local": "fdb2:c553:f40d:8123:da3a:ddff:fe6b:760e",
+            "prefixlen": 64,
+            "scope": "global",
+            "dynamic": true,
+            "mngtmpaddr": true,
+            "noprefixroute": true,
+            "valid_life_time": 1756,
+            "preferred_life_time": 1756
+          },
+          {
+            "family": "inet6",
+            "local": "fe80::da3a:ddff:fe6b:760e",
+            "prefixlen": 64,
+            "scope": "link",
+            "protocol": "kernel_ll",
+            "valid_life_time": 4294967295,
+            "preferred_life_time": 4294967295
+          }
+        ]
+      },
+      {
+        "ifindex": 3,
+        "ifname": "wlan0",
+        "flags": [
+          "BROADCAST",
+          "MULTICAST"
+        ],
+        "mtu": 1500,
+        "qdisc": "noop",
+        "operstate": "DOWN",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "ether",
+        "address": "d8:3a:dd:6b:76:0f",
+        "broadcast": "ff:ff:ff:ff:ff:ff",
+        "addr_info": [],
+        "wifi": {
+          "interface": "wlan0",
+          "link": 0,
+          "level": 0,
+          "unit": "dBm",
+          "noise": 0,
+          "desc": "weak"
+        }
+      }
+    ],
+    "rebootFlag": 0,
+    "restartFlag": 0,
+    "bootDelayActive": 0,
+    "advancedView": {
+      "HostName": "FPP-Master",
+      "HostDescription": "Fpp Master",
+      "Platform": "Raspberry Pi",
+      "Variant": "Pi 4",
+      "SubPlatform": "Raspberry Pi 4 Model B Rev 1.5",
+      "backgroundColor": "",
+      "Mode": "player",
+      "Logo": "Raspberry_Pi_4.svg",
+      "Version": "10.2-3-g00e5f727c",
+      "Branch": "v10.2",
+      "multisync": true,
+      "OSVersion": "v2026-09 (32bit)",
+      "OSRelease": "Raspbian GNU/Linux 13 (trixie)",
+      "channelRanges": "170292-287093",
+      "majorVersion": 10,
+      "minorVersion": 2,
+      "typeId": 13,
+      "channelInputsEnabled": false,
+      "channelOutputsEnabled": true,
+      "uuid": "M1-100000005ab99614",
+      "Utilization": {
+        "CPU": 4.693140794223822,
+        "Memory": 10.670950386985831,
+        "Uptime": "19 days 21:51",
+        "Disk": {
+          "Media": {
+            "Free": 5902303232,
+            "Total": 62582202368
+          },
+          "Root": {
+            "Free": 5902303232,
+            "Total": 62582202368
+          }
+        }
+      },
+      "Kernel": "6.18.52-v8+",
+      "LocalGitVersion": "00e5f727c",
+      "RemoteGitVersion": "d6f2274e0",
+      "UpgradeSource": "github.com",
+      "IPs": [
+        "192.168.0.19"
+      ]
+    },
+    "pluginHeaderIndicators": [],
+    "fppdRestartBlocked": {
+      "blocked": false
+    }
+  },
   "master_files_uploaded": 25,
   "projector_files_uploaded": 25,
   "playlist_and_schedule_preserved": true,
@@ -19,19 +305,29 @@
       ],
       "frames": 8935,
       "frame_ms": 25,
-      "fseq_sha256": "006728b76e03ef7fd76c2076c6026b400e7078bb0b7f10eeb7f173e791cb5e39",
+      "fseq_sha256": "ff2f1b53bf723a87d81fdd4e335b54e465e722805610f6f7662ab9dff730b4bc",
       "local_render": {
         "fseq": {
-          "channels": 305940,
           "frames": 8935,
           "frame_ms": 25,
-          "id": "1792372967560620",
-          "bytes": 75973568
+          "id": "1792426223457522",
+          "channels": 305826,
+          "bytes": 338618568
         },
-        "fseq_sha256": "006728b76e03ef7fd76c2076c6026b400e7078bb0b7f10eeb7f173e791cb5e39",
-        "rendered_at": "2026-10-18T20:22:49.231469-05:00"
+        "fseq_sha256": "ff2f1b53bf723a87d81fdd4e335b54e465e722805610f6f7662ab9dff730b4bc",
+        "rendered_at": "2026-10-19T11:10:29.177572-05:00"
       },
-      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
+      "deployed_at": "2026-10-19T11:44:08.161002-05:00",
+      "tombstone_lit_pixels": {
+        "Tombsone large": 26,
+        "Tombsone Small": 13,
+        "Boscoyo ChromaStone 1": 20,
+        "Tombsone large-2": 26,
+        "Boscoyo ChromaStone 5": 27,
+        "Boscoyo ChromaStone 3": 19,
+        "Tombsone Small-2": 18
+      },
+      "latest_deployment": "projector-sign-refresh-latest.json"
     },
     "03 - This Is Halloween": {
       "sequence": "Sequences/03 - This Is Halloween/03 - This Is Halloween.xsq",
@@ -40,19 +336,30 @@
       ],
       "frames": 3931,
       "frame_ms": 50,
-      "fseq_sha256": "918828bdbd1ef7dca1d1f4453499c90bb63b225f192b370cefec3b352058bf3f",
+      "fseq_sha256": "070c752f86397cded3a7e2e3a73dd73ef1d938959f8ef7e8a4c9f3586d9335bc",
       "local_render": {
         "fseq": {
-          "channels": 249627,
           "frames": 3931,
           "frame_ms": 50,
-          "id": "1792372980944815",
-          "bytes": 214095517
+          "id": "1792427550770258",
+          "channels": 249513,
+          "bytes": 234406448
         },
-        "fseq_sha256": "918828bdbd1ef7dca1d1f4453499c90bb63b225f192b370cefec3b352058bf3f",
-        "rendered_at": "2026-10-18T20:23:01.730705-05:00"
+        "fseq_sha256": "070c752f86397cded3a7e2e3a73dd73ef1d938959f8ef7e8a4c9f3586d9335bc",
+        "rendered_at": "2026-10-19T11:32:34.419169-05:00"
       },
-      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
+      "deployed_at": "2026-10-19T11:51:50.390458-05:00",
+      "tombstone_lit_pixels": {
+        "Tombsone large": 26,
+        "Tombsone Small": 13,
+        "Boscoyo ChromaStone 1": 20,
+        "Tombsone large-2": 26,
+        "Boscoyo ChromaStone 5": 27,
+        "Boscoyo ChromaStone 3": 19,
+        "Tombsone Small-2": 18
+      },
+      "latest_deployment": "vader-white-latest.json",
+      "vader_color": "white"
     },
     "12-The-Monster-_feat.-Rihanna_": {
       "sequence": "Sequences/12-The-Monster-_feat.-Rihanna_/12-The-Monster-_feat.-Rihanna_.xsq",
@@ -61,19 +368,29 @@
       ],
       "frames": 10007,
       "frame_ms": 25,
-      "fseq_sha256": "6fdc116c713eebdb69c1023d39a4b7d159dcd98ce2f23572878e15f4cbbd7fef",
+      "fseq_sha256": "c1b8515e2ff8d706daf7696a62ffbb242d12df378c11535dbc083d62b2234f4a",
       "local_render": {
         "fseq": {
-          "channels": 268623,
           "frames": 10007,
           "frame_ms": 25,
-          "id": "1792372994828672",
-          "bytes": 151007671
+          "id": "1792426254804045",
+          "channels": 268563,
+          "bytes": 176184586
         },
-        "fseq_sha256": "6fdc116c713eebdb69c1023d39a4b7d159dcd98ce2f23572878e15f4cbbd7fef",
-        "rendered_at": "2026-10-18T20:23:15.427600-05:00"
+        "fseq_sha256": "c1b8515e2ff8d706daf7696a62ffbb242d12df378c11535dbc083d62b2234f4a",
+        "rendered_at": "2026-10-19T11:10:58.759134-05:00"
       },
-      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
+      "deployed_at": "2026-10-19T11:44:08.161002-05:00",
+      "tombstone_lit_pixels": {
+        "Tombsone large": 26,
+        "Tombsone Small": 11,
+        "Boscoyo ChromaStone 1": 17,
+        "Tombsone large-2": 23,
+        "Boscoyo ChromaStone 5": 24,
+        "Boscoyo ChromaStone 3": 18,
+        "Tombsone Small-2": 18
+      },
+      "latest_deployment": "projector-sign-refresh-latest.json"
     },
     "Bad Romance (Extra Clean)": {
       "sequence": "Sequences/Bad Romance (Extra Clean)/Bad Romance (Extra Clean).xsq",
@@ -82,19 +399,29 @@
       ],
       "frames": 7265,
       "frame_ms": 25,
-      "fseq_sha256": "3984370eca246ab7f855d053b170279c2ea4ec6f558d72b9ed2d72df430cd018",
+      "fseq_sha256": "1bdb5014c53ba9f77ebf7873537c724bb60eb713003744a57fb845caccab5d54",
       "local_render": {
         "fseq": {
-          "channels": 265926,
           "frames": 7265,
           "frame_ms": 25,
-          "id": "1792373008653583",
-          "bytes": 136670404
+          "id": "1792426272402369",
+          "channels": 265866,
+          "bytes": 138677290
         },
-        "fseq_sha256": "3984370eca246ab7f855d053b170279c2ea4ec6f558d72b9ed2d72df430cd018",
-        "rendered_at": "2026-10-18T20:23:29.211695-05:00"
+        "fseq_sha256": "1bdb5014c53ba9f77ebf7873537c724bb60eb713003744a57fb845caccab5d54",
+        "rendered_at": "2026-10-19T11:11:15.511850-05:00"
       },
-      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
+      "deployed_at": "2026-10-19T11:44:08.161002-05:00",
+      "tombstone_lit_pixels": {
+        "Tombsone large": 0,
+        "Tombsone Small": 1,
+        "Boscoyo ChromaStone 1": 1,
+        "Tombsone large-2": 0,
+        "Boscoyo ChromaStone 5": 1,
+        "Boscoyo ChromaStone 3": 0,
+        "Tombsone Small-2": 0
+      },
+      "latest_deployment": "projector-sign-refresh-latest.json"
     },
     "Dracula": {
       "sequence": "Sequences/Dracula/Dracula.xsq",
@@ -103,19 +430,29 @@
       ],
       "frames": 8212,
       "frame_ms": 25,
-      "fseq_sha256": "2a69c4bd2cf0721f7f2607d1270faabc28493c82e0d330c8d0fe97378ea34d03",
+      "fseq_sha256": "5af6d6af751c9d39d5b280e4d4c19f50ead5669bd8696108ef4baf098c0f7647",
       "local_render": {
         "fseq": {
-          "channels": 297432,
           "frames": 8212,
           "frame_ms": 25,
-          "id": "1792373021613079",
-          "bytes": 335085119
+          "id": "1792426289717400",
+          "channels": 297318,
+          "bytes": 420418808
         },
-        "fseq_sha256": "2a69c4bd2cf0721f7f2607d1270faabc28493c82e0d330c8d0fe97378ea34d03",
-        "rendered_at": "2026-10-18T20:23:42.631109-05:00"
+        "fseq_sha256": "5af6d6af751c9d39d5b280e4d4c19f50ead5669bd8696108ef4baf098c0f7647",
+        "rendered_at": "2026-10-19T11:11:34.195868-05:00"
       },
-      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
+      "deployed_at": "2026-10-19T11:44:08.161002-05:00",
+      "tombstone_lit_pixels": {
+        "Tombsone large": 26,
+        "Tombsone Small": 13,
+        "Boscoyo ChromaStone 1": 20,
+        "Tombsone large-2": 26,
+        "Boscoyo ChromaStone 5": 27,
+        "Boscoyo ChromaStone 3": 19,
+        "Tombsone Small-2": 18
+      },
+      "latest_deployment": "projector-sign-refresh-latest.json"
     },
     "Ghostbusters": {
       "sequence": "Sequences/Ghostbusters/Ghostbusters.xsq",
@@ -124,19 +461,33 @@
       ],
       "frames": 6867,
       "frame_ms": 25,
-      "fseq_sha256": "cef8fad8b7d160ddd894faefb798efbeaa42ee17201972a506911a6d3c69b832",
+      "fseq_sha256": "b4947bec1b406b4b4279a1faa5b6a6bc167687582fceab146dff743951641f88",
       "local_render": {
         "fseq": {
-          "channels": 260634,
           "frames": 6867,
           "frame_ms": 25,
-          "id": "1792373033865924",
-          "bytes": 380493362
+          "id": "1793460882999922",
+          "channels": 260574,
+          "bytes": 421783703
         },
-        "fseq_sha256": "cef8fad8b7d160ddd894faefb798efbeaa42ee17201972a506911a6d3c69b832",
-        "rendered_at": "2026-10-18T20:23:55.051175-05:00"
+        "fseq_sha256": "b4947bec1b406b4b4279a1faa5b6a6bc167687582fceab146dff743951641f88",
+        "rendered_at": "2026-10-31T10:36:57.044118-05:00"
       },
-      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
+      "deployed_at": "2026-10-31T10:40:06.302190-05:00",
+      "tombstone_lit_pixels": {
+        "Tombsone large": 26,
+        "Tombsone Small": 13,
+        "Boscoyo ChromaStone 1": 20,
+        "Tombsone large-2": 26,
+        "Boscoyo ChromaStone 5": 27,
+        "Boscoyo ChromaStone 3": 19,
+        "Tombsone Small-2": 18
+      },
+      "latest_deployment": "ghostbusters-sign-lyrics-latest.json",
+      "media": "/Users/elliott.ohara/xlights/Halloween/Sequences/Ghostbusters/Media/Ghostbusters - audio only.mp4",
+      "playback_media": "Halloween 2026 - PENTATONIX - GHOSTBUSTERS (LYRICS).mp4",
+      "audio_sha256": "7f6245f6c43b123509699cae897e5315b81f40a58e035991d24255f15d683aad",
+      "ghostbusters_lyrics_report": "ghostbusters-sign-lyrics-latest.json"
     },
     "Ghostbusters 2": {
       "sequence": "Sequences/Ghostbusters 2/Ghostbusters 2.xsq",
@@ -145,19 +496,33 @@
       ],
       "frames": 6867,
       "frame_ms": 25,
-      "fseq_sha256": "50361464c80a7e9b048a7edfd10a6adabcc785878be49c90cfd20249c1682c5f",
+      "fseq_sha256": "c333c9ad7aabbff7e63994ef295ba967385de189a1891811b6422e52b1ec95fd",
       "local_render": {
         "fseq": {
-          "channels": 260634,
           "frames": 6867,
           "frame_ms": 25,
-          "id": "1792373046969463",
-          "bytes": 380411445
+          "id": "1793460894202958",
+          "channels": 260574,
+          "bytes": 421711667
         },
-        "fseq_sha256": "50361464c80a7e9b048a7edfd10a6adabcc785878be49c90cfd20249c1682c5f",
-        "rendered_at": "2026-10-18T20:24:08.240646-05:00"
+        "fseq_sha256": "c333c9ad7aabbff7e63994ef295ba967385de189a1891811b6422e52b1ec95fd",
+        "rendered_at": "2026-10-31T10:36:57.378677-05:00"
       },
-      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
+      "deployed_at": "2026-10-31T10:40:06.302190-05:00",
+      "tombstone_lit_pixels": {
+        "Tombsone large": 26,
+        "Tombsone Small": 13,
+        "Boscoyo ChromaStone 1": 20,
+        "Tombsone large-2": 26,
+        "Boscoyo ChromaStone 5": 27,
+        "Boscoyo ChromaStone 3": 19,
+        "Tombsone Small-2": 18
+      },
+      "latest_deployment": "ghostbusters-sign-lyrics-latest.json",
+      "media": "/Users/elliott.ohara/xlights/Halloween/Sequences/Ghostbusters/Media/Ghostbusters - audio only.mp4",
+      "playback_media": "Halloween 2026 - PENTATONIX - GHOSTBUSTERS (LYRICS).mp4",
+      "audio_sha256": "7f6245f6c43b123509699cae897e5315b81f40a58e035991d24255f15d683aad",
+      "ghostbusters_lyrics_report": "ghostbusters-sign-lyrics-latest.json"
     },
     "GreatestShowWorking 2": {
       "sequence": "Sequences/GreatestShowWorking 2/GreatestShowWorking 2.xsq",
@@ -166,19 +531,29 @@
       ],
       "frames": 5389,
       "frame_ms": 50,
-      "fseq_sha256": "984aa184c0420a099f66178938adfc147dec26f94d89282c2cd9aa072665c710",
+      "fseq_sha256": "b7b74ef510e037eef65a14ba38cf54055173d60d7ee66101ee6c1007461f65c7",
       "local_render": {
         "fseq": {
-          "channels": 305940,
           "frames": 5389,
           "frame_ms": 50,
-          "id": "1792373077283734",
-          "bytes": 348577599
+          "id": "1792426356779290",
+          "channels": 305826,
+          "bytes": 406315639
         },
-        "fseq_sha256": "984aa184c0420a099f66178938adfc147dec26f94d89282c2cd9aa072665c710",
-        "rendered_at": "2026-10-18T20:24:38.283782-05:00"
+        "fseq_sha256": "b7b74ef510e037eef65a14ba38cf54055173d60d7ee66101ee6c1007461f65c7",
+        "rendered_at": "2026-10-19T11:12:40.405253-05:00"
       },
-      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
+      "deployed_at": "2026-10-19T11:44:08.161002-05:00",
+      "tombstone_lit_pixels": {
+        "Tombsone large": 26,
+        "Tombsone Small": 13,
+        "Boscoyo ChromaStone 1": 20,
+        "Tombsone large-2": 26,
+        "Boscoyo ChromaStone 5": 27,
+        "Boscoyo ChromaStone 3": 19,
+        "Tombsone Small-2": 18
+      },
+      "latest_deployment": "projector-sign-refresh-latest.json"
     },
     "Halfway To Hell": {
       "sequence": "Sequences/Halfway To Hell/Halfway To Hell.xsq",
@@ -187,19 +562,29 @@
       ],
       "frames": 7137,
       "frame_ms": 25,
-      "fseq_sha256": "310a4d1a1c3e43934a47e5784e6d0b0c369bf57ef9040fa6967f563dbe205f56",
+      "fseq_sha256": "c803ea740d754cbef635b2e8b99b0a08ff9883aeac435cc2599f699e0617e22f",
       "local_render": {
         "fseq": {
-          "channels": 255885,
           "frames": 7137,
           "frame_ms": 25,
-          "id": "1792373090321493",
-          "bytes": 94819034
+          "id": "1792426372219884",
+          "channels": 255825,
+          "bytes": 111759472
         },
-        "fseq_sha256": "310a4d1a1c3e43934a47e5784e6d0b0c369bf57ef9040fa6967f563dbe205f56",
-        "rendered_at": "2026-10-18T20:24:50.805793-05:00"
+        "fseq_sha256": "c803ea740d754cbef635b2e8b99b0a08ff9883aeac435cc2599f699e0617e22f",
+        "rendered_at": "2026-10-19T11:12:55.816716-05:00"
       },
-      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
+      "deployed_at": "2026-10-19T11:44:08.161002-05:00",
+      "tombstone_lit_pixels": {
+        "Tombsone large": 26,
+        "Tombsone Small": 13,
+        "Boscoyo ChromaStone 1": 20,
+        "Tombsone large-2": 26,
+        "Boscoyo ChromaStone 5": 27,
+        "Boscoyo ChromaStone 3": 19,
+        "Tombsone Small-2": 18
+      },
+      "latest_deployment": "projector-sign-refresh-latest.json"
     },
     "I Knew It I Knew You": {
       "sequence": "Sequences/I Knew It I Knew You/I Knew It I Knew You.xsq",
@@ -208,19 +593,29 @@
       ],
       "frames": 7128,
       "frame_ms": 25,
-      "fseq_sha256": "66fdf018f5ba95fdac9b5751d7ed1906f48ea442653a883607b34a940341d3ba",
+      "fseq_sha256": "08851e47fa1008715a3865f81804c085e49eae0f076d815b5db27644323d5578",
       "local_render": {
         "fseq": {
-          "channels": 256062,
           "frames": 7128,
           "frame_ms": 25,
-          "id": "1792373112955997",
-          "bytes": 196877811
+          "id": "1792426397449769",
+          "channels": 256002,
+          "bytes": 190907471
         },
-        "fseq_sha256": "66fdf018f5ba95fdac9b5751d7ed1906f48ea442653a883607b34a940341d3ba",
-        "rendered_at": "2026-10-18T20:25:13.805225-05:00"
+        "fseq_sha256": "08851e47fa1008715a3865f81804c085e49eae0f076d815b5db27644323d5578",
+        "rendered_at": "2026-10-19T11:13:20.686725-05:00"
       },
-      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
+      "deployed_at": "2026-10-19T11:44:08.161002-05:00",
+      "tombstone_lit_pixels": {
+        "Tombsone large": 26,
+        "Tombsone Small": 13,
+        "Boscoyo ChromaStone 1": 20,
+        "Tombsone large-2": 26,
+        "Boscoyo ChromaStone 5": 27,
+        "Boscoyo ChromaStone 3": 19,
+        "Tombsone Small-2": 18
+      },
+      "latest_deployment": "projector-sign-refresh-latest.json"
     },
     "Insomnia": {
       "sequence": "Sequences/Insomnia/Insomnia.xsq",
@@ -229,19 +624,29 @@
       ],
       "frames": 8593,
       "frame_ms": 25,
-      "fseq_sha256": "5495eb4e5b13122e39ec7ecbb26b3e3728fb2d92a476edd98b47a8881c57224c",
+      "fseq_sha256": "84251c0be5d8788a29752d2c40809a037508b2058332ad7e56a3087c99957bb1",
       "local_render": {
         "fseq": {
-          "channels": 305940,
           "frames": 8593,
           "frame_ms": 25,
-          "id": "1792373123847721",
-          "bytes": 35036196
+          "id": "1792426410720087",
+          "channels": 305826,
+          "bytes": 35120545
         },
-        "fseq_sha256": "5495eb4e5b13122e39ec7ecbb26b3e3728fb2d92a476edd98b47a8881c57224c",
-        "rendered_at": "2026-10-18T20:25:24.103489-05:00"
+        "fseq_sha256": "84251c0be5d8788a29752d2c40809a037508b2058332ad7e56a3087c99957bb1",
+        "rendered_at": "2026-10-19T11:13:32.864762-05:00"
       },
-      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
+      "deployed_at": "2026-10-19T11:44:08.161002-05:00",
+      "tombstone_lit_pixels": {
+        "Tombsone large": 26,
+        "Tombsone Small": 13,
+        "Boscoyo ChromaStone 1": 20,
+        "Tombsone large-2": 26,
+        "Boscoyo ChromaStone 5": 27,
+        "Boscoyo ChromaStone 3": 19,
+        "Tombsone Small-2": 18
+      },
+      "latest_deployment": "projector-sign-refresh-latest.json"
     },
     "Monster Mash": {
       "sequence": "Sequences/Monster Mash/Monster Mash.xsq",
@@ -250,19 +655,29 @@
       ],
       "frames": 7683,
       "frame_ms": 25,
-      "fseq_sha256": "c2a9b4c3cb0fa354f4695d0492743520b1ee300fbdf038df4b81251484c7ca32",
+      "fseq_sha256": "0006f90fa891c50384b1038e4833944c5183421d863d17716af0e2ba3bcf8343",
       "local_render": {
         "fseq": {
-          "channels": 268677,
           "frames": 7683,
           "frame_ms": 25,
-          "id": "1792373135242044",
-          "bytes": 439135201
+          "id": "1792426425219958",
+          "channels": 268563,
+          "bytes": 485623397
         },
-        "fseq_sha256": "c2a9b4c3cb0fa354f4695d0492743520b1ee300fbdf038df4b81251484c7ca32",
-        "rendered_at": "2026-10-18T20:25:36.545707-05:00"
+        "fseq_sha256": "0006f90fa891c50384b1038e4833944c5183421d863d17716af0e2ba3bcf8343",
+        "rendered_at": "2026-10-19T11:13:50.382621-05:00"
       },
-      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
+      "deployed_at": "2026-10-19T11:44:08.161002-05:00",
+      "tombstone_lit_pixels": {
+        "Tombsone large": 26,
+        "Tombsone Small": 13,
+        "Boscoyo ChromaStone 1": 20,
+        "Tombsone large-2": 26,
+        "Boscoyo ChromaStone 5": 27,
+        "Boscoyo ChromaStone 3": 19,
+        "Tombsone Small-2": 18
+      },
+      "latest_deployment": "projector-sign-refresh-latest.json"
     },
     "Skrillex Medley": {
       "sequence": "Sequences/Skrillex Medley/Skrillex Medley.xsq",
@@ -271,19 +686,29 @@
       ],
       "frames": 8563,
       "frame_ms": 25,
-      "fseq_sha256": "42179f864955eb1da3349002bab4fbf40629e6925c67c33942fe7caa5043728d",
+      "fseq_sha256": "abae35514f25a9be722aa9b19d495d383f74eca99f47f52008ff52ebee872baa",
       "local_render": {
         "fseq": {
-          "channels": 285681,
           "frames": 8563,
           "frame_ms": 25,
-          "id": "1792373150048570",
-          "bytes": 272408452
+          "id": "1792426444519348",
+          "channels": 285621,
+          "bytes": 310389496
         },
-        "fseq_sha256": "42179f864955eb1da3349002bab4fbf40629e6925c67c33942fe7caa5043728d",
-        "rendered_at": "2026-10-18T20:25:51.082661-05:00"
+        "fseq_sha256": "abae35514f25a9be722aa9b19d495d383f74eca99f47f52008ff52ebee872baa",
+        "rendered_at": "2026-10-19T11:14:09.510774-05:00"
       },
-      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
+      "deployed_at": "2026-10-19T11:44:08.161002-05:00",
+      "tombstone_lit_pixels": {
+        "Tombsone large": 26,
+        "Tombsone Small": 13,
+        "Boscoyo ChromaStone 1": 20,
+        "Tombsone large-2": 26,
+        "Boscoyo ChromaStone 5": 27,
+        "Boscoyo ChromaStone 3": 19,
+        "Tombsone Small-2": 18
+      },
+      "latest_deployment": "projector-sign-refresh-latest.json"
     },
     "Something In The Way": {
       "sequence": "Sequences/Something In The Way/Something In The Way.xsq",
@@ -292,19 +717,29 @@
       ],
       "frames": 9285,
       "frame_ms": 25,
-      "fseq_sha256": "ba7ceb8527e26b34ed34da7352a70ae580a1358e38ef5cbf80617a8bd009bf12",
+      "fseq_sha256": "244ef45bdd989b7fb690ce44cd4edd0bc8d7813c0a68d5ee9068eea21a5bb503",
       "local_render": {
         "fseq": {
-          "channels": 251430,
           "frames": 9285,
           "frame_ms": 25,
-          "id": "1792373168763231",
-          "bytes": 234381817
+          "id": "1792426465743168",
+          "channels": 251370,
+          "bytes": 279441883
         },
-        "fseq_sha256": "ba7ceb8527e26b34ed34da7352a70ae580a1358e38ef5cbf80617a8bd009bf12",
-        "rendered_at": "2026-10-18T20:26:09.546057-05:00"
+        "fseq_sha256": "244ef45bdd989b7fb690ce44cd4edd0bc8d7813c0a68d5ee9068eea21a5bb503",
+        "rendered_at": "2026-10-19T11:14:29.955815-05:00"
       },
-      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
+      "deployed_at": "2026-10-19T11:44:08.161002-05:00",
+      "tombstone_lit_pixels": {
+        "Tombsone large": 26,
+        "Tombsone Small": 13,
+        "Boscoyo ChromaStone 1": 20,
+        "Tombsone large-2": 26,
+        "Boscoyo ChromaStone 5": 27,
+        "Boscoyo ChromaStone 3": 19,
+        "Tombsone Small-2": 18
+      },
+      "latest_deployment": "projector-sign-refresh-latest.json"
     },
     "The Dead Dance": {
       "sequence": "Sequences/The Dead Dance/The Dead Dance.xsq",
@@ -313,19 +748,29 @@
       ],
       "frames": 9140,
       "frame_ms": 25,
-      "fseq_sha256": "54def972bba86e3de94e304f72fe0ef0be93ac705be9875d538229d287520f0d",
+      "fseq_sha256": "a346918f4303cdf315ff10b2e062c6c026a38cd88ee4f631173b2ca35a1456a7",
       "local_render": {
         "fseq": {
-          "channels": 305940,
           "frames": 9140,
           "frame_ms": 25,
-          "id": "1792373183019338",
-          "bytes": 152992634
+          "id": "1792426481863034",
+          "channels": 305826,
+          "bytes": 91765417
         },
-        "fseq_sha256": "54def972bba86e3de94e304f72fe0ef0be93ac705be9875d538229d287520f0d",
-        "rendered_at": "2026-10-18T20:26:23.584191-05:00"
+        "fseq_sha256": "a346918f4303cdf315ff10b2e062c6c026a38cd88ee4f631173b2ca35a1456a7",
+        "rendered_at": "2026-10-19T11:14:44.339286-05:00"
       },
-      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
+      "deployed_at": "2026-10-19T11:44:08.161002-05:00",
+      "tombstone_lit_pixels": {
+        "Tombsone large": 26,
+        "Tombsone Small": 13,
+        "Boscoyo ChromaStone 1": 20,
+        "Tombsone large-2": 26,
+        "Boscoyo ChromaStone 5": 27,
+        "Boscoyo ChromaStone 3": 19,
+        "Tombsone Small-2": 18
+      },
+      "latest_deployment": "projector-sign-refresh-latest.json"
     },
     "The Devil Went Down to Georgia": {
       "sequence": "Sequences/The Devil Went Down to Georgia/The Devil Went Down to Georgia.xsq",
@@ -334,19 +779,29 @@
       ],
       "frames": 8616,
       "frame_ms": 25,
-      "fseq_sha256": "870a49ae27f2d4a5592740e57bb8dc559d3cdcb299397012ab6a97c73cdaa44d",
+      "fseq_sha256": "189c08cd6554ed7a4007a21c7c4d7eb49bab54137b64a8d210f451234ffaf6ac",
       "local_render": {
         "fseq": {
-          "channels": 297432,
           "frames": 8616,
           "frame_ms": 25,
-          "id": "1792373200999948",
-          "bytes": 628588345
+          "id": "1792426501864939",
+          "channels": 297318,
+          "bytes": 731401963
         },
-        "fseq_sha256": "870a49ae27f2d4a5592740e57bb8dc559d3cdcb299397012ab6a97c73cdaa44d",
-        "rendered_at": "2026-10-18T20:26:42.773328-05:00"
+        "fseq_sha256": "189c08cd6554ed7a4007a21c7c4d7eb49bab54137b64a8d210f451234ffaf6ac",
+        "rendered_at": "2026-10-19T11:15:09.353256-05:00"
       },
-      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
+      "deployed_at": "2026-10-19T11:44:08.161002-05:00",
+      "tombstone_lit_pixels": {
+        "Tombsone large": 26,
+        "Tombsone Small": 13,
+        "Boscoyo ChromaStone 1": 20,
+        "Tombsone large-2": 26,
+        "Boscoyo ChromaStone 5": 27,
+        "Boscoyo ChromaStone 3": 19,
+        "Tombsone Small-2": 18
+      },
+      "latest_deployment": "projector-sign-refresh-latest.json"
     },
     "The Imperial March": {
       "sequence": "Sequences/The Imperial March/The Imperial March.xsq",
@@ -355,19 +810,32 @@
       ],
       "frames": 7547,
       "frame_ms": 25,
-      "fseq_sha256": "91e9ada2fe27d0fc7691dd29055fde42e4b005653f66eb0326a177995fdcf1cf",
+      "fseq_sha256": "11a3485dad7a847b564f7dae9191879e23a8975ac8f957cf2d8286507c498e21",
       "local_render": {
         "fseq": {
-          "channels": 286497,
           "frames": 7547,
           "frame_ms": 25,
-          "id": "1792373220236118",
-          "bytes": 422796801
+          "id": "1792435001607244",
+          "channels": 298986,
+          "bytes": 481813825
         },
-        "fseq_sha256": "91e9ada2fe27d0fc7691dd29055fde42e4b005653f66eb0326a177995fdcf1cf",
-        "rendered_at": "2026-10-18T20:27:01.713820-05:00"
+        "fseq_sha256": "11a3485dad7a847b564f7dae9191879e23a8975ac8f957cf2d8286507c498e21",
+        "rendered_at": "2026-10-19T13:36:42.997072-05:00"
       },
-      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
+      "deployed_at": "2026-10-19T13:41:24.842385-05:00",
+      "tombstone_lit_pixels": {
+        "Tombsone large": 26,
+        "Tombsone Small": 13,
+        "Boscoyo ChromaStone 1": 20,
+        "Tombsone large-2": 26,
+        "Boscoyo ChromaStone 5": 27,
+        "Boscoyo ChromaStone 3": 19,
+        "Tombsone Small-2": 18
+      },
+      "latest_deployment": "imperial-vader-user-pattern-latest.json",
+      "vader_color": "white",
+      "dialogue_character": "GE Evil Clown",
+      "vader_mouth": "Exact user white/black Color Wash pattern, 2.475 seconds, 2 cycles, continuing from 14.250 seconds"
     },
     "Thriller Xtreme Remap": {
       "sequence": "Sequences/Thriller Xtreme Remap/Thriller Xtreme Remap.xsq",
@@ -376,19 +844,29 @@
       ],
       "frames": 14318,
       "frame_ms": 25,
-      "fseq_sha256": "f83619c5019bcdbe964af605a0c5b5868e71bc150a9d782a1cbc14ee31f60f75",
+      "fseq_sha256": "ea3e09619f36102358cb4d5dadb88814f29aad1acabfd88baf4ad04a66a106db",
       "local_render": {
         "fseq": {
-          "channels": 298290,
           "frames": 14318,
           "frame_ms": 25,
-          "id": "1792373247019817",
-          "bytes": 572909292
+          "id": "1792426557727871",
+          "channels": 298176,
+          "bytes": 833832611
         },
-        "fseq_sha256": "f83619c5019bcdbe964af605a0c5b5868e71bc150a9d782a1cbc14ee31f60f75",
-        "rendered_at": "2026-10-18T20:27:29.019120-05:00"
+        "fseq_sha256": "ea3e09619f36102358cb4d5dadb88814f29aad1acabfd88baf4ad04a66a106db",
+        "rendered_at": "2026-10-19T11:16:08.191852-05:00"
       },
-      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
+      "deployed_at": "2026-10-19T11:44:08.161002-05:00",
+      "tombstone_lit_pixels": {
+        "Tombsone large": 26,
+        "Tombsone Small": 13,
+        "Boscoyo ChromaStone 1": 20,
+        "Tombsone large-2": 26,
+        "Boscoyo ChromaStone 5": 27,
+        "Boscoyo ChromaStone 3": 19,
+        "Tombsone Small-2": 18
+      },
+      "latest_deployment": "projector-sign-refresh-latest.json"
     },
     "Titanium": {
       "sequence": "Sequences/Titanium/Titanium.xsq",
@@ -397,20 +875,20 @@
       ],
       "frames": 9802,
       "frame_ms": 25,
-      "fseq_sha256": "6bc932d41158772a8c7daabdac2aa8de28de483eb6054892c5ccebf4f57addaf",
+      "fseq_sha256": "40ce6ff95bee292a21ed0abd14fc4a69c314c00cb62dcfaef869e953d16a02df",
       "local_render": {
         "fseq": {
-          "channels": 294699,
           "frames": 9802,
           "frame_ms": 25,
-          "id": "1792373263480419",
-          "bytes": 186669325
+          "id": "1792428169561586",
+          "channels": 294639,
+          "bytes": 568730897
         },
-        "fseq_sha256": "6bc932d41158772a8c7daabdac2aa8de28de483eb6054892c5ccebf4f57addaf",
-        "rendered_at": "2026-10-18T20:27:44.213078-05:00"
+        "fseq_sha256": "40ce6ff95bee292a21ed0abd14fc4a69c314c00cb62dcfaef869e953d16a02df",
+        "rendered_at": "2026-10-19T11:42:57.488655-05:00"
       },
-      "deployed_at": "2026-10-19T05:39:34.728578-05:00",
-      "latest_deployment": "titanium-singing-repair-latest.json",
+      "deployed_at": "2026-10-19T11:51:50.390458-05:00",
+      "latest_deployment": "vader-white-latest.json",
       "singing_repair": {
         "lead": "GE Evil Clown",
         "chorus": [
@@ -421,7 +899,17 @@
         "aligned_words": 212,
         "snowflakes": 18,
         "evidence": "titanium-singing-repair-latest.json"
-      }
+      },
+      "tombstone_lit_pixels": {
+        "Tombsone large": 26,
+        "Tombsone Small": 13,
+        "Boscoyo ChromaStone 1": 20,
+        "Tombsone large-2": 26,
+        "Boscoyo ChromaStone 5": 27,
+        "Boscoyo ChromaStone 3": 19,
+        "Tombsone Small-2": 18
+      },
+      "vader_color": "white"
     },
     "Titanium 2": {
       "sequence": "Sequences/Titanium 2/Titanium 2.xsq",
@@ -430,20 +918,20 @@
       ],
       "frames": 9802,
       "frame_ms": 25,
-      "fseq_sha256": "9a13ca462b15f0cff15dfa0dd0bb42563e5ed9c6b5f611a7b8670ec21c8ece92",
+      "fseq_sha256": "4084c24aa57b0b1bee57fbe7db57d65f3274d3b43eb11f4e7fd73341cdd56e71",
       "local_render": {
         "fseq": {
-          "channels": 294699,
           "frames": 9802,
           "frame_ms": 25,
-          "id": "1792373278363597",
-          "bytes": 186669234
+          "id": "1792427510633895",
+          "channels": 294639,
+          "bytes": 568922043
         },
-        "fseq_sha256": "9a13ca462b15f0cff15dfa0dd0bb42563e5ed9c6b5f611a7b8670ec21c8ece92",
-        "rendered_at": "2026-10-18T20:27:59.068785-05:00"
+        "fseq_sha256": "4084c24aa57b0b1bee57fbe7db57d65f3274d3b43eb11f4e7fd73341cdd56e71",
+        "rendered_at": "2026-10-19T11:32:00.421694-05:00"
       },
-      "deployed_at": "2026-10-19T05:39:34.728578-05:00",
-      "latest_deployment": "titanium-singing-repair-latest.json",
+      "deployed_at": "2026-10-19T11:51:50.390458-05:00",
+      "latest_deployment": "vader-white-latest.json",
       "singing_repair": {
         "lead": "GE Evil Clown",
         "chorus": [
@@ -454,7 +942,17 @@
         "aligned_words": 212,
         "snowflakes": 18,
         "evidence": "titanium-singing-repair-latest.json"
-      }
+      },
+      "tombstone_lit_pixels": {
+        "Tombsone large": 26,
+        "Tombsone Small": 13,
+        "Boscoyo ChromaStone 1": 20,
+        "Tombsone large-2": 26,
+        "Boscoyo ChromaStone 5": 27,
+        "Boscoyo ChromaStone 3": 19,
+        "Tombsone Small-2": 18
+      },
+      "vader_color": "white"
     },
     "We Will Rock You": {
       "sequence": "Sequences/We Will Rock You/We Will Rock You.xsq",
@@ -463,19 +961,29 @@
       ],
       "frames": 7674,
       "frame_ms": 25,
-      "fseq_sha256": "95ccf28607f186f03b72e2164c51d52b99a80508c44331a4dbaea12c324017eb",
+      "fseq_sha256": "ab9a861f6bbdab6953e8044a0b20add9e6b42665a86ee559ac54623c66cd6158",
       "local_render": {
         "fseq": {
-          "channels": 288210,
           "frames": 7674,
           "frame_ms": 25,
-          "id": "1792373301310553",
-          "bytes": 479141784
+          "id": "1792426590905086",
+          "channels": 288096,
+          "bytes": 488673778
         },
-        "fseq_sha256": "95ccf28607f186f03b72e2164c51d52b99a80508c44331a4dbaea12c324017eb",
-        "rendered_at": "2026-10-18T20:28:22.903232-05:00"
+        "fseq_sha256": "ab9a861f6bbdab6953e8044a0b20add9e6b42665a86ee559ac54623c66cd6158",
+        "rendered_at": "2026-10-19T11:16:37.082570-05:00"
       },
-      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
+      "deployed_at": "2026-10-19T11:44:08.161002-05:00",
+      "tombstone_lit_pixels": {
+        "Tombsone large": 26,
+        "Tombsone Small": 13,
+        "Boscoyo ChromaStone 1": 20,
+        "Tombsone large-2": 26,
+        "Boscoyo ChromaStone 5": 27,
+        "Boscoyo ChromaStone 3": 19,
+        "Tombsone Small-2": 18
+      },
+      "latest_deployment": "projector-sign-refresh-latest.json"
     },
     "Zombie": {
       "sequence": "Sequences/Zombie/Zombie.xsq",
@@ -484,19 +992,29 @@
       ],
       "frames": 10044,
       "frame_ms": 25,
-      "fseq_sha256": "2bb734a57acf229db1660d7121b96d962f9281029d78411bccb3c674a67162ad",
+      "fseq_sha256": "3693e26ee52057a8b6eb0c5def1fb3a372eb5f7c3fa8fd0e3906c6899a054774",
       "local_render": {
         "fseq": {
-          "channels": 297432,
           "frames": 10044,
           "frame_ms": 25,
-          "id": "1792373321827144",
-          "bytes": 225172142
+          "id": "1792426617204048",
+          "channels": 297318,
+          "bytes": 259046501
         },
-        "fseq_sha256": "2bb734a57acf229db1660d7121b96d962f9281029d78411bccb3c674a67162ad",
-        "rendered_at": "2026-10-18T20:28:42.703576-05:00"
+        "fseq_sha256": "3693e26ee52057a8b6eb0c5def1fb3a372eb5f7c3fa8fd0e3906c6899a054774",
+        "rendered_at": "2026-10-19T11:17:01.822250-05:00"
       },
-      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
+      "deployed_at": "2026-10-19T11:44:08.161002-05:00",
+      "tombstone_lit_pixels": {
+        "Tombsone large": 26,
+        "Tombsone Small": 13,
+        "Boscoyo ChromaStone 1": 20,
+        "Tombsone large-2": 26,
+        "Boscoyo ChromaStone 5": 27,
+        "Boscoyo ChromaStone 3": 19,
+        "Tombsone Small-2": 18
+      },
+      "latest_deployment": "projector-sign-refresh-latest.json"
     },
     "static halloween": {
       "sequence": "Sequences/static halloween/static halloween.xsq",
@@ -506,19 +1024,31 @@
       ],
       "frames": 1200,
       "frame_ms": 25,
-      "fseq_sha256": "7b67d643523d784f0d2045156adcdbef7781db34fa8b6cd9eea5425be24805c2",
+      "fseq_sha256": "37fc6de49be1a8f16f4d98e1de151bb6ce693732bca523872aaef060ae3aefc8",
       "local_render": {
         "fseq": {
-          "channels": 249261,
           "frames": 1200,
           "frame_ms": 25,
-          "id": "1792372957720460",
-          "bytes": 27928854
+          "id": "1792580157775131",
+          "channels": 249147,
+          "bytes": 16308627
         },
-        "fseq_sha256": "7b67d643523d784f0d2045156adcdbef7781db34fa8b6cd9eea5425be24805c2",
-        "rendered_at": "2026-10-18T20:22:37.866393-05:00"
+        "fseq_sha256": "37fc6de49be1a8f16f4d98e1de151bb6ce693732bca523872aaef060ae3aefc8",
+        "rendered_at": "2026-10-21T05:55:59.165243-05:00"
       },
-      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
+      "deployed_at": "2026-10-21T05:57:28.405082-05:00",
+      "tombstone_lit_pixels": {
+        "Tombsone large": 26,
+        "Tombsone Small": 13,
+        "Boscoyo ChromaStone 1": 20,
+        "Tombsone large-2": 26,
+        "Boscoyo ChromaStone 5": 27,
+        "Boscoyo ChromaStone 3": 19,
+        "Tombsone Small-2": 18
+      },
+      "latest_deployment": "static-character-animation-latest.json",
+      "vader": "White helmet; mouth breathes white/black every six seconds",
+      "teddy": "Occasional arm waves and left/right/upward glances"
     },
     "tuneto-halloween": {
       "sequence": "Sequences/tuneto-halloween/tuneto-halloween.xsq",
@@ -527,19 +1057,29 @@
       ],
       "frames": 1200,
       "frame_ms": 25,
-      "fseq_sha256": "759a7333316f1010d8a30511e609090ca624d623d79ec9d8bf438db6f9eeb1ec",
+      "fseq_sha256": "8a66c9bc82c1750864ea0ba8ceb4fcd2d8a52fabeffc052b0328798612af484c",
       "local_render": {
         "fseq": {
-          "channels": 184320,
           "frames": 1200,
           "frame_ms": 25,
-          "id": "1792372949716382",
-          "bytes": 12845374
+          "id": "1792426628476694",
+          "channels": 184320,
+          "bytes": 3052196
         },
-        "fseq_sha256": "759a7333316f1010d8a30511e609090ca624d623d79ec9d8bf438db6f9eeb1ec",
-        "rendered_at": "2026-10-18T20:22:29.804066-05:00"
+        "fseq_sha256": "8a66c9bc82c1750864ea0ba8ceb4fcd2d8a52fabeffc052b0328798612af484c",
+        "rendered_at": "2026-10-19T11:17:08.790693-05:00"
       },
-      "deployed_at": "2026-10-19T05:39:34.728578-05:00"
+      "deployed_at": "2026-10-19T11:44:08.161002-05:00",
+      "tombstone_lit_pixels": {
+        "Tombsone large": 0,
+        "Tombsone Small": 0,
+        "Boscoyo ChromaStone 1": 0,
+        "Tombsone large-2": 0,
+        "Boscoyo ChromaStone 5": 0,
+        "Boscoyo ChromaStone 3": 0,
+        "Tombsone Small-2": 0
+      },
+      "latest_deployment": "projector-sign-refresh-latest.json"
     }
   },
   "current_import_maps": [
@@ -559,8 +1099,8 @@
     "Sequences/Thriller Xtreme Remap/Tools/Preserve projector and faces - Shared Halloween.xjmap",
     "Sequences/Zombie/Tools/Halloween import - Shared Halloween.xjmap"
   ],
-  "verification_record": "single-show-consolidation-latest.json",
-  "local_recovery_backup": "/Users/elliott.ohara/xlights/Halloween/Backups/Single Halloween show 20261018-141143",
+  "verification_record": "static-character-animation-latest.json",
+  "local_recovery_backup": "/Users/elliott.ohara/xlights/Halloween/Backups/Titanium projector show and readable sign 20261019-110024",
   "playback_refresh_required": false,
   "controller_correction": {
     "record": "garage-left-bottom-port8-latest.json",
@@ -615,12 +1155,12 @@
     ],
     "rerender_required": false
   },
-  "latest_local_batch_render": "garage-batch-render-latest.json",
+  "latest_local_batch_render": "projector-sign-refresh-latest.json",
   "all_local_renders_current": true,
-  "local_batch_render_finished_at": "2026-10-18T16:40:27.846974-05:00",
+  "local_batch_render_finished_at": "2026-10-19T11:19:52.937663-05:00",
   "master_must_remain_running": true,
-  "latest_deployment": "website-promotion-latest.json",
-  "deployed_at": "2026-10-19T05:39:34.728578-05:00",
+  "latest_deployment": "ghostbusters-sign-lyrics-latest.json",
+  "deployed_at": "2026-10-31T10:40:06.302190-05:00",
   "selfie_station_setup": {
     "ip": "192.168.0.213",
     "report": "selfie-station-setup-latest.json",
@@ -628,12 +1168,16 @@
     "verified_at": "2026-10-18T17:46:59.446375-05:00"
   },
   "website_promotion": {
-    "url": "https://oharafamilylightshow.com/",
-    "fm": "87.9",
-    "equal_radio_prominence": true,
-    "qr_duration_ms": 15000,
-    "qr_interval_ms": 60000,
-    "qr_appearances": 84,
-    "sequences": 24
-  }
+    "qr_target": "Tune To",
+    "qr_hold": "entire sequence, fixed position",
+    "projector_qr_enabled": false,
+    "evidence": "projector-sign-refresh-latest.json"
+  },
+  "layout_sha256": "def3f4f25fc3ba9070a940e0a0621e0342bd0a1604a1222c1bf4b691d3668176",
+  "network_sha256": "1d3e613b5146e1252cea5d703b10da96fbcabf574742b8f9dbab318d9eed5e20",
+  "last_change": "Ghostbusters lyrics on Tune To beneath fixed 87.9 FM; exact original audio without lyric-video stream; all non-sign frames preserved",
+  "tombstone_repair_report": "tombstone-photo-repair-latest.json",
+  "projector_sign_refresh_report": "projector-sign-refresh-latest.json",
+  "vader_white_report": "vader-white-latest.json",
+  "ghostbusters_lyrics_report": "ghostbusters-sign-lyrics-latest.json"
 }

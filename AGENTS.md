@@ -1,5 +1,29 @@
 # xLights Show Directory — Agent Notes
 
+## Titanium individual verse notes — October 19, 2026
+
+- User requested individual snowflakes and tombstones on different notes in both the opening and second verse, replacing rose-bank pulses. Titanium's second verse (91.900–122.400 seconds) repeats the opening's per-note target pattern across 90 notes, with no more than two overlapping props. Projector rings follow those notes. The prior whole-yard transition ends at 91.900 seconds, and the all-flake build in that window is removed. Preserve all other lyrics/choreography and the opening pattern. Evidence and deployment status: `Halloween/titanium-second-verse-latest.json` and `Halloween/vader-white-latest.json`.
+
+## Vader must be white — October 19, 2026
+
+- User explicitly requested changing red Vader to white. The shared `GE Dark Helmet` face definition named `Vader` now forces white for all face colors, including mouth and outline, with `CustomColors=1` retained. Node ranges, phonemes, timings, geometry, channels and output brightness are unchanged. Do not restore its old red forced colors from vendor layouts or backups.
+- Four active sequences use him: both Titanium versions, The Imperial March, and 03 - This Is Halloween. White rendering and live installation progress are recorded in `Halloween/vader-white-latest.json`, following the fixed-sign/projector refresh. Preserve the QR changes and Titanium's individual opening choreography. Never stop Master.
+
+## QR belongs only on Tune To — October 19, 2026
+
+- User explicitly dislikes distracting projector QR cards and requested the change for **every Halloween sequence**. QR belongs only on `Tune To`, stationary in the same position for long periods. The current design holds it throughout each sequence, including voting invitations, with bold white website/radio text on black. Keep `87.9 FM` and the website readable.
+- Projector is for song visuals. Preserve existing videos and choreography; never reintroduce website/QR interruptions on Projector. Titanium's projector now follows the opening notes and the song's verse/chorus effects. The earlier individual snowflake/tombstone opening remains in place.
+- This supersedes the October 18 projector QR schedule and the older rule to mirror Projector onto Tune To. `Halloween/show-folder-policy.json` records the new promotion policy. Shared sequence defaults honor it; use the current sign assets in `Halloween/WebsitePromotion/TuneToReadable-v2/`.
+- Rendering/deployment progress and recoverable originals: `Halloween/projector-sign-refresh-latest.json`. Authorization or a local render does not prove live deployment; inspect that report's current status. Never stop/restart Master.
+
+## Seven photo-counted tombstones — October 19, 2026
+
+- Photos establish seven tombstones from left to right: **26, 13, 20, 26, 27, 19, 18 RGB pixels**, 149 total. Native model order is `Tombsone large`, `Tombsone Small`, `Boscoyo ChromaStone 1`, `Tombsone large-2`, `Boscoyo ChromaStone 5`, `Boscoyo ChromaStone 3`, `Tombsone Small-2`. The final model is now active at the right end and included in tombstone/whole-scene mapping groups.
+- Oak Kulp **FPP-KULP16-01 / 192.168.0.253** now has the first four on **port 11 (85 pixels)** and the last three on **port 12 (64 pixels)**, WS2811 RGB at 30%. The second's old count 50 is corrected to 13; the third 19 to 20; the sixth 21 to 19. The sixth's two excess pixels explain the two lit pixels on the added prop. Native xLights and live physical port assignments now agree; this supersedes the former controller-only four/two override and its warning.
+- User explicitly approved clean configuration and batch re-rendering. Native allocation shifts Column Left, Dark Helmet, Evil Clown and Right Wing down 60 channels within this controller. Its existing **17,637-channel capacity** is retained with automatic model layout and fixed controller size; all other controller ranges and Master's routes remain unchanged. Preserve these current addresses, not older render plans.
+- All **24 sequences / 25 playback filenames** were natively rendered and deployed to Master and Projector with full remote checksums and metadata verification. All 149 tombstone pixels light in render checks; website/sign pixels and 24 QR decodes passed. Authored effects, singing repairs, playlists, schedule, media and AV configuration were preserved. Master stayed running; only the oak pixel service restarted and its previous test mode was restored. Actual physical illumination awaits the user's observation.
+- Evidence: `Halloween/tombstone-photo-repair-latest.json`; photos, source/layout/output snapshots and recovery copies are in its backup directory. `Halloween/current-show.json` records this deployed generation.
+
 ## Website and radio promotion — October 18, 2026
 
 - Give `oharafamilylightshow.com` equal prominence with `87.9 FM` on Tune To. All 24 active Halloween sequences now show both throughout playback. Preserve this website messaging when refreshing defaults or mapping future songs.
@@ -397,3 +421,40 @@ For ordinary Halloween work, work directly in `/Users/elliott.ohara/xlights/Hall
 - User explicitly allowed the **four arches to remain on their controllers**, even though they are inactive/hidden in the Halloween layout. Preserve FPP-KULP16-02 / 192.168.0.205 port 12 = Arch 1/2 and port 13 = Arch 3/4. This is an exception to the visibility rule.
 - User removed the **four hidden flakes and both programmed singing bulbs**: Elliott - GE Flake N 1/2, GE Flake A 1/2, Singing Bulb - Left/Right. Cleared FPP-KULP16-01 / 192.168.0.253 ports 9, 10, 19 and 20, restarted its output service and verified the hardware readback. Every other oak-controller output and the entire arches controller configuration were verified unchanged.
 - The six inactive models remain saved for archival use but now have **No Controller and no ControllerConnection** in the master and 24 active standalone layouts. Native unassigned ranges were verified outside every controller allocation. Geometry, submodels, groups, custom song-only models and sequence effects are preserved. No sequence files were edited, rendered or transferred. Evidence/backups: `Halloween/disconnect-hidden-flakes-bulbs-latest.json`. Existing full address-refresh plans/renders remain stale while layout corrections continue; sequence transfers remain on hold.
+
+
+## Imperial March character roles — October 19, 2026
+
+- User moved “You don’t know the power of the dark side” dialogue to Evil Clown. Imperial March now gives him all dialogue, including the later fragments, through `Imperial March - Evil Clown Dialogue` (78 words / 205 phonemes). White Vader holds a visible resting helmet; only his Mouth submodel fades with the recorded breaths at 4.150–6.625 and 160.775–163.250 seconds. Do not restore his prior dialogue Faces effects. Other songs and shared face definitions are unchanged.
+- Every rendered frame and all Clown phonemes passed pixel checks; all output outside the two characters is identical. Updated playback installed on Master and Projector with complete checksums and metadata verified; Master stayed running. Evidence: `Halloween/imperial-clown-vader-breath-latest.json`.
+
+
+## Vader breathing correction requested — October 19, 2026
+
+- User rejected the prior Imperial March breathing. Required mouth pattern is **white → black → white**, returning to white between breaths. The prior two breath windows were inferred from waveform matching; the agent could not directly listen to local audio. Treat those timings as unconfirmed, and do not claim audio timing verified from pixel checks. Evil Clown dialogue remains correct and must be preserved. Correction progress: `Halloween/imperial-vader-breath-correction-latest.json`. Never stop Master.
+
+
+## Vader mouth white → black → white — October 19, 2026
+
+- User corrected the mouth direction and identified a breath around six seconds. Mouth now stays white between breaths; it fades to black at 6.050–6.250 seconds and returns to white by 7.300 seconds. The matching later breath uses the same shape at +156.625 seconds (snapped from the measured +156.632-second audio match). This supersedes the previous black/white/black mouth swells.
+- Timing comes from the user’s cue and analysis of the recording’s breath-noise envelope; direct listening was not available. All 7,547 output frames verify the white/black/white pattern, and every pixel outside Vader Mouth—including Clown speech, helmet outline, projector and Tune To—is identical. Live files on Master and Projector have complete checksums and metadata verified. Master stayed running; routing, playlists and schedule are preserved. Evidence: `Halloween/imperial-vader-breath-correction-latest.json`.
+
+
+## Vader breathing follows user Color Wash pattern — October 19, 2026
+
+- User authored Mouth examples and explicitly asked to follow their color fades. Preserve the exact On at 0–6.925 seconds, gap through 9.300, and Color Wash effects at 9.300–11.775 and 11.775–14.250. Their Color Wash has white and black checked, 2.0 cycles, 2.475-second duration, no shimmer or spatial fades. Continue the identical pattern from 14.250 to the song end, keeping the final partial effect at the same fade rate. This user pattern supersedes all earlier inferred two-breath envelopes and between-breath assumptions.
+- Every full added repeat matches the user example RGB values exactly, frame for frame. All three original user effects and every output pixel outside Vader Mouth are preserved, including Evil Clown speech, white helmet, projector and fixed Tune To sign/QR. Live files on Master and Projector verified with complete checksums and native metadata; Master stayed running and playlists/schedule/routing are preserved. Evidence: `Halloween/imperial-vader-user-pattern-latest.json`.
+
+
+## Static characters — October 21, 2026
+
+- User requested Vader breathing and occasional Teddy arm/eye movement. Vader holds a white helmet; only his Mouth fades from black to white over two seconds, back to black over 2.5 seconds, then rests dark for 1.5 seconds, repeating five times in the 30-second loop.
+- Teddy retains his original colors/red bow, resting mouth and slow blinks. Existing arms states make a left wave, a right wave and a both-arm stretch; existing eye direction states add four brief glances. He returns arms down at the loop boundary. Shared definitions and addresses are unchanged.
+- Native rendering and all 1,200 frames verified: white mouth fades, correct arm poses and gaze pupils; every output pixel outside the two characters is identical to the prior deployed render, including the fixed Tune To QR/website/radio sign and projector. Both existing static filenames deployed to Master and Projector with complete remote checksums and metadata verified. Master stayed running; playlists, schedule and routing are unchanged. Physical appearance awaits user observation. Evidence: `Halloween/static-character-animation-latest.json`.
+
+
+## Ghostbusters lyrics on Tune To — October 31, 2026
+
+- Both Ghostbusters versions now put their 75 synchronized lead phrases on Tune To, under a fixed `87.9 FM` header. Website and stationary upper-left QR remain. Preserve this song-specific sign treatment.
+- Ghostbusters playback media is now audio-only MPEG-4 under the existing FPP `.mp4` filename; AAC packets are unchanged. This removes the separate lyric-video layer from the projector while preserving the authored projector videos. Do not replace it with the old lyric MP4 from source/backups.
+- Native sign frames verified; every other channel in every deployed frame preserved byte-for-byte. Both players' files, metadata and decoders verified. Master stayed running; playlist, schedule, layout, routes and AV settings unchanged. Evidence: `Halloween/ghostbusters-sign-lyrics-latest.json`.
