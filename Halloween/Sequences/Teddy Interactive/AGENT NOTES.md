@@ -1,5 +1,12 @@
 # Teddy Interactive — agent notes
 
+## HTTP publishing bootstrapped; canonical Pi checkout — November 2, 2026
+
+- One-time bootstrap is complete. Main `19c1241855ecbe5948b9021985d6f212371e9099` includes required #124 (`34e1c18b`) plus the exact previously deployed Teddy fixes (#123/#125), preserving current conversation behavior. Pi canonical checkout is now `/home/yardhost/oharafamilylightshow`, service working directory `yard-host/` there, existing venv remains `/home/yardhost/ofls-yard-host/.venv`. The old deployed folder is retained for recovery/data. Use the Git checkout for future code updates.
+- The existing **user** service is preserved. Publisher uses `YARD_HOST_SYSTEMD_USER=1`; health, detached `systemd-run --user` job and restart all target that service. Publisher settings/lock/status paths are forwarded without HMAC/AWS secrets on command arguments. GitHub access uses a Pi-local read-only deploy key; checkout is clean. Authored persona bytes, existing conversation modules, profiles, cache and cooldowns were verified unchanged during activation.
+- Public `GET https://99.189.78.175/yard/health` returned **200**, `ok=true`, `service=active`, `commit_short=19c1241`, `updating=false`. Signed `POST /yard/reload` returned **202**; health settled with `last_update.phase=unchanged`, matching the pulled SHA. HTTPS nginx now proxies `/yard/reload`, `/yard/health`, and `/yard/update` to `127.0.0.1:8770`, explicitly preserving both HMAC headers. `/etc/ofls-yard-host.env` has the same existing callback secret; no value was printed. Master stayed running.
+- Evidence: `Halloween/yard-host-http-bootstrap-latest.json`; runbook: `oharafamily/oharafamilylightshow:docs/yard-host-publish.md`. After merging to main, publish over authenticated HTTPS and poll health; SSH bootstrap is no longer needed. Separate pending work: fix the short Christmas-movie-answer/Elf follow-up and add complete private transcripts for GrokBot's user-authorized tested automatic improvement loop. Those behavior changes were excluded from this bootstrap as explicitly requested.
+
 ## Teddy is a kid; Mr. Elliott / Professor Elliott — November 2, 2026
 
 - User explicitly wants Teddy to sound like a kid talking to another kid: super informal, playful and really friendly. Kid-style hellos, short easy questions, authored shares, live replies and opt-in wording are installed. The existing Kevin voice is retained. Do not restore adult-host phrases such as “lovely,” “delightful,” formal activity/tradition interviews, or the old bare-name fact opening.

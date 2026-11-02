@@ -1,0 +1,112 @@
+{
+  "schema": "yard-host-http-bootstrap.v1",
+  "updated_at": "2026-11-02T16:54:52.141792-06:00",
+  "status": "complete",
+  "running_sha": "19c1241855ecbe5948b9021985d6f212371e9099",
+  "required_ancestor": "34e1c18b2d7da313d55af9d5723e446a29d56235",
+  "github_main_contains_current_deployed_behavior": true,
+  "merged_pull_requests": [
+    123,
+    124,
+    125
+  ],
+  "repo": "oharafamily/oharafamilylightshow",
+  "pi_checkout": "/home/yardhost/oharafamilylightshow",
+  "service_working_directory": "/home/yardhost/oharafamilylightshow/yard-host",
+  "existing_venv": "/home/yardhost/ofls-yard-host/.venv",
+  "service_scope": "user",
+  "publisher_user_mode": true,
+  "read_only_github_deploy_key_id": 168527599,
+  "nginx": {
+    "nginx_test": "passed",
+    "nginx_reloaded": true,
+    "routes_added": [
+      "/yard/reload",
+      "/yard/health",
+      "/yard/update"
+    ],
+    "proxy_target": "http://127.0.0.1:8770",
+    "hmac_headers_forwarded": true,
+    "etc_callback_secret_set": true,
+    "secret_matches_existing_user_env": true,
+    "secret_printed": false,
+    "backup": "/var/backups/ofls-yard-http-20261102-225223",
+    "master_commands_issued": false
+  },
+  "activation": {
+    "schema": "ofls-http-bootstrap-user-step.v1",
+    "commit": "19c1241855ecbe5948b9021985d6f212371e9099",
+    "backup": "/home/yardhost/ofls-yard-host/backups/http-bootstrap-enable-20261102-225204",
+    "local_health": {
+      "ok": true,
+      "service": "active",
+      "service_unit": "ofls-yard-host.service",
+      "commit": "19c1241855ecbe5948b9021985d6f212371e9099",
+      "commit_short": "19c1241",
+      "updating": false
+    },
+    "service_status": "active",
+    "git_clean": true,
+    "existing_conversation_modules_and_persona_preserved": true,
+    "cache_unchanged_during_activation": true,
+    "env_callback_secret_set": true,
+    "master_before": {
+      "fppd": "running",
+      "status_name": "idle",
+      "uptime": "15 days, 01:29:22"
+    },
+    "master_after": {
+      "fppd": "running",
+      "status_name": "idle",
+      "uptime": "15 days, 01:29:32"
+    },
+    "master_commands_issued": false
+  },
+  "https_smoke": {
+    "signed_reload_http": 202,
+    "reload": {
+      "ok": true,
+      "status": "started",
+      "commit_before": "19c1241855ecbe5948b9021985d6f212371e9099",
+      "commit_before_short": "19c1241",
+      "health_path": "/yard/health",
+      "message": "Poll GET /yard/health until ok is true and commit matches origin/main after restart."
+    },
+    "health": {
+      "ok": true,
+      "service": "active",
+      "service_unit": "ofls-yard-host.service",
+      "commit": "19c1241855ecbe5948b9021985d6f212371e9099",
+      "commit_short": "19c1241",
+      "updating": false,
+      "last_update": {
+        "phase": "unchanged",
+        "ok": true,
+        "commit_before": "19c1241855ecbe5948b9021985d6f212371e9099",
+        "commit_after": "19c1241855ecbe5948b9021985d6f212371e9099",
+        "finished_at": "2026-11-02T22:53:20Z",
+        "message": "already up to date"
+      }
+    },
+    "hmac_secret_printed": false
+  },
+  "health_url": "https://99.189.78.175/yard/health",
+  "secret_values_logged_or_committed": false,
+  "tests": {
+    "github_ci": "passed",
+    "github_actions_run": "https://github.com/oharafamily/oharafamilylightshow/actions/runs/41540635805",
+    "isolated_full_run": {
+      "passed": 326,
+      "fixture_mock_failure_corrected": true,
+      "optional_node_skip": 1,
+      "subtests_passed": 82
+    },
+    "publisher_final_targeted_tests_passed": 12
+  },
+  "backup": "/Users/elliott.ohara/xlights/Halloween/Backups/Yard host HTTP bootstrap 20261102-165452",
+  "current_behavior_report": "Halloween/teddy-kid-voice-latest.json",
+  "pending_separate_work": [
+    "Movie-answer follow-up regression: short Elf preference was interpreted as generic elves/clarification. No behavioral fix included in this bootstrap.",
+    "User wants complete private transcripts for GrokBot review and tested automatic conversation improvements; current webhook sends per-utterance text and rolling memory, not a complete ordered archive."
+  ]
+}
