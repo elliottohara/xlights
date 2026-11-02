@@ -1,6 +1,6 @@
 {
   "schema": "grok-teddy-setup.v1",
-  "updated_at": "2026-11-02T15:38:41.069443-06:00",
+  "updated_at": "2026-11-02T16:30:06.465016-06:00",
   "status": "pi_authored_personal_conversation_ready",
   "backup": "/Users/elliott.ohara/xlights/Halloween/Backups/GrokBot setup 20261102-0818",
   "grok_coordination": {
@@ -115,13 +115,14 @@
     "polly_generation_approval": "approved",
     "private_s3_backup_approval": "approved",
     "private_s3_backup_verified": true,
-    "source_revision": "d789700de368fc69c85b827721b60d46b71a3aa2",
-    "report": "Halloween/teddy-recognition-consent-latest.json",
+    "source_revision": "2b5aea6a7fb3e480a4af12db2f1e1a9ec6549754",
+    "report": "Halloween/teddy-kid-voice-latest.json",
     "authored_persona_connected": true,
     "real_camera_arrival_verified": true,
     "warm_time_aware_welcomes": true,
     "borderline_recognition_retry": true,
-    "friendly_opt_in_confirmation": true
+    "friendly_opt_in_confirmation": true,
+    "kid_voice": true
   },
   "preserved": {
     "master_running": true,
@@ -138,26 +139,26 @@
     "display_sleep_prevented": true,
     "independent_of_chat_process": true
   },
-  "superseded_by": "Halloween/teddy-recognition-consent-latest.json",
+  "superseded_by": "Halloween/teddy-kid-voice-latest.json",
   "current_runtime_verification": {
-    "schema": "teddy-secondlook-verification.v1",
+    "schema": "teddy-kidvoice-verification.v1",
     "ready": true,
-    "verified_at": "2026-11-02T21:37:11.406381+00:00",
-    "source_revision": "d789700de368fc69c85b827721b60d46b71a3aa2",
+    "verified_at": "2026-11-02T22:29:17.669362+00:00",
+    "source_revision": "2b5aea6a7fb3e480a4af12db2f1e1a9ec6549754",
     "pull_request": "https://github.com/oharafamily/oharafamilylightshow/pull/125",
-    "runtime_revision": "050ddbbecb355e80826ad75c50cbba12dae68eb6+single-use-796857a+refill-07e0912+reciprocity-f2911f7+arrival-0366e0e+warm-056a4bf+secondlook-d789700",
-    "verified_modules": 55,
+    "runtime_revision": "050ddbbecb355e80826ad75c50cbba12dae68eb6+single-use-796857a+refill-07e0912+reciprocity-f2911f7+arrival-0366e0e+warm-056a4bf+secondlook-d789700+kidvoice-2b5aea6",
+    "verified_modules": 56,
     "hash_mismatches": [],
-    "persona_sha256": "957b0bdb253012637c5a93c49ca179d66203d90f686e0b4ff7ce6c410e939175",
+    "persona_sha256": "503a4b2bff66997801b473142af029eabd4e9e38b8e61aa00779e4099c5f8ef0",
     "local_time_period": "afternoon",
     "ready_clips": 8,
     "personal_clips": 6,
     "guest_count": 2,
     "layout_counts": {
-      "question_first": 2,
-      "share_first": 4
+      "question_first": 3,
+      "share_first": 3
     },
-    "actual_prepared_example": "Welcome back, Elliott! It's nice to chat this afternoon! Which holiday tradition do you look forward to the most? Miss Heather gets a new prop for the light show every year.",
+    "actual_prepared_example": "Hey hey, Elliott! This is gonna be fun this afternoon! Oh, get this! Miss Heather got me for Christmas! What's your favorite Christmas movie?",
     "single_use_enabled": true,
     "used_history_preserved": true,
     "private_backup_verified": true,
@@ -174,43 +175,46 @@
     "master": {
       "fppd": "running",
       "status_name": "idle",
-      "uptime": "15 days, 14:29"
+      "uptime": "15 days, 01:06:35"
     },
     "effects": [
       "Teddy Interactive Idle"
     ],
     "install": {
-      "schema": "teddy-secondlook-install.v1",
+      "schema": "teddy-kidvoice-install.v1",
       "status": "installed",
-      "source_revision": "d789700de368fc69c85b827721b60d46b71a3aa2",
-      "backup": "/home/yardhost/ofls-yard-host/backups/secondlook-enable-20261102-213611",
+      "source_revision": "2b5aea6a7fb3e480a4af12db2f1e1a9ec6549754",
+      "backup": "/home/yardhost/ofls-yard-host/backups/kidvoice-enable-20261102-222853",
       "module_sha256": {
-        "visit.py": "3ff7187d1554f7ea14f58604c452b5652e89e7173b6216d7026bea58ad8a2a35",
-        "camera_wake.py": "b8388d170ad38310c26e472525ff12138990cb2de6612b8cc8a1afbbe6aca60b",
-        "face_presence.py": "d97992fe75b098c92be95b1df56131bab9a0e22374a37cfb501dfad1ae311a44"
+        "visit.py": "80564a0dca878f914a9dac270a0ed73f36f8474ba7dce9c395a76ab6bb283c1c",
+        "bedrock_session.py": "4346c84b28c4222e1fa4868c62d4439f1509e5c8779505c0e54a9ab60f3d6eca",
+        "greeting_cache/personal.py": "d0085ce2eff2520af29853f2d283b050af0d25d17da423b63b04c142680e175a",
+        "greeting_cache/style.py": "ba55dc270dee64f75e49b26bc851af134dea0c60e6ffa30f5de82573c471a7ed",
+        "greeting_cache/usage.py": "7ab07b039a9dc2565462f84fb36cfe804f97e2051f0dc3f5f15e7a2fb8c9c83f",
+        "teddy_voice.py": "4b06691b21bca6d51ad148a39f3b430b28ef472aeb57cf8d8017c89908a53026"
       },
-      "persona_sha256": "957b0bdb253012637c5a93c49ca179d66203d90f686e0b4ff7ce6c410e939175",
-      "runtime_revision": "050ddbbecb355e80826ad75c50cbba12dae68eb6+single-use-796857a+refill-07e0912+reciprocity-f2911f7+arrival-0366e0e+warm-056a4bf+secondlook-d789700",
+      "persona_sha256": "503a4b2bff66997801b473142af029eabd4e9e38b8e61aa00779e4099c5f8ef0",
+      "runtime_revision": "050ddbbecb355e80826ad75c50cbba12dae68eb6+single-use-796857a+refill-07e0912+reciprocity-f2911f7+arrival-0366e0e+warm-056a4bf+secondlook-d789700+kidvoice-2b5aea6",
+      "ready_clips_at_activation": 8,
+      "personal_clips_at_activation": 6,
+      "local_time_period": "afternoon",
+      "usage_history_and_cooldowns_preserved": true,
       "all_module_hashes_match": true,
-      "verified_module_count": 55,
-      "unused_greeting_plans_migrated": 2,
-      "cache_manifest_usage_and_cooldowns_unchanged_before_restart": true,
-      "unused_audio_reused": true,
-      "face_profiles_not_modified_by_installer": true,
-      "configuration_and_recognition_cutoff_unchanged": true,
+      "verified_module_count": 56,
       "master_before": {
         "fppd": "running",
         "status_name": "idle",
-        "uptime": "15 days, 13:30"
+        "uptime": "15 days, 01:06:11"
       },
       "master_after": {
         "fppd": "running",
         "status_name": "idle",
-        "uptime": "15 days, 13:34"
+        "uptime": "15 days, 01:06:21"
       },
       "fpp_services_restarted": false,
       "physical_audio_test_triggered": false
     },
     "physical_audio_test_triggered": false
-  }
+  },
+  "source_revision": "2b5aea6a7fb3e480a4af12db2f1e1a9ec6549754"
 }

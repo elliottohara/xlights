@@ -1,0 +1,164 @@
+{
+  "schema": "teddy-kid-voice-deployment.v1",
+  "updated_at": "2026-11-02T16:30:06.465016-06:00",
+  "status": "installed_and_verified_ready_for_user_test",
+  "source_revision": "2b5aea6a7fb3e480a4af12db2f1e1a9ec6549754",
+  "pull_request": "https://github.com/oharafamily/oharafamilylightshow/pull/125",
+  "pull_request_status": "draft, CI passed, installed on Pi",
+  "backup": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy kid voice 20261102-163006",
+  "behavior": {
+    "kid_talking_to_kid": true,
+    "playful_casual_hellos_and_short_questions": true,
+    "default_author_name": "Mr. Elliott",
+    "professor_elliott_only_for_visitors_own_current_bjj_practice": true,
+    "sibling_watching_or_hypothetical_bjj_not_enough": true,
+    "newer_corrections_override_memory": true,
+    "name_rules_in_cached_and_all_three_live_reply_paths": true,
+    "old_creator_alias_normalized_before_speech": true,
+    "guest_name_not_repeated_in_question": true,
+    "casual_opt_in_confirmation": "Yay! Next time, I'll say, 'Hey, {name}!' And I'll remember our chat!"
+  },
+  "tests": {
+    "exact_runtime": {
+      "passed": 319,
+      "skipped": 1,
+      "subtests_passed": 82
+    },
+    "github_ci": "passed",
+    "github_actions_run": "https://github.com/oharafamily/oharafamilylightshow/actions/runs/41537619432",
+    "fictional_real_model_rehearsal": {
+      "schema": "teddy-kidvoice-fictional-rehearsal.v1",
+      "passed": true,
+      "real_guest_data_used": false,
+      "physical_output_triggered": false,
+      "conversation": [
+        {
+          "fictional_prior": [],
+          "visitor": "I built a Lego dragon!",
+          "reply": "Wow, that's awesome! Did you make it all by yourself or did you get some help?"
+        },
+        {
+          "fictional_prior": [],
+          "visitor": "Who makes the lights?",
+          "reply": "Mr. Elliott makes the lights! He loves doing it and is always trying to make it better."
+        },
+        {
+          "fictional_prior": [
+            "user:I train BJJ."
+          ],
+          "visitor": "Who makes the lights?",
+          "reply": "Professor Elliott makes the lights! He loves doing it and keeps making them even cooler!"
+        },
+        {
+          "fictional_prior": [
+            "user:My brother does BJJ."
+          ],
+          "visitor": "Who makes the lights?",
+          "reply": "Mr. Elliott makes the lights! He loves doing it."
+        },
+        {
+          "fictional_prior": [
+            "user:I train BJJ.",
+            "user:I don't do BJJ anymore."
+          ],
+          "visitor": "Who makes the lights?",
+          "reply": "Mr. Elliott makes the lights! He loves doing it."
+        }
+      ],
+      "greetings": [
+        "Hi there, Alex! I'm so happy you're here this afternoon! Oh, get this! Miss Heather got me for Christmas! What's your favorite Christmas memory, Alex?",
+        "Hey Alex! So cool to see you this afternoon! What's a holiday tradition you love, Alex? Miss Heather gets something new for our lights every year!",
+        "Hey there, Alex! You came back this afternoon! Awesome! Guess what! Professor Elliott keeps making our lights even cooler! What do you like to make or create, Alex?"
+      ],
+      "existing_polly_voice": "Kevin"
+    }
+  },
+  "verification": {
+    "schema": "teddy-kidvoice-verification.v1",
+    "ready": true,
+    "verified_at": "2026-11-02T22:29:17.669362+00:00",
+    "source_revision": "2b5aea6a7fb3e480a4af12db2f1e1a9ec6549754",
+    "pull_request": "https://github.com/oharafamily/oharafamilylightshow/pull/125",
+    "runtime_revision": "050ddbbecb355e80826ad75c50cbba12dae68eb6+single-use-796857a+refill-07e0912+reciprocity-f2911f7+arrival-0366e0e+warm-056a4bf+secondlook-d789700+kidvoice-2b5aea6",
+    "verified_modules": 56,
+    "hash_mismatches": [],
+    "persona_sha256": "503a4b2bff66997801b473142af029eabd4e9e38b8e61aa00779e4099c5f8ef0",
+    "local_time_period": "afternoon",
+    "ready_clips": 8,
+    "personal_clips": 6,
+    "guest_count": 2,
+    "layout_counts": {
+      "question_first": 3,
+      "share_first": 3
+    },
+    "actual_prepared_example": "Hey hey, Elliott! This is gonna be fun this afternoon! Oh, get this! Miss Heather got me for Christmas! What's your favorite Christmas movie?",
+    "single_use_enabled": true,
+    "used_history_preserved": true,
+    "private_backup_verified": true,
+    "verified_remote_audio_and_timing_files": 16,
+    "encryption": "AES256",
+    "stale_current_audio_or_timing_objects": 0,
+    "health": {
+      "available": true,
+      "enabled": true,
+      "state": "awake",
+      "camera_active": true,
+      "microphone_active": false
+    },
+    "master": {
+      "fppd": "running",
+      "status_name": "idle",
+      "uptime": "15 days, 01:06:35"
+    },
+    "effects": [
+      "Teddy Interactive Idle"
+    ],
+    "install": {
+      "schema": "teddy-kidvoice-install.v1",
+      "status": "installed",
+      "source_revision": "2b5aea6a7fb3e480a4af12db2f1e1a9ec6549754",
+      "backup": "/home/yardhost/ofls-yard-host/backups/kidvoice-enable-20261102-222853",
+      "module_sha256": {
+        "visit.py": "80564a0dca878f914a9dac270a0ed73f36f8474ba7dce9c395a76ab6bb283c1c",
+        "bedrock_session.py": "4346c84b28c4222e1fa4868c62d4439f1509e5c8779505c0e54a9ab60f3d6eca",
+        "greeting_cache/personal.py": "d0085ce2eff2520af29853f2d283b050af0d25d17da423b63b04c142680e175a",
+        "greeting_cache/style.py": "ba55dc270dee64f75e49b26bc851af134dea0c60e6ffa30f5de82573c471a7ed",
+        "greeting_cache/usage.py": "7ab07b039a9dc2565462f84fb36cfe804f97e2051f0dc3f5f15e7a2fb8c9c83f",
+        "teddy_voice.py": "4b06691b21bca6d51ad148a39f3b430b28ef472aeb57cf8d8017c89908a53026"
+      },
+      "persona_sha256": "503a4b2bff66997801b473142af029eabd4e9e38b8e61aa00779e4099c5f8ef0",
+      "runtime_revision": "050ddbbecb355e80826ad75c50cbba12dae68eb6+single-use-796857a+refill-07e0912+reciprocity-f2911f7+arrival-0366e0e+warm-056a4bf+secondlook-d789700+kidvoice-2b5aea6",
+      "ready_clips_at_activation": 8,
+      "personal_clips_at_activation": 6,
+      "local_time_period": "afternoon",
+      "usage_history_and_cooldowns_preserved": true,
+      "all_module_hashes_match": true,
+      "verified_module_count": 56,
+      "master_before": {
+        "fppd": "running",
+        "status_name": "idle",
+        "uptime": "15 days, 01:06:11"
+      },
+      "master_after": {
+        "fppd": "running",
+        "status_name": "idle",
+        "uptime": "15 days, 01:06:21"
+      },
+      "fpp_services_restarted": false,
+      "physical_audio_test_triggered": false
+    },
+    "physical_audio_test_triggered": false
+  },
+  "preserved": {
+    "recognition_retry_and_profiles": true,
+    "cutoffs": true,
+    "polly_voice": "Kevin",
+    "voice_and_mouth_transport": true,
+    "single_use_history_and_cooldowns": true,
+    "private_backup": true,
+    "master_running": true,
+    "teddy_interactive_idle": true,
+    "show_settings_and_old_button_retirement": true
+  },
+  "next_step": "User observes the new kid-like delivery and name choices in a physical visit."
+}
