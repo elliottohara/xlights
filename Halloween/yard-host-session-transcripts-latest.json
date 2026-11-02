@@ -1,0 +1,64 @@
+{
+  "schema": "ofls-session-transcripts-enable.v1",
+  "checked_at": "2026-11-02T23:29:46.507674+00:00",
+  "commit_before": "19c1241855ecbe5948b9021985d6f212371e9099",
+  "git_clean_before": true,
+  "git_clean_after": true,
+  "environment_file": "/home/yardhost/.config/ofls-yard-host/yard-host.env",
+  "env_names_set": [
+    "YARD_SESSION_TRANSCRIPT_UPLOAD",
+    "YARD_SESSION_TRANSCRIPT_S3_BUCKET"
+  ],
+  "speaker_url_unchanged": true,
+  "callback_secret_existing_and_set": true,
+  "backup": "/home/yardhost/ofls-yard-host/backups/session-transcripts-enable-20261102-232844",
+  "reload": {
+    "status": 202,
+    "body": {
+      "ok": true,
+      "status": "started",
+      "commit_before": "19c1241855ecbe5948b9021985d6f212371e9099",
+      "commit_before_short": "19c1241",
+      "health_path": "/yard/health",
+      "message": "Poll GET /yard/health until ok is true and commit matches origin/main after restart."
+    }
+  },
+  "health": {
+    "ok": true,
+    "service": "active",
+    "service_unit": "ofls-yard-host.service",
+    "commit": "89e3204dbb32846aac6f82e5bdf1399536114f7e",
+    "commit_short": "89e3204",
+    "updating": false,
+    "last_update": {
+      "phase": "completed",
+      "ok": true,
+      "commit_before": "19c1241855ecbe5948b9021985d6f212371e9099",
+      "commit_after": "89e3204dbb32846aac6f82e5bdf1399536114f7e",
+      "finished_at": "2026-11-02T23:29:28Z",
+      "message": "update complete"
+    }
+  },
+  "reciprocity_verified": {
+    "null_category_has_no_fallback": true,
+    "favorites_mentions_greatest_show": true
+  },
+  "transcript_smoke": {
+    "worked": true,
+    "bucket": "oharafamilylightshow-yard-teddy-889378314673",
+    "key": "yard-teddy/session-transcripts/yard-host-pi/yard-bootstrap-smoke-20261102T232941Z-34dbfa11.json",
+    "fictional_smoke_no_physical_output": true,
+    "object_verified": true,
+    "encryption": "AES256",
+    "content_length": 832,
+    "document_commit": "89e3204dbb32846aac6f82e5bdf1399536114f7e"
+  },
+  "preserved": {
+    "master_fppd": "running",
+    "master_commands_issued": false,
+    "selfie_station_running_effect": "Teddy Interactive Idle",
+    "physical_speech_triggered": false,
+    "computer_keepawake_running": true
+  },
+  "local_evidence_backup": "/Users/elliott.ohara/xlights/Halloween/Backups/Yard host session transcripts 20261102-233034"
+}

@@ -1,5 +1,12 @@
 # xLights Show Directory — Agent Notes
 
+## Session transcripts and reciprocity enabled — November 2, 2026
+
+- Pi `.30` is running main `89e3204dbb32846aac6f82e5bdf1399536114f7e` (#126 transcripts, #127 reciprocity). The entire Git checkout was clean before and after. Updated through authenticated HTTPS `/yard/reload` (202); health settled at `commit_short=89e3204`, `ok=true`, `service=active`, `updating=false`, `last_update.phase=completed` at `2026-11-02T23:29:28Z`.
+- The actual user unit EnvironmentFile `/home/yardhost/.config/ofls-yard-host/yard-host.env` has `YARD_SESSION_TRANSCRIPT_UPLOAD` and `YARD_SESSION_TRANSCRIPT_S3_BUCKET` set as requested and verified in the restarted process. Existing `YARD_SPEAK_URL` and callback secret are preserved; no new secrets or root changes. Pi recovery: `/home/yardhost/ofls-yard-host/backups/session-transcripts-enable-20261102-232844/`.
+- Closed-session text export is now enabled to the private transcript prefix. The real uploader successfully wrote and read back fictional smoke object `yard-teddy/session-transcripts/yard-host-pi/yard-bootstrap-smoke-20261102T232941Z-34dbfa11.json` in `oharafamilylightshow-yard-teddy-889378314673`: AES256, 832 bytes, matching deployed commit, no real guest identity or physical output. This supersedes earlier transcript-export-pending notes; an ongoing GrokBot improvement loop and the short Elf-answer follow-up are separate work. Elliott has authorized applying tested conversation fixes automatically.
+- Live reciprocity helper returned no share hint for a null category; its favorites hint mentions The Greatest Show. Master and `Teddy Interactive Idle` remained running, and keep-awake remains active. Evidence: `Halloween/yard-host-session-transcripts-latest.json`.
+
 ## HTTP publishing bootstrapped; canonical Pi checkout — November 2, 2026
 
 - One-time bootstrap is complete. Main `19c1241855ecbe5948b9021985d6f212371e9099` includes required #124 (`34e1c18b`) plus the exact previously deployed Teddy fixes (#123/#125), preserving current conversation behavior. Pi canonical checkout is now `/home/yardhost/oharafamilylightshow`, service working directory `yard-host/` there, existing venv remains `/home/yardhost/ofls-yard-host/.venv`. The old deployed folder is retained for recovery/data. Use the Git checkout for future code updates.
