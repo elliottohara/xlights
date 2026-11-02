@@ -1,0 +1,158 @@
+{
+  "schema": "teddy-recognition-consent-deployment.v1",
+  "updated_at": "2026-11-02T15:38:41.069443-06:00",
+  "status": "installed_and_verified_physical_recognition_test_pending",
+  "host": "192.168.0.30",
+  "source_revision": "d789700de368fc69c85b827721b60d46b71a3aa2",
+  "pull_request": "https://github.com/oharafamily/oharafamilylightshow/pull/125",
+  "pull_request_status": "draft, CI passed, installed on Pi",
+  "backup": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy recognition and consent 20261102-153841",
+  "observed_failure": {
+    "reported_by_user": "Teddy did not recognize returning visitor; unwanted negative storage wording",
+    "logged_face_match_score": 0.475,
+    "existing_recognition_cutoff": 0.5,
+    "single_frame_unknown_decision": true,
+    "profiles_before_install": 2
+  },
+  "recognition_behavior": {
+    "only_borderline_sface_arrivals_rechecked": true,
+    "maximum_extra_frames": 4,
+    "sampling_deadline_seconds": 1.2,
+    "two_additional_same_identity_above_cutoff_matches_required": true,
+    "uncertain_or_conflicting_faces_remain_unknown": true,
+    "already_recognized_faces_not_delayed": true,
+    "recognition_cutoff_unchanged": 0.5,
+    "saved_references_not_retrained": true,
+    "shutdown_cancels_before_greeting": true,
+    "physical_recognition_improvement_unconfirmed": true
+  },
+  "consent_behavior": {
+    "explicit_opt_in_still_required": true,
+    "opt_in_prompt": "May I remember your name, face, and our chats for next time?",
+    "successful_confirmation": "Thanks, {name}! Next time you stop by, I'll greet you by name and remember what we talked about.",
+    "unclear_or_declined_intro_continues_chat_without_storage_commentary": true,
+    "unusable_enrollment_frame_does_not_make_memory_promise": true
+  },
+  "tests": {
+    "exact_runtime": {
+      "passed": 294,
+      "skipped": 1,
+      "subtests_passed": 82,
+      "skip_reason": "Optional Node/browser-signing test unavailable in native Pi test PATH"
+    },
+    "github_ci": "passed",
+    "github_actions_run": "https://github.com/oharafamily/oharafamilylightshow/actions/runs/41529856141",
+    "rehearsal": {
+      "schema": "teddy-secondlook-rehearsal.v1",
+      "passed": true,
+      "recorded_missed_score": 0.475,
+      "simulated_confirmed_retry_scores": [
+        0.592,
+        0.592
+      ],
+      "recognition_cutoff_unchanged": 0.5,
+      "consistent_retry_identity_reaches_existing_personal_greeting": true,
+      "intro_or_enrollment_not_triggered": true,
+      "existing_consented_profiles": 2,
+      "consent_only_persona_change_verified": true,
+      "unused_greeting_plans_migrated": 2,
+      "unused_audio_and_production_manifest_unchanged": true,
+      "physical_output_triggered": false,
+      "new_face_frames_captured": false,
+      "aws_calls_made": false,
+      "private_rehearsal_path": "/home/yardhost/.local/state/ofls-yard-host/secondlook-rehearsal-20261102-213433"
+    }
+  },
+  "verification": {
+    "schema": "teddy-secondlook-verification.v1",
+    "ready": true,
+    "verified_at": "2026-11-02T21:37:11.406381+00:00",
+    "source_revision": "d789700de368fc69c85b827721b60d46b71a3aa2",
+    "pull_request": "https://github.com/oharafamily/oharafamilylightshow/pull/125",
+    "runtime_revision": "050ddbbecb355e80826ad75c50cbba12dae68eb6+single-use-796857a+refill-07e0912+reciprocity-f2911f7+arrival-0366e0e+warm-056a4bf+secondlook-d789700",
+    "verified_modules": 55,
+    "hash_mismatches": [],
+    "persona_sha256": "957b0bdb253012637c5a93c49ca179d66203d90f686e0b4ff7ce6c410e939175",
+    "local_time_period": "afternoon",
+    "ready_clips": 8,
+    "personal_clips": 6,
+    "guest_count": 2,
+    "layout_counts": {
+      "question_first": 2,
+      "share_first": 4
+    },
+    "actual_prepared_example": "Welcome back, Elliott! It's nice to chat this afternoon! Which holiday tradition do you look forward to the most? Miss Heather gets a new prop for the light show every year.",
+    "single_use_enabled": true,
+    "used_history_preserved": true,
+    "private_backup_verified": true,
+    "verified_remote_audio_and_timing_files": 16,
+    "encryption": "AES256",
+    "stale_current_audio_or_timing_objects": 0,
+    "health": {
+      "available": true,
+      "enabled": true,
+      "state": "awake",
+      "camera_active": true,
+      "microphone_active": false
+    },
+    "master": {
+      "fppd": "running",
+      "status_name": "idle",
+      "uptime": "15 days, 14:29"
+    },
+    "effects": [
+      "Teddy Interactive Idle"
+    ],
+    "install": {
+      "schema": "teddy-secondlook-install.v1",
+      "status": "installed",
+      "source_revision": "d789700de368fc69c85b827721b60d46b71a3aa2",
+      "backup": "/home/yardhost/ofls-yard-host/backups/secondlook-enable-20261102-213611",
+      "module_sha256": {
+        "visit.py": "3ff7187d1554f7ea14f58604c452b5652e89e7173b6216d7026bea58ad8a2a35",
+        "camera_wake.py": "b8388d170ad38310c26e472525ff12138990cb2de6612b8cc8a1afbbe6aca60b",
+        "face_presence.py": "d97992fe75b098c92be95b1df56131bab9a0e22374a37cfb501dfad1ae311a44"
+      },
+      "persona_sha256": "957b0bdb253012637c5a93c49ca179d66203d90f686e0b4ff7ce6c410e939175",
+      "runtime_revision": "050ddbbecb355e80826ad75c50cbba12dae68eb6+single-use-796857a+refill-07e0912+reciprocity-f2911f7+arrival-0366e0e+warm-056a4bf+secondlook-d789700",
+      "all_module_hashes_match": true,
+      "verified_module_count": 55,
+      "unused_greeting_plans_migrated": 2,
+      "cache_manifest_usage_and_cooldowns_unchanged_before_restart": true,
+      "unused_audio_reused": true,
+      "face_profiles_not_modified_by_installer": true,
+      "configuration_and_recognition_cutoff_unchanged": true,
+      "master_before": {
+        "fppd": "running",
+        "status_name": "idle",
+        "uptime": "15 days, 13:30"
+      },
+      "master_after": {
+        "fppd": "running",
+        "status_name": "idle",
+        "uptime": "15 days, 13:34"
+      },
+      "fpp_services_restarted": false,
+      "physical_audio_test_triggered": false
+    },
+    "physical_audio_test_triggered": false
+  },
+  "preserved": {
+    "saved_face_profiles": true,
+    "recognition_cutoff": true,
+    "unused_audio_without_resynthesis": true,
+    "single_use_history_and_cooldowns": true,
+    "warm_time_aware_hellos_and_question_order": true,
+    "private_encrypted_backup": true,
+    "master_running": true,
+    "teddy_interactive_idle": true,
+    "voice_microphone_and_speaker_configuration": true,
+    "layout_outputs_routes_songs_playlists_and_schedule": true,
+    "old_button_retirement": true
+  },
+  "mac_awake": {
+    "launchd_label": "com.ohara.xlights.keepawake",
+    "verified_active": true
+  },
+  "next_step": "User observes a new physical arrival to confirm whether the second look improves recognition."
+}

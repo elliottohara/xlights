@@ -1,6 +1,6 @@
 {
   "schema": "teddy-warm-welcomes-deployment.v1",
-  "updated_at": "2026-11-02T15:17:07.883256-06:00",
+  "updated_at": "2026-11-02T15:38:41.069443-06:00",
   "status": "installed_and_verified_ready_for_physical_test",
   "host": "192.168.0.30",
   "source_revision": "056a4bf33e0b8737c7c8954f4c75da969f0816f2",
@@ -157,5 +157,7 @@
     "launchd_label": "com.ohara.xlights.keepawake",
     "verified_active": true
   },
-  "next_step": "User observes a real warm greeting and conversation; physical mouth alignment is not inferred from software checks."
+  "next_step": "User observes a real warm greeting and conversation; physical mouth alignment is not inferred from software checks.",
+  "superseded_by": "Halloween/teddy-recognition-consent-latest.json",
+  "latest_user_observation": "Teddy did not recognize returning visitor; unwanted negative storage wording"
 }
