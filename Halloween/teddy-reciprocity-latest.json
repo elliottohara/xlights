@@ -1,0 +1,169 @@
+{
+  "schema": "teddy-reciprocity-deployment.v1",
+  "updated_at": "2026-11-02T14:09:39.344154-06:00",
+  "status": "installed_and_verified_ready_for_physical_test",
+  "host": "192.168.0.30",
+  "source_revision": "f2911f74671878ae0128c7ecb8bac45a1933ca95",
+  "pull_request": "https://github.com/oharafamily/oharafamilylightshow/pull/125",
+  "pull_request_status": "draft, CI passed, installed on Pi",
+  "base_single_use_source": "07e0912",
+  "base_pull_request": "https://github.com/oharafamily/oharafamilylightshow/pull/123",
+  "backup": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy reciprocal conversation 20261102-140939",
+  "diagnosis": {
+    "greeting_writer_missing_authored_persona": true,
+    "prior_prompt_defaulted_to_remembered_interest_or_show_feedback": true,
+    "live_knowledge_pack_persona_older_than_repository": true,
+    "exact_reported_phrase_not_reconstructed_from_logs": true
+  },
+  "behavior": {
+    "canonical_persona": "oharafamily/oharafamilylightshow:docs/teddy-personality.md",
+    "effective_persona_file": "/home/yardhost/ofls-yard-host/data/teddy-personality.md",
+    "configuration": {
+      "YARD_TEDDY_PERSONALITY_PATH": "/home/yardhost/ofls-yard-host/data/teddy-personality.md"
+    },
+    "both_greeting_writer_and_live_conversation_use_shared_persona": true,
+    "host_composes_authored_self_story_with_fresh_reviewed_question": true,
+    "topics": [
+      "christmas_memory",
+      "holiday_tradition",
+      "making_things"
+    ],
+    "example": "Miss Heather gave me as a Christmas gift. What is your favorite Christmas memory?",
+    "direct_own_christmas_memory_answer_uses_authored_fact": true,
+    "guest_answer_continuity_preserved": true,
+    "single_use_and_background_replacement_preserved": true
+  },
+  "tests": {
+    "exact_runtime": {
+      "passed": 264,
+      "skipped": 1,
+      "subtests_passed": 82,
+      "skip_reason": "Optional Node/browser-signing test unavailable in native Pi test PATH"
+    },
+    "github_ci": "passed",
+    "github_actions_run": "https://github.com/oharafamily/oharafamilylightshow/actions/runs/41515203232",
+    "real_model_fictional_conversation": {
+      "greetings": [
+        "Alex, Miss Heather gave me as a Christmas gift. What is your favorite Christmas memory?",
+        "Alex, Miss Heather gets a new prop for the light show every year. Which holiday tradition makes you smile?",
+        "Alex, The show's creator is always trying to make the display better. What do you enjoy making?"
+      ],
+      "conversation": [
+        {
+          "visitor": "Making gingerbread cookies with my grandma.",
+          "reply": "That sounds delightful! Gingerbread cookies are a wonderful holiday tradition. Do you have a favorite holiday cookie recipe?",
+          "confident": true,
+          "used_tools": false
+        },
+        {
+          "visitor": "What is your favorite Christmas memory?",
+          "reply": "Miss Heather gave me as a Christmas gift.",
+          "confident": true,
+          "used_tools": false
+        },
+        {
+          "visitor": "I'm not in the mood for more questions.",
+          "reply": "No worries at all! I'm here to chat if you'd like. Enjoy the rest of your evening!",
+          "confident": true,
+          "used_tools": false
+        }
+      ],
+      "real_guest_data_used": false,
+      "physical_audio_played": false
+    }
+  },
+  "verification": {
+    "schema": "teddy-reciprocity-verification.v1",
+    "verified_at": "2026-11-02T20:08:15.919839+00:00",
+    "ready": true,
+    "source_revision": "f2911f7",
+    "pull_request": "https://github.com/oharafamily/oharafamilylightshow/pull/125",
+    "runtime_revision": "050ddbbecb355e80826ad75c50cbba12dae68eb6+single-use-796857a+refill-07e0912+reciprocity-f2911f7",
+    "verified_modules": 54,
+    "hash_mismatches": [],
+    "changed_module_sha256": {
+      "config.py": "e295393cfc34aebc63e623f2c6c7c36a2a5b2c5bdf29a4f53019afd2acdefb03",
+      "knowledge_pack.py": "a0532bea32af1b2587cec8179ea20528498006e012ef8d862bccfebfcf32f38f",
+      "bedrock_session.py": "e5dc91c1e105a4110c6113dc5771bf9881bc955ca5a67b9f321bf16a1ad9a999",
+      "greeting_cache/personal.py": "ffde73e4ef84539c46fce09484fffe84aa8a3328bda7d4e0aadb844a0167694d"
+    },
+    "persona_sha256": "58d1f968cd528e04913000d2deb5624f91aef89da289de6701d206a5dbe2e925",
+    "persona_path": "/home/yardhost/ofls-yard-host/data/teddy-personality.md",
+    "authored_topics": [
+      "christmas_memory",
+      "holiday_tradition",
+      "making_things"
+    ],
+    "ready_clips": 8,
+    "personal_clips": 6,
+    "guest_count": 2,
+    "guests_with_christmas_memory_opener": 2,
+    "single_use_enabled": true,
+    "used_history_preserved": true,
+    "cooldowns_unchanged_at_verification": true,
+    "private_backup_verified": true,
+    "verified_remote_audio_and_timing_files": 16,
+    "encrypted_backup": "AES256",
+    "stale_current_audio_or_timing_objects": 0,
+    "cache_refresh_service": "Result=success\nActiveState=inactive",
+    "health": {
+      "available": true,
+      "enabled": true,
+      "state": "awake",
+      "camera_active": true,
+      "microphone_active": false
+    },
+    "master": {
+      "fppd": "running",
+      "status_name": "idle",
+      "uptime": "14 days, 22:45:33"
+    },
+    "effects": [
+      "Teddy Interactive Idle"
+    ],
+    "install": {
+      "schema": "teddy-reciprocity-install.v1",
+      "status": "installed",
+      "backup": "/home/yardhost/ofls-yard-host/backups/reciprocity-enable-20261102-200502",
+      "source_revision": "f2911f7",
+      "pull_request": 125,
+      "module_sha256": {
+        "config.py": "e295393cfc34aebc63e623f2c6c7c36a2a5b2c5bdf29a4f53019afd2acdefb03",
+        "knowledge_pack.py": "a0532bea32af1b2587cec8179ea20528498006e012ef8d862bccfebfcf32f38f",
+        "bedrock_session.py": "e5dc91c1e105a4110c6113dc5771bf9881bc955ca5a67b9f321bf16a1ad9a999",
+        "greeting_cache/personal.py": "ffde73e4ef84539c46fce09484fffe84aa8a3328bda7d4e0aadb844a0167694d"
+      },
+      "persona_sha256": "58d1f968cd528e04913000d2deb5624f91aef89da289de6701d206a5dbe2e925",
+      "ready_clips_at_activation": 8,
+      "used_history_and_cooldowns_preserved": true,
+      "master_before": {
+        "fppd": "running",
+        "status_name": "idle",
+        "uptime": "14 days, 22:42:21"
+      },
+      "master_after": {
+        "fppd": "running",
+        "status_name": "idle",
+        "uptime": "14 days, 22:42:26"
+      },
+      "fpp_services_restarted": false
+    },
+    "physical_playback_skipped": true
+  },
+  "preserved": {
+    "master_running": true,
+    "fpp_services_not_restarted": true,
+    "teddy_interactive_idle": true,
+    "single_use_history": true,
+    "cooldowns": true,
+    "microphone_and_speaker_settings": true,
+    "layout_routing_and_outputs": true,
+    "songs_playlists_and_schedule": true,
+    "old_button_worker_retired": true
+  },
+  "mac_awake": {
+    "launchd_label": "com.ohara.xlights.keepawake",
+    "verified_active": true
+  },
+  "next_step": "User observes a real greeting, reply continuity, speaker sound and perceived mouth alignment."
+}

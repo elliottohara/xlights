@@ -1,5 +1,12 @@
 # xLights Show Directory — Agent Notes
 
+## Teddy shares stories and asks personal questions — November 2, 2026
+
+- User's field test found show-feedback questions instead of the intended personal conversation. The old greeting writer did not receive the repository's authored Teddy persona. Pi `.30` now uses the shared `docs/teddy-personality.md` source, installed at `/home/yardhost/ofls-yard-host/data/teddy-personality.md` through `YARD_TEDDY_PERSONALITY_PATH`, for both cached openers and live replies. Preserve this configured source when refreshing cloud knowledge packs.
+- Openers combine an exact authored Teddy share with a freshly written, reviewed personal question about Christmas memories, traditions or hobbies. The Christmas story is **Miss Heather gave Teddy as a Christmas gift**; he joined the show the following year. Do not invent a human childhood or combine those dates. Direct questions about his own Christmas memory use the authored fact. Follow visitor answers and honor requests to stop asking questions.
+- Source `f2911f7`, draft PR #125 (stacked on single-use PR #123), is installed with CI passed. The exact runtime passed 264 tests and 82 subtests, with one optional Node test skipped. A real-model fictional rehearsal verified opening, answer continuity, his own memory, and declining questions. Eight clips/six personal openings, both approved guests' Christmas-memory questions, all 54 runtime module hashes, and all 16 encrypted private S3 audio/timing objects are verified. Single-use retirement, background replacement, cooldowns and usage history remain intact.
+- Only the conversation/cache services were cycled. Master and `Teddy Interactive Idle` stayed running; show settings, old-button retirement, microphone/speaker configuration and song sequences were preserved. Physical conversational quality and mouth alignment await the user's next observation. Evidence/recovery: `Halloween/teddy-reciprocity-latest.json`; Pi backup `/home/yardhost/ofls-yard-host/backups/reciprocity-enable-20261102-200502/`.
+
 ## Single-use Teddy greetings ready — November 2, 2026
 
 - User approved personal greeting generation and private Pi/S3 storage. Pi `.30` now uses **single-use greetings**: after a successful greeting, retire its audio/timing, persist its used-text/cache-key history, and prepare different wording plus fresh Polly audio in the background. Keep unused clips ready. Never reintroduce consumed greetings during refresh or restore; consent revocation removes the new text history.

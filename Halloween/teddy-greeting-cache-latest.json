@@ -1,11 +1,11 @@
 {
   "schema": "teddy-greeting-cache-deployment.v1",
-  "updated_at": "2026-11-02T13:26:40.264901-06:00",
-  "status": "ready_single_use_private_backup_verified",
+  "updated_at": "2026-11-02T14:09:39.344154-06:00",
+  "status": "ready_single_use_authored_personal_conversations",
   "host": "192.168.0.30",
-  "source_revision": "07e0912",
-  "pull_request": "https://github.com/oharafamily/oharafamilylightshow/pull/123",
-  "source_worktree": "/private/tmp/ofls-greeting-single-use",
+  "source_revision": "f2911f7",
+  "pull_request": "https://github.com/oharafamily/oharafamilylightshow/pull/125",
+  "source_worktree": "/private/tmp/ofls-teddy-reciprocity",
   "cache_enabled": true,
   "cache_ready": true,
   "verified_cached_clips": 8,
@@ -24,15 +24,16 @@
       "passed": 22
     },
     "github_ci": "passed",
-    "github_actions_run": "https://github.com/oharafamily/oharafamilylightshow/actions/runs/41370699745",
+    "github_actions_run": "https://github.com/oharafamily/oharafamilylightshow/actions/runs/41515203232",
     "current_local": {
       "passed": 252,
       "subtests_passed": 82
     },
     "current_pi": {
-      "passed": 258,
+      "passed": 264,
       "skipped": 1,
       "subtests_passed": 82,
+      "skip_reason": "Optional Node/browser-signing test unavailable in native Pi test PATH",
       "github_ci": "passed"
     }
   },
@@ -41,13 +42,13 @@
     "webcam_open": true,
     "local_speaker_configured": true,
     "mouth_animation_enabled": true,
-    "verified_runtime_hashes": 53
+    "verified_runtime_hashes": 54
   },
   "master": {
     "after": {
       "fppd": "running",
       "status_name": "idle",
-      "uptime": "14 days, 22:02:52"
+      "uptime": "14 days, 22:45:33"
     },
     "stop_or_restart_commands_issued": false
   },
@@ -59,22 +60,22 @@
     "YARD_BRAIN_ACTIVE_SESSION_DIR": "/home/yardhost/.local/state/ofls-yard-host/active-sessions",
     "YARD_GREETING_SINGLE_USE": "1",
     "YARD_GREETING_CACHE_S3_BUCKET": "oharafamilylightshow-yard-teddy-889378314673",
-    "YARD_GREETING_CACHE_S3_PREFIX": "yard-teddy/greeting-cache/yard-host-pi/"
+    "YARD_GREETING_CACHE_S3_PREFIX": "yard-teddy/greeting-cache/yard-host-pi/",
+    "YARD_TEDDY_PERSONALITY_PATH": "/home/yardhost/ofls-yard-host/data/teddy-personality.md"
   },
   "recovery": {
     "pi_backup": "/home/yardhost/ofls-yard-host/backups/greeting-cache-enable-20261101-190303",
     "rollback": "/home/yardhost/ofls-yard-host/backups/greeting-cache-enable-20261101-190303/rollback.py",
     "pi_evidence": "/home/yardhost/.local/state/ofls-yard-host/greeting-cache-candidate-20261101/final-result.json",
-    "current_pi_backup": "/home/yardhost/ofls-yard-host/backups/personal-greeting-20261102/before-install"
+    "current_pi_backup": "/home/yardhost/ofls-yard-host/backups/reciprocity-enable-20261102-200502"
   },
   "s3_backup_configured": true,
   "grok_coordination_completed": false,
   "next_steps": [
-    "Observe the next real greeting for physical speaker sound and perceived mouth alignment.",
-    "Await GrokBot reply in the existing GitHub coordination issue; no account switch was performed."
+    "User observes a real greeting, reply continuity, speaker sound and perceived mouth alignment."
   ],
   "personal_conversation_openers": 6,
-  "current_report": "Halloween/teddy-personal-greeting-cycle-latest.json",
+  "current_report": "Halloween/teddy-reciprocity-latest.json",
   "previous_source_revision": "6ffdb63cb12482106e85757aad871b983c225b7e",
   "historical_pending_approvals": [
     {
@@ -96,8 +97,104 @@
   "single_use_enabled": true,
   "private_s3_backup_verified": true,
   "pending_approvals": [],
-  "backup": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy single-use greetings 20261102-132639",
+  "backup": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy reciprocal conversation 20261102-140939",
   "verification": {
+    "schema": "teddy-reciprocity-verification.v1",
+    "verified_at": "2026-11-02T20:08:15.919839+00:00",
+    "ready": true,
+    "source_revision": "f2911f7",
+    "pull_request": "https://github.com/oharafamily/oharafamilylightshow/pull/125",
+    "runtime_revision": "050ddbbecb355e80826ad75c50cbba12dae68eb6+single-use-796857a+refill-07e0912+reciprocity-f2911f7",
+    "verified_modules": 54,
+    "hash_mismatches": [],
+    "changed_module_sha256": {
+      "config.py": "e295393cfc34aebc63e623f2c6c7c36a2a5b2c5bdf29a4f53019afd2acdefb03",
+      "knowledge_pack.py": "a0532bea32af1b2587cec8179ea20528498006e012ef8d862bccfebfcf32f38f",
+      "bedrock_session.py": "e5dc91c1e105a4110c6113dc5771bf9881bc955ca5a67b9f321bf16a1ad9a999",
+      "greeting_cache/personal.py": "ffde73e4ef84539c46fce09484fffe84aa8a3328bda7d4e0aadb844a0167694d"
+    },
+    "persona_sha256": "58d1f968cd528e04913000d2deb5624f91aef89da289de6701d206a5dbe2e925",
+    "persona_path": "/home/yardhost/ofls-yard-host/data/teddy-personality.md",
+    "authored_topics": [
+      "christmas_memory",
+      "holiday_tradition",
+      "making_things"
+    ],
+    "ready_clips": 8,
+    "personal_clips": 6,
+    "guest_count": 2,
+    "guests_with_christmas_memory_opener": 2,
+    "single_use_enabled": true,
+    "used_history_preserved": true,
+    "cooldowns_unchanged_at_verification": true,
+    "private_backup_verified": true,
+    "verified_remote_audio_and_timing_files": 16,
+    "encrypted_backup": "AES256",
+    "stale_current_audio_or_timing_objects": 0,
+    "cache_refresh_service": "Result=success\nActiveState=inactive",
+    "health": {
+      "available": true,
+      "enabled": true,
+      "state": "awake",
+      "camera_active": true,
+      "microphone_active": false
+    },
+    "master": {
+      "fppd": "running",
+      "status_name": "idle",
+      "uptime": "14 days, 22:45:33"
+    },
+    "effects": [
+      "Teddy Interactive Idle"
+    ],
+    "install": {
+      "schema": "teddy-reciprocity-install.v1",
+      "status": "installed",
+      "backup": "/home/yardhost/ofls-yard-host/backups/reciprocity-enable-20261102-200502",
+      "source_revision": "f2911f7",
+      "pull_request": 125,
+      "module_sha256": {
+        "config.py": "e295393cfc34aebc63e623f2c6c7c36a2a5b2c5bdf29a4f53019afd2acdefb03",
+        "knowledge_pack.py": "a0532bea32af1b2587cec8179ea20528498006e012ef8d862bccfebfcf32f38f",
+        "bedrock_session.py": "e5dc91c1e105a4110c6113dc5771bf9881bc955ca5a67b9f321bf16a1ad9a999",
+        "greeting_cache/personal.py": "ffde73e4ef84539c46fce09484fffe84aa8a3328bda7d4e0aadb844a0167694d"
+      },
+      "persona_sha256": "58d1f968cd528e04913000d2deb5624f91aef89da289de6701d206a5dbe2e925",
+      "ready_clips_at_activation": 8,
+      "used_history_and_cooldowns_preserved": true,
+      "master_before": {
+        "fppd": "running",
+        "status_name": "idle",
+        "uptime": "14 days, 22:42:21"
+      },
+      "master_after": {
+        "fppd": "running",
+        "status_name": "idle",
+        "uptime": "14 days, 22:42:26"
+      },
+      "fpp_services_restarted": false
+    },
+    "physical_playback_skipped": true
+  },
+  "authorization": {
+    "polly_and_private_s3": "Explicit yyes in this chat",
+    "bedrock_and_polly": "Explicit user approval in Review Teddy conversation setup, verified through read_thread",
+    "automatic_replacements": "Explicit user request to replace each used greeting and remove the old clip"
+  },
+  "original_master_checks": {
+    "before": {
+      "fppd": "running",
+      "status_name": "playing",
+      "uptime": "14 days, 03:40:21"
+    },
+    "after": {
+      "fppd": "running",
+      "status_name": "playing",
+      "uptime": "14 days, 03:43:50"
+    },
+    "stop_or_restart_commands_issued": false
+  },
+  "previous_single_use_verification": {
     "schema": "teddy-single-use-greetings.v1",
     "ready": true,
     "source_revision": "07e0912",
@@ -172,23 +269,5 @@
       "production_cache_unchanged": true,
       "physical_playback_skipped": true
     }
-  },
-  "authorization": {
-    "polly_and_private_s3": "Explicit yyes in this chat",
-    "bedrock_and_polly": "Explicit user approval in Review Teddy conversation setup, verified through read_thread",
-    "automatic_replacements": "Explicit user request to replace each used greeting and remove the old clip"
-  },
-  "original_master_checks": {
-    "before": {
-      "fppd": "running",
-      "status_name": "playing",
-      "uptime": "14 days, 03:40:21"
-    },
-    "after": {
-      "fppd": "running",
-      "status_name": "playing",
-      "uptime": "14 days, 03:43:50"
-    },
-    "stop_or_restart_commands_issued": false
   }
 }
