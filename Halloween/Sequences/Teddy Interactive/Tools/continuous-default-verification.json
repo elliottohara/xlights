@@ -26,13 +26,15 @@
       "sha256": "1d9d5ca3d01d3e1eb92c32f253f1d2c1b21981fd4d78c7aff0f0e65249bfe913"
     },
     {
-      "name": "background.eseq",
+      "name": "Teddy Interactive Idle.eseq",
       "bytes": 2136,
       "sha256": "1d9d5ca3d01d3e1eb92c32f253f1d2c1b21981fd4d78c7aff0f0e65249bfe913"
     }
   ],
   "continuous_native_background": true,
-  "boot": "Native FPP InitEffects automatically starts background.eseq",
+  "background_effect": "Teddy Interactive Idle",
+  "boot": "Selfie Station FPPD_STARTED starts the dedicated idle loop",
+  "survives_legacy_background_stop": true,
   "old_button_controller_contacted": false,
   "master_kept_running": true,
   "pixel_outputs_unchanged": true,

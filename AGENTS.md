@@ -1,5 +1,10 @@
 # xLights Show Directory — Agent Notes
 
+## Teddy independent idle and Pi sync — November 2, 2026
+
+- Teddy's persistent effect on Selfie Station `.213` is **`Teddy Interactive Idle`**, byte-identical to the native Default. Its local `FPPD_STARTED` preset starts this loop. Do not replace it with the generic `background` effect: the existing, unchanged show playlists intentionally stop that name, which previously darkened Teddy at 22:30. Native startup and legacy-stop checks passed without restarting any FPP service.
+- Pi `.30` guest-learning/webhook updates are installed, with 230 tests and 82 subtests passing. Personalized cached greetings remain empty pending explicit approval; GrokBot's coordination request is awaiting a reply. Keep the old button worker retired and Master running. Current evidence: `Halloween/grok-setup-latest.json` and the Teddy Interactive notes.
+
 ## Teddy reserved for interaction — November 1, 2026
 
 - Teddy is reserved for interactive guests. Do not assign him song vocals, static gestures or decorative show groups unless the user explicitly requests it. This supersedes older Teddy song-casting and static-animation notes below. Keep his independent interactive background and guest cues on Selfie Station `.213`.

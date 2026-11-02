@@ -1,0 +1,132 @@
+{
+  "schema": "grok-teddy-setup.v1",
+  "updated_at": "2026-11-02T08:32:40.648449-06:00",
+  "status": "pi_and_idle_updated_personalized_cache_and_cloud_reply_pending",
+  "backup": "/Users/elliott.ohara/xlights/Halloween/Backups/GrokBot setup 20261102-0818",
+  "grok_coordination": {
+    "channel": "https://github.com/oharafamily/oharafamilylightshow/issues/62",
+    "request": "https://github.com/oharafamily/oharafamilylightshow/issues/62#issuecomment-6579251278",
+    "handoff_read": true,
+    "request_posted": true,
+    "reply_received": false,
+    "detailed_setup_post_rejected": true,
+    "non_sensitive_request_posted_instead": true
+  },
+  "pi": {
+    "schema": "teddy-grok-setup-install.v1",
+    "backup": "/home/yardhost/ofls-yard-host/backups/grok-setup-install-20261102-141915",
+    "before_master": {
+      "fppd": "running",
+      "status_name": "idle",
+      "uptime": "14 days, 16:56:34"
+    },
+    "changed_modules": {
+      "teddy_brain_client.py": "f585af1cb1dd20e4c3eb6822ea7d36f44dd922f43ec6e5511b4bacef85e497b4",
+      "yard_brain.py": "da790fe404c53f784f41c200005fd4a210d8ce17227f7f445bbcdaacda3bcec6",
+      "visit_session_file.py": "e433ca3cb13c4e22fa3874e094888be7c9da9b4847c8f24e5e6cc2059e669034",
+      "teddy_guest_hydrate.py": "e70fa10a290c217478bf52906cd8f8ae139d417b4b4026204b997581720cb15e",
+      "teddy_learn_routing.py": "1c87375d54809b997b572caabf043e9eec920c04fd0c429474a795f73c77baef"
+    },
+    "source_revision": "2873234171574f94e9a7cfa6daf099e55fd023bc",
+    "session_fix_revision": "a427ccb",
+    "session_fix_pr": 119,
+    "tests": {
+      "passed": 230,
+      "skipped": 1,
+      "subtests_passed": 82
+    },
+    "after_master": {
+      "fppd": "running",
+      "status_name": "idle",
+      "uptime": "14 days, 16:56:37"
+    },
+    "status": "installed",
+    "unit": "MainPID=81092\nNRestarts=0\nExecMainStartTimestamp=Mon 2026-11-02 08:19:17 CST\nActiveState=active\n",
+    "other_services_restarted": false,
+    "configuration_changed": false
+  },
+  "runtime_verification": {
+    "verified_module_hashes": 50,
+    "hash_mismatches": [],
+    "camera_awake": true,
+    "generic_voice_test": {
+      "generic_voice_test": true,
+      "seconds": 6.9,
+      "mouth_overlay_observed": true,
+      "background_seen": true,
+      "errors": [],
+      "sample_count": 52,
+      "physical_sound_confirmed": false,
+      "guest_names_synthesized": false
+    },
+    "ci": "passed",
+    "pr": "https://github.com/oharafamily/oharafamilylightshow/pull/119"
+  },
+  "teddy_idle": {
+    "dedicated_idle": "Teddy Interactive Idle",
+    "native_startup_preset_tested": true,
+    "startup_response": "Preset Triggered",
+    "legacy_background_stop_tested": true,
+    "idle_remained_active_after_loop": true,
+    "final_effects": [
+      "Teddy Interactive Idle"
+    ],
+    "outputs_unchanged": true,
+    "playlists_unchanged": true,
+    "master_kept_running": true,
+    "master_uptime_after": "14 days, 17:07:44",
+    "fpp_services_restarted": false,
+    "selfie_startup_presets": {
+      "commands": [
+        {
+          "name": "FPPD_STARTED",
+          "presetSlot": 0,
+          "command": "Effect Start",
+          "args": [
+            "Teddy Interactive Idle",
+            "",
+            "true",
+            "false",
+            "true",
+            "Elliott - EFL Teddy"
+          ],
+          "multisyncCommand": false,
+          "multisyncHosts": ""
+        },
+        {
+          "name": "FPPD_STARTED",
+          "presetSlot": 0,
+          "command": "Effect Stop",
+          "args": [
+            "background"
+          ],
+          "multisyncCommand": false,
+          "multisyncHosts": ""
+        }
+      ]
+    }
+  },
+  "personalized_greetings": {
+    "cache_enabled": true,
+    "cache_entries": 0,
+    "ready": false,
+    "polly_generation_approval": "pending",
+    "private_s3_backup_approval": "pending",
+    "guest_names_synthesized": false
+  },
+  "preserved": {
+    "master_running": true,
+    "show_playlists": true,
+    "layout": true,
+    "routing": true,
+    "pixel_outputs": true,
+    "authored_song_sequences": true,
+    "legacy_button_retirement": true
+  },
+  "mac_awake": {
+    "launchd_label": "com.ohara.xlights.keepawake",
+    "system_sleep_prevented": true,
+    "display_sleep_prevented": true,
+    "independent_of_chat_process": true
+  }
+}

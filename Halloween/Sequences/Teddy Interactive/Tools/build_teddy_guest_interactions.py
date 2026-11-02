@@ -101,17 +101,18 @@ def main():
     manifest={'schema_version':1,'model':MODEL,'start_channel':214643,
               'channels':1500,'frame_ms':25,'default_effect':'Teddy Default',
               'default_background_alias':'Teddy Hold Down',
-              'persistent_background_effect':'background',
-              'background_eseq':str((SONG/'Effects/background.eseq').relative_to(ROOT)),
+              'persistent_background_effect':'Teddy Interactive Idle',
+              'background_eseq':str((SONG/'Effects/Teddy Interactive Idle.eseq').relative_to(ROOT)),
               'events':{r['event']:r['name'] for r in rows},'effects':rows}
     (SONG/'Tools/guest-interactions.json').write_text(json.dumps(manifest,indent=2)+'\n')
-    # The existing button worker already manages a background Hold Down and
-    # yields it to speech/show playback. Keep that integration and its locks.
+    # Preserve the historical Hold Down filename for compatibility; its old
+    # button worker remains retired and does not own the persistent idle loop.
     alias=SONG/'Effects/Teddy Hold Down.eseq'
     shutil.copy2(SONG/'Effects/Teddy Default.eseq',alias)
-    # Native FPP starts this Teddy-only sparse effect at boot; the legacy
-    # button worker does not own its name and cannot turn it off for songs.
+    # Keep the native boot alias for compatibility. The dedicated idle name
+    # survives the show's existing multisync Effect Stop(background) commands.
     shutil.copy2(SONG/'Effects/Teddy Default.eseq',SONG/'Effects/background.eseq')
+    shutil.copy2(SONG/'Effects/Teddy Default.eseq',SONG/'Effects/Teddy Interactive Idle.eseq')
     library=SONG/'Tools/library.json'
     if library.exists():
         entries=json.loads(library.read_text())

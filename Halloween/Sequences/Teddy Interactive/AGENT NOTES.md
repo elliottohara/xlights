@@ -1,5 +1,15 @@
 # Teddy Interactive — agent notes
 
+## GrokBot setup sync and persistent idle — November 2, 2026
+
+Pi `.30` now has the latest main guest-learning/webhook contract (`2873234`) plus the learned-answer persistence correction from draft PR #119 (`a427ccb`). Only five conversation modules changed; the earlier #112 greeting-cache fixes remain installed. The exact candidate passed 230 tests and 82 subtests; one optional Node/browser-signing test skipped. GitHub CI passed. All 50 tracked runtime hashes match. Only the conversation service restarted; camera is awake. A generic, non-personalized welcome completed with its mouth overlay observed and no errors. Physical speaker audibility remains for the user's observation. The current Pi's mouth-only private speech transport remains configured through `.133`; the old button worker and public speech service stay retired.
+
+**Persistent idle is now `Teddy Interactive Idle`, not `background`.** Master's unchanged Halloween and Overnight playlists send `Effect Stop(background)` to `.213`; the log proves this stopped Teddy at 22:30 on November 1. The new filename is byte-identical to the native Teddy Default render, sparse offset 214642 / 1500 channels. Selfie Station's two local `FPPD_STARTED` commands start the dedicated loop and stop its Teddy-only legacy `background` instance. The startup preset was triggered through native FPP without a service restart; the dedicated loop survived the exact legacy stop command and a full loop. Update/deploy/build/verify helpers preserve the dedicated alias. Master, playlists, physical outputs, channels, song sequences and the pumpkin are unchanged.
+
+GrokBot's handoff was read and a non-sensitive coordination request posted on #62; no new cloud reply has arrived yet. Personalized cache clips are still empty, pending the explicit Polly name-generation/private-backup approval question. Do not describe those greetings as ready. Mac keep-awake is independently active as launchd label `com.ohara.xlights.keepawake`.
+
+Evidence and rollback copies: `Halloween/grok-setup-latest.json` and `Halloween/Backups/GrokBot setup 20261102-0818/`. Pi rollback source/metadata: `/home/yardhost/ofls-yard-host/backups/grok-setup-install-20261102-141915/`.
+
 ## Legacy button controller retired; continuous default — November 1, 2026
 
 **Supersedes the background-worker ownership and button instructions below.** User reported Teddy going completely dark even while idle, then explicitly requested that the old button controller do nothing to Teddy anymore.

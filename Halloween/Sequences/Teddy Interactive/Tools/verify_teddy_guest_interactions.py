@@ -58,6 +58,7 @@ def main():
                             marquee_unique_frames=marquee))
     assert (SONG/'Effects/Teddy Hold Down.eseq').read_bytes()==(SONG/'Effects/Teddy Default.eseq').read_bytes()
     assert (SONG/'Effects/background.eseq').read_bytes()==(SONG/'Effects/Teddy Default.eseq').read_bytes()
+    assert (ROOT/manifest['background_eseq']).read_bytes()==(SONG/'Effects/Teddy Default.eseq').read_bytes()
     report=dict(all_passed=True,model=manifest['model'],channels=1500,
                 sparse_offset=214642,frame_ms=25,background_alias_matches=True,clips=results)
     (SONG/'Tools/guest-interactions-verification.json').write_text(json.dumps(report,indent=2)+'\n')

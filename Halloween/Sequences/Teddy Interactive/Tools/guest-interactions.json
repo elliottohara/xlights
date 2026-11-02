@@ -64,6 +64,6 @@
       "description": "Moving white marquee over a deep-red bow; default face and arms."
     }
   ],
-  "persistent_background_effect": "background",
-  "background_eseq": "Halloween/Sequences/Teddy Interactive/Effects/background.eseq"
+  "persistent_background_effect": "Teddy Interactive Idle",
+  "background_eseq": "Halloween/Sequences/Teddy Interactive/Effects/Teddy Interactive Idle.eseq"
 }
