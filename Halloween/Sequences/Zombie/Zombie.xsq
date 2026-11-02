@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <xsequence BaseChannel="0" ChanCtrlBasic="0" ChanCtrlColor="0" FixedPointTiming="1" ModelBlending="true">
   <head>
-    <version>2026.18</version>
+    <version>2026.19</version>
     <author></author>
     <author-email></author-email>
     <author-website></author-website>
@@ -682,7 +682,7 @@
     <Effect>B_CHOICE_BufferStyle=Per Model Per Preview,B_CHOICE_PerPreviewCamera=2D,E_CHECKBOX_Shockwave_Blend_Edges=1,E_CHECKBOX_Shockwave_FilterRegex=0,E_CHECKBOX_Shockwave_Scale=1,E_CHOICE_Shockwave_TimingTrack=Toms,E_NOTEBOOK_Shockwave=Options,E_SLIDER_Shockwave_Accel=0,E_SLIDER_Shockwave_CenterX=50,E_SLIDER_Shockwave_CenterY=50,E_SLIDER_Shockwave_Cycles=1,E_SLIDER_Shockwave_Duration=750,E_SLIDER_Shockwave_End_Radius=50,E_SLIDER_Shockwave_End_Width=10,E_SLIDER_Shockwave_Start_Radius=1,E_SLIDER_Shockwave_Start_Width=5,E_TEXTCTRL_Shockwave_FilterLabel=,T_CHECKBOX_Canvas=0,T_CHECKBOX_LayerMorph=0,T_CHOICE_LayerMethod=Shadow 2 on 1,T_SLIDER_EffectLayerMix=0</Effect>
     <Effect>B_CHOICE_BufferStyle=Per Model Per Preview,B_CHOICE_BufferTransform=Flip Horizontal,E_CHOICE_Tendril_Movement=Circle,E_TEXTCTRL_Tendril_Dampening=10,E_TEXTCTRL_Tendril_Friction=10,E_TEXTCTRL_Tendril_Length=60,E_TEXTCTRL_Tendril_Speed=10,E_TEXTCTRL_Tendril_Tension=20,E_TEXTCTRL_Tendril_Thickness=3,E_TEXTCTRL_Tendril_Trails=1,E_TEXTCTRL_Tendril_TuneMovement=10,E_TEXTCTRL_Tendril_XOffset=0,E_TEXTCTRL_Tendril_YOffset=0,T_CHECKBOX_Canvas=0,T_CHECKBOX_LayerMorph=0,T_CHOICE_LayerMethod=Normal,T_SLIDER_EffectLayerMix=0,T_TEXTCTRL_Fadeout=1</Effect>
     <Effect>B_CHOICE_BufferStyle=Per Model Per Preview,E_CHOICE_Tendril_Movement=Circle,E_TEXTCTRL_Tendril_Dampening=10,E_TEXTCTRL_Tendril_Friction=10,E_TEXTCTRL_Tendril_Length=60,E_TEXTCTRL_Tendril_Speed=10,E_TEXTCTRL_Tendril_Tension=20,E_TEXTCTRL_Tendril_Thickness=3,E_TEXTCTRL_Tendril_Trails=1,E_TEXTCTRL_Tendril_TuneMovement=10,E_TEXTCTRL_Tendril_XOffset=0,E_TEXTCTRL_Tendril_YOffset=0,T_CHECKBOX_Canvas=0,T_CHECKBOX_LayerMorph=0,T_CHOICE_LayerMethod=Normal,T_SLIDER_EffectLayerMix=0,T_TEXTCTRL_Fadeout=1</Effect>
-    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_TimingTrack=Lyrics,E_CHOICE_Faces_UseState=Teddy RedBow static,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
+    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Lyrics,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=Lyrics,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Pumpkin face,E_CHOICE_Faces_TimingTrack=Lyrics,E_CHOICE_Faces_UseState=outline with stem,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
     <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=Sequences/Zombie/Media/Voting/occasional-voting.gif,E_TEXTCTRL_Pictures_FrameRateAdj=1.0,E_TEXTCTRL_Pictures_Speed=1.0,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
@@ -741,10 +741,7 @@
     <Effect>B_CHOICE_BufferStyle=Per Preview,E_CHECKBOX_FIRETIMING=0,E_CHECKBOX_Fireworks_Gravity=1,E_CHECKBOX_Fireworks_HoldColour=1,E_CHECKBOX_Fireworks_UseMusic=0,E_SLIDER_Fireworks_Count=50,E_SLIDER_Fireworks_Explosions=18,E_SLIDER_Fireworks_Fade=50,E_SLIDER_Fireworks_Velocity=2,E_SLIDER_Fireworks_XLocation=-1,E_SLIDER_Fireworks_XVelocity=0,E_SLIDER_Fireworks_YLocation=-1,E_SLIDER_Fireworks_YVelocity=0,T_CHECKBOX_Canvas=0,T_CHECKBOX_LayerMorph=0,T_CHOICE_LayerMethod=Normal,T_SLIDER_EffectLayerMix=0,T_TEXTCTRL_Fadein=0.50,T_TEXTCTRL_Fadeout=0.75</Effect>
     <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/TuneToReadable-v2/stationary-qr.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
   </EffectDB>
-  <SequenceMedia>
-    <Video path="Sequences/Zombie/Media/Vendor/ImportedMedia/Zombie edited/Videos/zombie_dance_3d.mp4" />
-    <Video path="Sequences/Zombie/Media/Vendor/Videos/zombie_dance.mp4" />
-  </SequenceMedia>
+  <SequenceMedia />
   <DataLayers>
     <DataLayer lor_params="0" channel_offset="0" num_channels="0" num_frames="0" data="&lt;rendered: erase-mode>" source="&lt;auto-generated>" name="Nutcracker" />
   </DataLayers>
@@ -3922,12 +3919,7 @@
       <EffectLayer />
       <EffectLayer />
       <EffectLayer />
-      <EffectLayer>
-        <Effect ref="482" name="Faces" startTime="49350" endTime="59100" palette="178" />
-        <Effect ref="482" name="Faces" id="1" startTime="60675" endTime="94075" palette="178" />
-        <Effect ref="482" name="Faces" id="2" startTime="142125" endTime="151650" palette="178" />
-        <Effect ref="482" name="Faces" id="3" startTime="153325" endTime="186050" palette="178" />
-      </EffectLayer>
+      <EffectLayer />
     </Element>
     <Element type="model" name="Elliott - GE Mini Grand Illusion">
       <EffectLayer />
@@ -3961,6 +3953,14 @@
     </Element>
     <Element type="model" name="GE Dark Helmet">
       <EffectLayer />
+      <EffectLayer />
+      <EffectLayer />
+      <EffectLayer>
+        <Effect ref="482" name="Faces" startTime="49350" endTime="59100" palette="178" />
+        <Effect ref="482" name="Faces" id="1" startTime="60675" endTime="94075" palette="178" />
+        <Effect ref="482" name="Faces" id="2" startTime="142125" endTime="151650" palette="178" />
+        <Effect ref="482" name="Faces" id="3" startTime="153325" endTime="186050" palette="178" />
+      </EffectLayer>
     </Element>
     <Element type="model" name="GE Evil Clown">
       <EffectLayer>

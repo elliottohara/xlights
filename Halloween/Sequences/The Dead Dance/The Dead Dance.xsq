@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <xsequence BaseChannel="0" ChanCtrlBasic="0" ChanCtrlColor="0" FixedPointTiming="1" ModelBlending="true">
   <head>
-    <version>2026.18</version>
+    <version>2026.19</version>
     <author></author>
     <author-email></author-email>
     <author-website></author-website>
@@ -387,15 +387,10 @@
     <Effect>B_CHOICE_BufferStyle=Per Model Per Preview,B_CHOICE_PerPreviewCamera=2D,E_CHOICE_State_Color=Graduate,E_CHOICE_State_Mode=Default,E_CHOICE_State_StateDefinition=BAT WINGS,E_CHOICE_State_TimingTrack=Metronome,E_SLIDER_State_Fade_Time=0,T_TEXTCTRL_Fadeout=.25</Effect>
     <Effect>B_CHOICE_BufferStyle=Overlay - Scaled,B_SLIDER_Blur=2,E_CHECKBOX_Meteors_UseMusic=0,E_CHOICE_Meteors_Effect=Down,E_CHOICE_Meteors_Type=Palette,E_SLIDER_Meteors_Count=20,E_SLIDER_Meteors_Length=25,E_SLIDER_Meteors_Speed=29,E_SLIDER_Meteors_Swirl_Intensity=0,E_SLIDER_Meteors_WamupFrames=54,T_TEXTCTRL_Fadein=1,T_TEXTCTRL_Fadeout=0.25</Effect>
     <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/TuneToReadable-v2/stationary-qr.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
-    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_TimingTrack=Gaga,E_CHOICE_Faces_UseState=Teddy RedBow static,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
     <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=Sequences/The Dead Dance/Media/Voting/occasional-voting.gif,E_TEXTCTRL_Pictures_FrameRateAdj=1.0,E_TEXTCTRL_Pictures_Speed=1.0,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
+    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Gaga,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
   </EffectDB>
-  <SequenceMedia>
-    <Video path="Sequences/The Dead Dance/Media/Vendor/Videos/Creepy Eyes.mp4" />
-    <Video path="Sequences/The Dead Dance/Media/Vendor/Videos/Dancefloor.mp4" />
-    <Video path="Sequences/The Dead Dance/Media/Vendor/Videos/Dancing Pumpkin_1.mp4" />
-    <Video path="Sequences/The Dead Dance/Media/Vendor/Videos/Halloween Cat Eyes Blinking_1.mp4" />
-  </SequenceMedia>
+  <SequenceMedia />
   <DataLayers>
     <DataLayer lor_params="0" channel_offset="0" num_channels="0" num_frames="0" data="&lt;rendered: erase-mode>" source="&lt;auto-generated>" name="Nutcracker" />
   </DataLayers>
@@ -7035,16 +7030,7 @@
       <EffectLayer />
       <EffectLayer />
       <EffectLayer />
-      <EffectLayer>
-        <Effect ref="308" name="Faces" startTime="8375" endTime="29625" palette="50" />
-        <Effect ref="308" name="Faces" id="1" startTime="31950" endTime="36675" palette="50" />
-        <Effect ref="308" name="Faces" id="2" startTime="38300" endTime="44775" palette="50" />
-        <Effect ref="308" name="Faces" id="3" startTime="46125" endTime="52625" palette="50" />
-        <Effect ref="308" name="Faces" id="4" startTime="86525" endTime="91075" palette="50" />
-        <Effect ref="308" name="Faces" id="5" startTime="94350" endTime="107200" palette="50" />
-        <Effect ref="308" name="Faces" id="6" startTime="108500" endTime="116950" palette="50" />
-        <Effect ref="308" name="Faces" id="7" startTime="176100" endTime="192350" palette="50" />
-      </EffectLayer>
+      <EffectLayer />
     </Element>
     <Element type="model" name="GE Franken Monster (2)">
       <EffectLayer />
@@ -7403,7 +7389,7 @@
     <Element type="model" name="Projector">
       <EffectLayer />
       <EffectLayer>
-        <Effect ref="309" name="Pictures" startTime="109700" endTime="125700" palette="50" />
+        <Effect ref="308" name="Pictures" startTime="109700" endTime="125700" palette="50" />
       </EffectLayer>
       <EffectLayer />
     </Element>
@@ -7505,6 +7491,18 @@
     </Element>
     <Element type="model" name="GE Dark Helmet">
       <EffectLayer />
+      <EffectLayer />
+      <EffectLayer />
+      <EffectLayer>
+        <Effect ref="309" name="Faces" startTime="8375" endTime="29625" palette="50" />
+        <Effect ref="309" name="Faces" id="1" startTime="31950" endTime="36675" palette="50" />
+        <Effect ref="309" name="Faces" id="2" startTime="38300" endTime="44775" palette="50" />
+        <Effect ref="309" name="Faces" id="3" startTime="46125" endTime="52625" palette="50" />
+        <Effect ref="309" name="Faces" id="4" startTime="86525" endTime="91075" palette="50" />
+        <Effect ref="309" name="Faces" id="5" startTime="94350" endTime="107200" palette="50" />
+        <Effect ref="309" name="Faces" id="6" startTime="108500" endTime="116950" palette="50" />
+        <Effect ref="309" name="Faces" id="7" startTime="176100" endTime="192350" palette="50" />
+      </EffectLayer>
     </Element>
     <Element type="model" name="Shrubs">
       <EffectLayer>

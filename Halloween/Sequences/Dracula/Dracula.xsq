@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <xsequence BaseChannel="0" ChanCtrlBasic="0" ChanCtrlColor="0" FixedPointTiming="1" ModelBlending="true">
   <head>
-    <version>2026.18</version>
+    <version>2026.19</version>
     <author></author>
     <author-email></author-email>
     <author-website></author-website>
@@ -1044,8 +1044,8 @@
     <Effect>E_0FILEPICKERCTRL_IFS=Sequences/Dracula/Media/Embedded/Shader/Creation by Silexars.fs,E_CHOICE_SHADERXYZZY_uColMode=Shader Defaults ,E_SLIDER_SHADERXYZZY_uIntensity=100,E_SLIDER_SHADERXYZZY_uOffsetX=0,E_SLIDER_SHADERXYZZY_uOffsetY=0,E_SLIDER_Shader_Speed=100,E_TEXTCTRL_Shader_LeadIn=0,E_TEXTCTRL_Shader_Offset_X=0,E_TEXTCTRL_Shader_Offset_Y=-40,E_TEXTCTRL_Shader_Zoom=40,T_CHECKBOX_Canvas=0,T_CHECKBOX_LayerMorph=0,T_CHOICE_LayerMethod=Normal,T_SLIDER_EffectLayerMix=0,T_TEXTCTRL_Fadein=1.00,T_TEXTCTRL_Fadeout=2.00</Effect>
     <Effect>E_CHECKBOX_Shockwave_Blend_Edges=1,E_CHECKBOX_Shockwave_Scale=1,E_CHOICE_Shockwave_TimingTrack=,E_NOTEBOOK_Shockwave=Position,E_SLIDER_Shockwave_Accel=0,E_SLIDER_Shockwave_CenterX=50,E_SLIDER_Shockwave_CenterY=50,E_SLIDER_Shockwave_Cycles=1,E_SLIDER_Shockwave_End_Radius=0,E_SLIDER_Shockwave_End_Width=250,E_SLIDER_Shockwave_Start_Radius=0,E_SLIDER_Shockwave_Start_Width=250,T_CHECKBOX_Canvas=0,T_CHECKBOX_LayerMorph=0,T_CHOICE_LayerMethod=Normal,T_SLIDER_EffectLayerMix=0,T_TEXTCTRL_Fadein=  ,T_TEXTCTRL_Fadeout=1.00</Effect>
     <Effect>B_CHOICE_BufferStyle=Horizontal Per Model/Strand,E_CHECKBOX_Bars_3D=1,E_CHECKBOX_Bars_Gradient=1,E_CHECKBOX_Bars_Highlight=0,E_CHECKBOX_Bars_UseFirstColorForHighlight=0,E_CHOICE_Bars_Direction=compress,E_SLIDER_Bars_BarCount=1,E_TEXTCTRL_Bars_Center=0,E_TEXTCTRL_Bars_Cycles=8.0,T_CHECKBOX_Canvas=0,T_CHECKBOX_LayerMorph=0,T_CHOICE_LayerMethod=Normal,T_SLIDER_EffectLayerMix=0</Effect>
-    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_TimingTrack=Female Chorus,E_CHOICE_Faces_UseState=Teddy RedBow static,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
-    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_TimingTrack=Lead Lyrics,E_CHOICE_Faces_UseState=Teddy RedBow static,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
+    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Female Chorus,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
+    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Lead Lyrics,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=Lead Lyrics,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Pumpkin face,E_CHOICE_Faces_TimingTrack=Male Chorus,E_CHOICE_Faces_UseState=outline with stem,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
     <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=Sequences/Dracula/Media/Voting/occasional-voting.gif,E_TEXTCTRL_Pictures_FrameRateAdj=1.0,E_TEXTCTRL_Pictures_Speed=1.0,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
@@ -7099,16 +7099,7 @@
       <EffectLayer />
       <EffectLayer />
       <EffectLayer />
-      <EffectLayer>
-        <Effect ref="614" name="Faces" startTime="50" endTime="8275" palette="408" />
-        <Effect ref="614" name="Faces" id="1" startTime="44500" endTime="46575" palette="408" />
-        <Effect ref="615" name="Faces" id="2" startTime="46575" endTime="60500" palette="408" />
-        <Effect ref="614" name="Faces" id="3" startTime="74500" endTime="75500" palette="408" />
-        <Effect ref="615" name="Faces" id="4" startTime="80000" endTime="93825" palette="408" />
-        <Effect ref="614" name="Faces" id="5" startTime="110250" endTime="112925" palette="408" />
-        <Effect ref="615" name="Faces" id="6" startTime="128975" endTime="160750" palette="408" />
-        <Effect ref="614" name="Faces" id="7" startTime="167100" endTime="168850" palette="408" />
-      </EffectLayer>
+      <EffectLayer />
     </Element>
     <Element type="model" name="Elliott - GE Mini Grand Illusion">
       <EffectLayer />
@@ -7142,6 +7133,18 @@
     </Element>
     <Element type="model" name="GE Dark Helmet">
       <EffectLayer />
+      <EffectLayer />
+      <EffectLayer />
+      <EffectLayer>
+        <Effect ref="614" name="Faces" startTime="50" endTime="8275" palette="408" />
+        <Effect ref="614" name="Faces" id="1" startTime="44500" endTime="46575" palette="408" />
+        <Effect ref="615" name="Faces" id="2" startTime="46575" endTime="60500" palette="408" />
+        <Effect ref="614" name="Faces" id="3" startTime="74500" endTime="75500" palette="408" />
+        <Effect ref="615" name="Faces" id="4" startTime="80000" endTime="93825" palette="408" />
+        <Effect ref="614" name="Faces" id="5" startTime="110250" endTime="112925" palette="408" />
+        <Effect ref="615" name="Faces" id="6" startTime="128975" endTime="160750" palette="408" />
+        <Effect ref="614" name="Faces" id="7" startTime="167100" endTime="168850" palette="408" />
+      </EffectLayer>
     </Element>
     <Element type="model" name="GE Evil Clown">
       <EffectLayer>

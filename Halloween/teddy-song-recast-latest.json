@@ -1,0 +1,3659 @@
+{
+  "started_at": "2026-11-01T17:59:51.217123-06:00",
+  "backup": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951",
+  "complete": true,
+  "deployed": true,
+  "songs": {
+    "01 - Abracadabra": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/01 - Abracadabra/01 - Abracadabra.xsq",
+      "before": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/01 - Abracadabra/01 - Abracadabra.xsq",
+      "stage": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Working/01 - Abracadabra/01 - Abracadabra.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/01 - Abracadabra/01 - Abracadabra.fseq",
+      "replacement": "GE Dark Helmet",
+      "source_xsq_sha256": "18de23ec7c968e9578cf926e34fffe7110fc561efd06807605f2012e0ea07022",
+      "source_fseq_sha256": "ff2f1b53bf723a87d81fdd4e335b54e465e722805610f6f7662ab9dff730b4bc",
+      "playback_files": [
+        "Halloween 2026 - 01 - Abracadabra.fseq"
+      ],
+      "moved_effects": 4,
+      "cleared_static_effects": 0,
+      "additions": [
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Abracadabra,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 15450,
+          "endTime": 61250
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Abracadabra,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 93450,
+          "endTime": 138400
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Abracadabra,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 171575,
+          "endTime": 200850
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Abracadabra,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 210000,
+          "endTime": 219000
+        }
+      ],
+      "xsq_sha256": "e29d7174e8ed13072859e8db68a46cd7b7baeb80f47f51cbceb95cc7287c696a",
+      "native_voice": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Native voices/01 - Abracadabra.eseq",
+      "native_voice_sha256": "2ecf67fce75b4436019005ba7a7d42747c8a554532e7714ad9562145d8ef07d3",
+      "native_lit_samples": 1147,
+      "native_distinct_samples": 4,
+      "native_complete": true,
+      "authored_at": "2026-11-01T18:00:42.511396-06:00",
+      "all_other_effects_and_timings_preserved": true,
+      "frames": 8935,
+      "frame_ms": 25,
+      "all_other_output_pixels_identical": true,
+      "teddy_zero_every_frame": true,
+      "replacement_matches_native_every_frame": true,
+      "unchanged_output_sha256": "7e97347bd857f9df05f275d4bdbd44db9135141ca53f13d6b8f8c5664666b09e",
+      "projector_frames_sha256": "f730663f5094435a477f110ac75bbc3d3f42e9d36ff8193a6c276cd10bd74bf5",
+      "assembled": true,
+      "fseq_sha256": "4bd95c5ea59541ab04b3a2e3516b86b0c57eace0ea6f1259642a19b18a74e5a0",
+      "projector_file": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Projector sparse/01 - Abracadabra.fseq",
+      "projector_sha256": "2410c57811ca1bdc64efeabe5806ac902f2984bb072ef0bb95879587b33bd0d8",
+      "rendered_at": "2026-11-01T18:10:32.816352-06:00",
+      "adopted": true
+    },
+    "03 - This Is Halloween": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/03 - This Is Halloween/03 - This Is Halloween.xsq",
+      "before": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/03 - This Is Halloween/03 - This Is Halloween.xsq",
+      "stage": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Working/03 - This Is Halloween/03 - This Is Halloween.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/03 - This Is Halloween/03 - This Is Halloween.fseq",
+      "replacement": "Matrix-Garage Window",
+      "source_xsq_sha256": "dfa0f4e67c7f8d312fb488136998f56119c766a7061451ac1d5f5ca6fdf53876",
+      "source_fseq_sha256": "070c752f86397cded3a7e2e3a73dd73ef1d938959f8ef7e8a4c9f3586d9335bc",
+      "playback_files": [
+        "Halloween 2026 - 03 - This Is Halloween.fseq"
+      ],
+      "moved_effects": 15,
+      "cleared_static_effects": 0,
+      "additions": [
+        {
+          "target": "Matrix-Garage Window",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=skull [01-Abracadabra],E_CHOICE_Faces_TimingTrack=Horns,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 20350,
+          "endTime": 28900
+        },
+        {
+          "target": "Matrix-Garage Window",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=skull [01-Abracadabra],E_CHOICE_Faces_TimingTrack=Horns,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 31850,
+          "endTime": 34600
+        },
+        {
+          "target": "Matrix-Garage Window",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=skull [01-Abracadabra],E_CHOICE_Faces_TimingTrack=Horns,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 37550,
+          "endTime": 38600
+        },
+        {
+          "target": "Matrix-Garage Window",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=skull [01-Abracadabra],E_CHOICE_Faces_TimingTrack=Horns,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 40450,
+          "endTime": 43300
+        },
+        {
+          "target": "Matrix-Garage Window",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=skull [01-Abracadabra],E_CHOICE_Faces_TimingTrack=Horns,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 48400,
+          "endTime": 59750
+        },
+        {
+          "target": "Matrix-Garage Window",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=skull [01-Abracadabra],E_CHOICE_Faces_TimingTrack=Horns,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 61150,
+          "endTime": 66650
+        },
+        {
+          "target": "Matrix-Garage Window",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=skull [01-Abracadabra],E_CHOICE_Faces_TimingTrack=Horns,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 72700,
+          "endTime": 80500
+        },
+        {
+          "target": "Matrix-Garage Window",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=skull [01-Abracadabra],E_CHOICE_Faces_TimingTrack=Horns,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 92800,
+          "endTime": 95700
+        },
+        {
+          "target": "Matrix-Garage Window",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=skull [01-Abracadabra],E_CHOICE_Faces_TimingTrack=Horns,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 97750,
+          "endTime": 100550
+        },
+        {
+          "target": "Matrix-Garage Window",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=skull [01-Abracadabra],E_CHOICE_Faces_TimingTrack=Horns,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 111600,
+          "endTime": 111800
+        },
+        {
+          "target": "Matrix-Garage Window",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=skull [01-Abracadabra],E_CHOICE_Faces_TimingTrack=Horns,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 120650,
+          "endTime": 126150
+        },
+        {
+          "target": "Matrix-Garage Window",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=skull [01-Abracadabra],E_CHOICE_Faces_TimingTrack=Horns,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 134950,
+          "endTime": 137600
+        },
+        {
+          "target": "Matrix-Garage Window",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=skull [01-Abracadabra],E_CHOICE_Faces_TimingTrack=Horns,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 142200,
+          "endTime": 146250
+        },
+        {
+          "target": "Matrix-Garage Window",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=skull [01-Abracadabra],E_CHOICE_Faces_TimingTrack=Horns,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 155100,
+          "endTime": 160800
+        },
+        {
+          "target": "Matrix-Garage Window",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=skull [01-Abracadabra],E_CHOICE_Faces_TimingTrack=Horns,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 162300,
+          "endTime": 180350
+        }
+      ],
+      "xsq_sha256": "805f5ab474b58ce89c924e719cfe23c7e72729ab16d832240fe2dd246bacad0f",
+      "native_voice": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Native voices/03 - This Is Halloween.eseq",
+      "native_voice_sha256": "9bbddcdeebc9bb3967b5c6780d10b993b8717e2e1f32704bd6dbf53107f22a76",
+      "native_lit_samples": 802,
+      "native_distinct_samples": 7,
+      "native_complete": true,
+      "authored_at": "2026-11-01T18:00:50.976825-06:00",
+      "all_other_effects_and_timings_preserved": true,
+      "frames": 3931,
+      "frame_ms": 50,
+      "all_other_output_pixels_identical": true,
+      "teddy_zero_every_frame": true,
+      "replacement_matches_native_every_frame": true,
+      "unchanged_output_sha256": "2dd7181d06dddbf972aedff46491940a95c93967276ff7dfd0ac1595e36b9189",
+      "projector_frames_sha256": "140caea89b6134ca9b8b1435d9d9778785f9160e54340192a62078a05d06f2d3",
+      "assembled": true,
+      "fseq_sha256": "1502843c72ec167e7596a1027d7b197ffc5290269b5f1a0510e79a8dde81de77",
+      "projector_file": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Projector sparse/03 - This Is Halloween.fseq",
+      "projector_sha256": "472b9b96cfb6e345bd46b4bd124cdf152cdcb82a262b55c51254dc94ef2a71fb",
+      "rendered_at": "2026-11-01T18:10:38.105602-06:00",
+      "adopted": true
+    },
+    "12-The-Monster-_feat.-Rihanna_": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/12-The-Monster-_feat.-Rihanna_/12-The-Monster-_feat.-Rihanna_.xsq",
+      "before": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/12-The-Monster-_feat.-Rihanna_/12-The-Monster-_feat.-Rihanna_.xsq",
+      "stage": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Working/12-The-Monster-_feat.-Rihanna_/12-The-Monster-_feat.-Rihanna_.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/12-The-Monster-_feat.-Rihanna_/12-The-Monster-_feat.-Rihanna_.fseq",
+      "replacement": "GE Dark Helmet",
+      "source_xsq_sha256": "b29507f885c305356ab26e15aaedcb4c3ad0226e05fb783d021f509d53ed06d2",
+      "source_fseq_sha256": "c1b8515e2ff8d706daf7696a62ffbb242d12df378c11535dbc083d62b2234f4a",
+      "playback_files": [
+        "Halloween 2026 - 12-The-Monster-_feat.-Rihanna_.fseq"
+      ],
+      "moved_effects": 20,
+      "cleared_static_effects": 0,
+      "additions": [
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Lyrics 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 50,
+          "endTime": 4375
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Lyrics 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 4425,
+          "endTime": 8625
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Lyrics 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 8800,
+          "endTime": 13050
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Lyrics 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 13250,
+          "endTime": 17600
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Lyrics 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 52475,
+          "endTime": 56500
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Lyrics 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 56825,
+          "endTime": 60875
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Lyrics 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 61175,
+          "endTime": 65225
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Lyrics 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 65650,
+          "endTime": 69850
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Lyrics 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 122225,
+          "endTime": 126300
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Lyrics 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 126650,
+          "endTime": 130700
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Lyrics 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 130925,
+          "endTime": 135050
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Lyrics 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 135350,
+          "endTime": 139675
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Lyrics 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 194250,
+          "endTime": 198600
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Lyrics 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 198600,
+          "endTime": 202975
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Lyrics 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 202975,
+          "endTime": 207250
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Lyrics 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 207300,
+          "endTime": 211675
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Lyrics 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 211675,
+          "endTime": 215775
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Lyrics 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 216075,
+          "endTime": 220125
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Lyrics 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 220400,
+          "endTime": 224500
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Lyrics 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 224775,
+          "endTime": 229125
+        }
+      ],
+      "xsq_sha256": "32ae3c3c82dbc098eabbe95e41920b4a4fd3531e094d24f1a82dc82ddb6714a4",
+      "native_voice": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Native voices/12-The-Monster-_feat.-Rihanna_.eseq",
+      "native_voice_sha256": "c3c6a9d14ad8b6d2ed5e28359c640b2192ee57f855a3390fdee010e4214d8dac",
+      "native_lit_samples": 829,
+      "native_distinct_samples": 5,
+      "native_complete": true,
+      "authored_at": "2026-11-01T18:01:02.957002-06:00",
+      "all_other_effects_and_timings_preserved": true,
+      "frames": 10007,
+      "frame_ms": 25,
+      "all_other_output_pixels_identical": true,
+      "teddy_zero_every_frame": true,
+      "replacement_matches_native_every_frame": true,
+      "unchanged_output_sha256": "a74ab0cd8181c109c0b0e8e858496123d6ecedcb35c49d6594cec7da87e6f061",
+      "projector_frames_sha256": "11d9215ba9486b120a23df558b06a7db2fa9024735a8672829b11ee5e133400c",
+      "assembled": true,
+      "fseq_sha256": "0678244b2a6275f7fcce0cda12f10c966cf9ed68169853d84a649328c7d2914e",
+      "projector_file": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Projector sparse/12-The-Monster-_feat.-Rihanna_.fseq",
+      "projector_sha256": "02a00696da25396d8071196ee71271eff83c0e7933ff7690ed45227cf44dff36",
+      "rendered_at": "2026-11-01T18:10:46.679214-06:00",
+      "adopted": true
+    },
+    "Bad Romance (Extra Clean)": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/Bad Romance (Extra Clean)/Bad Romance (Extra Clean).xsq",
+      "before": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/Bad Romance (Extra Clean)/Bad Romance (Extra Clean).xsq",
+      "stage": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Working/Bad Romance (Extra Clean)/Bad Romance (Extra Clean).xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/Bad Romance (Extra Clean)/Bad Romance (Extra Clean).fseq",
+      "replacement": "GE Dark Helmet",
+      "source_xsq_sha256": "8119d06f3cf3c3bbbc23ea95a58d86126ca1a4b86a4e1c90cd85771b140a592c",
+      "source_fseq_sha256": "1bdb5014c53ba9f77ebf7873537c724bb60eb713003744a57fb845caccab5d54",
+      "playback_files": [
+        "Halloween 2026 - Bad Romance (Extra Clean).fseq"
+      ],
+      "moved_effects": 5,
+      "cleared_static_effects": 0,
+      "additions": [
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Lyrics (Main),T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 33700,
+          "endTime": 63050
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Lyrics (Main),T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 66100,
+          "endTime": 73400
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Lyrics (Backup),T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 80850,
+          "endTime": 82875
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Lyrics (Backup),T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 145400,
+          "endTime": 147525
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Lyrics (Backup),T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 153475,
+          "endTime": 169350
+        }
+      ],
+      "xsq_sha256": "1f7b59486e771282b8785279a81916053be94bb5715cd6dcc022bc81b73785c3",
+      "native_voice": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Native voices/Bad Romance (Extra Clean).eseq",
+      "native_voice_sha256": "32a59628a092104c92d5c0bd434096f3a5da5d6df0ce3d0084fb55ce4fa6a4ef",
+      "native_lit_samples": 499,
+      "native_distinct_samples": 4,
+      "native_complete": true,
+      "authored_at": "2026-11-01T18:01:14.956205-06:00",
+      "all_other_effects_and_timings_preserved": true,
+      "frames": 7265,
+      "frame_ms": 25,
+      "all_other_output_pixels_identical": true,
+      "teddy_zero_every_frame": true,
+      "replacement_matches_native_every_frame": true,
+      "unchanged_output_sha256": "a375d38b410f5a532ea883f8bf9cf963e2646ca5db15fe95693c4c02cfc1af90",
+      "projector_frames_sha256": "43311b8e7fb97b6938e4a3ecf839c68cbe9d1799aac45bb17004e632f206a4f5",
+      "assembled": true,
+      "fseq_sha256": "39d134975a347bb4fd5d62df314f57a9d2583a149d109b8a4628c619894f6ae9",
+      "projector_file": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Projector sparse/Bad Romance (Extra Clean).fseq",
+      "projector_sha256": "55d647001fcd51e51b0dfdbbdddacd59c2af4843e18ad97bf5b95129ff59a9b7",
+      "rendered_at": "2026-11-01T18:10:52.901456-06:00",
+      "adopted": true
+    },
+    "Dracula": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/Dracula/Dracula.xsq",
+      "before": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/Dracula/Dracula.xsq",
+      "stage": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Working/Dracula/Dracula.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/Dracula/Dracula.fseq",
+      "replacement": "GE Dark Helmet",
+      "source_xsq_sha256": "77256f8dc3b90255c75445e00a9a407afc674986ac3ce8b801b4471669bbd1b0",
+      "source_fseq_sha256": "5af6d6af751c9d39d5b280e4d4c19f50ead5669bd8696108ef4baf098c0f7647",
+      "playback_files": [
+        "Halloween 2026 - Dracula.fseq"
+      ],
+      "moved_effects": 8,
+      "cleared_static_effects": 0,
+      "additions": [
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Female Chorus,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 50,
+          "endTime": 8275
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Female Chorus,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 44500,
+          "endTime": 46575
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Lead Lyrics,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 46575,
+          "endTime": 60500
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Female Chorus,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 74500,
+          "endTime": 75500
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Lead Lyrics,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 80000,
+          "endTime": 93825
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Female Chorus,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 110250,
+          "endTime": 112925
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Lead Lyrics,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 128975,
+          "endTime": 160750
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Female Chorus,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 167100,
+          "endTime": 168850
+        }
+      ],
+      "xsq_sha256": "6dba6e2f864166649bad4d728c0793f2f459d73dc9f4345f1d15bf9313b17fdc",
+      "native_voice": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Native voices/Dracula.eseq",
+      "native_voice_sha256": "b1f71097e21644d79fcea1e62963da41f78ef5942c21d9186d3fba7ee2b7701f",
+      "native_lit_samples": 696,
+      "native_distinct_samples": 4,
+      "native_complete": true,
+      "authored_at": "2026-11-01T18:01:26.543835-06:00",
+      "all_other_effects_and_timings_preserved": true,
+      "frames": 8212,
+      "frame_ms": 25,
+      "all_other_output_pixels_identical": true,
+      "teddy_zero_every_frame": true,
+      "replacement_matches_native_every_frame": true,
+      "unchanged_output_sha256": "4e76c1699485fe5cb2f8d26cd50bca100a2c8258625214a8454d9772e7c8021d",
+      "projector_frames_sha256": "626108006b1bbc595b45776a1fba6d6b2612ff3151f05d2276e9cc4378659061",
+      "assembled": true,
+      "fseq_sha256": "cd20e1c0c290c383043681793abbdd4ea8ca4f8b48bab1272768f1b5aa3e0a67",
+      "projector_file": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Projector sparse/Dracula.fseq",
+      "projector_sha256": "6befc0a3e0912730ce84eef6fa26ccf36cde1b96eb8ca3c66e4be3a6410a3434",
+      "rendered_at": "2026-11-01T18:11:01.519698-06:00",
+      "adopted": true
+    },
+    "Ghostbusters": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/Ghostbusters/Ghostbusters.xsq",
+      "before": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/Ghostbusters/Ghostbusters.xsq",
+      "stage": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Working/Ghostbusters/Ghostbusters.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Ghostbusters live baseline.fseq",
+      "replacement": "GE Dark Helmet",
+      "source_xsq_sha256": "4bc940da76b1eeddc245f449a92db12646ff9a0026cfe40732a289ebf85b60d2",
+      "source_fseq_sha256": "14957415a2ff0ef7ef04a80b3f588fd382c9d88260fd87ddfca3fecfbf87b46c",
+      "playback_files": [
+        "Halloween 2026 - Ghostbusters.fseq"
+      ],
+      "moved_effects": 6,
+      "cleared_static_effects": 0,
+      "additions": [
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=New Timing,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 550,
+          "endTime": 10600
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=New Timing,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 12250,
+          "endTime": 110050
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=New Timing,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 111700,
+          "endTime": 117550
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=New Timing,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 118800,
+          "endTime": 125550
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=New Timing,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 127900,
+          "endTime": 129050
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=New Timing,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 130300,
+          "endTime": 169200
+        }
+      ],
+      "xsq_sha256": "ea44c0bd962606f95ce8d098b12ad29cb3ee6ed7a8ee3ae000750be2032a147e",
+      "native_voice": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Native voices/Ghostbusters.eseq",
+      "native_voice_sha256": "f5caac659ac18bfd6a96ab65f898325c8fd87026245d4f4c4a13a50dbbca27e0",
+      "native_lit_samples": 1317,
+      "native_distinct_samples": 3,
+      "native_complete": true,
+      "authored_at": "2026-11-01T18:01:36.299749-06:00",
+      "all_other_effects_and_timings_preserved": true,
+      "local_saved_baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/Ghostbusters/Ghostbusters.fseq",
+      "frames": 6867,
+      "frame_ms": 25,
+      "all_other_output_pixels_identical": true,
+      "teddy_zero_every_frame": true,
+      "replacement_matches_native_every_frame": true,
+      "unchanged_output_sha256": "a0a48a477c4ac672ca8c2688e2931cd630cb2781943dd2958426def84c1352f3",
+      "projector_frames_sha256": "e564e8cffaebe1e43c3a769c84d78342e68371cd14281ea48f052ca0edbd36ed",
+      "assembled": true,
+      "fseq_sha256": "ed1bfc6adbe8848c812e4c302b0bc2e1ca50651cced772a47f7628bbe9c41e56",
+      "projector_file": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Projector sparse/Ghostbusters.fseq",
+      "projector_sha256": "7f92d9e01beaf34830dfa91afc621ff9bf04fbf18a37008ab4e2eedfa08dfc4f",
+      "rendered_at": "2026-11-01T18:11:10.553721-06:00",
+      "adopted": true
+    },
+    "Ghostbusters 2": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/Ghostbusters 2/Ghostbusters 2.xsq",
+      "before": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/Ghostbusters 2/Ghostbusters 2.xsq",
+      "stage": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Working/Ghostbusters 2/Ghostbusters 2.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/Ghostbusters 2/Ghostbusters 2.fseq",
+      "replacement": "GE Dark Helmet",
+      "source_xsq_sha256": "a1d4aae62bb9d99d6247eaf6944ecc379d9ad6062075a752abd0af62e3cad01e",
+      "source_fseq_sha256": "c333c9ad7aabbff7e63994ef295ba967385de189a1891811b6422e52b1ec95fd",
+      "playback_files": [
+        "Halloween 2026 - Ghostbusters 2.fseq"
+      ],
+      "moved_effects": 20,
+      "cleared_static_effects": 0,
+      "additions": [
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=layer 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 11850,
+          "endTime": 13900
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=layer 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 15200,
+          "endTime": 18700
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=layer 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 24350,
+          "endTime": 25900
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=layer 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 27500,
+          "endTime": 35350
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=layer 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 39000,
+          "endTime": 40650
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=layer 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 44400,
+          "endTime": 51300
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=layer 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 53750,
+          "endTime": 59550
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=layer 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 62900,
+          "endTime": 70200
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=layer 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 72700,
+          "endTime": 74300
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=layer 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 78100,
+          "endTime": 92550
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=layer 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 95550,
+          "endTime": 100300
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=layer 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 103950,
+          "endTime": 114050
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=layer 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 115350,
+          "endTime": 118300
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=layer 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 120000,
+          "endTime": 122950
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=layer 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 125300,
+          "endTime": 134550
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=layer 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 137700,
+          "endTime": 138200
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=layer 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 139650,
+          "endTime": 140450
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=layer 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 141900,
+          "endTime": 142650
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=layer 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 151800,
+          "endTime": 167100
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=layer 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 168650,
+          "endTime": 169200
+        }
+      ],
+      "xsq_sha256": "440392175c582f17ad6169a0edef9d7aa75ef9b84e0aebb04b11376a61619759",
+      "native_voice": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Native voices/Ghostbusters 2.eseq",
+      "native_voice_sha256": "9d6ee6a98b04348a10d8a6d9941e6d692bbfb3d03cf5e8401482687197279db7",
+      "native_lit_samples": 882,
+      "native_distinct_samples": 3,
+      "native_complete": true,
+      "authored_at": "2026-11-01T18:01:46.058848-06:00",
+      "all_other_effects_and_timings_preserved": true,
+      "frames": 6867,
+      "frame_ms": 25,
+      "all_other_output_pixels_identical": true,
+      "teddy_zero_every_frame": true,
+      "replacement_matches_native_every_frame": true,
+      "unchanged_output_sha256": "cf7e2dbf3d13f1bad584b4387280140d7ccff2c6d844f5f2dda33a88b3f05f69",
+      "projector_frames_sha256": "e564e8cffaebe1e43c3a769c84d78342e68371cd14281ea48f052ca0edbd36ed",
+      "assembled": true,
+      "fseq_sha256": "790b1371b4721ea18017784644a1585297ec22985f4abab4baf21e75bed081bc",
+      "projector_file": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Projector sparse/Ghostbusters 2.fseq",
+      "projector_sha256": "fde76e1f5e7c4c3a0a67d62598401b5c87c532b976e458d45e5f90ee373b49cb",
+      "rendered_at": "2026-11-01T18:11:19.406549-06:00",
+      "adopted": true
+    },
+    "GreatestShowWorking 2": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/GreatestShowWorking 2/GreatestShowWorking 2.xsq",
+      "before": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/GreatestShowWorking 2/GreatestShowWorking 2.xsq",
+      "stage": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Working/GreatestShowWorking 2/GreatestShowWorking 2.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/GreatestShowWorking 2/GreatestShowWorking 2.fseq",
+      "replacement": "GE Evil Clown",
+      "source_xsq_sha256": "69e1e5c8822bbaf5b52d2415849131967508638ab23b3879b94210e31a3dd331",
+      "source_fseq_sha256": "b7b74ef510e037eef65a14ba38cf54055173d60d7ee66101ee6c1007461f65c7",
+      "playback_files": [
+        "Halloween 2026 - GreatestShowWorking 2.fseq"
+      ],
+      "moved_effects": 31,
+      "cleared_static_effects": 0,
+      "additions": [
+        {
+          "target": "GE Evil Clown",
+          "layer": 1,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=ENSEMBLE",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#00FF00,C_BUTTON_Palette3=#FF0000,C_BUTTON_Palette4=#FFFF00,C_BUTTON_Palette5=#FFFFFF,C_BUTTON_Palette6=#00FF00,C_BUTTON_Palette7=#0000FF,C_BUTTON_Palette8=#FF0000,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1",
+          "startTime": 1900,
+          "endTime": 19400
+        },
+        {
+          "target": "GE Evil Clown",
+          "layer": 1,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=ENSEMBLE",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#00FF00,C_BUTTON_Palette3=#FF0000,C_BUTTON_Palette4=#FFFF00,C_BUTTON_Palette5=#FFFFFF,C_BUTTON_Palette6=#00FF00,C_BUTTON_Palette7=#0000FF,C_BUTTON_Palette8=#FF0000,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1",
+          "startTime": 19400,
+          "endTime": 21600
+        },
+        {
+          "target": "GE Evil Clown",
+          "layer": 1,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=ENSEMBLE",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#00FF00,C_BUTTON_Palette3=#FF0000,C_BUTTON_Palette4=#FFFF00,C_BUTTON_Palette5=#FFFFFF,C_BUTTON_Palette6=#00FF00,C_BUTTON_Palette7=#0000FF,C_BUTTON_Palette8=#FF0000,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1",
+          "startTime": 25500,
+          "endTime": 27900
+        },
+        {
+          "target": "GE Evil Clown",
+          "layer": 1,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHECKBOX_Faces_TransparentBlack=0,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=ENSEMBLE,E_TEXTCTRL_Faces_TransparentBlack=0",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#00FF00,C_BUTTON_Palette3=#FF0000,C_BUTTON_Palette4=#FFFF00,C_BUTTON_Palette5=#FFFFFF,C_BUTTON_Palette6=#00FF00,C_BUTTON_Palette7=#0000FF,C_BUTTON_Palette8=#FF0000,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1",
+          "startTime": 31700,
+          "endTime": 34150
+        },
+        {
+          "target": "GE Evil Clown",
+          "layer": 1,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=CHORUS",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#00FF00,C_BUTTON_Palette3=#FF0000,C_BUTTON_Palette4=#FFFF00,C_BUTTON_Palette5=#FFFFFF,C_BUTTON_Palette6=#00FF00,C_BUTTON_Palette7=#0000FF,C_BUTTON_Palette8=#FF0000,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1",
+          "startTime": 56800,
+          "endTime": 57750
+        },
+        {
+          "target": "GE Evil Clown",
+          "layer": 1,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=CHORUS",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#00FF00,C_BUTTON_Palette3=#FF0000,C_BUTTON_Palette4=#FFFF00,C_BUTTON_Palette5=#FFFFFF,C_BUTTON_Palette6=#00FF00,C_BUTTON_Palette7=#0000FF,C_BUTTON_Palette8=#FF0000,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1",
+          "startTime": 59900,
+          "endTime": 60700
+        },
+        {
+          "target": "GE Evil Clown",
+          "layer": 1,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=CHORUS",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#00FF00,C_BUTTON_Palette3=#FF0000,C_BUTTON_Palette4=#FFFF00,C_BUTTON_Palette5=#FFFFFF,C_BUTTON_Palette6=#00FF00,C_BUTTON_Palette7=#0000FF,C_BUTTON_Palette8=#FF0000,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1",
+          "startTime": 63050,
+          "endTime": 63950
+        },
+        {
+          "target": "GE Evil Clown",
+          "layer": 1,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=CHORUS",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#00FF00,C_BUTTON_Palette3=#FF0000,C_BUTTON_Palette4=#FFFF00,C_BUTTON_Palette5=#FFFFFF,C_BUTTON_Palette6=#00FF00,C_BUTTON_Palette7=#0000FF,C_BUTTON_Palette8=#FF0000,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1",
+          "startTime": 66150,
+          "endTime": 67650
+        },
+        {
+          "target": "GE Evil Clown",
+          "layer": 1,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=ENSEMBLE",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#00FF00,C_BUTTON_Palette3=#FF0000,C_BUTTON_Palette4=#FFFF00,C_BUTTON_Palette5=#FFFFFF,C_BUTTON_Palette6=#00FF00,C_BUTTON_Palette7=#0000FF,C_BUTTON_Palette8=#FF0000,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1",
+          "startTime": 70150,
+          "endTime": 77600
+        },
+        {
+          "target": "GE Evil Clown",
+          "layer": 1,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=CHORUS",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#00FF00,C_BUTTON_Palette3=#FF0000,C_BUTTON_Palette4=#FFFF00,C_BUTTON_Palette5=#FFFFFF,C_BUTTON_Palette6=#00FF00,C_BUTTON_Palette7=#0000FF,C_BUTTON_Palette8=#FF0000,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1",
+          "startTime": 79000,
+          "endTime": 81900
+        },
+        {
+          "target": "GE Evil Clown",
+          "layer": 1,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=CHORUS",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#00FF00,C_BUTTON_Palette3=#FF0000,C_BUTTON_Palette4=#FFFF00,C_BUTTON_Palette5=#FFFFFF,C_BUTTON_Palette6=#00FF00,C_BUTTON_Palette7=#0000FF,C_BUTTON_Palette8=#FF0000,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1",
+          "startTime": 85250,
+          "endTime": 88000
+        },
+        {
+          "target": "GE Evil Clown",
+          "layer": 1,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=ENSEMBLE",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#00FF00,C_BUTTON_Palette3=#FF0000,C_BUTTON_Palette4=#FFFF00,C_BUTTON_Palette5=#FFFFFF,C_BUTTON_Palette6=#00FF00,C_BUTTON_Palette7=#0000FF,C_BUTTON_Palette8=#FF0000,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1",
+          "startTime": 91250,
+          "endTime": 94250
+        },
+        {
+          "target": "GE Evil Clown",
+          "layer": 1,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=CHORUS",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#00FF00,C_BUTTON_Palette3=#FF0000,C_BUTTON_Palette4=#FFFF00,C_BUTTON_Palette5=#FFFFFF,C_BUTTON_Palette6=#00FF00,C_BUTTON_Palette7=#0000FF,C_BUTTON_Palette8=#FF0000,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1",
+          "startTime": 94250,
+          "endTime": 97350
+        },
+        {
+          "target": "GE Evil Clown",
+          "layer": 1,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=CHORUS",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#00FF00,C_BUTTON_Palette3=#FF0000,C_BUTTON_Palette4=#FFFF00,C_BUTTON_Palette5=#FFFFFF,C_BUTTON_Palette6=#00FF00,C_BUTTON_Palette7=#0000FF,C_BUTTON_Palette8=#FF0000,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1",
+          "startTime": 98500,
+          "endTime": 103450
+        },
+        {
+          "target": "GE Evil Clown",
+          "layer": 1,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=CHORUS",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#00FF00,C_BUTTON_Palette3=#FF0000,C_BUTTON_Palette4=#FFFF00,C_BUTTON_Palette5=#FFFFFF,C_BUTTON_Palette6=#00FF00,C_BUTTON_Palette7=#0000FF,C_BUTTON_Palette8=#FF0000,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1",
+          "startTime": 104600,
+          "endTime": 105600
+        },
+        {
+          "target": "GE Evil Clown",
+          "layer": 1,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=CHORUS",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#00FF00,C_BUTTON_Palette3=#FF0000,C_BUTTON_Palette4=#FFFF00,C_BUTTON_Palette5=#FFFFFF,C_BUTTON_Palette6=#00FF00,C_BUTTON_Palette7=#0000FF,C_BUTTON_Palette8=#FF0000,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1",
+          "startTime": 106100,
+          "endTime": 107100
+        },
+        {
+          "target": "GE Evil Clown",
+          "layer": 1,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=CHORUS",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#00FF00,C_BUTTON_Palette3=#FF0000,C_BUTTON_Palette4=#FFFF00,C_BUTTON_Palette5=#FFFFFF,C_BUTTON_Palette6=#00FF00,C_BUTTON_Palette7=#0000FF,C_BUTTON_Palette8=#FF0000,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1",
+          "startTime": 107500,
+          "endTime": 110200
+        },
+        {
+          "target": "GE Evil Clown",
+          "layer": 1,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=CHORUS",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#00FF00,C_BUTTON_Palette3=#FF0000,C_BUTTON_Palette4=#FFFF00,C_BUTTON_Palette5=#FFFFFF,C_BUTTON_Palette6=#00FF00,C_BUTTON_Palette7=#0000FF,C_BUTTON_Palette8=#FF0000,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1",
+          "startTime": 111900,
+          "endTime": 113450
+        },
+        {
+          "target": "GE Evil Clown",
+          "layer": 1,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=CHORUS",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#00FF00,C_BUTTON_Palette3=#FF0000,C_BUTTON_Palette4=#FFFF00,C_BUTTON_Palette5=#FFFFFF,C_BUTTON_Palette6=#00FF00,C_BUTTON_Palette7=#0000FF,C_BUTTON_Palette8=#FF0000,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1",
+          "startTime": 114950,
+          "endTime": 116300
+        },
+        {
+          "target": "GE Evil Clown",
+          "layer": 1,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=ENSEMBLE",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#00FF00,C_BUTTON_Palette3=#FF0000,C_BUTTON_Palette4=#FFFF00,C_BUTTON_Palette5=#FFFFFF,C_BUTTON_Palette6=#FFFFFF,C_BUTTON_Palette7=#0000FF,C_BUTTON_Palette8=#FF0000,C_CHECKBOX_Palette4=1,C_CHECKBOX_Palette5=1,C_CHECKBOX_Palette6=1,C_CHECKBOX_Palette8=1",
+          "startTime": 116600,
+          "endTime": 127650
+        },
+        {
+          "target": "GE Evil Clown",
+          "layer": 1,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=CHORUS",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#00FF00,C_BUTTON_Palette3=#FF0000,C_BUTTON_Palette4=#FFFF00,C_BUTTON_Palette5=#FFFFFF,C_BUTTON_Palette6=#FFFFFF,C_BUTTON_Palette7=#0000FF,C_BUTTON_Palette8=#FF0000,C_CHECKBOX_Palette4=1,C_CHECKBOX_Palette5=1,C_CHECKBOX_Palette6=1,C_CHECKBOX_Palette8=1",
+          "startTime": 129050,
+          "endTime": 132200
+        },
+        {
+          "target": "GE Evil Clown",
+          "layer": 1,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=ENSEMBLE",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#00FF00,C_BUTTON_Palette3=#FF0000,C_BUTTON_Palette4=#FFFF00,C_BUTTON_Palette5=#FFFFFF,C_BUTTON_Palette6=#FFFFFF,C_BUTTON_Palette7=#0000FF,C_BUTTON_Palette8=#FF0000,C_CHECKBOX_Palette4=1,C_CHECKBOX_Palette5=1,C_CHECKBOX_Palette6=1,C_CHECKBOX_Palette8=1",
+          "startTime": 132200,
+          "endTime": 135450
+        },
+        {
+          "target": "GE Evil Clown",
+          "layer": 1,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=CHORUS",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#00FF00,C_BUTTON_Palette3=#FF0000,C_BUTTON_Palette4=#FFFF00,C_BUTTON_Palette5=#FFFFFF,C_BUTTON_Palette6=#FFFFFF,C_BUTTON_Palette7=#0000FF,C_BUTTON_Palette8=#FF0000,C_CHECKBOX_Palette4=1,C_CHECKBOX_Palette5=1,C_CHECKBOX_Palette6=1,C_CHECKBOX_Palette8=1",
+          "startTime": 135450,
+          "endTime": 138250
+        },
+        {
+          "target": "GE Evil Clown",
+          "layer": 1,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHECKBOX_Faces_TransparentBlack=0,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=ENSEMBLE,E_TEXTCTRL_Faces_TransparentBlack=0",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#00FF00,C_BUTTON_Palette3=#FF0000,C_BUTTON_Palette4=#FFFF00,C_BUTTON_Palette5=#FFFFFF,C_BUTTON_Palette6=#FFFFFF,C_BUTTON_Palette7=#0000FF,C_BUTTON_Palette8=#FF0000,C_CHECKBOX_Palette4=1,C_CHECKBOX_Palette5=1,C_CHECKBOX_Palette6=1,C_CHECKBOX_Palette8=1",
+          "startTime": 139700,
+          "endTime": 144150
+        },
+        {
+          "target": "GE Evil Clown",
+          "layer": 1,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=ENSEMBLE",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#00FF00,C_BUTTON_Palette3=#FF0000,C_BUTTON_Palette4=#FFFF00,C_BUTTON_Palette5=#FFFFFF,C_BUTTON_Palette6=#00FF00,C_BUTTON_Palette7=#0000FF,C_BUTTON_Palette8=#FF0000,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1",
+          "startTime": 144250,
+          "endTime": 205000
+        },
+        {
+          "target": "GE Evil Clown",
+          "layer": 1,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=ANNIE V2",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#00FF00,C_BUTTON_Palette3=#FF0000,C_BUTTON_Palette4=#FFFF00,C_BUTTON_Palette5=#FFFFFF,C_BUTTON_Palette6=#00FF00,C_BUTTON_Palette7=#0000FF,C_BUTTON_Palette8=#FF0000,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1",
+          "startTime": 205000,
+          "endTime": 211100
+        },
+        {
+          "target": "GE Evil Clown",
+          "layer": 1,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=ENSEMBLE",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#00FF00,C_BUTTON_Palette3=#FF0000,C_BUTTON_Palette4=#FFFF00,C_BUTTON_Palette5=#FFFFFF,C_BUTTON_Palette6=#00FF00,C_BUTTON_Palette7=#0000FF,C_BUTTON_Palette8=#FF0000,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1",
+          "startTime": 211100,
+          "endTime": 224800
+        },
+        {
+          "target": "GE Evil Clown",
+          "layer": 1,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=ANNIE V2",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#00FF00,C_BUTTON_Palette3=#FF0000,C_BUTTON_Palette4=#FFFF00,C_BUTTON_Palette5=#FFFFFF,C_BUTTON_Palette6=#00FF00,C_BUTTON_Palette7=#0000FF,C_BUTTON_Palette8=#FF0000,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1",
+          "startTime": 224800,
+          "endTime": 238800
+        },
+        {
+          "target": "GE Evil Clown",
+          "layer": 1,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=ENSEMBLE",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#00FF00,C_BUTTON_Palette3=#FF0000,C_BUTTON_Palette4=#FFFF00,C_BUTTON_Palette5=#FFFFFF,C_BUTTON_Palette6=#00FF00,C_BUTTON_Palette7=#0000FF,C_BUTTON_Palette8=#FF0000,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1",
+          "startTime": 238800,
+          "endTime": 257800
+        },
+        {
+          "target": "GE Evil Clown",
+          "layer": 1,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=ANNIE V2",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#00FF00,C_BUTTON_Palette3=#FF0000,C_BUTTON_Palette4=#FFFF00,C_BUTTON_Palette5=#FFFFFF,C_BUTTON_Palette6=#00FF00,C_BUTTON_Palette7=#0000FF,C_BUTTON_Palette8=#FF0000,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1",
+          "startTime": 257800,
+          "endTime": 261900
+        },
+        {
+          "target": "GE Evil Clown",
+          "layer": 1,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=ENSEMBLE,T_TEXTCTRL_Fadeout=0.25",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#00FF00,C_BUTTON_Palette3=#FF0000,C_BUTTON_Palette4=#FFFF00,C_BUTTON_Palette5=#FFFFFF,C_BUTTON_Palette6=#00FF00,C_BUTTON_Palette7=#0000FF,C_BUTTON_Palette8=#FF0000,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1",
+          "startTime": 261900,
+          "endTime": 265250
+        }
+      ],
+      "xsq_sha256": "ca9f24999f73de615a3f3b592521bc29e509e21c9c39af29b6adf63d54bc1cfb",
+      "native_voice": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Native voices/GreatestShowWorking 2.eseq",
+      "native_voice_sha256": "2cd85d3320c85841dd7e653152ed859f1803ca8fd9b1004dfb0b574931d12cb0",
+      "native_lit_samples": 2067,
+      "native_distinct_samples": 14,
+      "native_complete": true,
+      "authored_at": "2026-11-01T18:02:13.209462-06:00",
+      "all_other_effects_and_timings_preserved": true,
+      "frames": 5389,
+      "frame_ms": 50,
+      "all_other_output_pixels_identical": true,
+      "teddy_zero_every_frame": true,
+      "replacement_matches_native_every_frame": true,
+      "unchanged_output_sha256": "3fe1bec5e7d36ef04feb6ead3decf6bd17a7c3eaf3d00fa748e4f5b0d1c31b30",
+      "projector_frames_sha256": "682e7df861fd9e8e0afdcf7b5a060d07a569c31dc5c6c70c4cdc25ab204f9bc1",
+      "assembled": true,
+      "fseq_sha256": "808aead74cdf1e357d92245116b386eeaee8e401a9149747ac38a6fbe9b165b8",
+      "projector_file": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Projector sparse/GreatestShowWorking 2.fseq",
+      "projector_sha256": "73b5af1d45b300a1b4f63ac9bc8125933e3361c187b09577142b064ee1791bea",
+      "rendered_at": "2026-11-01T18:11:26.832766-06:00",
+      "adopted": true
+    },
+    "Halfway To Hell": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/Halfway To Hell/Halfway To Hell.xsq",
+      "before": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/Halfway To Hell/Halfway To Hell.xsq",
+      "stage": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Working/Halfway To Hell/Halfway To Hell.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/Halfway To Hell/Halfway To Hell.fseq",
+      "replacement": "GE Dark Helmet",
+      "source_xsq_sha256": "61668f74d4121da15976d038725a780e7730c80bd029c1743eafc6251b010ae2",
+      "source_fseq_sha256": "c803ea740d754cbef635b2e8b99b0a08ff9883aeac435cc2599f699e0617e22f",
+      "playback_files": [
+        "Halloween 2026 - Halfway To Hell.fseq"
+      ],
+      "moved_effects": 10,
+      "cleared_static_effects": 0,
+      "additions": [
+        {
+          "target": "GE Dark Helmet",
+          "layer": 1,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkDuration=Normal,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Main",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#FF0000,C_BUTTON_Palette3=#00FF00,C_BUTTON_Palette4=#0000FF,C_BUTTON_Palette5=#FFFF00,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#00FFFF,C_BUTTON_Palette8=#FF00FF,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1",
+          "startTime": 21250,
+          "endTime": 23450
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 2,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkDuration=Normal,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Main",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#FF0000,C_BUTTON_Palette3=#00FF00,C_BUTTON_Palette4=#0000FF,C_BUTTON_Palette5=#FFFF00,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#00FFFF,C_BUTTON_Palette8=#FF00FF,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1",
+          "startTime": 23075,
+          "endTime": 106950
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 2,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkDuration=Normal,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Main",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#FF0000,C_BUTTON_Palette3=#00FF00,C_BUTTON_Palette4=#0000FF,C_BUTTON_Palette5=#FFFF00,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#00FFFF,C_BUTTON_Palette8=#FF00FF,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1",
+          "startTime": 115125,
+          "endTime": 124150
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 2,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkDuration=Normal,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Closed,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Main",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#FF0000,C_BUTTON_Palette3=#00FF00,C_BUTTON_Palette4=#0000FF,C_BUTTON_Palette5=#FFFF00,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#00FFFF,C_BUTTON_Palette8=#FF00FF,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1",
+          "startTime": 124150,
+          "endTime": 133125
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 2,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkDuration=Normal,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Main",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#FF0000,C_BUTTON_Palette3=#00FF00,C_BUTTON_Palette4=#0000FF,C_BUTTON_Palette5=#FFFF00,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#00FFFF,C_BUTTON_Palette8=#FF00FF,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1",
+          "startTime": 133125,
+          "endTime": 152000
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 2,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkDuration=Normal,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Main",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#FF0000,C_BUTTON_Palette3=#00FF00,C_BUTTON_Palette4=#0000FF,C_BUTTON_Palette5=#FFFF00,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#00FFFF,C_BUTTON_Palette8=#FF00FF,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1",
+          "startTime": 157325,
+          "endTime": 161075
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkDuration=Normal,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_Phoneme=rest,T_TEXTCTRL_Fadein=1.0",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#FF0000,C_BUTTON_Palette3=#00FF00,C_BUTTON_Palette4=#0000FF,C_BUTTON_Palette5=#FFFF00,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#00FFFF,C_BUTTON_Palette8=#FF00FF,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1",
+          "startTime": 20250,
+          "endTime": 21250
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkDuration=Normal,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_Phoneme=rest",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#FF0000,C_BUTTON_Palette3=#00FF00,C_BUTTON_Palette4=#0000FF,C_BUTTON_Palette5=#FFFF00,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#00FFFF,C_BUTTON_Palette8=#FF00FF,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1",
+          "startTime": 106950,
+          "endTime": 115125
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkDuration=Normal,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_Phoneme=rest",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#FF0000,C_BUTTON_Palette3=#00FF00,C_BUTTON_Palette4=#0000FF,C_BUTTON_Palette5=#FFFF00,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#00FFFF,C_BUTTON_Palette8=#FF00FF,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1",
+          "startTime": 152000,
+          "endTime": 157325
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkDuration=Normal,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_Phoneme=rest,T_TEXTCTRL_Fadeout=2.5",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#FF0000,C_BUTTON_Palette3=#00FF00,C_BUTTON_Palette4=#0000FF,C_BUTTON_Palette5=#FFFF00,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#00FFFF,C_BUTTON_Palette8=#FF00FF,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1",
+          "startTime": 161075,
+          "endTime": 163575
+        }
+      ],
+      "xsq_sha256": "a50b5e93f8fd99d2a1fa829a26289716e753d01e1654e04f6b7d874c99db494b",
+      "native_voice": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Native voices/Halfway To Hell.eseq",
+      "native_voice_sha256": "c207a8ca2ab52c40b49fbd139eceff560fec4432d5cd728cf8150394f8167da3",
+      "native_lit_samples": 1440,
+      "native_distinct_samples": 37,
+      "native_complete": true,
+      "authored_at": "2026-11-01T18:05:45.610835-06:00",
+      "all_other_effects_and_timings_preserved": true,
+      "frames": 7137,
+      "frame_ms": 25,
+      "all_other_output_pixels_identical": true,
+      "teddy_zero_every_frame": true,
+      "replacement_matches_native_every_frame": true,
+      "unchanged_output_sha256": "8fe4fd978b28a299f81469cf02342117824c6ad660400db77b794a89e47017e6",
+      "projector_frames_sha256": "5381badf5207936c00d6821e8b3c1be653d99f1e110094b8f191d5b8017c37a1",
+      "previously_unused_singer_range_added": {
+        "start": 230771,
+        "channels": 600
+      },
+      "assembled": true,
+      "fseq_sha256": "da0f79710951db5ae08da8a942589057883b4bc572955124f944d6a0829358a1",
+      "projector_file": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Projector sparse/Halfway To Hell.fseq",
+      "projector_sha256": "aa9b6c942cdb774ed8dcef27a4cb76f51a6bef5f589d13e4b59a7b5b250df97e",
+      "rendered_at": "2026-11-01T18:13:04.981138-06:00",
+      "adopted": true
+    },
+    "I Knew It I Knew You": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/I Knew It I Knew You/I Knew It I Knew You.xsq",
+      "before": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/I Knew It I Knew You/I Knew It I Knew You.xsq",
+      "stage": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Working/I Knew It I Knew You/I Knew It I Knew You.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/I Knew It I Knew You/I Knew It I Knew You.fseq",
+      "replacement": "GE Dark Helmet",
+      "source_xsq_sha256": "94b216ef5f82c6e6013fb04345c6070d3fa4a2dc665c11a220f67e6e27c3c01f",
+      "source_fseq_sha256": "08851e47fa1008715a3865f81804c085e49eae0f076d815b5db27644323d5578",
+      "playback_files": [
+        "Halloween 2026 - I Knew It I Knew You.fseq"
+      ],
+      "moved_effects": 1,
+      "cleared_static_effects": 0,
+      "additions": [
+        {
+          "target": "GE Dark Helmet",
+          "layer": 1,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressShimmer=0,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHECKBOX_Faces_TransparentBlack=0,E_CHOICE_Faces_EyeBlinkDuration=Normal,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Main_Vocal,E_TEXTCTRL_Faces_TransparentBlack=0,T_CHECKBOX_Canvas=0,T_CHECKBOX_LayerMorph=0,T_CHOICE_LayerMethod=Normal,T_SLIDER_EffectLayerMix=0,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0",
+          "palette": "C_BUTTON_Palette1=#ffffff,C_BUTTON_Palette2=#ff0000,C_BUTTON_Palette3=#00ff00,C_BUTTON_Palette4=#0000ff,C_BUTTON_Palette5=#ffff00,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#00ffff,C_BUTTON_Palette8=#ff00ff,C_CHECKBOXBRIGHTNESSLEVEL=0,C_CHECKBOX_Chroma=0,C_CHECKBOX_MusicSparkles=0,C_CHECKBOX_Palette1=0,C_CHECKBOX_Palette2=0,C_CHECKBOX_Palette3=0,C_CHECKBOX_Palette4=0,C_CHECKBOX_Palette5=0,C_CHECKBOX_Palette6=0,C_CHECKBOX_Palette7=0,C_CHECKBOX_Palette8=0,C_SLIDER_SparkleFrequency=0",
+          "startTime": 0,
+          "endTime": 178200
+        }
+      ],
+      "xsq_sha256": "925aee67184cadc3cf3ee02013fc6669ffb1ab3610e77418bdc0a781b53aeab2",
+      "native_voice": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Native voices/I Knew It I Knew You.eseq",
+      "native_voice_sha256": "b80ad4d1d2ce8991342be3895a7ff6ac80806be5eacbf2494e67e6f25e7d79ec",
+      "native_lit_samples": 1782,
+      "native_distinct_samples": 2,
+      "native_complete": true,
+      "authored_at": "2026-11-01T18:07:22.561732-06:00",
+      "all_other_effects_and_timings_preserved": true,
+      "frames": 7128,
+      "frame_ms": 25,
+      "all_other_output_pixels_identical": true,
+      "teddy_zero_every_frame": true,
+      "replacement_matches_native_every_frame": true,
+      "unchanged_output_sha256": "acae572c6b713d1fd088ef1cd003f0b3090caa66fe7fa6dad41bee5fc55e5a99",
+      "projector_frames_sha256": "734caa847977cbfe4ffe8f9e8aaa1090ebe50e8d695dc71796c817097790e4c3",
+      "previously_unused_singer_range_added": {
+        "start": 230771,
+        "channels": 600
+      },
+      "assembled": true,
+      "fseq_sha256": "5186bb37b85df21d67518bba50166d3e375cc9480a9ece89c6f56487d5b59534",
+      "projector_file": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Projector sparse/I Knew It I Knew You.fseq",
+      "projector_sha256": "df9dcf7fbe5a3182ddb993194354a5f97aa15279e530efff7a46c619db1ddeee",
+      "rendered_at": "2026-11-01T18:13:11.270226-06:00",
+      "adopted": true
+    },
+    "Insomnia": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/Insomnia/Insomnia.xsq",
+      "before": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/Insomnia/Insomnia.xsq",
+      "stage": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Working/Insomnia/Insomnia.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/Insomnia/Insomnia.fseq",
+      "replacement": "GE Dark Helmet",
+      "source_xsq_sha256": "af6cb2d68a435488dd46a71d588eba659affcce9d8aace69ea12414b11c664f6",
+      "source_fseq_sha256": "84251c0be5d8788a29752d2c40809a037508b2058332ad7e56a3087c99957bb1",
+      "playback_files": [
+        "Halloween 2026 - Insomnia.fseq"
+      ],
+      "moved_effects": 1,
+      "cleared_static_effects": 0,
+      "additions": [
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Lyrics,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 78825,
+          "endTime": 133075
+        }
+      ],
+      "xsq_sha256": "02484327411da049e5e5009dae4e1ebb705c5df64b1f52d16a7e55f802588ddb",
+      "native_voice": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Native voices/Insomnia.eseq",
+      "native_voice_sha256": "869cb7d160389bbc13ac40d8131271ee4a7bfb9ea9ff95cc1eade32246742b38",
+      "native_lit_samples": 495,
+      "native_distinct_samples": 3,
+      "native_complete": true,
+      "authored_at": "2026-11-01T18:07:31.909299-06:00",
+      "all_other_effects_and_timings_preserved": true,
+      "frames": 8593,
+      "frame_ms": 25,
+      "all_other_output_pixels_identical": true,
+      "teddy_zero_every_frame": true,
+      "replacement_matches_native_every_frame": true,
+      "unchanged_output_sha256": "873dc433127a0464b1b232cbdfb7552369969d1760230dadb49b1ac7f329839b",
+      "projector_frames_sha256": "197ec8363262900cea11cf5a3b7f811106b33a8c18e55b66cedbdb7dbb463706",
+      "assembled": true,
+      "fseq_sha256": "e450e2201997e134501b7043f4d2e9536bb0074dfe34c596d2d12f3a662a9620",
+      "projector_file": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Projector sparse/Insomnia.fseq",
+      "projector_sha256": "5401bc4b559ee6c4a6ba75b79b01397df5ffa83b1dd56d9a70a40b7ca2f456fd",
+      "rendered_at": "2026-11-01T18:13:16.848606-06:00",
+      "adopted": true
+    },
+    "Monster Mash": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/Monster Mash/Monster Mash.xsq",
+      "before": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/Monster Mash/Monster Mash.xsq",
+      "stage": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Working/Monster Mash/Monster Mash.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/Monster Mash/Monster Mash.fseq",
+      "replacement": "GE Dark Helmet",
+      "source_xsq_sha256": "2b62bd0dad48842f0f21b77e39f680cde314cd2e2556bf639c65acafb5312364",
+      "source_fseq_sha256": "0006f90fa891c50384b1038e4833944c5183421d863d17716af0e2ba3bcf8343",
+      "playback_files": [
+        "Halloween 2026 - Monster Mash.fseq"
+      ],
+      "moved_effects": 15,
+      "cleared_static_effects": 0,
+      "additions": [
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Skull,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 15550,
+          "endTime": 29500
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Skull,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 30900,
+          "endTime": 33100
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Skull,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 34400,
+          "endTime": 40000
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Skull,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 41300,
+          "endTime": 56950
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Skull,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 58300,
+          "endTime": 60450
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Skull,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 61750,
+          "endTime": 67350
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Skull,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 68650,
+          "endTime": 98150
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Skull,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 99500,
+          "endTime": 101700
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Skull,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 103000,
+          "endTime": 108600
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Skull,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 109900,
+          "endTime": 125400
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Skull,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 127150,
+          "endTime": 129050
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Skull,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 130500,
+          "endTime": 156500
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Skull,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 158000,
+          "endTime": 163400
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Skull,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 164900,
+          "endTime": 166850
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Skull,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 170700,
+          "endTime": 174450
+        }
+      ],
+      "xsq_sha256": "efc627b7fe052e5676e70883cbb9893a86096cbe4505e0d3f439a44cafb0d3e2",
+      "native_voice": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Native voices/Monster Mash.eseq",
+      "native_voice_sha256": "6e61b328e332b4b322a2ec48f0ef22c8e66fd694f54c276e3e312a4c3efa3f1e",
+      "native_lit_samples": 1372,
+      "native_distinct_samples": 5,
+      "native_complete": true,
+      "authored_at": "2026-11-01T18:07:42.618886-06:00",
+      "all_other_effects_and_timings_preserved": true,
+      "frames": 7683,
+      "frame_ms": 25,
+      "all_other_output_pixels_identical": true,
+      "teddy_zero_every_frame": true,
+      "replacement_matches_native_every_frame": true,
+      "unchanged_output_sha256": "4fae0ab262370ef23a12997b078d86bbc695edeb3bbdc73e56ab104b0a95baa3",
+      "projector_frames_sha256": "d8ed00f4c47e618586f0501fde60392af9c9ca95722c69c67705eb9b07acf1f8",
+      "assembled": true,
+      "fseq_sha256": "7f272233a85131ec76725993b94dac4a85530f8d4017652dd81e849771fe135e",
+      "projector_file": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Projector sparse/Monster Mash.fseq",
+      "projector_sha256": "8c71d7957cf8a1044b5fa1d8a030ad1c10c4721b5c7fbeb39dcd6361d07fc693",
+      "rendered_at": "2026-11-01T18:13:26.243915-06:00",
+      "adopted": true
+    },
+    "Skrillex Medley": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/Skrillex Medley/Skrillex Medley.xsq",
+      "before": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/Skrillex Medley/Skrillex Medley.xsq",
+      "stage": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Working/Skrillex Medley/Skrillex Medley.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/Skrillex Medley/Skrillex Medley.fseq",
+      "replacement": "GE Singing Pumpkin",
+      "source_xsq_sha256": "0a678a83ae74203b5a236302bb5e7b0e58f034a6b68ee03940fc0ded3b018e3a",
+      "source_fseq_sha256": "abae35514f25a9be722aa9b19d495d383f74eca99f47f52008ff52ebee872baa",
+      "playback_files": [
+        "Halloween 2026 - Skrillex Medley.fseq"
+      ],
+      "moved_effects": 2,
+      "cleared_static_effects": 0,
+      "additions": [
+        {
+          "target": "GE Singing Pumpkin",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Pumpkin face,E_CHOICE_Faces_TimingTrack=Cast Lyrics 2026,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10,E_CHOICE_Faces_UseState=outline with stem",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 37350,
+          "endTime": 41850
+        },
+        {
+          "target": "GE Singing Pumpkin",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Pumpkin face,E_CHOICE_Faces_TimingTrack=Cast Lyrics 2026,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10,E_CHOICE_Faces_UseState=outline with stem",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 95725,
+          "endTime": 97650
+        }
+      ],
+      "xsq_sha256": "a8b183fd8fe54bd8886cc6bc5a0e10f6ec45a56994c370e14cfa3b913a414c62",
+      "native_voice": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Native voices/Skrillex Medley.eseq",
+      "native_voice_sha256": "15aa77ee0932a8293f7a5ba28c970e73cbb593b763805cc593061a0a7a9676ba",
+      "native_lit_samples": 62,
+      "native_distinct_samples": 12,
+      "native_complete": true,
+      "authored_at": "2026-11-01T18:07:55.495135-06:00",
+      "all_other_effects_and_timings_preserved": true,
+      "frames": 8563,
+      "frame_ms": 25,
+      "all_other_output_pixels_identical": true,
+      "teddy_zero_every_frame": true,
+      "replacement_matches_native_every_frame": true,
+      "unchanged_output_sha256": "659bef39e07fd65fdb9e022b118cbb7b2ef5e4395fb1afe796b472ce4ac16380",
+      "projector_frames_sha256": "ee10d7e041cb564d2c3f1aa87b58c196c27c67ffe335b9745018b3828b14f672",
+      "assembled": true,
+      "fseq_sha256": "aa8951d867acdb27285568a420e6e1f8737a56ec7a42b743834e2aa1f651a9e4",
+      "projector_file": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Projector sparse/Skrillex Medley.fseq",
+      "projector_sha256": "afcccc9c4ccc1e9a5edc4eab1cd9e490b931cecd01a5ee02a8f281f299848ba2",
+      "rendered_at": "2026-11-01T18:13:35.401643-06:00",
+      "adopted": true
+    },
+    "Something In The Way": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/Something In The Way/Something In The Way.xsq",
+      "before": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/Something In The Way/Something In The Way.xsq",
+      "stage": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Working/Something In The Way/Something In The Way.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/Something In The Way/Something In The Way.fseq",
+      "replacement": "GE Dark Helmet",
+      "source_xsq_sha256": "f4314d4846afc836285f8b0f7a21b6678b4a21058eda16ebccc40e7ca87ff747",
+      "source_fseq_sha256": "244ef45bdd989b7fb690ce44cd4edd0bc8d7813c0a68d5ee9068eea21a5bb503",
+      "playback_files": [
+        "Halloween 2026 - Something In The Way.fseq"
+      ],
+      "moved_effects": 2,
+      "cleared_static_effects": 0,
+      "additions": [
+        {
+          "target": "GE Dark Helmet",
+          "layer": 0,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=SomethingInTheWayvocalsCmajor105bpm428hz,T_TEXTCTRL_Fadeout=10",
+          "palette": "C_BUTTON_Palette1=#800080,C_BUTTON_Palette2=#A750F9,C_BUTTON_Palette3=#808080,C_BUTTON_Palette4=#00008B,C_BUTTON_Palette5=#006400,C_BUTTON_Palette6=#800080,C_BUTTON_Palette7=#008080,C_BUTTON_Palette8=#808000,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1,C_CHECKBOX_Palette4=1,C_CHECKBOX_Palette5=1,C_CHECKBOX_Palette6=1,C_CHECKBOX_Palette7=1,C_CHECKBOX_Palette8=1",
+          "startTime": 19075,
+          "endTime": 231925
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 1,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_Phoneme=rest,T_TEXTCTRL_Fadein=1.0",
+          "palette": "C_BUTTON_Palette1=#800080,C_BUTTON_Palette2=#A750F9,C_BUTTON_Palette3=#808080,C_BUTTON_Palette4=#00008B,C_BUTTON_Palette5=#006400,C_BUTTON_Palette6=#800080,C_BUTTON_Palette7=#008080,C_BUTTON_Palette8=#808000,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1,C_CHECKBOX_Palette4=1,C_CHECKBOX_Palette5=1,C_CHECKBOX_Palette6=1,C_CHECKBOX_Palette7=1,C_CHECKBOX_Palette8=1",
+          "startTime": 18075,
+          "endTime": 19075
+        }
+      ],
+      "xsq_sha256": "cf08f3aac0ab3097a3be9d4a3cbc185cae1192368f80a200b63a715b14a8b243",
+      "native_voice": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Native voices/Something In The Way.eseq",
+      "native_voice_sha256": "4cf96669c9cf8943039e067963cd06bb2897ca2e2590deec126c10df5cbdf939",
+      "native_lit_samples": 2138,
+      "native_distinct_samples": 108,
+      "native_complete": true,
+      "authored_at": "2026-11-01T18:08:11.863518-06:00",
+      "all_other_effects_and_timings_preserved": true,
+      "frames": 9285,
+      "frame_ms": 25,
+      "all_other_output_pixels_identical": true,
+      "teddy_zero_every_frame": true,
+      "replacement_matches_native_every_frame": true,
+      "unchanged_output_sha256": "4416ba94c51f59f1266640c0a2aeb2602006215734e418137f9ff597ab834fb0",
+      "projector_frames_sha256": "379b7011a21c7bc122f734a170186b398bbe38c0b040c4bfffcfa11244799528",
+      "previously_unused_singer_range_added": {
+        "start": 230771,
+        "channels": 600
+      },
+      "assembled": true,
+      "fseq_sha256": "7f15a94ac921b7376bc498fb386b5ee5ea79d62a9ea7fb50214bb21787746f8d",
+      "projector_file": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Projector sparse/Something In The Way.fseq",
+      "projector_sha256": "3ba8026e2ceada032b6678c181907f3aecdbdd852fe2ad0f26e442aed4cdd8c2",
+      "rendered_at": "2026-11-01T18:13:44.017128-06:00",
+      "adopted": true
+    },
+    "The Dead Dance": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/The Dead Dance/The Dead Dance.xsq",
+      "before": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/The Dead Dance/The Dead Dance.xsq",
+      "stage": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Working/The Dead Dance/The Dead Dance.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/The Dead Dance/The Dead Dance.fseq",
+      "replacement": "GE Dark Helmet",
+      "source_xsq_sha256": "ab40d84fc5d8b14baac2bdcb7cedd7843662d00eaea00e3ca4488123f1656b0a",
+      "source_fseq_sha256": "a346918f4303cdf315ff10b2e062c6c026a38cd88ee4f631173b2ca35a1456a7",
+      "playback_files": [
+        "Halloween 2026 - The Dead Dance.fseq"
+      ],
+      "moved_effects": 8,
+      "cleared_static_effects": 0,
+      "additions": [
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Gaga,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 8375,
+          "endTime": 29625
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Gaga,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 31950,
+          "endTime": 36675
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Gaga,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 38300,
+          "endTime": 44775
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Gaga,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 46125,
+          "endTime": 52625
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Gaga,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 86525,
+          "endTime": 91075
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Gaga,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 94350,
+          "endTime": 107200
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Gaga,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 108500,
+          "endTime": 116950
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Gaga,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 176100,
+          "endTime": 192350
+        }
+      ],
+      "xsq_sha256": "7569c2c2ecf0c06036b0c5254c184875f1daafba226383ec1469841c666f9753",
+      "native_voice": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Native voices/The Dead Dance.eseq",
+      "native_voice_sha256": "88efb57cd1bfc830bf11918071d9124922f4c8dec8565196705959fc0a7bc74a",
+      "native_lit_samples": 769,
+      "native_distinct_samples": 4,
+      "native_complete": true,
+      "authored_at": "2026-11-01T18:08:23.148843-06:00",
+      "all_other_effects_and_timings_preserved": true,
+      "frames": 9140,
+      "frame_ms": 25,
+      "all_other_output_pixels_identical": true,
+      "teddy_zero_every_frame": true,
+      "replacement_matches_native_every_frame": true,
+      "unchanged_output_sha256": "12854ee881e5c303d63acb9bf98cf5feb44988a8d4ed528b188c71763cbc252f",
+      "projector_frames_sha256": "b35b9766377e30f0b2cbafc8d6017ffb3a83bfede6d4e0cbdd8ef08b7f9a95a5",
+      "assembled": true,
+      "fseq_sha256": "5dc5ce83621abc17c02041f61fdfcc6ee31068cd034341def5db5fc29676ff53",
+      "projector_file": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Projector sparse/The Dead Dance.fseq",
+      "projector_sha256": "9fbcd955124b40e0af35a904eb0a62b4914fd69d48af45660ff810c0bfa482f9",
+      "rendered_at": "2026-11-01T18:13:50.320535-06:00",
+      "adopted": true
+    },
+    "The Devil Went Down to Georgia": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/The Devil Went Down to Georgia/The Devil Went Down to Georgia.xsq",
+      "before": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/The Devil Went Down to Georgia/The Devil Went Down to Georgia.xsq",
+      "stage": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Working/The Devil Went Down to Georgia/The Devil Went Down to Georgia.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/The Devil Went Down to Georgia/The Devil Went Down to Georgia.fseq",
+      "replacement": "GE Dark Helmet",
+      "source_xsq_sha256": "d09792c6927ee7e4572021415163b9c948ef1a8b734cfd0bbecb4a0feac9b6aa",
+      "source_fseq_sha256": "189c08cd6554ed7a4007a21c7c4d7eb49bab54137b64a8d210f451234ffaf6ac",
+      "playback_files": [
+        "Halloween 2026 - The Devil Went Down to Georgia.fseq"
+      ],
+      "moved_effects": 11,
+      "cleared_static_effects": 0,
+      "additions": [
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Skull,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 44200,
+          "endTime": 50250
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Skull,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 124950,
+          "endTime": 130000
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Skull,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 130450,
+          "endTime": 131450
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Skull,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 133150,
+          "endTime": 135200
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Skull,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 136900,
+          "endTime": 138800
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Skull,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 140550,
+          "endTime": 142450
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Skull,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 172000,
+          "endTime": 178275
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Skull,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 178275,
+          "endTime": 179500
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Skull,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 181300,
+          "endTime": 183350
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Skull,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 184950,
+          "endTime": 186800
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Skull,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 188600,
+          "endTime": 190600
+        }
+      ],
+      "xsq_sha256": "a9cb864f8450dbbc06d8fe413671870c04e5a53599384f5a63424492afb7daf5",
+      "native_voice": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Native voices/The Devil Went Down to Georgia.eseq",
+      "native_voice_sha256": "eca22b1299b80d825c5a4a31a47cf00e6febb4a4c750c7a79dba4475ea65b054",
+      "native_lit_samples": 316,
+      "native_distinct_samples": 7,
+      "native_complete": true,
+      "authored_at": "2026-11-01T18:08:38.153737-06:00",
+      "all_other_effects_and_timings_preserved": true,
+      "frames": 8616,
+      "frame_ms": 25,
+      "all_other_output_pixels_identical": true,
+      "teddy_zero_every_frame": true,
+      "replacement_matches_native_every_frame": true,
+      "unchanged_output_sha256": "46ed82073ab375cd69f88657c3efa3e07c500e43e0c7579d978bed0d9582b9a7",
+      "projector_frames_sha256": "e87cf30247c98c24c6cff42fbd6596a89a8606ce2da6b6e8d16ca721410c5f94",
+      "assembled": true,
+      "fseq_sha256": "d4821ffccae1427a6296b6c2ff92e238b6bc835dfe58339e9821785de96d309c",
+      "projector_file": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Projector sparse/The Devil Went Down to Georgia.fseq",
+      "projector_sha256": "e4dcfa896c3aae147c3d3cc7a4aa9b09dab62aa52bb03a7865d4c2b2acaff8c0",
+      "rendered_at": "2026-11-01T18:14:03.429996-06:00",
+      "adopted": true
+    },
+    "Thriller Xtreme Remap": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/Thriller Xtreme Remap/Thriller Xtreme Remap.xsq",
+      "before": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/Thriller Xtreme Remap/Thriller Xtreme Remap.xsq",
+      "stage": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Working/Thriller Xtreme Remap/Thriller Xtreme Remap.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/Thriller Xtreme Remap/Thriller Xtreme Remap.fseq",
+      "replacement": "GE Dark Helmet",
+      "source_xsq_sha256": "375e6a1e88190c6f2f90ed305ceadfd26d2ad3b6122cb6a69c2477f99daf2778",
+      "source_fseq_sha256": "ea3e09619f36102358cb4d5dadb88814f29aad1acabfd88baf4ad04a66a106db",
+      "playback_files": [
+        "Halloween 2026 - Thriller.fseq"
+      ],
+      "moved_effects": 7,
+      "cleared_static_effects": 0,
+      "additions": [
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Skull,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 58850,
+          "endTime": 65750
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Skull,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 67000,
+          "endTime": 79900
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Skull,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 81700,
+          "endTime": 90450
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Skull,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 106600,
+          "endTime": 110900
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Skull,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 113250,
+          "endTime": 122150
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Skull,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 123750,
+          "endTime": 147150
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Skull,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 186650,
+          "endTime": 218600
+        }
+      ],
+      "xsq_sha256": "b6e305ce0f2c7a6c20a41fbeeb75c75b34d5c5db999fe5515d0341be528c5bdc",
+      "native_voice": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Native voices/Thriller Xtreme Remap.eseq",
+      "native_voice_sha256": "2a07693eba004fcfd2edc69cd1f0cf92490c4ce91ffa5ba09965712d6dec47dc",
+      "native_lit_samples": 972,
+      "native_distinct_samples": 5,
+      "native_complete": true,
+      "authored_at": "2026-11-01T18:08:57.541519-06:00",
+      "all_other_effects_and_timings_preserved": true,
+      "frames": 14318,
+      "frame_ms": 25,
+      "all_other_output_pixels_identical": true,
+      "teddy_zero_every_frame": true,
+      "replacement_matches_native_every_frame": true,
+      "unchanged_output_sha256": "814ccf8d12e72f2ba5b1a795e982b31561c946793df96276369d4309d45527f8",
+      "projector_frames_sha256": "a67132065523347bc56ec8700eb8a8e75b4ca1390dbac504e9f79a3037b53282",
+      "assembled": true,
+      "fseq_sha256": "6f59db970ff8a2edbac089dcf84932a679c845fd1a2313d8d7d983a8d16725a9",
+      "projector_file": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Projector sparse/Thriller Xtreme Remap.fseq",
+      "projector_sha256": "9b20abc29c9035a989f02c94ecefb1e6944f572b9e42dce047dcb279b96ba129",
+      "rendered_at": "2026-11-01T18:14:24.151963-06:00",
+      "adopted": true
+    },
+    "Titanium": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/Titanium/Titanium.xsq",
+      "before": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/Titanium/Titanium.xsq",
+      "stage": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Working/Titanium/Titanium.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/Titanium/Titanium.fseq",
+      "replacement": "Matrix - Downstairs Window",
+      "source_xsq_sha256": "425b42599c00be11d7c18e743197b5456fb651dc0238127630676c410ad90583",
+      "source_fseq_sha256": "40ce6ff95bee292a21ed0abd14fc4a69c314c00cb62dcfaef869e953d16a02df",
+      "playback_files": [
+        "Halloween 2026 - Titanium.fseq"
+      ],
+      "moved_effects": 1,
+      "cleared_static_effects": 0,
+      "additions": [
+        {
+          "target": "Matrix - Downstairs Window",
+          "layer": 0,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=skull [01-Abracadabra],E_CHOICE_Faces_TimingTrack=Titanium - Aligned Chorus",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#FFFFFF,C_BUTTON_Palette3=#FFFFFF,C_BUTTON_Palette4=#FFFFFF,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1,C_CHECKBOX_Palette4=1",
+          "startTime": 0,
+          "endTime": 245050
+        }
+      ],
+      "xsq_sha256": "95a0e63d1f8184bf41f63b1b52dd9fc5806e37f5d7b28c3c8e26800c97042955",
+      "native_voice": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Native voices/Titanium.eseq",
+      "native_voice_sha256": "da62bf6c4edd10c181a24d3bc40761daa3ebbbd5f1741a408fd54ca5299d9597",
+      "native_lit_samples": 2451,
+      "native_distinct_samples": 1578,
+      "native_complete": true,
+      "authored_at": "2026-11-01T18:09:12.252590-06:00",
+      "all_other_effects_and_timings_preserved": true,
+      "frames": 9802,
+      "frame_ms": 25,
+      "all_other_output_pixels_identical": true,
+      "teddy_zero_every_frame": true,
+      "replacement_matches_native_every_frame": true,
+      "unchanged_output_sha256": "fdf2311fe2ba2bf6fba6174e3be8216e649f9a8867aa86519e6567bf4eeff774",
+      "projector_frames_sha256": "273ff825c670b3f49fc17cc88189d09b47abf79c644647344cdb943fd0d5f8e5",
+      "assembled": true,
+      "fseq_sha256": "37aa947e56f4f8f4eb2da2248c10f9daf3a039b3ee1137ce9b0e74a5a5255e1c",
+      "projector_file": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Projector sparse/Titanium.fseq",
+      "projector_sha256": "e6f1db3d32adb3e4cab034219dfe54a6c621cc59c7722961d2052ffdd815517a",
+      "rendered_at": "2026-11-01T18:14:38.363257-06:00",
+      "adopted": true
+    },
+    "Titanium 2": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/Titanium 2/Titanium 2.xsq",
+      "before": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/Titanium 2/Titanium 2.xsq",
+      "stage": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Working/Titanium 2/Titanium 2.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/Titanium 2/Titanium 2.fseq",
+      "replacement": "Matrix - Downstairs Window",
+      "source_xsq_sha256": "5c1fe9dccff5c2ed49606998e7d78b294e4f431f78c56b78322fd022683358e8",
+      "source_fseq_sha256": "4084c24aa57b0b1bee57fbe7db57d65f3274d3b43eb11f4e7fd73341cdd56e71",
+      "playback_files": [
+        "Halloween 2026 - Titanium 2.fseq"
+      ],
+      "moved_effects": 1,
+      "cleared_static_effects": 0,
+      "additions": [
+        {
+          "target": "Matrix - Downstairs Window",
+          "layer": 0,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=skull [01-Abracadabra],E_CHOICE_Faces_TimingTrack=Titanium - Aligned Chorus",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_BUTTON_Palette2=#FFFFFF,C_BUTTON_Palette3=#FFFFFF,C_BUTTON_Palette4=#FFFFFF,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1,C_CHECKBOX_Palette4=1",
+          "startTime": 0,
+          "endTime": 245050
+        }
+      ],
+      "xsq_sha256": "c11ca9e4945069e368026af127f686aabf40f4b30c95f6fa4debf39c8cece75d",
+      "native_voice": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Native voices/Titanium 2.eseq",
+      "native_voice_sha256": "ee707a94c0c5a266ff2a36768e3efe4212be9cc4ca9657b5958085bffb16b55f",
+      "native_lit_samples": 2451,
+      "native_distinct_samples": 1579,
+      "native_complete": true,
+      "authored_at": "2026-11-01T18:09:26.513777-06:00",
+      "all_other_effects_and_timings_preserved": true,
+      "frames": 9802,
+      "frame_ms": 25,
+      "all_other_output_pixels_identical": true,
+      "teddy_zero_every_frame": true,
+      "replacement_matches_native_every_frame": true,
+      "unchanged_output_sha256": "58798288c2b3e974a3f8c266de0cd0628738af849807e5d7306493b9d9d290e7",
+      "projector_frames_sha256": "1959368db0ccec1fc30b2752ff4cb7f1dfe0079e073e7f6392c8ab027c2bf449",
+      "assembled": true,
+      "fseq_sha256": "adbcd18211f1a65d2aa4e32a8337e32a4129027b8467eb4c9bc4eec395a9ff5c",
+      "projector_file": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Projector sparse/Titanium 2.fseq",
+      "projector_sha256": "df7fba0379a740dacf66dbe4e7f57c9acad970b87dbfd6fed6b2ccb6a99280f3",
+      "rendered_at": "2026-11-01T18:14:53.553438-06:00",
+      "adopted": true
+    },
+    "We Will Rock You": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/We Will Rock You/We Will Rock You.xsq",
+      "before": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/We Will Rock You/We Will Rock You.xsq",
+      "stage": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Working/We Will Rock You/We Will Rock You.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/We Will Rock You/We Will Rock You.fseq",
+      "replacement": "GE Dark Helmet",
+      "source_xsq_sha256": "7c4ea07d4fc55b99ac5f4158ae4478fa42aaab0c07cdbed1283b6ba46f5520d1",
+      "source_fseq_sha256": "ab9a861f6bbdab6953e8044a0b20add9e6b42665a86ee559ac54623c66cd6158",
+      "playback_files": [
+        "Halloween 2026 - We Will Rock You.fseq"
+      ],
+      "moved_effects": 4,
+      "cleared_static_effects": 0,
+      "additions": [
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Cast Lyrics 2026,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 64750,
+          "endTime": 70275
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Cast Lyrics 2026,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 70275,
+          "endTime": 76550
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Cast Lyrics 2026,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 124100,
+          "endTime": 132450
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Cast Lyrics 2026,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 132825,
+          "endTime": 135600
+        }
+      ],
+      "xsq_sha256": "77815fbcc66c94c580b79197c30e3eaf5fdd4c45b43207b09bc2b1b4669ce40f",
+      "native_voice": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Native voices/We Will Rock You.eseq",
+      "native_voice_sha256": "8569007e8ed97dc7eecc240edaae30cef2e84e6858124d8950fd2639305927da",
+      "native_lit_samples": 208,
+      "native_distinct_samples": 4,
+      "native_complete": true,
+      "authored_at": "2026-11-01T18:09:46.633945-06:00",
+      "all_other_effects_and_timings_preserved": true,
+      "frames": 7674,
+      "frame_ms": 25,
+      "all_other_output_pixels_identical": true,
+      "teddy_zero_every_frame": true,
+      "replacement_matches_native_every_frame": true,
+      "unchanged_output_sha256": "bb38f2d07b087cd4d493709188f1fde6b15f426820bef7d7684f9cafff3c0745",
+      "projector_frames_sha256": "35ac907e6e37d4d1e8594fef5669ff247eeb00ab2c36e001f913c1a4aa4c93fa",
+      "assembled": true,
+      "fseq_sha256": "01b942f7b89073347606ced09b97bdae5f504344d0c8d4ce2451b6409224310b",
+      "projector_file": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Projector sparse/We Will Rock You.fseq",
+      "projector_sha256": "6c78b4b585abba8942b5b9d77688a331cfc8f22b7606c97e9896841c809b6b8e",
+      "rendered_at": "2026-11-01T18:15:07.799650-06:00",
+      "adopted": true
+    },
+    "Zombie": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/Zombie/Zombie.xsq",
+      "before": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/Zombie/Zombie.xsq",
+      "stage": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Working/Zombie/Zombie.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/Zombie/Zombie.fseq",
+      "replacement": "GE Dark Helmet",
+      "source_xsq_sha256": "5e654295f5cc1c823a099f2daf98c19db7239f81e78cff5982cd503d2b0cf147",
+      "source_fseq_sha256": "3693e26ee52057a8b6eb0c5def1fb3a372eb5f7c3fa8fd0e3906c6899a054774",
+      "playback_files": [
+        "Halloween 2026 - Zombie.fseq"
+      ],
+      "moved_effects": 4,
+      "cleared_static_effects": 0,
+      "additions": [
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Lyrics,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 49350,
+          "endTime": 59100
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Lyrics,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 60675,
+          "endTime": 94075
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Lyrics,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 142125,
+          "endTime": 151650
+        },
+        {
+          "target": "GE Dark Helmet",
+          "layer": 3,
+          "effect": "Faces",
+          "settings": "E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Lyrics,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10",
+          "palette": "C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1",
+          "startTime": 153325,
+          "endTime": 186050
+        }
+      ],
+      "xsq_sha256": "17bd7c47ad9419ed07c27fac7f67c7bf945eae513541c6c2f420b83b48a755b0",
+      "native_voice": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Native voices/Zombie.eseq",
+      "native_voice_sha256": "02372d0ecd0051aa9740f2b12dbd196e59cc18d16466ebb17192efa99ca3a1ea",
+      "native_lit_samples": 780,
+      "native_distinct_samples": 4,
+      "native_complete": true,
+      "authored_at": "2026-11-01T18:10:05.035576-06:00",
+      "all_other_effects_and_timings_preserved": true,
+      "frames": 10044,
+      "frame_ms": 25,
+      "all_other_output_pixels_identical": true,
+      "teddy_zero_every_frame": true,
+      "replacement_matches_native_every_frame": true,
+      "unchanged_output_sha256": "dd123b80a710d50532143e41620a487226aac7f632c389df27b39743fe10e9eb",
+      "projector_frames_sha256": "1ce1e1fffb3325f4ce2cdec9194e996930c155dd1d26c564e03fd52e6a032e4d",
+      "assembled": true,
+      "fseq_sha256": "99671e8d6f31bc4226bf4fecc5ca7fe79a08c45776f2746ccf988da9ab18cfcc",
+      "projector_file": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Projector sparse/Zombie.fseq",
+      "projector_sha256": "d50b67511c39a80a51f058b2c06838f95ae355b2957c1fe5dccc472387f63286",
+      "rendered_at": "2026-11-01T18:15:20.617780-06:00",
+      "adopted": true
+    },
+    "static halloween": {
+      "sequence": "/Users/elliott.ohara/xlights/Halloween/Sequences/static halloween/static halloween.xsq",
+      "before": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/static halloween/static halloween.xsq",
+      "stage": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Working/static halloween/static halloween.xsq",
+      "baseline_fseq": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Before/static halloween/static halloween.fseq",
+      "replacement": null,
+      "source_xsq_sha256": "fafe6398e78eb7be34cf6048aec7e3f75842c91df1fdaaf660568fa345a1d2fc",
+      "source_fseq_sha256": "37fc6de49be1a8f16f4d98e1de151bb6ce693732bca523872aaef060ae3aefc8",
+      "playback_files": [
+        "Halloween 2026 - static halloween.fseq",
+        "Halloween 2026 - static halloween refined.fseq"
+      ],
+      "moved_effects": 0,
+      "cleared_static_effects": 22,
+      "additions": [],
+      "xsq_sha256": "b407dd01c16d42bf9d58cd9e26d26aee3ecadf21eec6d66d11c5145b9cc6d94d",
+      "native_complete": true,
+      "authored_at": "2026-11-01T18:10:06.516671-06:00",
+      "all_other_effects_and_timings_preserved": true,
+      "frames": 1200,
+      "frame_ms": 25,
+      "all_other_output_pixels_identical": true,
+      "teddy_zero_every_frame": true,
+      "replacement_matches_native_every_frame": true,
+      "unchanged_output_sha256": "5454ea840255b8862a6163741607b465d5bcb768ae593326af5c0a0ec739fc75",
+      "projector_frames_sha256": "45f4c5efcf71e9dcf3f1895f9fa92e19f3a88e94398a52caafb3412b025e72c7",
+      "assembled": true,
+      "fseq_sha256": "19ac816bfa70951960d431bc3b0fa9f36b689ee80237fb097b2612ab2667eb54",
+      "projector_file": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/Projector sparse/static halloween.fseq",
+      "projector_sha256": "db1059beb7dee79f58a69742125c848521a8fb597853d6e942d05a8e06b07802",
+      "rendered_at": "2026-11-01T18:15:22.056622-06:00",
+      "adopted": true
+    }
+  },
+  "layout_sha256": "def3f4f25fc3ba9070a940e0a0621e0342bd0a1604a1222c1bf4b691d3668176",
+  "network_sha256": "1d3e613b5146e1252cea5d703b10da96fbcabf574742b8f9dbab318d9eed5e20",
+  "master_before": {
+    "MQTT": {
+      "configured": false,
+      "connected": false
+    },
+    "branch": "v10.2",
+    "bridging": false,
+    "channelInputsEnabled": false,
+    "channelOutputsEnabled": true,
+    "current_playlist": {
+      "count": "20",
+      "description": "Halloween 2026 using current Halloween controller configuration. All selected sequences ready.",
+      "generated": false,
+      "index": "6",
+      "playlist": "Halloween 2026",
+      "type": "both"
+    },
+    "current_sequence": "Halloween 2026 - Ghostbusters.fseq",
+    "current_song": "Halloween 2026 - Ghostbusters - audio.m4a",
+    "dateStr": "Sun Nov  1",
+    "fppd": "running",
+    "global_pause": {
+      "active": false,
+      "configured": false,
+      "duration_ms": 0
+    },
+    "host_description": "Fpp Master",
+    "host_name": "FPP-Master",
+    "media_playing": true,
+    "milliseconds_elapsed": 61980,
+    "mode": 2,
+    "mode_name": "player",
+    "multisync": true,
+    "next_playlist": {
+      "playlist": "Halloween Overnight",
+      "start_time": "Sun Nov  1 @ 10:30 PM - (Everyday)"
+    },
+    "platform": "Raspberry Pi",
+    "powerBad": false,
+    "random": 0,
+    "repeat_mode": 1,
+    "scheduler": {
+      "currentPlaylist": {
+        "actualEndTime": 1793593800,
+        "actualEndTimeStr": "Sun Nov  1 @ 10:30 PM",
+        "actualStartTime": 1793576677,
+        "actualStartTimeStr": "Sun Nov  1 @ 05:44 PM",
+        "currentTime": 1793577591,
+        "currentTimeStr": "Sun Nov  1 @ 05:59 PM",
+        "playlistName": "Halloween 2026",
+        "scheduledEndTime": 1793593800,
+        "scheduledEndTimeStr": "Sun Nov  1 @ 10:30 PM",
+        "scheduledStartTime": 1793576677,
+        "scheduledStartTimeStr": "Sun Nov  1 @ 05:44 PM",
+        "secondsRemaining": 16209,
+        "stopType": 1,
+        "stopTypeStr": "Hard"
+      },
+      "enabled": 1,
+      "nextPlaylist": {
+        "playlistName": "Halloween Overnight",
+        "scheduledStartTime": 1793593800,
+        "scheduledStartTimeStr": "Sun Nov  1 @ 10:30 PM - (Everyday)"
+      },
+      "status": "playing"
+    },
+    "seconds_elapsed": "61",
+    "seconds_played": "61",
+    "seconds_remaining": "109",
+    "sensors": [
+      {
+        "formatted": "60.4",
+        "label": "CPU: ",
+        "postfix": "",
+        "prefix": "",
+        "value": 60.374,
+        "valueType": "Temperature"
+      }
+    ],
+    "status": 1,
+    "status_name": "playing",
+    "streamSlots": [
+      {
+        "isBackground": false,
+        "mediaFilename": "Halloween 2026 - Ghostbusters - audio.m4a",
+        "minutesTotal": 2,
+        "nodeDescription": "FPP Media Stream 1",
+        "nodeName": "fppd_stream_1",
+        "secondsElapsed": 61,
+        "secondsRemaining": 109,
+        "secondsTotal": 51,
+        "slot": 1,
+        "status": "playing",
+        "subSecondsElapsed": 98,
+        "subSecondsRemaining": 70
+      },
+      {
+        "isBackground": false,
+        "mediaFilename": "",
+        "nodeDescription": "FPP Media Stream 2",
+        "nodeName": "fppd_stream_2",
+        "slot": 2,
+        "status": "idle"
+      },
+      {
+        "isBackground": false,
+        "mediaFilename": "",
+        "nodeDescription": "FPP Media Stream 3",
+        "nodeName": "fppd_stream_3",
+        "slot": 3,
+        "status": "idle"
+      },
+      {
+        "isBackground": false,
+        "mediaFilename": "",
+        "nodeDescription": "FPP Media Stream 4",
+        "nodeName": "fppd_stream_4",
+        "slot": 4,
+        "status": "idle"
+      },
+      {
+        "isBackground": false,
+        "mediaFilename": "",
+        "nodeDescription": "FPP Media Stream 5",
+        "nodeName": "fppd_stream_5",
+        "slot": 5,
+        "status": "idle"
+      }
+    ],
+    "systemUptimeTotalSeconds": 1836667,
+    "time": "Sun Nov 01 17:59:51 CST 2026",
+    "timeStr": "05:59 PM",
+    "timeStrFull": "05:59:51 PM",
+    "time_elapsed": "01:01",
+    "time_remaining": "01:49",
+    "uptime": "14 days, 02:37:09",
+    "uptimeDays": 14,
+    "uptimeHours": 2,
+    "uptimeMinutes": 37,
+    "uptimeSeconds": 9,
+    "uptimeStr": "14 days, 2 hours, 37 minutes, 9 seconds",
+    "uptimeTotalSeconds": 1219029,
+    "uuid": "M1-100000005ab99614",
+    "version": "10.2-3-g00e5f727c",
+    "volume": 49,
+    "warningInfo": [
+      {
+        "id": 27,
+        "message": "Cannot Ping DDP Channel Data Target 192.168.0.239 FPP-LEFT-YARD"
+      },
+      {
+        "id": 27,
+        "message": "Cannot Ping DDP Channel Data Target 192.168.0.213 FPP-LEFT-YARD"
+      }
+    ],
+    "warnings": [
+      "Cannot Ping DDP Channel Data Target 192.168.0.239 FPP-LEFT-YARD",
+      "Cannot Ping DDP Channel Data Target 192.168.0.213 FPP-LEFT-YARD"
+    ],
+    "wifi": [
+      {
+        "interface": "wlan0",
+        "link": 0,
+        "level": 0,
+        "unit": "dBm",
+        "noise": 0,
+        "desc": "weak"
+      }
+    ],
+    "interfaces": [
+      {
+        "ifindex": 2,
+        "ifname": "eth0",
+        "flags": [
+          "BROADCAST",
+          "MULTICAST",
+          "UP",
+          "LOWER_UP"
+        ],
+        "mtu": 1500,
+        "qdisc": "fq",
+        "operstate": "UP",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "ether",
+        "address": "d8:3a:dd:6b:76:0e",
+        "broadcast": "ff:ff:ff:ff:ff:ff",
+        "addr_info": [
+          {
+            "family": "inet",
+            "local": "192.168.0.19",
+            "prefixlen": 24,
+            "metric": 1024,
+            "broadcast": "192.168.0.255",
+            "scope": "global",
+            "dynamic": true,
+            "label": "eth0",
+            "valid_life_time": 64700,
+            "preferred_life_time": 64700
+          },
+          {
+            "family": "inet6",
+            "local": "fde0:e973:8f23:41df:da3a:ddff:fe6b:760e",
+            "prefixlen": 64,
+            "scope": "global",
+            "dynamic": true,
+            "mngtmpaddr": true,
+            "noprefixroute": true,
+            "valid_life_time": 1723,
+            "preferred_life_time": 1723
+          },
+          {
+            "family": "inet6",
+            "local": "fdb2:c553:f40d:8123:da3a:ddff:fe6b:760e",
+            "prefixlen": 64,
+            "scope": "global",
+            "dynamic": true,
+            "mngtmpaddr": true,
+            "noprefixroute": true,
+            "valid_life_time": 1798,
+            "preferred_life_time": 1798
+          },
+          {
+            "family": "inet6",
+            "local": "fe80::da3a:ddff:fe6b:760e",
+            "prefixlen": 64,
+            "scope": "link",
+            "protocol": "kernel_ll",
+            "valid_life_time": 4294967295,
+            "preferred_life_time": 4294967295
+          }
+        ]
+      },
+      {
+        "ifindex": 3,
+        "ifname": "wlan0",
+        "flags": [
+          "BROADCAST",
+          "MULTICAST"
+        ],
+        "mtu": 1500,
+        "qdisc": "noop",
+        "operstate": "DOWN",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "ether",
+        "address": "d8:3a:dd:6b:76:0f",
+        "broadcast": "ff:ff:ff:ff:ff:ff",
+        "addr_info": [],
+        "wifi": {
+          "interface": "wlan0",
+          "link": 0,
+          "level": 0,
+          "unit": "dBm",
+          "noise": 0,
+          "desc": "weak"
+        }
+      }
+    ],
+    "rebootFlag": 0,
+    "restartFlag": 0,
+    "bootDelayActive": 0,
+    "advancedView": {
+      "HostName": "FPP-Master",
+      "HostDescription": "Fpp Master",
+      "Platform": "Raspberry Pi",
+      "Variant": "Pi 4",
+      "SubPlatform": "Raspberry Pi 4 Model B Rev 1.5",
+      "backgroundColor": "",
+      "Mode": "player",
+      "Logo": "Raspberry_Pi_4.svg",
+      "Version": "10.2-3-g00e5f727c",
+      "Branch": "v10.2",
+      "multisync": true,
+      "OSVersion": "v2026-09 (32bit)",
+      "OSRelease": "Raspbian GNU/Linux 13 (trixie)",
+      "channelRanges": "170292-287093",
+      "majorVersion": 10,
+      "minorVersion": 2,
+      "typeId": 13,
+      "channelInputsEnabled": false,
+      "channelOutputsEnabled": true,
+      "uuid": "M1-100000005ab99614",
+      "Utilization": {
+        "CPU": 9.936575052854124,
+        "Memory": 10.97699901516968,
+        "Uptime": "21 days 6:11",
+        "Disk": {
+          "Media": {
+            "Free": 5890650112,
+            "Total": 62582202368
+          },
+          "Root": {
+            "Free": 5890650112,
+            "Total": 62582202368
+          }
+        }
+      },
+      "Kernel": "6.18.52-v8+",
+      "LocalGitVersion": "00e5f727c",
+      "RemoteGitVersion": "d6f2274e0",
+      "UpgradeSource": "github.com",
+      "IPs": [
+        "192.168.0.19"
+      ]
+    },
+    "pluginHeaderIndicators": [],
+    "fppdRestartBlocked": {
+      "blocked": false
+    }
+  },
+  "original_open": "/Users/elliott.ohara/xlights/Halloween/Sequences/Ghostbusters/Ghostbusters.xsq",
+  "native_session": "Existing B at canonical Halloween root; isolated backed-up working copies. Both permanent slots contain unrelated dirty work, preserved untouched.",
+  "policy": "Teddy reserved for guest interaction; move identical singing windows and lyric tracks to an otherwise unused installed singer; clear old static gestures.",
+  "controllers_before": [
+    {
+      "name": "FPPProjector",
+      "desc": "Elliott Garage Projector",
+      "type": "Ethernet",
+      "vendor": "FPP",
+      "model": "Virtual Matrix",
+      "variant": "",
+      "protocol": "DDP",
+      "id": 100,
+      "startchannel": 1,
+      "channels": 147456,
+      "managed": true,
+      "autolayout": false,
+      "canvisualise": true,
+      "active": true,
+      "ip": "192.168.0.201",
+      "controllercap": {
+        "pixelports": 0,
+        "serialports": 1,
+        "supportspanels": true,
+        "supportsvirtualmatrix": true,
+        "smartremotecount": 0,
+        "smartremotetypes": [],
+        "pixelprotocols": [],
+        "serialprotocols": [
+          "DMX-Open",
+          "DMX-Pro",
+          "GenericSerial",
+          "LOR",
+          "Pixelnet-Lynx",
+          "Pixelnet-Open",
+          "Renard"
+        ]
+      }
+    },
+    {
+      "name": "Falcon-16V4-02",
+      "desc": "2nd Floor Face of house",
+      "type": "Ethernet",
+      "vendor": "Falcon",
+      "model": "F16V4",
+      "variant": "16 + 16 Local Ports",
+      "protocol": "DDP",
+      "id": 2,
+      "startchannel": 147457,
+      "channels": 3888,
+      "managed": true,
+      "autolayout": true,
+      "canvisualise": true,
+      "active": false,
+      "ip": "192.168.254.100",
+      "controllercap": {
+        "pixelports": 32,
+        "serialports": 1,
+        "supportspanels": false,
+        "supportsvirtualmatrix": false,
+        "smartremotecount": 0,
+        "smartremotetypes": [],
+        "pixelprotocols": [
+          "ws2811",
+          "apa102",
+          "apa109",
+          "lpd6803",
+          "lpd8806",
+          "sm16716",
+          "tls3001",
+          "tm1814",
+          "tm1829",
+          "ucs8903",
+          "ucs8903 16 bit",
+          "ucs8904",
+          "ucs8904 16 bit",
+          "ws2801",
+          "ws2811",
+          "ws2811 slow",
+          "dmx512p",
+          "dmx512p-4",
+          "sj1221",
+          "sm16825",
+          "sm16825 16 bit"
+        ],
+        "serialprotocols": [
+          "dmx",
+          "renard"
+        ]
+      }
+    },
+    {
+      "name": "FPP-MEGA-TREE",
+      "desc": "",
+      "type": "Ethernet",
+      "vendor": "KulpLights",
+      "model": "K32",
+      "variant": "K32A-B",
+      "protocol": "DDP",
+      "id": 3,
+      "startchannel": 151345,
+      "channels": 18948,
+      "managed": true,
+      "autolayout": true,
+      "canvisualise": true,
+      "active": false,
+      "ip": "192.168.0.126",
+      "controllercap": {
+        "pixelports": 48,
+        "serialports": 2,
+        "supportspanels": false,
+        "supportsvirtualmatrix": false,
+        "smartremotecount": 6,
+        "smartremotetypes": [
+          "falcon_v1",
+          "fpp_v2",
+          "falcon_v4"
+        ],
+        "pixelprotocols": [
+          "ws2811"
+        ],
+        "serialprotocols": [
+          "DMX-Open",
+          "DMX-Pro",
+          "GenericSerial",
+          "LOR",
+          "LOR Enhanced",
+          "Pixelnet-Lynx",
+          "Pixelnet-Open",
+          "Renard"
+        ]
+      }
+    },
+    {
+      "name": "FPP-KULP08-FrontPorch",
+      "desc": "",
+      "type": "Ethernet",
+      "vendor": "KulpLights",
+      "model": "K8",
+      "variant": "K8-B",
+      "protocol": "DDP",
+      "id": 4,
+      "startchannel": 170293,
+      "channels": 6873,
+      "managed": true,
+      "autolayout": true,
+      "canvisualise": true,
+      "active": true,
+      "ip": "192.168.0.250",
+      "controllercap": {
+        "pixelports": 20,
+        "serialports": 2,
+        "supportspanels": false,
+        "supportsvirtualmatrix": false,
+        "smartremotecount": 6,
+        "smartremotetypes": [
+          "falcon_v1",
+          "fpp_v2",
+          "falcon_v4"
+        ],
+        "pixelprotocols": [
+          "ws2811"
+        ],
+        "serialprotocols": [
+          "DMX-Open",
+          "DMX-Pro",
+          "GenericSerial",
+          "LOR",
+          "LOR Enhanced",
+          "Pixelnet-Lynx",
+          "Pixelnet-Open",
+          "Renard"
+        ]
+      }
+    },
+    {
+      "name": "FALON-16V3-02",
+      "desc": "Front Raised Bed",
+      "type": "Ethernet",
+      "vendor": "Falcon",
+      "model": "F16V3",
+      "variant": "No Expansion Boards",
+      "protocol": "DDP",
+      "id": 5,
+      "startchannel": 177166,
+      "channels": 816,
+      "managed": true,
+      "autolayout": true,
+      "canvisualise": true,
+      "active": true,
+      "ip": "192.168.0.249",
+      "controllercap": {
+        "pixelports": 16,
+        "serialports": 4,
+        "supportspanels": false,
+        "supportsvirtualmatrix": false,
+        "smartremotecount": 3,
+        "smartremotetypes": [
+          "falcon_v1"
+        ],
+        "pixelprotocols": [
+          "ws2811",
+          "tm18xx",
+          "lx1203",
+          "ws2801",
+          "tls3001",
+          "lpd6803",
+          "gece",
+          "lpd8806",
+          "apa102",
+          "ucs2903",
+          "tm1814a"
+        ],
+        "serialprotocols": [
+          "dmx",
+          "renard",
+          "pixelnet"
+        ]
+      }
+    },
+    {
+      "name": "GENIUS-PORCH",
+      "desc": "Elliott Porch",
+      "type": "Ethernet",
+      "vendor": "Experience Lights",
+      "model": "Genius Pixel 16",
+      "variant": "",
+      "protocol": "DDP",
+      "id": 6,
+      "startchannel": 177982,
+      "channels": 11250,
+      "managed": true,
+      "autolayout": false,
+      "canvisualise": true,
+      "active": true,
+      "ip": "192.168.0.9",
+      "controllercap": {
+        "pixelports": 24,
+        "serialports": 2,
+        "supportspanels": false,
+        "supportsvirtualmatrix": false,
+        "smartremotecount": 6,
+        "smartremotetypes": [
+          "falcon_v2"
+        ],
+        "pixelprotocols": [
+          "ws2811"
+        ],
+        "serialprotocols": [
+          "dmx"
+        ]
+      }
+    },
+    {
+      "name": "FPP-KULP16-02",
+      "desc": "FPP Face of house controller",
+      "type": "Ethernet",
+      "vendor": "KulpLights",
+      "model": "K16",
+      "variant": "K16A-B 1.x",
+      "protocol": "DDP",
+      "id": 10,
+      "startchannel": 189232,
+      "channels": 19248,
+      "managed": true,
+      "autolayout": true,
+      "canvisualise": true,
+      "active": true,
+      "ip": "192.168.0.205",
+      "controllercap": {
+        "pixelports": 32,
+        "serialports": 2,
+        "supportspanels": false,
+        "supportsvirtualmatrix": false,
+        "smartremotecount": 6,
+        "smartremotetypes": [
+          "falcon_v1",
+          "fpp_v2",
+          "falcon_v4"
+        ],
+        "pixelprotocols": [
+          "ws2811"
+        ],
+        "serialprotocols": [
+          "DMX-Open",
+          "DMX-Pro",
+          "GenericSerial",
+          "LOR",
+          "LOR Enhanced",
+          "Pixelnet-Lynx",
+          "Pixelnet-Open",
+          "Renard"
+        ]
+      }
+    },
+    {
+      "name": "FALCON-48V2-01",
+      "desc": "Toni Yard",
+      "type": "Ethernet",
+      "vendor": "Falcon",
+      "model": "F48",
+      "variant": "",
+      "protocol": "DDP",
+      "id": 12,
+      "startchannel": 208480,
+      "channels": 1,
+      "managed": true,
+      "autolayout": true,
+      "canvisualise": true,
+      "active": false,
+      "ip": "192.168.0.151",
+      "controllercap": {
+        "pixelports": 48,
+        "serialports": 4,
+        "supportspanels": false,
+        "supportsvirtualmatrix": false,
+        "smartremotecount": 3,
+        "smartremotetypes": [
+          "falcon_v1"
+        ],
+        "pixelprotocols": [
+          "ws2811",
+          "tm18xx",
+          "lx1203",
+          "ws2801",
+          "tls3001",
+          "lpd6803",
+          "gece",
+          "lpd8806",
+          "apa102",
+          "ucs2903",
+          "tm1814a"
+        ],
+        "serialprotocols": [
+          "dmx",
+          "renard",
+          "pixelnet"
+        ]
+      }
+    },
+    {
+      "name": "FPP-KULP32-01",
+      "desc": "Eves controller",
+      "type": "Ethernet",
+      "vendor": "KulpLights",
+      "model": "F32-B",
+      "variant": "No Serial",
+      "protocol": "DDP",
+      "id": 7,
+      "startchannel": 208481,
+      "channels": 6162,
+      "managed": true,
+      "autolayout": false,
+      "canvisualise": true,
+      "active": true,
+      "ip": "192.168.0.238",
+      "controllercap": {
+        "pixelports": 48,
+        "serialports": 0,
+        "supportspanels": false,
+        "supportsvirtualmatrix": false,
+        "smartremotecount": 6,
+        "smartremotetypes": [
+          "falcon_v1",
+          "fpp_v2",
+          "falcon_v4"
+        ],
+        "pixelprotocols": [
+          "ws2811"
+        ],
+        "serialprotocols": [
+          "dmx",
+          "pixelnet"
+        ]
+      }
+    },
+    {
+      "name": "FPP-KULP-SELFIE-STATION",
+      "desc": "Left Yard",
+      "type": "Ethernet",
+      "vendor": "KulpLights",
+      "model": "K8",
+      "variant": "K8-B",
+      "protocol": "DDP",
+      "id": 9,
+      "startchannel": 214643,
+      "channels": 2001,
+      "managed": true,
+      "autolayout": true,
+      "canvisualise": true,
+      "active": true,
+      "ip": "192.168.0.213",
+      "controllercap": {
+        "pixelports": 20,
+        "serialports": 2,
+        "supportspanels": false,
+        "supportsvirtualmatrix": false,
+        "smartremotecount": 6,
+        "smartremotetypes": [
+          "falcon_v1",
+          "fpp_v2",
+          "falcon_v4"
+        ],
+        "pixelprotocols": [
+          "ws2811"
+        ],
+        "serialprotocols": [
+          "DMX-Open",
+          "DMX-Pro",
+          "GenericSerial",
+          "LOR",
+          "LOR Enhanced",
+          "Pixelnet-Lynx",
+          "Pixelnet-Open",
+          "Renard"
+        ]
+      }
+    },
+    {
+      "name": "FPP-KULP16-01",
+      "desc": "",
+      "type": "Ethernet",
+      "vendor": "KulpLights",
+      "model": "K16",
+      "variant": "K16A-B 1.x",
+      "protocol": "DDP",
+      "id": 8,
+      "startchannel": 216644,
+      "channels": 17637,
+      "managed": true,
+      "autolayout": true,
+      "canvisualise": true,
+      "active": true,
+      "ip": "192.168.0.253",
+      "controllercap": {
+        "pixelports": 32,
+        "serialports": 2,
+        "supportspanels": false,
+        "supportsvirtualmatrix": false,
+        "smartremotecount": 6,
+        "smartremotetypes": [
+          "falcon_v1",
+          "fpp_v2",
+          "falcon_v4"
+        ],
+        "pixelprotocols": [
+          "ws2811"
+        ],
+        "serialprotocols": [
+          "DMX-Open",
+          "DMX-Pro",
+          "GenericSerial",
+          "LOR",
+          "LOR Enhanced",
+          "Pixelnet-Lynx",
+          "Pixelnet-Open",
+          "Renard"
+        ]
+      }
+    },
+    {
+      "name": "FPP-Master",
+      "desc": "",
+      "type": "Ethernet",
+      "vendor": "",
+      "model": "",
+      "variant": "",
+      "protocol": "DDP",
+      "id": 13,
+      "startchannel": 234281,
+      "channels": 1,
+      "managed": true,
+      "autolayout": true,
+      "canvisualise": false,
+      "active": true,
+      "ip": "192.168.0.19",
+      "controllercap": {}
+    },
+    {
+      "name": "FPP-TUNETO",
+      "desc": "Tune To Sign",
+      "type": "Ethernet",
+      "vendor": "FPP",
+      "model": "LED Panels",
+      "variant": "",
+      "protocol": "DDP",
+      "id": 300,
+      "startchannel": 234282,
+      "channels": 36864,
+      "managed": true,
+      "autolayout": true,
+      "canvisualise": true,
+      "active": true,
+      "ip": "192.168.0.245",
+      "controllercap": {
+        "pixelports": 0,
+        "serialports": 1,
+        "supportspanels": true,
+        "supportsvirtualmatrix": false,
+        "smartremotecount": 0,
+        "smartremotetypes": [],
+        "pixelprotocols": [],
+        "serialprotocols": [
+          "DMX-Open",
+          "DMX-Pro",
+          "GenericSerial",
+          "LOR",
+          "Pixelnet-Lynx",
+          "Pixelnet-Open",
+          "Renard"
+        ]
+      }
+    },
+    {
+      "name": "Falcon_F16V4_621D",
+      "desc": "",
+      "type": "Ethernet",
+      "vendor": "Falcon",
+      "model": "F16V4",
+      "variant": "16 + 16 Local Ports",
+      "protocol": "DDP",
+      "id": 1,
+      "startchannel": 271146,
+      "channels": 11049,
+      "managed": true,
+      "autolayout": true,
+      "canvisualise": true,
+      "active": true,
+      "ip": "192.168.0.252",
+      "controllercap": {
+        "pixelports": 32,
+        "serialports": 1,
+        "supportspanels": false,
+        "supportsvirtualmatrix": false,
+        "smartremotecount": 0,
+        "smartremotetypes": [],
+        "pixelprotocols": [
+          "ws2811",
+          "apa102",
+          "apa109",
+          "lpd6803",
+          "lpd8806",
+          "sm16716",
+          "tls3001",
+          "tm1814",
+          "tm1829",
+          "ucs8903",
+          "ucs8903 16 bit",
+          "ucs8904",
+          "ucs8904 16 bit",
+          "ws2801",
+          "ws2811",
+          "ws2811 slow",
+          "dmx512p",
+          "dmx512p-4",
+          "sj1221",
+          "sm16825",
+          "sm16825 16 bit"
+        ],
+        "serialprotocols": [
+          "dmx",
+          "renard"
+        ]
+      }
+    },
+    {
+      "name": "Genius Roof",
+      "desc": "18 roof snowflakes; port 4 unused; photo-inferred wiring",
+      "type": "Ethernet",
+      "vendor": "Experience Lights",
+      "model": "Genius Pro 16 Port",
+      "variant": "",
+      "protocol": "DDP",
+      "id": 11,
+      "startchannel": 282195,
+      "channels": 4899,
+      "managed": true,
+      "autolayout": true,
+      "canvisualise": true,
+      "active": true,
+      "ip": "192.168.0.78",
+      "controllercap": {
+        "pixelports": 24,
+        "serialports": 2,
+        "supportspanels": false,
+        "supportsvirtualmatrix": false,
+        "smartremotecount": 6,
+        "smartremotetypes": [
+          "falcon_v2"
+        ],
+        "pixelprotocols": [
+          "ws2811"
+        ],
+        "serialprotocols": [
+          "dmx"
+        ]
+      }
+    }
+  ],
+  "restore_open": "/Users/elliott.ohara/xlights/Halloween/Sequences/Teddy Interactive/Teddy Thinking.xsq",
+  "all_native_renders_complete": true,
+  "all_local_renders_complete": true,
+  "pixel_checks_passed": true,
+  "qr_decodes_passed": true,
+  "qr_verification": "All Tune To pixels preserved byte-for-byte in every frame, including previously verified QR and Ghostbusters lyrics.",
+  "local_qa_finished_at": "2026-11-01T18:15:22.057218-06:00",
+  "adopted": true,
+  "deployment_complete": true,
+  "master_kept_running": true,
+  "playlist_schedule_routing_preserved": true,
+  "master_after": {
+    "MQTT": {
+      "configured": false,
+      "connected": false
+    },
+    "branch": "v10.2",
+    "bridging": false,
+    "channelInputsEnabled": false,
+    "channelOutputsEnabled": true,
+    "current_playlist": {
+      "count": "20",
+      "description": "Halloween 2026 using current Halloween controller configuration. All selected sequences ready.",
+      "generated": false,
+      "index": "16",
+      "playlist": "Halloween 2026",
+      "type": "both"
+    },
+    "current_sequence": "Halloween 2026 - Skrillex Medley.fseq",
+    "current_song": "Halloween 2026 - Skrillex Medley.mp3",
+    "dateStr": "Sun Nov  1",
+    "fppd": "running",
+    "global_pause": {
+      "active": false,
+      "configured": false,
+      "duration_ms": 0
+    },
+    "host_description": "Fpp Master",
+    "host_name": "FPP-Master",
+    "media_playing": true,
+    "milliseconds_elapsed": 44230,
+    "mode": 2,
+    "mode_name": "player",
+    "multisync": true,
+    "next_playlist": {
+      "playlist": "Halloween Overnight",
+      "start_time": "Sun Nov  1 @ 10:30 PM - (Everyday)"
+    },
+    "platform": "Raspberry Pi",
+    "powerBad": false,
+    "random": 0,
+    "repeat_mode": 1,
+    "scheduler": {
+      "currentPlaylist": {
+        "actualEndTime": 1793593800,
+        "actualEndTimeStr": "Sun Nov  1 @ 10:30 PM",
+        "actualStartTime": 1793576677,
+        "actualStartTimeStr": "Sun Nov  1 @ 05:44 PM",
+        "currentTime": 1793579995,
+        "currentTimeStr": "Sun Nov  1 @ 06:39 PM",
+        "playlistName": "Halloween 2026",
+        "scheduledEndTime": 1793593800,
+        "scheduledEndTimeStr": "Sun Nov  1 @ 10:30 PM",
+        "scheduledStartTime": 1793576677,
+        "scheduledStartTimeStr": "Sun Nov  1 @ 05:44 PM",
+        "secondsRemaining": 13805,
+        "stopType": 1,
+        "stopTypeStr": "Hard"
+      },
+      "enabled": 1,
+      "nextPlaylist": {
+        "playlistName": "Halloween Overnight",
+        "scheduledStartTime": 1793593800,
+        "scheduledStartTimeStr": "Sun Nov  1 @ 10:30 PM - (Everyday)"
+      },
+      "status": "playing"
+    },
+    "seconds_elapsed": "44",
+    "seconds_played": "44",
+    "seconds_remaining": "169",
+    "sensors": [
+      {
+        "formatted": "60.4",
+        "label": "CPU: ",
+        "postfix": "",
+        "prefix": "",
+        "value": 60.374,
+        "valueType": "Temperature"
+      }
+    ],
+    "status": 1,
+    "status_name": "playing",
+    "streamSlots": [
+      {
+        "isBackground": false,
+        "mediaFilename": "Halloween 2026 - Skrillex Medley.mp3",
+        "minutesTotal": 3,
+        "nodeDescription": "FPP Media Stream 1",
+        "nodeName": "fppd_stream_1",
+        "secondsElapsed": 44,
+        "secondsRemaining": 169,
+        "secondsTotal": 34,
+        "slot": 1,
+        "status": "playing",
+        "subSecondsElapsed": 23,
+        "subSecondsRemaining": 86
+      },
+      {
+        "isBackground": false,
+        "mediaFilename": "",
+        "nodeDescription": "FPP Media Stream 2",
+        "nodeName": "fppd_stream_2",
+        "slot": 2,
+        "status": "idle"
+      },
+      {
+        "isBackground": false,
+        "mediaFilename": "",
+        "nodeDescription": "FPP Media Stream 3",
+        "nodeName": "fppd_stream_3",
+        "slot": 3,
+        "status": "idle"
+      },
+      {
+        "isBackground": false,
+        "mediaFilename": "",
+        "nodeDescription": "FPP Media Stream 4",
+        "nodeName": "fppd_stream_4",
+        "slot": 4,
+        "status": "idle"
+      },
+      {
+        "isBackground": false,
+        "mediaFilename": "",
+        "nodeDescription": "FPP Media Stream 5",
+        "nodeName": "fppd_stream_5",
+        "slot": 5,
+        "status": "idle"
+      }
+    ],
+    "systemUptimeTotalSeconds": 1839071,
+    "time": "Sun Nov 01 18:39:55 CST 2026",
+    "timeStr": "06:39 PM",
+    "timeStrFull": "06:39:55 PM",
+    "time_elapsed": "00:44",
+    "time_remaining": "02:49",
+    "uptime": "14 days, 03:17:13",
+    "uptimeDays": 14,
+    "uptimeHours": 3,
+    "uptimeMinutes": 17,
+    "uptimeSeconds": 13,
+    "uptimeStr": "14 days, 3 hours, 17 minutes, 13 seconds",
+    "uptimeTotalSeconds": 1221433,
+    "uuid": "M1-100000005ab99614",
+    "version": "10.2-3-g00e5f727c",
+    "volume": 49,
+    "warningInfo": [
+      {
+        "id": 27,
+        "message": "Cannot Ping DDP Channel Data Target 192.168.0.239 FPP-LEFT-YARD"
+      },
+      {
+        "id": 27,
+        "message": "Cannot Ping DDP Channel Data Target 192.168.0.213 FPP-LEFT-YARD"
+      }
+    ],
+    "warnings": [
+      "Cannot Ping DDP Channel Data Target 192.168.0.239 FPP-LEFT-YARD",
+      "Cannot Ping DDP Channel Data Target 192.168.0.213 FPP-LEFT-YARD"
+    ],
+    "wifi": [
+      {
+        "interface": "wlan0",
+        "link": 0,
+        "level": 0,
+        "unit": "dBm",
+        "noise": 0,
+        "desc": "weak"
+      }
+    ],
+    "interfaces": [
+      {
+        "ifindex": 2,
+        "ifname": "eth0",
+        "flags": [
+          "BROADCAST",
+          "MULTICAST",
+          "UP",
+          "LOWER_UP"
+        ],
+        "mtu": 1500,
+        "qdisc": "fq",
+        "operstate": "UP",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "ether",
+        "address": "d8:3a:dd:6b:76:0e",
+        "broadcast": "ff:ff:ff:ff:ff:ff",
+        "addr_info": [
+          {
+            "family": "inet",
+            "local": "192.168.0.19",
+            "prefixlen": 24,
+            "metric": 1024,
+            "broadcast": "192.168.0.255",
+            "scope": "global",
+            "dynamic": true,
+            "label": "eth0",
+            "valid_life_time": 62296,
+            "preferred_life_time": 62296
+          },
+          {
+            "family": "inet6",
+            "local": "fde0:e973:8f23:41df:da3a:ddff:fe6b:760e",
+            "prefixlen": 64,
+            "scope": "global",
+            "dynamic": true,
+            "mngtmpaddr": true,
+            "noprefixroute": true,
+            "valid_life_time": 1665,
+            "preferred_life_time": 1665
+          },
+          {
+            "family": "inet6",
+            "local": "fdb2:c553:f40d:8123:da3a:ddff:fe6b:760e",
+            "prefixlen": 64,
+            "scope": "global",
+            "dynamic": true,
+            "mngtmpaddr": true,
+            "noprefixroute": true,
+            "valid_life_time": 1742,
+            "preferred_life_time": 1742
+          },
+          {
+            "family": "inet6",
+            "local": "fe80::da3a:ddff:fe6b:760e",
+            "prefixlen": 64,
+            "scope": "link",
+            "protocol": "kernel_ll",
+            "valid_life_time": 4294967295,
+            "preferred_life_time": 4294967295
+          }
+        ]
+      },
+      {
+        "ifindex": 3,
+        "ifname": "wlan0",
+        "flags": [
+          "BROADCAST",
+          "MULTICAST"
+        ],
+        "mtu": 1500,
+        "qdisc": "noop",
+        "operstate": "DOWN",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "ether",
+        "address": "d8:3a:dd:6b:76:0f",
+        "broadcast": "ff:ff:ff:ff:ff:ff",
+        "addr_info": [],
+        "wifi": {
+          "interface": "wlan0",
+          "link": 0,
+          "level": 0,
+          "unit": "dBm",
+          "noise": 0,
+          "desc": "weak"
+        }
+      }
+    ],
+    "rebootFlag": 0,
+    "restartFlag": 0,
+    "bootDelayActive": 0,
+    "advancedView": {
+      "HostName": "FPP-Master",
+      "HostDescription": "Fpp Master",
+      "Platform": "Raspberry Pi",
+      "Variant": "Pi 4",
+      "SubPlatform": "Raspberry Pi 4 Model B Rev 1.5",
+      "backgroundColor": "",
+      "Mode": "player",
+      "Logo": "Raspberry_Pi_4.svg",
+      "Version": "10.2-3-g00e5f727c",
+      "Branch": "v10.2",
+      "multisync": true,
+      "OSVersion": "v2026-09 (32bit)",
+      "OSRelease": "Raspbian GNU/Linux 13 (trixie)",
+      "channelRanges": "170292-287093",
+      "majorVersion": 10,
+      "minorVersion": 2,
+      "typeId": 13,
+      "channelInputsEnabled": false,
+      "channelOutputsEnabled": true,
+      "uuid": "M1-100000005ab99614",
+      "Utilization": {
+        "CPU": 19.745222929936304,
+        "Memory": 12.211381427767275,
+        "Uptime": "21 days 6:51",
+        "Disk": {
+          "Media": {
+            "Free": 5889720320,
+            "Total": 62582202368
+          },
+          "Root": {
+            "Free": 5889720320,
+            "Total": 62582202368
+          }
+        }
+      },
+      "Kernel": "6.18.52-v8+",
+      "LocalGitVersion": "00e5f727c",
+      "RemoteGitVersion": "d6f2274e0",
+      "UpgradeSource": "github.com",
+      "IPs": [
+        "192.168.0.19"
+      ]
+    },
+    "pluginHeaderIndicators": [],
+    "fppdRestartBlocked": {
+      "blocked": false
+    }
+  },
+  "finished_at": "2026-11-01T18:39:55.617654-06:00",
+  "master_service_uptime_advanced": true,
+  "teddy_background_preserved": true,
+  "selfie_pixel_configuration_preserved": true,
+  "native_phoneme_samples_passed": 8958,
+  "singing_songs_recast": 21,
+  "vocal_effects_moved": 176,
+  "sequences_updated": 22,
+  "playback_filenames_per_player": 23,
+  "projector_header_only_proof": "/Users/elliott.ohara/xlights/Halloween/Backups/Teddy song recast 20261101-175951/projector-header-only-proof.json"
+}

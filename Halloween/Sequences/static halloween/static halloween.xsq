@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <xsequence BaseChannel="0" ChanCtrlBasic="0" ChanCtrlColor="0" FixedPointTiming="1" ModelBlending="true">
   <head>
-    <version>2026.18</version>
+    <version>2026.19</version>
     <author></author>
     <author-email></author-email>
     <author-website></author-website>
@@ -91,17 +91,6 @@
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkFrequency=Slow,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Pumpkin face,E_CHOICE_Faces_Phoneme=rest,E_CHOICE_Faces_UseState=outline with stem</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_Phoneme=rest</Effect>
     <Effect>E_TEXTCTRL_Eff_On_End=100,E_TEXTCTRL_Eff_On_Start=100,T_TEXTCTRL_Fadein=2,T_TEXTCTRL_Fadeout=2.5</Effect>
-    <Effect>E_CHOICE_State_Color=Graduate,E_CHOICE_State_Mode=Default,E_CHOICE_State_State=arms,E_CHOICE_State_StateDefinition=arms,E_SLIDER_State_Fade_Time=0</Effect>
-    <Effect>E_CHOICE_State_Color=Graduate,E_CHOICE_State_Mode=Default,E_CHOICE_State_State=leftmid,E_CHOICE_State_StateDefinition=arms,E_SLIDER_State_Fade_Time=0</Effect>
-    <Effect>E_CHOICE_State_Color=Graduate,E_CHOICE_State_Mode=Default,E_CHOICE_State_State=leftup,E_CHOICE_State_StateDefinition=arms,E_SLIDER_State_Fade_Time=0</Effect>
-    <Effect>E_CHOICE_State_Color=Graduate,E_CHOICE_State_Mode=Default,E_CHOICE_State_State=rightmid,E_CHOICE_State_StateDefinition=arms,E_SLIDER_State_Fade_Time=0</Effect>
-    <Effect>E_CHOICE_State_Color=Graduate,E_CHOICE_State_Mode=Default,E_CHOICE_State_State=rightup,E_CHOICE_State_StateDefinition=arms,E_SLIDER_State_Fade_Time=0</Effect>
-    <Effect>E_CHOICE_State_Color=Graduate,E_CHOICE_State_Mode=Default,E_CHOICE_State_State=mid,E_CHOICE_State_StateDefinition=arms,E_SLIDER_State_Fade_Time=0</Effect>
-    <Effect>E_CHOICE_State_Color=Graduate,E_CHOICE_State_Mode=Default,E_CHOICE_State_State=up,E_CHOICE_State_StateDefinition=arms,E_SLIDER_State_Fade_Time=0</Effect>
-    <Effect>E_CHOICE_State_Color=Graduate,E_CHOICE_State_Mode=Default,E_CHOICE_State_State=left,E_CHOICE_State_StateDefinition=eye direction,E_SLIDER_State_Fade_Time=0</Effect>
-    <Effect>E_CHOICE_State_Color=Graduate,E_CHOICE_State_Mode=Default,E_CHOICE_State_State=right,E_CHOICE_State_StateDefinition=eye direction,E_SLIDER_State_Fade_Time=0</Effect>
-    <Effect>E_CHOICE_State_Color=Graduate,E_CHOICE_State_Mode=Default,E_CHOICE_State_State=upleft,E_CHOICE_State_StateDefinition=eye direction,E_SLIDER_State_Fade_Time=0</Effect>
-    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_EyeBlinkFrequency=Slow,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_Phoneme=rest,E_CHOICE_Faces_UseState=Teddy RedBow</Effect>
     <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/TuneToReadable-v2/stationary-qr.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
   </EffectDB>
   <SequenceMedia />
@@ -531,40 +520,15 @@
       </SubModelEffectLayer>
     </Element>
     <Element type="model" name="Elliott - EFL Teddy">
-      <EffectLayer>
-        <Effect ref="34" name="State" startTime="0" endTime="5500" palette="36" />
-        <Effect ref="35" name="State" id="1" startTime="5500" endTime="6200" palette="36" />
-        <Effect ref="36" name="State" id="2" startTime="6200" endTime="6900" palette="36" />
-        <Effect ref="35" name="State" id="3" startTime="6900" endTime="7600" palette="36" />
-        <Effect ref="36" name="State" id="4" startTime="7600" endTime="8300" palette="36" />
-        <Effect ref="35" name="State" id="5" startTime="8300" endTime="9000" palette="36" />
-        <Effect ref="34" name="State" id="6" startTime="9000" endTime="16000" palette="36" />
-        <Effect ref="37" name="State" id="7" startTime="16000" endTime="16700" palette="36" />
-        <Effect ref="38" name="State" id="8" startTime="16700" endTime="17400" palette="36" />
-        <Effect ref="37" name="State" id="9" startTime="17400" endTime="18100" palette="36" />
-        <Effect ref="38" name="State" id="10" startTime="18100" endTime="18800" palette="36" />
-        <Effect ref="37" name="State" id="11" startTime="18800" endTime="19500" palette="36" />
-        <Effect ref="34" name="State" id="12" startTime="19500" endTime="25000" palette="36" />
-        <Effect ref="39" name="State" id="13" startTime="25000" endTime="25700" palette="36" />
-        <Effect ref="40" name="State" id="14" startTime="25700" endTime="26500" palette="36" />
-        <Effect ref="39" name="State" id="15" startTime="26500" endTime="27200" palette="36" />
-        <Effect ref="34" name="State" id="16" startTime="27200" endTime="30000" palette="36" />
-      </EffectLayer>
-      <EffectLayer>
-        <Effect ref="41" name="State" startTime="3200" endTime="5200" palette="36" />
-        <Effect ref="42" name="State" id="1" startTime="10800" endTime="13200" palette="36" />
-        <Effect ref="43" name="State" id="2" startTime="20700" endTime="22400" palette="36" />
-        <Effect ref="42" name="State" id="3" startTime="22800" endTime="24400" palette="36" />
-      </EffectLayer>
       <EffectLayer />
-      <EffectLayer>
-        <Effect ref="44" name="Faces" startTime="0" endTime="30000" palette="36" />
-      </EffectLayer>
+      <EffectLayer />
+      <EffectLayer />
+      <EffectLayer />
     </Element>
     <Element type="model" name="Tune To">
       <EffectLayer />
       <EffectLayer>
-        <Effect ref="45" name="Pictures" startTime="0" endTime="30000" palette="37" />
+        <Effect ref="34" name="Pictures" startTime="0" endTime="30000" palette="37" />
       </EffectLayer>
     </Element>
     <Element type="model" name="Projector">

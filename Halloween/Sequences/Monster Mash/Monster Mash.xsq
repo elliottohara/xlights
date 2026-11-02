@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <xsequence BaseChannel="0" ChanCtrlBasic="0" ChanCtrlColor="0" FixedPointTiming="1" ModelBlending="false">
   <head>
-    <version>2026.18</version>
+    <version>2026.19</version>
     <author></author>
     <author-email></author-email>
     <author-website></author-website>
@@ -141,11 +141,9 @@
     <Effect>B_CUSTOM_SubBuffer=-0.15x-0.71x99.94x100.12,T_TEXTCTRL_Fadeout=.2</Effect>
     <Effect>B_CUSTOM_SubBuffer=-0.15x-3.07x100.36x100.12,B_SLIDER_Blur=2,T_SLIDER_EffectLayerMix=4</Effect>
     <Effect>B_CUSTOM_SubBuffer=-0.15x-0.71x99.94x100.12,E_CHECKBOX_On_Shimmer=1,T_TEXTCTRL_Fadeout=.2</Effect>
-    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_TimingTrack=Skull,E_CHOICE_Faces_UseState=Teddy RedBow static,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
+    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Skull,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
   </EffectDB>
-  <SequenceMedia>
-    <Video path="Sequences/Monster Mash/Media/Videos-0a9e08/Groovie Goolies Monster Mash Music Video.mp4" />
-  </SequenceMedia>
+  <SequenceMedia />
   <DataLayers>
     <DataLayer lor_params="0" channel_offset="0" num_channels="0" num_frames="0" data="&lt;rendered: erase-mode>" source="&lt;auto-generated>" name="Nutcracker" />
   </DataLayers>
@@ -3816,6 +3814,12 @@
       <EffectLayer />
       <EffectLayer />
       <EffectLayer />
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Dark Helmet">
+      <EffectLayer />
+      <EffectLayer />
+      <EffectLayer />
       <EffectLayer>
         <Effect ref="76" name="Faces" startTime="15550" endTime="29500" palette="41" />
         <Effect ref="76" name="Faces" id="1" startTime="30900" endTime="33100" palette="41" />
@@ -3833,9 +3837,6 @@
         <Effect ref="76" name="Faces" id="13" startTime="164900" endTime="166850" palette="41" />
         <Effect ref="76" name="Faces" id="14" startTime="170700" endTime="174450" palette="41" />
       </EffectLayer>
-    </Element>
-    <Element type="model" name="GE Dark Helmet">
-      <EffectLayer />
     </Element>
     <Element type="model" name="Arches - Middle">
       <EffectLayer />

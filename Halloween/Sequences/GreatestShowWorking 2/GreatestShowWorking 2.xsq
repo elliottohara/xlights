@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <xsequence BaseChannel="0" ChanCtrlBasic="0" ChanCtrlColor="0" FixedPointTiming="1" ModelBlending="true">
   <head>
-    <version>2026.18</version>
+    <version>2026.19</version>
     <author></author>
     <author-email></author-email>
     <author-website></author-website>
@@ -169,29 +169,14 @@
     <Effect>E_CHECKBOX_Shockwave_Blend_Edges=1,E_CHECKBOX_Shockwave_Scale=0,E_NOTEBOOK_Shockwave=Position,E_SLIDER_Shockwave_Accel=0,E_SLIDER_Shockwave_CenterX=50,E_SLIDER_Shockwave_CenterY=0,E_SLIDER_Shockwave_End_Radius=53,E_SLIDER_Shockwave_End_Width=20,E_SLIDER_Shockwave_Start_Radius=0,E_SLIDER_Shockwave_Start_Width=2</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Rendered,E_CHOICE_Faces_TimingTrack=CHORUS</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=PT [GreatestShowWorking-2],E_CHOICE_Faces_TimingTrack=BARNUM/CARLYLE</Effect>
-    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_TimingTrack=ENSEMBLE,E_CHOICE_Faces_UseState=Teddy PinkBow</Effect>
-    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHECKBOX_Faces_TransparentBlack=0,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_TimingTrack=ENSEMBLE,E_CHOICE_Faces_UseState=Teddy PinkBow,E_TEXTCTRL_Faces_TransparentBlack=0</Effect>
-    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_TimingTrack=CHORUS,E_CHOICE_Faces_UseState=Teddy PinkBow</Effect>
-    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_TimingTrack=ENSEMBLE,E_CHOICE_Faces_UseState=Teddy PinkBow</Effect>
-    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_TimingTrack=ANNIE V2,E_CHOICE_Faces_UseState=Teddy PinkBow</Effect>
-    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_TimingTrack=ENSEMBLE,E_CHOICE_Faces_UseState=Teddy PinkBow,T_TEXTCTRL_Fadeout=0.25</Effect>
+    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=ENSEMBLE</Effect>
+    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHECKBOX_Faces_TransparentBlack=0,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=ENSEMBLE,E_TEXTCTRL_Faces_TransparentBlack=0</Effect>
+    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=CHORUS</Effect>
+    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=ENSEMBLE</Effect>
+    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=ANNIE V2</Effect>
+    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=ENSEMBLE,T_TEXTCTRL_Fadeout=0.25</Effect>
   </EffectDB>
-  <SequenceMedia>
-    <Video path="Sequences/GreatestShowWorking 2/Media/Videos-154b7c/CC0 - Bear.mp4" />
-    <Video path="Sequences/GreatestShowWorking 2/Media/Videos-154b7c/CC0 - Blue Red Tunnel.mp4" />
-    <Video path="Sequences/GreatestShowWorking 2/Media/Videos-154b7c/CC0 - Blue Tunnel.mp4" />
-    <Video path="Sequences/GreatestShowWorking 2/Media/Videos-154b7c/CC0 - Elephant.mp4" />
-    <Video path="Sequences/GreatestShowWorking 2/Media/Videos-154b7c/CC0 - Lion.mp4" />
-    <Video path="Sequences/GreatestShowWorking 2/Media/Videos-154b7c/Flashing Lights 2.mp4" />
-    <Video path="Sequences/GreatestShowWorking 2/Media/Videos-154b7c/Flashing Lights 3.mp4" />
-    <Video path="Sequences/GreatestShowWorking 2/Media/Videos-154b7c/Flashing Lights.mov" />
-    <Video path="Sequences/GreatestShowWorking 2/Media/Videos-154b7c/GreatestShowWorking.mp4" />
-    <Video path="Sequences/GreatestShowWorking 2/Media/Videos-154b7c/Video 1.mp4" />
-    <Video path="Sequences/GreatestShowWorking 2/Media/Videos-154b7c/Video 3.mp4" />
-    <Video path="Sequences/GreatestShowWorking 2/Media/Videos-154b7c/Video 5.mp4" />
-    <Video path="Sequences/GreatestShowWorking 2/Media/Videos-154b7c/Video 6.mp4" />
-    <Video path="Sequences/GreatestShowWorking 2/Media/Videos-154b7c/Video 8.mp4" />
-  </SequenceMedia>
+  <SequenceMedia />
   <DataLayers>
     <DataLayer lor_params="1083087872" channel_offset="0" num_channels="0" num_frames="0" data="&lt;rendered: erase-mode>" source="&lt;auto-generated>" name="Nutcracker" />
   </DataLayers>
@@ -8007,6 +7992,38 @@
     </Element>
     <Element type="model" name="Elliott - EFL Teddy">
       <EffectLayer />
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Tree Topper">
+      <EffectLayer>
+        <Effect ref="103" name="Pinwheel" startTime="44250" endTime="67650" palette="3" />
+        <Effect ref="104" name="Pinwheel" id="1" startTime="82100" endTime="93350" palette="3" />
+        <Effect ref="51" name="Fire" id="2" startTime="95050" endTime="101100" palette="8" />
+        <Effect ref="52" name="Fire" id="3" startTime="101100" endTime="107150" palette="8" />
+        <Effect ref="100" name="Pinwheel" id="4" startTime="132300" endTime="143550" palette="3" />
+        <Effect ref="105" name="Shockwave" id="5" startTime="144050" endTime="144550" palette="15" />
+        <Effect ref="105" name="Shockwave" id="6" startTime="144750" endTime="145900" palette="15" />
+        <Effect ref="105" name="Shockwave" id="7" startTime="147150" endTime="147650" palette="15" />
+        <Effect ref="105" name="Shockwave" id="8" startTime="147850" endTime="149000" palette="15" />
+        <Effect ref="105" name="Shockwave" id="9" startTime="150100" endTime="150600" palette="15" />
+        <Effect ref="105" name="Shockwave" id="10" startTime="150800" endTime="151950" palette="15" />
+        <Effect ref="105" name="Shockwave" id="11" startTime="156250" endTime="156750" palette="15" />
+        <Effect ref="105" name="Shockwave" id="12" startTime="156950" endTime="158100" palette="15" />
+        <Effect ref="105" name="Shockwave" id="13" startTime="159250" endTime="159750" palette="15" />
+        <Effect ref="105" name="Shockwave" id="14" startTime="159950" endTime="161100" palette="15" />
+        <Effect ref="105" name="Shockwave" id="15" startTime="162250" endTime="162750" palette="15" />
+        <Effect ref="105" name="Shockwave" id="16" startTime="162950" endTime="164100" palette="15" />
+        <Effect ref="100" name="Pinwheel" id="17" startTime="214300" endTime="225550" palette="3" />
+        <Effect ref="34" name="VU Meter" id="18" startTime="256000" endTime="262050" palette="16" />
+      </EffectLayer>
+      <EffectLayer />
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Matrixes">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Evil Clown">
+      <EffectLayer />
       <EffectLayer>
         <Effect ref="108" name="Faces" startTime="1900" endTime="19400" palette="31" />
         <Effect ref="108" name="Faces" id="1" startTime="19400" endTime="21600" palette="31" />
@@ -8040,37 +8057,6 @@
         <Effect ref="112" name="Faces" id="29" startTime="257800" endTime="261900" palette="31" />
         <Effect ref="113" name="Faces" id="30" startTime="261900" endTime="265250" palette="31" />
       </EffectLayer>
-    </Element>
-    <Element type="model" name="Tree Topper">
-      <EffectLayer>
-        <Effect ref="103" name="Pinwheel" startTime="44250" endTime="67650" palette="3" />
-        <Effect ref="104" name="Pinwheel" id="1" startTime="82100" endTime="93350" palette="3" />
-        <Effect ref="51" name="Fire" id="2" startTime="95050" endTime="101100" palette="8" />
-        <Effect ref="52" name="Fire" id="3" startTime="101100" endTime="107150" palette="8" />
-        <Effect ref="100" name="Pinwheel" id="4" startTime="132300" endTime="143550" palette="3" />
-        <Effect ref="105" name="Shockwave" id="5" startTime="144050" endTime="144550" palette="15" />
-        <Effect ref="105" name="Shockwave" id="6" startTime="144750" endTime="145900" palette="15" />
-        <Effect ref="105" name="Shockwave" id="7" startTime="147150" endTime="147650" palette="15" />
-        <Effect ref="105" name="Shockwave" id="8" startTime="147850" endTime="149000" palette="15" />
-        <Effect ref="105" name="Shockwave" id="9" startTime="150100" endTime="150600" palette="15" />
-        <Effect ref="105" name="Shockwave" id="10" startTime="150800" endTime="151950" palette="15" />
-        <Effect ref="105" name="Shockwave" id="11" startTime="156250" endTime="156750" palette="15" />
-        <Effect ref="105" name="Shockwave" id="12" startTime="156950" endTime="158100" palette="15" />
-        <Effect ref="105" name="Shockwave" id="13" startTime="159250" endTime="159750" palette="15" />
-        <Effect ref="105" name="Shockwave" id="14" startTime="159950" endTime="161100" palette="15" />
-        <Effect ref="105" name="Shockwave" id="15" startTime="162250" endTime="162750" palette="15" />
-        <Effect ref="105" name="Shockwave" id="16" startTime="162950" endTime="164100" palette="15" />
-        <Effect ref="100" name="Pinwheel" id="17" startTime="214300" endTime="225550" palette="3" />
-        <Effect ref="34" name="VU Meter" id="18" startTime="256000" endTime="262050" palette="16" />
-      </EffectLayer>
-      <EffectLayer />
-      <EffectLayer />
-    </Element>
-    <Element type="model" name="Matrixes">
-      <EffectLayer />
-    </Element>
-    <Element type="model" name="GE Evil Clown">
-      <EffectLayer />
     </Element>
     <Element type="model" name="GE Franken Monster (2)">
       <EffectLayer />

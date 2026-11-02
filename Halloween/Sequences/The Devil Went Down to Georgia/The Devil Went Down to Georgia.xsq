@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <xsequence BaseChannel="0" ChanCtrlBasic="0" ChanCtrlColor="0" FixedPointTiming="1" ModelBlending="true">
   <head>
-    <version>2026.18</version>
+    <version>2026.19</version>
     <author></author>
     <author-email></author-email>
     <author-website></author-website>
@@ -307,7 +307,6 @@
     <Effect>B_CHOICE_BufferStyle=Overlay - Scaled,B_SLIDER_Blur=2,E_CHECKBOX_Meteors_UseMusic=0,E_CHOICE_Meteors_Effect=Down,E_CHOICE_Meteors_Type=Palette,E_SLIDER_Meteors_Count=19,E_SLIDER_Meteors_Length=25,E_SLIDER_Meteors_Speed=10,E_SLIDER_Meteors_Swirl_Intensity=0,T_TEXTCTRL_Fadein=.5,T_TEXTCTRL_Fadeout=.3</Effect>
     <Effect>B_CHOICE_BufferStyle=Overlay - Centered,E_CHECKBOX_Pinwheel_Rotation=1,E_CHOICE_Pinwheel_3D=None,E_CHOICE_Pinwheel_Style=New Render Method,E_SLIDER_PinwheelXC=0,E_SLIDER_PinwheelYC=0,E_SLIDER_Pinwheel_ArmSize=100,E_SLIDER_Pinwheel_Arms=3,E_SLIDER_Pinwheel_Offset=0,E_SLIDER_Pinwheel_Speed=10,E_SLIDER_Pinwheel_Thickness=0,E_SLIDER_Pinwheel_Twist=0</Effect>
     <Effect>B_CHOICE_BufferStyle=Overlay - Centered,E_CHECKBOX_Pinwheel_Rotation=1,E_CHOICE_Pinwheel_3D=None,E_CHOICE_Pinwheel_Style=New Render Method,E_SLIDER_PinwheelXC=0,E_SLIDER_PinwheelYC=0,E_SLIDER_Pinwheel_ArmSize=100,E_SLIDER_Pinwheel_Arms=3,E_SLIDER_Pinwheel_Offset=0,E_SLIDER_Pinwheel_Speed=10,E_SLIDER_Pinwheel_Thickness=0,E_SLIDER_Pinwheel_Twist=0,T_TEXTCTRL_Fadeout=.5</Effect>
-    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_TimingTrack=Skull,E_CHOICE_Faces_UseState=Teddy RedBow static,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
     <Effect>B_CHOICE_BufferStyle=Per Preview,E_CHECKBOX_Shockwave_Blend_Edges=1,E_CHECKBOX_Shockwave_Scale=0,E_NOTEBOOK_Shockwave=Position,E_SLIDER_Shockwave_Accel=0,E_SLIDER_Shockwave_CenterX=50,E_SLIDER_Shockwave_CenterY=50,E_SLIDER_Shockwave_End_Radius=35,E_SLIDER_Shockwave_End_Width=64,E_SLIDER_Shockwave_Start_Radius=1,E_SLIDER_Shockwave_Start_Width=5</Effect>
     <Effect>B_CHOICE_BufferStyle=Per Preview,E_CHECKBOX_Shockwave_Blend_Edges=1,E_CHECKBOX_Shockwave_Scale=0,E_NOTEBOOK_Shockwave=Position,E_SLIDER_Shockwave_Accel=0,E_SLIDER_Shockwave_CenterX=50,E_SLIDER_Shockwave_CenterY=50,E_SLIDER_Shockwave_End_Radius=41,E_SLIDER_Shockwave_End_Width=56,E_SLIDER_Shockwave_Start_Radius=1,E_SLIDER_Shockwave_Start_Width=5</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Pumpkin face,E_CHOICE_Faces_TimingTrack=Skull,E_CHOICE_Faces_UseState=outline with stem,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
@@ -350,12 +349,9 @@
     <Effect>B_CHOICE_BufferStyle=Per Model Per Preview,B_CHOICE_BufferTransform=Flip Horizontal,B_CHOICE_PerPreviewCamera=2D,E_CHECKBOX_Pinwheel_Rotation=1,E_CHOICE_Pinwheel_3D=None,E_CHOICE_Pinwheel_Style=New Render Method,E_SLIDER_PinwheelXC=0,E_SLIDER_PinwheelYC=0,E_SLIDER_Pinwheel_ArmSize=100,E_SLIDER_Pinwheel_Arms=4,E_SLIDER_Pinwheel_Offset=0,E_SLIDER_Pinwheel_Speed=10,E_SLIDER_Pinwheel_Thickness=19,E_SLIDER_Pinwheel_Twist=0,T_TEXTCTRL_Fadeout=.5</Effect>
     <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/TuneToReadable-v2/stationary-qr.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
     <Effect>B_CHOICE_BufferStyle=Per Preview,E_CHECKBOX_Shockwave_Blend_Edges=1,E_CHECKBOX_Shockwave_Scale=0,E_NOTEBOOK_Shockwave=Position,E_SLIDER_Shockwave_Accel=0,E_SLIDER_Shockwave_CenterX=50,E_SLIDER_Shockwave_CenterY=50,E_SLIDER_Shockwave_End_Radius=30,E_SLIDER_Shockwave_End_Width=60,E_SLIDER_Shockwave_Start_Radius=1,E_SLIDER_Shockwave_Start_Width=5</Effect>
+    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Skull,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
   </EffectDB>
-  <SequenceMedia>
-    <Video path="Sequences/The Devil Went Down to Georgia/Media/Videos-3895ed/Creepy Eyes.mov" />
-    <Video path="Sequences/The Devil Went Down to Georgia/Media/Videos-3895ed/Fast Violin.mp4" />
-    <Video path="Sequences/The Devil Went Down to Georgia/Media/Videos-3895ed/The Devil Went Down To Georgia.mp4" />
-  </SequenceMedia>
+  <SequenceMedia />
   <DataLayers>
     <DataLayer lor_params="0" channel_offset="0" num_channels="0" num_frames="0" data="&lt;rendered: erase-mode>" source="&lt;auto-generated>" name="Nutcracker" />
   </DataLayers>
@@ -3741,25 +3737,13 @@
       <EffectLayer />
       <EffectLayer />
       <EffectLayer />
-      <EffectLayer>
-        <Effect ref="219" name="Faces" startTime="44200" endTime="50250" palette="30" />
-        <Effect ref="219" name="Faces" id="1" startTime="124950" endTime="130000" palette="30" />
-        <Effect ref="219" name="Faces" id="2" startTime="130450" endTime="131450" palette="30" />
-        <Effect ref="219" name="Faces" id="3" startTime="133150" endTime="135200" palette="30" />
-        <Effect ref="219" name="Faces" id="4" startTime="136900" endTime="138800" palette="30" />
-        <Effect ref="219" name="Faces" id="5" startTime="140550" endTime="142450" palette="30" />
-        <Effect ref="219" name="Faces" id="6" startTime="172000" endTime="178275" palette="30" />
-        <Effect ref="219" name="Faces" id="7" startTime="178275" endTime="179500" palette="30" />
-        <Effect ref="219" name="Faces" id="8" startTime="181300" endTime="183350" palette="30" />
-        <Effect ref="219" name="Faces" id="9" startTime="184950" endTime="186800" palette="30" />
-        <Effect ref="219" name="Faces" id="10" startTime="188600" endTime="190600" palette="30" />
-      </EffectLayer>
+      <EffectLayer />
     </Element>
     <Element type="model" name="Elliott - GE Mini Grand Illusion">
       <EffectLayer>
-        <Effect ref="220" name="Shockwave" startTime="93275" endTime="93375" palette="47" />
-        <Effect ref="221" name="Shockwave" id="1" startTime="129525" endTime="129750" palette="47" />
-        <Effect ref="221" name="Shockwave" id="2" startTime="178000" endTime="178450" palette="47" />
+        <Effect ref="219" name="Shockwave" startTime="93275" endTime="93375" palette="47" />
+        <Effect ref="220" name="Shockwave" id="1" startTime="129525" endTime="129750" palette="47" />
+        <Effect ref="220" name="Shockwave" id="2" startTime="178000" endTime="178450" palette="47" />
       </EffectLayer>
     </Element>
     <Element type="timing" name="Effects">
@@ -8238,38 +8222,38 @@
     </Element>
     <Element type="model" name="GE Singing Pumpkin">
       <EffectLayer>
-        <Effect ref="222" name="Faces" startTime="15650" endTime="27925" palette="30" />
-        <Effect ref="222" name="Faces" id="1" startTime="43750" endTime="44200" palette="30" />
-        <Effect ref="222" name="Faces" id="2" startTime="51125" endTime="65000" palette="30" />
-        <Effect ref="222" name="Faces" id="3" startTime="72500" endTime="74500" palette="30" />
-        <Effect ref="222" name="Faces" id="4" startTime="76050" endTime="86050" palette="30" />
-        <Effect ref="222" name="Faces" id="5" startTime="122950" endTime="124950" palette="30" />
-        <Effect ref="223" name="Faces" id="6" startTime="133150" endTime="135200" palette="30" />
-        <Effect ref="223" name="Faces" id="7" startTime="136900" endTime="138800" palette="30" />
-        <Effect ref="223" name="Faces" id="8" startTime="140550" endTime="142450" palette="30" />
-        <Effect ref="222" name="Faces" id="9" startTime="164650" endTime="172000" palette="30" />
-        <Effect ref="223" name="Faces" id="10" startTime="181300" endTime="183350" palette="30" />
-        <Effect ref="223" name="Faces" id="11" startTime="184950" endTime="186800" palette="30" />
-        <Effect ref="223" name="Faces" id="12" startTime="188600" endTime="190600" palette="30" />
+        <Effect ref="221" name="Faces" startTime="15650" endTime="27925" palette="30" />
+        <Effect ref="221" name="Faces" id="1" startTime="43750" endTime="44200" palette="30" />
+        <Effect ref="221" name="Faces" id="2" startTime="51125" endTime="65000" palette="30" />
+        <Effect ref="221" name="Faces" id="3" startTime="72500" endTime="74500" palette="30" />
+        <Effect ref="221" name="Faces" id="4" startTime="76050" endTime="86050" palette="30" />
+        <Effect ref="221" name="Faces" id="5" startTime="122950" endTime="124950" palette="30" />
+        <Effect ref="222" name="Faces" id="6" startTime="133150" endTime="135200" palette="30" />
+        <Effect ref="222" name="Faces" id="7" startTime="136900" endTime="138800" palette="30" />
+        <Effect ref="222" name="Faces" id="8" startTime="140550" endTime="142450" palette="30" />
+        <Effect ref="221" name="Faces" id="9" startTime="164650" endTime="172000" palette="30" />
+        <Effect ref="222" name="Faces" id="10" startTime="181300" endTime="183350" palette="30" />
+        <Effect ref="222" name="Faces" id="11" startTime="184950" endTime="186800" palette="30" />
+        <Effect ref="222" name="Faces" id="12" startTime="188600" endTime="190600" palette="30" />
       </EffectLayer>
       <EffectLayer />
     </Element>
     <Element type="model" name="GE Evil Clown">
       <EffectLayer>
-        <Effect ref="224" name="Faces" startTime="27925" endTime="43750" palette="30" />
-        <Effect ref="224" name="Faces" id="1" startTime="74500" endTime="76050" palette="30" />
+        <Effect ref="223" name="Faces" startTime="27925" endTime="43750" palette="30" />
+        <Effect ref="223" name="Faces" id="1" startTime="74500" endTime="76050" palette="30" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Preying Spider 150 Cross GRP">
       <EffectLayer>
-        <Effect ref="225" name="Shockwave" startTime="1275" endTime="1525" palette="48" />
-        <Effect ref="225" name="Shockwave" id="1" startTime="1750" endTime="1975" palette="48" />
-        <Effect ref="225" name="Shockwave" id="2" startTime="2200" endTime="2450" palette="48" />
-        <Effect ref="225" name="Shockwave" id="3" startTime="2675" endTime="2900" palette="48" />
-        <Effect ref="225" name="Shockwave" id="4" startTime="3125" endTime="3350" palette="48" />
-        <Effect ref="225" name="Shockwave" id="5" startTime="3575" endTime="3825" palette="48" />
-        <Effect ref="225" name="Shockwave" id="6" startTime="4050" endTime="4275" palette="48" />
-        <Effect ref="225" name="Shockwave" id="7" startTime="4500" endTime="4725" palette="48" />
+        <Effect ref="224" name="Shockwave" startTime="1275" endTime="1525" palette="48" />
+        <Effect ref="224" name="Shockwave" id="1" startTime="1750" endTime="1975" palette="48" />
+        <Effect ref="224" name="Shockwave" id="2" startTime="2200" endTime="2450" palette="48" />
+        <Effect ref="224" name="Shockwave" id="3" startTime="2675" endTime="2900" palette="48" />
+        <Effect ref="224" name="Shockwave" id="4" startTime="3125" endTime="3350" palette="48" />
+        <Effect ref="224" name="Shockwave" id="5" startTime="3575" endTime="3825" palette="48" />
+        <Effect ref="224" name="Shockwave" id="6" startTime="4050" endTime="4275" palette="48" />
+        <Effect ref="224" name="Shockwave" id="7" startTime="4500" endTime="4725" palette="48" />
         <Effect ref="23" name="Candle" id="8" startTime="15775" endTime="29075" palette="3" />
         <Effect ref="23" name="Candle" id="9" startTime="29725" endTime="43250" palette="3" />
         <Effect ref="23" name="Candle" id="10" startTime="43900" endTime="50100" palette="3" />
@@ -8277,21 +8261,21 @@
         <Effect ref="26" name="Shockwave" id="12" startTime="50350" endTime="50550" palette="11" />
         <Effect ref="26" name="Shockwave" id="13" startTime="50550" endTime="50775" palette="11" />
         <Effect ref="26" name="Shockwave" id="14" startTime="50775" endTime="51000" palette="11" />
-        <Effect ref="226" name="VU Meter" id="15" startTime="51000" endTime="61900" palette="54" />
-        <Effect ref="225" name="Shockwave" id="16" startTime="65925" endTime="66125" palette="48" />
-        <Effect ref="225" name="Shockwave" id="17" startTime="66375" endTime="66600" palette="48" />
-        <Effect ref="225" name="Shockwave" id="18" startTime="66800" endTime="67050" palette="48" />
-        <Effect ref="225" name="Shockwave" id="19" startTime="67275" endTime="67475" palette="48" />
-        <Effect ref="225" name="Shockwave" id="20" startTime="67700" endTime="67925" palette="48" />
-        <Effect ref="225" name="Shockwave" id="21" startTime="68125" endTime="68375" palette="48" />
-        <Effect ref="225" name="Shockwave" id="22" startTime="68600" endTime="68800" palette="48" />
-        <Effect ref="225" name="Shockwave" id="23" startTime="69025" endTime="69275" palette="48" />
+        <Effect ref="225" name="VU Meter" id="15" startTime="51000" endTime="61900" palette="54" />
+        <Effect ref="224" name="Shockwave" id="16" startTime="65925" endTime="66125" palette="48" />
+        <Effect ref="224" name="Shockwave" id="17" startTime="66375" endTime="66600" palette="48" />
+        <Effect ref="224" name="Shockwave" id="18" startTime="66800" endTime="67050" palette="48" />
+        <Effect ref="224" name="Shockwave" id="19" startTime="67275" endTime="67475" palette="48" />
+        <Effect ref="224" name="Shockwave" id="20" startTime="67700" endTime="67925" palette="48" />
+        <Effect ref="224" name="Shockwave" id="21" startTime="68125" endTime="68375" palette="48" />
+        <Effect ref="224" name="Shockwave" id="22" startTime="68600" endTime="68800" palette="48" />
+        <Effect ref="224" name="Shockwave" id="23" startTime="69025" endTime="69275" palette="48" />
         <Effect ref="23" name="Candle" id="24" startTime="72900" endTime="86450" palette="3" />
-        <Effect ref="227" name="Candle" id="25" startTime="94425" endTime="116350" palette="55" />
+        <Effect ref="226" name="Candle" id="25" startTime="94425" endTime="116350" palette="55" />
         <Effect ref="23" name="Candle" id="26" startTime="123450" endTime="130425" palette="3" />
-        <Effect ref="226" name="VU Meter" id="27" startTime="145125" endTime="160850" palette="54" />
+        <Effect ref="225" name="VU Meter" id="27" startTime="145125" endTime="160850" palette="54" />
         <Effect ref="23" name="Candle" id="28" startTime="161475" endTime="178900" palette="3" />
-        <Effect ref="226" name="VU Meter" id="29" startTime="193450" endTime="202550" palette="54" />
+        <Effect ref="225" name="VU Meter" id="29" startTime="193450" endTime="202550" palette="54" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Preying Spider 150 GRP">
@@ -8305,7 +8289,7 @@
         <Effect ref="158" name="Shockwave" id="6" startTime="7475" endTime="7875" palette="11" />
         <Effect ref="158" name="Shockwave" id="7" startTime="7875" endTime="8175" palette="11" />
         <Effect ref="158" name="Shockwave" id="8" startTime="8175" endTime="8525" palette="11" />
-        <Effect ref="228" name="Color Wash" id="9" startTime="8525" endTime="15775" palette="56" />
+        <Effect ref="227" name="Color Wash" id="9" startTime="8525" endTime="15775" palette="56" />
         <Effect ref="158" name="Shockwave" id="10" startTime="69275" endTime="69725" palette="11" />
         <Effect ref="158" name="Shockwave" id="11" startTime="69725" endTime="70200" palette="11" />
         <Effect ref="158" name="Shockwave" id="12" startTime="70200" endTime="70650" palette="11" />
@@ -8315,29 +8299,29 @@
         <Effect ref="158" name="Shockwave" id="16" startTime="72050" endTime="72375" palette="11" />
         <Effect ref="158" name="Shockwave" id="17" startTime="72375" endTime="72600" palette="11" />
         <Effect ref="158" name="Shockwave" id="18" startTime="72600" endTime="72900" palette="11" />
-        <Effect ref="225" name="Shockwave" id="19" startTime="156275" endTime="156500" palette="48" />
-        <Effect ref="225" name="Shockwave" id="20" startTime="156850" endTime="157200" palette="48" />
-        <Effect ref="225" name="Shockwave" id="21" startTime="157425" endTime="157775" palette="48" />
-        <Effect ref="225" name="Shockwave" id="22" startTime="158125" endTime="158375" palette="48" />
-        <Effect ref="225" name="Shockwave" id="23" startTime="158650" endTime="159000" palette="48" />
-        <Effect ref="225" name="Shockwave" id="24" startTime="159250" endTime="159575" palette="48" />
-        <Effect ref="225" name="Shockwave" id="25" startTime="159925" endTime="160175" palette="48" />
-        <Effect ref="225" name="Shockwave" id="26" startTime="160500" endTime="160850" palette="48" />
+        <Effect ref="224" name="Shockwave" id="19" startTime="156275" endTime="156500" palette="48" />
+        <Effect ref="224" name="Shockwave" id="20" startTime="156850" endTime="157200" palette="48" />
+        <Effect ref="224" name="Shockwave" id="21" startTime="157425" endTime="157775" palette="48" />
+        <Effect ref="224" name="Shockwave" id="22" startTime="158125" endTime="158375" palette="48" />
+        <Effect ref="224" name="Shockwave" id="23" startTime="158650" endTime="159000" palette="48" />
+        <Effect ref="224" name="Shockwave" id="24" startTime="159250" endTime="159575" palette="48" />
+        <Effect ref="224" name="Shockwave" id="25" startTime="159925" endTime="160175" palette="48" />
+        <Effect ref="224" name="Shockwave" id="26" startTime="160500" endTime="160850" palette="48" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Preying Spider 150 Leg GRP">
       <EffectLayer>
-        <Effect ref="229" name="VU Meter" startTime="155975" endTime="160850" palette="36" />
+        <Effect ref="228" name="VU Meter" startTime="155975" endTime="160850" palette="36" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="229" name="VU Meter" startTime="1050" endTime="4725" palette="36" />
-        <Effect ref="230" name="SingleStrand" id="1" startTime="4725" endTime="6625" palette="37" />
-        <Effect ref="229" name="VU Meter" id="2" startTime="65700" endTime="69275" palette="36" />
-        <Effect ref="230" name="SingleStrand" id="3" startTime="69275" endTime="71125" palette="37" />
-        <Effect ref="231" name="Butterfly" id="4" startTime="94425" endTime="116350" palette="57" />
+        <Effect ref="228" name="VU Meter" startTime="1050" endTime="4725" palette="36" />
+        <Effect ref="229" name="SingleStrand" id="1" startTime="4725" endTime="6625" palette="37" />
+        <Effect ref="228" name="VU Meter" id="2" startTime="65700" endTime="69275" palette="36" />
+        <Effect ref="229" name="SingleStrand" id="3" startTime="69275" endTime="71125" palette="37" />
+        <Effect ref="230" name="Butterfly" id="4" startTime="94425" endTime="116350" palette="57" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="232" name="SingleStrand" startTime="94425" endTime="116350" palette="58" />
+        <Effect ref="231" name="SingleStrand" startTime="94425" endTime="116350" palette="58" />
       </EffectLayer>
       <EffectLayer>
         <Effect ref="183" name="Off" startTime="94425" endTime="116350" palette="57" />
@@ -8368,159 +8352,159 @@
     </Element>
     <Element type="model" name="GE Preying Spider 150 Mouth GRP">
       <EffectLayer>
-        <Effect ref="233" name="SingleStrand" startTime="51000" endTime="61900" palette="46" />
-        <Effect ref="233" name="SingleStrand" id="1" startTime="145125" endTime="160850" palette="46" />
-        <Effect ref="233" name="SingleStrand" id="2" startTime="193450" endTime="202550" palette="46" />
+        <Effect ref="232" name="SingleStrand" startTime="51000" endTime="61900" palette="46" />
+        <Effect ref="232" name="SingleStrand" id="1" startTime="145125" endTime="160850" palette="46" />
+        <Effect ref="232" name="SingleStrand" id="2" startTime="193450" endTime="202550" palette="46" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Preying Spider Body GRP">
       <EffectLayer>
-        <Effect ref="234" name="On" startTime="1275" endTime="1525" palette="25" />
-        <Effect ref="234" name="On" id="1" startTime="1750" endTime="1975" palette="25" />
-        <Effect ref="234" name="On" id="2" startTime="2200" endTime="2450" palette="25" />
-        <Effect ref="234" name="On" id="3" startTime="2675" endTime="2900" palette="25" />
-        <Effect ref="234" name="On" id="4" startTime="3125" endTime="3350" palette="25" />
-        <Effect ref="234" name="On" id="5" startTime="3575" endTime="3825" palette="25" />
-        <Effect ref="234" name="On" id="6" startTime="4050" endTime="4275" palette="25" />
-        <Effect ref="234" name="On" id="7" startTime="4500" endTime="4725" palette="25" />
-        <Effect ref="235" name="Candle" id="8" startTime="8525" endTime="15775" palette="49" />
-        <Effect ref="236" name="Candle" id="9" startTime="51000" endTime="61900" palette="59" />
-        <Effect ref="237" name="Shockwave" id="10" startTime="63750" endTime="64200" palette="60" />
-        <Effect ref="237" name="Shockwave" id="11" startTime="64200" endTime="64675" palette="60" />
-        <Effect ref="237" name="Shockwave" id="12" startTime="64675" endTime="65125" palette="60" />
-        <Effect ref="237" name="Shockwave" id="13" startTime="65125" endTime="65700" palette="60" />
-        <Effect ref="234" name="On" id="14" startTime="65925" endTime="66125" palette="25" />
-        <Effect ref="234" name="On" id="15" startTime="66375" endTime="66600" palette="25" />
-        <Effect ref="234" name="On" id="16" startTime="66800" endTime="67050" palette="25" />
-        <Effect ref="234" name="On" id="17" startTime="67275" endTime="67475" palette="25" />
-        <Effect ref="234" name="On" id="18" startTime="67700" endTime="67925" palette="25" />
-        <Effect ref="234" name="On" id="19" startTime="68125" endTime="68375" palette="25" />
-        <Effect ref="234" name="On" id="20" startTime="68600" endTime="68800" palette="25" />
-        <Effect ref="234" name="On" id="21" startTime="69025" endTime="69275" palette="25" />
-        <Effect ref="236" name="Candle" id="22" startTime="145125" endTime="155975" palette="59" />
-        <Effect ref="234" name="On" id="23" startTime="156275" endTime="156500" palette="25" />
-        <Effect ref="234" name="On" id="24" startTime="156850" endTime="157200" palette="25" />
-        <Effect ref="234" name="On" id="25" startTime="157425" endTime="157775" palette="25" />
-        <Effect ref="234" name="On" id="26" startTime="158125" endTime="158375" palette="25" />
-        <Effect ref="234" name="On" id="27" startTime="158650" endTime="159000" palette="25" />
-        <Effect ref="234" name="On" id="28" startTime="159250" endTime="159575" palette="25" />
-        <Effect ref="234" name="On" id="29" startTime="159925" endTime="160175" palette="25" />
-        <Effect ref="234" name="On" id="30" startTime="160500" endTime="160850" palette="25" />
-        <Effect ref="236" name="Candle" id="31" startTime="193450" endTime="202550" palette="59" />
-        <Effect ref="238" name="VU Meter" id="32" startTime="202550" endTime="213650" palette="51" />
+        <Effect ref="233" name="On" startTime="1275" endTime="1525" palette="25" />
+        <Effect ref="233" name="On" id="1" startTime="1750" endTime="1975" palette="25" />
+        <Effect ref="233" name="On" id="2" startTime="2200" endTime="2450" palette="25" />
+        <Effect ref="233" name="On" id="3" startTime="2675" endTime="2900" palette="25" />
+        <Effect ref="233" name="On" id="4" startTime="3125" endTime="3350" palette="25" />
+        <Effect ref="233" name="On" id="5" startTime="3575" endTime="3825" palette="25" />
+        <Effect ref="233" name="On" id="6" startTime="4050" endTime="4275" palette="25" />
+        <Effect ref="233" name="On" id="7" startTime="4500" endTime="4725" palette="25" />
+        <Effect ref="234" name="Candle" id="8" startTime="8525" endTime="15775" palette="49" />
+        <Effect ref="235" name="Candle" id="9" startTime="51000" endTime="61900" palette="59" />
+        <Effect ref="236" name="Shockwave" id="10" startTime="63750" endTime="64200" palette="60" />
+        <Effect ref="236" name="Shockwave" id="11" startTime="64200" endTime="64675" palette="60" />
+        <Effect ref="236" name="Shockwave" id="12" startTime="64675" endTime="65125" palette="60" />
+        <Effect ref="236" name="Shockwave" id="13" startTime="65125" endTime="65700" palette="60" />
+        <Effect ref="233" name="On" id="14" startTime="65925" endTime="66125" palette="25" />
+        <Effect ref="233" name="On" id="15" startTime="66375" endTime="66600" palette="25" />
+        <Effect ref="233" name="On" id="16" startTime="66800" endTime="67050" palette="25" />
+        <Effect ref="233" name="On" id="17" startTime="67275" endTime="67475" palette="25" />
+        <Effect ref="233" name="On" id="18" startTime="67700" endTime="67925" palette="25" />
+        <Effect ref="233" name="On" id="19" startTime="68125" endTime="68375" palette="25" />
+        <Effect ref="233" name="On" id="20" startTime="68600" endTime="68800" palette="25" />
+        <Effect ref="233" name="On" id="21" startTime="69025" endTime="69275" palette="25" />
+        <Effect ref="235" name="Candle" id="22" startTime="145125" endTime="155975" palette="59" />
+        <Effect ref="233" name="On" id="23" startTime="156275" endTime="156500" palette="25" />
+        <Effect ref="233" name="On" id="24" startTime="156850" endTime="157200" palette="25" />
+        <Effect ref="233" name="On" id="25" startTime="157425" endTime="157775" palette="25" />
+        <Effect ref="233" name="On" id="26" startTime="158125" endTime="158375" palette="25" />
+        <Effect ref="233" name="On" id="27" startTime="158650" endTime="159000" palette="25" />
+        <Effect ref="233" name="On" id="28" startTime="159250" endTime="159575" palette="25" />
+        <Effect ref="233" name="On" id="29" startTime="159925" endTime="160175" palette="25" />
+        <Effect ref="233" name="On" id="30" startTime="160500" endTime="160850" palette="25" />
+        <Effect ref="235" name="Candle" id="31" startTime="193450" endTime="202550" palette="59" />
+        <Effect ref="237" name="VU Meter" id="32" startTime="202550" endTime="213650" palette="51" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Preying Spider Crawly GRP">
       <EffectLayer>
-        <Effect ref="239" name="SingleStrand" startTime="8525" endTime="15775" palette="49" />
-        <Effect ref="240" name="Butterfly" id="1" startTime="132025" endTime="134075" palette="61" />
-        <Effect ref="240" name="Butterfly" id="2" startTime="135675" endTime="137750" palette="61" />
-        <Effect ref="240" name="Butterfly" id="3" startTime="139375" endTime="141425" palette="61" />
-        <Effect ref="240" name="Butterfly" id="4" startTime="143075" endTime="145125" palette="61" />
-        <Effect ref="240" name="Butterfly" id="5" startTime="180475" endTime="182550" palette="61" />
-        <Effect ref="240" name="Butterfly" id="6" startTime="184375" endTime="186200" palette="61" />
-        <Effect ref="240" name="Butterfly" id="7" startTime="187775" endTime="189850" palette="61" />
-        <Effect ref="240" name="Butterfly" id="8" startTime="191400" endTime="193450" palette="61" />
+        <Effect ref="238" name="SingleStrand" startTime="8525" endTime="15775" palette="49" />
+        <Effect ref="239" name="Butterfly" id="1" startTime="132025" endTime="134075" palette="61" />
+        <Effect ref="239" name="Butterfly" id="2" startTime="135675" endTime="137750" palette="61" />
+        <Effect ref="239" name="Butterfly" id="3" startTime="139375" endTime="141425" palette="61" />
+        <Effect ref="239" name="Butterfly" id="4" startTime="143075" endTime="145125" palette="61" />
+        <Effect ref="239" name="Butterfly" id="5" startTime="180475" endTime="182550" palette="61" />
+        <Effect ref="239" name="Butterfly" id="6" startTime="184375" endTime="186200" palette="61" />
+        <Effect ref="239" name="Butterfly" id="7" startTime="187775" endTime="189850" palette="61" />
+        <Effect ref="239" name="Butterfly" id="8" startTime="191400" endTime="193450" palette="61" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="241" name="Spirals" startTime="8525" endTime="15775" palette="62" />
-        <Effect ref="242" name="Pinwheel" id="1" startTime="51000" endTime="61900" palette="4" />
-        <Effect ref="243" name="Wave" id="2" startTime="132025" endTime="134075" palette="1" />
-        <Effect ref="243" name="Wave" id="3" startTime="135675" endTime="137750" palette="1" />
-        <Effect ref="243" name="Wave" id="4" startTime="139375" endTime="141425" palette="1" />
-        <Effect ref="243" name="Wave" id="5" startTime="143075" endTime="145125" palette="1" />
-        <Effect ref="242" name="Pinwheel" id="6" startTime="145125" endTime="155975" palette="4" />
-        <Effect ref="243" name="Wave" id="7" startTime="180475" endTime="182550" palette="1" />
-        <Effect ref="243" name="Wave" id="8" startTime="184375" endTime="186200" palette="1" />
-        <Effect ref="243" name="Wave" id="9" startTime="187775" endTime="189850" palette="1" />
-        <Effect ref="243" name="Wave" id="10" startTime="191400" endTime="193450" palette="1" />
-        <Effect ref="242" name="Pinwheel" id="11" startTime="193450" endTime="202550" palette="4" />
+        <Effect ref="240" name="Spirals" startTime="8525" endTime="15775" palette="62" />
+        <Effect ref="241" name="Pinwheel" id="1" startTime="51000" endTime="61900" palette="4" />
+        <Effect ref="242" name="Wave" id="2" startTime="132025" endTime="134075" palette="1" />
+        <Effect ref="242" name="Wave" id="3" startTime="135675" endTime="137750" palette="1" />
+        <Effect ref="242" name="Wave" id="4" startTime="139375" endTime="141425" palette="1" />
+        <Effect ref="242" name="Wave" id="5" startTime="143075" endTime="145125" palette="1" />
+        <Effect ref="241" name="Pinwheel" id="6" startTime="145125" endTime="155975" palette="4" />
+        <Effect ref="242" name="Wave" id="7" startTime="180475" endTime="182550" palette="1" />
+        <Effect ref="242" name="Wave" id="8" startTime="184375" endTime="186200" palette="1" />
+        <Effect ref="242" name="Wave" id="9" startTime="187775" endTime="189850" palette="1" />
+        <Effect ref="242" name="Wave" id="10" startTime="191400" endTime="193450" palette="1" />
+        <Effect ref="241" name="Pinwheel" id="11" startTime="193450" endTime="202550" palette="4" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="229" name="VU Meter" startTime="1050" endTime="4725" palette="36" />
-        <Effect ref="230" name="SingleStrand" id="1" startTime="4725" endTime="6625" palette="37" />
-        <Effect ref="244" name="Spirals" id="2" startTime="8525" endTime="15775" palette="62" />
-        <Effect ref="233" name="SingleStrand" id="3" startTime="51000" endTime="61900" palette="46" />
-        <Effect ref="237" name="Shockwave" id="4" startTime="63750" endTime="64200" palette="60" />
-        <Effect ref="237" name="Shockwave" id="5" startTime="64200" endTime="64675" palette="60" />
-        <Effect ref="237" name="Shockwave" id="6" startTime="64675" endTime="65125" palette="60" />
-        <Effect ref="237" name="Shockwave" id="7" startTime="65125" endTime="65700" palette="60" />
-        <Effect ref="229" name="VU Meter" id="8" startTime="65700" endTime="69275" palette="36" />
-        <Effect ref="230" name="SingleStrand" id="9" startTime="69275" endTime="71125" palette="37" />
-        <Effect ref="245" name="Color Wash" id="10" startTime="82775" endTime="84550" palette="63" />
-        <Effect ref="246" name="VU Meter" id="11" startTime="87075" endTime="94425" palette="8" />
-        <Effect ref="247" name="Wave" id="12" startTime="132025" endTime="134075" palette="1" />
-        <Effect ref="247" name="Wave" id="13" startTime="135675" endTime="137750" palette="1" />
-        <Effect ref="247" name="Wave" id="14" startTime="139375" endTime="141425" palette="1" />
-        <Effect ref="247" name="Wave" id="15" startTime="143075" endTime="145125" palette="1" />
-        <Effect ref="233" name="SingleStrand" id="16" startTime="145125" endTime="155975" palette="46" />
-        <Effect ref="229" name="VU Meter" id="17" startTime="155975" endTime="160850" palette="36" />
-        <Effect ref="247" name="Wave" id="18" startTime="180475" endTime="182550" palette="1" />
-        <Effect ref="247" name="Wave" id="19" startTime="184375" endTime="186200" palette="1" />
-        <Effect ref="247" name="Wave" id="20" startTime="187775" endTime="189850" palette="1" />
-        <Effect ref="247" name="Wave" id="21" startTime="191400" endTime="193450" palette="1" />
-        <Effect ref="233" name="SingleStrand" id="22" startTime="193450" endTime="202550" palette="46" />
+        <Effect ref="228" name="VU Meter" startTime="1050" endTime="4725" palette="36" />
+        <Effect ref="229" name="SingleStrand" id="1" startTime="4725" endTime="6625" palette="37" />
+        <Effect ref="243" name="Spirals" id="2" startTime="8525" endTime="15775" palette="62" />
+        <Effect ref="232" name="SingleStrand" id="3" startTime="51000" endTime="61900" palette="46" />
+        <Effect ref="236" name="Shockwave" id="4" startTime="63750" endTime="64200" palette="60" />
+        <Effect ref="236" name="Shockwave" id="5" startTime="64200" endTime="64675" palette="60" />
+        <Effect ref="236" name="Shockwave" id="6" startTime="64675" endTime="65125" palette="60" />
+        <Effect ref="236" name="Shockwave" id="7" startTime="65125" endTime="65700" palette="60" />
+        <Effect ref="228" name="VU Meter" id="8" startTime="65700" endTime="69275" palette="36" />
+        <Effect ref="229" name="SingleStrand" id="9" startTime="69275" endTime="71125" palette="37" />
+        <Effect ref="244" name="Color Wash" id="10" startTime="82775" endTime="84550" palette="63" />
+        <Effect ref="245" name="VU Meter" id="11" startTime="87075" endTime="94425" palette="8" />
+        <Effect ref="246" name="Wave" id="12" startTime="132025" endTime="134075" palette="1" />
+        <Effect ref="246" name="Wave" id="13" startTime="135675" endTime="137750" palette="1" />
+        <Effect ref="246" name="Wave" id="14" startTime="139375" endTime="141425" palette="1" />
+        <Effect ref="246" name="Wave" id="15" startTime="143075" endTime="145125" palette="1" />
+        <Effect ref="232" name="SingleStrand" id="16" startTime="145125" endTime="155975" palette="46" />
+        <Effect ref="228" name="VU Meter" id="17" startTime="155975" endTime="160850" palette="36" />
+        <Effect ref="246" name="Wave" id="18" startTime="180475" endTime="182550" palette="1" />
+        <Effect ref="246" name="Wave" id="19" startTime="184375" endTime="186200" palette="1" />
+        <Effect ref="246" name="Wave" id="20" startTime="187775" endTime="189850" palette="1" />
+        <Effect ref="246" name="Wave" id="21" startTime="191400" endTime="193450" palette="1" />
+        <Effect ref="232" name="SingleStrand" id="22" startTime="193450" endTime="202550" palette="46" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Preying Spider Eye GRP">
       <EffectLayer>
-        <Effect ref="234" name="On" startTime="1275" endTime="1525" palette="64" />
-        <Effect ref="234" name="On" id="1" startTime="1750" endTime="1975" palette="64" />
-        <Effect ref="234" name="On" id="2" startTime="2200" endTime="2450" palette="64" />
-        <Effect ref="234" name="On" id="3" startTime="2675" endTime="2900" palette="64" />
-        <Effect ref="234" name="On" id="4" startTime="3125" endTime="3350" palette="64" />
-        <Effect ref="234" name="On" id="5" startTime="3575" endTime="3825" palette="64" />
-        <Effect ref="234" name="On" id="6" startTime="4050" endTime="4275" palette="64" />
-        <Effect ref="234" name="On" id="7" startTime="4500" endTime="4725" palette="64" />
-        <Effect ref="228" name="Color Wash" id="8" startTime="8525" endTime="15775" palette="56" />
-        <Effect ref="228" name="Color Wash" id="9" startTime="51000" endTime="61900" palette="65" />
-        <Effect ref="234" name="On" id="10" startTime="65925" endTime="66125" palette="64" />
-        <Effect ref="234" name="On" id="11" startTime="66375" endTime="66600" palette="64" />
-        <Effect ref="234" name="On" id="12" startTime="66800" endTime="67050" palette="64" />
-        <Effect ref="234" name="On" id="13" startTime="67275" endTime="67475" palette="64" />
-        <Effect ref="234" name="On" id="14" startTime="67700" endTime="67925" palette="64" />
-        <Effect ref="234" name="On" id="15" startTime="68125" endTime="68375" palette="64" />
-        <Effect ref="234" name="On" id="16" startTime="68600" endTime="68800" palette="64" />
-        <Effect ref="234" name="On" id="17" startTime="69025" endTime="69275" palette="64" />
+        <Effect ref="233" name="On" startTime="1275" endTime="1525" palette="64" />
+        <Effect ref="233" name="On" id="1" startTime="1750" endTime="1975" palette="64" />
+        <Effect ref="233" name="On" id="2" startTime="2200" endTime="2450" palette="64" />
+        <Effect ref="233" name="On" id="3" startTime="2675" endTime="2900" palette="64" />
+        <Effect ref="233" name="On" id="4" startTime="3125" endTime="3350" palette="64" />
+        <Effect ref="233" name="On" id="5" startTime="3575" endTime="3825" palette="64" />
+        <Effect ref="233" name="On" id="6" startTime="4050" endTime="4275" palette="64" />
+        <Effect ref="233" name="On" id="7" startTime="4500" endTime="4725" palette="64" />
+        <Effect ref="227" name="Color Wash" id="8" startTime="8525" endTime="15775" palette="56" />
+        <Effect ref="227" name="Color Wash" id="9" startTime="51000" endTime="61900" palette="65" />
+        <Effect ref="233" name="On" id="10" startTime="65925" endTime="66125" palette="64" />
+        <Effect ref="233" name="On" id="11" startTime="66375" endTime="66600" palette="64" />
+        <Effect ref="233" name="On" id="12" startTime="66800" endTime="67050" palette="64" />
+        <Effect ref="233" name="On" id="13" startTime="67275" endTime="67475" palette="64" />
+        <Effect ref="233" name="On" id="14" startTime="67700" endTime="67925" palette="64" />
+        <Effect ref="233" name="On" id="15" startTime="68125" endTime="68375" palette="64" />
+        <Effect ref="233" name="On" id="16" startTime="68600" endTime="68800" palette="64" />
+        <Effect ref="233" name="On" id="17" startTime="69025" endTime="69275" palette="64" />
         <Effect ref="183" name="On" id="18" startTime="94425" endTime="116350" palette="66" />
-        <Effect ref="228" name="Color Wash" id="19" startTime="145125" endTime="155975" palette="65" />
-        <Effect ref="234" name="On" id="20" startTime="156275" endTime="156500" palette="64" />
-        <Effect ref="234" name="On" id="21" startTime="156850" endTime="157200" palette="64" />
-        <Effect ref="234" name="On" id="22" startTime="157425" endTime="157775" palette="64" />
-        <Effect ref="234" name="On" id="23" startTime="158125" endTime="158375" palette="64" />
-        <Effect ref="234" name="On" id="24" startTime="158650" endTime="159000" palette="64" />
-        <Effect ref="234" name="On" id="25" startTime="159250" endTime="159575" palette="64" />
-        <Effect ref="234" name="On" id="26" startTime="159925" endTime="160175" palette="64" />
-        <Effect ref="234" name="On" id="27" startTime="160500" endTime="160850" palette="64" />
-        <Effect ref="228" name="Color Wash" id="28" startTime="193450" endTime="202550" palette="65" />
+        <Effect ref="227" name="Color Wash" id="19" startTime="145125" endTime="155975" palette="65" />
+        <Effect ref="233" name="On" id="20" startTime="156275" endTime="156500" palette="64" />
+        <Effect ref="233" name="On" id="21" startTime="156850" endTime="157200" palette="64" />
+        <Effect ref="233" name="On" id="22" startTime="157425" endTime="157775" palette="64" />
+        <Effect ref="233" name="On" id="23" startTime="158125" endTime="158375" palette="64" />
+        <Effect ref="233" name="On" id="24" startTime="158650" endTime="159000" palette="64" />
+        <Effect ref="233" name="On" id="25" startTime="159250" endTime="159575" palette="64" />
+        <Effect ref="233" name="On" id="26" startTime="159925" endTime="160175" palette="64" />
+        <Effect ref="233" name="On" id="27" startTime="160500" endTime="160850" palette="64" />
+        <Effect ref="227" name="Color Wash" id="28" startTime="193450" endTime="202550" palette="65" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Preying Spiders ALL GRP">
       <EffectLayer>
-        <Effect ref="248" name="Butterfly" startTime="94425" endTime="116350" palette="57" />
+        <Effect ref="247" name="Butterfly" startTime="94425" endTime="116350" palette="57" />
         <Effect ref="33" name="Shockwave" id="1" startTime="119275" endTime="119600" palette="15" />
         <Effect ref="33" name="Shockwave" id="2" startTime="119600" endTime="119950" palette="15" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="249" name="Shockwave" startTime="100" endTime="325" palette="11" />
-        <Effect ref="249" name="Shockwave" id="1" startTime="325" endTime="575" palette="11" />
-        <Effect ref="249" name="Shockwave" id="2" startTime="575" endTime="800" palette="11" />
-        <Effect ref="249" name="Shockwave" id="3" startTime="800" endTime="1050" palette="11" />
+        <Effect ref="248" name="Shockwave" startTime="100" endTime="325" palette="11" />
+        <Effect ref="248" name="Shockwave" id="1" startTime="325" endTime="575" palette="11" />
+        <Effect ref="248" name="Shockwave" id="2" startTime="575" endTime="800" palette="11" />
+        <Effect ref="248" name="Shockwave" id="3" startTime="800" endTime="1050" palette="11" />
         <Effect ref="23" name="Candle" id="4" startTime="72900" endTime="86450" palette="3" />
-        <Effect ref="250" name="On" id="5" startTime="94425" endTime="116350" palette="58" />
-        <Effect ref="251" name="Pinwheel" id="6" startTime="116350" endTime="119275" palette="26" />
+        <Effect ref="249" name="On" id="5" startTime="94425" endTime="116350" palette="58" />
+        <Effect ref="250" name="Pinwheel" id="6" startTime="116350" endTime="119275" palette="26" />
         <Effect ref="43" name="Pinwheel" id="7" startTime="119275" endTime="119600" palette="18" />
         <Effect ref="44" name="Pinwheel" id="8" startTime="119600" endTime="119950" palette="18" />
-        <Effect ref="252" name="Pinwheel" id="9" startTime="119950" endTime="123450" palette="26" />
-        <Effect ref="253" name="Shockwave" id="10" startTime="130425" endTime="132025" palette="67" />
-        <Effect ref="253" name="Shockwave" id="11" startTime="134075" endTime="135675" palette="67" />
-        <Effect ref="253" name="Shockwave" id="12" startTime="137750" endTime="139375" palette="67" />
-        <Effect ref="253" name="Shockwave" id="13" startTime="141425" endTime="143075" palette="67" />
+        <Effect ref="251" name="Pinwheel" id="9" startTime="119950" endTime="123450" palette="26" />
+        <Effect ref="252" name="Shockwave" id="10" startTime="130425" endTime="132025" palette="67" />
+        <Effect ref="252" name="Shockwave" id="11" startTime="134075" endTime="135675" palette="67" />
+        <Effect ref="252" name="Shockwave" id="12" startTime="137750" endTime="139375" palette="67" />
+        <Effect ref="252" name="Shockwave" id="13" startTime="141425" endTime="143075" palette="67" />
         <Effect ref="23" name="Candle" id="14" startTime="161475" endTime="178900" palette="3" />
-        <Effect ref="253" name="Shockwave" id="15" startTime="178900" endTime="180475" palette="67" />
-        <Effect ref="253" name="Shockwave" id="16" startTime="182550" endTime="184375" palette="67" />
-        <Effect ref="253" name="Shockwave" id="17" startTime="186200" endTime="187775" palette="67" />
-        <Effect ref="253" name="Shockwave" id="18" startTime="189850" endTime="191400" palette="67" />
+        <Effect ref="252" name="Shockwave" id="15" startTime="178900" endTime="180475" palette="67" />
+        <Effect ref="252" name="Shockwave" id="16" startTime="182550" endTime="184375" palette="67" />
+        <Effect ref="252" name="Shockwave" id="17" startTime="186200" endTime="187775" palette="67" />
+        <Effect ref="252" name="Shockwave" id="18" startTime="189850" endTime="191400" palette="67" />
       </EffectLayer>
     </Element>
     <Element type="model" name="Tombstones">
@@ -8536,44 +8520,44 @@
         <Effect ref="17" name="Wave" id="8" startTime="191400" endTime="193450" palette="1" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="226" name="VU Meter" startTime="1050" endTime="4725" palette="68" />
+        <Effect ref="225" name="VU Meter" startTime="1050" endTime="4725" palette="68" />
         <Effect ref="25" name="Spirals" id="1" startTime="7475" endTime="7875" palette="2" />
         <Effect ref="24" name="Spirals" id="2" startTime="7875" endTime="8175" palette="2" />
         <Effect ref="25" name="Spirals" id="3" startTime="8175" endTime="8525" palette="2" />
-        <Effect ref="254" name="Wave" id="4" startTime="8525" endTime="11475" palette="5" />
+        <Effect ref="253" name="Wave" id="4" startTime="8525" endTime="11475" palette="5" />
         <Effect ref="25" name="Spirals" id="5" startTime="11475" endTime="11800" palette="2" />
         <Effect ref="24" name="Spirals" id="6" startTime="11800" endTime="12150" palette="2" />
-        <Effect ref="255" name="Wave" id="7" startTime="12150" endTime="15775" palette="5" />
-        <Effect ref="256" name="Candle" id="8" startTime="15775" endTime="29075" palette="5" />
+        <Effect ref="254" name="Wave" id="7" startTime="12150" endTime="15775" palette="5" />
+        <Effect ref="255" name="Candle" id="8" startTime="15775" endTime="29075" palette="5" />
         <Effect ref="193" name="Spirals" id="9" startTime="29075" endTime="29450" palette="2" />
         <Effect ref="194" name="Spirals" id="10" startTime="29450" endTime="29725" palette="2" />
         <Effect ref="111" name="Candle" id="11" startTime="29725" endTime="43250" palette="5" />
         <Effect ref="193" name="Spirals" id="12" startTime="43250" endTime="43575" palette="2" />
         <Effect ref="194" name="Spirals" id="13" startTime="43575" endTime="43900" palette="2" />
         <Effect ref="111" name="Candle" id="14" startTime="43900" endTime="50100" palette="5" />
-        <Effect ref="226" name="VU Meter" id="15" startTime="51000" endTime="61900" palette="68" />
-        <Effect ref="226" name="VU Meter" id="16" startTime="65700" endTime="69275" palette="68" />
+        <Effect ref="225" name="VU Meter" id="15" startTime="51000" endTime="61900" palette="68" />
+        <Effect ref="225" name="VU Meter" id="16" startTime="65700" endTime="69275" palette="68" />
         <Effect ref="25" name="Spirals" id="17" startTime="72050" endTime="72375" palette="2" />
         <Effect ref="24" name="Spirals" id="18" startTime="72375" endTime="72600" palette="2" />
         <Effect ref="25" name="Spirals" id="19" startTime="72600" endTime="72900" palette="2" />
-        <Effect ref="256" name="Candle" id="20" startTime="72900" endTime="86450" palette="5" />
+        <Effect ref="255" name="Candle" id="20" startTime="72900" endTime="86450" palette="5" />
         <Effect ref="193" name="Spirals" id="21" startTime="86450" endTime="86700" palette="2" />
         <Effect ref="194" name="Spirals" id="22" startTime="86700" endTime="87075" palette="2" />
-        <Effect ref="257" name="Fire" id="23" startTime="87075" endTime="94425" palette="8" />
+        <Effect ref="256" name="Fire" id="23" startTime="87075" endTime="94425" palette="8" />
         <Effect ref="78" name="Pinwheel" id="24" startTime="116350" endTime="119275" palette="26" />
         <Effect ref="79" name="Pinwheel" id="25" startTime="119275" endTime="119600" palette="18" />
         <Effect ref="80" name="Pinwheel" id="26" startTime="119600" endTime="119950" palette="18" />
         <Effect ref="81" name="Pinwheel" id="27" startTime="119950" endTime="123450" palette="26" />
-        <Effect ref="256" name="Candle" id="28" startTime="123450" endTime="130425" palette="5" />
+        <Effect ref="255" name="Candle" id="28" startTime="123450" endTime="130425" palette="5" />
         <Effect ref="21" name="Pinwheel" id="29" startTime="130425" endTime="132025" palette="10" />
         <Effect ref="22" name="Wave" id="30" startTime="132025" endTime="134075" palette="1" />
         <Effect ref="21" name="Pinwheel" id="31" startTime="134075" endTime="135675" palette="10" />
         <Effect ref="21" name="Pinwheel" id="32" startTime="137750" endTime="139375" palette="10" />
         <Effect ref="21" name="Pinwheel" id="33" startTime="141425" endTime="143075" palette="10" />
-        <Effect ref="226" name="VU Meter" id="34" startTime="145125" endTime="160850" palette="68" />
+        <Effect ref="225" name="VU Meter" id="34" startTime="145125" endTime="160850" palette="68" />
         <Effect ref="175" name="Color Wash" id="35" startTime="160850" endTime="161150" palette="2" />
         <Effect ref="175" name="Color Wash" id="36" startTime="161150" endTime="161475" palette="26" />
-        <Effect ref="256" name="Candle" id="37" startTime="161475" endTime="178900" palette="5" />
+        <Effect ref="255" name="Candle" id="37" startTime="161475" endTime="178900" palette="5" />
         <Effect ref="21" name="Pinwheel" id="38" startTime="178900" endTime="180475" palette="10" />
         <Effect ref="22" name="Wave" id="39" startTime="180475" endTime="182550" palette="1" />
         <Effect ref="21" name="Pinwheel" id="40" startTime="182550" endTime="184375" palette="10" />
@@ -8582,50 +8566,50 @@
         <Effect ref="22" name="Wave" id="43" startTime="187775" endTime="189850" palette="1" />
         <Effect ref="21" name="Pinwheel" id="44" startTime="189850" endTime="191400" palette="10" />
         <Effect ref="22" name="Wave" id="45" startTime="191400" endTime="193450" palette="1" />
-        <Effect ref="226" name="VU Meter" id="46" startTime="193450" endTime="202550" palette="68" />
-        <Effect ref="258" name="Pinwheel" id="47" startTime="202550" endTime="203000" palette="21" />
-        <Effect ref="258" name="Pinwheel" id="48" startTime="203000" endTime="203500" palette="21" />
-        <Effect ref="258" name="Pinwheel" id="49" startTime="203500" endTime="203950" palette="21" />
-        <Effect ref="258" name="Pinwheel" id="50" startTime="203950" endTime="204400" palette="21" />
-        <Effect ref="258" name="Pinwheel" id="51" startTime="204400" endTime="204850" palette="21" />
-        <Effect ref="258" name="Pinwheel" id="52" startTime="204850" endTime="205325" palette="21" />
-        <Effect ref="258" name="Pinwheel" id="53" startTime="205325" endTime="205800" palette="21" />
-        <Effect ref="258" name="Pinwheel" id="54" startTime="205800" endTime="206500" palette="21" />
-        <Effect ref="258" name="Pinwheel" id="55" startTime="206500" endTime="206850" palette="21" />
-        <Effect ref="258" name="Pinwheel" id="56" startTime="206850" endTime="207200" palette="21" />
-        <Effect ref="258" name="Pinwheel" id="57" startTime="207200" endTime="207650" palette="21" />
-        <Effect ref="258" name="Pinwheel" id="58" startTime="207650" endTime="208325" palette="21" />
-        <Effect ref="258" name="Pinwheel" id="59" startTime="208325" endTime="209025" palette="21" />
-        <Effect ref="258" name="Pinwheel" id="60" startTime="209025" endTime="209475" palette="21" />
-        <Effect ref="258" name="Pinwheel" id="61" startTime="209475" endTime="209925" palette="21" />
-        <Effect ref="258" name="Pinwheel" id="62" startTime="209925" endTime="210375" palette="21" />
-        <Effect ref="258" name="Pinwheel" id="63" startTime="210375" endTime="210850" palette="21" />
-        <Effect ref="258" name="Pinwheel" id="64" startTime="210850" endTime="211325" palette="21" />
-        <Effect ref="258" name="Pinwheel" id="65" startTime="211325" endTime="211775" palette="21" />
-        <Effect ref="258" name="Pinwheel" id="66" startTime="211775" endTime="212250" palette="21" />
-        <Effect ref="258" name="Pinwheel" id="67" startTime="212250" endTime="212925" palette="21" />
-        <Effect ref="258" name="Pinwheel" id="68" startTime="212925" endTime="213175" palette="21" />
-        <Effect ref="259" name="Pinwheel" id="69" startTime="213175" endTime="213650" palette="21" />
+        <Effect ref="225" name="VU Meter" id="46" startTime="193450" endTime="202550" palette="68" />
+        <Effect ref="257" name="Pinwheel" id="47" startTime="202550" endTime="203000" palette="21" />
+        <Effect ref="257" name="Pinwheel" id="48" startTime="203000" endTime="203500" palette="21" />
+        <Effect ref="257" name="Pinwheel" id="49" startTime="203500" endTime="203950" palette="21" />
+        <Effect ref="257" name="Pinwheel" id="50" startTime="203950" endTime="204400" palette="21" />
+        <Effect ref="257" name="Pinwheel" id="51" startTime="204400" endTime="204850" palette="21" />
+        <Effect ref="257" name="Pinwheel" id="52" startTime="204850" endTime="205325" palette="21" />
+        <Effect ref="257" name="Pinwheel" id="53" startTime="205325" endTime="205800" palette="21" />
+        <Effect ref="257" name="Pinwheel" id="54" startTime="205800" endTime="206500" palette="21" />
+        <Effect ref="257" name="Pinwheel" id="55" startTime="206500" endTime="206850" palette="21" />
+        <Effect ref="257" name="Pinwheel" id="56" startTime="206850" endTime="207200" palette="21" />
+        <Effect ref="257" name="Pinwheel" id="57" startTime="207200" endTime="207650" palette="21" />
+        <Effect ref="257" name="Pinwheel" id="58" startTime="207650" endTime="208325" palette="21" />
+        <Effect ref="257" name="Pinwheel" id="59" startTime="208325" endTime="209025" palette="21" />
+        <Effect ref="257" name="Pinwheel" id="60" startTime="209025" endTime="209475" palette="21" />
+        <Effect ref="257" name="Pinwheel" id="61" startTime="209475" endTime="209925" palette="21" />
+        <Effect ref="257" name="Pinwheel" id="62" startTime="209925" endTime="210375" palette="21" />
+        <Effect ref="257" name="Pinwheel" id="63" startTime="210375" endTime="210850" palette="21" />
+        <Effect ref="257" name="Pinwheel" id="64" startTime="210850" endTime="211325" palette="21" />
+        <Effect ref="257" name="Pinwheel" id="65" startTime="211325" endTime="211775" palette="21" />
+        <Effect ref="257" name="Pinwheel" id="66" startTime="211775" endTime="212250" palette="21" />
+        <Effect ref="257" name="Pinwheel" id="67" startTime="212250" endTime="212925" palette="21" />
+        <Effect ref="257" name="Pinwheel" id="68" startTime="212925" endTime="213175" palette="21" />
+        <Effect ref="258" name="Pinwheel" id="69" startTime="213175" endTime="213650" palette="21" />
       </EffectLayer>
     </Element>
     <Element type="model" name="Tune To">
       <EffectLayer />
       <EffectLayer>
-        <Effect ref="260" name="Pictures" startTime="0" endTime="215400" palette="30" />
+        <Effect ref="259" name="Pictures" startTime="0" endTime="215400" palette="30" />
       </EffectLayer>
     </Element>
     <Element type="model" name="Elliott - BMOAW Left">
       <EffectLayer>
-        <Effect ref="261" name="Shockwave" startTime="93725" endTime="93825" palette="47" />
-        <Effect ref="221" name="Shockwave" id="1" startTime="130075" endTime="130200" palette="47" />
-        <Effect ref="221" name="Shockwave" id="2" startTime="178450" endTime="178675" palette="47" />
+        <Effect ref="260" name="Shockwave" startTime="93725" endTime="93825" palette="47" />
+        <Effect ref="220" name="Shockwave" id="1" startTime="130075" endTime="130200" palette="47" />
+        <Effect ref="220" name="Shockwave" id="2" startTime="178450" endTime="178675" palette="47" />
       </EffectLayer>
     </Element>
     <Element type="model" name="Elliott - BMOAW Right">
       <EffectLayer>
-        <Effect ref="261" name="Shockwave" startTime="93825" endTime="93950" palette="47" />
-        <Effect ref="221" name="Shockwave" id="1" startTime="130200" endTime="130425" palette="47" />
-        <Effect ref="221" name="Shockwave" id="2" startTime="178675" endTime="178900" palette="47" />
+        <Effect ref="260" name="Shockwave" startTime="93825" endTime="93950" palette="47" />
+        <Effect ref="220" name="Shockwave" id="1" startTime="130200" endTime="130425" palette="47" />
+        <Effect ref="220" name="Shockwave" id="2" startTime="178675" endTime="178900" palette="47" />
       </EffectLayer>
     </Element>
     <Element type="model" name="Matrixes">
@@ -9026,6 +9010,21 @@
     </Element>
     <Element type="model" name="GE Dark Helmet">
       <EffectLayer />
+      <EffectLayer />
+      <EffectLayer />
+      <EffectLayer>
+        <Effect ref="261" name="Faces" startTime="44200" endTime="50250" palette="30" />
+        <Effect ref="261" name="Faces" id="1" startTime="124950" endTime="130000" palette="30" />
+        <Effect ref="261" name="Faces" id="2" startTime="130450" endTime="131450" palette="30" />
+        <Effect ref="261" name="Faces" id="3" startTime="133150" endTime="135200" palette="30" />
+        <Effect ref="261" name="Faces" id="4" startTime="136900" endTime="138800" palette="30" />
+        <Effect ref="261" name="Faces" id="5" startTime="140550" endTime="142450" palette="30" />
+        <Effect ref="261" name="Faces" id="6" startTime="172000" endTime="178275" palette="30" />
+        <Effect ref="261" name="Faces" id="7" startTime="178275" endTime="179500" palette="30" />
+        <Effect ref="261" name="Faces" id="8" startTime="181300" endTime="183350" palette="30" />
+        <Effect ref="261" name="Faces" id="9" startTime="184950" endTime="186800" palette="30" />
+        <Effect ref="261" name="Faces" id="10" startTime="188600" endTime="190600" palette="30" />
+      </EffectLayer>
     </Element>
     <Element type="model" name="Arches - Bottom">
       <EffectLayer />

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <xsequence BaseChannel="0" ChanCtrlBasic="0" ChanCtrlColor="0" FixedPointTiming="1" ModelBlending="false">
   <head>
-    <version>2026.18</version>
+    <version>2026.19</version>
     <author></author>
     <author-email></author-email>
     <author-website></author-website>
@@ -772,15 +772,11 @@
     <Effect>B_CHOICE_BufferStyle=Overlay - Centered,E_CHOICE_Butterfly_Colors=Rainbow,E_CHOICE_Butterfly_Direction=Normal,E_SLIDER_Butterfly_Chunks=1,E_SLIDER_Butterfly_Skip=2,E_SLIDER_Butterfly_Speed=10,E_SLIDER_Butterfly_Style=6,T_CHOICE_LayerMethod=2 is True Unmask</Effect>
     <Effect>B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHECKBOX_Shockwave_Blend_Edges=1,E_CHECKBOX_Shockwave_Scale=0,E_NOTEBOOK_Shockwave=Position,E_SLIDER_Shockwave_Accel=0,E_SLIDER_Shockwave_CenterX=50,E_SLIDER_Shockwave_CenterY=50,E_SLIDER_Shockwave_End_Radius=17,E_SLIDER_Shockwave_End_Width=30,E_SLIDER_Shockwave_Start_Radius=1,E_SLIDER_Shockwave_Start_Width=5</Effect>
     <Effect>B_CHOICE_BufferStyle=Vertical Per Model/Strand,E_CHOICE_VUMeter_TimingTrack=Note Onsets,E_CHOICE_VUMeter_Type=Timing Event Alternate Timed Sweep 2,E_FILEPICKERCTRL_SVGFile=,E_SLIDER_VUMeter_Bars=6</Effect>
-    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_TimingTrack=Cast Lyrics 2026,E_CHOICE_Faces_UseState=Teddy RedBow static,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=Cast Lyrics 2026,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Pumpkin face,E_CHOICE_Faces_TimingTrack=Cast Lyrics 2026,E_CHOICE_Faces_UseState=outline with stem,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
+    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Cast Lyrics 2026,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
   </EffectDB>
-  <SequenceMedia>
-    <Video path="Sequences/We Will Rock You/Media/Videos-0a9e08/Part one MOV.mp4" />
-    <Video path="Sequences/We Will Rock You/Media/Videos-0a9e08/Part three MOV.mp4" />
-    <Video path="Sequences/We Will Rock You/Media/Videos-0a9e08/Part two MOV.mp4" />
-  </SequenceMedia>
+  <SequenceMedia />
   <DataLayers>
     <DataLayer lor_params="0" channel_offset="0" num_channels="0" num_frames="0" data="&lt;rendered: erase-mode>" source="&lt;auto-generated>" name="Nutcracker" />
   </DataLayers>
@@ -12187,44 +12183,47 @@
       <EffectLayer />
       <EffectLayer />
       <EffectLayer />
-      <EffectLayer>
-        <Effect ref="646" name="Faces" startTime="64750" endTime="70275" palette="81" />
-        <Effect ref="646" name="Faces" id="1" startTime="70275" endTime="76550" palette="81" />
-        <Effect ref="646" name="Faces" id="2" startTime="124100" endTime="132450" palette="81" />
-        <Effect ref="646" name="Faces" id="3" startTime="132825" endTime="135600" palette="81" />
-      </EffectLayer>
+      <EffectLayer />
     </Element>
     <Element type="model" name="GE Evil Clown">
       <EffectLayer>
-        <Effect ref="647" name="Faces" startTime="76550" endTime="82150" palette="81" />
-        <Effect ref="647" name="Faces" id="1" startTime="82150" endTime="88300" palette="81" />
-        <Effect ref="647" name="Faces" id="2" startTime="100950" endTime="103300" palette="81" />
-        <Effect ref="647" name="Faces" id="3" startTime="104275" endTime="106300" palette="81" />
-        <Effect ref="647" name="Faces" id="4" startTime="109975" endTime="112150" palette="81" />
-        <Effect ref="647" name="Faces" id="5" startTime="112150" endTime="115450" palette="81" />
-        <Effect ref="647" name="Faces" id="6" startTime="147600" endTime="148550" palette="81" />
-        <Effect ref="647" name="Faces" id="7" startTime="149975" endTime="150625" palette="81" />
-        <Effect ref="647" name="Faces" id="8" startTime="150625" endTime="151250" palette="81" />
-        <Effect ref="647" name="Faces" id="9" startTime="152150" endTime="152725" palette="81" />
-        <Effect ref="647" name="Faces" id="10" startTime="153400" endTime="156750" palette="81" />
-        <Effect ref="647" name="Faces" id="11" startTime="157925" endTime="159575" palette="81" />
+        <Effect ref="646" name="Faces" startTime="76550" endTime="82150" palette="81" />
+        <Effect ref="646" name="Faces" id="1" startTime="82150" endTime="88300" palette="81" />
+        <Effect ref="646" name="Faces" id="2" startTime="100950" endTime="103300" palette="81" />
+        <Effect ref="646" name="Faces" id="3" startTime="104275" endTime="106300" palette="81" />
+        <Effect ref="646" name="Faces" id="4" startTime="109975" endTime="112150" palette="81" />
+        <Effect ref="646" name="Faces" id="5" startTime="112150" endTime="115450" palette="81" />
+        <Effect ref="646" name="Faces" id="6" startTime="147600" endTime="148550" palette="81" />
+        <Effect ref="646" name="Faces" id="7" startTime="149975" endTime="150625" palette="81" />
+        <Effect ref="646" name="Faces" id="8" startTime="150625" endTime="151250" palette="81" />
+        <Effect ref="646" name="Faces" id="9" startTime="152150" endTime="152725" palette="81" />
+        <Effect ref="646" name="Faces" id="10" startTime="153400" endTime="156750" palette="81" />
+        <Effect ref="646" name="Faces" id="11" startTime="157925" endTime="159575" palette="81" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Singing Pumpkin">
       <EffectLayer>
-        <Effect ref="648" name="Faces" startTime="16400" endTime="28350" palette="81" />
-        <Effect ref="648" name="Faces" id="1" startTime="29350" endTime="34000" palette="81" />
-        <Effect ref="648" name="Faces" id="2" startTime="34000" endTime="40475" palette="81" />
-        <Effect ref="648" name="Faces" id="3" startTime="40475" endTime="46150" palette="81" />
-        <Effect ref="648" name="Faces" id="4" startTime="88300" endTime="92300" palette="81" />
-        <Effect ref="648" name="Faces" id="5" startTime="94325" endTime="98300" palette="81" />
-        <Effect ref="648" name="Faces" id="6" startTime="135600" endTime="139650" palette="81" />
-        <Effect ref="648" name="Faces" id="7" startTime="141650" endTime="145550" palette="81" />
-        <Effect ref="648" name="Faces" id="8" startTime="169750" endTime="171500" palette="81" />
+        <Effect ref="647" name="Faces" startTime="16400" endTime="28350" palette="81" />
+        <Effect ref="647" name="Faces" id="1" startTime="29350" endTime="34000" palette="81" />
+        <Effect ref="647" name="Faces" id="2" startTime="34000" endTime="40475" palette="81" />
+        <Effect ref="647" name="Faces" id="3" startTime="40475" endTime="46150" palette="81" />
+        <Effect ref="647" name="Faces" id="4" startTime="88300" endTime="92300" palette="81" />
+        <Effect ref="647" name="Faces" id="5" startTime="94325" endTime="98300" palette="81" />
+        <Effect ref="647" name="Faces" id="6" startTime="135600" endTime="139650" palette="81" />
+        <Effect ref="647" name="Faces" id="7" startTime="141650" endTime="145550" palette="81" />
+        <Effect ref="647" name="Faces" id="8" startTime="169750" endTime="171500" palette="81" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Dark Helmet">
       <EffectLayer />
+      <EffectLayer />
+      <EffectLayer />
+      <EffectLayer>
+        <Effect ref="648" name="Faces" startTime="64750" endTime="70275" palette="81" />
+        <Effect ref="648" name="Faces" id="1" startTime="70275" endTime="76550" palette="81" />
+        <Effect ref="648" name="Faces" id="2" startTime="124100" endTime="132450" palette="81" />
+        <Effect ref="648" name="Faces" id="3" startTime="132825" endTime="135600" palette="81" />
+      </EffectLayer>
     </Element>
     <Element type="timing" name="Cast Lyrics 2026">
       <EffectLayer>

@@ -1,5 +1,12 @@
 # xLights Show Directory — Agent Notes
 
+## Teddy reserved for interaction — November 1, 2026
+
+- Teddy is reserved for interactive guests. Do not assign him song vocals, static gestures or decorative show groups unless the user explicitly requests it. This supersedes older Teddy song-casting and static-animation notes below. Keep his independent interactive background and guest cues on Selfie Station `.213`.
+- All 176 Teddy vocal effects in 21 Halloween songs moved to otherwise unused installed singers: white Vader for 16 songs, Evil Clown for GreatestShowWorking 2, Singing Pumpkin for Skrillex Medley, garage-window skull for This Is Halloween, and downstairs-window skull for both Titanium versions. Original lyric/phoneme tracks and singing windows are preserved. The 22 legacy Teddy static effects are cleared.
+- All 22 affected sequences / 23 existing playback filenames are deployed to Master `.19` and Projector `.201`, with full checksums and metadata verified. Every frame outside Teddy and the selected replacement prop is identical to the previously deployed render, including sign/QR, projector, other singers and Titanium note choreography. Teddy show pixels are zero throughout; his independent background remains active. Projector files required only an atomically installed sequence-ID change, proved by full-file hashes.
+- Master remained running with advancing service uptime. Layout, channel addresses, physical controller outputs, routing, playlists, schedule, media and AV settings are preserved. Evidence and recovery copies: `Halloween/teddy-song-recast-latest.json` and its backup directory.
+
 ## Titanium individual verse notes — October 19, 2026
 
 - User requested individual snowflakes and tombstones on different notes in both the opening and second verse, replacing rose-bank pulses. Titanium's second verse (91.900–122.400 seconds) repeats the opening's per-note target pattern across 90 notes, with no more than two overlapping props. Projector rings follow those notes. The prior whole-yard transition ends at 91.900 seconds, and the all-flake build in that window is removed. Preserve all other lyrics/choreography and the opening pattern. Evidence and deployment status: `Halloween/titanium-second-verse-latest.json` and `Halloween/vader-white-latest.json`.

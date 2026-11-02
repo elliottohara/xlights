@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <xsequence BaseChannel="0" ChanCtrlBasic="0" ChanCtrlColor="0" FixedPointTiming="1" ModelBlending="true">
   <head>
-    <version>2026.18</version>
+    <version>2026.19</version>
     <author></author>
     <author-email></author-email>
     <author-website></author-website>
@@ -45,8 +45,8 @@
     <ColorPalette>C_BUTTON_Palette1=#800080,C_BUTTON_Palette2=#A750F9,C_BUTTON_Palette3=#808080,C_BUTTON_Palette4=#00008B,C_BUTTON_Palette5=#006400,C_BUTTON_Palette6=#800080,C_BUTTON_Palette7=#008080,C_BUTTON_Palette8=#808000,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette6=1</ColorPalette>
     <ColorPalette>C_BUTTON_Palette1=#800080,C_BUTTON_Palette2=#A750F9,C_BUTTON_Palette3=#808080,C_BUTTON_Palette4=#00008B,C_BUTTON_Palette5=#006400,C_BUTTON_Palette6=#800080,C_BUTTON_Palette7=#008080,C_BUTTON_Palette8=#808000,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette4=1,C_CHECKBOX_Palette5=1,C_CHECKBOX_Palette7=1,C_CHECKBOX_Palette8=1</ColorPalette>
     <ColorPalette>C_BUTTON_Palette1=#800080,C_BUTTON_Palette2=#A750F9,C_BUTTON_Palette3=#808080,C_BUTTON_Palette4=#00008B,C_BUTTON_Palette5=#006400,C_BUTTON_Palette6=#800080,C_BUTTON_Palette7=#008080,C_BUTTON_Palette8=#808000,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette5=1,C_CHECKBOX_Palette6=1,C_CHECKBOX_Palette8=1</ColorPalette>
-    <ColorPalette>C_BUTTON_Palette1=#800080,C_BUTTON_Palette2=#A750F9,C_BUTTON_Palette3=#808080,C_BUTTON_Palette4=#00008B,C_BUTTON_Palette5=#006400,C_BUTTON_Palette6=#800080,C_BUTTON_Palette7=#008080,C_BUTTON_Palette8=#808000,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1,C_CHECKBOX_Palette4=1,C_CHECKBOX_Palette5=1,C_CHECKBOX_Palette6=1,C_CHECKBOX_Palette7=1,C_CHECKBOX_Palette8=1</ColorPalette>
     <ColorPalette>C_BUTTON_Palette1=#FFFFFF,C_CHECKBOX_Palette1=1</ColorPalette>
+    <ColorPalette>C_BUTTON_Palette1=#800080,C_BUTTON_Palette2=#A750F9,C_BUTTON_Palette3=#808080,C_BUTTON_Palette4=#00008B,C_BUTTON_Palette5=#006400,C_BUTTON_Palette6=#800080,C_BUTTON_Palette7=#008080,C_BUTTON_Palette8=#808000,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1,C_CHECKBOX_Palette4=1,C_CHECKBOX_Palette5=1,C_CHECKBOX_Palette6=1,C_CHECKBOX_Palette7=1,C_CHECKBOX_Palette8=1</ColorPalette>
   </ColorPalettes>
   <EffectDB>
     <Effect>E_CHECKBOX_SynchroniseWithAudio=0,E_CHECKBOX_Video_AspectRatio=0,E_CHECKBOX_Video_TransparentBlack=0,E_CHOICE_Video_DurationTreatment=Normal,E_FILEPICKERCTRL_Video_Filename=Sequences/Something In The Way/Media/Vendor/Something In The Way Matrix.mp4,E_TEXTCTRL_Duration=3:52.125,E_TEXTCTRL_SampleSpacing=0,E_TEXTCTRL_Video_CropBottom=0,E_TEXTCTRL_Video_CropLeft=0,E_TEXTCTRL_Video_CropRight=100,E_TEXTCTRL_Video_CropTop=100,E_TEXTCTRL_Video_Starttime=0.00,E_TEXTCTRL_Video_TransparentBlack=0,T_CHOICE_LayerMethod=Effect 1</Effect>
@@ -156,8 +156,6 @@
     <Effect>B_CHOICE_BufferStyle=Overlay - Centered,E_CHECKBOX_Chase_Group_All=0,E_CHOICE_Chase_Type1=Right-Left,E_CHOICE_Fade_Type=From Head,E_CHOICE_SingleStrand_Colors=Palette,E_CHOICE_SingleStrand_FX=Fireworks 1D,E_CHOICE_SingleStrand_FX_Palette=* Colors Only,E_CHOICE_Skips_Direction=Left,E_NOTEBOOK_SSEFFECT_TYPE=Chase,E_SLIDER_Color_Mix1=40,E_SLIDER_FX_Intensity=128,E_SLIDER_FX_Speed=128,E_SLIDER_Number_Chases=1,E_SLIDER_Skips_Advance=0,E_SLIDER_Skips_BandSize=1,E_SLIDER_Skips_SkipSize=1,E_SLIDER_Skips_StartPos=1,E_TEXTCTRL_Chase_Offset=0.0,E_TEXTCTRL_Chase_Rotations=8,T_TEXTCTRL_Fadein=1,T_TEXTCTRL_Fadeout=1.00</Effect>
     <Effect>B_CHOICE_BufferStyle=Overlay - Centered,E_CHECKBOX_Spirals_3D=1,E_CHECKBOX_Spirals_Blend=0,E_CHECKBOX_Spirals_Grow=0,E_CHECKBOX_Spirals_Shrink=0,E_SLIDER_Spirals_Count=4,E_SLIDER_Spirals_Rotation=-33,E_SLIDER_Spirals_Thickness=50,E_TEXTCTRL_Spirals_Movement=-3.1,T_TEXTCTRL_Fadein=1,T_TEXTCTRL_Fadeout=1.00</Effect>
     <Effect>B_CHOICE_BufferStyle=Overlay - Centered,E_CHECKBOX_Shockwave_Blend_Edges=1,E_CHECKBOX_Shockwave_Scale=0,E_NOTEBOOK_Shockwave=Position,E_SLIDER_Shockwave_Accel=0,E_SLIDER_Shockwave_CenterX=50,E_SLIDER_Shockwave_CenterY=50,E_SLIDER_Shockwave_Cycles=1,E_SLIDER_Shockwave_End_Radius=60,E_SLIDER_Shockwave_End_Width=80,E_SLIDER_Shockwave_Start_Radius=1,E_SLIDER_Shockwave_Start_Width=30</Effect>
-    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_TimingTrack=SomethingInTheWayvocalsCmajor105bpm428hz,E_CHOICE_Faces_UseState=Teddy RedBow static,T_TEXTCTRL_Fadeout=10</Effect>
-    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_Phoneme=rest,E_CHOICE_Faces_UseState=Teddy RedBow static,T_TEXTCTRL_Fadein=1.0</Effect>
     <Effect>B_CHOICE_BufferStyle=Overlay - Centered,E_CHECKBOX_Shockwave_Blend_Edges=1,E_CHECKBOX_Shockwave_Scale=0,E_NOTEBOOK_Shockwave=Position,E_SLIDER_Shockwave_Accel=0,E_SLIDER_Shockwave_CenterX=50,E_SLIDER_Shockwave_CenterY=50,E_SLIDER_Shockwave_Cycles=1,E_SLIDER_Shockwave_End_Radius=32,E_SLIDER_Shockwave_End_Width=83,E_SLIDER_Shockwave_Start_Radius=1,E_SLIDER_Shockwave_Start_Width=5</Effect>
     <Effect>B_CHOICE_BufferStyle=Horizontal Per Model/Strand,E_CHECKBOX_Mirror_Wave=0,E_CHOICE_Fill_Colors=None,E_CHOICE_Wave_Direction=Right to Left,E_CHOICE_Wave_Type=Sine,E_SLIDER_Thickness_Percentage=5,E_SLIDER_Wave_Height=99,E_SLIDER_Wave_YOffset=0,E_TEXTCTRL_Number_Waves=2.50,E_TEXTCTRL_Wave_Speed=4,T_TEXTCTRL_Fadein=.2,T_TEXTCTRL_Fadeout=.2</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=SomethingInTheWayvocalsCmajor105bpm428hz</Effect>
@@ -168,13 +166,10 @@
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Pumpkin face,E_CHOICE_Faces_Phoneme=rest,E_CHOICE_Faces_UseState=outline with stem,T_TEXTCTRL_Fadein=1.0</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Pumpkin face,E_CHOICE_Faces_Phoneme=rest,E_CHOICE_Faces_UseState=outline with stem,T_TEXTCTRL_Fadeout=2.5</Effect>
     <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/TuneToReadable-v2/stationary-qr.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
+    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=SomethingInTheWayvocalsCmajor105bpm428hz,T_TEXTCTRL_Fadeout=10</Effect>
+    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_Phoneme=rest,T_TEXTCTRL_Fadein=1.0</Effect>
   </EffectDB>
-  <SequenceMedia>
-    <Video path="Sequences/Something In The Way/Media/Vendor/Lighthouse.mp4" />
-    <Video path="Sequences/Something In The Way/Media/Vendor/Mushroom Forest.mp4" />
-    <Video path="Sequences/Something In The Way/Media/Vendor/Psychedelics EyesTEst.mp4" />
-    <Video path="Sequences/Something In The Way/Media/Vendor/Something In The Way Matrix.mp4" />
-  </SequenceMedia>
+  <SequenceMedia />
   <DataLayers>
     <DataLayer lor_params="0" channel_offset="0" num_channels="0" num_frames="0" data="&lt;rendered: erase-mode>" source="&lt;auto-generated>" name="Nutcracker" />
   </DataLayers>
@@ -260,6 +255,7 @@
     <Element collapsed="false" type="timing" name="Bass" visible="true" views="" active="false" />
     <Element collapsed="false" type="model" name="Tune To" visible="true" />
     <Element collapsed="false" type="model" name="Projector" visible="true" />
+    <Element collapsed="false" type="model" name="GE Dark Helmet" visible="true" />
   </DisplayElements>
   <ElementEffects>
     <Element type="model" name="Map - Matrix">
@@ -1402,69 +1398,65 @@
       </EffectLayer>
     </Element>
     <Element type="model" name="Elliott - EFL Teddy">
-      <EffectLayer>
-        <Effect ref="107" name="Faces" startTime="19075" endTime="231925" palette="28" />
-      </EffectLayer>
-      <EffectLayer>
-        <Effect ref="108" name="Faces" startTime="18075" endTime="19075" palette="28" />
-      </EffectLayer>
+      <EffectLayer />
+      <EffectLayer />
     </Element>
     <Element type="model" name="Map - GE Spooky Tree Branch GRP">
       <EffectLayer>
-        <Effect ref="109" name="Shockwave" startTime="56875" endTime="61350" palette="23" />
-        <Effect ref="110" name="Wave" id="1" startTime="61350" endTime="65850" palette="14" />
-        <Effect ref="109" name="Shockwave" id="2" startTime="65850" endTime="70325" palette="23" />
-        <Effect ref="110" name="Wave" id="3" startTime="70350" endTime="74850" palette="14" />
-        <Effect ref="109" name="Shockwave" id="4" startTime="74850" endTime="79325" palette="23" />
-        <Effect ref="110" name="Wave" id="5" startTime="79350" endTime="83850" palette="14" />
-        <Effect ref="109" name="Shockwave" id="6" startTime="83850" endTime="88325" palette="23" />
-        <Effect ref="110" name="Wave" id="7" startTime="88325" endTime="92825" palette="14" />
-        <Effect ref="109" name="Shockwave" id="8" startTime="92850" endTime="97325" palette="23" />
-        <Effect ref="110" name="Wave" id="9" startTime="97350" endTime="101850" palette="14" />
-        <Effect ref="109" name="Shockwave" id="10" startTime="101875" endTime="106350" palette="23" />
-        <Effect ref="109" name="Shockwave" id="11" startTime="150925" endTime="155400" palette="23" />
-        <Effect ref="110" name="Wave" id="12" startTime="155400" endTime="159900" palette="14" />
-        <Effect ref="109" name="Shockwave" id="13" startTime="159900" endTime="164400" palette="23" />
-        <Effect ref="110" name="Wave" id="14" startTime="164400" endTime="168900" palette="14" />
-        <Effect ref="109" name="Shockwave" id="15" startTime="168900" endTime="173400" palette="23" />
-        <Effect ref="110" name="Wave" id="16" startTime="173400" endTime="177900" palette="14" />
-        <Effect ref="109" name="Shockwave" id="17" startTime="177900" endTime="182375" palette="23" />
-        <Effect ref="110" name="Wave" id="18" startTime="182375" endTime="186875" palette="14" />
-        <Effect ref="109" name="Shockwave" id="19" startTime="186900" endTime="191400" palette="23" />
-        <Effect ref="110" name="Wave" id="20" startTime="191400" endTime="195900" palette="14" />
-        <Effect ref="109" name="Shockwave" id="21" startTime="195925" endTime="200400" palette="23" />
-        <Effect ref="110" name="Wave" id="22" startTime="200400" endTime="204900" palette="14" />
-        <Effect ref="109" name="Shockwave" id="23" startTime="204900" endTime="209375" palette="23" />
-        <Effect ref="110" name="Wave" id="24" startTime="209375" endTime="213875" palette="14" />
-        <Effect ref="109" name="Shockwave" id="25" startTime="213900" endTime="218400" palette="23" />
+        <Effect ref="107" name="Shockwave" startTime="56875" endTime="61350" palette="23" />
+        <Effect ref="108" name="Wave" id="1" startTime="61350" endTime="65850" palette="14" />
+        <Effect ref="107" name="Shockwave" id="2" startTime="65850" endTime="70325" palette="23" />
+        <Effect ref="108" name="Wave" id="3" startTime="70350" endTime="74850" palette="14" />
+        <Effect ref="107" name="Shockwave" id="4" startTime="74850" endTime="79325" palette="23" />
+        <Effect ref="108" name="Wave" id="5" startTime="79350" endTime="83850" palette="14" />
+        <Effect ref="107" name="Shockwave" id="6" startTime="83850" endTime="88325" palette="23" />
+        <Effect ref="108" name="Wave" id="7" startTime="88325" endTime="92825" palette="14" />
+        <Effect ref="107" name="Shockwave" id="8" startTime="92850" endTime="97325" palette="23" />
+        <Effect ref="108" name="Wave" id="9" startTime="97350" endTime="101850" palette="14" />
+        <Effect ref="107" name="Shockwave" id="10" startTime="101875" endTime="106350" palette="23" />
+        <Effect ref="107" name="Shockwave" id="11" startTime="150925" endTime="155400" palette="23" />
+        <Effect ref="108" name="Wave" id="12" startTime="155400" endTime="159900" palette="14" />
+        <Effect ref="107" name="Shockwave" id="13" startTime="159900" endTime="164400" palette="23" />
+        <Effect ref="108" name="Wave" id="14" startTime="164400" endTime="168900" palette="14" />
+        <Effect ref="107" name="Shockwave" id="15" startTime="168900" endTime="173400" palette="23" />
+        <Effect ref="108" name="Wave" id="16" startTime="173400" endTime="177900" palette="14" />
+        <Effect ref="107" name="Shockwave" id="17" startTime="177900" endTime="182375" palette="23" />
+        <Effect ref="108" name="Wave" id="18" startTime="182375" endTime="186875" palette="14" />
+        <Effect ref="107" name="Shockwave" id="19" startTime="186900" endTime="191400" palette="23" />
+        <Effect ref="108" name="Wave" id="20" startTime="191400" endTime="195900" palette="14" />
+        <Effect ref="107" name="Shockwave" id="21" startTime="195925" endTime="200400" palette="23" />
+        <Effect ref="108" name="Wave" id="22" startTime="200400" endTime="204900" palette="14" />
+        <Effect ref="107" name="Shockwave" id="23" startTime="204900" endTime="209375" palette="23" />
+        <Effect ref="108" name="Wave" id="24" startTime="209375" endTime="213875" palette="14" />
+        <Effect ref="107" name="Shockwave" id="25" startTime="213900" endTime="218400" palette="23" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Evil Clown">
       <EffectLayer />
       <EffectLayer>
-        <Effect ref="111" name="Faces" startTime="56875" endTime="69200" palette="23" />
-        <Effect ref="111" name="Faces" id="1" startTime="69800" endTime="82125" palette="23" />
-        <Effect ref="111" name="Faces" id="2" startTime="150925" endTime="218400" palette="23" />
+        <Effect ref="109" name="Faces" startTime="56875" endTime="69200" palette="23" />
+        <Effect ref="109" name="Faces" id="1" startTime="69800" endTime="82125" palette="23" />
+        <Effect ref="109" name="Faces" id="2" startTime="150925" endTime="218400" palette="23" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="112" name="Faces" startTime="55875" endTime="56875" palette="23" />
-        <Effect ref="113" name="Faces" id="1" startTime="69200" endTime="69800" palette="23" />
-        <Effect ref="114" name="Faces" id="2" startTime="82125" endTime="84625" palette="23" />
-        <Effect ref="112" name="Faces" id="3" startTime="149925" endTime="150925" palette="23" />
-        <Effect ref="114" name="Faces" id="4" startTime="218400" endTime="220900" palette="23" />
+        <Effect ref="110" name="Faces" startTime="55875" endTime="56875" palette="23" />
+        <Effect ref="111" name="Faces" id="1" startTime="69200" endTime="69800" palette="23" />
+        <Effect ref="112" name="Faces" id="2" startTime="82125" endTime="84625" palette="23" />
+        <Effect ref="110" name="Faces" id="3" startTime="149925" endTime="150925" palette="23" />
+        <Effect ref="112" name="Faces" id="4" startTime="218400" endTime="220900" palette="23" />
       </EffectLayer>
     </Element>
     <Element type="model" name="GE Singing Pumpkin">
       <EffectLayer />
       <EffectLayer>
-        <Effect ref="115" name="Faces" startTime="56875" endTime="106350" palette="23" />
-        <Effect ref="115" name="Faces" id="1" startTime="150925" endTime="218400" palette="23" />
+        <Effect ref="113" name="Faces" startTime="56875" endTime="106350" palette="23" />
+        <Effect ref="113" name="Faces" id="1" startTime="150925" endTime="218400" palette="23" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="116" name="Faces" startTime="55875" endTime="56875" palette="23" />
-        <Effect ref="117" name="Faces" id="1" startTime="106350" endTime="108850" palette="23" />
-        <Effect ref="116" name="Faces" id="2" startTime="149925" endTime="150925" palette="23" />
-        <Effect ref="117" name="Faces" id="3" startTime="218400" endTime="220900" palette="23" />
+        <Effect ref="114" name="Faces" startTime="55875" endTime="56875" palette="23" />
+        <Effect ref="115" name="Faces" id="1" startTime="106350" endTime="108850" palette="23" />
+        <Effect ref="114" name="Faces" id="2" startTime="149925" endTime="150925" palette="23" />
+        <Effect ref="115" name="Faces" id="3" startTime="218400" endTime="220900" palette="23" />
       </EffectLayer>
     </Element>
     <Element type="model" name="Map - GE Rosa Grande Splice GRP">
@@ -3145,11 +3137,19 @@
     <Element type="model" name="Tune To">
       <EffectLayer />
       <EffectLayer>
-        <Effect ref="118" name="Pictures" startTime="0" endTime="232125" palette="29" />
+        <Effect ref="116" name="Pictures" startTime="0" endTime="232125" palette="28" />
       </EffectLayer>
     </Element>
     <Element type="model" name="Projector">
       <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Dark Helmet">
+      <EffectLayer>
+        <Effect ref="117" name="Faces" startTime="19075" endTime="231925" palette="29" />
+      </EffectLayer>
+      <EffectLayer>
+        <Effect ref="118" name="Faces" startTime="18075" endTime="19075" palette="29" />
+      </EffectLayer>
     </Element>
   </ElementEffects>
   <lastView>0</lastView>

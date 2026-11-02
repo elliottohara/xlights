@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <xsequence BaseChannel="0" ChanCtrlBasic="0" ChanCtrlColor="0" FixedPointTiming="1" ModelBlending="true">
   <head>
-    <version>2026.18</version>
+    <version>2026.19</version>
     <author></author>
     <author-email></author-email>
     <author-website></author-website>
@@ -168,7 +168,7 @@
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Pumpkin face,E_CHOICE_Faces_TimingTrack=Flat,E_CHOICE_Faces_UseState=outline with stem,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Pumpkin face,E_CHOICE_Faces_TimingTrack=Horns,E_CHOICE_Faces_UseState=outline with stem,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
     <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/TuneToReadable-v2/stationary-qr.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
-    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_TimingTrack=Skull,E_CHOICE_Faces_UseState=Teddy RedBow static,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
+    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Skull,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
     <Effect></Effect>
     <Effect>T_TEXTCTRL_Fadeout=.5</Effect>
     <Effect>T_TEXTCTRL_Fadeout=1</Effect>
@@ -427,10 +427,7 @@
     <Effect>E_CHECKBOX_Shockwave_Blend_Edges=1,E_CHECKBOX_Shockwave_Scale=0,E_NOTEBOOK_Shockwave=Position,E_SLIDER_Shockwave_Accel=0,E_SLIDER_Shockwave_CenterX=50,E_SLIDER_Shockwave_CenterY=50,E_SLIDER_Shockwave_End_Radius=79,E_SLIDER_Shockwave_End_Width=77,E_SLIDER_Shockwave_Start_Radius=1,E_SLIDER_Shockwave_Start_Width=5</Effect>
     <Effect>E_CHECKBOX_Fan_Blend_Edges=1,E_CHECKBOX_Fan_Reverse=0,E_CHECKBOX_Fan_Scale=0,E_NOTEBOOK_Fan=Options,E_SLIDER_Fan_Accel=0,E_SLIDER_Fan_Blade_Angle=90,E_SLIDER_Fan_Blade_Width=100,E_SLIDER_Fan_CenterX=50,E_SLIDER_Fan_CenterY=50,E_SLIDER_Fan_Duration=100,E_SLIDER_Fan_Element_Width=100,E_SLIDER_Fan_End_Radius=389,E_SLIDER_Fan_Num_Blades=1,E_SLIDER_Fan_Num_Elements=1,E_SLIDER_Fan_Revolutions=1394,E_SLIDER_Fan_Start_Angle=0,E_SLIDER_Fan_Start_Radius=1,T_TEXTCTRL_Fadeout=2</Effect>
   </EffectDB>
-  <SequenceMedia>
-    <Video path="Sequences/Thriller Xtreme Remap/ImportedMedia/Thriller/Videos/Michael Jackson - Thriller (Music Video Remake) (HD) - YouTube.mp4.mp4" />
-    <Video path="Sequences/Thriller Xtreme Remap/ImportedMedia/Thriller/Videos/Michael Jackson - Thriller (Official Video).mp4" />
-  </SequenceMedia>
+  <SequenceMedia />
   <DataLayers>
     <DataLayer lor_params="0" channel_offset="0" num_channels="0" num_frames="0" data="&lt;rendered: erase-mode>" source="&lt;auto-generated>" name="Nutcracker" />
   </DataLayers>
@@ -1776,6 +1773,15 @@
       <EffectLayer />
       <EffectLayer />
       <EffectLayer />
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="Whole Scene - For fades [Thriller-Xtreme-Remap]">
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Dark Helmet">
+      <EffectLayer />
+      <EffectLayer />
+      <EffectLayer />
       <EffectLayer>
         <Effect ref="16" name="Faces" startTime="58850" endTime="65750" palette="5" />
         <Effect ref="16" name="Faces" id="1" startTime="67000" endTime="79900" palette="5" />
@@ -1785,12 +1791,6 @@
         <Effect ref="16" name="Faces" id="5" startTime="123750" endTime="147150" palette="5" />
         <Effect ref="16" name="Faces" id="6" startTime="186650" endTime="218600" palette="5" />
       </EffectLayer>
-    </Element>
-    <Element type="model" name="Whole Scene - For fades [Thriller-Xtreme-Remap]">
-      <EffectLayer />
-    </Element>
-    <Element type="model" name="GE Dark Helmet">
-      <EffectLayer />
     </Element>
     <Element type="model" name="Driveway Left">
       <EffectLayer />

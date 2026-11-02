@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <xsequence BaseChannel="0" ChanCtrlBasic="0" ChanCtrlColor="0" FixedPointTiming="1" ModelBlending="true">
   <head>
-    <version>2026.18</version>
+    <version>2026.19</version>
     <author></author>
     <author-email></author-email>
     <author-website></author-website>
@@ -471,15 +471,9 @@
     <Effect>B_CHOICE_BufferStyle=Overlay - Centered,E_CHECKBOX_Pinwheel_Rotation=1,E_CHOICE_Pinwheel_3D=3D,E_CHOICE_Pinwheel_Style=New Render Method,E_SLIDER_PinwheelXC=0,E_SLIDER_PinwheelYC=-100,E_SLIDER_Pinwheel_ArmSize=219,E_SLIDER_Pinwheel_Arms=2,E_SLIDER_Pinwheel_Offset=0,E_SLIDER_Pinwheel_Speed=10,E_SLIDER_Pinwheel_Thickness=8,E_VALUECURVE_Pinwheel_Twist=Active=TRUE|Id=ID_VALUECURVE_Pinwheel_Twist|Type=Square|Min=-360.00|Max=360.00|P1=-122.40|P2=122.40|P3=2.00|RV=TRUE|</Effect>
     <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/TuneToReadable-v2/stationary-vote.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
     <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/TuneToReadable-v2/stationary-qr.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
-    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_TimingTrack=Abracadabra,E_CHOICE_Faces_UseState=Teddy RedBow static,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
+    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Abracadabra,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
   </EffectDB>
-  <SequenceMedia>
-    <Video path="Sequences/01 - Abracadabra/Media/Vendor/Videos/Halloween Fire.mp4" />
-    <Video path="Sequences/01 - Abracadabra/Media/Vendor/Videos/Halloween Fire_1.mp4" />
-    <Video path="Sequences/01 - Abracadabra/Media/Vendor/Videos/Particle_xFFects_07.mp4" />
-    <Video path="Sequences/01 - Abracadabra/Media/Vendor/Videos/PsyBackgroud.mp4" />
-    <Video path="Sequences/01 - Abracadabra/Media/Vendor/Videos/Ring of Fire.mp4" />
-  </SequenceMedia>
+  <SequenceMedia />
   <DataLayers>
     <DataLayer lor_params="0" channel_offset="0" num_channels="0" num_frames="0" data="&lt;rendered: erase-mode>" source="&lt;auto-generated>" name="Nutcracker" />
   </DataLayers>
@@ -7321,12 +7315,7 @@
       <EffectLayer />
       <EffectLayer />
       <EffectLayer />
-      <EffectLayer>
-        <Effect ref="401" name="Faces" startTime="15450" endTime="61250" palette="49" />
-        <Effect ref="401" name="Faces" id="1" startTime="93450" endTime="138400" palette="49" />
-        <Effect ref="401" name="Faces" id="2" startTime="171575" endTime="200850" palette="49" />
-        <Effect ref="401" name="Faces" id="3" startTime="210000" endTime="219000" palette="49" />
-      </EffectLayer>
+      <EffectLayer />
     </Element>
     <Element type="model" name="GE Grinch Talk">
       <EffectLayer />
@@ -8074,6 +8063,14 @@
     </Element>
     <Element type="model" name="GE Dark Helmet">
       <EffectLayer />
+      <EffectLayer />
+      <EffectLayer />
+      <EffectLayer>
+        <Effect ref="401" name="Faces" startTime="15450" endTime="61250" palette="49" />
+        <Effect ref="401" name="Faces" id="1" startTime="93450" endTime="138400" palette="49" />
+        <Effect ref="401" name="Faces" id="2" startTime="171575" endTime="200850" palette="49" />
+        <Effect ref="401" name="Faces" id="3" startTime="210000" endTime="219000" palette="49" />
+      </EffectLayer>
     </Element>
     <Element type="model" name="Shrubs">
       <EffectLayer>

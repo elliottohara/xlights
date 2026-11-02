@@ -243,16 +243,9 @@
     <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=Sequences/Ghostbusters/Media/SignLyrics-20261031/base.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_TimingTrack=New Timing,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Pumpkin face,E_CHOICE_Faces_TimingTrack=layer 3,E_CHOICE_Faces_UseState=outline with stem,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
-    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_TimingTrack=layer 2,E_CHOICE_Faces_UseState=Teddy RedBow static,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
+    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=1,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=layer 2,T_TEXTCTRL_Fadein=0.10,T_TEXTCTRL_Fadeout=0.10</Effect>
   </EffectDB>
-  <SequenceMedia>
-    <Video path="Sequences/Ghostbusters 2/Media/Videos-154b7c/After Effects Templates Halloween Background Parallax.mp4" />
-    <Video path="Sequences/Ghostbusters 2/Media/Videos-154b7c/Halloween Display - Background Video for Holmes' Haunted Homes.mp4" />
-    <Video path="Sequences/Ghostbusters 2/Media/Videos-154b7c/Halloween Fun Dance Party.mp4" />
-    <Video path="Sequences/Ghostbusters 2/Media/Videos-154b7c/Scary Halloween Horror Music &amp; Creepy Sounds..mp4" />
-    <Video path="Sequences/Ghostbusters 2/Media/Videos-154b7c/Slimer and The Real Ghostbusters intro 3 (1988) Best Quality.mp4" />
-    <Video path="Sequences/Ghostbusters 2/Media/Videos-154b7c/THE REAL GHOSTBUSTERS Cartoon Intro.mp4" />
-  </SequenceMedia>
+  <SequenceMedia />
   <DataLayers>
     <DataLayer lor_params="0" channel_offset="0" num_channels="0" num_frames="0" data="&lt;rendered: erase-mode>" source="&lt;auto-generated>" name="Nutcracker" />
   </DataLayers>
@@ -12871,6 +12864,12 @@
       <EffectLayer />
       <EffectLayer />
       <EffectLayer />
+      <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Dark Helmet">
+      <EffectLayer />
+      <EffectLayer />
+      <EffectLayer />
       <EffectLayer>
         <Effect ref="159" name="Faces" startTime="11850" endTime="13900" palette="64" />
         <Effect ref="159" name="Faces" id="1" startTime="15200" endTime="18700" palette="64" />
@@ -12893,9 +12892,6 @@
         <Effect ref="159" name="Faces" id="18" startTime="151800" endTime="167100" palette="64" />
         <Effect ref="159" name="Faces" id="19" startTime="168650" endTime="169200" palette="64" />
       </EffectLayer>
-    </Element>
-    <Element type="model" name="GE Dark Helmet">
-      <EffectLayer />
     </Element>
   </ElementEffects>
   <lastView>0</lastView>

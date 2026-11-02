@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <xsequence BaseChannel="0" ChanCtrlBasic="0" ChanCtrlColor="0" FixedPointTiming="1" ModelBlending="true">
   <head>
-    <version>2026.18</version>
+    <version>2026.19</version>
     <author></author>
     <author-email></author-email>
     <author-website></author-website>
@@ -176,11 +176,6 @@
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkDuration=Normal,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_Phoneme=rest,T_TEXTCTRL_Fadein=1.0</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkDuration=Normal,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_Phoneme=rest</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkDuration=Normal,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Evil Clown,E_CHOICE_Faces_Phoneme=rest,T_TEXTCTRL_Fadeout=1.925</Effect>
-    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkDuration=Normal,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_TimingTrack=Main,E_CHOICE_Faces_UseState=Teddy RedBow static</Effect>
-    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkDuration=Normal,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Closed,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_TimingTrack=Main,E_CHOICE_Faces_UseState=Teddy RedBow static</Effect>
-    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkDuration=Normal,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_Phoneme=rest,E_CHOICE_Faces_UseState=Teddy RedBow static,T_TEXTCTRL_Fadein=1.0</Effect>
-    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkDuration=Normal,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_Phoneme=rest,E_CHOICE_Faces_UseState=Teddy RedBow static</Effect>
-    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkDuration=Normal,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Teddy ,E_CHOICE_Faces_Phoneme=rest,E_CHOICE_Faces_UseState=Teddy RedBow static,T_TEXTCTRL_Fadeout=2.5</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkDuration=Normal,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Pumpkin face,E_CHOICE_Faces_TimingTrack=Main,E_CHOICE_Faces_UseState=outline with stem</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkDuration=Normal,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Pumpkin face,E_CHOICE_Faces_TimingTrack=Backing,E_CHOICE_Faces_UseState=outline with stem</Effect>
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkDuration=Normal,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Pumpkin face,E_CHOICE_Faces_Phoneme=rest,E_CHOICE_Faces_UseState=outline with stem,T_TEXTCTRL_Fadein=1.0</Effect>
@@ -188,6 +183,11 @@
     <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkDuration=Normal,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Pumpkin face,E_CHOICE_Faces_Phoneme=rest,E_CHOICE_Faces_UseState=outline with stem,T_TEXTCTRL_Fadeout=2.5</Effect>
     <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/TuneToReadable-v2/stationary-vote.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
     <Effect>E_CHECKBOX_LoopGIF=0,E_CHECKBOX_Pictures_PixelOffsets=0,E_CHECKBOX_Pictures_Shimmer=0,E_CHECKBOX_Pictures_TransparentBlack=0,E_CHECKBOX_Pictures_WrapX=0,E_CHECKBOX_SuppressGIFBackground=0,E_CHOICE_Pictures_Direction=none,E_CHOICE_Scaling=Scale To Fit,E_SLIDER_PicturesXC=0,E_SLIDER_PicturesYC=0,E_SLIDER_Pictures_EndScale=100,E_SLIDER_Pictures_StartScale=100,E_TEXTCTRL_Pictures_Filename=WebsitePromotion/TuneToReadable-v2/stationary-qr.png,T_CHOICE_LayerMethod=Normal,T_TEXTCTRL_Fadein=0,T_TEXTCTRL_Fadeout=0</Effect>
+    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkDuration=Normal,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Main</Effect>
+    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkDuration=Normal,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Closed,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_TimingTrack=Main</Effect>
+    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkDuration=Normal,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_Phoneme=rest,T_TEXTCTRL_Fadein=1.0</Effect>
+    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkDuration=Normal,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_Phoneme=rest</Effect>
+    <Effect>E_CHECKBOX_Faces_Outline=1,E_CHECKBOX_Faces_SuppressWhenNotSinging=0,E_CHOICE_Faces_EyeBlinkDuration=Normal,E_CHOICE_Faces_EyeBlinkFrequency=Normal,E_CHOICE_Faces_Eyes=Auto,E_CHOICE_Faces_FaceDefinition=Vader,E_CHOICE_Faces_Phoneme=rest,T_TEXTCTRL_Fadeout=2.5</Effect>
   </EffectDB>
   <SequenceMedia />
   <DataLayers>
@@ -241,6 +241,7 @@
     <Element collapsed="false" type="timing" name="Backing" visible="true" views="" active="false" />
     <Element collapsed="false" type="model" name="Tune To" visible="true" />
     <Element collapsed="false" type="model" name="Projector" visible="true" />
+    <Element collapsed="false" type="model" name="GE Dark Helmet" visible="true" />
   </DisplayElements>
   <ElementEffects>
     <Element type="model" name="Map - All House">
@@ -3054,40 +3055,27 @@
     </Element>
     <Element type="model" name="Elliott - EFL Teddy">
       <EffectLayer />
-      <EffectLayer>
-        <Effect ref="116" name="Faces" startTime="21250" endTime="23450" palette="23" />
-      </EffectLayer>
-      <EffectLayer>
-        <Effect ref="116" name="Faces" startTime="23075" endTime="106950" palette="23" />
-        <Effect ref="116" name="Faces" id="1" startTime="115125" endTime="124150" palette="23" />
-        <Effect ref="117" name="Faces" id="2" startTime="124150" endTime="133125" palette="23" />
-        <Effect ref="116" name="Faces" id="3" startTime="133125" endTime="152000" palette="23" />
-        <Effect ref="116" name="Faces" id="4" startTime="157325" endTime="161075" palette="23" />
-      </EffectLayer>
-      <EffectLayer>
-        <Effect ref="118" name="Faces" startTime="20250" endTime="21250" palette="23" />
-        <Effect ref="119" name="Faces" id="1" startTime="106950" endTime="115125" palette="23" />
-        <Effect ref="119" name="Faces" id="2" startTime="152000" endTime="157325" palette="23" />
-        <Effect ref="120" name="Faces" id="3" startTime="161075" endTime="163575" palette="23" />
-      </EffectLayer>
+      <EffectLayer />
+      <EffectLayer />
+      <EffectLayer />
     </Element>
     <Element type="model" name="GE Singing Pumpkin">
       <EffectLayer>
-        <Effect ref="121" name="Faces" startTime="27575" endTime="32375" palette="39" />
-        <Effect ref="121" name="Faces" id="1" startTime="36475" endTime="50050" palette="39" />
-        <Effect ref="122" name="Faces" id="2" startTime="69075" endTime="79925" palette="23" />
-        <Effect ref="122" name="Faces" id="3" startTime="107100" endTime="124825" palette="23" />
-        <Effect ref="121" name="Faces" id="4" startTime="133125" endTime="152000" palette="23" />
+        <Effect ref="116" name="Faces" startTime="27575" endTime="32375" palette="39" />
+        <Effect ref="116" name="Faces" id="1" startTime="36475" endTime="50050" palette="39" />
+        <Effect ref="117" name="Faces" id="2" startTime="69075" endTime="79925" palette="23" />
+        <Effect ref="117" name="Faces" id="3" startTime="107100" endTime="124825" palette="23" />
+        <Effect ref="116" name="Faces" id="4" startTime="133125" endTime="152000" palette="23" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="123" name="Faces" startTime="26575" endTime="27575" palette="39" />
-        <Effect ref="124" name="Faces" id="1" startTime="32375" endTime="36475" palette="39" />
-        <Effect ref="125" name="Faces" id="2" startTime="50050" endTime="52550" palette="39" />
-        <Effect ref="123" name="Faces" id="3" startTime="68075" endTime="69075" palette="23" />
-        <Effect ref="125" name="Faces" id="4" startTime="79925" endTime="82425" palette="23" />
-        <Effect ref="123" name="Faces" id="5" startTime="106100" endTime="107100" palette="23" />
-        <Effect ref="124" name="Faces" id="6" startTime="124825" endTime="133125" palette="23" />
-        <Effect ref="125" name="Faces" id="7" startTime="152000" endTime="154500" palette="23" />
+        <Effect ref="118" name="Faces" startTime="26575" endTime="27575" palette="39" />
+        <Effect ref="119" name="Faces" id="1" startTime="32375" endTime="36475" palette="39" />
+        <Effect ref="120" name="Faces" id="2" startTime="50050" endTime="52550" palette="39" />
+        <Effect ref="118" name="Faces" id="3" startTime="68075" endTime="69075" palette="23" />
+        <Effect ref="120" name="Faces" id="4" startTime="79925" endTime="82425" palette="23" />
+        <Effect ref="118" name="Faces" id="5" startTime="106100" endTime="107100" palette="23" />
+        <Effect ref="119" name="Faces" id="6" startTime="124825" endTime="133125" palette="23" />
+        <Effect ref="120" name="Faces" id="7" startTime="152000" endTime="154500" palette="23" />
       </EffectLayer>
     </Element>
     <Element type="timing" name="Beat Count">
@@ -5309,14 +5297,33 @@
     </Element>
     <Element type="model" name="Tune To">
       <EffectLayer>
-        <Effect ref="126" name="Pictures" startTime="48175" endTime="64175" palette="40" />
+        <Effect ref="121" name="Pictures" startTime="48175" endTime="64175" palette="40" />
       </EffectLayer>
       <EffectLayer>
-        <Effect ref="127" name="Pictures" startTime="0" endTime="178425" palette="40" />
+        <Effect ref="122" name="Pictures" startTime="0" endTime="178425" palette="40" />
       </EffectLayer>
     </Element>
     <Element type="model" name="Projector">
       <EffectLayer />
+    </Element>
+    <Element type="model" name="GE Dark Helmet">
+      <EffectLayer />
+      <EffectLayer>
+        <Effect ref="123" name="Faces" startTime="21250" endTime="23450" palette="23" />
+      </EffectLayer>
+      <EffectLayer>
+        <Effect ref="123" name="Faces" startTime="23075" endTime="106950" palette="23" />
+        <Effect ref="123" name="Faces" id="1" startTime="115125" endTime="124150" palette="23" />
+        <Effect ref="124" name="Faces" id="2" startTime="124150" endTime="133125" palette="23" />
+        <Effect ref="123" name="Faces" id="3" startTime="133125" endTime="152000" palette="23" />
+        <Effect ref="123" name="Faces" id="4" startTime="157325" endTime="161075" palette="23" />
+      </EffectLayer>
+      <EffectLayer>
+        <Effect ref="125" name="Faces" startTime="20250" endTime="21250" palette="23" />
+        <Effect ref="126" name="Faces" id="1" startTime="106950" endTime="115125" palette="23" />
+        <Effect ref="126" name="Faces" id="2" startTime="152000" endTime="157325" palette="23" />
+        <Effect ref="127" name="Faces" id="3" startTime="161075" endTime="163575" palette="23" />
+      </EffectLayer>
     </Element>
   </ElementEffects>
   <lastView>0</lastView>

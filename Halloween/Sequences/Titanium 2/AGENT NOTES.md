@@ -205,3 +205,9 @@ Physical model routing/positions synchronized to the current Halloween master, p
 
 - User requested white instead of red. Only forced colors in the shared `Vader` face definition changed; mouth/outline ranges, lyric timing, visibility, current QR/sign treatment and channel routing were preserved. Any separately requested Titanium choreography change is described below.
 - Full native rendering and every-frame face checks found only neutral white/gray RGB values on every lit Vader pixel. Fixed QR/sign pixels and QR decoding passed. Updated files were deployed to Master and Projector with complete checksums and native metadata verified; Master stayed running. Evidence: `Halloween/vader-white-latest.json`.
+
+
+## Teddy reserved for interaction — November 1, 2026
+
+- Moved all 1 Teddy singing effects to `Matrix - Downstairs Window` using its existing face definition. The replacement had no direct song part; original lyric tracks, phonemes, effect windows, fades and other singers are preserved.
+- Native xLights voice export verified; every output frame outside Teddy and the replacement prop matches the prior deployed render exactly. Teddy has zero show pixels throughout. Both players received all existing playback filenames with full checksums and sequence metadata verified. Master stayed running; layout, controller outputs, routing, playlists, schedules, media, sign/QR and projector pixels are preserved. Evidence: `Halloween/teddy-song-recast-latest.json`. Both permanent slots contained unrelated dirty work, retained; authoring used isolated backup copies in the existing B session.

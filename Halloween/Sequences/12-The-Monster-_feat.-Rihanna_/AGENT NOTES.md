@@ -201,3 +201,9 @@ Physical model routing/positions synchronized to the current Halloween master, p
 - Native checks/rendering, actual sign pixels across the entire song, fixed QR placement and QR decoding passed. Live installation status is tracked in `Halloween/projector-sign-refresh-latest.json`; do not infer upload from local completion. Master must remain running.
 - Recovery and verification: `/Users/elliott.ohara/xlights/Halloween/Backups/Titanium projector show and readable sign 20261019-110024`.
 - Fixed-sign playback deployment completed: all existing filenames verified on Master and Projector with complete SHA-256 checksums and matching native sequence metadata. Master remained running; playlists, schedule, routes, media and AV settings were preserved. Evidence: `Halloween/projector-sign-refresh-latest.json`.
+
+
+## Teddy reserved for interaction — November 1, 2026
+
+- Moved all 20 Teddy singing effects to `GE Dark Helmet` using its existing face definition. The replacement had no direct song part; original lyric tracks, phonemes, effect windows, fades and other singers are preserved.
+- Native xLights voice export verified; every output frame outside Teddy and the replacement prop matches the prior deployed render exactly. Teddy has zero show pixels throughout. Both players received all existing playback filenames with full checksums and sequence metadata verified. Master stayed running; layout, controller outputs, routing, playlists, schedules, media, sign/QR and projector pixels are preserved. Evidence: `Halloween/teddy-song-recast-latest.json`. Both permanent slots contained unrelated dirty work, retained; authoring used isolated backup copies in the existing B session.
