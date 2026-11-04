@@ -1,3 +1,7 @@
+## Active Teddy conversation provider — November 4, 2026
+
+- User confirmed Teddy is active on **SpaceXSI**. Live conversation logs identify the xAI realtime path with **Iris** voice. Kevin references below describe earlier deployments, not the current configuration. Do not treat Iris as a configuration error or switch back to Kevin based on those historical notes.
+
 # Teddy Interactive — agent notes
 
 ## Session transcripts and reciprocity enabled — November 2, 2026
@@ -16,7 +20,7 @@
 
 ## Teddy is a kid; Mr. Elliott / Professor Elliott — November 2, 2026
 
-- User explicitly wants Teddy to sound like a kid talking to another kid: super informal, playful and really friendly. Kid-style hellos, short easy questions, authored shares, live replies and opt-in wording are installed. The existing Kevin voice is retained. Do not restore adult-host phrases such as “lovely,” “delightful,” formal activity/tradition interviews, or the old bare-name fact opening.
+- User explicitly wants Teddy to sound like a kid talking to another kid: super informal, playful and really friendly. Kid-style hellos, short easy questions, authored shares, live replies and opt-in wording are installed. Teddy currently runs on SpaceXSI with the Iris voice (confirmed November 4, 2026). Earlier Kevin voice notes are historical and do not describe the active conversation setup. Do not restore adult-host phrases such as “lovely,” “delightful,” formal activity/tradition interviews, or the old bare-name fact opening.
 - The spoken name for the person behind the lights is **Mr. Elliott**, never “the show's creator.” **Professor Elliott** is allowed only when this visitor is known to practice Brazilian Jiu Jitsu/BJJ. Sibling practice, watching, wanting to try it or a hypothetical mention are insufficient. Current visitor corrections override older remembered practice. This applies to both cached facts and all three live reply paths; guest greetings still use their own chosen name normally.
 - Source `2b5aea6` / PR #125 is installed. The exact runtime passed 319 tests and 82 subtests (one optional Node skip). Real-model fictional rehearsal verified kid wording, default Mr. Elliott, own-practice Professor Elliott, sibling-only default and a later correction. Eight clips/six personal openings were refreshed; all 56 module hashes and all 16 encrypted private S3 audio/timing objects match. Single-use question history, current-time greeting rules, recognition retry/profiles and cooldowns are preserved. Master and Teddy idle remained running.
 - Current evidence: `Halloween/teddy-kid-voice-latest.json`; private Pi rollback `/home/yardhost/ofls-yard-host/backups/` under the `kidvoice-enable-` directory recorded there. The new delivery still needs the user's physical observation.
