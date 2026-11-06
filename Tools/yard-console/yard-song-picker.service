@@ -1,0 +1,11 @@
+[Unit]
+Description=Yard song picker
+
+[Service]
+WorkingDirectory=%h/yard-song-picker
+EnvironmentFile=-%h/.config/yard-song-picker/voice.env
+ExecStart=/usr/bin/python3 %h/yard-song-picker/server.py
+Restart=on-failure
+
+[Install]
+WantedBy=default.target

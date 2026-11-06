@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=Yard Song Picker
+Exec=sh -c "exec sh \$HOME/yard-song-picker/start-kiosk.sh"

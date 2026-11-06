@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pick a Song · O’Hara Family Light Show</title>
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; color: #fff; background: radial-gradient(ellipse at top left,#41135c,#171028 60%); font: 18px system-ui,sans-serif; min-height: 100vh; }
+header { padding: 24px 5vw 16px; }
+small { color: #ffe99b; font-weight: 800; letter-spacing: .13em; }
+h1 { font-size: clamp(42px,7vw,72px); margin: 4px 0; line-height: 1; }
+p { margin: 10px 0; }
+main { padding: 0 5vw 32px; }
+#songs { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 12px; }
+button { touch-action: manipulation; font: inherit; font-weight: 800; min-height: 58px; border-radius: 18px; border: 2px solid #ffffff40; padding: 12px 16px; color: white; background: #5c277d; }
+button:active { transform: scale(.97); }
+button:disabled { opacity: .68; }
+#songs button { min-height: 90px; text-align: left; background: #622d83; }
+#songs button:nth-child(3n+2) { background: #923065; }
+#songs button:nth-child(3n+3) { background: #165b74; }
+#surprise, #submit { background: #ffdb68; color: #231334; }
+#receipt { color: #ffe99b; font-weight: bold; }
+dialog { max-width: min(90vw,490px); background: #302043; color: white; border: 2px solid #c498ff; border-radius: 24px; padding: 28px; }
+dialog::backdrop { background: #10091bdc; }
+#camera-window { position: fixed; right: 20px; bottom: 20px; width: min(340px, 42vw); background: #302043; border: 2px solid #c498ff; border-radius: 18px; overflow: hidden; }
+#camera-window button { width: 100%; border: 0; border-radius: 0; min-height: 44px; }
+#camera-feed { display: block; width: 100%; aspect-ratio: 4 / 3; background: #171028; object-fit: contain; }
+#camera-feed[hidden] { display: none; }
+main { padding-bottom: 285px; }
+#elf-toggle { margin-left: 8px; background: #195e55; }
+#elf-card[open] {
+  position: fixed; inset: 0; margin: 0; width: 100vw; height: 100dvh;
+  max-width: none; max-height: none; border: 0; border-radius: 0;
+  display: grid; grid-template-rows: minmax(0, 1fr) auto;
+  text-align: center; padding: 0; overflow: hidden;
+  background: radial-gradient(ellipse at 50% 28%, #603174, #211230 72%);
+}
+#elf-stage { position: relative; display: grid; place-items: center; min-height: 0; overflow: hidden; }
+#elf-stage::before {
+  content: '✦                 ✧                  ✦                  ✧';
+  position: absolute; inset: 10% 0 auto; color: #ffdb68; opacity: .65;
+  font-size: clamp(24px, 5vw, 68px); white-space: pre; pointer-events: none;
+}
+#elf-stage::after {
+  content: ''; position: absolute; inset: 84% 0 0; background: #171028;
+  border-top: 2px solid #704487; z-index: 0; pointer-events: none;
+}
+#elf-controls { padding: 8px 16px 22px; background: #171028; }
+#elf-controls h2 { margin: 0; font-size: clamp(24px, 4vw, 48px); }
+#elf-controls p { margin: 6px auto 10px; }
+#elf-card svg { z-index: 1; position: relative; }
+#elf-card:not(.chatting) svg { animation: pip-stroll 9s ease-in-out infinite alternate; }
+#elf-card:not(.chatting) .pip-leg { animation: pip-step .55s ease-in-out infinite alternate; }
+#elf-card:not(.chatting) .pip-leg.right { animation-direction: alternate-reverse; }
+.pip-leg { transform-box: fill-box; transform-origin: center top; }
+@keyframes pip-stroll { from { transform: translateX(-24vw); } to { transform: translateX(24vw); } }
+@keyframes pip-step { from { transform: rotate(-11deg); } to { transform: rotate(12deg); } }
+#elf-card svg { height: 96%; max-width: 54vw; display: block; margin: auto; }
+#pip { transform-origin: 120px 205px; animation: bob 3s ease-in-out infinite; }
+#pip-eyes { transform-origin: 120px 125px; animation: blink 5s infinite; }
+#pip-hand { transform-origin: 179px 175px; }
+#elf-card.waving #pip-hand { animation: wave .42s ease-in-out 4 alternate; }
+@keyframes bob { 50% { transform: translateY(-5px) rotate(2deg); } }
+@keyframes blink { 0%, 89%, 95%, 100% { transform: scaleY(1); } 92% { transform: scaleY(.12); } }
+@keyframes wave { from { transform: rotate(-12deg); } to { transform: rotate(20deg); } }
+@media (prefers-reduced-motion: reduce) { #pip, #pip-eyes, #elf-card.waving #pip-hand, #elf-card:not(.chatting) svg, #elf-card:not(.chatting) .pip-leg { animation: none; } }
+</style>
+<header>
+  <small>✦ O’HARA FAMILY LIGHT SHOW ✦</small>
+  <h1>Pick a Song!</h1>
+  <p id="now">Finding the show…</p>
+  <p id="receipt" role="status"></p>
+  <button id="surprise" disabled>🎲 Surprise Me</button>
+  <button id="elf-toggle">Talk to Pip</button>
+</header>
+<main><div id="songs"></div></main>
+<aside id="camera-window" aria-label="Live camera preview">
+  <button id="camera-toggle" aria-controls="camera-feed" aria-expanded="false">Show camera</button>
+  <img id="camera-feed" alt="Live camera preview" hidden>
+</aside>
+<dialog id="elf-card" aria-labelledby="elf-name">
+  <div id="elf-stage">
+  <svg viewBox="0 0 240 325" role="img" aria-label="Pip, a smiling elf with a raspberry hat and a mint scarf">
+    <ellipse cx="120" cy="304" rx="73" ry="10" fill="#181026"/>
+    <g id="pip">
+      <g class="pip-leg">
+        <path d="M96 218L92 282" stroke="#e34778" stroke-width="20" stroke-linecap="round"/>
+        <path d="M91 240L101 241M89 260L99 261" stroke="#ffd5e4" stroke-width="7" stroke-linecap="round"/>
+        <path d="M81 279Q79 288 65 287Q54 284 53 272Q41 291 58 299Q73 306 102 296L103 279Z" fill="#208276"/>
+        <circle cx="53" cy="272" r="5" fill="#ffdc69"/>
+      </g>
+      <g class="pip-leg right">
+        <path d="M143 218L147 282" stroke="#e34778" stroke-width="20" stroke-linecap="round"/>
+        <path d="M139 241L149 240M141 261L151 260" stroke="#ffd5e4" stroke-width="7" stroke-linecap="round"/>
+        <path d="M137 279L137 296Q165 306 180 299Q197 291 185 272Q183 284 173 287Q159 288 157 279Z" fill="#208276"/>
+        <circle cx="185" cy="272" r="5" fill="#ffdc69"/>
+      </g>
+      <path d="M74 189L64 220Q92 234 120 223Q149 234 176 220L166 189Z" fill="#247c72"/>
+      <path d="M70 203Q120 213 170 203" fill="none" stroke="#443048" stroke-width="10"/>
+      <rect x="111" y="201" width="19" height="14" rx="3" fill="#ffdc69"/>
+      <path d="M75 177Q60 189 54 210" fill="none" stroke="#247c72" stroke-width="17" stroke-linecap="round"/>
+      <circle cx="53" cy="212" r="10" fill="#ffd0a4"/>
+      <path d="M64 199Q67 158 119 155Q169 154 180 199Z" fill="#247c72"/>
+      <g id="pip-hand">
+        <path d="M169 191Q189 179 197 148" fill="none" stroke="#247c72" stroke-width="19" stroke-linecap="round"/>
+        <path d="M191 152Q180 144 184 137Q188 132 194 139L198 122Q202 114 207 120L206 132Q219 123 221 133Q219 149 205 155Z" fill="#ffd0a4"/>
+      </g>
+      <path d="M80 121L42 105Q49 138 81 145M159 121L194 103Q187 138 159 145" fill="#ffd0a4"/>
+      <ellipse cx="120" cy="120" rx="49" ry="46" fill="#ffd0a4"/>
+      <path d="M69 104Q58 61 112 53Q129 24 182 21L159 63Q174 77 169 107Z" fill="#c63a74"/>
+      <circle cx="181" cy="21" r="10" fill="#ffdc69"/>
+      <path d="M72 97Q119 76 168 97" fill="none" stroke="#ff8db8" stroke-width="15" stroke-linecap="round"/>
+      <path d="M116 101Q105 120 90 111L95 101" fill="#91472d"/>
+      <g id="pip-eyes" fill="#35223b">
+        <ellipse cx="102" cy="124" rx="5" ry="7"/><ellipse cx="139" cy="124" rx="5" ry="7"/>
+      </g>
+      <ellipse cx="88" cy="138" rx="8" ry="4" fill="#ee8b8c"/>
+      <ellipse cx="152" cy="138" rx="8" ry="4" fill="#ee8b8c"/>
+      <ellipse id="pip-mouth" cx="120" cy="145" rx="8" ry="1" fill="#74374b" hidden="hidden" style="visibility:hidden"/>
+      <path id="pip-smile" d="M109 143Q120 155 132 143" fill="none" stroke="#74374b" stroke-width="4" stroke-linecap="round"/>
+      <path d="M91 166Q120 180 151 165M137 173L145 198" fill="none" stroke="#9bf0cb" stroke-width="13" stroke-linecap="round"/>
+    </g>
+  </svg>
+  </div>
+  <div id="elf-controls">
+  <h2 id="elf-name">Pip Peppermint</h2>
+  <p id="elf-line" role="status">Hi! I’m Pip. I help pick songs and occasionally put jingle bells in the wrong drawer.</p>
+  <p><small>Talk sends microphone audio to SpaceXSI during the chat. Tap End chat to stop.</small></p>
+  <button id="pip-talk">Talk to Pip</button>
+  <button id="elf-wave">Wave to Pip</button>
+  <div id="pip-request" hidden>
+    <p id="pip-request-title" role="status"></p>
+    <button id="pip-request-yes">Request this song</button>
+    <button id="pip-request-no">Cancel request</button>
+  </div>
+  <button id="elf-close">Back to songs</button>
+  </div>
+</dialog>
+<dialog id="confirm">
+  <h2 id="title"></h2>
+  <p>Send this pick to the light show?</p>
+  <p id="error" role="status"></p>
+  <button id="cancel">Go back</button>
+  <button id="submit">Request song ✨</button>
+</dialog>
+<script>
+const el = id => document.getElementById(id);
+const elf = el('elf-card');
+el('elf-toggle').onclick = () => {
+  setCamera(false);
+  elf.showModal();
+  el('pip-talk').click();
+};
+el('elf-close').onclick = () => elf.close();
+el('elf-wave').onclick = () => {
+  elf.classList.remove('waving');
+  void elf.offsetWidth;
+  elf.classList.add('waving');
+  el('elf-line').textContent = 'Hiya! That was a top-notch wave. ✦';
+};
+const camera = el('camera-feed');
+const cameraToggle = el('camera-toggle');
+function setCamera(visible) {
+  camera.hidden = !visible;
+  cameraToggle.textContent = visible ? 'Hide camera' : 'Show camera';
+  cameraToggle.setAttribute('aria-expanded', visible);
+  if (visible) camera.src = '/camera';
+  else camera.removeAttribute('src');
+}
+cameraToggle.onclick = () => setCamera(camera.hidden);
+camera.onerror = () => setTimeout(() => { if (!camera.hidden) camera.src = '/camera?' + Date.now(); }, 2000);
+setCamera(false);
+let live = { songs: [], open: false };
+let selected;
+let pending = false;
+let receipt;
+try { receipt = JSON.parse(localStorage.getItem('last-request')); } catch {}
+function showReceipt() {
+  if (receipt) el('receipt').textContent = receipt.title + ' · ' +
+    ({received:'Request received!', queued:'In the queue!', playing:'Playing now!',
+      completed:'Played!', played:'Played!', rejected:'Request declined.', expired:'Request expired.'}[receipt.status]
+      || 'Request received!');
+}
+function choose(song) {
+  if (!live.open || pending) return;
+  selected = song;
+  el('title').textContent = song.title;
+  el('error').textContent = '';
+  el('confirm').showModal();
+}
+function render() {
+  el('surprise').disabled = !live.open || !live.songs.length;
+  const icons = ['♫','✦','♪'];
+  el('songs').replaceChildren(...live.songs.map((song,i) => {
+    const button = document.createElement('button');
+    button.textContent = icons[i % icons.length] + '  ' + song.title;
+    button.disabled = !live.open;
+    button.onclick = () => choose(song);
+    return button;
+  }));
+}
+async function refresh() {
+  try {
+    const response = await fetch('/show');
+    const data = await response.json();
+    if (!response.ok) throw Error(data.message);
+    const redraw = JSON.stringify([data.songs, data.open]) !== JSON.stringify([live.songs, live.open]);
+    live = data;
+    el('now').textContent = live.open
+      ? (live.current ? 'Now playing · ' + live.current : 'Tap a song to request it.')
+      : 'Browse the songs! Requests open during the show.';
+    if (redraw) render();
+  } catch (error) {
+    live.open = false;
+    el('now').textContent = 'Connecting to the show…';
+    render();
+  }
+}
+async function send(payload) {
+  const response = await fetch('/request', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+  return [response, await response.json()];
+}
+el('surprise').onclick = () => choose(live.songs[Math.floor(Math.random() * live.songs.length)]);
+el('cancel').onclick = () => el('confirm').close();
+el('confirm').addEventListener('cancel', event => { if (pending) event.preventDefault(); });
+el('submit').onclick = async () => {
+  pending = true;
+  el('cancel').disabled = el('submit').disabled = true;
+  el('error').textContent = 'Sending your pick…';
+  try {
+    const [response,data] = await send({seqId:selected.seqId});
+    if (response.status !== 202) throw Error(data.message || 'Could not send your pick.');
+    receipt = {...data, title: data.title || selected.title, status:'received'};
+    localStorage.setItem('last-request', JSON.stringify(receipt));
+    showReceipt();
+    el('confirm').close();
+  } catch (error) {
+    el('error').textContent = error.message;
+  } finally {
+    pending = false;
+    el('cancel').disabled = el('submit').disabled = false;
+  }
+};
+async function refreshReceipt() {
+  if (!receipt?.requestId || pending) return;
+  const previous = receipt;
+  try {
+    const [response,data] = await send({action:'status', requestId:previous.requestId});
+    if (response.ok && receipt === previous) {
+      const updated = data.request || data;
+      if (updated.status === 'ok' || !updated.status) return;
+      receipt = {...receipt, ...updated};
+      localStorage.setItem('last-request',JSON.stringify(receipt));
+      showReceipt();
+    }
+  } catch {}
+}
+showReceipt();
+refresh();
+setInterval(refresh,10000);
+setInterval(refreshReceipt,10000);
+</script>
+<script src="/pip.js"></script>
+</html>
